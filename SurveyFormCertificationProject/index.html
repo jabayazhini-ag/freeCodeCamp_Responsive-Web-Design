@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+        <h1 id="title">Community Feedback Survey Form</h1>
+
+        <p id="description">"Your opinion matters! Please take a moment to share your thoughts and
+            help us improve."
+        </p>
+
+        <form id="survey-form">
+            <label for="name" id="name-label">Please enter your full name
+                <input type="text" id="name" placeholder="e.g., John A. Smith" required />
+            </label>
+
+            <label for="email" id="email-label">Kindly provide your email address:                
+                <input type="email" id="email" placeholder="example@domain.com" required />     
+            </label>
+
+            <label for="number" id="number-label">Indicate your age (optional):                
+                <input type="number" id="number" placeholder="e.g., 25" min="12" max="120" />
+            </label>
+
+            <label for="dropdown">Select your role:                
+                <select id="dropdown" name="role">
+                    <option value="">Select your current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Freelancer">Freelancer</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+
+            <label>Would you recommend us to others? </label>
+            <label><input type="radio" name="recommend" value="Yes" /> Yes</label>
+            <label><input type="radio" name="recommend" value="No" /> No</label>
+            <label><input type="radio" name="recommend" value="Maybe" /> Maybe</label>
+
+            <label for="source">How did you hear about us?
+                <select id="source" name="source">
+                    <option value="">Select an option</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Friends/Family">Friends/Family</option>
+                    <option value="Website Search">Website Search</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+
+            <label>Which features do you find useful? </label>
+            <label><input type="checkbox" name="features" value="User-friendly design" /> User-friendly design</label>
+            <label><input type="checkbox" name="features" value="Quick navigation" /> Quick navigation</label>
+            <label><input type="checkbox" name="features" value="Informative content" /> Informative content</label>
+            <label><input type="checkbox" name="features" value="Other" /> Other</label>
+
+            <label for="comments">Any additional comments?
+                <textarea id="comments" name="comments" placeholder="Your feedback helps us improve..." rows="5" cols="30"></textarea>
+            </label>
+            <button type="submit" id="submit">Send Feedback</button>
+        </form>
+  </body>
+</html>
