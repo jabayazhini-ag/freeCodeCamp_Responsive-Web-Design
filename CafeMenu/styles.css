@@ -18,9 +18,7 @@ h2 {
   font-style: italic;
 }
 
-h1,
-h2,
-p {
+h1, h2, p {
   text-align: center;
 }
 
@@ -50,8 +48,7 @@ hr {
   margin-top: 25px;
 }
 
-h1,
-h2 {
+h1, h2 {
   font-family: Impact, serif;
 }
 
@@ -62,15 +59,15 @@ h2 {
   font-size: 18px;
 }
 
-.flavor,
-.dessert {
+.flavor, .dessert {
   text-align: left;
   width: 75%;
 }
 
 .price {
   text-align: right;
-  width: 25%;
+  width: 20%;           
+  /* Actual width in free code camp site - 25%   */
 }
 
 /* FOOTER */
