@@ -6,7 +6,36 @@ body{
     font-size: 16px;
     color: #f5f6f7;
     background-color: #1b1b32;
-    background-image:url("https://img.freepik.com/premium-photo/with-quote-marks-speech-bubbles-with-quotes-can-be-used-as-backgrounds-client-customer-testimonials-comments_1257429-55962.jpg");
+    background-image:url("./Assests/BackgroundImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+h1, p {
+  text-align: center;
+  margin: 1em auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+p {
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+#survey-form {
+    padding: 30px;
+    display: block;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-color: #902467c1;
+    border-radius: 20px;
+    border: 1px solid rgba(251, 250, 247, 0.392);
+    box-shadow: 2px 4px 20px 0 rgba(251, 250, 247, 0.392);
 }
