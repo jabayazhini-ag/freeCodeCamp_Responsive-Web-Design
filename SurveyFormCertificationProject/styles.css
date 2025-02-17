@@ -6,7 +6,7 @@ body{
     font-size: 16px;
     color: #f5f6f7;
     background-color: #1b1b32;
-    background-image:url("./Assests/BackgroundImage.jpg");
+    background-image:url("./Assets/BackgroundImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -28,21 +28,29 @@ p {
 }
 
 #survey-form {
-    padding: 30px;
+    padding: 40px;
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
     padding-bottom: 2em;
-    background-color: #902467c1;
+    background-color: rgba(144, 36, 103, 0.8);
     border-radius: 20px;
     border: 1px solid rgba(251, 250, 247, 0.392);
     box-shadow: 2px 4px 20px 0 rgba(251, 250, 247, 0.392);
     font-size: 18px;
 }
 
-label, input, select, textarea {
+label {
     display: block;
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 input[type="radio"], input[type="checkbox"] {
@@ -58,11 +66,13 @@ input[type="radio"], input[type="checkbox"] {
   }
 
 button {
+    display: block;
     padding: 10px 40px;
-    margin: 2em 4em 2em 8em;
+    margin: 2em auto;      
     background-color: #0a0a2389;
     border: 1px solid #0a0a23b9;
     color: #ffffff;
     font-size: large;
     font-weight: bold;
+    cursor: pointer; 
 }
