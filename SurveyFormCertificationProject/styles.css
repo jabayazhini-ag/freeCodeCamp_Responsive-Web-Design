@@ -24,11 +24,11 @@ h1 {
 p {
     margin-bottom: 50px;
     font-style: italic;
+    font-size: 16px;
 }
 
 #survey-form {
     padding: 30px;
-    display: block;
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
@@ -38,4 +38,31 @@ p {
     border-radius: 20px;
     border: 1px solid rgba(251, 250, 247, 0.392);
     box-shadow: 2px 4px 20px 0 rgba(251, 250, 247, 0.392);
+    font-size: 18px;
+}
+
+label, input, select, textarea {
+    display: block;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+
+button {
+    padding: 10px 40px;
+    margin: 2em 4em 2em 8em;
+    background-color: #0a0a2389;
+    border: 1px solid #0a0a23b9;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
 }
