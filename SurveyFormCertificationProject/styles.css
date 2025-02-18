@@ -8,7 +8,7 @@ body{
     background-color: #1b1b32;
     background-image:url("./Assets/BackgroundImage.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh;
 }
 
 h1, p {
@@ -29,13 +29,13 @@ p {
 
 #survey-form {
     padding: 40px;
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
+    width: 60vw;  
+    max-width: 660px;
+    min-width: 500px;
     margin: 0 auto;
     padding-bottom: 2em;
     background-color: rgba(144, 36, 103, 0.8);
-    border-radius: 20px;
+    border-radius: 15px;
     border: 1px solid rgba(251, 250, 247, 0.392);
     box-shadow: 2px 4px 20px 0 rgba(251, 250, 247, 0.392);
     font-size: 18px;
@@ -43,14 +43,15 @@ p {
 
 label {
     display: block;
-    margin-bottom: 8px;
+    padding-bottom: 25px;
+    margin-left: 3px;
 }
 
 input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    width: 46.5em;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;        
 }
 
 input[type="radio"], input[type="checkbox"] {
@@ -59,14 +60,42 @@ input[type="radio"], input[type="checkbox"] {
     vertical-align: middle;
 }
 
+#dropdown, #source {
+    width: 48.3em;
+}
+
 button {
     display: block;
-    padding: 10px 40px;
-    margin: 2em auto;      
+    padding: 10px 0;
+    margin-top: 1em;
+    margin-bottom: 3em;     
     background-color: #0a0a2389;
-    border: 1px solid #0a0a23b9;
+    border: 1px solid rgba(251, 250, 247, 0.392);
     color: #ffffff;
     font-size: large;
     font-weight: bold;
     cursor: pointer; 
+    width: 35.9em;    
+    margin-left: 3px;
+    border-radius: 3px;
 }
+
+button:hover {
+    box-shadow: 2px 4px 20px 0 rgba(251, 250, 247, 0.392);
+}
+
+footer {
+     text-align: center; 
+     color: cornsilk;
+     padding-top: 3em;
+     line-height: 3;
+}
+
+#copyright {
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+
+
