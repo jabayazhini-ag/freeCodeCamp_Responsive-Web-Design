@@ -6,8 +6,8 @@ body {
   font-size: 16px;
   color: #f5f6f7;
   background-color: #1b1b32;
-  background-image: url("./Assets/BackgroundImage.jpg");
-  /* background-image: url("https://tiermaker.com/images/templates/anime-series-15923206/159232061688730245.jpg"); */
+  /* background-image: url("./Assets/BackgroundImage.jpg"); */
+  background-image: url("https://tiermaker.com/images/templates/anime-series-15923206/159232061688730245.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-attachment: fixed;
