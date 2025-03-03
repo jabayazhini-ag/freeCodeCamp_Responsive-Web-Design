@@ -26,6 +26,8 @@ em, i, cite {
     background-color: #1b1b32;
     color: #d8e3ef;
     -webkit-text-stroke: 0.2px rgb(16, 12, 136);
+    text-shadow: 1px 1px #b8b8f4f1;
+
     border-bottom: 2px solid #d1d1ee94;   
 }
 
@@ -53,15 +55,15 @@ em, i, cite {
     display: block;
     margin: 0 auto;
     border-radius: 0.5rem;
-    box-shadow: 6px 10px 8px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 6px 10px 13px 4px rgba(0, 0, 0, 0.2);
     border: 2px solid #06064cb4;
 }
 
 #img-caption {
-    font-size: 0.93rem;
+    font-size: 0.94rem;
     font-weight: bold;
     font-style: italic;
-    text-shadow: 1px 1px #7575e8f1;
+    text-shadow: 0.8px 0.8px #7575e8f1;
     color: #06064cdf;
     margin-top: 1rem;
 }
@@ -105,7 +107,7 @@ em, i, cite {
 .timeline-item {
     display: flex;
     justify-content: flex-start;
-    margin: 20px 0;
+    margin: 25px 0;
     position: relative;
 }
 
@@ -168,7 +170,7 @@ footer {
     cursor: pointer;
     text-align: center;
     border-top: 3px solid #222235c6;
-    padding-top: 0.8rem;
+    padding-top: 1rem;
     font-weight: bold;
 }
 
@@ -177,14 +179,14 @@ footer {
     color: #d8e3ef;
     background-color: #1b1b32ee;
     border-radius: 5px;
-    border: solid 1px #BBDEFB;
+    border: 1px solid #BBDEFB;
     box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.315);
-    padding: 7px 8px;
-    font-size: 0.9rem;
+    padding: 8px 10px;
+    font-size: 0.8rem;
 }
 
 .back-to-top a:hover {
-    color: turquoise;
+    color: rgb(146, 197, 246);
 }
 
 /* ----------- Media Queries --------------- */
