@@ -17,7 +17,7 @@ em, i, cite {
     font-style: normal; 
 }
 
-/* Header Section */
+/* ---------- Header Section ------------------ */
 
 #header {
     padding: 0.3px;
@@ -41,10 +41,9 @@ em, i, cite {
     font-size: 1.3rem;
 }
 
-/* Main - Figure Section */
+/* ------------ Main - Figure Section -------------- */
 
 #img-div {
-    line-height: 4;
     padding: 0.9rem;
 }
 
@@ -62,24 +61,29 @@ em, i, cite {
     font-size: 0.93rem;
     font-weight: bold;
     font-style: italic;
+    text-shadow: 1px 1px #7575e8f1;
+    color: #06064cdf;
+    margin-top: 1rem;
 }
 
-/* Footer Section */
+/* ---------------- Main - Section Elements ------------------- */
 
-#copyright {
-    font-size: 0.9rem;
-    color: #d8e3ef;
-    padding: 0.5rem;
-    background-color: #1b1b32;
-    border-top: 2px solid #d1d1ee94;   
+.background {
+    background: linear-gradient(to right, #E3F2FD, #BBDEFB);
+    margin: 2rem;
+    padding: 1rem;
 }
 
-/* Time Line */
+/* -------------------Time Line--------------------- */
 
 .timeline-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(to right, #E3F2FD, #BBDEFB);
+    margin: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
 
 .timeline {
@@ -112,7 +116,6 @@ em, i, cite {
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     position: relative;
-    animation: fadeIn 0.8s ease-in-out;
 }
 
 .timeline-content::before {
@@ -139,19 +142,56 @@ em, i, cite {
     right: -28px;
 }
 
-.timeline-container h2 {
+.timeline-container h3 {
     text-align: center;
     color: black;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+/* -----------Footer Section---------------------- */
+
+footer {
+    background: linear-gradient(to right, #E3F2FD, #BBDEFB);
+    margin-top: 5rem;
+}
+
+#copyright {
+    display: block;
+    font-size: 0.9rem;
+    color: #d8e3ef;
+    padding: 0.8rem;
+    background-color: #1b1b32;
+    border-top: 2px solid #d1d1ee94;   
+}
+
+.back-to-top {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    border-top: 3px solid #222235c6;
+    padding-top: 0.8rem;
+    font-weight: bold;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: #d8e3ef;
+    background-color: #1b1b32ee;
+    border-radius: 5px;
+    border: solid 1px #BBDEFB;
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.315);
+    padding: 7px 8px;
+    font-size: 0.9rem;
+}
+
+.back-to-top a:hover {
+    color: turquoise;
+}
+
+/* ----------- Media Queries --------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
     }
 }
 
