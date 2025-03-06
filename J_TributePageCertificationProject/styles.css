@@ -31,15 +31,20 @@ em, i, cite {
 }
 
 #header h1 {
-    font-size: 2.6rem;       
+    font-size: 2.6rem; 
+    letter-spacing: 0.2px;
+      
 }
 
 #header h2 {
     font-size: 1.6rem;
+    letter-spacing: 0.3px;
+
 }
 
 #header > p {
     font-size: 1.3rem;
+    letter-spacing: 0.3px;
 }
 
 /* ------------ Main - Figure Section -------------- */
@@ -59,12 +64,13 @@ em, i, cite {
 }
 
 #img-caption {
-    font-size: 0.94rem;
+    font-size: 0.93rem;
     font-weight: bold;
     font-style: italic;
     text-shadow: 0.8px 0.8px #7575e8f1;
     color: #06064cdf;
-    margin-top: 1rem;
+    margin-top: 1.3rem;
+    letter-spacing: 0.3px;
 }
 
 /* ---------------- Main - Section Elements ------------------- */
@@ -72,18 +78,36 @@ em, i, cite {
 .background {
     background: linear-gradient(to right, #E3F2FD, #BBDEFB);
     margin: 2rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 section h3 {
-    font-size: 1.3rem;
+    font-size: 1.32rem;
     color: #06064cdf;
     margin-top: 1rem;
-    margin-bottom: 0.2rem;    
+    margin-bottom: 0.8rem;  
+    text-align: center;
+    letter-spacing: 0.2px;
 }
 
 section ul {
-    padding-bottom: 6px;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+}
+
+section p {
+    text-align: justify;
+    letter-spacing: 0.2px;
+    line-height: 1.8;
+    text-indent: 4em;
+    margin: 2rem;
+}
+
+/* ----------------- About, Education, Dream Section -------------------- */
+
+.about, .education, .dream {
+    display: inline-block;
 }
 
 /* ----------------- Quotes Section ------------------- */
