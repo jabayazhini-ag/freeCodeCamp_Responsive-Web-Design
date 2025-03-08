@@ -92,7 +92,7 @@ section h3 {
 section ul {
     margin-bottom: 2rem;
     margin-top: 2rem;
-    line-height: 2.3;
+    line-height: 2.5;
     letter-spacing: 0.2px;
     list-style: none;
 }
@@ -119,11 +119,12 @@ section p {
     margin-left: 5rem;
 }
 
-/* ---------------- Achievements, Books Section -------------- */
+/* ---------------- Books Section -------------- */
 
 .books {
     display: block;
     text-align: justify;
+    margin-left: 0.9rem;
 }
 
 /* ----------------- Quotes Section ------------------- */
