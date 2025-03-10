@@ -105,26 +105,18 @@ section p {
     margin: 2rem;
 }
 
-/* ----------------- About, Education, Dream Section -------------------- */
+/* ----------------- About, Education, Dream, Rare-Events, Explore Section -------------------- */
 
-.about, .education, .dream {
+.about, .education, .dream, .events, .explore {
     display: block;
 }
 
-/* ---------------- Achievements, Books Section -------------- */
+/* ---------------- Achievements Section -------------- */
 
 .achievements {
     display: block;
     text-align: justify;
     margin-left: 5rem;
-}
-
-/* ---------------- Books Section -------------- */
-
-.books {
-    display: block;
-    text-align: justify;
-    margin-left: 0.9rem;
 }
 
 /* ----------------- Quotes Section ------------------- */
@@ -144,16 +136,42 @@ section p {
 }
 
 .quotes li:nth-child(even) {
-   color: darkolivegreen
+   color: darkolivegreen;
 }
 
-/* ------------------- Achievements Section------------ */
+/* ---------------- Books Section -------------- */
 
-.achievements {
+.books {
     display: block;
-    text-align: left;  
+    text-align: justify;
+    margin-left: 0.9rem;
 }
 
+/* ------------------- Memorials Section------------ */
+
+.memorials {
+    display: block;
+    text-align: justify;
+    margin-left: 10rem;
+}
+
+/* ------------------- Sayings --------------------- */
+
+.sayings p {
+    display: block;
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.sayings p:nth-child(odd) {
+    color: rgba(165, 42, 42, 0.847);
+}
+
+.sayings p:nth-child(even) {
+   color: darkolivegreen;
+}
 
 /* -------------------Time Line--------------------- */
 
@@ -163,13 +181,14 @@ section p {
     align-items: center;
     background: linear-gradient(to right, #E3F2FD, #BBDEFB);
     margin: 2rem;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
 }
 
 .timeline {
     position: relative;
     max-width: 900px;
+    margin-top: 2rem;
 }
 
 .timeline::before {
@@ -228,16 +247,24 @@ section p {
     color: black;
 }
 
-/* -----------Footer Section---------------------- */
+/* --------------------- Learn More Section ----------------------- */
+
+.exploremore {
+    text-align: justify;
+    margin-left: 25.8rem;
+}
+
+/* ----------------- Footer Section ---------------------- */
 
 footer {
     background: linear-gradient(to right, #E3F2FD, #BBDEFB);
     margin-top: 5rem;
+    display: block;
 }
 
 #copyright {
-    display: block;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.2px;
     color: #d8e3ef;
     padding: 0.7rem;
     background-color: #1b1b32;
@@ -245,7 +272,6 @@ footer {
 }
 
 .back-to-top {
-    display: block;
     cursor: pointer;
     text-align: center;
     border-top: 3px solid #222235c6;
