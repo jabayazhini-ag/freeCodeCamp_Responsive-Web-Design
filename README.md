@@ -9,4 +9,4 @@
 7.&nbsp; [Photo Gallery](https://flexbox-photogallery-freecodecamp.netlify.app/)  
 8.&nbsp; [Typography Nutrition Label](https://typography-freecodecamp-project.netlify.app/)  
 9.&nbsp; [Accessibility Quiz Page](https://accessibility-learning-freecodecamp.netlify.app/)  
-10. [Tribute Page (Certification Project)](https://dr-apj-tribute-page-freecodecamp.netlify.app/)  
+10.&nbsp; [Tribute Page (Certification Project)](https://dr-apj-tribute-page-freecodecamp.netlify.app/)  
