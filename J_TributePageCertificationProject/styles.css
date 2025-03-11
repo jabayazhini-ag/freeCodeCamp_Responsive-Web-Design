@@ -10,7 +10,7 @@ body {
     background-color: #d8e3ef !important;
     text-align: center;
     line-height: 1.7;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* em, i, cite {
@@ -27,12 +27,13 @@ body {
     color: #d8e3ef;
     -webkit-text-stroke: 0.2px rgb(16, 12, 136);
     text-shadow: 1px 1px #b8b8f4f1;
-    border-bottom: 2px solid #d1d1ee94;   
+    border-bottom: 2px solid #d1d1ee94;
+    display: block;
 }
 
 #header h1 {
-    font-size: 2.6rem; 
-    letter-spacing: 0.2px;      
+    font-size: 2.6rem;
+    letter-spacing: 0.2px;
 }
 
 #header h2 {
@@ -41,15 +42,17 @@ body {
 
 }
 
-#header > p {
+#header>p {
     font-size: 1.3rem;
     letter-spacing: 0.3px;
 }
+
 
 /* ------------ Main - Figure Section -------------- */
 
 #img-div {
     padding: 0.9rem;
+    display: block;
 }
 
 #image {
@@ -78,15 +81,17 @@ body {
     background: linear-gradient(to right, #E3F2FD, #BBDEFB);
     margin: 2rem;
     padding: 2rem;
+
 }
 
 section h3 {
     font-size: 1.32rem;
     color: #06064cdf;
     margin-top: 1rem;
-    margin-bottom: 0.8rem;  
+    margin-bottom: 0.8rem;
     text-align: center;
     letter-spacing: 0.2px;
+    display: block;
 }
 
 section ul {
@@ -95,6 +100,7 @@ section ul {
     line-height: 2.5;
     letter-spacing: 0.2px;
     list-style: none;
+    display: block;
 }
 
 section p {
@@ -103,26 +109,20 @@ section p {
     line-height: 1.8;
     text-indent: 4em;
     margin: 2rem;
-}
-
-/* ----------------- About, Education, Dream, Rare-Events, Explore Section -------------------- */
-
-.about, .education, .dream, .events, .explore {
     display: block;
+
 }
 
 /* ---------------- Achievements Section -------------- */
 
 .achievements {
-    display: block;
     text-align: justify;
-    margin-left: 5rem;
+    margin-left: 8rem;
 }
 
 /* ----------------- Quotes Section ------------------- */
 
 .quotes {
-    display: block;    
     list-style: none;
     line-height: 2.5;
     font-weight: 600;
@@ -136,29 +136,48 @@ section p {
 }
 
 .quotes li:nth-child(even) {
-   color: darkolivegreen;
+    color: darkolivegreen;
 }
 
 /* ---------------- Books Section -------------- */
 
 .books {
-    display: block;
+    margin-left: -3.5rem;
+    line-height: 2.8;
+
+}
+
+/* ---------------- Awards Section -------------- */
+
+.awards {
     text-align: justify;
-    margin-left: 0.9rem;
+    margin-left: 10rem;
+}
+
+/* --------------- Special Titles Section ---------- */
+
+.titles {
+    text-align: justify;
+    margin-left: 15rem;
+}
+
+/* ------------------- Highlights Section ------------ */
+
+.key {
+    text-align: center;
+    margin-left: 1rem;
 }
 
 /* ------------------- Memorials Section------------ */
 
 .memorials {
-    display: block;
     text-align: justify;
-    margin-left: 10rem;
+    margin-left: 5rem;
 }
 
 /* ------------------- Sayings --------------------- */
 
 .sayings p {
-    display: block;
     text-align: center;
     line-height: 1.3;
     font-weight: 600;
@@ -170,7 +189,7 @@ section p {
 }
 
 .sayings p:nth-child(even) {
-   color: darkolivegreen;
+    color: darkolivegreen;
 }
 
 /* -------------------Time Line--------------------- */
@@ -250,8 +269,24 @@ section p {
 /* --------------------- Learn More Section ----------------------- */
 
 .exploremore {
-    text-align: justify;
-    margin-left: 25.8rem;
+    text-align: center;
+    margin-left: -1rem;
+}
+
+.explore {
+    margin-left: -2.2rem;
+    font-weight: 550;
+}
+
+.explore li a {
+    text-decoration: none;
+    color: #1b1b32;
+}
+
+.explore a:hover {
+    text-decoration: none;
+    color: #2332e0;
+    cursor: pointer;
 }
 
 /* ----------------- Footer Section ---------------------- */
@@ -266,9 +301,9 @@ footer {
     font-size: 0.8rem;
     letter-spacing: 0.2px;
     color: #d8e3ef;
-    padding: 0.7rem;
+    padding: 0.85rem;
     background-color: #1b1b32;
-    border-top: 3px solid #d1d1ee94; 
+    border-top: 3px solid #d1d1ee94;
 }
 
 .back-to-top {
