@@ -1,4 +1,4 @@
-## freeCodeCamp [Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/) Certification Projects  
+## freeCodeCamp [Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/) Certification Projects: 
 
 1.&nbsp; [Cat Photo App](https://cat-photo-app-freecodecamp-project.netlify.app/)  
 2.&nbsp; [Cafe Menu](https://cafe-menu-freecodecamp-project.netlify.app/)  
