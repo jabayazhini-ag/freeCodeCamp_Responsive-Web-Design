@@ -125,3 +125,12 @@ footer {
   font-size: 16px;
   margin-bottom: 10px;
 }
+
+#copyright>a {
+  text-decoration: none;
+  color: #d8e3ef;
+}
+
+#copyright>a:hover {
+  color: #2332e0;
+}
