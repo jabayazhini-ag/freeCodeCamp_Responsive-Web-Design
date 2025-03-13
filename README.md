@@ -33,7 +33,7 @@ Explore the live demos below to see the projects in action:
 9. ✅ [Accessibility Quiz Page](https://accessibility-learning-freecodecamp.netlify.app/)  
    *An interactive quiz page designed with accessibility-first principles to ensure inclusive user experiences.*
 
-10. 🏅 [Tribute Page (Certification Project)](https://dr-apj-tribute-page-freecodecamp.netlify.app/)  
+10. 🏅 [Tribute Page (Certification Project)](https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/)  
    *A tribute page honoring Dr. A.P.J. Abdul Kalam, applying responsive design and semantic structure.*
 
 ## 📌 About This Repository
