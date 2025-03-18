@@ -83,7 +83,7 @@ body {
 #nav-menu {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
+    margin: 10px 8px 0 0;
     display: none;
     background-color: #1b1b32; /* Dark background for dropdown */
     position: absolute;
@@ -96,7 +96,11 @@ body {
     text-align: left;
 }
 
-.menu-checkbox:checked + .nav-button + #nav-menu {
+/* .menu-checkbox:checked + .nav-button + #nav-menu {
+    display: block;
+} */
+
+.menu-checkbox:checked ~ #nav-menu {
     display: block;
 }
 
@@ -107,10 +111,10 @@ body {
 #nav-menu li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
-    letter-spacing: 0.3px;
+    font-size: 17px;
+    letter-spacing: 0.2px;
     display: block;
-    padding: 4.8px 12px;
+    padding: 4px 10px;
     font-weight: 600;
 }
 
@@ -119,23 +123,6 @@ body {
     border-radius: 5px;
     color: #0e0e85;
 }
-/* 
-@media (max-width: 768px) {
-    #nav-bar {
-        right: 5%;
-        top: 50%;
-    }
-    
-    .nav-button img {
-        width: 35px;
-        height: 35px;
-    }
-    
-    #nav-menu {
-        width: 90%;
-    }
-} */
-
 
 /* ------------ Main - Figure Section -------------- */
 
