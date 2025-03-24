@@ -39,7 +39,6 @@ body {
 #header h2 {
     font-size: 1.6rem;
     letter-spacing: 0.3px;
-
 }
 
 #header>p {
@@ -47,15 +46,56 @@ body {
     letter-spacing: 0.3px;
 }
 
-/* -------------- Navigation Menu -------------- */
+/* ----------------- Main Section ----------------- */
+
+/* --- Parent container to group image and nav together ---  */
+
+#img-nav-container {
+    display: inline-block;
+    position: relative;         
+    text-align: center;
+    width: 100%;    
+    margin: 0 auto;      
+}
+
+/* ------------- Figure Section -----------------*/
+
+#img-div {
+    padding: 0.9rem;
+    display: block;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    box-shadow: 6px 10px 13px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #06064cb4;
+}
+
+#img-caption {
+    font-size: 0.93rem;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0.8px 0.8px #7575e8f1;
+    color: #06064cdf;
+    margin-top: 1.3rem;
+    letter-spacing: 0.3px;
+}
+
+/* -------------- Navigation Bar -------------- */
 
 #nav-bar {
     position: absolute;
-    right: 1%; 
-    top: 28vh; /* Adjust to align with the figure section */
+    top: 0;
+    right: 0;
+    margin: 13px auto 0 auto;
+    padding: 0.9rem;
     display: flex;
-    align-items: center;
-    padding: 10px;
+    justify-content: flex-end;
+    align-items: flex-end;
     background-color: transparent;
     z-index: 1000; /* Ensures it stays above other elements */
 }
@@ -86,7 +126,7 @@ body {
 #nav-menu {
     list-style: none;
     padding: 0;
-    margin: 10px 8px 2px 2px;
+    margin: 10px 15px 2px 2px;
     display: none;
     background-color: #1b1b32; /* Dark background for dropdown */
     position: absolute;
@@ -97,6 +137,8 @@ body {
     border-radius: 5px;
     border: 0.5px solid #d8e3ef;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    max-height: fit-content;
 }
 
 .menu-checkbox:checked + .nav-button + #nav-menu {
@@ -114,7 +156,7 @@ body {
 #nav-menu li a {
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 17.21px;
     letter-spacing: 0.3px;
     display: block;
     padding: 4px 10px;
@@ -127,34 +169,12 @@ body {
     color: #0e0e85;
 }
 
-/* ------------ Main - Figure Section -------------- */
-
-#img-div {
-    padding: 0.9rem;
-    display: block;
-}
-
-#image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 0.5rem;
-    box-shadow: 6px 10px 13px 4px rgba(0, 0, 0, 0.2);
-    border: 2px solid #06064cb4;
-}
-
-#img-caption {
-    font-size: 0.93rem;
-    font-weight: bold;
-    font-style: italic;
-    text-shadow: 0.8px 0.8px #7575e8f1;
-    color: #06064cdf;
-    margin-top: 1.3rem;
-    letter-spacing: 0.3px;
-}
-
 /* ---------------- Main - Section Elements ------------------- */
+
+#tribute-info {
+    margin-top: 0;
+    margin-bottom: 5rem;
+}
 
 .background {
     background: linear-gradient(to right, #E3F2FD, #BBDEFB);
@@ -387,12 +407,11 @@ section p {
 
 footer {
     background: linear-gradient(to right, #E3F2FD, #BBDEFB);
-    margin-top: 5rem;
     display: block;
 }
 
 #copyright {
-    font-size: 0.85rem;
+    font-size: 0.87rem;
     letter-spacing: 0.2px;
     color: #d8e3ef;
     padding: 0.85rem;
@@ -447,6 +466,8 @@ footer {
     }
 }
 
+/* ------ Media Queries - Time Line -------- */
+
 @media (max-width: 768px) {
     .timeline::before {
         left: 20px;
@@ -469,10 +490,12 @@ footer {
     .timeline-container {     
         padding: 2rem 4rem 3rem 2rem;
     } 
+   
+    /* ------ Media Queries - Navigation Bar -------- */
 
     #nav-bar {
-        top: 28vh; /* Further adjust for mobile screens */
-        right: 1%;
+        top: 0; 
+        right: 0;
     }
 
     .nav-button img {
@@ -481,28 +504,108 @@ footer {
     }
 
     #nav-menu {
-        max-width: 80vw; /* Prevents horizontal overflow */
-        max-height: 300px; /* Prevents excessive height */
+        max-height: 250px; /* Prevents excessive height */
         overflow-y: auto; /* Scrollable if content exceeds */
         font-size: 16px; /* Smaller font size */
-    }      
+        max-width: 80px;
+        overflow-x: auto;   
+        /* min-width: max-content; */
+        white-space: nowrap; /* Prevents text wrapping */
+    }     
+
+    #nav-menu li:nth-child(5) a:hover {
+        background-color: #d8e3ef;
+        border-radius: 5px;
+        color: #0e0e85;
+        width: 100%; /* Ensures full highlight */
+    }
+
+    #header h1 {
+        line-height: 1.2; /* Ensures proper spacing for wrapped lines */
+        word-break: break-word; /* Ensures text does not overflow */
+    }
+
+    #learnmore p, #highlights ul, #titles ul, #awards ul, #books ul, #achievements ul, #sayings p {
+        text-align: justify;
+        margin: 1rem;
+    }
+
+    #learnmore p, #highlights li, #titles li, #awards li, #books li, #achievements li, #memorials li, #quotes li, #sayings p {
+        line-height: 2.3;
+    }
 }
 
-@media (max-width: 600px) {
-    section {
-        padding: 1rem; /* Reduce padding */
-        margin: 1rem;
+@media (max-width: 480px) {
+    #nav-bar {
+        top: 0;
+        right: 0;
+    }
+
+    .nav-button img {
+        width: 35px;
+        height: 35px;
+    }
+
+    #nav-menu {
+        max-height: 200px;
+        overflow-y: auto; 
+        font-size: 16px; 
+        max-width: 80px;
+        overflow-x: auto;   
+        white-space: nowrap;
+    }    
+
+    #nav-menu li:nth-child(5) a:hover {
+        background-color: #d8e3ef;
+        border-radius: 5px;
+        color: #0e0e85;
+        width: 100%; 
+    }
+
+    #header h1 {
+        line-height: 1.2; 
+        word-break: break-word; 
     }
 }
 
 @media (max-width: 1024px) {
     #nav-bar {
-        top: 28vh; /* Adjust height for smaller screens */
-        right: 1%;
+        top: 0; 
+        right: 0;
+    }
+
+    .nav-button img {
+        width: 35px;
+        height: 35px;
     }
 
     #nav-menu {
-        width: 150px; /* Slightly smaller for smaller screens */      
-        font-size: 16px; /* Smaller font size */  
-    }    
+        font-size: 16px;     
+        max-height: 300px;
+        overflow-y: auto;     
+        max-width: 150px;
+        overflow-x: auto;   
+        white-space: nowrap;
+    }      
+
+    #nav-menu li:nth-child(5) a:hover {
+        background-color: #d8e3ef;
+        border-radius: 5px;
+        color: #0e0e85;
+        width: 100%; 
+    }
+
+    #header h1 {
+        line-height: 1.4; 
+        word-break: break-word; 
+    }
+
+    #header h1 {
+        line-height: 1.2; 
+        word-break: break-word; 
+    }
+
+    #titles li{
+        margin-left: 1rem;
+    }
 }
