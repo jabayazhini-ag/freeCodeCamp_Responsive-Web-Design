@@ -1,4 +1,4 @@
-# 🌐 freeCodeCamp Responsive Web Design Certification Projects
+# 🌐 [freeCodeCamp Responsive Web Design Certification Projects](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
 
 Welcome to my **freeCodeCamp Responsive Web Design Certification** repository! This collection showcases the projects I built while completing the freeCodeCamp Responsive Web Design curriculum. Each project applies core web development principles, including HTML5 and CSS3, to create visually appealing and responsive web pages.
 
