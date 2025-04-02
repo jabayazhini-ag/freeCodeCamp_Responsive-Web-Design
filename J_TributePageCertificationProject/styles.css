@@ -530,8 +530,12 @@ footer {
         margin: 1rem;
     }
 
-    #learnmore p, #highlights li, #titles li, #awards li, #books li, #achievements li, #memorials li, #quotes li, #sayings p {
+    #learnmore p, #highlights li, #titles li, #awards li, #books li, #achievements li, #memorials li, #quotes li {
         line-height: 2.3;
+    }
+
+    #sayings p {
+        line-height: 2;
     }
 }
 
@@ -565,6 +569,19 @@ footer {
     #header h1 {
         line-height: 1.2; 
         word-break: break-word; 
+    }
+    
+    #learnmore p, #highlights ul, #titles ul, #awards ul, #books ul, #achievements ul, #sayings p {
+        text-align: justify;
+        margin: 1rem;
+    }
+
+    #learnmore p, #highlights li, #titles li, #awards li, #books li, #achievements li, #memorials li, #quotes li {
+        line-height: 2.3;
+    }
+
+    #sayings p {
+        line-height: 2;
     }
 }
 
@@ -607,5 +624,18 @@ footer {
 
     #titles li{
         margin-left: 1rem;
+    }
+
+    #learnmore p, #highlights ul, #titles ul, #awards ul, #books ul, #achievements ul, #sayings p {
+        text-align: justify;
+        margin: 1rem;
+    }
+
+    #learnmore p, #highlights li, #titles li, #awards li, #books li, #achievements li, #memorials li, #quotes li {
+        line-height: 2.3;
+    }
+
+    #sayings p {
+        line-height: 2;
     }
 }
