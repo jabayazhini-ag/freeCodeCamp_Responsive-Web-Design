@@ -41,7 +41,7 @@ Explore the live demos below to see the projects in action:
 
 ## 📌 About This Repository
 
-This repository is a testament to my journey in mastering **responsive web design**. It includes real-world applications of:
+This repository is a testament to my journey in mastering **Responsive Web Design**. It includes real-world applications of:
 
 - ✅ **Semantic HTML5** for well-structured and accessible content
 - 🎨 **CSS3 Styling Techniques** to design visually appealing layouts
