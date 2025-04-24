@@ -36,15 +36,25 @@ Explore the live demos below to see the projects in action:
 10. 🏅 [Tribute Page (Certification Project)](https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/)  
    *A tribute page honoring Dr. A.P.J. Abdul Kalam, applying responsive design and semantic structure.*
 
+11. 💹 [Balance Sheet CSS Pseudo Selectors](https://balance-sheet-css-pseudoselectors-fcc.netlify.app/)  
+   *A balance sheet layout styled using CSS pseudo selectors like `:hover`, `:nth-child`, and `:last-child` to enhance visual presentation and user interaction.*
+
 ## 📌 About This Repository
 
 This repository is a testament to my journey in mastering **responsive web design**. It includes real-world applications of:
 
-- Semantic HTML5 for meaningful and accessible content structure
-- CSS3 for responsive layouts and visual aesthetics
-- Best practices in form handling, Flexbox, and accessibility
+- ✅ **Semantic HTML5** for well-structured and accessible content
+- 🎨 **CSS3 Styling Techniques** to design visually appealing layouts
+- 📐 **CSS Box Model and Positioning** (static, relative, absolute, fixed, sticky) to control element layout
+- 🧩 **Flexbox and CSS Grid** to build responsive, adaptable structures
+- 🎭 **CSS Pseudo Selectors** (like `:hover`, `:nth-child`, and `:last-child`) to style specific elements dynamically
+- 🎨 **CSS Variables** for reusable and maintainable styling
+- 🌀 **CSS Transitions, Transforms, and Animations** for smooth interactions and engaging UI effects
+- 🌍 **Responsive Design Principles**, including media queries, to ensure usability across all devices
+- 🧪 **Form Design and Validation**, focusing on input types, fieldsets, labels, and accessibility practices
+- ♿ **Accessibility Best Practices** to create inclusive and user-friendly experiences
 
-Feel free to explore the projects and get inspired. Contributions and feedback are always welcome!
+Feel free to explore the live projects and source code. Feedback and collaboration are always welcome!
 
 ---
 
