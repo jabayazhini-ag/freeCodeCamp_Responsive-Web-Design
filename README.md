@@ -7,13 +7,13 @@ Explore the live demos below to see the projects in action:
 ## 📋 Project List
 
 1. 🐱 [Cat Photo App](https://cat-photo-app-freecodecamp-project.netlify.app/)  
-   *A playful webpage featuring adorable cat photos while demonstrating basic HTML and CSS structure.*
+   *A beginner-friendly HTML project showcasing text elements, lists, images, and a form to collect user input—built without CSS.*
 
 2. ☕ [Cafe Menu](https://cafe-menu-freecodecamp-project.netlify.app/)  
    *A simple yet elegant cafe menu designed using semantic HTML and styled with CSS.*
 
 3. 🎨 [Colored Markers](https://colored-markers-freecodecamp-project.netlify.app/)  
-   *A visually vibrant project showcasing colored markers using CSS styling techniques.*
+   *A colorful layout demonstrating CSS color values and combinations through styled marker examples.*
 
 4. 📄 [Registration Form](https://registration-form-freecodecampproject.netlify.app/)  
    *A responsive registration form implementing form elements and validation best practices.*
