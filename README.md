@@ -40,7 +40,7 @@ Explore the live demos below to see the projects in action:
    *A balance sheet layout styled with CSS pseudo selectors to enhance visual appeal and interactivity.*
 
 12. 🎨 [Cat Painting](https://cat-painting-css-positioning-fcc.netlify.app/)  
-    *A project showcasing the use of CSS positioning properties to construct a structured digital illustration.*
+    *A layout showcasing the use of CSS positioning properties to construct a structured digital illustration.*
 
 ## 📌 About This Repository
 
