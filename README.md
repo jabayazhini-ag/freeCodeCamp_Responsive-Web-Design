@@ -7,7 +7,7 @@ Explore the live demos below to see the projects in action:
 ## 📋 Project List
 
 1. 🐱 [Cat Photo App](https://cat-photo-app-freecodecamp-project.netlify.app/)  
-   *A beginner-friendly HTML project showcasing text elements, lists, images, and a form to collect user input—built without CSS.*
+   *A beginner-friendly HTML project showcasing text elements, lists, images, and a form to collect user input, built without CSS.*
 
 2. ☕ [Cafe Menu](https://cafe-menu-freecodecamp-project.netlify.app/)  
    *A simple yet elegant cafe menu designed using semantic HTML and styled with CSS.*
