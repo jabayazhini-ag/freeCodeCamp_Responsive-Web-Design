@@ -37,7 +37,7 @@ Explore the live demos below to see the projects in action:
    *A tribute page honoring Dr. A.P.J. Abdul Kalam, applying responsive design and semantic structure.*
 
 11. 💹 [Balance Sheet CSS Pseudo Selectors](https://balance-sheet-css-pseudoselectors-fcc.netlify.app/)  
-   *A balance sheet layout styled using CSS pseudo selectors like `:hover`, `:nth-child`, and `:last-child` to enhance visual presentation and user interaction.*
+   *A balance sheet layout styled with CSS pseudo selectors to enhance visual appeal and interactivity.*
 
 ## 📌 About This Repository
 
