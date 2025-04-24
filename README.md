@@ -55,7 +55,7 @@ This repository is a testament to my journey in mastering **Responsive Web Desig
 - 🌀 **Transitions, Transforms, Animations**: Adding smooth effects and dynamic visuals
 - 🌐 **Responsive Design**: Making sites adaptable using media queries
 - 📄 **Form Design**: Structuring inputs, fieldsets, labels, and validations for usability
-- ♿ **Accessibility**: Prioritizing inclusive web experiences for all users
+- 🔍 **Accessibility**: Prioritizing inclusive web experiences for all users
 
 Feel free to explore the live projects and source code. Your feedback is appreciated!
 
