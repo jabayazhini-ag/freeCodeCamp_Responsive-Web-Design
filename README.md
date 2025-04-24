@@ -36,10 +36,10 @@ Explore the live demos below to see the projects in action:
 10. 🏅 [Tribute Page (Certification Project)](https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/)  
    *A tribute page honoring Dr. A.P.J. Abdul Kalam, applying responsive design and semantic structure.*
 
-11. 💹 [Balance Sheet CSS Pseudo Selectors](https://balance-sheet-css-pseudoselectors-fcc.netlify.app/)  
+11. 💹 [Balance Sheet](https://balance-sheet-css-pseudoselectors-fcc.netlify.app/)  
    *A balance sheet layout styled with CSS pseudo selectors to enhance visual appeal and interactivity.*
 
-12. 🎨 [Cat Painting – CSS Positioning](https://cat-painting-css-positioning-fcc.netlify.app/)  
+12. 🎨 [Cat Painting](https://cat-painting-css-positioning-fcc.netlify.app/)  
     *A project showcasing the use of CSS positioning properties to construct a structured digital illustration.*
 
 ## 📌 About This Repository
