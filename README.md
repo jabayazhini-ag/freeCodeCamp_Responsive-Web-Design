@@ -39,6 +39,9 @@ Explore the live demos below to see the projects in action:
 11. 💹 [Balance Sheet CSS Pseudo Selectors](https://balance-sheet-css-pseudoselectors-fcc.netlify.app/)  
    *A balance sheet layout styled with CSS pseudo selectors to enhance visual appeal and interactivity.*
 
+12. 🎨 [Cat Painting – CSS Positioning](https://cat-painting-css-positioning-fcc.netlify.app/)  
+    *A project showcasing the use of CSS positioning properties to construct a structured digital illustration.*
+
 ## 📌 About This Repository
 
 This repository is a testament to my journey in mastering **Responsive Web Design**. It includes real-world applications of:
@@ -54,12 +57,11 @@ This repository is a testament to my journey in mastering **Responsive Web Desig
 - 📄 **Form Design**: Structuring inputs, fieldsets, labels, and validations for usability
 - ♿ **Accessibility**: Prioritizing inclusive web experiences for all users
 
-Feel free to explore the live projects and source code. Feedback and collaboration are always welcome!
+Feel free to explore the live projects and source code. Your feedback is appreciated!
 
 ---
 
-**Crafted by Jabayazhini G** 💻✨
-
+**Crafted by Jabayazhni G** 💻✨
 
 **LinkedIn:** [Jabayazhini G](https://www.linkedin.com/in/jabayazhini-ag/)  
 **GitHub:** [Jabayazhini AG](https://github.com/jabayazhini-ag)
