@@ -45,7 +45,7 @@ Explore the live demos below to see the projects in action:
 13. 🎹 [Piano Responsive Design](https://piano-responsive-design-freecodecamp.netlify.app/)  
     *A hands-on exercise that showcases responsive design by constructing a digital piano using structured HTML and adaptive CSS.*
 
-14. 📚 Technical Documentation Page (Certification Project)
+14. 📚 [Technical Documentation Page (Certification Project)]
     *A structured webpage designed to present technical documentation clearly, using semantic HTML elements and responsive CSS styling.*
 
 ## 📌 About This Repository
