@@ -9,7 +9,7 @@ Explore the live demos below to see the projects in action:
 1. 🐱 [Cat Photo App](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-html-by-building-a-cat-photo-app)  
    *A beginner-friendly HTML project featuring text, lists, images, and a user input form without CSS.*
    
-   🔗 **Live Link:** [https://cat-photo-app-freecodecamp-project.netlify.app/](https://cat-photo-app-freecodecamp-project.netlify.app/)
+🔗 **Live Link:** [https://cat-photo-app-freecodecamp-project.netlify.app/](https://cat-photo-app-freecodecamp-project.netlify.app/)
 
 3. ☕ [Cafe Menu](https://cafe-menu-freecodecamp-project.netlify.app/)  
    *A simple yet elegant cafe menu designed using semantic HTML and styled with CSS.*
