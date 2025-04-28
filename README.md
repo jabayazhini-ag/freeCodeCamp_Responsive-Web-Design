@@ -98,51 +98,51 @@ Explore the live demos below to see the projects in action:
 
 10. 🏅 [Tribute Page (Certification Project)](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page)
     
-   *A tribute page honoring Dr. A.P.J. Abdul Kalam, applying responsive design and semantic structure.*
+     *A tribute page honoring Dr. A.P.J. Abdul Kalam, applying responsive design and semantic structure.*
 
-   🔗 **Live Link:** [https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/](https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/)
+    🔗 **Live Link:** [https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/](https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/)
 
-   📂 **Source Code:** GitHub Repository Link - [Tribute Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/J_TributePageCertificationProject)
+    📂 **Source Code:** GitHub Repository Link - [Tribute Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/J_TributePageCertificationProject)
 
-   ---  
+    ---  
 
 11. 💹 [Learn more about CSS Pseudo Selectors by Building a Balance Sheet](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-more-about-css-pseudo-selectors-by-building-a-balance-sheet)
     
-   *A balance sheet layout styled with CSS pseudo selectors to enhance visual appeal and interactivity.*
+    *A balance sheet layout styled with CSS pseudo selectors to enhance visual appeal and interactivity.*
 
-   🔗 **Live Link:** [https://balance-sheet-css-pseudoselectors-fcc.netlify.app/](https://balance-sheet-css-pseudoselectors-fcc.netlify.app/)
+    🔗 **Live Link:** [https://balance-sheet-css-pseudoselectors-fcc.netlify.app/](https://balance-sheet-css-pseudoselectors-fcc.netlify.app/)
 
-   📂 **Source Code:** GitHub Repository Link - [Balance Sheet Pseudo Selectors](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/K_BalanceSheetPseudoSelectors)
-
-   ---   
-
-12. 🎨 [Learn Intermediate CSS by Building a Cat Painting](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-intermediate-css-by-building-a-cat-painting)
-    
-    *A layout showcasing the use of CSS positioning properties to construct a structured digital illustration.*
-
-    🔗 **Live Link:** [https://cat-painting-css-positioning-fcc.netlify.app/](https://cat-painting-css-positioning-fcc.netlify.app/)
-
-    📂 **Source Code:** GitHub Repository Link - [Cat Painting CSS Positioning](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/L_CatPaintingCSSPositioning)
+    📂 **Source Code:** GitHub Repository Link - [Balance Sheet Pseudo Selectors](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/K_BalanceSheetPseudoSelectors)
 
     ---   
 
+12. 🎨 [Learn Intermediate CSS by Building a Cat Painting](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-intermediate-css-by-building-a-cat-painting)
+    
+     *A layout showcasing the use of CSS positioning properties to construct a structured digital illustration.*
+
+     🔗 **Live Link:** [https://cat-painting-css-positioning-fcc.netlify.app/](https://cat-painting-css-positioning-fcc.netlify.app/)
+
+     📂 **Source Code:** GitHub Repository Link - [Cat Painting CSS Positioning](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/L_CatPaintingCSSPositioning)
+
+     ---   
+
 13. 🎹 [Learn Responsive Web Design by Building a  Piano](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-responsive-web-design-by-building-a-piano)
     
-    *A hands-on exercise that showcases responsive design by constructing a digital piano using structured HTML and adaptive CSS.*
+     *A hands-on exercise that showcases responsive design by constructing a digital piano using structured HTML and adaptive CSS.*
 
-    🔗 **Live Link:** [https://piano-responsive-design-freecodecamp.netlify.app/](https://piano-responsive-design-freecodecamp.netlify.app/)
+     🔗 **Live Link:** [https://piano-responsive-design-freecodecamp.netlify.app/](https://piano-responsive-design-freecodecamp.netlify.app/)
 
-    📂 **Source Code:** GitHub Repository Link - [Piano Responsive Design](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/M_PianoResponsiveDesign)
+     📂 **Source Code:** GitHub Repository Link - [Piano Responsive Design](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/M_PianoResponsiveDesign)
 
     --- 
 
 14. 📚 [Technical Documentation Page (Certification Project)](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page)
     
-    *A structured webpage designed to present technical documentation clearly, using semantic HTML elements and responsive CSS styling.*
+     *A structured webpage designed to present technical documentation clearly, using semantic HTML elements and responsive CSS styling.*
 
-    🔗 **Live Link:**
+     🔗 **Live Link:**
 
-    📂 **Source Code:** GitHub Repository Link - [Technical Documentation Page]
+     📂 **Source Code:** GitHub Repository Link - [Technical Documentation Page]
     
 
 ## 📌 About This Repository
