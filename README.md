@@ -12,7 +12,7 @@ Explore the live demos below to see the projects in action:
    
    🔗 **Live Link:** [https://cat-photo-app-freecodecamp-project.netlify.app/](https://cat-photo-app-freecodecamp-project.netlify.app/)
 
-   ## 📂 Source Code: [Cat Photo App](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/A_CatPhotoApp)
+   📂 **Source Code:** [Cat Photo App](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/A_CatPhotoApp)
    
 
 3. ☕ [Cafe Menu](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-basic-css-by-building-a-cafe-menu)
