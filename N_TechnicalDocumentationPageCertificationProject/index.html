@@ -272,163 +272,183 @@
                     <li><strong>Non-Primitive Types:</strong> String, Arrays, Classes</li>
                 </ul>
 
-                <code>
-// Variable declarations<br>
+                <pre><code>
+// Variable declarations
 
-int age = 25;<br>
+int age = 25;
 
-double salary = 50000.50;<br>
+double salary = 50000.50;
 
-boolean isEmployed = true;<br>
+boolean isEmployed = true;
 
-char grade = 'A';<br>
+char grade = 'A';
 
 String name = "John Doe";
-<br><br>
 
-// Operators<br>
-int a = 10, b = 20;<br>
-int sum = a + b;        // Arithmetic<br>
-boolean isEqual = (a == b);  // Comparison<br>
-boolean result = (a > 5) && (b < 30);  // Logical<br>
-                </code>
+// Operators
+int a = 10, b = 20;
+int sum = a + b;        // Arithmetic
+boolean isEqual = (a == b);  // Comparison
+boolean result = (a > 5) && (b < 30);  // Logical
+                </code></pre>
 
                 <h3>2. Conditional Statements</h3>
                 <p>Control the flow of program execution based on conditions.</p>
 
-                <code>
-// If statement<br>
-if (age >= 18) {<br>
-    System.out.println("Adult");<br>
-}<br><br>
-
-// If-else<br>
-if (score >= 60) {<br>
-    System.out.println("Pass");<br>
-} else {<br>
-    System.out.println("Fail");<br>
-}<br><br>
-
-// Nested if-else<br>
-if (marks >= 90) {<br>
-    grade = 'A';<br>
-} else if (marks >= 80) {<br>
-    grade = 'B';<br>
-} else if (marks >= 70) {<br>
-    grade = 'C';<br>
-} else {<br>
-    grade = 'F';<br>
-}<br><br>
-
-// Switch case<br>
-switch (day) {<br>
-    case 1:<br>
-        System.out.println("Monday");<br>
-        break;<br>
-    case 2:<br>
-        System.out.println("Tuesday");<br>
-        break;<br>
-    default:<br>
-        System.out.println("Other day");<br>
+                <pre><code>
+// If statement
+if (age >= 18) {
+    System.out.println("Adult");
 }
-                </code>
+
+// If-else
+if (score >= 60) {
+    System.out.println("Pass");
+} else {
+    System.out.println("Fail");
+}
+
+// Ladder if-else & Nested if-else
+public class IfElseExample {
+    public static void main(String[] args) {
+        int score = 75;
+
+        // Ladder if-else
+        if (score >= 90) {
+            System.out.println("Grade A");
+        } else if (score >= 80) {
+            System.outினுprintln("Grade B");
+        } else if (score >= 70) {
+            System.out.println("Grade C");
+        } else {
+            System.out.println("Grade D");
+        }
+
+        // Nested if-else
+        int age = 20;
+        boolean hasLicense = true;
+
+        if (age >= 18) {
+            if (hasLicense) {
+                System.out.println("Eligible to drive");
+            } else {
+                System.out.println("Not eligible to drive without a license");
+            }
+        } else {
+            System.out.println("Not eligible to drive due to age");
+        }
+    }
+}
+
+// Switch case
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    default:
+        System.out.println("Other day");
+}
+                </code></pre>
 
                 <h3>3. Looping Statements</h3>
                 <p>Repeat a block of code multiple times.</p>
 
-                <code>
-// For loop<br>
-for (int i = 0; i < 10; i++) {<br>
-    System.out.println("Count: " + i);<br>
-}<br><br>
-
-// While loop<br>
-int count = 0;<br>
-while (count < 5) {<br>
-    System.out.println(count);<br>
-    count++;<br>
-}<br><br>
-
-// Do-while loop<br>
-int num = 1;<br>
-do {<br>
-    System.out.println(num);<br>
-    num++;<br>
-} while (num <= 3);<br><br>
-
-// Nested loops<br>
-for (int i = 1; i <= 3; i++) {<br>
-    for (int j = 1; j <= 3; j++) {<br>
-        System.out.print(i * j + " ");<br>
-    }<br>
-    System.out.println();<br>
+                <pre><code>
+// For loop
+for (int i = 0; i < 10; i++) {
+    System.out.println("Count: " + i);
 }
-                </code>
+
+// While loop
+int count = 0;
+while (count < 5) {
+    System.out.println(count);
+    count++;
+}
+
+// Do-while loop
+int num = 1;
+do {
+    System.out.println(num);
+    num++;
+} while (num <= 3);
+
+// Nested loops
+for (int i = 1; i <= 3; i++) {
+    for (int j = 1; j <= 3; j++) {
+        System.out.print(i * j + " ");
+    }
+    System.out.println();
+}
+                </code></pre>
 
                 <h3>4. Functions (Methods)</h3>
                 <p>Reusable blocks of code that perform specific tasks.</p>
 
-                <code>
-// Method declaration<br>
-public static int add(int a, int b) {<br>
-    return a + b;<br>
-}<br><br>
-
-// Method with void return type<br>
-public static void printMessage(String message) {<br>
-    System.out.println(message);<br>
-}<br><br>
-
-// Method overloading<br>
-public static int multiply(int a, int b) {<br>
-    return a * b;<br>
-}<br>
-
-public static double multiply(double a, double b) {<br>
-    return a * b;<br>
+                <pre><code>
+// Method declaration
+public static int add(int a, int b) {
+    return a + b;
 }
-                </code>
+
+// Method with void return type
+public static void printMessage(String message) {
+    System.out.println(message);
+}
+
+// Method overloading
+public static int multiply(int a, int b) {
+    return a * b;
+}
+
+public static double multiply(double a, double b) {
+    return a * b;
+}
+                </code></pre>
 
                 <h3>5. Arrays</h3>
                 <p>Store multiple values of the same type in a single variable.</p>
 
-                <code>
-// 1D Array<br>
-int[] numbers = {1, 2, 3, 4, 5};<br>
-int[] scores = new int[10];<br><br>
+                <pre><code>
+// 1D Array
+int[] numbers = {1, 2, 3, 4, 5};
+int[] scores = new int[10];
 
-// Accessing array elements<br>
-System.out.println(numbers[0]); // First element<br>
-numbers[1] = 20; // Modify element<br><br>
+// Accessing array elements
+System.out.println(numbers[0]); // First element
+numbers[1] = 20; // Modify element
 
-// 2D Array<br>
-int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};<br>
-int[][] grid = new int[3][3];<br><br>
+// 2D Array
+int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+int[][] grid = new int[3][3];
 
-// Accessing 2D array<br>
-System.out.println(matrix[0][1]); // Output: 2<br>
+// Accessing 2D array
+System.out.println(matrix[0][1]); // Output: 2
 matrix[1][2] = 10;
-                </code>
+                </code></pre>
 
                 <h3>6. String & String Methods</h3>
                 <p>Handle text data with built-in string manipulation methods.</p>
 
-                <code>
-String str = "Hello World";<br><br>
+                <pre><code>
+String str = "Hello World";
 
-// String methods<br>
-int length = str.length();<br>
-String upper = str.toUpperCase();<br>
-String lower = str.toLowerCase();<br>
-char charAt = str.charAt(0);<br>
-String substring = str.substring(0, 5);<br>
-boolean contains = str.contains("World");<br>
-String replaced = str.replace("World", "Java");<br><br>
+// String methods
+int length = str.length();
+String upper = str.toUpperCase();
+String lower = str.toLowerCase();
+char charAt = str.charAt(0);
+String substring = str.substring(0, 5);
+boolean contains = str.contains("World");
+String replaced = str.replace("World", "Java");
 
-// String concatenation<br>
-String fullName = firstName + " " + lastName;<br>
-String formatted = String.format("Name: %s, Age: %d", name, age);<br>
-                </code>
+// String concatenation
+String fullName = firstName + " " + lastName;
+String formatted = String.format("Name: %s, Age: %d", name, age);
+                </code></pre>
 
                 <div class="highlight">
                     <p><strong>Note:</strong> StringBuffer and StringBuilder were not newly introduced in Java 8. They
@@ -436,135 +456,135 @@ String formatted = String.format("Name: %s, Age: %d", name, age);<br>
                         StringBuilder in Java 1.5.</p>
                 </div>
 
-                <code>
-// StringBuffer (thread-safe)<br>
-StringBuffer sb = new StringBuffer("Hello");<br>
-sb.append(" World");<br>
-sb.insert(5, " Beautiful");<br><br>
+                <pre><code>
+// StringBuffer (thread-safe)
+StringBuffer sb = new StringBuffer("Hello");
+sb.append(" World");
+sb.insert(5, " Beautiful");
 
-// StringBuilder (not thread-safe, faster)<br>
-StringBuilder builder = new StringBuilder();<br>
-builder.append("Java");<br>
-builder.append(" Programming");<br>
-String result = builder.toString();<br>
-                </code>
+// StringBuilder (not thread-safe, faster)
+StringBuilder builder = new StringBuilder();
+builder.append("Java");
+builder.append(" Programming");
+String result = builder.toString();
+                </code></pre>
 
                 <h3>7. Math Methods</h3>
                 <p>Perform mathematical operations using built-in Math class.</p>
 
-                <code>
-// Common Math methods<br>
-double result1 = Math.pow(2, 3);        // 8.0<br>
-double result2 = Math.sqrt(16);         // 4.0<br>
-double result3 = Math.abs(-10);         // 10.0<br>
-double result4 = Math.max(10, 20);      // 20.0<br>
-double result5 = Math.min(10, 20);      // 10.0<br>
-double result6 = Math.random();         // Random between 0.0 and 1.0<br>
-double result7 = Math.ceil(4.3);        // 5.0<br>
-double result8 = Math.floor(4.7);       // 4.0<br>
-double result9 = Math.round(4.6);       // 5<br>
-                </code>
+                <pre><code>
+// Common Math methods
+double result1 = Math.pow(2, 3);        // 8.0
+double result2 = Math.sqrt(16);         // 4.0
+double result3 = Math.abs(-10);         // 10.0
+double result4 = Math.max(10, 20);      // 20.0
+double result5 = Math.min(10, 20);      // 10.0
+double result6 = Math.random();         // Random between 0.0 and 1.0
+double result7 = Math.ceil(4.3);        // 5.0
+double result8 = Math.floor(4.7);       // 4.0
+double result9 = Math.round(4.6);       // 5.0
+                </code></pre>
 
                 <h3>8. Date & Time</h3>
                 <p>Handle date and time operations (Java 8+ java.time package).</p>
 
-                <code>
-// Java 8 Date-Time API<br>
-LocalDate today = LocalDate.now();<br>
-LocalTime currentTime = LocalTime.now();<br>
-LocalDateTime dateTime = LocalDateTime.now();<br><br>
+                <pre><code>
+// Java 8 Date-Time API
+LocalDate today = LocalDate.now();
+LocalTime currentTime = LocalTime.now();
+LocalDateTime dateTime = LocalDateTime.now();
 
-// Creating specific dates<br>
-LocalDate specificDate = LocalDate.of(2024, 12, 25);<br>
-LocalTime specificTime = LocalTime.of(14, 30, 0);<br><br>
+// Creating specific dates
+LocalDate specificDate = LocalDate.of(2024, 12, 25);
+LocalTime specificTime = LocalTime.of(14, 30, 0);
 
-// Formatting<br>
-DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");<br>
-String formattedDate = today.format(formatter);<br><br>
+// Formatting
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+String formattedDate = today.format(formatter);
 
-// Date calculations<br>
-LocalDate nextWeek = today.plusWeeks(1);<br>
+// Date calculations
+LocalDate nextWeek = today.plusWeeks(1);
 LocalDate lastMonth = today.minusMonths(1);
-                </code>
+                </code></pre>
 
                 <h3>9. File Operations</h3>
                 <p>Read from and write to files using Java I/O classes.</p>
 
-                <code>
-// Reading a file<br>
-try {<br>
-    Scanner fileReader = new Scanner(new File("input.txt"));<br>
-    while (fileReader.hasNextLine()) {<br>
-        String line = fileReader.nextLine();<br>
-        System.out.println(line);<br>
-    }<br>
-    fileReader.close();<br>
-} catch (FileNotFoundException e) {<br>
-    System.out.println("File not found: " + e.getMessage());<br>
-}<br><br>
-
-// Writing to a file<br>
-try {<br>
-    FileWriter writer = new FileWriter("output.txt");<br>
-    writer.write("Hello, World!");<br>
-    writer.close();<br>
-} catch (IOException e) {<br>
-    System.out.println("Error writing to file: " + e.getMessage());<br>
+                <pre><code>
+// Reading a file
+try {
+    Scanner fileReader = new Scanner(new File("input.txt"));
+    while (fileReader.hasNextLine()) {
+        String line = fileReader.nextLine();
+        System.out.println(line);
+    }
+    fileReader.close();
+} catch (FileNotFoundException e) {
+    System.out.println("File not found: " + e.getMessage());
 }
-                </code>
+
+// Writing to a file
+try {
+    FileWriter writer = new FileWriter("output.txt");
+    writer.write("Hello, World!");
+    writer.close();
+} catch (IOException e) {
+    System.out.println("Error writing to file: " + e.getMessage());
+}
+                </code></pre>
 
                 <h3>10. Exception Handling</h3>
                 <p>Handle runtime errors gracefully to prevent program crashes.</p>
 
-                <code>
+                <pre><code>
 // Try-catch block
-try {<br>
-    int result = 10 / 0;<br>
-} catch (ArithmeticException e) {<br>
-    System.out.println("Cannot divide by zero: " + e.getMessage());<br>
-} finally {<br>
-    System.out.println("This block always executes");<br>
-}<br><br>
+try {
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Cannot divide by zero: " + e.getMessage());
+} finally {
+    System.out.println("This block always executes");
+}
 
-// Multiple catch blocks<br>
-try {<br>
-    int[] arr = {1, 2, 3};<br>
-    System.out.println(arr[5]);<br>
-} catch (ArrayIndexOutOfBoundsException e) {<br>
-    System.out.println("Array index out of bounds");<br>
-} catch (Exception e) {<br>
-    System.out.println("General exception: " + e.getMessage());<br>
-}<br><br>
+// Multiple catch blocks
+try {
+    int[] arr = {1, 2, 3};
+    System.out.println(arr[5]);
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Array index out of bounds");
+} catch (Exception e) {
+    System.out.println("General exception: " + e.getMessage());
+}
 
-// Throwing custom exceptions<br>
-public static void validateAge(int age) throws IllegalArgumentException {<br>
-    if (age < 0) {<br>
-        throw new IllegalArgumentException("Age cannot be negative");<br>
-    }<br>
-}<br>
-                </code>
+// Throwing custom exceptions
+public static void validateAge(int age) throws IllegalArgumentException {
+    if (age < 0) {
+        throw new IllegalArgumentException("Age cannot be negative");
+    }
+}
+                </code></pre>
 
                 <h3>11. User Input</h3>
                 <p>Accept input from users using Scanner class.</p>
 
-                <code>
-Scanner scanner = new Scanner(System.in);<br><br>
+                <pre><code>
+Scanner scanner = new Scanner(System.in);
 
-// Reading different data types<br>
-System.out.print("Enter your name: ");<br>
-String name = scanner.nextLine();<br><br>
+// Reading different data types
+System.out.print("Enter your name: ");
+String name = scanner.nextLine();
 
-System.out.print("Enter your age: ");<br>
-int age = scanner.nextInt();<br><br>
+System.out.print("Enter your age: ");
+int age = scanner.nextInt();
 
-System.out.print("Enter your salary: ");<br>
-double salary = scanner.nextDouble();<br><br>
+System.out.print("Enter your salary: ");
+double salary = scanner.nextDouble();
 
-System.out.print("Are you employed? (true/false): ");<br>
-boolean employed = scanner.nextBoolean();<br>
+System.out.print("Are you employed? (true/false): ");
+boolean employed = scanner.nextBoolean();
 
 scanner.close();
-                </code>
+                </code></pre>
             </section>
 
             <section class="main-section" id="module2_oops">
@@ -1214,8 +1234,10 @@ Total Counter objects created so far: 3</code></pre>
                 <p>The Java Collections Framework is a set of interfaces and classes that provide a unified architecture
                     for representing and manipulating groups of objects. It offers various data structures and
                     algorithms, reducing programming effort and improving performance. The framework includes interfaces
-                    like <i><b>Collection, List, Set, and Map,</b></i> along with concrete implementations such as <i><b>ArrayList,
-                    LinkedList, HashSet, TreeSet, and HashMap</b></i>. These implementations offer different performance
+                    like <i><b>Collection, List, Set, and Map,</b></i> along with concrete implementations such as
+                    <i><b>ArrayList,
+                            LinkedList, HashSet, TreeSet, and HashMap</b></i>. These implementations offer different
+                    performance
                     characteristics and are suitable for various use cases. The framework also provides algorithms for
                     searching, sorting, and other common operations on collections.
                 </p>
@@ -1224,85 +1246,104 @@ Total Counter objects created so far: 3</code></pre>
                 <p>Collections framework provides various classes like List, Set, and Map to store and manipulate
                     groups of objects.</p>
 
-                <code>
-// List Example<br>
-List<String> list = new ArrayList<>();<br>
-list.add("Apple");<br>
-list.add("Banana");<br>
-System.out.println(list);<br><br>
+                <pre><code>
+import java.util.*;
+public class CollectionExample {
+    public static void main(String[] args) {
+        // List example
+        List<String> list = new ArrayList<>();
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Orange");
+        System.out.println("List: " + list);
 
-// Set Example<br>
-Set<String> set = new HashSet<>();<br>
-set.add("Apple");<br>
-set.add("Apple");<br>
-System.out.println(set); // No duplicates<br><br>
+        // Set example
+        Set<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        set.add(1); // Duplicate, will not be added
+        System.out.println("Set: " + set);
 
-// Map Example<br>
-Map<Integer, String> map = new HashMap<>();<br>
-map.put(1, "Java");<br>
-map.put(2, "Python");<br>
-System.out.println(map.get(1));
-    </code>
+        // Map example
+        Map<String, Integer> map = new HashMap<>();
+        map.put("one", 1);
+        map.put("two", 2);
+        map.put("three", 3);
+        System.out.println("Map: " + map);
+    }
+}
+    </code></pre>
 
                 <h3>2. Iterator & Enhanced For Loop</h3>
                 <p>Used to iterate through collections easily.</p>
 
-                <code>
-// Iterator<br>
-List<String> names = new ArrayList<>();<br>
-names.add("Alice");<br>
-names.add("Bob");<br><br>
+                <pre><code>
+// Iterator
+List<String> names = new ArrayList<>();
+names.add("Alice");
+names.add("Bob");
 
-Iterator<String> itr = names.iterator();<br>
-while (itr.hasNext()) {<br>
-    System.out.println(itr.next());<br>
-}<br><br>
-
-// Enhanced For Loop<br>
-for (String name : names) {<br>
-    System.out.println(name);<br>
+Iterator<String> itr = names.iterator();
+while (itr.hasNext()) {
+    System.out.println(itr.next());
 }
-    </code>
+
+// Enhanced For Loop
+for (String name : names) {
+    System.out.println(name);
+}
+    </code></pre>
 
                 <h3>3. Sorting with Collections</h3>
                 <p>Sort collections using utility methods or comparators.</p>
 
-                <code>
-List<Integer> numbers = Arrays.asList(5, 3, 8, 1);<br>
-Collections.sort(numbers);<br>
-System.out.println(numbers);<br><br>
-
-Collections.sort(numbers, Collections.reverseOrder());<br>
+                <pre><code>
+List<Integer> numbers = Arrays.asList(5, 3, 8, 1);
+Collections.sort(numbers);
 System.out.println(numbers);
-    </code>
+
+Collections.sort(numbers, Collections.reverseOrder());
+System.out.println(numbers);
+    </code></pre>
 
                 <h3>4. Comparable & Comparator</h3>
                 <p>Interfaces to define natural and custom sorting order.</p>
 
-                <code>
-class Student implements Comparable<Student> {<br>
-    int id;<br>
-    String name;<br><br>
+                <pre><code>
+class Student implements Comparable<Student> {
+    int id;
+    String name;
 
-    Student(int id, String name) {<br>
-        this.id = id;<br>
-        this.name = name;<br>
-    }<br><br>
+    Student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
-    public int compareTo(Student s) {<br>
-        return this.id - s.id; // Ascending order<br>
-    }<br>
-}<br><br>
+    public int compareTo(Student s) {
+        return this.id - s.id; // Ascending order
+    }
+}
 
 // Comparator<br>
-class NameComparator implements Comparator<Student> {<br>
-    public int compare(Student s1, Student s2) {<br>
-        return s1.name.compareTo(s2.name);<br>
-    }<br>
-}<br><br>
+class NameComparator implements Comparator<Student> {
+    public int compare(Student s1, Student s2) {
+        return s1.name.compareTo(s2.name);
+    }
+}
 
-Collections.sort(studentList, new NameComparator());<br>
-    </code>
+Collections.sort(studentList, new NameComparator());
+    </code></pre>
+
+                <div class="highlight">
+                    <p><strong>Note:</strong> "Collections" provide the ready-to-use tools, they are a fundamental part
+                        of Data Structures
+                        and Algorithms (DSA), which is the study of how to organize and process data efficiently.
+                        Understanding collections
+                        is key to mastering DSA, as they demonstrate the practical application of different data
+                        structures and their
+                        associated algorithms.</p>
+                </div>
             </section>
 
             <section class="main-section" id="module4_gui">
@@ -1314,20 +1355,20 @@ Collections.sort(studentList, new NameComparator());<br>
                 <p>Swing is a GUI widget toolkit for Java that provides a rich set of components for building
                     graphical interfaces.</p>
 
-                <code>
-import javax.swing.*;<br><br>
+                <pre><code>
+import javax.swing.*;
 
-public class SimpleGUI {<br>
-    public static void main(String[] args) {<br>
-        JFrame frame = new JFrame("My First GUI");<br>
-        JButton button = new JButton("Click Me");<br>
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);<br>
-        frame.getContentPane().add(button);<br>
-        frame.setSize(300, 200);<br>
-        frame.setVisible(true);<br>
-    }<br>
+public class SimpleGUI {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("My First GUI");
+        JButton button = new JButton("Click Me");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(button);
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
 }
-    </code>
+    </code></pre>
             </section>
 
             <section class="main-section" id="module5_database">
@@ -1339,23 +1380,23 @@ public class SimpleGUI {<br>
                 <p>Java Database Connectivity (JDBC) is an API for connecting and executing queries on a database.
                 </p>
 
-                <code>
-import java.sql.*;<br><br>
+                <pre><code>
+import java.sql.*;
 
-public class JdbcExample {<br>
-    public static void main(String[] args) throws Exception {<br>
-        Class.forName("com.mysql.cj.jdbc.Driver");<br>
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbname", "user", "pass");<br>
-        Statement stmt = con.createStatement();<br>
-        ResultSet rs = stmt.executeQuery("SELECT * FROM users");<br><br>
+public class JdbcExample {
+    public static void main(String[] args) throws Exception {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbname", "user", "pass");
+        Statement stmt = con.createStatement();
+        ResultSet rs = stmt.executeQuery("SELECT * FROM users");
 
-        while (rs.next()) {<br>
-            System.out.println(rs.getString(1) + " " + rs.getString(2));<br>
-        }<br>
-        con.close();<br>
-    }<br>
+        while (rs.next()) {
+            System.out.println(rs.getString(1) + " " + rs.getString(2));
+        }
+        con.close();
+    }
 }
-    </code>
+    </code></pre>
             </section>
 
             <section class="main-section" id="module6_spring_boot">
@@ -1367,22 +1408,22 @@ public class JdbcExample {<br>
                 <p>Spring Boot simplifies the setup of Spring applications with default configurations and embedded
                     servers.</p>
 
-                <code>
-@SpringBootApplication<br>
-public class MyApp {<br>
-    public static void main(String[] args) {<br>
-        SpringApplication.run(MyApp.class, args);<br>
-    }<br>
-}<br><br>
-
-@RestController<br>
-class HelloController {<br>
-    @GetMapping("/hello")<br>
-    public String hello() {<br>
-        return "Hello, Spring Boot!";<br>
-    }<br>
+                <pre><code>
+@SpringBootApplication
+public class MyApp {
+    public static void main(String[] args) {
+        SpringApplication.run(MyApp.class, args);
+    }
 }
-    </code>
+
+@RestController
+class HelloController {
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, Spring Boot!";
+    }
+}
+    </code></pre>
             </section>
 
             <section class="main-section" id="module7_aop">
@@ -1394,16 +1435,16 @@ class HelloController {<br>
                 <p>AOP helps separate cross-cutting concerns like logging, security, and transactions from business
                     logic.</p>
 
-                <code>
-@Aspect<br>
-@Component<br>
-public class LoggingAspect {<br>
-    @Before("execution(* com.example.service.*.*(..))")<br>
-    public void logBefore(JoinPoint joinPoint) {<br>
-        System.out.println("Executing: " + joinPoint.getSignature().getName());<br>
-    }<br>
+                <pre><code>
+@Aspect
+@Component
+public class LoggingAspect {
+    @Before("execution(* com.example.service.*.*(..))")
+    public void logBefore(JoinPoint joinPoint) {
+        System.out.println("Executing: " + joinPoint.getSignature().getName());
+    }
 }
-    </code>
+    </code></pre>
             </section>
 
             <section class="main-section" id="module8_thymeleaf">
@@ -1443,17 +1484,17 @@ public class LoggingAspect {<br>
                 </ul>
 
 
-                <code>
-<!DOCTYPE html><br>
-<html xmlns:th="http://www.thymeleaf.org"><br>
-<head><br>
-    <title>Hello</title><br>
-</head><br>
-<body><br>
-    <h1 th:text="'Welcome ' + ${name}">Hello!</h1><br>
-</body><br>
+                <pre><code>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+</head>
+<body>
+    <h1 th:text="'Welcome ' + ${name}">Hello!</h1>
+</body>
 </html>
-    </code>
+    </code></pre>
             </section>
 
             <section class="main-section" id="module9_postman">
@@ -1475,29 +1516,29 @@ public class LoggingAspect {<br>
                 <h3>1. CRUD in Spring Boot</h3>
                 <p>Perform Create, Read, Update, and Delete operations using Spring Data JPA.</p>
 
-                <code>
-@Entity<br>
-class Product {<br>
-    @Id<br>
-    @GeneratedValue<br>
-    private Long id;<br>
-    private String name;<br>
-}<br><br>
+                <pre><code>
+@Entity
+class Product {
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String name;
+}
 
-@Repository<br>
-interface ProductRepository extends JpaRepository<Product, Long> {}<br><br>
+@Repository
+interface ProductRepository extends JpaRepository<Product, Long> {}
 
-@RestController<br>
-class ProductController {<br>
-    @Autowired<br>
-    private ProductRepository repo;<br><br>
+@RestController
+class ProductController {
+    @Autowired
+    private ProductRepository repo;
 
-    @PostMapping("/products")<br>
-    public Product add(@RequestBody Product p) {<br>
-        return repo.save(p);<br>
+    @PostMapping("/products")
+    public Product add(@RequestBody Product p) {
+        return repo.save(p);
     }
 }
-    </code>
+    </code></pre>
             </section>
 
             <section class="main-section" id="java8_features">
@@ -1511,75 +1552,75 @@ class ProductController {<br>
                     <div class="module-card">
                         <h3>Lambda Expressions</h3>
                         <p>Enable functional programming in Java with concise syntax for anonymous functions.</p>
-                        <code>
-// Traditional approach<br>
-Runnable r1 = new Runnable() {<br>
-    public void run() {<br>
-        System.out.println("Hello World");<br>
-    }<br>
-};<br><br>
+                        <pre><code>
+// Traditional approach
+Runnable r1 = new Runnable() {
+    public void run() {
+        System.out.println("Hello World");
+    }
+};
 
-// Lambda expression<br>
+// Lambda expression
 Runnable r2 = () -> System.out.println("Hello World");
-                        </code>
+                        </code></pre>
                     </div>
 
                     <div class="module-card">
                         <h3>Stream API</h3>
                         <p>Process collections in a functional style with filter, map, reduce operations.</p>
-                        <code>
-List&lt;String&gt; names = Arrays.asList("John", "Jane", "Jack");<br>
-names.stream()<br>
-     .filter(name -> name.startsWith("J"))<br>
-     .map(String::toUpperCase)<br>
+                        <pre><code>
+List&lt;String&gt; names = Arrays.asList("John", "Jane", "Jack");
+names.stream()
+     .filter(name -> name.startsWith("J"))
+     .map(String::toUpperCase)
      .forEach(System.out::println);
-                        </code>
+                        </code></pre>
                     </div>
 
                     <div class="module-card">
                         <h3>Method References</h3>
                         <p>Shorthand for lambda expressions when calling existing methods.</p>
-                        <code>
-// Lambda expression<br>
-list.forEach(x -> System.out.println(x));<br><br>
+                        <pre><code>
+// Lambda expression
+list.forEach(x -> System.out.println(x));
 
-// Method reference<br>
+// Method reference
 list.forEach(System.out::println);
-                        </code>
+                        </code></pre>
                     </div>
 
                     <div class="module-card">
                         <h3>Optional Class</h3>
                         <p>Handle null values more elegantly and avoid NullPointerException.</p>
-                        <code>
-Optional&lt;String&gt; optional = Optional.ofNullable(getString());<br>
-optional.ifPresent(System.out::println);<br>
+                        <pre><code>
+Optional&lt;String&gt; optional = Optional.ofNullable(getString());
+optional.ifPresent(System.out::println);
 String value = optional.orElse("Default Value");
-                        </code>
+                        </code></pre>
                     </div>
 
                     <div class="module-card">
                         <h3>Default Methods</h3>
                         <p>Add new methods to interfaces without breaking existing implementations.</p>
-                        <code>
-interface Vehicle {<br>
-    void start();<br><br>
+                        <pre><code>
+interface Vehicle {
+    void start();
     
-    default void horn() {<br>
-        System.out.println("Beep beep!");<br>
-    }<br>
+    default void horn() {
+        System.out.println("Beep beep!");
+    }
 }
-                        </code>
+                        </code></pre>
                     </div>
 
                     <div class="module-card">
                         <h3>Date and Time API</h3>
                         <p>New comprehensive date and time API (java.time package).</p>
-                        <code>
-LocalDateTime now = LocalDateTime.now();<br>
-LocalDate date = LocalDate.of(2024, Month.JANUARY, 1);<br>
+                        <pre><code>
+LocalDateTime now = LocalDateTime.now();
+LocalDate date = LocalDate.of(2024, Month.JANUARY, 1);
 Duration duration = Duration.between(start, end);
-                        </code>
+                        </code></pre>
                     </div>
                 </div>
             </section>
@@ -1636,6 +1677,15 @@ Duration duration = Duration.between(start, end);
                 <h3>Space Complexity</h3>
                 <p>Space Complexity refers to the amount of memory space an algorithm uses relative to the input
                     size. It includes the space used by variables, data structures, and function calls.</p>
+
+                <div class="highlight">
+                    <p><strong>The Hidden Superpowers of Your Everyday Tech:</strong><br><br> 
+                        Every time you use Google Maps to find the fastest route, or Netflix to get movie
+                        recommendations, or even just search for a friend on social media – you're experiencing the
+                        power of Data Structures and Algorithms (DSA) in action!<br><br>
+                    DSA helps these apps sort, store, and process massive amounts of information incredibly fast and efficiently, making
+                    your digital life smooth and seamless. It's the secret sauce that makes modern technology work!</p>
+                </div>
 
             </section>
 
