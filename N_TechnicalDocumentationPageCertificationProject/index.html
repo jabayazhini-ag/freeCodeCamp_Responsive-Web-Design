@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./Assets/java.png" />
+</head>
+
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <div class="container">
+        <nav id="navbar">
+            <header>
+                <h1>Java Documentation</h1>
+            </header>
+            <ul>
+                <li><a class="nav-link" href="#java_introduction">Java Introduction</a></li>
+                <li><a class="nav-link" href="#java_history">Java History</a></li>
+                <li><a class="nav-link" href="#module1_core_java">Module I: Core Java</a></li>
+                <li><a class="nav-link" href="#module2_oops">Module II: OOPs</a></li>
+                <li><a class="nav-link" href="#module3_collections">Module III: Collections</a></li>
+                <li><a class="nav-link" href="#module4_gui">Module IV: GUI</a></li>
+                <li><a class="nav-link" href="#module5_database">Module V: Database</a></li>
+                <li><a class="nav-link" href="#module6_spring_boot">Module VI: Spring Boot</a></li>
+                <li><a class="nav-link" href="#module7_aop">Module VII: AOP</a></li>
+                <li><a class="nav-link" href="#module8_thymeleaf">Module VIII: Thymeleaf</a></li>
+                <li><a class="nav-link" href="#module9_postman">Module IX: Postman</a></li>
+                <li><a class="nav-link" href="#module10_crud">Module X: CRUD</a></li>
+                <li><a class="nav-link" href="#java8_features">Java 8 Features</a></li>
+                <li><a class="nav-link" href="#dsa_concepts">DSA Concepts</a></li>
+                <li><a class="nav-link" href="#references">References</a></li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="java_introduction">
+                <header>
+                    <h2>Java Introduction</h2>
+                </header>
+                <div class="java-logo">☕︎</div>
+                <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as
+                    few implementation dependencies as possible. It is a general-purpose programming language intended
+                    to let programmers <strong>write once, run anywhere (WORA)</strong>, meaning that compiled Java code can run on all
+                    platforms that support Java without the need to recompile.</p>
+
+                <div class="feature-box">
+                    <h3>Key Features of Java:</h3>
+                    <ul>
+                        <li><strong>Platform Independent:</strong> Java programs can run on any platform that has a Java
+                            Virtual Machine (JVM).</li>
+                        <li><strong>Object-Oriented:</strong> Everything in Java is an object, promoting code
+                            reusability and modularity.</li>
+                        <li><strong>Secure:</strong> Java provides a secure environment with built-in security features.
+                        </li>
+                        <li><strong>Robust:</strong> Strong memory management and exception handling.</li>
+                        <li><strong>Multithreaded:</strong> Supports concurrent execution of multiple threads.</li>
+                        <li><strong>Simple:</strong> Easy to learn and understand syntax.</li>
+                        <li><strong>High Performance:</strong> Java uses a Just-In-Time (JIT) compiler that converts bytecode into native machine code at runtime, significantly improving performance compared to purely interpreted languages.</li>
+                <li><strong>Distributed:</strong> Java's networking capabilities are well-developed, making it easy to create distributed applications. Technologies like RMI (Remote Method Invocation) enable objects to interact across a network.</li>
+                <li><strong>Dynamic:</strong> Java is designed to adapt to an evolving environment. It can load classes dynamically, which is crucial for features like reflection and allowing for runtime modifications.</li>
+                    </ul>
+                </div>
+
+                <h3>Java Architecture</h3>
+                <p>Java follows a unique architecture that includes:</p>
+                <ul>
+                    <li><strong>Java Source Code (.java)</strong> - Human readable code</li>
+                    <li><strong>Java Compiler (javac)</strong> - Converts source code to bytecode</li>
+                    <li><strong>Bytecode (.class)</strong> - Platform independent intermediate code</li>
+                    <li><strong>Java Virtual Machine (JVM)</strong> - Executes bytecode on specific platforms</li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="java_history">
+                <header>
+                    <h2>Java History</h2>
+                </header>
+                <p>Java was originally developed by James Gosling at Sun Microsystems and released in 1995. The
+                    development of Java started in 1991 as part of the Green Project.</p>
+
+                <div class="feature-box">
+                    <h3>Java Timeline:</h3>
+                    <ul>
+                        <li><strong>1991:</strong> The Green Project started at Sun Microsystems</li>
+                        <li><strong>1995:</strong> Java 1.0 released - "Write Once, Run Anywhere"</li>
+                        <li><strong>1997:</strong> Java 1.1 - Inner classes, reflection</li>
+                        <li><strong>1998:</strong> Java 1.2 (J2SE) - Collections framework, Swing</li>
+                        <li><strong>2000:</strong> Java 1.3 - HotSpot JVM</li>
+                        <li><strong>2002:</strong> Java 1.4 - Assertions, NIO</li>
+                        <li><strong>2004:</strong> Java 5.0 - Generics, Annotations, Autoboxing</li>
+                        <li><strong>2006:</strong> Java 6 - Performance improvements</li>
+                        <li><strong>2011:</strong> Java 7 - Diamond operator, Try-with-resources</li>
+                        <li><strong>2014:</strong> Java 8 - Lambda expressions, Stream API</li>
+                        <li><strong>2017:</strong> Java 9 - Module system</li>
+                        <li><strong>2018-Present:</strong> Java 10, 11, 17, 21 (LTS versions)</li>
+                    </ul>
+                </div>
+
+                <div class="highlight">
+                    <p><strong>Fun Fact:</strong> Java was initially called "Oak" but was renamed to "Java" in 1995. The name "Oak" came from an oak tree that stood outside the office of James Gosling, the creator of Java. However, "Oak" was already a registered trademark. During a brainstorming session fueled by coffee, the team chose the name "Java"—inspired by the Indonesian island known for its coffee. This connection led to Java's iconic coffee cup logo, symbolizing energy and universality!</p>
+                </div>
+            </section>            
+
+            <section class="main-section" id="module1_core_java">
+                <header>
+                    <h2>Module I: Core Java</h2>
+                </header>
+
+                <h3>1. Variables, Data Types & Operators</h3>
+                <p>Variables are containers for storing data values. Java is a strongly typed language, meaning every
+                    variable must be declared with a data type.</p>
+
+                <h4>Data Types:</h4>
+                <ul>
+                    <li><strong>Primitive Types:</strong> byte, short, int, long, float, double, boolean, char</li>
+                    <li><strong>Non-Primitive Types:</strong> String, Arrays, Classes</li>
+                </ul>
+
+                <code>
+// Variable declarations
+int age = 25;
+double salary = 50000.50;
+boolean isEmployed = true;
+char grade = 'A';
+String name = "John Doe";
+
+// Operators
+int a = 10, b = 20;
+int sum = a + b;        // Arithmetic
+boolean isEqual = (a == b);  // Comparison
+boolean result = (a > 5) && (b < 30);  // Logical
+                </code>
+
+                <h3>2. Conditional Statements</h3>
+                <p>Control the flow of program execution based on conditions.</p>
+
+                <code>
+// If statement
+if (age >= 18) {
+    System.out.println("Adult");
+}
+
+// If-else
+if (score >= 60) {
+    System.out.println("Pass");
+} else {
+    System.out.println("Fail");
+}
+
+// Nested if-else
+if (marks >= 90) {
+    grade = 'A';
+} else if (marks >= 80) {
+    grade = 'B';
+} else if (marks >= 70) {
+    grade = 'C';
+} else {
+    grade = 'F';
+}
+
+// Switch case
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    default:
+        System.out.println("Other day");
+}
+                </code>
+
+                <h3>3. Looping Statements</h3>
+                <p>Repeat a block of code multiple times.</p>
+
+                <code>
+// For loop
+for (int i = 0; i < 10; i++) {
+    System.out.println("Count: " + i);
+}
+
+// While loop
+int count = 0;
+while (count < 5) {
+    System.out.println(count);
+    count++;
+}
+
+// Do-while loop
+int num = 1;
+do {
+    System.out.println(num);
+    num++;
+} while (num <= 3);
+
+// Nested loops
+for (int i = 1; i <= 3; i++) {
+    for (int j = 1; j <= 3; j++) {
+        System.out.print(i * j + " ");
+    }
+    System.out.println();
+}
+                </code>
+
+                <h3>4. Functions (Methods)</h3>
+                <p>Reusable blocks of code that perform specific tasks.</p>
+
+                <code>
+// Method declaration
+public static int add(int a, int b) {
+    return a + b;
+}
+
+// Method with void return type
+public static void printMessage(String message) {
+    System.out.println(message);
+}
+
+// Method overloading
+public static int multiply(int a, int b) {
+    return a * b;
+}
+
+public static double multiply(double a, double b) {
+    return a * b;
+}
+                </code>
+
+                <h3>5. Arrays</h3>
+                <p>Store multiple values of the same type in a single variable.</p>
+
+                <code>
+// 1D Array
+int[] numbers = {1, 2, 3, 4, 5};
+int[] scores = new int[10];
+
+// Accessing array elements
+System.out.println(numbers[0]); // First element
+numbers[1] = 20; // Modify element
+
+// 2D Array
+int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+int[][] grid = new int[3][3];
+
+// Accessing 2D array
+System.out.println(matrix[0][1]); // Output: 2
+matrix[1][2] = 10;
+                </code>
+
+                <h3>6. String & String Methods</h3>
+                <p>Handle text data with built-in string manipulation methods.</p>
+
+                <code>
+String str = "Hello World";
+
+// String methods
+int length = str.length();
+String upper = str.toUpperCase();
+String lower = str.toLowerCase();
+char charAt = str.charAt(0);
+String substring = str.substring(0, 5);
+boolean contains = str.contains("World");
+String replaced = str.replace("World", "Java");
+
+// String concatenation
+String fullName = firstName + " " + lastName;
+String formatted = String.format("Name: %s, Age: %d", name, age);
+                </code>
+
+                <div class="highlight">
+                    <p><strong>Note:</strong> StringBuffer and StringBuilder were not newly introduced in Java 8. They
+                        have been part of Java since earlier versions. StringBuffer was introduced in Java 1.0, and
+                        StringBuilder in Java 1.5.</p>
+                </div>
+
+                <code>
+// StringBuffer (thread-safe)
+StringBuffer sb = new StringBuffer("Hello");
+sb.append(" World");
+sb.insert(5, " Beautiful");
+
+// StringBuilder (not thread-safe, faster)
+StringBuilder builder = new StringBuilder();
+builder.append("Java");
+builder.append(" Programming");
+String result = builder.toString();
+                </code>
+
+                <h3>7. Math Methods</h3>
+                <p>Perform mathematical operations using built-in Math class.</p>
+
+                <code>
+// Common Math methods
+double result1 = Math.pow(2, 3);        // 8.0
+double result2 = Math.sqrt(16);         // 4.0
+double result3 = Math.abs(-10);         // 10.0
+double result4 = Math.max(10, 20);      // 20.0
+double result5 = Math.min(10, 20);      // 10.0
+double result6 = Math.random();         // Random between 0.0 and 1.0
+double result7 = Math.ceil(4.3);        // 5.0
+double result8 = Math.floor(4.7);       // 4.0
+double result9 = Math.round(4.6);       // 5
+                </code>
+
+                <h3>8. Date & Time</h3>
+                <p>Handle date and time operations (Java 8+ java.time package).</p>
+
+                <code>
+// Java 8 Date-Time API
+LocalDate today = LocalDate.now();
+LocalTime currentTime = LocalTime.now();
+LocalDateTime dateTime = LocalDateTime.now();
+
+// Creating specific dates
+LocalDate specificDate = LocalDate.of(2024, 12, 25);
+LocalTime specificTime = LocalTime.of(14, 30, 0);
+
+// Formatting
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+String formattedDate = today.format(formatter);
+
+// Date calculations
+LocalDate nextWeek = today.plusWeeks(1);
+LocalDate lastMonth = today.minusMonths(1);
+                </code>
+
+                <h3>9. File Operations</h3>
+                <p>Read from and write to files using Java I/O classes.</p>
+
+                <code>
+// Reading a file
+try {
+    Scanner fileReader = new Scanner(new File("input.txt"));
+    while (fileReader.hasNextLine()) {
+        String line = fileReader.nextLine();
+        System.out.println(line);
+    }
+    fileReader.close();
+} catch (FileNotFoundException e) {
+    System.out.println("File not found: " + e.getMessage());
+}
+
+// Writing to a file
+try {
+    FileWriter writer = new FileWriter("output.txt");
+    writer.write("Hello, World!");
+    writer.close();
+} catch (IOException e) {
+    System.out.println("Error writing to file: " + e.getMessage());
+}
+                </code>
+
+                <h3>10. Exception Handling</h3>
+                <p>Handle runtime errors gracefully to prevent program crashes.</p>
+
+                <code>
+// Try-catch block
+try {
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Cannot divide by zero: " + e.getMessage());
+} finally {
+    System.out.println("This block always executes");
+}
+
+// Multiple catch blocks
+try {
+    int[] arr = {1, 2, 3};
+    System.out.println(arr[5]);
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Array index out of bounds");
+} catch (Exception e) {
+    System.out.println("General exception: " + e.getMessage());
+}
+
+// Throwing custom exceptions
+public static void validateAge(int age) throws IllegalArgumentException {
+    if (age < 0) {
+        throw new IllegalArgumentException("Age cannot be negative");
+    }
+}
+                </code>
+
+                <h3>11. User Input</h3>
+                <p>Accept input from users using Scanner class.</p>
+
+                <code>
+Scanner scanner = new Scanner(System.in);
+
+// Reading different data types
+System.out.print("Enter your name: ");
+String name = scanner.nextLine();
+
+System.out.print("Enter your age: ");
+int age = scanner.nextInt();
+
+System.out.print("Enter your salary: ");
+double salary = scanner.nextDouble();
+
+System.out.print("Are you employed? (true/false): ");
+boolean employed = scanner.nextBoolean();
+
+scanner.close();
+                </code>
+            </section>
+
+            <section class="main-section" id="module2_oops">
+                <header>
+                    <h2>Module II: Object-Oriented Programming</h2>
+                </header>
+
+                 <p>Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects", which contain data in the form of fields (also known as attributes or properties), and code in the form of procedures (methods).</p>
+
+    <h3>Key Principles of OOP:</h3>
+    <ul>
+        <li><strong>Encapsulation:</strong> Bundling data (variables) and methods that operate on the data into a single unit (class). Access is restricted using access modifiers.</li>
+        <li><strong>Abstraction:</strong> Hiding internal details and showing only essential features through abstract classes and interfaces.</li>
+        <li><strong>Inheritance:</strong> Mechanism where one class acquires the properties and behavior of another class using the <code>extends</code> keyword.</li>
+        <li><strong>Polymorphism:</strong> Ability of a variable, function, or object to take multiple forms. Achieved through method overloading and overriding.</li>
+    </ul>
+
+    <h3>Class & Object</h3>
+    <p>A class is a blueprint from which individual objects are created. Objects are instances of classes.</p>
+
+    <h3>Constructor</h3>
+    <p>A constructor is a special method that is called when an object is instantiated. It can be default, parameterized, or overloaded.</p>
+
+    <h3>Method Overloading & Overriding</h3>
+    <p><strong>Overloading:</strong> Same method name with different parameters. <strong>Overriding:</strong> Redefining a superclass method in a subclass.</p>
+
+    <h3>Abstract Class vs Interface</h3>
+    <ul>
+        <li>Abstract class can have both abstract and concrete methods. Use <code>abstract</code> keyword.</li>
+        <li>Interface can have only abstract methods (till Java 7), default/static methods (from Java 8).</li>
+    </ul>
+
+    <h3>"this" and "super"</h3>
+    <p><strong>this:</strong> Refers to the current class instance. <strong>super:</strong> Refers to the parent class instance, used to call parent methods/constructors.</p>
+
+    <h3>Static Keyword</h3>
+    <p>Static methods and variables belong to the class, not instances. Useful for memory management and utility methods.</p>
+
+                <h3>1. Objects & Classes</h3>
+                <p>Classes are blueprints for creating objects. Objects are instances of classes.</p>
+
+                <code>
+// Class definition
+public class Student {
+    // Instance variables
+    private String name;
+    private int age;
+    private double gpa;
+    
+    // Constructor
+    public Student(String name, int age, double gpa) {
+        this.name = name;
+        this.age = age;
+        this.gpa = gpa;
+    }
+    
+    // Methods
+    public void displayInfo() {
+        System.out.println("Name: " + name + ", Age: " + age + ", GPA: " + gpa);
+    }
+    
+    // Getters and Setters
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+}
+
+// Creating objects
+Student student1 = new Student("Alice", 20, 3.8);
+Student student2 = new Student("Bob", 19, 3.5);
+                </code>
+
+                <h3>2. Constructors</h3>
+                <p>Special methods used to initialize objects when they are created.</p>
+
+                <code>
+public class Car {
+    private String brand;
+    private String model;
+    private int year;
+    
+    // Default Constructor
+    public Car() {
+        this.brand = "Unknown";
+        this.model = "Unknown";
+        this.year = 0;
+    }
+    
+    // Parameterized Constructor
+    public Car(String brand, String model, int year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
+    
+    // Constructor Overloading
+    public Car(String brand, String model) {
+        this(brand, model, 2024); // Call to another constructor
+    }
+}
+                </code>
+
+                <h3>3. Method Overloading & Overriding</h3>
+                <p>Overloading: Same method name with different parameters. Overriding: Redefining parent class methods
+                    in child class.</p>
+
+                <code>
+// Method Overloading
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    
+    public double add(double a, double b) {
+        return a + b;
+    }
+    
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+// Method Overriding
+class Animal {
+    public void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+                </code>
+
+                <h3>4. Encapsulation</h3>
+                <p>Hide internal details and provide controlled access through public methods.</p>
+
+                <code>
+public class BankAccount {
+    private double balance; // Private - cannot be accessed directly
+    private String accountNumber;
+    
+    public BankAccount(String accountNumber, double initialBalance) {
+        this.accountNumber = accountNumber;
+        this.balance = initialBalance;
+    }
+    
+    // Controlled access through public methods
+    public double getBalance() {
+        return balance;
+    }
+    
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
+    }
+    
+    public boolean withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            return true;
+        }
+        return false;
+    }
+}
+                </code>
+
+                <h3>5. Inheritance</h3>
+
+                <p>Inheritance allows a class (child class) to inherit properties and behaviors (methods) from another class (parent class).</p>
+
+<code>
+// Parent class
+class Animal {
+    String type = "Animal";
+
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+// Child class
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.eat();  // Inherited method
+        dog.bark(); // Own method
+        System.out.println(dog.type); // Inherited field
+    }
+}
+</code>
+
+<h3>6. Abstraction</h3>
+<p>Abstraction hides complex implementation details and shows only essential features. It is achieved using abstract classes or interfaces.</p>
+
+<code>
+// Abstract class
+abstract class Shape {
+    abstract void draw();
+    
+    void display() {
+        System.out.println("This is a shape.");
+    }
+}
+
+// Concrete class
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing a circle.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Shape shape = new Circle();
+        shape.draw();
+        shape.display();
+    }
+}
+</code>
+
+<h3>7. Polymorphism</h3>
+<p>Polymorphism means "many forms." It allows objects to take on many forms, such as method overloading (compile-time) and method overriding (runtime).</p>
+
+<code>
+// Compile-time Polymorphism (Method Overloading)
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
+}
+
+// Runtime Polymorphism (Method Overriding)
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound.");
+    }
+}
+
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Cat meows.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        System.out.println(calc.add(2, 3));
+        System.out.println(calc.add(2.5, 3.7));
+
+        Animal a = new Cat();
+        a.sound(); // Calls overridden method in Cat
+    }
+}
+</code>
+
+<!-- Continuing from Module II: OOPs -->
+
+<h3>8. Interface</h3>
+<p>An interface is a reference type in Java, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. Interfaces are used to achieve abstraction and multiple inheritance.</p>
+
+<code>
+interface Drawable {
+    void draw();
+}
+
+class Rectangle implements Drawable {
+    public void draw() {
+        System.out.println("Drawing Rectangle");
+    }
+}
+
+class Circle implements Drawable {
+    public void draw() {
+        System.out.println("Drawing Circle");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Drawable d = new Circle();
+        d.draw();
+    }
+}
+</code>
+
+<h3>9. Static Keyword</h3>
+<p>The static keyword in Java is used for memory management primarily. It can be applied to variables, methods, blocks, and nested classes.</p>
+
+<code>
+class Counter {
+    static int count = 0; // static variable
+
+    Counter() {
+        count++;
+        System.out.println(count);
+    }
+
+    static void display() { // static method
+        System.out.println("Static method called.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Counter c1 = new Counter();
+        Counter c2 = new Counter();
+        Counter.display();
+    }
+}
+</code>
+
+<h3>10. This & Super Keywords</h3>
+<p><strong>this</strong> refers to the current class instance, while <strong>super</strong> refers to the parent class instance.</p>
+
+<code>
+class Animal {
+    String color = "white";
+}
+
+class Dog extends Animal {
+    String color = "black";
+
+    void printColor() {
+        System.out.println(super.color); // refers to parent class variable
+    }
+}
+
+class Person {
+    String name;
+
+    Person(String name) {
+        this.name = name; // refers to current class variable
+    }
+}
+</code>
+
+<!-- You can then proceed with Module III -->
+
+<section class="main-section" id="module3_collections">
+    <header>
+        <h2>Module III: Collections</h2>
+    </header>
+
+    <h3>1. List, Set, and Map</h3>
+    <p>Collections framework provides various classes like List, Set, and Map to store and manipulate groups of objects.</p>
+
+    <code>
+// List Example
+List<String> list = new ArrayList<>();
+list.add("Apple");
+list.add("Banana");
+System.out.println(list);
+
+// Set Example
+Set<String> set = new HashSet<>();
+set.add("Apple");
+set.add("Apple");
+System.out.println(set); // No duplicates
+
+// Map Example
+Map<Integer, String> map = new HashMap<>();
+map.put(1, "Java");
+map.put(2, "Python");
+System.out.println(map.get(1));
+    </code>
+
+    <h3>2. Iterator & Enhanced For Loop</h3>
+    <p>Used to iterate through collections easily.</p>
+
+    <code>
+// Iterator
+List<String> names = new ArrayList<>();
+names.add("Alice");
+names.add("Bob");
+
+Iterator<String> itr = names.iterator();
+while (itr.hasNext()) {
+    System.out.println(itr.next());
+}
+
+// Enhanced For Loop
+for (String name : names) {
+    System.out.println(name);
+}
+    </code>
+
+    <h3>3. Sorting with Collections</h3>
+    <p>Sort collections using utility methods or comparators.</p>
+
+    <code>
+List<Integer> numbers = Arrays.asList(5, 3, 8, 1);
+Collections.sort(numbers);
+System.out.println(numbers);
+
+Collections.sort(numbers, Collections.reverseOrder());
+System.out.println(numbers);
+    </code>
+
+    <h3>4. Comparable & Comparator</h3>
+    <p>Interfaces to define natural and custom sorting order.</p>
+
+    <code>
+class Student implements Comparable<Student> {
+    int id;
+    String name;
+
+    Student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int compareTo(Student s) {
+        return this.id - s.id; // Ascending order
+    }
+}
+
+// Comparator
+class NameComparator implements Comparator<Student> {
+    public int compare(Student s1, Student s2) {
+        return s1.name.compareTo(s2.name);
+    }
+}
+
+Collections.sort(studentList, new NameComparator());
+    </code>
+</section>
+
+<section class="main-section" id="module4_gui">
+    <header>
+        <h2>Module IV: GUI</h2>
+    </header>
+
+    <h3>1. Introduction to Swing</h3>
+    <p>Swing is a GUI widget toolkit for Java that provides a rich set of components for building graphical interfaces.</p>
+
+    <code>
+import javax.swing.*;
+
+public class SimpleGUI {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("My First GUI");
+        JButton button = new JButton("Click Me");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(button);
+        frame.setSize(300, 200);
+        frame.setVisible(true);
+    }
+}
+    </code>
+</section>
+
+<section class="main-section" id="module5_database">
+    <header>
+        <h2>Module V: Database</h2>
+    </header>
+
+    <h3>1. JDBC Basics</h3>
+    <p>Java Database Connectivity (JDBC) is an API for connecting and executing queries on a database.</p>
+
+    <code>
+import java.sql.*;
+
+public class JdbcExample {
+    public static void main(String[] args) throws Exception {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbname", "user", "pass");
+        Statement stmt = con.createStatement();
+        ResultSet rs = stmt.executeQuery("SELECT * FROM users");
+
+        while (rs.next()) {
+            System.out.println(rs.getString(1) + " " + rs.getString(2));
+        }
+        con.close();
+    }
+}
+    </code>
+</section>
+
+<section class="main-section" id="module6_spring_boot">
+    <header>
+        <h2>Module VI: Spring Boot</h2>
+    </header>
+
+    <h3>1. Spring Boot Basics</h3>
+    <p>Spring Boot simplifies the setup of Spring applications with default configurations and embedded servers.</p>
+
+    <code>
+@SpringBootApplication
+public class MyApp {
+    public static void main(String[] args) {
+        SpringApplication.run(MyApp.class, args);
+    }
+}
+
+@RestController
+class HelloController {
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, Spring Boot!";
+    }
+}
+    </code>
+</section>
+
+<section class="main-section" id="module7_aop">
+    <header>
+        <h2>Module VII: AOP</h2>
+    </header>
+
+    <h3>1. Aspect-Oriented Programming</h3>
+    <p>AOP helps separate cross-cutting concerns like logging, security, and transactions from business logic.</p>
+
+    <code>
+@Aspect
+@Component
+public class LoggingAspect {
+    @Before("execution(* com.example.service.*.*(..))")
+    public void logBefore(JoinPoint joinPoint) {
+        System.out.println("Executing: " + joinPoint.getSignature().getName());
+    }
+}
+    </code>
+</section>
+
+<section class="main-section" id="module8_thymeleaf">
+    <header>
+        <h2>Module VIII: Thymeleaf</h2>
+    </header>
+
+    <h3>1. Thymeleaf Basics</h3>
+    <p>Thymeleaf is a Java template engine used to build dynamic web applications with Spring.</p>
+
+    <code>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+</head>
+<body>
+    <h1 th:text="'Welcome ' + ${name}">Hello!</h1>
+</body>
+</html>
+    </code>
+</section>
+
+<section class="main-section" id="module9_postman">
+    <header>
+        <h2>Module IX: Postman</h2>
+    </header>
+
+    <h3>1. API Testing with Postman</h3>
+    <p>Postman is a popular tool for testing REST APIs. It supports all HTTP methods and helps in validating responses.</p>
+    <p>Use Postman to test GET, POST, PUT, DELETE requests to Spring Boot endpoints.</p>
+</section>
+
+<section class="main-section" id="module10_crud">
+    <header>
+        <h2>Module X: CRUD Operations</h2>
+    </header>
+
+    <h3>1. CRUD in Spring Boot</h3>
+    <p>Perform Create, Read, Update, and Delete operations using Spring Data JPA.</p>
+
+    <code>
+@Entity
+class Product {
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String name;
+}
+
+@Repository
+interface ProductRepository extends JpaRepository<Product, Long> {}
+
+@RestController
+class ProductController {
+    @Autowired
+    private ProductRepository repo;
+
+    @PostMapping("/products")
+    public Product add(@RequestBody Product p) {
+        return repo.save(p);
+    }
+}
+    </code>
+</section>
+
+<section class="main-section" id="java8_features">
+                <header>
+                    <h2>Java 8 Features</h2>
+                </header>
+                <p>Java 8 was a major release that introduced several revolutionary features that transformed Java
+                    programming. Released in March 2014, it brought functional programming concepts to Java.</p>
+
+                <div class="module-grid">
+                    <div class="module-card">
+                        <h3>Lambda Expressions</h3>
+                        <p>Enable functional programming in Java with concise syntax for anonymous functions.</p>
+                        <code>
+// Traditional approach
+Runnable r1 = new Runnable() {
+    public void run() {
+        System.out.println("Hello World");
+    }
+};
+
+// Lambda expression
+Runnable r2 = () -> System.out.println("Hello World");
+                        </code>
+                    </div>
+
+                    <div class="module-card">
+                        <h3>Stream API</h3>
+                        <p>Process collections in a functional style with filter, map, reduce operations.</p>
+                        <code>
+List&lt;String&gt; names = Arrays.asList("John", "Jane", "Jack");
+names.stream()
+     .filter(name -> name.startsWith("J"))
+     .map(String::toUpperCase)
+     .forEach(System.out::println);
+                        </code>
+                    </div>
+
+                    <div class="module-card">
+                        <h3>Method References</h3>
+                        <p>Shorthand for lambda expressions when calling existing methods.</p>
+                        <code>
+// Lambda expression
+list.forEach(x -> System.out.println(x));
+
+// Method reference
+list.forEach(System.out::println);
+                        </code>
+                    </div>
+
+                    <div class="module-card">
+                        <h3>Optional Class</h3>
+                        <p>Handle null values more elegantly and avoid NullPointerException.</p>
+                        <code>
+Optional&lt;String&gt; optional = Optional.ofNullable(getString());
+optional.ifPresent(System.out::println);
+String value = optional.orElse("Default Value");
+                        </code>
+                    </div>
+
+                    <div class="module-card">
+                        <h3>Default Methods</h3>
+                        <p>Add new methods to interfaces without breaking existing implementations.</p>
+                        <code>
+interface Vehicle {
+    void start();
+    
+    default void horn() {
+        System.out.println("Beep beep!");
+    }
+}
+                        </code>
+                    </div>
+
+                    <div class="module-card">
+                        <h3>Date and Time API</h3>
+                        <p>New comprehensive date and time API (java.time package).</p>
+                        <code>
+LocalDateTime now = LocalDateTime.now();
+LocalDate date = LocalDate.of(2024, Month.JANUARY, 1);
+Duration duration = Duration.between(start, end);
+                        </code>
+                    </div>
+                </div>
+</section>
+
+<section class="main-section" id="dsa_concepts">
+    <header>
+        <h2>DSA Concepts</h2>
+    </header>
+
+    <h3>What is Data Structure?</h3>
+    <p>A Data Structure is a way of organizing and storing data so that it can be accessed and modified efficiently. Common types include Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, and Hash Tables.</p>
+
+    <h4>Types of Data Structures</h4>
+    <ul>
+        <li><strong>Linear Data Structures:</strong> Arrays, Linked Lists, Stacks, Queues</li>
+        <li><strong>Non-linear Data Structures:</strong> Trees (Binary Tree, BST, AVL, etc.), Graphs</li>
+        <li><strong>Hash-based Structures:</strong> Hash Tables, Hash Maps, Hash Sets</li>
+    </ul>
+
+    <h3>What is an Algorithm?</h3>
+    <p>An Algorithm is a step-by-step procedure or formula for solving a problem. In computer science, it often refers to a set of rules to perform operations on data structures to solve computational problems.</p>
+
+    <h4>Types of Algorithms</h4>
+    <ul>
+        <li><strong>Searching Algorithms:</strong> Linear Search, Binary Search</li>
+        <li><strong>Sorting Algorithms:</strong> Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort</li>
+        <li><strong>Recursive Algorithms:</strong> Used in divide and conquer techniques like Merge Sort, Quick Sort</li>
+        <li><strong>Dynamic Programming:</strong> Used for optimization problems (e.g., Fibonacci, Knapsack)</li>
+        <li><strong>Greedy Algorithms:</strong> Used to find optimal solutions (e.g., Kruskal’s and Prim’s Algorithm)</li>
+        <li><strong>Backtracking:</strong> Used in puzzles and games (e.g., N-Queens Problem)</li>
+        <li><strong>Graph Algorithms:</strong> BFS, DFS, Dijkstra’s, Floyd-Warshall</li>
+    </ul>
+
+    <h3>Time Complexity</h3>
+    <p>Time Complexity is a measure of the amount of time an algorithm takes to complete as a function of the input size. Common notations include:</p>
+    <ul>
+        <li><strong>O(1):</strong> Constant time</li>
+        <li><strong>O(log n):</strong> Logarithmic time</li>
+        <li><strong>O(n):</strong> Linear time</li>
+        <li><strong>O(n log n):</strong> Log-linear time</li>
+        <li><strong>O(n²):</strong> Quadratic time</li>
+    </ul>
+
+    <h3>Space Complexity</h3>
+    <p>Space Complexity refers to the amount of memory space an algorithm uses relative to the input size. It includes the space used by variables, data structures, and function calls.</p>
+
+</section>
+
+<section class="main-section" id="references">
+    <header>
+        <h2>References</h2>
+    </header>
+
+    <ul>
+        <li><a href="https://docs.oracle.com/en/java/" target="_blank">Official Java Documentation</a></li>
+        <li><a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot Project</a></li>
+        <li><a href="https://www.w3schools.com/java/" target="_blank">W3Schools Java Tutorial</a></li>
+        <li><a href="https://www.geeksforgeeks.org/java/" target="_blank">GeeksforGeeks Java</a></li>
+        <li><a href="https://www.baeldung.com/" target="_blank">Baeldung - Java & Spring</a></li>
+        <li><a href="https://www.programiz.com/java-programming" target="_blank">Programiz Java Tutorial</a></li>
+    </ul>
+</section>
+
+</body>
+</html>
