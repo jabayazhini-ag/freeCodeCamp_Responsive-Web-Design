@@ -44,7 +44,8 @@
                 <div class="java-logo">☕︎</div>
                 <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as
                     few implementation dependencies as possible. It is a general-purpose programming language intended
-                    to let programmers <strong>write once, run anywhere (WORA)</strong>, meaning that compiled Java code can run on all
+                    to let programmers <strong>write once, run anywhere (WORA)</strong>, meaning that compiled Java code
+                    can run on all
                     platforms that support Java without the need to recompile.</p>
 
                 <div class="feature-box">
@@ -59,51 +60,202 @@
                         <li><strong>Robust:</strong> Strong memory management and exception handling.</li>
                         <li><strong>Multithreaded:</strong> Supports concurrent execution of multiple threads.</li>
                         <li><strong>Simple:</strong> Easy to learn and understand syntax.</li>
-                        <li><strong>High Performance:</strong> Java uses a Just-In-Time (JIT) compiler that converts bytecode into native machine code at runtime, significantly improving performance compared to purely interpreted languages.</li>
-                <li><strong>Distributed:</strong> Java's networking capabilities are well-developed, making it easy to create distributed applications. Technologies like RMI (Remote Method Invocation) enable objects to interact across a network.</li>
-                <li><strong>Dynamic:</strong> Java is designed to adapt to an evolving environment. It can load classes dynamically, which is crucial for features like reflection and allowing for runtime modifications.</li>
+                        <li><strong>High Performance:</strong> Java uses a Just-In-Time (JIT) compiler that converts
+                            bytecode into native machine code at runtime, significantly improving performance compared
+                            to purely interpreted languages.</li>
+                        <li><strong>Distributed:</strong> Java's networking capabilities are well-developed, making it
+                            easy to create distributed applications. Technologies like RMI (Remote Method Invocation)
+                            enable objects to interact across a network.</li>
+                        <li><strong>Dynamic:</strong> Java is designed to adapt to an evolving environment. It can load
+                            classes dynamically, which is crucial for features like reflection and allowing for runtime
+                            modifications.</li>
                     </ul>
                 </div>
 
-                <h3>Java Architecture</h3>
-                <p>Java follows a unique architecture that includes:</p>
+                <h3>Java Architecture (JVM, JRE, JDK)</h3>
+                <p>Java follows a unique architecture that includes several key components, each playing a crucial role
+                    in how Java programs are developed and executed.</p>
                 <ul>
-                    <li><strong>Java Source Code (.java)</strong> - Human readable code</li>
-                    <li><strong>Java Compiler (javac)</strong> - Converts source code to bytecode</li>
-                    <li><strong>Bytecode (.class)</strong> - Platform independent intermediate code</li>
-                    <li><strong>Java Virtual Machine (JVM)</strong> - Executes bytecode on specific platforms</li>
+                    <li><strong>Java Source Code (.java)</strong> - Human readable code written by programmers. This
+                        code is then compiled into bytecode.</li>
+                    <li><strong>Java Compiler (javac)</strong> - A tool that is part of the JDK. It takes the Java
+                        source code (.java files) and translates it into platform-independent bytecode (.class files).
+                    </li>
+                    <li><strong>Bytecode (.class)</strong> - This is an intermediate, machine-independent code. It's not
+                        directly executable by the operating system but can be run on any platform that has a Java
+                        Virtual Machine.</li>
+                    <li><strong>Java Virtual Machine (JVM)</strong> - The heart of Java's "write once, run anywhere"
+                        capability. The JVM is an abstract machine that provides a runtime environment in which Java
+                        bytecode can be executed. It interprets and executes the bytecode on the specific underlying
+                        hardware and operating system. The JVM performs tasks like:
+                        <ul>
+                            <li>Loading, verifying, and executing bytecode.</li>
+                            <li>Providing a runtime environment.</li>
+                            <li>Managing memory (garbage collection).</li>
+                        </ul>
+                    </li>
                 </ul>
+
+                <h4>Detailed Explanation of JVM, JRE, and JDK:</h4>
+                <p>To fully understand the Java ecosystem, it's essential to differentiate between the JVM, JRE, and
+                    JDK:</p>
+
+                <div class="component-box">
+                    <h3>1. Java Virtual Machine (JVM)</h3>
+                    <p>The JVM is a specification that defines how Java bytecode is executed. It is a runtime
+                        environment that acts as an interpreter and executor for Java bytecode. When you run a Java
+                        program, the JVM reads the bytecode and translates it into native machine code instructions that
+                        the underlying operating system can understand. Different operating systems and hardware
+                        architectures have their own specific implementations of the JVM, which is what enables Java's
+                        platform independence.</p>
+                    <p>Key responsibilities of the JVM include:</p>
+                    <ul>
+                        <li><strong>Class Loader:</strong> Dynamically loads classes into the JVM's memory.</li>
+                        <li><strong>Bytecode Verifier:</strong> Checks the bytecode for security and integrity before
+                            execution.</li>
+                        <li><strong>Execution Engine:</strong> Executes the bytecode. This engine can include an
+                            interpreter (which executes bytecode instruction by instruction) and a Just-In-Time (JIT)
+                            compiler (which compiles frequently executed bytecode into native machine code for faster
+                            execution).</li>
+                        <li><strong>Garbage Collector:</strong> Automatically manages memory by reclaiming memory
+                            occupied by objects that are no longer in use, preventing memory leaks.</li>
+                        <li><strong>Runtime Data Areas:</strong> These are the memory areas used by the JVM during
+                            program execution, including the Heap, Method Area, Stack, PC Registers, and Native Method
+                            Stacks.</li>
+                    </ul>
+                </div>
+
+                <div class="component-box">
+                    <h3>2. Java Runtime Environment (JRE)</h3>
+                    <p>The JRE is a software package that provides the minimum requirements for executing a Java
+                        application. It includes the JVM, along with the core Java class libraries and supporting files.
+                        If you only want to run Java applications and not develop them, you only need the JRE.</p>
+                    <p>The JRE typically consists of:</p>
+                    <ul>
+                        <li><strong>JVM:</strong> The Java Virtual Machine, as described above.</li>
+                        <li><strong>Java Class Libraries (API):</strong> A set of standard classes and packages that
+                            provide fundamental functionalities like input/output, networking, utilities, and data
+                            structures. These libraries are essential for any Java application to function.</li>
+                        <li><strong>Supporting Files:</strong> Other configuration files and resources required by the
+                            JVM and the class libraries.</li>
+                    </ul>
+                    <p>In essence, JRE = JVM + Java Class Libraries.</p>
+                </div>
+
+                <div class="component-box">
+                    <h3>3. Java Development Kit (JDK)</h3>
+                    <p>The JDK is a comprehensive software development kit that provides all the tools and resources
+                        necessary to develop, compile, debug, and run Java applications. It includes the JRE, along with
+                        development tools such as the Java compiler (javac), debugger (jdb), archiver (jar), and
+                        documentation generator (javadoc).</p>
+                    <p>If you are a Java developer, you need the JDK. It provides the complete environment to write,
+                        compile, and execute Java programs.</p>
+                    <p>The JDK typically includes:</p>
+                    <ul>
+                        <li><strong>JRE:</strong> The Java Runtime Environment, enabling the execution of Java
+                            applications.</li>
+                        <li><strong>Development Tools:</strong>
+                            <ul>
+                                <li><code>javac</code>: The Java compiler.</li>
+                                <li><code>java</code>: The Java application launcher (which also invokes the JVM).</li>
+                                <li><code>jdb</code>: The Java debugger.</li>
+                                <li><code>jar</code>: The Java archive tool (for packaging Java classes and associated
+                                    metadata).</li>
+                                <li><code>javadoc</code>: The documentation generator.</li>
+                                <li>And many other utilities for profiling, monitoring, etc.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>In essence, JDK = JRE + Development Tools.</p>
+                </div>
+
+                <p>In summary, if you just want to run a Java program, you need the JRE. If you want to develop Java
+                    programs, you need the JDK, which inherently includes the JRE and JVM.</p>
+
+                <div class="highlight">
+                    <p><strong>Note:</strong> Java is not a purely object-oriented language because it supports
+                        primitive data types (like int, char, etc.) that are not objects. However, it is often referred
+                        to as an object-oriented language due to its strong emphasis on OOP principles.</p>
+                </div>
             </section>
 
             <section class="main-section" id="java_history">
                 <header>
                     <h2>Java History</h2>
                 </header>
+
                 <p>Java was originally developed by James Gosling at Sun Microsystems and released in 1995. The
-                    development of Java started in 1991 as part of the Green Project.</p>
+                    development of Java started in 1991 as part of the Green Project, aiming to create a programming
+                    language for intelligent consumer electronic devices.</p>
 
                 <div class="feature-box">
                     <h3>Java Timeline:</h3>
                     <ul>
-                        <li><strong>1991:</strong> The Green Project started at Sun Microsystems</li>
-                        <li><strong>1995:</strong> Java 1.0 released - "Write Once, Run Anywhere"</li>
-                        <li><strong>1997:</strong> Java 1.1 - Inner classes, reflection</li>
-                        <li><strong>1998:</strong> Java 1.2 (J2SE) - Collections framework, Swing</li>
-                        <li><strong>2000:</strong> Java 1.3 - HotSpot JVM</li>
-                        <li><strong>2002:</strong> Java 1.4 - Assertions, NIO</li>
-                        <li><strong>2004:</strong> Java 5.0 - Generics, Annotations, Autoboxing</li>
-                        <li><strong>2006:</strong> Java 6 - Performance improvements</li>
-                        <li><strong>2011:</strong> Java 7 - Diamond operator, Try-with-resources</li>
-                        <li><strong>2014:</strong> Java 8 - Lambda expressions, Stream API</li>
-                        <li><strong>2017:</strong> Java 9 - Module system</li>
-                        <li><strong>2018-Present:</strong> Java 10, 11, 17, 21 (LTS versions)</li>
+                        <li><strong>1991:</strong> The Green Project started at Sun Microsystems, led by James Gosling.
+                            The language was initially named "Oak."</li>
+                        <li><strong>1995:</strong> Java 1.0 released to the public. It introduced the "Write Once, Run
+                            Anywhere" (WORA) principle, quickly gaining popularity for web applets.</li>
+                        <li><strong>1997:</strong> Java 1.1 released, bringing significant features like Inner Classes,
+                            JavaBeans, JDBC (Java Database Connectivity), and Reflection.</li>
+                        <li><strong>1998:</strong> Java 1.2, later rebranded as Java 2 Platform, Standard Edition
+                            (J2SE), was released. This version introduced the Collections Framework, Swing (for rich GUI
+                            applications), and the Java HotSpot VM.</li>
+                        <li><strong>2000:</strong> Java 1.3 (J2SE 1.3) released, primarily focusing on performance
+                            improvements with an updated HotSpot JVM and RMI enhancements.</li>
+                        <li><strong>2002:</strong> Java 1.4 (J2SE 1.4) released, adding new features such as Assertions,
+                            NIO (New I/O API), XML processing, and regular expressions.</li>
+                        <li><strong>2004:</strong> Java 5.0 (rebranded from 1.5 to emphasize its significance) was a
+                            major release. It introduced Generics, Annotations, Autoboxing/Unboxing, Enums, enhanced
+                            for-loops, and Varargs, significantly improving developer productivity.</li>
+                        <li><strong>2006:</strong> Java 6 (Java SE 6) released, bringing further performance
+                            improvements, support for scripting languages (like JavaScript and Ruby through JSR 223),
+                            and an improved API for web services.</li>
+                        <li><strong>2009: Oracle Acquires Sun Microsystems:</strong> In April 2009, Oracle Corporation
+                            announced its intention to acquire Sun Microsystems, a deal that was finalized in January
+                            2010. This acquisition included all of Sun's software and hardware assets, most notably
+                            Java. This marked a significant shift in the ownership and stewardship of the Java platform,
+                            bringing it under Oracle's wing.</li>
+                        <li><strong>2011:</strong> Java 7 (Java SE 7) released. This was the first major release after
+                            the Oracle acquisition. It included Project Coin (a set of small language enhancements like
+                            the Diamond operator, try-with-resources, and simplified varargs warnings) and improvements
+                            to the Fork/Join framework.</li>
+                        <li><strong>2014:</strong> Java 8 (Java SE 8) was another landmark release. It introduced Lambda
+                            expressions, the Stream API (for functional-style operations on collections), the new Date
+                            and Time API, and default methods in interfaces, fundamentally changing how Java is
+                            programmed.</li>
+                        <li><strong>2017:</strong> Java 9 (Java SE 9) released, with its most significant feature being
+                            the Java Platform Module System (JPMS), also known as Jigsaw, which aimed to improve
+                            modularity and scalability. Other features included JShell (an interactive Java shell) and
+                            private interface methods.</li>
+                        <li><strong>2018-Present:</strong> Following Java 9, Oracle shifted to a rapid release cadence,
+                            releasing new versions every six months. Key Long-Term Support (LTS) versions include:
+                            <ul>
+                                <li><strong>Java 11 (2018):</strong> The second LTS release, including HTTP Client API
+                                    (standardized), ZGC (scalable low-latency garbage collector), and local-variable
+                                    syntax for lambda parameters.</li>
+                                <li><strong>Java 17 (2021):</strong> The third LTS release, focusing on sealing classes,
+                                    pattern matching for switch expressions, and improved foreign function and memory
+                                    API.</li>
+                                <li><strong>Java 21 (2023):</strong> The latest LTS release, introducing features like
+                                    Virtual Threads, Record Patterns, Pattern Matching for Switch, and Sequence
+                                    Collections.</li>
+                                <li><b>Non-LTS releases</b> (Java 10, 12, 13, 14, 15, 16, 18, 19, 20, 22, etc.) continue
+                                    to
+                                    introduce incremental features and improvements.</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="highlight">
-                    <p><strong>Fun Fact:</strong> Java was initially called "Oak" but was renamed to "Java" in 1995. The name "Oak" came from an oak tree that stood outside the office of James Gosling, the creator of Java. However, "Oak" was already a registered trademark. During a brainstorming session fueled by coffee, the team chose the name "Java"—inspired by the Indonesian island known for its coffee. This connection led to Java's iconic coffee cup logo, symbolizing energy and universality!</p>
+                    <p><strong>Fun Fact:</strong> Java was initially called "Oak" but was renamed to "Java" in 1995. The
+                        name "Oak" came from an oak tree that stood outside the office of James Gosling, the creator of
+                        Java. However, "Oak" was already a registered trademark. During a brainstorming session fueled
+                        by coffee, the team chose the name "Java"—inspired by the Indonesian island known for its
+                        coffee. This connection led to Java's iconic coffee cup logo, symbolizing energy and
+                        universality!</p>
                 </div>
-            </section>            
+            </section>
 
             <section class="main-section" id="module1_core_java">
                 <header>
@@ -121,57 +273,63 @@
                 </ul>
 
                 <code>
-// Variable declarations
-int age = 25;
-double salary = 50000.50;
-boolean isEmployed = true;
-char grade = 'A';
-String name = "John Doe";
+// Variable declarations<br>
 
-// Operators
-int a = 10, b = 20;
-int sum = a + b;        // Arithmetic
-boolean isEqual = (a == b);  // Comparison
-boolean result = (a > 5) && (b < 30);  // Logical
+int age = 25;<br>
+
+double salary = 50000.50;<br>
+
+boolean isEmployed = true;<br>
+
+char grade = 'A';<br>
+
+String name = "John Doe";
+<br><br>
+
+// Operators<br>
+int a = 10, b = 20;<br>
+int sum = a + b;        // Arithmetic<br>
+boolean isEqual = (a == b);  // Comparison<br>
+boolean result = (a > 5) && (b < 30);  // Logical<br>
                 </code>
 
                 <h3>2. Conditional Statements</h3>
                 <p>Control the flow of program execution based on conditions.</p>
 
                 <code>
-// If statement
-if (age >= 18) {
-    System.out.println("Adult");
-}
+// If statement<br>
+if (age >= 18) {<br>
+    System.out.println("Adult");<br>
+}<br><br>
 
-// If-else
-if (score >= 60) {
-    System.out.println("Pass");
-} else {
-    System.out.println("Fail");
-}
+// If-else<br>
+if (score >= 60) {<br>
+    System.out.println("Pass");<br>
+} else {<br>
+    System.out.println("Fail");<br>
+}<br><br>
 
-// Nested if-else
-if (marks >= 90) {
-    grade = 'A';
-} else if (marks >= 80) {
-    grade = 'B';
-} else if (marks >= 70) {
-    grade = 'C';
-} else {
-    grade = 'F';
-}
+// Nested if-else<br>
+if (marks >= 90) {<br>
+    grade = 'A';<br>
+} else if (marks >= 80) {<br>
+    grade = 'B';<br>
+} else if (marks >= 70) {<br>
+    grade = 'C';<br>
+} else {<br>
+    grade = 'F';<br>
+}<br><br>
 
-// Switch case
-switch (day) {
-    case 1:
-        System.out.println("Monday");
-        break;
-    case 2:
-        System.out.println("Tuesday");
-        break;
-    default:
-        System.out.println("Other day");
+// Switch case<br>
+switch (day) {<br>
+    case 1:<br>
+        System.out.println("Monday");<br>
+        break;<br>
+    case 2:<br>
+        System.out.println("Tuesday");<br>
+        break;<br>
+    default:<br>
+        System.out.println("Other day");<br>
 }
                 </code>
 
@@ -179,31 +337,31 @@ switch (day) {
                 <p>Repeat a block of code multiple times.</p>
 
                 <code>
-// For loop
-for (int i = 0; i < 10; i++) {
-    System.out.println("Count: " + i);
-}
+// For loop<br>
+for (int i = 0; i < 10; i++) {<br>
+    System.out.println("Count: " + i);<br>
+}<br><br>
 
-// While loop
-int count = 0;
-while (count < 5) {
-    System.out.println(count);
-    count++;
-}
+// While loop<br>
+int count = 0;<br>
+while (count < 5) {<br>
+    System.out.println(count);<br>
+    count++;<br>
+}<br><br>
 
-// Do-while loop
-int num = 1;
-do {
-    System.out.println(num);
-    num++;
-} while (num <= 3);
+// Do-while loop<br>
+int num = 1;<br>
+do {<br>
+    System.out.println(num);<br>
+    num++;<br>
+} while (num <= 3);<br><br>
 
-// Nested loops
-for (int i = 1; i <= 3; i++) {
-    for (int j = 1; j <= 3; j++) {
-        System.out.print(i * j + " ");
-    }
-    System.out.println();
+// Nested loops<br>
+for (int i = 1; i <= 3; i++) {<br>
+    for (int j = 1; j <= 3; j++) {<br>
+        System.out.print(i * j + " ");<br>
+    }<br>
+    System.out.println();<br>
 }
                 </code>
 
@@ -211,23 +369,23 @@ for (int i = 1; i <= 3; i++) {
                 <p>Reusable blocks of code that perform specific tasks.</p>
 
                 <code>
-// Method declaration
-public static int add(int a, int b) {
-    return a + b;
-}
+// Method declaration<br>
+public static int add(int a, int b) {<br>
+    return a + b;<br>
+}<br><br>
 
-// Method with void return type
-public static void printMessage(String message) {
-    System.out.println(message);
-}
+// Method with void return type<br>
+public static void printMessage(String message) {<br>
+    System.out.println(message);<br>
+}<br><br>
 
-// Method overloading
-public static int multiply(int a, int b) {
-    return a * b;
-}
+// Method overloading<br>
+public static int multiply(int a, int b) {<br>
+    return a * b;<br>
+}<br>
 
-public static double multiply(double a, double b) {
-    return a * b;
+public static double multiply(double a, double b) {<br>
+    return a * b;<br>
 }
                 </code>
 
@@ -235,20 +393,20 @@ public static double multiply(double a, double b) {
                 <p>Store multiple values of the same type in a single variable.</p>
 
                 <code>
-// 1D Array
-int[] numbers = {1, 2, 3, 4, 5};
-int[] scores = new int[10];
+// 1D Array<br>
+int[] numbers = {1, 2, 3, 4, 5};<br>
+int[] scores = new int[10];<br><br>
 
-// Accessing array elements
-System.out.println(numbers[0]); // First element
-numbers[1] = 20; // Modify element
+// Accessing array elements<br>
+System.out.println(numbers[0]); // First element<br>
+numbers[1] = 20; // Modify element<br><br>
 
-// 2D Array
-int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-int[][] grid = new int[3][3];
+// 2D Array<br>
+int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};<br>
+int[][] grid = new int[3][3];<br><br>
 
-// Accessing 2D array
-System.out.println(matrix[0][1]); // Output: 2
+// Accessing 2D array<br>
+System.out.println(matrix[0][1]); // Output: 2<br>
 matrix[1][2] = 10;
                 </code>
 
@@ -256,20 +414,20 @@ matrix[1][2] = 10;
                 <p>Handle text data with built-in string manipulation methods.</p>
 
                 <code>
-String str = "Hello World";
+String str = "Hello World";<br><br>
 
-// String methods
-int length = str.length();
-String upper = str.toUpperCase();
-String lower = str.toLowerCase();
-char charAt = str.charAt(0);
-String substring = str.substring(0, 5);
-boolean contains = str.contains("World");
-String replaced = str.replace("World", "Java");
+// String methods<br>
+int length = str.length();<br>
+String upper = str.toUpperCase();<br>
+String lower = str.toLowerCase();<br>
+char charAt = str.charAt(0);<br>
+String substring = str.substring(0, 5);<br>
+boolean contains = str.contains("World");<br>
+String replaced = str.replace("World", "Java");<br><br>
 
-// String concatenation
-String fullName = firstName + " " + lastName;
-String formatted = String.format("Name: %s, Age: %d", name, age);
+// String concatenation<br>
+String fullName = firstName + " " + lastName;<br>
+String formatted = String.format("Name: %s, Age: %d", name, age);<br>
                 </code>
 
                 <div class="highlight">
@@ -279,53 +437,53 @@ String formatted = String.format("Name: %s, Age: %d", name, age);
                 </div>
 
                 <code>
-// StringBuffer (thread-safe)
-StringBuffer sb = new StringBuffer("Hello");
-sb.append(" World");
-sb.insert(5, " Beautiful");
+// StringBuffer (thread-safe)<br>
+StringBuffer sb = new StringBuffer("Hello");<br>
+sb.append(" World");<br>
+sb.insert(5, " Beautiful");<br><br>
 
-// StringBuilder (not thread-safe, faster)
-StringBuilder builder = new StringBuilder();
-builder.append("Java");
-builder.append(" Programming");
-String result = builder.toString();
+// StringBuilder (not thread-safe, faster)<br>
+StringBuilder builder = new StringBuilder();<br>
+builder.append("Java");<br>
+builder.append(" Programming");<br>
+String result = builder.toString();<br>
                 </code>
 
                 <h3>7. Math Methods</h3>
                 <p>Perform mathematical operations using built-in Math class.</p>
 
                 <code>
-// Common Math methods
-double result1 = Math.pow(2, 3);        // 8.0
-double result2 = Math.sqrt(16);         // 4.0
-double result3 = Math.abs(-10);         // 10.0
-double result4 = Math.max(10, 20);      // 20.0
-double result5 = Math.min(10, 20);      // 10.0
-double result6 = Math.random();         // Random between 0.0 and 1.0
-double result7 = Math.ceil(4.3);        // 5.0
-double result8 = Math.floor(4.7);       // 4.0
-double result9 = Math.round(4.6);       // 5
+// Common Math methods<br>
+double result1 = Math.pow(2, 3);        // 8.0<br>
+double result2 = Math.sqrt(16);         // 4.0<br>
+double result3 = Math.abs(-10);         // 10.0<br>
+double result4 = Math.max(10, 20);      // 20.0<br>
+double result5 = Math.min(10, 20);      // 10.0<br>
+double result6 = Math.random();         // Random between 0.0 and 1.0<br>
+double result7 = Math.ceil(4.3);        // 5.0<br>
+double result8 = Math.floor(4.7);       // 4.0<br>
+double result9 = Math.round(4.6);       // 5<br>
                 </code>
 
                 <h3>8. Date & Time</h3>
                 <p>Handle date and time operations (Java 8+ java.time package).</p>
 
                 <code>
-// Java 8 Date-Time API
-LocalDate today = LocalDate.now();
-LocalTime currentTime = LocalTime.now();
-LocalDateTime dateTime = LocalDateTime.now();
+// Java 8 Date-Time API<br>
+LocalDate today = LocalDate.now();<br>
+LocalTime currentTime = LocalTime.now();<br>
+LocalDateTime dateTime = LocalDateTime.now();<br><br>
 
-// Creating specific dates
-LocalDate specificDate = LocalDate.of(2024, 12, 25);
-LocalTime specificTime = LocalTime.of(14, 30, 0);
+// Creating specific dates<br>
+LocalDate specificDate = LocalDate.of(2024, 12, 25);<br>
+LocalTime specificTime = LocalTime.of(14, 30, 0);<br><br>
 
-// Formatting
-DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-String formattedDate = today.format(formatter);
+// Formatting<br>
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");<br>
+String formattedDate = today.format(formatter);<br><br>
 
-// Date calculations
-LocalDate nextWeek = today.plusWeeks(1);
+// Date calculations<br>
+LocalDate nextWeek = today.plusWeeks(1);<br>
 LocalDate lastMonth = today.minusMonths(1);
                 </code>
 
@@ -333,25 +491,25 @@ LocalDate lastMonth = today.minusMonths(1);
                 <p>Read from and write to files using Java I/O classes.</p>
 
                 <code>
-// Reading a file
-try {
-    Scanner fileReader = new Scanner(new File("input.txt"));
-    while (fileReader.hasNextLine()) {
-        String line = fileReader.nextLine();
-        System.out.println(line);
-    }
-    fileReader.close();
-} catch (FileNotFoundException e) {
-    System.out.println("File not found: " + e.getMessage());
-}
+// Reading a file<br>
+try {<br>
+    Scanner fileReader = new Scanner(new File("input.txt"));<br>
+    while (fileReader.hasNextLine()) {<br>
+        String line = fileReader.nextLine();<br>
+        System.out.println(line);<br>
+    }<br>
+    fileReader.close();<br>
+} catch (FileNotFoundException e) {<br>
+    System.out.println("File not found: " + e.getMessage());<br>
+}<br><br>
 
-// Writing to a file
-try {
-    FileWriter writer = new FileWriter("output.txt");
-    writer.write("Hello, World!");
-    writer.close();
-} catch (IOException e) {
-    System.out.println("Error writing to file: " + e.getMessage());
+// Writing to a file<br>
+try {<br>
+    FileWriter writer = new FileWriter("output.txt");<br>
+    writer.write("Hello, World!");<br>
+    writer.close();<br>
+} catch (IOException e) {<br>
+    System.out.println("Error writing to file: " + e.getMessage());<br>
 }
                 </code>
 
@@ -360,50 +518,50 @@ try {
 
                 <code>
 // Try-catch block
-try {
-    int result = 10 / 0;
-} catch (ArithmeticException e) {
-    System.out.println("Cannot divide by zero: " + e.getMessage());
-} finally {
-    System.out.println("This block always executes");
-}
+try {<br>
+    int result = 10 / 0;<br>
+} catch (ArithmeticException e) {<br>
+    System.out.println("Cannot divide by zero: " + e.getMessage());<br>
+} finally {<br>
+    System.out.println("This block always executes");<br>
+}<br><br>
 
-// Multiple catch blocks
-try {
-    int[] arr = {1, 2, 3};
-    System.out.println(arr[5]);
-} catch (ArrayIndexOutOfBoundsException e) {
-    System.out.println("Array index out of bounds");
-} catch (Exception e) {
-    System.out.println("General exception: " + e.getMessage());
-}
+// Multiple catch blocks<br>
+try {<br>
+    int[] arr = {1, 2, 3};<br>
+    System.out.println(arr[5]);<br>
+} catch (ArrayIndexOutOfBoundsException e) {<br>
+    System.out.println("Array index out of bounds");<br>
+} catch (Exception e) {<br>
+    System.out.println("General exception: " + e.getMessage());<br>
+}<br><br>
 
-// Throwing custom exceptions
-public static void validateAge(int age) throws IllegalArgumentException {
-    if (age < 0) {
-        throw new IllegalArgumentException("Age cannot be negative");
-    }
-}
+// Throwing custom exceptions<br>
+public static void validateAge(int age) throws IllegalArgumentException {<br>
+    if (age < 0) {<br>
+        throw new IllegalArgumentException("Age cannot be negative");<br>
+    }<br>
+}<br>
                 </code>
 
                 <h3>11. User Input</h3>
                 <p>Accept input from users using Scanner class.</p>
 
                 <code>
-Scanner scanner = new Scanner(System.in);
+Scanner scanner = new Scanner(System.in);<br><br>
 
-// Reading different data types
-System.out.print("Enter your name: ");
-String name = scanner.nextLine();
+// Reading different data types<br>
+System.out.print("Enter your name: ");<br>
+String name = scanner.nextLine();<br><br>
 
-System.out.print("Enter your age: ");
-int age = scanner.nextInt();
+System.out.print("Enter your age: ");<br>
+int age = scanner.nextInt();<br><br>
 
-System.out.print("Enter your salary: ");
-double salary = scanner.nextDouble();
+System.out.print("Enter your salary: ");<br>
+double salary = scanner.nextDouble();<br><br>
 
-System.out.print("Are you employed? (true/false): ");
-boolean employed = scanner.nextBoolean();
+System.out.print("Are you employed? (true/false): ");<br>
+boolean employed = scanner.nextBoolean();<br>
 
 scanner.close();
                 </code>
@@ -411,607 +569,938 @@ scanner.close();
 
             <section class="main-section" id="module2_oops">
                 <header>
-                    <h2>Module II: Object-Oriented Programming</h2>
+                    <h2>Module II: Object-Oriented Programming (OOP)</h2>
                 </header>
 
-                 <p>Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects", which contain data in the form of fields (also known as attributes or properties), and code in the form of procedures (methods).</p>
+                <p>Object-Oriented Programming (OOP) is a powerful programming paradigm that organizes software design
+                    around "objects" rather than functions and logic. An object is a self-contained unit that
+                    encapsulates both data (attributes or properties) and the procedures (methods) that operate on that
+                    data. This approach aims to make software more modular, flexible, and maintainable.</p>
 
-    <h3>Key Principles of OOP:</h3>
-    <ul>
-        <li><strong>Encapsulation:</strong> Bundling data (variables) and methods that operate on the data into a single unit (class). Access is restricted using access modifiers.</li>
-        <li><strong>Abstraction:</strong> Hiding internal details and showing only essential features through abstract classes and interfaces.</li>
-        <li><strong>Inheritance:</strong> Mechanism where one class acquires the properties and behavior of another class using the <code>extends</code> keyword.</li>
-        <li><strong>Polymorphism:</strong> Ability of a variable, function, or object to take multiple forms. Achieved through method overloading and overriding.</li>
-    </ul>
+                <h3>Core Principles of OOP:</h3>
+                <p>The foundation of OOP rests on four fundamental principles. Understanding these is key to mastering
+                    object-oriented design.</p>
+                <ul>
+                    <li>
+                        <strong>Encapsulation:</strong> This principle involves bundling the data (variables) and the
+                        methods that operate on the data into a single unit, known as a class. It also includes
+                        restricting direct access to some of an object's components, typically achieved using access
+                        modifiers (like `private`, `public`, `protected`). The primary benefit is data hiding,
+                        preventing external code from directly manipulating an object's internal state, thus maintaining
+                        data integrity and simplifying debugging.
+                    </li>
+                    <li>
+                        <strong>Abstraction:</strong> Abstraction means hiding the complex implementation details and
+                        showing only the essential features of an object or system. It allows you to focus on what an
+                        object does rather than how it does it. In Java, abstraction is achieved through abstract
+                        classes and interfaces, which define a contract for what methods a class must implement without
+                        providing the implementation details.
+                    </li>
+                    <li>
+                        <strong>Inheritance:</strong> Inheritance is a mechanism that allows a new class (subclass or
+                        child class) to inherit properties (fields) and behaviors (methods) from an existing class
+                        (superclass or parent class). This promotes code reusability and establishes a natural "is-a"
+                        relationship (e.g., a 'Dog' *is a* 'Animal'). In Java, the `extends` keyword is used to achieve
+                        inheritance.
+                    </li>
+                    <li>
+                        <strong>Polymorphism:</strong> Meaning "many forms," polymorphism allows objects to take on
+                        different forms. It enables a single interface or method to be used for different underlying
+                        data types or classes. In Java, polymorphism is primarily achieved through:
+                        <ul>
+                            <li><strong>Method Overloading (Compile-time Polymorphism):</strong> Defining multiple
+                                methods in the same class with the same name but different parameters (different number
+                                or types of arguments).</li>
+                            <li><strong>Method Overriding (Runtime Polymorphism):</strong> Redefining a method of a
+                                superclass in its subclass. The specific method to be called is determined at runtime
+                                based on the actual object type.</li>
+                        </ul>
+                    </li>
+                </ul>
 
-    <h3>Class & Object</h3>
-    <p>A class is a blueprint from which individual objects are created. Objects are instances of classes.</p>
+                <h3>Key OOP Concepts in Java with Examples:</h3>
 
-    <h3>Constructor</h3>
-    <p>A constructor is a special method that is called when an object is instantiated. It can be default, parameterized, or overloaded.</p>
-
-    <h3>Method Overloading & Overriding</h3>
-    <p><strong>Overloading:</strong> Same method name with different parameters. <strong>Overriding:</strong> Redefining a superclass method in a subclass.</p>
-
-    <h3>Abstract Class vs Interface</h3>
-    <ul>
-        <li>Abstract class can have both abstract and concrete methods. Use <code>abstract</code> keyword.</li>
-        <li>Interface can have only abstract methods (till Java 7), default/static methods (from Java 8).</li>
-    </ul>
-
-    <h3>"this" and "super"</h3>
-    <p><strong>this:</strong> Refers to the current class instance. <strong>super:</strong> Refers to the parent class instance, used to call parent methods/constructors.</p>
-
-    <h3>Static Keyword</h3>
-    <p>Static methods and variables belong to the class, not instances. Useful for memory management and utility methods.</p>
-
-                <h3>1. Objects & Classes</h3>
-                <p>Classes are blueprints for creating objects. Objects are instances of classes.</p>
-
-                <code>
-// Class definition
+                <div class="code-example">
+                    <h3>1. Class & Object</h3>
+                    <p>A <strong>Class</strong> is a blueprint or a template for creating objects. It defines the common
+                        properties (data) and behaviors (methods) that all objects of that type will have. An
+                        <strong>Object</strong> is an instance of a class, a concrete realization of that blueprint.
+                    </p>
+                    <pre><code class="language-java">
+// Class definition: Student blueprint
 public class Student {
-    // Instance variables
+    // Instance variables (attributes)
     private String name;
     private int age;
     private double gpa;
-    
-    // Constructor
+
+    // Constructor (special method to initialize objects)
     public Student(String name, int age, double gpa) {
-        this.name = name;
+        this.name = name; // 'this' refers to the current object's instance variable
         this.age = age;
         this.gpa = gpa;
     }
-    
-    // Methods
+
+    // Method (behavior)
     public void displayInfo() {
         System.out.println("Name: " + name + ", Age: " + age + ", GPA: " + gpa);
     }
-    
-    // Getters and Setters
+
+    // Getters and Setters (for controlled access to private data - Encapsulation)
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
+    public double getGpa() { return gpa; }
+    public void setGpa(double gpa) { this.gpa = gpa; }
+
+    public static void main(String[] args) {
+        // Creating objects (instances) of the Student class
+        Student student1 = new Student("Alice", 20, 3.8); // Calls the constructor
+        Student student2 = new Student("Bob", 19, 3.5);
+
+        // Calling methods on objects
+        student1.displayInfo();
+        student2.displayInfo();
+
+        // Using a setter to modify an object's state
+        student1.setGpa(3.9);
+        System.out.println("Alice's new GPA: " + student1.getGpa());
+    }
 }
+        </code></pre>
+                    <div class="output">
+                        <h4>Output:</h4>
+                        <pre><code>Name: Alice, Age: 20, GPA: 3.8
+Name: Bob, Age: 19, GPA: 3.5
+Alice's new GPA: 3.9</code></pre>
+                    </div>
+                </div>
 
-// Creating objects
-Student student1 = new Student("Alice", 20, 3.8);
-Student student2 = new Student("Bob", 19, 3.5);
-                </code>
-
-                <h3>2. Constructors</h3>
-                <p>Special methods used to initialize objects when they are created.</p>
-
-                <code>
+                <div class="code-example">
+                    <h3>2. Constructors</h3>
+                    <p>A <strong>Constructor</strong> is a special type of method used to initialize objects. It has the
+                        same name as the class and does not have a return type. Constructors are called automatically
+                        when an object is created using the `new` keyword. A class can have multiple constructors
+                        (constructor overloading) to allow for different ways of initializing objects.</p>
+                    <pre><code class="language-java">
 public class Car {
     private String brand;
     private String model;
     private int year;
-    
-    // Default Constructor
+
+    // Default Constructor (no parameters)
     public Car() {
         this.brand = "Unknown";
         this.model = "Unknown";
         this.year = 0;
+        System.out.println("Default Car created.");
     }
-    
+
     // Parameterized Constructor
     public Car(String brand, String model, int year) {
         this.brand = brand;
         this.model = model;
         this.year = year;
+        System.out.println("Parameterized Car created: " + brand + " " + model);
     }
-    
-    // Constructor Overloading
+
+    // Constructor Overloading: Another parameterized constructor
     public Car(String brand, String model) {
-        this(brand, model, 2024); // Call to another constructor
+        this(brand, model, 2024); // Calls the other three-parameter constructor ('this()' for constructor chaining)
+        System.out.println("Two-parameter Car created: " + brand + " " + model);
+    }
+
+    public void displayCarDetails() {
+        System.out.println("Brand: " + brand + ", Model: " + model + ", Year: " + year);
+    }
+
+    public static void main(String[] args) {
+        Car car1 = new Car(); // Calls the default constructor
+        car1.displayCarDetails();
+
+        Car car2 = new Car("Toyota", "Camry", 2022); // Calls the three-parameter constructor
+        car2.displayCarDetails();
+
+        Car car3 = new Car("Honda", "Civic"); // Calls the two-parameter constructor
+        car3.displayCarDetails();
     }
 }
-                </code>
+        </code></pre>
+                    <div class="output">
+                        <h4>Output:</h4>
+                        <pre><code>Default Car created.
+Brand: Unknown, Model: Unknown, Year: 0
+Parameterized Car created: Toyota Camry
+Brand: Toyota, Model: Camry, Year: 2022
+Parameterized Car created: Honda Civic
+Two-parameter Car created: Honda Civic
+Brand: Honda, Model: Civic, Year: 2024</code></pre>
+                    </div>
+                </div>
 
-                <h3>3. Method Overloading & Overriding</h3>
-                <p>Overloading: Same method name with different parameters. Overriding: Redefining parent class methods
-                    in child class.</p>
-
-                <code>
-// Method Overloading
-public class Calculator {
-    public int add(int a, int b) {
+                <div class="code-example">
+                    <h3>3. Method Overloading & Overriding (Polymorphism)</h3>
+                    <p><strong>Method Overloading</strong> enables a class to have multiple methods with the same name,
+                        but they must differ in the number or type of their parameters. This is an example of
+                        compile-time polymorphism.</p>
+                    <p><strong>Method Overriding</strong> occurs when a subclass provides its own specific
+                        implementation for a method that is already defined in its superclass. This is an example of
+                        runtime polymorphism, as the method to be executed is determined at runtime based on the actual
+                        object type.</p>
+                    <pre><code class="language-java">
+// Method Overloading example
+class Calculator {
+    public int add(int a, int b) { // Method 1
         return a + b;
     }
-    
-    public double add(double a, double b) {
+
+    public double add(double a, double b) { // Method 2: Same name, different parameter types
         return a + b;
     }
-    
-    public int add(int a, int b, int c) {
+
+    public int add(int a, int b, int c) { // Method 3: Same name, different number of parameters
         return a + b + c;
     }
-}
 
-// Method Overriding
-class Animal {
-    public void makeSound() {
-        System.out.println("Animal makes a sound");
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        System.out.println("Sum of two integers: " + calc.add(5, 10));
+        System.out.println("Sum of two doubles: " + calc.add(5.5, 10.2));
+        System.out.println("Sum of three integers: " + calc.add(1, 2, 3));
     }
 }
 
-class Dog extends Animal {
-    @Override
+// Method Overriding example
+class Animal { // Superclass
     public void makeSound() {
-        System.out.println("Dog barks");
+        System.out.println("Animal makes a generic sound");
     }
 }
-                </code>
 
-                <h3>4. Encapsulation</h3>
-                <p>Hide internal details and provide controlled access through public methods.</p>
+class Dog extends Animal { // Subclass
+    @Override // Annotation to indicate method overriding
+    public void makeSound() { // Overrides the makeSound() method from Animal
+        System.out.println("Dog barks: Woof woof!");
+    }
 
-                <code>
+    public static void main(String[] args) {
+        Animal myAnimal = new Animal();
+        myAnimal.makeSound();
+
+        Dog myDog = new Dog();
+        myDog.makeSound();
+
+        // Polymorphism in action: An Animal reference variable holding a Dog object
+        Animal polymorphicAnimal = new Dog();
+        polymorphicAnimal.makeSound();
+    }
+}
+        </code></pre>
+                    <div class="output">
+                        <h4>Output (for Calculator):</h4>
+                        <pre><code>Sum of two integers: 15
+Sum of two doubles: 15.7
+Sum of three integers: 6</code></pre>
+                        <h4>Output (for Animal/Dog):</h4>
+                        <pre><code>Animal makes a generic sound
+Dog barks: Woof woof!
+Dog barks: Woof woof!</code></pre>
+                    </div>
+                </div>
+
+                <div class="code-example">
+                    <h3>4. Encapsulation</h3>
+                    <p>Encapsulation is achieved by declaring the instance variables of a class as `private` and
+                        providing public methods (getters and setters) to access and modify these variables. This
+                        protects the data from unauthorized direct access and allows for control over how the data is
+                        manipulated.</p>
+                    <pre><code class="language-java">
 public class BankAccount {
-    private double balance; // Private - cannot be accessed directly
+    private double balance; // Private: Data is hidden
     private String accountNumber;
-    
+
     public BankAccount(String accountNumber, double initialBalance) {
         this.accountNumber = accountNumber;
-        this.balance = initialBalance;
+        // Business logic can be applied here to validate initialBalance
+        if (initialBalance >= 0) {
+            this.balance = initialBalance;
+        } else {
+            this.balance = 0;
+            System.err.println("Initial balance cannot be negative. Setting to 0.");
+        }
     }
-    
-    // Controlled access through public methods
+
+    // Public getter method to read balance
     public double getBalance() {
         return balance;
     }
-    
+
+    // Public method to deposit (controlled access)
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
+            System.out.println("Deposited: " + amount + ". New balance: " + balance);
+        } else {
+            System.out.println("Deposit amount must be positive.");
         }
     }
-    
+
+    // Public method to withdraw (controlled access with logic)
     public boolean withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
+            System.out.println("Withdrew: " + amount + ". New balance: " + balance);
             return true;
+        } else {
+            System.out.println("Invalid withdrawal amount or insufficient balance.");
+            return false;
         }
-        return false;
     }
-}
-                </code>
 
-                <h3>5. Inheritance</h3>
-
-                <p>Inheritance allows a class (child class) to inherit properties and behaviors (methods) from another class (parent class).</p>
-
-<code>
-// Parent class
-class Animal {
-    String type = "Animal";
-
-    void eat() {
-        System.out.println("This animal eats food.");
-    }
-}
-
-// Child class
-class Dog extends Animal {
-    void bark() {
-        System.out.println("The dog barks.");
-    }
-}
-
-// Main class
-public class Main {
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        dog.eat();  // Inherited method
-        dog.bark(); // Own method
-        System.out.println(dog.type); // Inherited field
+        BankAccount myAccount = new BankAccount("123456789", 1000.0);
+        // myAccount.balance = -500; // This would cause a compile-time error due to 'private' access
+
+        System.out.println("Current balance: " + myAccount.getBalance()); // Access via getter
+
+        myAccount.deposit(200.0);
+        myAccount.withdraw(150.0);
+        myAccount.withdraw(2000.0); // Will fail due to insufficient balance
+        myAccount.deposit(-50.0); // Will fail due to invalid amount
     }
 }
-</code>
+        </code></pre>
+                    <div class="output">
+                        <h4>Output:</h4>
+                        <pre><code>Current balance: 1000.0
+Deposited: 200.0. New balance: 1200.0
+Withdrew: 150.0. New balance: 1050.0
+Invalid withdrawal amount or insufficient balance.
+Deposit amount must be positive.</code></pre>
+                    </div>
+                </div>
 
-<h3>6. Abstraction</h3>
-<p>Abstraction hides complex implementation details and shows only essential features. It is achieved using abstract classes or interfaces.</p>
+                <div class="code-example">
+                    <h3>5. Inheritance</h3>
+                    <p>Inheritance allows a class (child/subclass) to acquire the properties and methods of another
+                        class (parent/superclass). This mechanism facilitates code reuse and models "is-a" relationships
+                        in your domain.</p>
+                    <pre><code class="language-java">
+// Parent class (Superclass)
+class Vehicle {
+    String brand = "Generic Vehicle";
 
-<code>
+    void drive() {
+        System.out.println("The vehicle is moving.");
+    }
+
+    void honk() {
+        System.out.println("Vehicle honks.");
+    }
+}
+
+// Child class (Subclass) inheriting from Vehicle
+class Car extends Vehicle {
+    String model = "Sedan"; // Car has its own specific attributes
+
+    // Car can also have its own methods
+    void accelerate() {
+        System.out.println("The car is accelerating.");
+    }
+
+    // Method overriding: Car provides its own implementation of honk()
+    @Override
+    void honk() {
+        System.out.println("Car honks: Beep beep!");
+    }
+
+    public static void main(String[] args) {
+        Car myCar = new Car();
+
+        // Accessing inherited properties and methods
+        System.out.println("My car brand: " + myCar.brand);
+        myCar.drive();
+
+        // Accessing its own properties and methods
+        System.out.println("My car model: " + myCar.model);
+        myCar.accelerate();
+
+        // Calling the overridden method
+        myCar.honk();
+    }
+}
+        </code></pre>
+                    <div class="output">
+                        <h4>Output:</h4>
+                        <pre><code>My car brand: Generic Vehicle
+The vehicle is moving.
+My car model: Sedan
+The car is accelerating.
+Car honks: Beep beep!</code></pre>
+                    </div>
+                </div>
+
+                <div class="code-example">
+                    <h3>6. Abstraction (Abstract Classes and Interfaces)</h3>
+                    <p>Abstraction is about representing essential features without including the background details or
+                        explanations. In Java, this is primarily achieved through abstract classes and interfaces.</p>
+
+                    <h4>Abstract Class:</h4>
+                    <p>An `abstract` class cannot be instantiated directly (you cannot create objects of an abstract
+                        class). It can contain both abstract methods (methods without a body, declared with `abstract`
+                        keyword) and concrete methods (methods with a body). Subclasses must provide implementations for
+                        all abstract methods inherited from the abstract class.</p>
+                    <pre><code class="language-java">
 // Abstract class
 abstract class Shape {
+    String color; // Can have instance variables
+
+    // Abstract method (no body), must be implemented by concrete subclasses
     abstract void draw();
-    
-    void display() {
-        System.out.println("This is a shape.");
+
+    // Concrete method (with a body)
+    void displayColor() {
+        System.out.println("Shape color: " + color);
+    }
+
+    public Shape(String color) { // Can have constructors
+        this.color = color;
     }
 }
 
-// Concrete class
+// Concrete subclass extending an abstract class
 class Circle extends Shape {
-    void draw() {
-        System.out.println("Drawing a circle.");
+    public Circle(String color) {
+        super(color); // Call to superclass constructor
     }
-}
 
-public class Main {
+    @Override
+    void draw() { // Must implement the abstract draw() method
+        System.out.println("Drawing a circle with color: " + color);
+    }
+
     public static void main(String[] args) {
-        Shape shape = new Circle();
-        shape.draw();
-        shape.display();
+        // Shape myShape = new Shape("Red"); // Compile-time error: Cannot instantiate abstract class
+
+        Shape circle = new Circle("Blue"); // Polymorphism: Reference of abstract class, object of concrete class
+        circle.draw();
+        circle.displayColor();
     }
 }
-</code>
+        </code></pre>
+                    <div class="output">
+                        <h4>Output:</h4>
+                        <pre><code>Drawing a circle with color: Blue
+Shape color: Blue</code></pre>
+                    </div>
 
-<h3>7. Polymorphism</h3>
-<p>Polymorphism means "many forms." It allows objects to take on many forms, such as method overloading (compile-time) and method overriding (runtime).</p>
-
-<code>
-// Compile-time Polymorphism (Method Overloading)
-class Calculator {
-    int add(int a, int b) {
-        return a + b;
-    }
-
-    double add(double a, double b) {
-        return a + b;
-    }
-}
-
-// Runtime Polymorphism (Method Overriding)
-class Animal {
-    void sound() {
-        System.out.println("Animal makes a sound.");
-    }
-}
-
-class Cat extends Animal {
-    void sound() {
-        System.out.println("Cat meows.");
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Calculator calc = new Calculator();
-        System.out.println(calc.add(2, 3));
-        System.out.println(calc.add(2.5, 3.7));
-
-        Animal a = new Cat();
-        a.sound(); // Calls overridden method in Cat
-    }
-}
-</code>
-
-<!-- Continuing from Module II: OOPs -->
-
-<h3>8. Interface</h3>
-<p>An interface is a reference type in Java, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. Interfaces are used to achieve abstraction and multiple inheritance.</p>
-
-<code>
+                    <h4>Interface:</h4>
+                    <p>An `interface` in Java is a blueprint of a class. It can contain method signatures (implicitly
+                        `public abstract` before Java 8), default methods, static methods, and constant fields
+                        (implicitly `public static final`). Interfaces are used to achieve 100% abstraction and to
+                        support multiple inheritance of type (a class can implement multiple interfaces).</p>
+                    <pre><code class="language-java">
+// Interface definition
 interface Drawable {
+    // Before Java 8: methods were implicitly public abstract
     void draw();
+
+    // From Java 8: default methods can have implementation
+    default void resize() {
+        System.out.println("Resizing the drawable object.");
+    }
+
+    // From Java 8: static methods can be defined in interfaces
+    static void showInfo() {
+        System.out.println("This is a drawable interface.");
+    }
 }
 
+// Class implementing an interface
 class Rectangle implements Drawable {
-    public void draw() {
-        System.out.println("Drawing Rectangle");
+    @Override
+    public void draw() { // Must implement the draw method
+        System.out.println("Drawing Rectangle.");
     }
-}
 
-class Circle implements Drawable {
-    public void draw() {
-        System.out.println("Drawing Circle");
-    }
-}
-
-public class Main {
     public static void main(String[] args) {
-        Drawable d = new Circle();
+        Rectangle rect = new Rectangle();
+        rect.draw();
+        rect.resize();
+
+        Drawable.showInfo();
+    }
+}
+
+class Triangle implements Drawable {
+    @Override
+    public void draw() {
+        System.out.println("Drawing Triangle.");
+    }
+
+    public static void main(String[] args) {
+        Drawable d = new Triangle(); // Polymorphism
         d.draw();
     }
 }
-</code>
+        </code></pre>
+                    <div class="output">
+                        <h4>Output (for Rectangle):</h4>
+                        <pre><code>Drawing Rectangle.
+Resizing the drawable object.
+This is a drawable interface.</code></pre>
+                        <h4>Output (for Triangle):</h4>
+                        <pre><code>Drawing Triangle.</code></pre>
+                    </div>
+                </div>
 
-<h3>9. Static Keyword</h3>
-<p>The static keyword in Java is used for memory management primarily. It can be applied to variables, methods, blocks, and nested classes.</p>
-
-<code>
-class Counter {
-    static int count = 0; // static variable
-
-    Counter() {
-        count++;
-        System.out.println(count);
-    }
-
-    static void display() { // static method
-        System.out.println("Static method called.");
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Counter c1 = new Counter();
-        Counter c2 = new Counter();
-        Counter.display();
-    }
-}
-</code>
-
-<h3>10. This & Super Keywords</h3>
-<p><strong>this</strong> refers to the current class instance, while <strong>super</strong> refers to the parent class instance.</p>
-
-<code>
+                <div class="code-example">
+                    <h3>7. `this` and `super` Keywords</h3>
+                    <p>The `this` and `super` keywords are crucial for managing references within classes and their
+                        inheritance hierarchies.</p>
+                    <ul>
+                        <li>
+                            <strong>`this` keyword:</strong> Refers to the current instance of the class. It is used to:
+                            <ul>
+                                <li>Refer to the current class's instance variables (e.g., `this.name = name;` to
+                                    differentiate between an instance variable and a parameter with the same name).</li>
+                                <li>Invoke the current class's method (e.g., `this.display();`).</li>
+                                <li>Invoke the current class's constructor (constructor chaining, e.g., `this(arg1,
+                                    arg2);`).</li>
+                                <li>Pass the current instance as an argument to a method.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>`super` keyword:</strong> Refers to the immediate parent (superclass) instance. It
+                            is used to:
+                            <ul>
+                                <li>Access the superclass's instance variables (e.g., `super.color`).</li>
+                                <li>Invoke the superclass's method (e.g., `super.makeSound();`).</li>
+                                <li>Invoke the superclass's constructor (e.g., `super(arguments);` - must be the first
+                                    statement in the subclass constructor).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <pre><code class="language-java">
 class Animal {
-    String color = "white";
+    String color = "white"; // Instance variable in parent class
+
+    Animal(String color) {
+        this.color = color; // 'this' refers to Animal's color
+    }
+
+    void printColor() {
+        System.out.println("Animal color: " + this.color);
+    }
 }
 
 class Dog extends Animal {
-    String color = "black";
+    String color = "black"; // Instance variable in child class (shadows parent's color)
 
-    void printColor() {
-        System.out.println(super.color); // refers to parent class variable
+    Dog(String animalColor, String dogColor) {
+        super(animalColor); // Calls the parent (Animal) constructor
+        this.color = dogColor; // 'this' refers to Dog's color
+    }
+
+    void displayColors() {
+        System.out.println("Dog's color: " + this.color);
+        System.out.println("Animal's color: " + super.color);
+        super.printColor(); // Calls printColor() from the parent (Animal) class
+    }
+
+    public static void main(String[] args) {
+        Dog myDog = new Dog("Brown (from Animal)", "Black (from Dog)");
+        myDog.displayColors();
     }
 }
 
+// Example for 'this()' constructor chaining
 class Person {
     String name;
+    int age;
 
     Person(String name) {
-        this.name = name; // refers to current class variable
+        this.name = name; // 'this' refers to the instance variable
+        System.out.println("Person created with name: " + name);
+    }
+
+    Person(String name, int age) {
+        this(name); // Calls the single-parameter constructor of the current class
+        this.age = age;
+        System.out.println("Person created with name: " + name + " and age: " + age);
+    }
+
+    public static void main(String[] args) {
+        Person p1 = new Person("Alice");
+        Person p2 = new Person("Bob", 30);
     }
 }
-</code>
+        </code></pre>
+                    <div class="output">
+                        <h4>Output (for Animal/Dog):</h4>
+                        <pre><code>Dog's color: Black (from Dog)
+Animal's color: Brown (from Animal)
+Animal color: Brown (from Animal)</code></pre>
+                        <h4>Output (for Person):</h4>
+                        <pre><code>Person created with name: Alice
+Person created with name: Bob
+Person created with name: Bob and age: 30</code></pre>
+                    </div>
+                </div>
 
-<!-- You can then proceed with Module III -->
+                <div class="code-example">
+                    <h3>8. Static Keyword</h3>
+                    <p>The `static` keyword in Java is used to declare members (variables, methods, blocks, and nested
+                        classes) that belong to the class itself, rather than to any specific instance (object) of the
+                        class. This means static members are shared across all instances of a class and can be accessed
+                        directly using the class name, without creating an object.</p>
+                    <pre><code class="language-java">
+class Counter {
+    static int instanceCount = 0; // Static variable: shared by all objects
 
-<section class="main-section" id="module3_collections">
-    <header>
-        <h2>Module III: Collections</h2>
-    </header>
+    Counter() {
+        instanceCount++; // Incremented for every new object created
+        System.out.println("New object created. Total objects: " + instanceCount);
+    }
 
-    <h3>1. List, Set, and Map</h3>
-    <p>Collections framework provides various classes like List, Set, and Map to store and manipulate groups of objects.</p>
+    static void displayTotalObjects() { // Static method: belongs to the class
+        System.out.println("Total Counter objects created so far: " + instanceCount);
+    }
 
-    <code>
-// List Example
-List<String> list = new ArrayList<>();
-list.add("Apple");
-list.add("Banana");
-System.out.println(list);
+    public static void main(String[] args) {
+        System.out.println("Initial count: " + Counter.instanceCount);
 
-// Set Example
-Set<String> set = new HashSet<>();
-set.add("Apple");
-set.add("Apple");
-System.out.println(set); // No duplicates
+        Counter c1 = new Counter(); // Creates object 1
+        Counter c2 = new Counter(); // Creates object 2
+        Counter c3 = new Counter(); // Creates object 3
 
-// Map Example
-Map<Integer, String> map = new HashMap<>();
-map.put(1, "Java");
-map.put(2, "Python");
+        Counter.displayTotalObjects();
+    }
+}
+
+// Example of a static utility method (like in Math class)
+class MathUtils {
+    public static int add(int a, int b) { // A static method
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        // Call static method directly using class name
+        int sum = MathUtils.add(10, 20);
+        System.out.println("Sum using static method: " + sum);
+    }
+}
+        </code></pre>
+                    <div class="output">
+                        <h4>Output (for Counter):</h4>
+                        <pre><code>Initial count: 0
+New object created. Total objects: 1
+New object created. Total objects: 2
+New object created. Total objects: 3
+Total Counter objects created so far: 3</code></pre>
+                        <h4>Output (for MathUtils):</h4>
+                        <pre><code>Sum using static method: 30</code></pre>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="main-section" id="module3_collections">
+                <header>
+                    <h2>Module III: Collections</h2>
+                </header>
+
+                <p>The Java Collections Framework is a set of interfaces and classes that provide a unified architecture
+                    for representing and manipulating groups of objects. It offers various data structures and
+                    algorithms, reducing programming effort and improving performance. The framework includes interfaces
+                    like <i><b>Collection, List, Set, and Map,</b></i> along with concrete implementations such as <i><b>ArrayList,
+                    LinkedList, HashSet, TreeSet, and HashMap</b></i>. These implementations offer different performance
+                    characteristics and are suitable for various use cases. The framework also provides algorithms for
+                    searching, sorting, and other common operations on collections.
+                </p>
+
+                <h3>1. List, Set, and Map</h3>
+                <p>Collections framework provides various classes like List, Set, and Map to store and manipulate
+                    groups of objects.</p>
+
+                <code>
+// List Example<br>
+List<String> list = new ArrayList<>();<br>
+list.add("Apple");<br>
+list.add("Banana");<br>
+System.out.println(list);<br><br>
+
+// Set Example<br>
+Set<String> set = new HashSet<>();<br>
+set.add("Apple");<br>
+set.add("Apple");<br>
+System.out.println(set); // No duplicates<br><br>
+
+// Map Example<br>
+Map<Integer, String> map = new HashMap<>();<br>
+map.put(1, "Java");<br>
+map.put(2, "Python");<br>
 System.out.println(map.get(1));
     </code>
 
-    <h3>2. Iterator & Enhanced For Loop</h3>
-    <p>Used to iterate through collections easily.</p>
+                <h3>2. Iterator & Enhanced For Loop</h3>
+                <p>Used to iterate through collections easily.</p>
 
-    <code>
-// Iterator
-List<String> names = new ArrayList<>();
-names.add("Alice");
-names.add("Bob");
+                <code>
+// Iterator<br>
+List<String> names = new ArrayList<>();<br>
+names.add("Alice");<br>
+names.add("Bob");<br><br>
 
-Iterator<String> itr = names.iterator();
-while (itr.hasNext()) {
-    System.out.println(itr.next());
-}
+Iterator<String> itr = names.iterator();<br>
+while (itr.hasNext()) {<br>
+    System.out.println(itr.next());<br>
+}<br><br>
 
-// Enhanced For Loop
-for (String name : names) {
-    System.out.println(name);
+// Enhanced For Loop<br>
+for (String name : names) {<br>
+    System.out.println(name);<br>
 }
     </code>
 
-    <h3>3. Sorting with Collections</h3>
-    <p>Sort collections using utility methods or comparators.</p>
+                <h3>3. Sorting with Collections</h3>
+                <p>Sort collections using utility methods or comparators.</p>
 
-    <code>
-List<Integer> numbers = Arrays.asList(5, 3, 8, 1);
-Collections.sort(numbers);
+                <code>
+List<Integer> numbers = Arrays.asList(5, 3, 8, 1);<br>
+Collections.sort(numbers);<br>
+System.out.println(numbers);<br><br>
+
+Collections.sort(numbers, Collections.reverseOrder());<br>
 System.out.println(numbers);
-
-Collections.sort(numbers, Collections.reverseOrder());
-System.out.println(numbers);
     </code>
 
-    <h3>4. Comparable & Comparator</h3>
-    <p>Interfaces to define natural and custom sorting order.</p>
+                <h3>4. Comparable & Comparator</h3>
+                <p>Interfaces to define natural and custom sorting order.</p>
 
-    <code>
-class Student implements Comparable<Student> {
-    int id;
-    String name;
+                <code>
+class Student implements Comparable<Student> {<br>
+    int id;<br>
+    String name;<br><br>
 
-    Student(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+    Student(int id, String name) {<br>
+        this.id = id;<br>
+        this.name = name;<br>
+    }<br><br>
 
-    public int compareTo(Student s) {
-        return this.id - s.id; // Ascending order
-    }
-}
+    public int compareTo(Student s) {<br>
+        return this.id - s.id; // Ascending order<br>
+    }<br>
+}<br><br>
 
-// Comparator
-class NameComparator implements Comparator<Student> {
-    public int compare(Student s1, Student s2) {
-        return s1.name.compareTo(s2.name);
-    }
-}
+// Comparator<br>
+class NameComparator implements Comparator<Student> {<br>
+    public int compare(Student s1, Student s2) {<br>
+        return s1.name.compareTo(s2.name);<br>
+    }<br>
+}<br><br>
 
-Collections.sort(studentList, new NameComparator());
+Collections.sort(studentList, new NameComparator());<br>
     </code>
-</section>
+            </section>
 
-<section class="main-section" id="module4_gui">
-    <header>
-        <h2>Module IV: GUI</h2>
-    </header>
+            <section class="main-section" id="module4_gui">
+                <header>
+                    <h2>Module IV: GUI</h2>
+                </header>
 
-    <h3>1. Introduction to Swing</h3>
-    <p>Swing is a GUI widget toolkit for Java that provides a rich set of components for building graphical interfaces.</p>
+                <h3>1. Introduction to Swing</h3>
+                <p>Swing is a GUI widget toolkit for Java that provides a rich set of components for building
+                    graphical interfaces.</p>
 
-    <code>
-import javax.swing.*;
+                <code>
+import javax.swing.*;<br><br>
 
-public class SimpleGUI {
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("My First GUI");
-        JButton button = new JButton("Click Me");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(button);
-        frame.setSize(300, 200);
-        frame.setVisible(true);
-    }
-}
-    </code>
-</section>
-
-<section class="main-section" id="module5_database">
-    <header>
-        <h2>Module V: Database</h2>
-    </header>
-
-    <h3>1. JDBC Basics</h3>
-    <p>Java Database Connectivity (JDBC) is an API for connecting and executing queries on a database.</p>
-
-    <code>
-import java.sql.*;
-
-public class JdbcExample {
-    public static void main(String[] args) throws Exception {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbname", "user", "pass");
-        Statement stmt = con.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM users");
-
-        while (rs.next()) {
-            System.out.println(rs.getString(1) + " " + rs.getString(2));
-        }
-        con.close();
-    }
+public class SimpleGUI {<br>
+    public static void main(String[] args) {<br>
+        JFrame frame = new JFrame("My First GUI");<br>
+        JButton button = new JButton("Click Me");<br>
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);<br>
+        frame.getContentPane().add(button);<br>
+        frame.setSize(300, 200);<br>
+        frame.setVisible(true);<br>
+    }<br>
 }
     </code>
-</section>
+            </section>
 
-<section class="main-section" id="module6_spring_boot">
-    <header>
-        <h2>Module VI: Spring Boot</h2>
-    </header>
+            <section class="main-section" id="module5_database">
+                <header>
+                    <h2>Module V: Database</h2>
+                </header>
 
-    <h3>1. Spring Boot Basics</h3>
-    <p>Spring Boot simplifies the setup of Spring applications with default configurations and embedded servers.</p>
+                <h3>1. JDBC Basics</h3>
+                <p>Java Database Connectivity (JDBC) is an API for connecting and executing queries on a database.
+                </p>
 
-    <code>
-@SpringBootApplication
-public class MyApp {
-    public static void main(String[] args) {
-        SpringApplication.run(MyApp.class, args);
-    }
-}
+                <code>
+import java.sql.*;<br><br>
 
-@RestController
-class HelloController {
-    @GetMapping("/hello")
-    public String hello() {
-        return "Hello, Spring Boot!";
-    }
-}
-    </code>
-</section>
+public class JdbcExample {<br>
+    public static void main(String[] args) throws Exception {<br>
+        Class.forName("com.mysql.cj.jdbc.Driver");<br>
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbname", "user", "pass");<br>
+        Statement stmt = con.createStatement();<br>
+        ResultSet rs = stmt.executeQuery("SELECT * FROM users");<br><br>
 
-<section class="main-section" id="module7_aop">
-    <header>
-        <h2>Module VII: AOP</h2>
-    </header>
-
-    <h3>1. Aspect-Oriented Programming</h3>
-    <p>AOP helps separate cross-cutting concerns like logging, security, and transactions from business logic.</p>
-
-    <code>
-@Aspect
-@Component
-public class LoggingAspect {
-    @Before("execution(* com.example.service.*.*(..))")
-    public void logBefore(JoinPoint joinPoint) {
-        System.out.println("Executing: " + joinPoint.getSignature().getName());
-    }
+        while (rs.next()) {<br>
+            System.out.println(rs.getString(1) + " " + rs.getString(2));<br>
+        }<br>
+        con.close();<br>
+    }<br>
 }
     </code>
-</section>
+            </section>
 
-<section class="main-section" id="module8_thymeleaf">
-    <header>
-        <h2>Module VIII: Thymeleaf</h2>
-    </header>
+            <section class="main-section" id="module6_spring_boot">
+                <header>
+                    <h2>Module VI: Spring Boot</h2>
+                </header>
 
-    <h3>1. Thymeleaf Basics</h3>
-    <p>Thymeleaf is a Java template engine used to build dynamic web applications with Spring.</p>
+                <h3>1. Spring Boot Basics</h3>
+                <p>Spring Boot simplifies the setup of Spring applications with default configurations and embedded
+                    servers.</p>
 
-    <code>
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Hello</title>
-</head>
-<body>
-    <h1 th:text="'Welcome ' + ${name}">Hello!</h1>
-</body>
+                <code>
+@SpringBootApplication<br>
+public class MyApp {<br>
+    public static void main(String[] args) {<br>
+        SpringApplication.run(MyApp.class, args);<br>
+    }<br>
+}<br><br>
+
+@RestController<br>
+class HelloController {<br>
+    @GetMapping("/hello")<br>
+    public String hello() {<br>
+        return "Hello, Spring Boot!";<br>
+    }<br>
+}
+    </code>
+            </section>
+
+            <section class="main-section" id="module7_aop">
+                <header>
+                    <h2>Module VII: AOP</h2>
+                </header>
+
+                <h3>1. Aspect-Oriented Programming</h3>
+                <p>AOP helps separate cross-cutting concerns like logging, security, and transactions from business
+                    logic.</p>
+
+                <code>
+@Aspect<br>
+@Component<br>
+public class LoggingAspect {<br>
+    @Before("execution(* com.example.service.*.*(..))")<br>
+    public void logBefore(JoinPoint joinPoint) {<br>
+        System.out.println("Executing: " + joinPoint.getSignature().getName());<br>
+    }<br>
+}
+    </code>
+            </section>
+
+            <section class="main-section" id="module8_thymeleaf">
+                <header>
+                    <h2>Module VIII: Thymeleaf</h2>
+                </header>
+
+                <h3>1. Thymeleaf Basics: An HTML-friendly Template Engine</h3>
+                <p>Thymeleaf is a modern server-side Java template engine designed for web and standalone environments.
+                    It's often used with Spring Framework for building dynamic web applications. What sets Thymeleaf
+                    apart is its philosophy of being "natural templating," meaning your template files can be opened
+                    directly in a browser and still display correctly, even before being processed by the server. This
+                    makes design and development much more intuitive, as designers and front-end developers can work on
+                    the HTML templates without needing a running application server.</p>
+
+                <p>Unlike some other template engines that introduce their own syntax that breaks standard HTML,
+                    Thymeleaf uses special attributes <strong>(<cite>e.g.,</cite> <i>th:text</i>, <cite>th:if</cite>,
+                        <cite>th:each</cite>)</strong> that are embedded directly into standard HTML tags. These
+                    attributes are
+                    ignored by browsers, allowing the HTML to render as static content. When the Thymeleaf engine
+                    processes the template on the server, it replaces or modifies the content based on these attributes,
+                    inserting dynamic data from your Java backend.</p>
+
+                <p>This approach allows for:</p>
+                <ul>
+                    <li><strong>Natural Prototypes:</strong> HTML templates can be viewed as static prototypes in any
+                        browser without a server. Designers can work on the layout and styling, and then developers can
+                        easily integrate dynamic content.</li>
+                    <li><strong>Clean HTML:</strong> The templates remain valid HTML, making them easier to read,
+                        maintain, and integrate with standard web development tools.</li>
+                    <li><strong>Server-Side Processing:</strong> All the dynamic content generation happens on the
+                        server before the page is sent to the client's browser. This means the client receives a fully
+                        rendered HTML page, improving initial load times and simplifying client-side logic.</li>
+                    <li><strong>Integration with Spring:</strong> Thymeleaf offers excellent integration with the Spring
+                        Framework, providing seamless handling of forms, validation messages, internationalization, and
+                        Spring Expression Language (SpEL) support.</li>
+                </ul>
+
+
+                <code>
+<!DOCTYPE html><br>
+<html xmlns:th="http://www.thymeleaf.org"><br>
+<head><br>
+    <title>Hello</title><br>
+</head><br>
+<body><br>
+    <h1 th:text="'Welcome ' + ${name}">Hello!</h1><br>
+</body><br>
 </html>
     </code>
-</section>
+            </section>
 
-<section class="main-section" id="module9_postman">
-    <header>
-        <h2>Module IX: Postman</h2>
-    </header>
+            <section class="main-section" id="module9_postman">
+                <header>
+                    <h2>Module IX: Postman</h2>
+                </header>
 
-    <h3>1. API Testing with Postman</h3>
-    <p>Postman is a popular tool for testing REST APIs. It supports all HTTP methods and helps in validating responses.</p>
-    <p>Use Postman to test GET, POST, PUT, DELETE requests to Spring Boot endpoints.</p>
-</section>
+                <h3>1. API Testing with Postman</h3>
+                <p>Postman is a popular tool for testing REST APIs. It supports all HTTP methods and helps in
+                    validating responses.</p>
+                <p>Use Postman to test GET, POST, PUT, DELETE requests to Spring Boot endpoints.</p>
+            </section>
 
-<section class="main-section" id="module10_crud">
-    <header>
-        <h2>Module X: CRUD Operations</h2>
-    </header>
+            <section class="main-section" id="module10_crud">
+                <header>
+                    <h2>Module X: CRUD Operations</h2>
+                </header>
 
-    <h3>1. CRUD in Spring Boot</h3>
-    <p>Perform Create, Read, Update, and Delete operations using Spring Data JPA.</p>
+                <h3>1. CRUD in Spring Boot</h3>
+                <p>Perform Create, Read, Update, and Delete operations using Spring Data JPA.</p>
 
-    <code>
-@Entity
-class Product {
-    @Id
-    @GeneratedValue
-    private Long id;
-    private String name;
-}
+                <code>
+@Entity<br>
+class Product {<br>
+    @Id<br>
+    @GeneratedValue<br>
+    private Long id;<br>
+    private String name;<br>
+}<br><br>
 
-@Repository
-interface ProductRepository extends JpaRepository<Product, Long> {}
+@Repository<br>
+interface ProductRepository extends JpaRepository<Product, Long> {}<br><br>
 
-@RestController
-class ProductController {
-    @Autowired
-    private ProductRepository repo;
+@RestController<br>
+class ProductController {<br>
+    @Autowired<br>
+    private ProductRepository repo;<br><br>
 
-    @PostMapping("/products")
-    public Product add(@RequestBody Product p) {
-        return repo.save(p);
+    @PostMapping("/products")<br>
+    public Product add(@RequestBody Product p) {<br>
+        return repo.save(p);<br>
     }
 }
     </code>
-</section>
+            </section>
 
-<section class="main-section" id="java8_features">
+            <section class="main-section" id="java8_features">
                 <header>
                     <h2>Java 8 Features</h2>
                 </header>
@@ -1023,14 +1512,14 @@ class ProductController {
                         <h3>Lambda Expressions</h3>
                         <p>Enable functional programming in Java with concise syntax for anonymous functions.</p>
                         <code>
-// Traditional approach
-Runnable r1 = new Runnable() {
-    public void run() {
-        System.out.println("Hello World");
-    }
-};
+// Traditional approach<br>
+Runnable r1 = new Runnable() {<br>
+    public void run() {<br>
+        System.out.println("Hello World");<br>
+    }<br>
+};<br><br>
 
-// Lambda expression
+// Lambda expression<br>
 Runnable r2 = () -> System.out.println("Hello World");
                         </code>
                     </div>
@@ -1039,10 +1528,10 @@ Runnable r2 = () -> System.out.println("Hello World");
                         <h3>Stream API</h3>
                         <p>Process collections in a functional style with filter, map, reduce operations.</p>
                         <code>
-List&lt;String&gt; names = Arrays.asList("John", "Jane", "Jack");
-names.stream()
-     .filter(name -> name.startsWith("J"))
-     .map(String::toUpperCase)
+List&lt;String&gt; names = Arrays.asList("John", "Jane", "Jack");<br>
+names.stream()<br>
+     .filter(name -> name.startsWith("J"))<br>
+     .map(String::toUpperCase)<br>
      .forEach(System.out::println);
                         </code>
                     </div>
@@ -1051,10 +1540,10 @@ names.stream()
                         <h3>Method References</h3>
                         <p>Shorthand for lambda expressions when calling existing methods.</p>
                         <code>
-// Lambda expression
-list.forEach(x -> System.out.println(x));
+// Lambda expression<br>
+list.forEach(x -> System.out.println(x));<br><br>
 
-// Method reference
+// Method reference<br>
 list.forEach(System.out::println);
                         </code>
                     </div>
@@ -1063,8 +1552,8 @@ list.forEach(System.out::println);
                         <h3>Optional Class</h3>
                         <p>Handle null values more elegantly and avoid NullPointerException.</p>
                         <code>
-Optional&lt;String&gt; optional = Optional.ofNullable(getString());
-optional.ifPresent(System.out::println);
+Optional&lt;String&gt; optional = Optional.ofNullable(getString());<br>
+optional.ifPresent(System.out::println);<br>
 String value = optional.orElse("Default Value");
                         </code>
                     </div>
@@ -1073,12 +1562,12 @@ String value = optional.orElse("Default Value");
                         <h3>Default Methods</h3>
                         <p>Add new methods to interfaces without breaking existing implementations.</p>
                         <code>
-interface Vehicle {
-    void start();
+interface Vehicle {<br>
+    void start();<br><br>
     
-    default void horn() {
-        System.out.println("Beep beep!");
-    }
+    default void horn() {<br>
+        System.out.println("Beep beep!");<br>
+    }<br>
 }
                         </code>
                     </div>
@@ -1087,72 +1576,89 @@ interface Vehicle {
                         <h3>Date and Time API</h3>
                         <p>New comprehensive date and time API (java.time package).</p>
                         <code>
-LocalDateTime now = LocalDateTime.now();
-LocalDate date = LocalDate.of(2024, Month.JANUARY, 1);
+LocalDateTime now = LocalDateTime.now();<br>
+LocalDate date = LocalDate.of(2024, Month.JANUARY, 1);<br>
 Duration duration = Duration.between(start, end);
                         </code>
                     </div>
                 </div>
-</section>
+            </section>
 
-<section class="main-section" id="dsa_concepts">
-    <header>
-        <h2>DSA Concepts</h2>
-    </header>
+            <section class="main-section" id="dsa_concepts">
+                <header>
+                    <h2>DSA Concepts</h2>
+                </header>
 
-    <h3>What is Data Structure?</h3>
-    <p>A Data Structure is a way of organizing and storing data so that it can be accessed and modified efficiently. Common types include Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, and Hash Tables.</p>
+                <h3>What is Data Structure?</h3>
+                <p>A Data Structure is a way of organizing and storing data so that it can be accessed and modified
+                    efficiently. Common types include Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, and Hash
+                    Tables.</p>
 
-    <h4>Types of Data Structures</h4>
-    <ul>
-        <li><strong>Linear Data Structures:</strong> Arrays, Linked Lists, Stacks, Queues</li>
-        <li><strong>Non-linear Data Structures:</strong> Trees (Binary Tree, BST, AVL, etc.), Graphs</li>
-        <li><strong>Hash-based Structures:</strong> Hash Tables, Hash Maps, Hash Sets</li>
-    </ul>
+                <h4>Types of Data Structures</h4>
+                <ul>
+                    <li><strong>Linear Data Structures:</strong> Arrays, Linked Lists, Stacks, Queues</li>
+                    <li><strong>Non-linear Data Structures:</strong> Trees (Binary Tree, BST, AVL, etc.), Graphs
+                    </li>
+                    <li><strong>Hash-based Structures:</strong> Hash Tables, Hash Maps, Hash Sets</li>
+                </ul>
 
-    <h3>What is an Algorithm?</h3>
-    <p>An Algorithm is a step-by-step procedure or formula for solving a problem. In computer science, it often refers to a set of rules to perform operations on data structures to solve computational problems.</p>
+                <h3>What is an Algorithm?</h3>
+                <p>An Algorithm is a step-by-step procedure or formula for solving a problem. In computer science,
+                    it often refers to a set of rules to perform operations on data structures to solve
+                    computational problems.</p>
 
-    <h4>Types of Algorithms</h4>
-    <ul>
-        <li><strong>Searching Algorithms:</strong> Linear Search, Binary Search</li>
-        <li><strong>Sorting Algorithms:</strong> Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort</li>
-        <li><strong>Recursive Algorithms:</strong> Used in divide and conquer techniques like Merge Sort, Quick Sort</li>
-        <li><strong>Dynamic Programming:</strong> Used for optimization problems (e.g., Fibonacci, Knapsack)</li>
-        <li><strong>Greedy Algorithms:</strong> Used to find optimal solutions (e.g., Kruskal’s and Prim’s Algorithm)</li>
-        <li><strong>Backtracking:</strong> Used in puzzles and games (e.g., N-Queens Problem)</li>
-        <li><strong>Graph Algorithms:</strong> BFS, DFS, Dijkstra’s, Floyd-Warshall</li>
-    </ul>
+                <h4>Types of Algorithms</h4>
+                <ul>
+                    <li><strong>Searching Algorithms:</strong> Linear Search, Binary Search</li>
+                    <li><strong>Sorting Algorithms:</strong> Bubble Sort, Selection Sort, Insertion Sort, Merge
+                        Sort, Quick Sort</li>
+                    <li><strong>Recursive Algorithms:</strong> Used in divide and conquer techniques like Merge
+                        Sort, Quick Sort</li>
+                    <li><strong>Dynamic Programming:</strong> Used for optimization problems (e.g., Fibonacci,
+                        Knapsack)</li>
+                    <li><strong>Greedy Algorithms:</strong> Used to find optimal solutions (e.g., Kruskal’s and
+                        Prim’s Algorithm)</li>
+                    <li><strong>Backtracking:</strong> Used in puzzles and games (e.g., N-Queens Problem)</li>
+                    <li><strong>Graph Algorithms:</strong> BFS, DFS, Dijkstra’s, Floyd-Warshall</li>
+                </ul>
 
-    <h3>Time Complexity</h3>
-    <p>Time Complexity is a measure of the amount of time an algorithm takes to complete as a function of the input size. Common notations include:</p>
-    <ul>
-        <li><strong>O(1):</strong> Constant time</li>
-        <li><strong>O(log n):</strong> Logarithmic time</li>
-        <li><strong>O(n):</strong> Linear time</li>
-        <li><strong>O(n log n):</strong> Log-linear time</li>
-        <li><strong>O(n²):</strong> Quadratic time</li>
-    </ul>
+                <h3>Time Complexity</h3>
+                <p>Time Complexity is a measure of the amount of time an algorithm takes to complete as a function
+                    of the input size. Common notations include:</p>
+                <ul>
+                    <li><strong>O(1):</strong> Constant time</li>
+                    <li><strong>O(log n):</strong> Logarithmic time</li>
+                    <li><strong>O(n):</strong> Linear time</li>
+                    <li><strong>O(n log n):</strong> Log-linear time</li>
+                    <li><strong>O(n²):</strong> Quadratic time</li>
+                </ul>
 
-    <h3>Space Complexity</h3>
-    <p>Space Complexity refers to the amount of memory space an algorithm uses relative to the input size. It includes the space used by variables, data structures, and function calls.</p>
+                <h3>Space Complexity</h3>
+                <p>Space Complexity refers to the amount of memory space an algorithm uses relative to the input
+                    size. It includes the space used by variables, data structures, and function calls.</p>
 
-</section>
+            </section>
 
-<section class="main-section" id="references">
-    <header>
-        <h2>References</h2>
-    </header>
+            <section class="main-section" id="references">
+                <header>
+                    <h2>References</h2>
+                </header>
 
-    <ul>
-        <li><a href="https://docs.oracle.com/en/java/" target="_blank">Official Java Documentation</a></li>
-        <li><a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot Project</a></li>
-        <li><a href="https://www.w3schools.com/java/" target="_blank">W3Schools Java Tutorial</a></li>
-        <li><a href="https://www.geeksforgeeks.org/java/" target="_blank">GeeksforGeeks Java</a></li>
-        <li><a href="https://www.baeldung.com/" target="_blank">Baeldung - Java & Spring</a></li>
-        <li><a href="https://www.programiz.com/java-programming" target="_blank">Programiz Java Tutorial</a></li>
-    </ul>
-</section>
+                <ul>
+                    <li><a href="https://docs.oracle.com/en/java/" target="_blank">Official Java Documentation</a>
+                    </li>
+                    <li><a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot Project</a>
+                    </li>
+                    <li><a href="https://www.w3schools.com/java/" target="_blank">W3Schools Java Tutorial</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/java/" target="_blank">GeeksforGeeks Java</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/dsa-tutorial-learn-data-structures-and-algorithms/"
+                            target="_blank">GeeksforGeeks DSA Tutorial</a></li>
+                    <li><a href="https://www.baeldung.com/" target="_blank">Baeldung - Java & Spring</a></li>
+                    <li><a href="https://www.programiz.com/java-programming" target="_blank">Programiz Java
+                            Tutorial</a></li>
+                </ul>
+            </section>
 
 </body>
+
 </html>
