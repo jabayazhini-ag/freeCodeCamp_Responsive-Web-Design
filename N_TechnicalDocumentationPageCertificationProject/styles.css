@@ -10,6 +10,7 @@
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            font-size: 16px;
         }
 
         .container {
@@ -165,6 +166,69 @@
             border-radius: 8px;
             margin: 15px 0;
             border-left: 4px solid #f39c12;
+        }
+
+        mark {
+            background: linear-gradient(135deg, #ffecb3, #ffe082);
+            color: #333;
+            border-radius: 4px;
+            padding: 1px 4px;
+            font-family: "Cascadia Code", "Fira Code", monospace;
+        }
+
+        #references a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        #references a:hover {
+            text-decoration: underline;
+        }
+
+        #references li {
+            list-style-type: disc;
+            color: #4a90e2;
+            padding-left: 20px;
+            margin-top: 10px;
+            font-size: 1.05rem;
+            }
+
+        hr {
+            border: 2px solid #4a90e2;
+            margin-top: 40px;
+        }
+
+        .analogy {
+            font-style: italic; 
+            color: #555; 
+            margin: 10px 0 20px 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #4a90e2, #357abd);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            margin-left: 250px;
+            font-size: 1.05rem;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            font-weight: bold;
         }
 
         /* Mobile hamburger menu */

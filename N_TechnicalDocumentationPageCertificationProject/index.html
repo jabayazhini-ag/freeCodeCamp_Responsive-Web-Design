@@ -30,6 +30,7 @@
                 <li><a class="nav-link" href="#module8_thymeleaf">Module VIII: Thymeleaf</a></li>
                 <li><a class="nav-link" href="#module9_postman">Module IX: Postman</a></li>
                 <li><a class="nav-link" href="#module10_crud">Module X: CRUD</a></li>
+                <li><a class="nav-link" href="#naming_conventions">Java Naming Conventions</a></li>
                 <li><a class="nav-link" href="#java8_features">Java 8 Features</a></li>
                 <li><a class="nav-link" href="#dsa_concepts">DSA Concepts</a></li>
                 <li><a class="nav-link" href="#references">References</a></li>
@@ -71,6 +72,110 @@
                             modifications.</li>
                     </ul>
                 </div>
+
+                <h3>Basic Java Syntax and Structure</h3>
+                <p>Let's look at a simple "Hello, World!" example to understand the basic syntax of a Java program.</p>
+                <pre><code>
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+                </code></pre>
+                <p><strong>Explanation of the components:</strong></p>
+                <ul>
+                    <li><strong><mark>public class HelloWorld</mark></strong> :
+                        <ul>
+                            <li><strong>public</strong> : This is an access modifier, meaning this class is accessible
+                                from
+                                any other class.</li>
+                            <li><strong>class</strong> : This keyword is used to declare a class. In Java, all code
+                                resides
+                                within classes.</li>
+                            <li><strong>HelloWorld</strong> : This is the name of our class. By convention, class names
+                                start
+                                with an <b>uppercase letter</b>. The file name must match the class name (e.g.,
+                                <mark>HelloWorld.java</mark>).
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong><mark>public static void main(String[] args)</mark></strong> : This is the main method,
+                        the entry point
+                        for any Java application.
+                        <ul>
+                            <li><strong>public</strong> : Again, an access modifier, making the method accessible from
+                                anywhere.</li>
+                            <li><strong>static</strong> : This keyword means the method belongs to the class itself, not
+                                to
+                                a
+                                specific object instance. It can be called without creating an object of the class.</li>
+                            <li><strong>void</strong> : This indicates that the method does not return any value.</li>
+                            <li><strong>main</strong> : This is the name of the method. The Java Virtual Machine (JVM)
+                                looks
+                                for a method with this specific signature to start execution.</li>
+                            <li><strong>String[] args</strong> : This declares a parameter named
+                                <i><strong>args</strong></i>, which is
+                                an array of <i><strong>String</strong></i> objects. It's used to receive command-line
+                                arguments
+                                when the program is run.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong><mark>System.out.println("Hello, World!");</mark></strong> : <i><b>This line prints the
+                                string
+                                "Hello, World!"
+                                to the console.</b></i>
+                        <ul>
+                            <li><strong>System</strong> : A built-in Java class that provides access to the system,
+                                including
+                                input/output streams.</li>
+                            <li><strong>out</strong> : A static member of the <i><strong>System</strong></i> class,
+                                which is an
+                                instance
+                                of <i><strong>PrintStream</strong></i> . It represents the standard output stream.</li>
+                            <li><strong>println()</strong> : A method of the <i><strong>PrintStream</strong></i> class
+                                that prints a
+                                string to the console and then moves the cursor to the next line.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="highlight">
+                    <p><strong>Note: </strong>Every statement in Java must end with a semicolon (<strong>;</strong>).
+                    </p>
+                </div>
+
+                <h3>How to Compile and Run a Java Program:</h3>
+                <p>To execute the "Hello, World!" program, you'll need the Java Development Kit (JDK) installed on your
+                    system.</p>
+                <ol>
+                    <li><strong>Save the code:</strong> Save the code above in a file named
+                        <mark>HelloWorld.java</mark> . Make sure the file name exactly matches the class name.
+                    </li>
+                    <li><strong>Open a terminal or command prompt:</strong> Navigate to the directory where you saved
+                        your <mark>HelloWorld.java</mark> file.</li>
+                    <li><strong>Compile the Java source code:</strong> Use the Java compiler ( <mark>javac</mark> ) to
+                        compile the <mark>.java</mark> file into bytecode (a <mark>.class</mark> file).
+                        <pre><code>
+javac HelloWorld.java
+                            </code></pre>
+                        <p>If the compilation is successful, a file named <mark>HelloWorld.class</mark> will be created
+                            in the same directory. This <mark>.class</mark> file contains the Java bytecode.</p>
+                    </li>
+                    <li><strong>Run the Java program:</strong> Use the Java application launcher ( <mark>java</mark> )
+                        to
+                        execute the compiled bytecode.
+                        <pre><code>
+java HelloWorld
+                            </code></pre>
+                        <p><strong>Note:</strong> You do not include the <mark>.class</mark> extension when running the
+                            program.</p>
+                    </li>
+                    <li><strong>Observe the output:</strong> The program will print the following to your console:
+                        <pre><code>
+Hello, World!
+                            </code></pre>
+                    </li>
+                </ol>
 
                 <h3>Java Architecture (JVM, JRE, JDK)</h3>
                 <p>Java follows a unique architecture that includes several key components, each playing a crucial role
@@ -156,27 +261,39 @@
                             applications.</li>
                         <li><strong>Development Tools:</strong>
                             <ul>
-                                <li><code>javac</code>: The Java compiler.</li>
-                                <li><code>java</code>: The Java application launcher (which also invokes the JVM).</li>
-                                <li><code>jdb</code>: The Java debugger.</li>
-                                <li><code>jar</code>: The Java archive tool (for packaging Java classes and associated
+                                <li><code>javac</code> The Java compiler.</li>
+                                <li><code>java</code> The Java application launcher (which also invokes the JVM).</li>
+                                <li><code>jdb</code> The Java debugger.</li>
+                                <li><code>jar</code> The Java archive tool (for packaging Java classes and associated
                                     metadata).</li>
-                                <li><code>javadoc</code>: The documentation generator.</li>
+                                <li><code>javadoc</code> The documentation generator.</li>
                                 <li>And many other utilities for profiling, monitoring, etc.</li>
                             </ul>
                         </li>
                     </ul>
-                    <p>In essence, JDK = JRE + Development Tools.</p>
+                    <p><strong>In essence, JDK = JRE + Development Tools.</strong></p>
                 </div>
 
                 <p>In summary, if you just want to run a Java program, you need the JRE. If you want to develop Java
                     programs, you need the JDK, which inherently includes the JRE and JVM.</p>
 
                 <div class="highlight">
-                    <p><strong>Note:</strong> Java is not a purely object-oriented language because it supports
-                        primitive data types (like int, char, etc.) that are not objects. However, it is often referred
-                        to as an object-oriented language due to its strong emphasis on OOP principles.</p>
+                    <p><strong>Note: </strong>
+                        Java is considered platform-independent because its source code compiles into bytecode, which is
+                        a
+                        universal, platform-neutral intermediate format. This bytecode can then be executed on any
+                        device
+                        that has a compatible Java Virtual Machine (JVM). However, the JVM itself is platform-dependent;
+                        a
+                        different version of the JVM is specifically designed and implemented for each underlying
+                        operating
+                        system (e.g., Windows, macOS, Linux). So, while your Java code is 'write once, run anywhere,'
+                        the
+                        'run anywhere' relies on the presence of a platform-specific JVM.
+                    </p>
                 </div>
+
+
             </section>
 
             <section class="main-section" id="java_history">
@@ -248,7 +365,8 @@
                 </div>
 
                 <div class="highlight">
-                    <p><strong>Fun Fact:</strong> Java was initially called "Oak" but was renamed to "Java" in 1995. The
+                    <p><strong>Fact File:</strong> Java was initially called "Oak" but was renamed to "Java" in 1995.
+                        The
                         name "Oak" came from an oak tree that stood outside the office of James Gosling, the creator of
                         Java. However, "Oak" was already a registered trademark. During a brainstorming session fueled
                         by coffee, the team chose the name "Java"—inspired by the Indonesian island known for its
@@ -263,53 +381,281 @@
                 </header>
 
                 <h3>1. Variables, Data Types & Operators</h3>
-                <p>Variables are containers for storing data values. Java is a strongly typed language, meaning every
-                    variable must be declared with a data type.</p>
+                <h4>Variables:</h4>
+                <p><strong>Variables</strong> are named memory locations that act as containers for storing data values.
+                    In Java, a <b>strongly typed language</b>, every variable must be explicitly declared with a
+                    specific
+                    data type before it can be used. This declaration informs the compiler about the type of data the
+                    variable will hold and the amount of memory it needs to allocate. This strong typing helps prevent
+                    errors and ensures type safety during compilation and runtime.</p>
+
+                <h4>Variable Naming Conventions:</h4>
+                <p>In Java, following standard naming conventions is crucial for code readability and
+                    maintainability. These conventions promote code clarity, reduce errors, and facilitate collaboration
+                    among developers.</p>
+                <ul>
+                    <li><strong>camelCase:</strong> Use lower camel case for variable names <b>(e.g.,
+                            `firstName`, `timeToFirstLoad`)</b>. The first letter of a variable name should be
+                        lowercase, and
+                        subsequent words start with an uppercase letter, without spaces or underscores.</li>
+                    <li><strong>Meaningful Names:</strong> Choose descriptive names reflecting the
+                        variable's purpose <b>(e.g., `customerName` instead of `cn`)</b>.</li>
+                    <li><strong>Constants:</strong> Use all uppercase with underscores separating
+                        words for constants declared as `final` <b>(e.g., `MAX_VALUE`, `API_KEY`)</b>.</li>
+                    <li><strong>Avoid Single Characters:</strong> Refrain from using
+                        single-character variable names except for loop counters <b>(e.g., `i`, `j`, `k`)</b>.</li>
+                    <li><strong>No Spaces:</strong> Variable names cannot contain spaces; use camel
+                        case instead.</li>
+                    <li><strong>Start with Letter:</strong> Begin variable names with a letter, not
+                        a digit.</li>
+                    <li><strong>Avoid `_` or `$`:</strong> Variable names should not start with an
+                        underscore `_` or dollar sign `$` characters, <b>even though both are technically allowed.</b>
+                    </li>
+                    <li><strong>Case Sensitivity:</strong> Java is case-sensitive; <b>`myVar`</b> and
+                        <b>`myvar`</b> are distinct variables.
+                    </li>
+                    <li><strong>Avoid Keywords:</strong> You cannot use Java keywords <b>(like `int`,
+                            `class`, `public`)</b> or reserved words as variable names.</li>
+                    <li><strong>Boolean variables:</strong> Should be prefixed with "is" <b>(e.g.,
+                            `isFinished`)</b>.</li>
+                    <li><strong>Private class variables:</strong> Should have an underscore prefix
+                        <b>(e.g., `_downloadTimer`)</b>.
+                    </li>
+                    <li><strong>Be mindful of length:</strong> While descriptive names are important, avoid excessively
+                        long names.</li>
+                </ul>
+
+                <p><strong>Examples:</strong></p>
+                <ul>
+                    <li>firstName</li>
+                    <li>totalAmount</li>
+                    <li>isValidUser</li>
+                    <li>employeeId</li>
+                </ul>
 
                 <h4>Data Types:</h4>
+                <p>Java's data types are categorized into two main groups:</p>
                 <ul>
-                    <li><strong>Primitive Types:</strong> byte, short, int, long, float, double, boolean, char</li>
-                    <li><strong>Non-Primitive Types:</strong> String, Arrays, Classes</li>
+                    <li>
+                        <strong>Primitive Types:</strong> These are the fundamental building blocks for data
+                        manipulation. They hold simple, single values directly in memory. Java has 8 primitive data
+                        types, each with a predefined size and range.
+                        <ul>
+                            <li><strong><mark>byte</mark>:</strong> Stores whole numbers from -128 to 127. <strong>Size:
+                                    1 byte (8 bits)</strong>. Default value: 0.</li>
+                            <li><strong><mark>short</mark>:</strong> Stores whole numbers from -32,768 to 32,767.
+                                <strong>Size: 2 bytes (16 bits)</strong>. Default value: 0.
+                            </li>
+                            <li><strong><mark>int</mark>:</strong> Stores whole numbers from -2,147,483,648 to
+                                2,147,483,647. This is the **default integer type**. <strong>Size: 4 bytes (32
+                                    bits)</strong>. Default value: 0.</li>
+                            <li><strong><mark>long</mark>:</strong> Stores very large whole numbers. Used when `int` is
+                                not large enough. Requires an 'L' or 'l' suffix (e.g., `100L`). <strong>Size: 8 bytes
+                                    (64 bits)</strong>. Default value: 0L.</li>
+                            <li><strong><mark>float</mark>:</strong> Stores single-precision floating-point numbers
+                                (decimals). Used when memory is a concern. Requires an 'F' or 'f' suffix (e.g.,
+                                `3.14f`). <strong>Size: 4 bytes (32 bits)</strong>. Default value: 0.0f.</li>
+                            <li><strong><mark>double</mark>:</strong> Stores double-precision floating-point numbers.
+                                This is the **default floating-point type** and is generally preferred for decimal
+                                values due to higher precision. <strong>Size: 8 bytes (64 bits)</strong>. Default value:
+                                0.0d.</li>
+                            <li><strong><mark>boolean</mark>:</strong> Stores `true` or `false` values only. Represents
+                                logical states. <strong>Size: 1 bit (though typically JVM allocates 1 byte for
+                                    storage)</strong>. Default value: `false`.</li>
+                            <li><strong><mark>char</mark>:</strong> Stores a single Unicode character (e.g., 'A', '1',
+                                '$'). Enclosed in single quotes. <strong>Size: 2 bytes (16 bits)</strong>. Default
+                                value: `'\u0000'` (null character).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Non-Primitive (Reference) Types:</strong> Also known as reference types, these do not
+                        store the actual data values directly but rather <b>references (memory addresses)</b> to the
+                        objects in memory. They are created by the programmer or provided by Java's API.
+                        <ul>
+                            <li><strong><mark>String</mark>:</strong> Represents a sequence of characters. Immutable in
+                                Java.</li>
+                            <li><strong><mark>Arrays</mark>:</strong> Store multiple values of the same type in a
+                                contiguous memory
+                                block.</li>
+                            <li><strong><mark>Classes</mark>:</strong> User-defined blueprints for objects (e.g.,
+                                `Product`, `User`).
+                            </li>
+                            <li><strong><mark>Interfaces</mark>:</strong> Define a contract of methods that a class must
+                                implement.
+                            </li>
+                        </ul>
+                        <div class="highlight">
+                            <p><strong>Note: </strong>The size of non-primitive types is not fixed; it depends on the
+                                size of the objects they
+                                refer to, which can vary. The reference itself typically takes up 4 or 8 bytes depending
+                                on
+                                the JVM architecture (32-bit or 64-bit).</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4>Operators:</h4>
+                <p>Operators are special symbols used to perform operations on variables and values. They are
+                    categorized based on the type of operation they perform:</p>
+                <ul>
+                    <li>
+                        <strong>Arithmetic Operators:</strong> Perform mathematical calculations.
+                        <ul>
+                            <li>`+` (Addition)</li>
+                            <li>`-` (Subtraction)</li>
+                            <li>`*` (Multiplication)</li>
+                            <li>`/` (Division)</li>
+                            <li>`%` (Modulus - remainder of division)</li>
+                            <li>`++` (Increment - increases value by 1)</li>
+                            <li>`--` (Decrement - decreases value by 1)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Assignment Operators:</strong> Used to assign values to variables.
+                        <ul>
+                            <li>`=` (Assignment)</li>
+                            <li>`+=` (Add and assign)</li>
+                            <li>`-=` (Subtract and assign)</li>
+                            <li>`*=` (Multiply and assign)</li>
+                            <li>`/=` (Divide and assign)</li>
+                            <li>`%=` (Modulus and assign)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Comparison (Relational) Operators:</strong> Used to compare two values and return a
+                        `boolean` result (`true` or `false`).
+                        <ul>
+                            <li>`==` (Equal to)</li>
+                            <li>`!=` (Not equal to)</li>
+                            <li>`>` (Greater than)</li>
+                            <li>`<` (Less than)</li>
+                            <li>`>=` (Greater than or equal to)</li>
+                            <li>`<=` (Less than or equal to)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Logical Operators:</strong> Used to combine or negate boolean expressions.
+                        <ul>
+                            <li>`&&` (Logical AND - true if both operands are true)</li>
+                            <li>`||` (Logical OR - true if at least one operand is true)</li>
+                            <li>`!` (Logical NOT - inverts the boolean state)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Bitwise Operators:</strong> Perform operations on individual bits of integer types.
+                        (e.g., `&` (AND), `|` (OR), `^` (XOR), `~` (NOT), `<<` (Left Shift), `>>` (Right Shift), `>>>`
+                            (Unsigned Right Shift)).
+                    </li>
+                    <li>
+                        <strong>Ternary (Conditional) Operator:</strong> A shorthand for an `if-else` statement.
+                        <ul>
+                            <li>`condition ? expression_if_true : expression_if_false;`</li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <pre><code>
 // Variable declarations
-
 int age = 25;
-
 double salary = 50000.50;
-
 boolean isEmployed = true;
-
 char grade = 'A';
-
 String name = "John Doe";
 
 // Operators
 int a = 10, b = 20;
-int sum = a + b;        // Arithmetic
-boolean isEqual = (a == b);  // Comparison
-boolean result = (a > 5) && (b < 30);  // Logical
-                </code></pre>
+
+// Arithmetic Operators
+int sum = a + b;           // sum = 30
+int difference = a - b;    // difference = -10
+int product = a * b;       // product = 200
+int quotient = b / a;      // quotient = 2
+int remainder = b % a;     // remainder = 0
+a++;                       // a is now 11
+b--;                       // b is now 19
+
+// Comparison Operators
+boolean isEqual = (a == b);    // isEqual = false (11 == 19)
+boolean isGreater = (a > b);   // isGreater = false (11 > 19)
+
+// Logical Operators
+boolean condition1 = (a > 10); // condition1 = true (11 > 10)
+boolean condition2 = (b < 20); // condition2 = true (19 < 20)
+boolean resultAND = (condition1 && condition2); // resultAND = true
+boolean resultOR = (condition1 || condition2);  // resultOR = true
+boolean resultNOT = !(condition1);              // resultNOT = false
+
+// Assignment Operators
+int x = 5;
+x += 3; // x is now 8 (x = x + 3)
+
+// Ternary Operator
+String status = (age >= 18) ? "Adult" : "Minor"; // status = "Adult"
+    </code></pre>
+
+                <hr>
 
                 <h3>2. Conditional Statements</h3>
-                <p>Control the flow of program execution based on conditions.</p>
+                <p><strong>Conditional statements</strong> (also known as <b>control flow statements</b>) are
+                    fundamental programming constructs that allow you to control the <b>flow of program execution</b>
+                    based on whether a specified condition evaluates to <mark>true</mark> or <mark>false</mark>. They
+                    enable your programs to make decisions, execute different blocks of code under different
+                    circumstances, and respond dynamically to varying inputs or states. This decision-making capability
+                    is what makes programs intelligent and interactive.</p>
 
+                <h4>Types of Conditional Statements in Java:</h4>
+
+                <h4>a. If Statement</h4>
+                <p>The <strong><mark>if</mark> statement</strong> is the most basic conditional statement. It executes a
+                    block of code only if a specified boolean condition is <mark>true</mark>. If the condition is
+                    <mark>false</mark>, the code block inside the `if` statement is skipped, and the program continues
+                    execution after the `if` block.
+                </p>
                 <pre><code>
 // If statement
+int age = 25;
 if (age >= 18) {
-    System.out.println("Adult");
+    System.out.println("Adult"); // This will be executed
 }
 
+int temperature = 10;
+if (temperature > 25) {
+    System.out.println("It's hot!"); // This will NOT be executed
+}
+    </code></pre>
+
+                <h4>b. If-else Statement</h4>
+                <p>The <strong><mark>if-else</mark> statement</strong> provides an alternative path of execution when
+                    the `if` condition is <mark>false</mark>. If the condition in the <mark>`if</mark>` block is
+                    <mark>true</mark>,
+                    its code is executed. Otherwise (<mark>else</mark>), the code block associated with the `else` part
+                    is executed. Exactly one of the two blocks will always execute.
+                </p>
+                <pre><code>
 // If-else
+int score = 75;
 if (score >= 60) {
-    System.out.println("Pass");
+    System.out.println("Pass"); // This will be executed
 } else {
     System.out.println("Fail");
 }
 
-// Ladder if-else & Nested if-else
-public class IfElseExample {
+int temperature = 5;
+if (temperature > 25) {
+    System.out.println("It's hot!");
+} else {
+    System.out.println("It's not hot!"); // This will be executed
+}
+    </code></pre>
+
+                <h4>c. If-else If (Ladder If-else) Statement</h4>
+                <p>The <strong><mark>if-else if ladder</mark></strong> (also known as the "else if" ladder) is used when
+                    you need to test multiple conditions sequentially. The program evaluates conditions from top to
+                    bottom. As soon as a condition evaluates to <mark>true</mark>, its corresponding code block is
+                    executed, and the rest of the ladder is skipped. If none of the `if` or `else if` conditions are
+                    met, the final `else` block (if present) is executed.</p>
+                <pre><code>
+public class IfElseLadderExample {
     public static void main(String[] args) {
         int score = 75;
 
@@ -317,118 +663,1023 @@ public class IfElseExample {
         if (score >= 90) {
             System.out.println("Grade A");
         } else if (score >= 80) {
-            System.outினுprintln("Grade B");
-        } else if (score >= 70) {
-            System.out.println("Grade C");
+            System.out.println("Grade B");
+        } else if (score >= 70) { // This condition (75 >= 70) is true
+            System.out.println("Grade C"); // This will be executed
         } else {
             System.out.println("Grade D");
         }
 
-        // Nested if-else
+        // Another example: Day of the week
+        int dayOfWeek = 3; // Wednesday
+        if (dayOfWeek == 1) {
+            System.out.println("Monday");
+        } else if (dayOfWeek == 2) {
+            System.out.println("Tuesday");
+        } else if (dayOfWeek == 3) {
+            System.out.println("Wednesday"); // This will be executed
+        } else {
+            System.out.println("Another day");
+        }
+    }
+}
+    </code></pre>
+
+                <h4>d. Nested If-else Statement</h4>
+                <p>A <strong>nested <mark>if-else</mark> statement</strong> is an `if` or `if-else` statement placed
+                    inside another `if` or `else` block. This allows for checking multiple layers of conditions, where
+                    an inner condition is only relevant if an outer condition is met. While powerful, excessive nesting
+                    can make code harder to read and maintain, so alternatives like logical operators (`&&`, `||`) or
+                    refactoring should be considered for complex scenarios.</p>
+                <pre><code>
+public class NestedIfElseExample {
+    public static void main(String[] args) {
         int age = 20;
         boolean hasLicense = true;
 
-        if (age >= 18) {
-            if (hasLicense) {
-                System.out.println("Eligible to drive");
+        if (age >= 18) { // Outer condition: Is age sufficient?
+            if (hasLicense) { // Inner condition: Does person have a license?
+                System.out.println("Eligible to drive"); // This will be executed
             } else {
                 System.out.println("Not eligible to drive without a license");
             }
         } else {
             System.out.println("Not eligible to drive due to age");
         }
+
+        // Example with stricter eligibility
+        int creditScore = 700;
+        boolean hasJob = true;
+
+        if (creditScore >= 650) {
+            if (hasJob) {
+                System.out.println("Eligible for loan approval.");
+            } else {
+                System.out.println("Requires a job for loan approval.");
+            }
+        } else {
+            System.out.println("Credit score too low for loan approval.");
+        }
     }
 }
+    </code></pre>
 
+                <h4>e. Switch Statement</h4>
+                <p>The <strong><mark>switch</mark> statement</strong> is used for selecting one of many code blocks to
+                    be executed. It evaluates an expression and executes the code block associated with the matching
+                    `case` label. It's often a cleaner alternative to a long `if-else if` ladder when dealing with a
+                    single variable that can have many distinct constant values. The expression in a `switch` can be a
+                    `byte`, `short`, `char`, `int`, `enum` (since Java 5), `String` (since Java 7), or wrapper types
+                    (`Byte`, `Short`, `Integer`, `Character`).</p>
+                <ul>
+                    <li>Each `case` label must be a unique constant value.</li>
+                    <li>The <strong><mark>break</mark></strong> keyword is crucial; it terminates the switch statement
+                        once a match is found and prevents "fall-through" to the next `case`.</li>
+                    <li>The <strong><mark>default</mark></strong> keyword is optional and specifies the code to run if
+                        no `case` match is found.</li>
+                </ul>
+                <pre><code>
 // Switch case
+int day = 2;
 switch (day) {
     case 1:
         System.out.println("Monday");
         break;
-    case 2:
-        System.out.println("Tuesday");
+    case 2: // Matches 'day' value of 2
+        System.out.println("Tuesday"); // This will be executed
+        break; // Exits the switch statement
+    case 3:
+        System.out.println("Wednesday");
         break;
     default:
         System.out.println("Other day");
 }
-                </code></pre>
 
-                <h3>3. Looping Statements</h3>
-                <p>Repeat a block of code multiple times.</p>
+// Example with String (Java 7+)
+String trafficLight = "GREEN";
+switch (trafficLight) {
+    case "RED":
+        System.out.println("STOP!");
+        break;
+    case "YELLOW":
+        System.out.println("PREPARE TO STOP!");
+        break;
+    case "GREEN":
+        System.out.println("GO!"); // This will be executed
+        break;
+    default:
+        System.out.println("Invalid light state.");
+}
+    </code></pre>
+                <div class="highlight">
+                    <p></p><strong>Note: </strong>
+                    For more modern Java versions (Java 12+), <strong>Switch Expressions</strong> offer a more concise
+                    and powerful way to handle switch logic, allowing `switch` to return a value and avoiding
+                    fall-through by default. This was discussed in the Java 17 features module.</p>
+                </div>
 
+                <h4>Flow Control Keywords: `break` and `continue`</h4>
+                <p>Beyond conditional statements, Java provides keywords that alter the normal sequential flow of
+                    execution, especially within loops or `switch` statements.</p>
+
+                <h4>f. `break` Statement</h4>
+                <p>The <strong><mark>break;</mark> statement</strong> is used to <b>terminate the current loop or
+                        `switch`
+                        statement immediately</b>. When a `break` is encountered, the program flow jumps to the
+                    statement
+                    immediately following the loop or `switch` block. It is commonly used to exit a loop prematurely
+                    when a certain condition is met, or to prevent fall-through in `switch` cases (as shown in the
+                    `switch` examples above).</p>
                 <pre><code>
-// For loop
-for (int i = 0; i < 10; i++) {
+// Using break in a loop
+for (int i = 1; i <= 10; i++) {
+    if (i == 5) {
+        System.out.println("Reached 5, breaking loop.");
+        break; // Loop terminates when i is 5
+    }
+    System.out.println("Current number: " + i);
+}
+// Output:
+// Current number: 1
+// Current number: 2
+// Current number: 3
+// Current number: 4
+// Reached 5, breaking loop.
+    </code></pre>
+
+                <h4>g. `continue` Statement</h4>
+                <p>The <strong><mark>continue;</mark> statement</strong> is used to <b>skip the rest of the current
+                        iteration of a loop and proceed to the next iteration</b>. When a `continue` is encountered, the
+                    loop's body is immediately terminated for that specific iteration, and the loop control
+                    (increment/decrement part in `for` loops, condition check in `while`/`do-while` loops) is executed,
+                    potentially starting the next iteration.</p>
+                <pre><code>
+// Using continue in a loop
+for (int i = 1; i <= 5; i++) {
+    if (i == 3) {
+        System.out.println("Skipping number 3.");
+        continue; // Skips printing 3 and proceeds to next iteration
+    }
+    System.out.println("Current number: " + i);
+}
+// Output:
+// Current number: 1
+// Current number: 2
+// Skipping number 3.
+// Current number: 4
+// Current number: 5
+    </code></pre>
+
+                <hr>
+                <h3>3. Looping Statements</h3>
+                <p><strong>Looping statements</strong> (also known as <b>iteration statements or repetition
+                        statements</b>) are
+                    fundamental control flow constructs that allow a block of code to be **repeatedly executed** as long
+                    as a certain condition remains true. They are essential for tasks that involve processing
+                    collections of data, performing repetitive calculations, or iterating through sequences. Loops
+                    significantly reduce code redundancy and improve efficiency.</p>
+
+                <h4>Types of Looping Statements in Java:</h4>
+
+                <h4>a. For Loop</h4>
+                <p>The <strong><mark>for</mark> loop</strong> is a control flow statement that iterates a part of the
+                    program multiple times. It is ideal when you know the **exact number of iterations** beforehand. The
+                    `for` loop consists of three main parts, typically declared within its parentheses:</p>
+                <ol>
+                    <li><strong>Initialization:</strong> Executed once when the loop starts, typically to declare and
+                        initialize a loop control variable.</li>
+                    <li><strong>Condition:</strong> Evaluated before each iteration. If `true`, the loop body executes;
+                        if `false`, the loop terminates.</li>
+                    <li><strong>Increment/Decrement (Iteration):</strong> Executed after each iteration of the loop
+                        body, typically to update the loop control variable.</li>
+                </ol>
+                <pre><code>
+// Basic For loop
+for (int i = 0; i < 10; i++) { // i starts at 0, continues as long as i < 10, i increments by 1 each time
     System.out.println("Count: " + i);
 }
 
-// While loop
-int count = 0;
-while (count < 5) {
-    System.out.println(count);
-    count++;
+// Output:
+// Count: 0
+// Count: 1
+// ...
+// Count: 9
+
+// For loop in reverse
+for (int i = 5; i > 0; i--) {
+    System.out.println("Reverse Count: " + i);
 }
 
+// Output:
+// Reverse Count: 5
+// ...
+// Reverse Count: 1
+    </code></pre>
+
+                <h4>b. While Loop</h4>
+                <p>The <strong><mark>while</mark> loop</strong> is used when you don't know the exact number of
+                    iterations beforehand, but rather want to repeat a block of code <b>as long as a specified boolean
+                        condition remains `true`</b>. The condition is evaluated <b>before</b> each execution of the
+                    loop body. If
+                    the condition is initially `false`, the loop body will never execute.</p>
+                <pre><code>
+// While loop
+int count = 0;
+while (count < 5) { // Condition checked before each iteration
+    System.out.println("While Count: " + count);
+    count++; // Important: update the loop control variable to avoid infinite loop
+}
+
+// Output:
+// While Count: 0
+// While Count: 1
+// While Count: 2
+// While Count: 3
+// While Count: 4
+    </code></pre>
+
+                <h4>c. Do-while Loop</h4>
+                <p>The <strong><mark>do-while</mark> loop</strong> is similar to the `while` loop, but with one crucial
+                    difference: the loop body is executed <b>at least once</b>, even if the condition is `false`
+                    initially.
+                    This is because the condition is evaluated <b>after</b> each execution of the loop body. It's
+                    suitable
+                    for scenarios where you need to perform an action at least once, then continue based on a condition
+                    (e.g., getting user input until it's valid).</p>
+                <pre><code>
 // Do-while loop
 int num = 1;
 do {
-    System.out.println(num);
+    System.out.println("Do-While Num: " + num);
     num++;
-} while (num <= 3);
+} while (num <= 3); // Condition checked after first iteration and subsequent ones
 
-// Nested loops
-for (int i = 1; i <= 3; i++) {
-    for (int j = 1; j <= 3; j++) {
-        System.out.print(i * j + " ");
-    }
-    System.out.println();
+// Output:
+// Do-While Num: 1
+// Do-While Num: 2
+// Do-While Num: 3
+
+// Example where do-while executes once
+int x = 10;
+do {
+    System.out.println("This runs once because x <= 5 is false initially: " + x);
+    x--;
+} while (x <= 5);
+
+// Output:
+// This runs once because x <= 5 is false initially: 10
+    </code></pre>
+
+                <h4>d. For-each Loop (Enhanced For Loop)</h4>
+                <p>The <strong><mark>for-each</mark> loop</strong> (also known as the enhanced `for` loop, introduced in
+                    Java 5) provides a <b>simpler and more readable way to iterate over elements of arrays and
+                        collections</b> (like `ArrayList`, `Set`, `Map` entries). Instead of managing an index or
+                    iterator
+                    manually, you directly declare a variable that will sequentially hold each element from the
+                    collection during each iteration. It's perfect when you just need to access <b>each item</b> in a
+                    sequence and don't need to know its specific index or position.</p>
+                <pre><code>
+Syntax:
+
+for (DataType itemVariable : collectionOrArray) {
+    // Code to execute for each 'itemVariable'
 }
-                </code></pre>
-
-                <h3>4. Functions (Methods)</h3>
-                <p>Reusable blocks of code that perform specific tasks.</p>
+                                        </code></pre>
 
                 <pre><code>
-// Method declaration
+// For-each loop with an array of Strings
+String[] fruits = {"Apple", "Banana", "Tomato"}; 
+
+// Using a traditional for loop (managing index yourself)
+System.out.println("--- Using Traditional For Loop ---");
+for (int i = 0; i < fruits.length; i++) {
+    String currentFruit = fruits[i]; // You have to use the index 'i' to get the fruit
+    System.out.println("I picked up: " + currentFruit);
+}
+
+System.out.println("\n--- Using For-Each Loop ---");
+// Using a for-each loop (Java handles getting each fruit for you)
+for (String fruit : fruits) { // "For each String 'fruit' IN the 'fruits' array"
+    System.out.println("I picked up: " + fruit); // 'fruit' directly holds the current item
+}
+
+// Output:
+
+// --- Using Traditional For Loop ---
+// I picked up: Apple
+// I picked up: Banana
+// I picked up: Tomato
+
+// --- Using For-Each Loop ---
+// I picked up: Apple
+// I picked up: Banana
+// I picked up: Tomato
+    </code></pre>
+
+                <h4>e. Nested Loops</h4>
+                <p><strong>Nested loops</strong> involve placing one loop inside another. The inner loop completes all
+                    of its iterations for each single iteration of the outer loop. Nested loops are commonly used for
+                    tasks involving two-dimensional structures like matrices, grids, or generating patterns.</p>
+                <pre><code>
+// Nested loops for a multiplication table
+// Outer loop for rows
+for (int i = 1; i <= 3; i++) {
+    // Inner loop for columns in each row
+    for (int j = 1; j <= 3; j++) {
+        System.out.print(i * j + " "); // Prints product followed by a space
+    }
+    System.out.println(); // Moves to the next line after each row is complete
+}
+
+// Output:
+// 1 2 3
+// 2 4 6
+// 3 6 9
+    </code></pre>
+
+                <h4>Common Interview Pattern Programs (using Loops)</h4>
+                <p>Pattern programs are frequently asked in interviews to assess a candidate's logical thinking,
+                    understanding of nested loops, and ability to manipulate output. Here are some of the most common
+                    ones:</p>
+
+                <h4>1. Solid Square/Rectangle Pattern</h4>
+                <p>Prints a solid square or rectangle of asterisks.</p>
+                <pre><code>
+/*
+*****
+*****
+*****
+*****
+*/
+
+public class SolidSquare {
+    public static void main(String[] args) {
+        int size = 5;
+        for (int i = 0; i < size; i++) { // Outer loop for rows
+            for (int j = 0; j < size; j++) { // Inner loop for columns
+                System.out.print("*");
+            }
+            System.out.println(); // New line after each row
+        }
+    }
+}
+    </code></pre>
+
+                <h4>2. Right-Angled Triangle Pattern (Half Pyramid)</h4>
+                <p>Prints a right-angled triangle pattern where each row has one more asterisk than the previous.</p>
+                <pre><code>
+/*
+*
+**
+***
+****
+*****
+*/
+
+public class RightTriangle {
+    public static void main(String[] args) {
+        int height = 5;
+        for (int i = 1; i <= height; i++) { // Outer loop for rows (1 to height)
+            for (int j = 1; j <= i; j++) { // Inner loop for columns (1 to current row number)
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+    </code></pre>
+
+                <h4>3. Inverted Right-Angled Triangle Pattern (Inverted Half Pyramid)</h4>
+                <p>Prints an inverted right-angled triangle.</p>
+                <pre><code>
+/*
+*****
+****
+***
+**
+*
+*/
+
+public class InvertedRightTriangle {
+    public static void main(String[] args) {
+        int height = 5;
+        for (int i = height; i >= 1; i--) { // Outer loop for rows (height down to 1)
+            for (int j = 1; j <= i; j++) { // Inner loop for columns (1 to current row number)
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+    </code></pre>
+
+                <h4>4. Full Pyramid (Isosceles Triangle)</h4>
+                <p>Prints a symmetrical triangle. This often requires managing spaces before the asterisks.</p>
+                <pre><code>
+/*
+    *
+   ***
+  *****
+ *******
+*********
+*/
+
+public class FullPyramid {
+    public static void main(String[] args) {
+        int height = 5;
+        for (int i = 1; i <= height; i++) {
+            // Print leading spaces
+            for (int j = 1; j <= height - i; j++) {
+                System.out.print(" ");
+            }
+            // Print asterisks
+            for (int k = 1; k <= (2 * i - 1); k++) { // 1, 3, 5, 7, 9... asterisks
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+    </code></pre>
+
+                <h4>5. Number Patterns (e.g., Increasing Number Triangle)</h4>
+                <p>Prints a triangle with increasing numbers.</p>
+                <pre><code>
+/*
+1
+12
+123
+1234
+12345
+*/
+
+public class NumberTriangle {
+    public static void main(String[] args) {
+        int height = 5;
+        for (int i = 1; i <= height; i++) { // Outer loop for rows
+            for (int j = 1; j <= i; j++) { // Inner loop for numbers in current row
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}
+    </code></pre>
+
+                <h4>6. Floyd's Triangle</h4>
+                <p>A right-angled triangle filled with consecutive numbers.</p>
+                <pre><code>
+/*
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+*/
+
+public class FloydsTriangle {
+    public static void main(String[] args) {
+        int height = 5;
+        int number = 1; // Counter for the numbers
+        for (int i = 1; i <= height; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(number + " ");
+                number++;
+            }
+            System.out.println();
+        }
+    }
+}
+    </code></pre>
+
+                <h4>7. Alphabet Pattern (Right-Angled Triangle of Letters)</h4>
+                <p>Prints a triangle using letters, typically starting from 'A' and incrementing across rows/columns.
+                </p>
+                <pre><code>
+/*
+A
+A B
+A B C
+A B C D
+A B C D E
+*/
+
+public class AlphabetTriangle {
+    public static void main(String[] args) {
+        int height = 5;
+        // The ASCII value of 'A' is 65
+        for (int i = 0; i < height; i++) { // Outer loop for rows (0 to height-1)
+            for (int j = 0; j <= i; j++) { // Inner loop for columns
+                // Convert integer (65 + j) back to char
+                System.out.print((char)('A' + j) + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+    </code></pre>
+                <div class="highlight">
+                    <p><strong>Note: </strong>Mastering these looping constructs and basic pattern programs is crucial
+                        for building logical
+                        thinking and problem-solving skills in Java programming.</p>
+                </div>
+
+                <hr>
+
+                <h3>4. Functions (Methods)</h3>
+
+                <p>Imagine you have a specific task you do over and over again, like making a cup of coffee. Instead of
+                    writing down all the steps ("get mug," "add coffee," "add hot water") every single time you want
+                    coffee, wouldn't it be easier to just say "make coffee"?</p>
+
+                <p>That's exactly what <strong>functions</strong> (or <strong>methods</strong> in some programming
+                    languages like Java, which is what your examples use) are! They are <strong>reusable blocks of code
+                        that perform specific tasks.</strong></p>
+
+                <p>Think of them like mini-programs or recipes within your main program.</p>
+
+                <h4>Why are Functions So Awesome?</h4>
+                <ol>
+                    <li>
+                        <strong>Reusability (Don't Repeat Yourself - DRY principle!):</strong>
+                        Once you've written a function to do something, you can call it (use it) as many times as you
+                        want without writing the code again. This saves a lot of time and effort.
+                    </li>
+                    <li>
+                        <strong>Organization:</strong>
+                        Functions help you break down a big, complex problem into smaller, manageable chunks. This makes
+                        your code easier to read, understand, and debug.
+                    </li>
+                    <li>
+                        <strong>Readability:</strong>
+                        Instead of a long, confusing list of instructions, you can have descriptive function names that
+                        tell you what a piece of code does at a glance.
+                    </li>
+                    <li>
+                        <strong>Easier to Debug:</strong>
+                        If there's a problem, you often only need to look at the specific function that's causing the
+                        issue, not your entire program.
+                    </li>
+                </ol>
+
+                <h4>Anatomy of a Function (Method) - Let's look at your examples!</h4>
+
+                <h4>1. Method with Parameters and a Return Value</h4>
+                <p>This is the most common type of function: it takes some input (parameters) and gives back a result
+                    (return value).</p>
+                <pre><code>
+// Method declaration: Takes two integers, returns their sum as an integer
 public static int add(int a, int b) {
     return a + b;
 }
+    </code></pre>
 
-// Method with void return type
+                <p>Here's what each part means:</p>
+                <ul>
+                    <li><strong><mark>public</mark></strong>: An access modifier, meaning this method can be accessed
+                        from any other class. For beginners, just include it.</li>
+                    <li><strong><mark>static</mark></strong>: Means the method belongs to the class itself, not to a
+                        specific object. Again, just include it for now.</li>
+                    <li>
+                        <strong><mark>int</mark></strong>: This is the <strong>return type</strong>. It specifies the
+                        type of data the function will send back after it completes its task. Here, it's an integer.
+                        <p class="analogy"><strong>Analogy:</strong> If you
+                            ask a cashier "How much do I owe?", they <em>return</em> a number (the total amount).</p>
+
+                    </li>
+                    <li><strong><mark>add</mark></strong> : This is the <strong>name</strong> of the method. Choose a
+                        name that clearly describes its purpose.</li>
+                    <li>
+                        <strong><mark>(int a, int b)</mark></strong> : These are the <strong>parameters</strong>. They
+                        are variables that act as placeholders for the values the method needs to perform its operation.
+                        <ul>
+                            <li><mark>int a</mark> : An integer parameter named 'a'.</li>
+                            <li><mark>int b</mark> : An integer parameter named 'b'.</li>
+                        </ul>
+
+                        <p class="analogy"><strong>Analogy:</strong> To make
+                            a cake, you need ingredients like "flour" and "sugar" as parameters.</p>
+                    </li>
+
+                    <li><strong><mark>{ ... }</mark></strong> : This defines the <strong>method body</strong>,
+                        containing
+                        the actual code that performs the task.</li>
+                    <li><strong><mark>return a + b;</mark></strong> : The <strong>return statement</strong>. It sends
+                        the
+                        calculated value back to the place where the method was called. A method with a
+                        non-<mark>void</mark> return type <strong>must</strong> have a `return` statement.</li>
+                </ul>
+
+                <h4>2. Method with a `void` Return Type (Performs an Action, No Return Value)</h4>
+                <p>Sometimes, a method just needs to do something, like display information or save data, without
+                    producing a result that needs to be used by other parts of the program.</p>
+                <pre><code>
+// Method with void return type: Takes a String, prints it, returns nothing
 public static void printMessage(String message) {
     System.out.println(message);
 }
+    </code></pre>
 
-// Method overloading
+                <ul>
+                    <li><strong><mark>void</mark></strong> : This signifies that the method <strong>does not return any
+                            value</strong>. It simply performs an action.
+                        <p class="analogy"><strong>Analogy:</strong> If you
+                            tell a robot "Clean the room!", it performs the action but doesn't hand you anything back.
+                        </p>
+                    </li>
+                    <li><strong><mark>printMessage(String message)</mark></strong> : This method takes one parameter, a
+                        <mark>String</mark> called <mark>message</mark>.
+                    </li>
+                    <li><strong><mark>System.out.println(message);</mark></strong>: This line within the method's body
+                        prints the `message` to the console. No `return` statement is used because the method's purpose
+                        is to display, not to calculate and return a value.</li>
+                </ul>
+
+                <h4>3. Method Overloading: Same Name, Different Parameters</h4>
+                <p>Method overloading allows you to define multiple methods within the same class that have the
+                    <strong>same name</strong> but different <strong>parameter lists</strong> (different number of
+                    parameters, different types of parameters, or different order of parameters).
+                </p>
+                <pre><code>
+// Method overloading: Multiplies two integers
 public static int multiply(int a, int b) {
     return a * b;
 }
 
+// Another overloaded method: Multiplies two double (decimal) numbers
 public static double multiply(double a, double b) {
     return a * b;
 }
-                </code></pre>
+    </code></pre>
 
-                <h3>5. Arrays</h3>
-                <p>Store multiple values of the same type in a single variable.</p>
+                <ul>
+                    <li><strong>Purpose:</strong> It makes your code more intuitive. You can use a common, logical name
+                        for similar operations that work with different data types.</li>
+                    <li><strong>How it works:</strong> When you call an overloaded method, the Java compiler looks at
+                        the number and types of arguments you provide in the call. It then matches these arguments to
+                        the most appropriate method signature (name + parameter list) and executes that specific
+                        version.
+                        <ul>
+                            <li>Calling <mark>multiply(7, 3);</mark> would execute the
+                                <mark>int multiply(int a, int b)</mark> version.
+                            </li>
+                            <li>Calling <mark>multiply(2.5, 4.0);</mark> would execute the
+                                <mark>double multiply(double a, double b)</mark> version.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>4. Method with No Parameters and a Return Value</h4>
+                <p>Some functions don't need any external input to do their job, but they still produce a result.</p>
+                <pre><code>
+// Method with no parameters, returns a fixed value
+public static String getAppName() {
+    return "My Awesome App";
+}
+    </code></pre>
+                <ul>
+                    <li><strong><mark>()</mark></strong> : The empty parentheses indicate that this method takes no
+                        parameters.</li>
+                    <li><strong><mark>String</mark></strong> : This method returns a `String` (text) value.</li>
+                    <li><strong><mark>return "My Awesome App";</mark></strong> : It simply returns a predefined string.
+                        This could also be a result of an internal calculation or data retrieval that doesn't depend on
+                        external input.</li>
+                </ul>
+
+                <h4>5. Method with No Parameters and No Return Value (`void`)</h4>
+                <p>This type of method performs an action that requires no specific input and also doesn't produce any
+                    value to be used elsewhere. It just does something internally.</p>
+                <pre><code>
+// Method with no parameters, returns nothing
+public static void displayWelcomeMessage() {
+    System.out.println("Welcome to the program!");
+    System.out.println("Enjoy your experience.");
+}
+    </code></pre>
+                <ul>
+                    <li><strong><mark>()</mark></strong> : No parameters needed for this action.</li>
+                    <li><strong><mark>void</mark></strong> : The method doesn't return any value.</li>
+                    <li>Inside the body, it performs actions (printing messages) without needing external data.</li>
+                </ul>
+
+
+                <h4>How to Use (Call) Functions</h4>
+
+                <p>To make a function actually do its job, you need to "call" or "invoke" it from another part of your
+                    code (usually from your `main` method, which is the starting point of most Java programs).</p>
+
+                <p>Let's imagine you have the functions defined as above. Here's how you would call them:</p>
 
                 <pre><code>
-// 1D Array
-int[] numbers = {1, 2, 3, 4, 5};
-int[] scores = new int[10];
+public class MyProgram {
+    public static void main(String[] args) {
+        // Calling the 'add' function
+        int sum = add(10, 5); // Arguments 10 and 5 are passed. Function returns 15.
+        System.out.println("The sum is: " + sum); // Expected Output: The sum is: 15
 
-// Accessing array elements
-System.out.println(numbers[0]); // First element
-numbers[1] = 20; // Modify element
+        // Calling the 'printMessage' function
+        printMessage("Hello, functions are fun!"); // Argument "Hello, functions are fun!" is passed. Function prints it.
+                                                   // Expected Output: Hello, functions are fun!
 
-// 2D Array
-int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-int[][] grid = new int[3][3];
+        // Calling the 'multiply' (int) overloaded function
+        int productInt = multiply(7, 3); // Calls the int version of multiply.
+        System.out.println("Integer product: " + productInt); // Expected Output: Integer product: 21
 
-// Accessing 2D array
-System.out.println(matrix[0][1]); // Output: 2
-matrix[1][2] = 10;
-                </code></pre>
+        // Calling the 'multiply' (double) overloaded function
+        double productDouble = multiply(2.5, 4.0); // Calls the double version of multiply.
+        System.out.println("Double product: " + productDouble); // Expected Output: Double product: 10.0
+
+        // Calling the 'getAppName' function
+        String appName = getAppName(); // Function returns "My Awesome App".
+        System.out.println("Application Name: " + appName); // Expected Output: Application Name: My Awesome App
+
+        // Calling the 'displayWelcomeMessage' function
+        displayWelcomeMessage(); // Function performs actions (printing messages) directly.
+        // Expected Output:
+        // Welcome to the program!
+        // Enjoy your experience.
+    }
+
+    // --- Function Definitions (typically placed within the class, but outside of main) ---
+
+    // Method with parameters and a return value
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    // Method with void return type
+    public static void printMessage(String message) {
+        System.out.println(message);
+    }
+
+    // Method overloading (for integers)
+    public static int multiply(int a, int b) {
+        return a * b;
+    }
+
+    // Method overloading (for decimal numbers)
+    public static double multiply(double a, double b) {
+        return a * b;
+    }
+
+    // Method with no parameters and a return value
+    public static String getAppName() {
+        return "My Awesome App";
+    }
+
+    // Method with no parameters and no return value (void)
+    public static void displayWelcomeMessage() {
+        System.out.println("Welcome to the program!");
+        System.out.println("Enjoy your experience.");
+    }
+}
+    </code></pre>
+
+                <h4>Quick Summary</h4>
+                <ul>
+                    <li><strong>Functions are like mini-programs that do specific jobs.</strong></li>
+                    <li>They help you <strong>reuse code</strong>, keep it <strong>organized</strong>, and make it
+                        <strong>easier to understand</strong>.
+                    </li>
+                    <li>They can <strong>take in information</strong> (parameters) and <strong>give back a
+                            result</strong> (return type).</li>
+                    <li>If a function doesn't give back a result, its return type is <mark>void</mark>.</li>
+                    <li>You can have functions with the same name if they take different types or numbers of parameters
+                        (<strong>Method Overloading</strong>).</li>
+                    <li>Functions can have:
+                        <ul>
+                            <li>Parameters and a return value.</li>
+                            <li>Parameters and no return value (<mark>void</mark>).</li>
+                            <li>No parameters and a return value.</li>
+                            <li>No parameters and no return value (<mark>void</mark>).</li>
+                        </ul>
+                    </li>
+                    <li>To make a function run, you <strong>call</strong> it by its name, providing any necessary
+                        arguments.</li>
+                </ul>
+
+                <div class="highlight">
+                    <p><strong>Note: </strong>Functions are fundamental to writing efficient, maintainable, and readable
+                        code. They enable breaking down complex
+                        tasks into smaller, reusable units, which simplifies development and debugging. This structured
+                        approach
+                        significantly improves code clarity and long-term manageability.</p>
+                </div>
+
+                <hr>
+
+                <h3>5. Arrays</h3>
+
+                <p>Imagine you've got a list of similar things, like student grades or daily temperatures. Instead of
+                    creating a separate variable for each one (like `grade1`, `grade2`, `tempMonday`, `tempTuesday`),
+                    wouldn't it be way easier to put them all into one single, organized container?</p>
+
+                <p>That's exactly what an <strong>Array</strong> is in programming! It's like a special variable that
+                    can <strong>store many values of the same type</strong> (like all whole numbers, or all pieces of
+                    text) in one neat spot.</p>
+
+                <p>Think of an array as a <strong>shoe rack</strong> where each slot can hold one shoe. All the shoes on
+                    that rack are for the same type of foot (e.g., all sneakers, not a mix of sneakers and flip-flops).
+                </p>
+
+                <h4>Why Use Arrays? (They Make Coding Much Better!)</h4>
+                <ol>
+                    <li>
+                        <strong>Organized Storage:</strong> Arrays help you keep related data together in a tidy,
+                        ordered way.
+                    </li>
+                    <li>
+                        <strong>Efficient Handling:</strong> It's super easy to work with many items at once. You can
+                        tell the computer to do something to "every item in this array" without writing a lot of
+                        repetitive code.
+                    </li>
+                    <li>
+                        <strong>Code Clarity:</strong> Using arrays makes your code cleaner and easier to understand
+                        because you're managing collections of data simply.
+                    </li>
+                    <li>
+                        <strong>Fixed Size (A Key Point for Java):</strong> When you create an array in Java, you decide
+                        how many slots it'll have, and that number can't change later. If you need more space, you'd
+                        typically create a new, bigger array and move your data over.
+                    </li>
+                </ol>
+
+                <h4>How Arrays Work & Examples in a Program</h4>
+
+                <p>Arrays store items in numbered compartments. This "compartment number" is called an
+                    <strong>index</strong>, and it always starts counting from <strong>0</strong>.
+                </p>
+
+                <h4>1. One-Dimensional (1D) Arrays: Simple Lists</h4>
+                <p>A 1D array is like a single row of compartments, or a straightforward list of items.</p>
+                <pre><code>
+// This is a complete Java program demonstrating arrays
+public class ArrayExamples {
+    public static void main(String[] args) {
+
+        System.out.println("--- 1D Array Examples (Simple Lists) ---");
+
+        // Example 1: Storing daily high temperatures for a week (int values)
+        // We list the temperatures directly. Java counts them and sets the size.
+        int[] dailyTemperatures = {28, 30, 29, 31, 32, 27, 26};
+        // This array has 7 slots:
+        // dailyTemperatures[0] is 28 (Monday's temp)
+        // dailyTemperatures[1] is 30 (Tuesday's temp)
+        // ...
+        // dailyTemperatures[6] is 26 (Sunday's temp)
+
+        // Example 2: Storing names of your favorite fruits (String values)
+        // This array has 4 slots for text.
+        String[] favoriteFruits = {"Apple", "Banana", "Cherry", "Date"};
+        // favoriteFruits[0] is "Apple"
+        // favoriteFruits[1] is "Banana"
+        // ...
+
+        // Example 3: Creating an empty list for 5 student scores (int values)
+        // We tell Java to create 5 empty slots. For 'int', Java puts 0 in empty slots.
+        int[] studentScores = new int[5];
+        // Now, studentScores[0] through studentScores[4] are all 0.
+        // We can fill them later!
+
+        // --- How to Get & Change Items in a 1D Array ---
+        // Use the compartment number (index) in square brackets []
+
+        System.out.println("\n--- Accessing & Modifying 1D Arrays ---");
+
+        // Get the temperature for Wednesday (it's in the 3rd slot, so index is 2)
+        System.out.println("Wednesday's temperature: " + dailyTemperatures[2]); // Output: 29
+
+        // Change the score of the 5th student (it's in the 5th slot, so index is 4)
+        studentScores[4] = 85; // Put 85 into the 5th slot
+        System.out.println("Score of 5th student: " + studentScores[4]); // Output: 85
+
+        // Get your last favorite fruit (if there are 4 fruits, the last is at index 3)
+        System.out.println("My last favorite fruit: " + favoriteFruits[3]); // Output: Date
+
+        // Important: Trying to get a slot that doesn't exist (like dailyTemperatures[7])
+        // will cause an error (ArrayIndexOutOfBoundsException)!
+
+        System.out.println("--- End of 1D Array Examples ---\n");
+    }
+}
+    </code></pre>
+
+                <h4>What the Code Means (Simplified):</h4>
+                <ul>
+                    <li>In Example 1, we make a list <strong>dailyTemperatures</strong> and immediately fill it. The
+                        first temperature (`28`) is at slot <strong>0</strong>, the second (`30`) at slot
+                        <strong>1</strong>, and so on.
+                    </li>
+                    <li>In Example 2, we make a list <strong>favoriteFruits</strong> for text. "Apple" is at slot
+                        <strong>0</strong>, "Banana" at slot <strong>1</strong>.
+                    </li>
+                    <li>In Example 3, we make an empty list <strong>studentScores</strong> with 5 slots. Java
+                        automatically puts `0` in each slot because it's a number array. We can then put real scores in
+                        later, like `studentScores[4] = 85;`.</li>
+                    <li>To <strong>get</strong> a value, you say the array name followed by
+                        <strong>[slot_number]</strong>.
+                    </li>
+                    <li>To <strong>change</strong> a value, you say the array name <strong>[slot_number] =
+                            new_value;</strong>.</li>
+                </ul>
+
+                <h4>2. Two-Dimensional (2D) Arrays: Grids or Tables</h4>
+                <p>A 2D array is like a grid, a table, or a spreadsheet. It has both rows and columns, like a
+                    checkerboard or a game board. You need <strong>two</strong> numbers to find an item: one for the
+                    row, and one for the column.</p>
+                <pre><code>
+// This is part of the same Java program, extending the main method
+public class ArrayExamples {
+    public static void main(String[] args) {
+        // ... (previous 1D array examples) ...
+
+        System.out.println("\n--- 2D Array Examples (Grids/Tables) ---");
+
+        // Example 1: A simple 3x3 tic-tac-toe board (0=empty, 1=Player X, 2=Player O)
+        // This is a grid with 3 rows and 3 columns.
+        int[][] ticTacToeBoard = {
+            {0, 1, 0}, // Row 0: 0, 1, 0
+            {1, 2, 0}, // Row 1: 1, 2, 0
+            {0, 0, 1}  // Row 2: 0, 0, 1
+        };
+        /*
+          Conceptually:
+                  Col 0   Col 1   Col 2
+        Row 0:      0       1       0
+        Row 1:      1       2       0
+        Row 2:      0       0       1
+        */
+
+        // Example 2: Scores of 2 teams in 3 different matches
+        // This is a table with 2 rows (for 2 teams) and 3 columns (for 3 matches).
+        int[][] teamScores = {
+            {100, 120, 95}, // Team A's scores (Row 0)
+            {80, 110, 130}  // Team B's scores (Row 1)
+        };
+
+        // Example 3: Creating an empty 4x5 grid for a maze game (4 rows, 5 columns)
+        // Java creates all slots and fills them with 0s for 'int'.
+        int[][] maze = new int[4][5];
+
+
+        // --- How to Get & Change Items in a 2D Array ---
+        // Use [row_number][column_number], both starting from 0
+
+        System.out.println("\n--- Accessing & Modifying 2D Arrays ---");
+
+        // Get the value in the middle of the tic-tac-toe board (Row 1, Column 1)
+        System.out.println("Center of board: " + ticTacToeBoard[1][1]); // Output: 2
+
+        // Change the score of Team B in their 3rd match (Team B is Row 1, 3rd match is Column 2)
+        teamScores[1][2] = 140; // Change Team B's 3rd match score from 130 to 140
+        System.out.println("Team B's new 3rd match score: " + teamScores[1][2]); // Output: 140
+
+        // Set a 'wall' in the maze at Row 2, Column 3 (let's say 1 means a wall)
+        maze[2][3] = 1;
+        System.out.println("Maze spot (Row 2, Col 3) now: " + maze[2][3]); // Output: 1
+    }
+}
+    </code></pre>
+
+                <h4>What the Code Means (Simplified):</h4>
+                <ul>
+                    <li>In Example 1, <strong>ticTacToeBoard[1][1]</strong> means "go to the
+                        <strong>ticTacToeBoard</strong> grid, find <strong>Row 1</strong>, then find <strong>Column
+                            1</strong> within that row."
+                    </li>
+                    <li>In Example 2, <strong>teamScores[1][2]</strong> means "go to the <strong>teamScores</strong>
+                        table, find <strong>Row 1</strong> (Team B), then find <strong>Column 2</strong> (their 3rd
+                        match score)."</li>
+                    <li>To <strong>get</strong> a value, you say <strong>arrayName[row_number][column_number]</strong>.
+                    </li>
+                    <li>To <strong>change</strong> a value, you say <strong>arrayName[row_number][column_number] =
+                            new_value;</strong>.</li>
+                    <li>Just like 1D arrays, if you use a row or column number that's out of bounds, your program will
+                        crash!</li>
+                </ul>
+
+                <h4>Quick Recap of Arrays:</h4>
+                <ul>
+                    <li><strong>Arrays</strong> are containers that hold <strong>many items of the same type</strong>.
+                    </li>
+                    <li>Items are stored in numbered <strong>compartments</strong> called <strong>indexes</strong>,
+                        starting from <strong>0</strong>.</li>
+                    <li><strong>1D Arrays</strong> are simple lists (like a shopping list).</li>
+                    <li><strong>2D Arrays</strong> are grids or tables (like a spreadsheet or game board), using both a
+                        row and column index.</li>
+                    <li>In Java, arrays have a <strong>fixed size</strong> once you create them.</li>
+                    <li>They make your code more organized, efficient, and easier to read when dealing with collections
+                        of data.</li>
+                </ul>
+
+                <div class="highlight">
+                    <p><strong>Note: </strong>Arrays are a fundamental tool for organizing information in programming,
+                        truly your <strong>Digital Storage Boxes</strong>!</p>
+                </div>
+
+                <hr>
+
 
                 <h3>6. String & String Methods</h3>
                 <p>Handle text data with built-in string manipulation methods.</p>
@@ -451,8 +1702,10 @@ String formatted = String.format("Name: %s, Age: %d", name, age);
                 </code></pre>
 
                 <div class="highlight">
-                    <p><strong>Note:</strong> StringBuffer and StringBuilder were not newly introduced in Java 8. They
-                        have been part of Java since earlier versions. StringBuffer was introduced in Java 1.0, and
+                    <p><strong>Note:</strong> StringBuffer and StringBuilder were not newly introduced in Java
+                        8. They
+                        have been part of Java since earlier versions. StringBuffer was introduced in Java 1.0,
+                        and
                         StringBuilder in Java 1.5.</p>
                 </div>
 
@@ -604,8 +1857,9 @@ scanner.close();
                     <li>
                         <strong>Encapsulation:</strong> This principle involves bundling the data (variables) and the
                         methods that operate on the data into a single unit, known as a class. It also includes
-                        restricting direct access to some of an object's components, typically achieved using access
-                        modifiers (like `private`, `public`, `protected`). The primary benefit is data hiding,
+                        restricting direct access to some of an object's components, typically achieved using <b>access
+                            modifiers</b> (like <mark>`private`</mark> , <mark>`public`</mark> ,
+                        <mark>`protected`</mark> ). The primary benefit is data hiding,
                         preventing external code from directly manipulating an object's internal state, thus maintaining
                         data integrity and simplifying debugging.
                     </li>
@@ -619,12 +1873,14 @@ scanner.close();
                     <li>
                         <strong>Inheritance:</strong> Inheritance is a mechanism that allows a new class (subclass or
                         child class) to inherit properties (fields) and behaviors (methods) from an existing class
-                        (superclass or parent class). This promotes code reusability and establishes a natural "is-a"
-                        relationship (e.g., a 'Dog' *is a* 'Animal'). In Java, the `extends` keyword is used to achieve
+                        (superclass or parent class). This promotes code reusability and establishes a natural
+                        <mark>"is-a"</mark>
+                        relationship (e.g., a 'Dog' *is a* 'Animal'). In Java, the <mark>`extends`</mark> keyword is
+                        used to achieve
                         inheritance.
                     </li>
                     <li>
-                        <strong>Polymorphism:</strong> Meaning "many forms," polymorphism allows objects to take on
+                        <strong>Polymorphism:</strong> Meaning "many forms", polymorphism allows objects to take on
                         different forms. It enables a single interface or method to be used for different underlying
                         data types or classes. In Java, polymorphism is primarily achieved through:
                         <ul>
@@ -1224,6 +2480,12 @@ Total Counter objects created so far: 3</code></pre>
                     </div>
                 </div>
 
+                <div class="highlight">
+                    <p><strong>Note:</strong> Java is not a purely object-oriented language because it supports
+                        primitive data types (like int, char, etc.) that are not objects. However, it is often referred
+                        to as an object-oriented language due to its strong emphasis on OOP principles.</p>
+                </div>
+
             </section>
 
             <section class="main-section" id="module3_collections">
@@ -1352,19 +2614,93 @@ Collections.sort(studentList, new NameComparator());
                 </header>
 
                 <h3>1. Introduction to Swing</h3>
-                <p>Swing is a GUI widget toolkit for Java that provides a rich set of components for building
-                    graphical interfaces.</p>
+                <p>Swing is a GUI widget toolkit for Java that provides a rich set of components for building graphical
+                    interfaces. Developed by Sun Microsystems (now Oracle), Swing was introduced as part of the Java
+                    Foundation Classes (JFC) and represents a significant evolution from its predecessor, AWT (Abstract
+                    Window Toolkit).</p>
+
+                <h3>2. Key Characteristics of Swing:</h3>
+                <ul>
+                    <li>
+                        <strong>Platform Independence (Lightweight Components):</strong> Unlike AWT components which are
+                        "heavyweight" and rely on the underlying operating system's native peer components, Swing
+                        components are "lightweight." This means they are largely drawn by Java code rather than by the
+                        OS, leading to a consistent look and feel across different platforms (Windows, macOS, Linux) and
+                        greater flexibility in customization. This "write once, run anywhere" philosophy is central to
+                        Java.
+                    </li>
+                    <li>
+                        <strong>Rich Set of Components:</strong> Swing offers a comprehensive library of pre-built GUI
+                        components, including buttons <mark>JButton</mark>, text fields <mark>JTextField</mark>, labels
+                        <mark>JLabel</mark>, checkboxes <mark>JCheckBox</mark>, radio buttons <mark>JRadioButton</mark>,
+                        menus <mark>JMenu</mark> <mark>JMenuItem</mark>, tables <mark>JTable</mark>, trees
+                        <mark>JTree</mark>, tabbed panes <mark>JTabbedPane</mark>, and more. These components are
+                        designed to be flexible and extensible.
+                    </li>
+                    <li>
+                        <strong>Pluggable Look and Feel (L&F):</strong> Swing allows developers to change the appearance
+                        of the GUI without modifying the underlying code. This is achieved through Pluggable Look and
+                        Feel. You can make a Swing application look like a native Windows application, a macOS
+                        application, or use Java's own "Metal" (or "Ocean") L&F, or even create custom L&Fs. This
+                        enhances user experience by allowing applications to blend in with the user's preferred desktop
+                        theme.
+                    </li>
+                    <li>
+                        <strong>Model-View-Controller (MVC) Architecture:</strong> Many Swing components are designed
+                        around a modified MVC architecture. This separation of concerns means that the data (model), its
+                        visual representation (view), and the handling of user interactions (controller) are distinct.
+                        This design promotes code reusability, modularity, and easier maintenance. For instance, a
+                        <mark>JTable</mark>'s data is managed by a <mark>TableModel</mark>, its
+                        appearance by a <mark>TableCellRenderer</mark>, and user input by a
+                        <mark>TableCellEditor</mark>.
+                    </li>
+                    <li>
+                        <strong>Event-Driven Programming:</strong> Swing applications are inherently event-driven. User
+                        interactions (like button clicks, mouse movements, key presses) generate events. Developers
+                        write event listeners that respond to these specific events, allowing the application to react
+                        dynamically to user input. This paradigm makes GUIs interactive and responsive.
+                    </li>
+                    <li>
+                        <strong>Accessibility Features:</strong> Swing provides features that aid in making applications
+                        accessible to users with disabilities, such as support for screen readers and keyboard
+                        navigation.
+                    </li>
+                </ul>
+
+                <div class="highlight">
+                    <p><strong>Note: </strong>While newer UI toolkits like JavaFX have emerged, Swing remains a robust
+                        and widely used framework
+                        for developing desktop applications in Java, especially for enterprise-level software due to its
+                        maturity and extensive component library.</p>
+                </div>
 
                 <pre><code>
-import javax.swing.*;
+import javax.swing.*; // Imports all classes from the Swing package
 
 public class SimpleGUI {
     public static void main(String[] args) {
+        // 1. Create the top-level container (window)
+        // JFrame is a top-level container that represents the main window of a Swing application.
         JFrame frame = new JFrame("My First GUI");
+
+        // 2. Create a component to be placed inside the frame
+        // JButton is a push button component. When clicked, it generates an ActionEvent.
         JButton button = new JButton("Click Me");
+
+        // 3. Set the default close operation for the frame
+        // JFrame.EXIT_ON_CLOSE ensures that the application terminates when the user closes the window.
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(button);
+
+        // 4. Add the component to the frame's content pane
+        // The content pane is the main area of the JFrame where components are added.
+        frame.getContentPane().add(button); // Adds the button to the default (CENTER) position of the content pane's BorderLayout
+
+        // 5. Set the size of the frame
+        // Sets the width and height of the window in pixels.
         frame.setSize(300, 200);
+
+        // 6. Make the frame visible
+        // By default, JFrames are not visible. This line makes the window appear on the screen.
         frame.setVisible(true);
     }
 }
@@ -1377,8 +2713,72 @@ public class SimpleGUI {
                 </header>
 
                 <h3>1. JDBC Basics</h3>
-                <p>Java Database Connectivity (JDBC) is an API for connecting and executing queries on a database.
+                <p>Java Database Connectivity (JDBC) is an <strong>API (Application Programming Interface)</strong> for
+                    connecting and executing queries on a database. It serves as a standard for Java applications to
+                    interact with various <strong>relational database management systems (RDBMS)</strong> like
+                    <i><b>MySQL,
+                            Oracle, PostgreSQL, SQL Server, and more</b></i>.
                 </p>
+
+                <h3>2. Purpose and Importance of JDBC</h3>
+                <p>JDBC acts as a crucial bridge, allowing Java programs to communicate with a wide range of databases
+                    without needing to know the intricate details of each database's specific communication protocols.
+                    This provides <strong>database independence</strong>, meaning you can write Java code once and run
+                    it against different databases simply by changing the JDBC driver and connection URL. It
+                    standardizes how Java applications perform common database operations, such as <strong>connecting to
+                        a database, executing SQL statements, and processing the results</strong>.</p>
+
+                <h3>3. How JDBC Works: The Role of Drivers</h3>
+                <p>At the heart of JDBC's functionality are <strong>JDBC drivers</strong>. These are software components
+                    that translate the generic JDBC API calls made by your Java application into the specific network
+                    protocols and SQL dialects understood by a particular database. When you use JDBC, you're
+                    interacting with these drivers, which then handle the low-level communication. Database vendors
+                    supply these drivers (e.g., MySQL Connector/J for MySQL, Oracle JDBC Driver for Oracle databases).
+                    This layered approach ensures that your Java application remains independent of the database's
+                    internal workings.</p>
+
+                <h3>4. Key Capabilities Provided by JDBC</h3>
+                <p>JDBC offers a comprehensive set of features for database interaction:</p>
+                <ul>
+                    <li><strong>Establishing and Managing Connections:</strong> It provides mechanisms to open and close
+                        connections to databases, handling connection pooling for efficient resource management.</li>
+                    <li><strong>Executing SQL Statements:</strong> You can send various types of SQL statements,
+                        including:
+                        <ul>
+                            <li><strong>DML (Data Manipulation Language):</strong> For operations like
+                                <strong>SELECT</strong>
+                                (retrieving data), <strong>INSERT</strong> (adding data), <strong>UPDATE</strong>
+                                (modifying data), and <strong>DELETE</strong> (removing data).
+                            </li>
+                            <li><strong>DDL (Data Definition Language):</strong> For defining or modifying database
+                                schemas, such as
+                                <strong>CREATE TABLE</strong>, <strong>ALTER TABLE</strong>, and <strong>DROP
+                                    TABLE</strong>.
+                            </li>
+                            <li><strong>Stored Procedures:</strong> Support for executing pre-compiled routines stored
+                                within the
+                                database.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Processing Result Sets:</strong> After executing a SELECT query, JDBC provides a
+                        <strong>ResultSet</strong> object that allows you to efficiently navigate through the returned
+                        rows and retrieve data from individual columns by name or index.
+                    </li>
+                    <li><strong>Transaction Management:</strong> JDBC supports database transactions, allowing you to
+                        group multiple SQL operations into a single atomic unit. This ensures data consistency; either
+                        all operations within the transaction succeed, or none of them do (if a rollback occurs).</li>
+                    <li><strong>Error Handling:</strong> It defines a robust exception hierarchy (centered around
+                        <strong>SQLException</strong>) to handle database-specific errors and warnings, enabling
+                        reliable application development.
+                    </li>
+                </ul>
+
+                <div class="highlight">
+                    <p><strong>Note: </strong>In essence, JDBC provides the essential framework for Java applications to
+                        perform all necessary
+                        interactions with relational databases, making it a cornerstone for developing data-driven
+                        enterprise applications.</p>
+                </div>
 
                 <pre><code>
 import java.sql.*;
@@ -1406,7 +2806,133 @@ public class JdbcExample {
 
                 <h3>1. Spring Boot Basics</h3>
                 <p>Spring Boot simplifies the setup of Spring applications with default configurations and embedded
-                    servers.</p>
+                    servers. It's an opinionated framework that aims to <b>get Spring applications up and running with
+                        minimal effort</b>, reducing the boilerplate code and configuration often associated with
+                    traditional
+                    Spring development.</p>
+
+                <h4>Why Spring Boot? The Problem It Solves</h4>
+                <p>Before Spring Boot, setting up a Spring application, especially a web application, often involved
+                    significant manual configuration (XML or Java-based), dependency management, and server setup (like
+                    deploying to Tomcat). This could be time-consuming and error-prone. Spring Boot addresses these
+                    challenges by:</p>
+                <ul>
+                    <li><strong>Reducing Boilerplate Code:</strong> It leverages conventions over configuration,
+                        drastically cutting down the amount of code developers need to write for common functionalities.
+                    </li>
+                    <li><strong>Simplifying Configuration:</strong> Through auto-configuration, Spring Boot
+                        intelligently configures your application based on the dependencies you include in your project.
+                        This means less manual configuration is required.</li>
+                    <li><strong>Embedded Servers:</strong> It includes embedded servlet containers like <b>Tomcat,
+                            Jetty,
+                            or Undertow</b> directly within the executable JAR, eliminating the need for external server
+                        installations and deployments. This makes applications self-contained and easier to run.</li>
+                    <li><strong>Opinionated Defaults:</strong> Spring Boot makes sensible default choices for various
+                        configurations, allowing developers to start quickly. If needed, these defaults can be easily
+                        overridden.</li>
+                    <li><strong>Production-Ready Features:</strong> It provides features like externalized
+                        configuration, health checks, metrics, and monitoring tools (via Spring Boot Actuator) that are
+                        crucial for deploying applications to production environments.</li>
+                </ul>
+
+                <h4>Key Features and Concepts of Spring Boot</h4>
+                <ul>
+                    <li>
+                        <strong>Auto-Configuration:</strong> This is a cornerstone of Spring Boot. Based on the JAR
+                        dependencies present in your classpath, Spring Boot automatically configures many aspects of
+                        your application. For example, if you add the `spring-boot-starter-web` dependency, it
+                        auto-configures Spring MVC, an embedded Tomcat server, and necessary dispatchers.
+                    </li>
+                    <li>
+                        <strong>Spring Boot Starters:</strong> These are convenient dependency descriptors that you can
+                        include in your project. Each starter brings a set of transitive dependencies that are commonly
+                        used together for a particular functionality (e.g., `spring-boot-starter-data-jpa` for database
+                        access, `spring-boot-starter-test` for testing). They simplify dependency management
+                        significantly.
+                    </li>
+                    <li>
+                        <strong>No XML Configuration:</strong> While Spring Framework itself supports Java-based
+                        configuration, Spring Boot heavily promotes and facilitates entirely XML-free development,
+                        relying on Java configurations and annotations.
+                    </li>
+                    <li>
+                        <strong>Embedded Servers:</strong> As mentioned, Spring Boot applications can run as standalone
+                        JARs with built-in servers (Tomcat, Jetty, Undertow). This removes the need for traditional WAR
+                        file deployments.
+                    </li>
+                    <li>
+                        <strong>Spring Boot Actuator:</strong> This module provides production-ready features to monitor
+                        and manage your application. It offers various endpoints (e.g., `/health`, `/info`, `/metrics`)
+                        to inspect application health, configuration, environment, and more.
+                    </li>
+                    <li>
+                        <strong>Externalized Configuration:</strong> Spring Boot allows you to externalize your
+                        configuration (e.g., database connection details, server ports) in various ways
+                        (application.properties, application.yml, environment variables, command-line arguments), making
+                        it easy to run the same application in different environments without code changes.
+                    </li>
+                    <li>
+                        <strong>Command-Line Interface (CLI):</strong> Spring Boot provides a CLI tool that you can use
+                        to quickly create Spring projects from the command line, run Groovy scripts, and manage
+                        dependencies.
+                    </li>
+                </ul>
+
+                <div class="highlight">
+                    <p><strong>Note: </strong>By abstracting away much of the initial setup and configuration, Spring
+                        Boot allows developers to
+                        focus more on writing business logic and less on infrastructure, significantly accelerating the
+                        development of robust, production-ready Spring applications.</p>
+                </div>
+
+                <h3>2. Spring Boot Annotations</h3>
+                <p>Annotations are fundamental to Spring Boot, providing metadata that tells Spring how to configure and
+                    manage your application's components. They significantly reduce the need for XML configuration,
+                    making code cleaner and more readable. Here are a few essential Spring Boot annotations:</p>
+                <ul>
+                    <li>
+                        <strong>@SpringBootApplication:</strong> This is a convenience annotation that marks the main
+                        class of a Spring Boot application. It's a meta-annotation that combines three other important
+                        annotations:
+                        <ul>
+                            <li><strong>@Configuration:</strong> Designates a class as a source of bean definitions for
+                                the Spring application context.</li>
+                            <li><strong>@EnableAutoConfiguration:</strong> Tells Spring Boot to start adding beans based
+                                on classpath settings, other beans, and various property settings. This is where the
+                                magic of auto-configuration happens.</li>
+                            <li><strong>@ComponentScan:</strong> Instructs Spring to scan for components (like
+                                controllers, services, repositories) in the current package and its sub-packages,
+                                automatically registering them as beans.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>@RestController:</strong> A specialized version of <b>@Controller</b> that's used in
+                        RESTful web services. It combines <b>@Controller</b> and <b>@ResponseBody</b>, meaning that
+                        methods
+                        within this class will directly return data (e.g., JSON or XML) instead of views.
+                    </li>
+                    <li>
+                        <strong>@Service:</strong> Marks a class as a service component, typically holding business
+                        logic. It's a specialization of <b>@Component</b>.
+                    </li>
+                    <li>
+                        <strong>@Repository:</strong> Marks a class as a Data Access Object (DAO), indicating that it
+                        deals with data storage, retrieval, and manipulation. It also provides automatic exception
+                        translation. It's another specialization of <b>@Component</b>.
+                    </li>
+                    <li>
+                        <strong>@Autowired:</strong> Used for automatic dependency injection. When you annotate a field,
+                        constructor, or setter method with <b>@Autowired</b>, Spring automatically finds and injects the
+                        required dependency (a bean) into that location.
+                    </li>
+                    <li>
+                        <strong>@Bean:</strong> A method-level annotation used within a <b>@Configuration</b> class to
+                        declare a Spring-managed bean. The method's return value will be registered as a bean in the
+                        Spring application context.
+                    </li>
+                </ul>
+                <p>These annotations, among many others, are central to the Spring Boot developer experience, enabling
+                    rapid development and a highly maintainable codebase.</p>
 
                 <pre><code>
 @SpringBootApplication
@@ -1424,6 +2950,19 @@ class HelloController {
     }
 }
     </code></pre>
+
+                <div class="highlight">
+                    <p><strong>Spring vs. Spring Boot: A Quick Glance: </strong><br><br>While often used
+                        interchangeably,
+                        <b>Spring Framework</b> is the extensive, foundational platform for Java application
+                        development, providing core features like <b>Dependency Injection</b>.<br><br> <b>Spring
+                            Boot</b>, on
+                        the other hand, is an opinionated extension that builds on Spring to enable <b>rapid application
+                            development</b> by minimizing configuration, offering auto-configuration, and embedding
+                        servers for standalone execution.<br><br> Think of Spring as the engine, and Spring Boot as the
+                        ready-to-drive car built with that engine.
+                    </p>
+                </div>
             </section>
 
             <section class="main-section" id="module7_aop">
@@ -1431,9 +2970,107 @@ class HelloController {
                     <h2>Module VII: AOP</h2>
                 </header>
 
-                <h3>1. Aspect-Oriented Programming</h3>
-                <p>AOP helps separate cross-cutting concerns like logging, security, and transactions from business
-                    logic.</p>
+                <h3>1. Aspect-Oriented Programming (AOP)</h3>
+                <p>Aspect-Oriented Programming (AOP) is a programming paradigm that aims to <strong>modularize
+                        cross-cutting concerns</strong>. It helps separate concerns like logging, security, transaction
+                    management, caching, and performance monitoring from the core business logic of an application. By
+                    doing so, AOP promotes greater modularity, reusability, and maintainability of code.</p>
+
+                <h4>Understanding Cross-Cutting Concerns</h4>
+                <p>In traditional object-oriented programming (OOP), certain functionalities tend to spread across
+                    multiple modules and layers of an application. These are called <strong>cross-cutting
+                        concerns</strong>. For example:</p>
+                <ul>
+                    <li><strong>Logging:</strong> Almost every method might need logging before or after execution to
+                        track flow or debug.</li>
+                    <li><strong>Security:</strong> Authentication and authorization checks might be required before
+                        accessing various resources or methods.</li>
+                    <li><strong>Transaction Management:</strong> Ensuring data consistency often involves starting,
+                        committing, or rolling back transactions across multiple database operations.</li>
+                    <li><strong>Caching:</strong> Implementing caching logic to improve performance often involves
+                        adding checks around method calls.</li>
+                </ul>
+                <p>Without AOP, developers would have to sprinkle the code for these concerns throughout the
+                    application, leading to:</p>
+                <ul>
+                    <li><strong>Code Tangling:</strong> Business logic gets "tangled" with infrastructure concerns,
+                        making it harder to understand and modify.</li>
+                    <li><strong>Code Scattering:</strong> The same cross-cutting concern logic is "scattered" across
+                        many different places, leading to duplication and making changes difficult (e.g., if logging
+                        requirements change).</li>
+                </ul>
+
+                <h4>How AOP Solves These Problems</h4>
+                <p>AOP introduces new constructs to encapsulate these cross-cutting concerns into reusable modules
+                    called <strong>aspects</strong>. It then defines mechanisms to <b>"weave"</b> these aspects into the
+                    application's core logic at specific points, known as <strong>join points</strong>, without
+                    modifying the original code. This process is called <strong>weaving</strong>.</p>
+
+                <h4>Key Concepts in AOP</h4>
+                <ul>
+                    <li>
+                        <strong>Aspect:</strong> A module that encapsulates a cross-cutting concern. It contains advice
+                        (what to do) and pointcuts (where to do it). For instance, a logging aspect might contain all
+                        the logging logic.
+                    </li>
+                    <li>
+                        <strong>Join Point:</strong> A specific point during the execution of a program, such as a
+                        method call, method execution, field access, or exception handling. In Spring AOP, a join point
+                        is always a method execution.
+                    </li>
+                    <li>
+                        <strong>Advice:</strong> The actual code that implements the cross-cutting concern. It defines
+                        <strong>what</strong> action an aspect will take and <strong>when</strong> it will take it
+                        relative to a join point. Common types of advice include:
+                        <ul>
+                            <li><strong>@Before:</strong> Advice executed before a join point.</li>
+                            <li><strong>@After:</strong> Advice executed after a join point, regardless of its outcome
+                                (success or exception).</li>
+                            <li><strong>@AfterReturning:</strong> Advice executed after a join point completes
+                                successfully (i.e., returns without throwing an exception).</li>
+                            <li><strong>@AfterThrowing:</strong> Advice executed after a join point throws an exception.
+                            </li>
+                            <li><strong>@Around:</strong> Advice that surrounds a join point, allowing you to perform
+                                actions both before and after the join point, and even to prevent the join point from
+                                executing or to return a different value. This is the most powerful type of advice.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Pointcut:</strong> A predicate that matches join points. It defines
+                        <strong>where</strong> the advice should be applied. A pointcut expression specifies a set of
+                        join points (e.g., "all method executions in the 'service' package").
+                    </li>
+                    <li>
+                        <strong>Target Object:</strong> The object being advised by one or more aspects. This is the
+                        object containing the business logic.
+                    </li>
+                    <li>
+                        <strong>Proxy:</strong> An object created by the AOP framework to implement the aspects for the
+                        target object. When a method on the target object is called, the call is intercepted by the
+                        proxy, which then applies the relevant advice.
+                    </li>
+                    <li>
+                        <strong>Weaving:</strong> The process of applying aspects to target objects to create advised
+                        objects (proxies). Weaving can occur at different stages:
+                        <ul>
+                            <li><strong>Compile-time weaving:</strong> Aspects are woven when the source code is
+                                compiled.</li>
+                            <li><strong>Load-time weaving (LTW):</strong> Aspects are woven when the class files are
+                                loaded into the JVM.</li>
+                            <li><strong>Runtime weaving:</strong> Aspects are woven at runtime, typically by generating
+                                proxy objects. Spring AOP primarily uses runtime weaving.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>2. AOP in Spring Framework</h3>
+                <p>Spring AOP is implemented using <strong>dynamic proxies</strong>. When an advised method is called,
+                    the Spring AOP container creates a proxy object that intercepts the method call. The proxy then
+                    delegates the call to the actual target object after applying the necessary advice. Spring AOP is
+                    primarily used to provide enterprise services like transaction management, security, and caching
+                    declarative, rather than requiring you to implement them manually in your business logic. It allows
+                    developers to define these cross-cutting concerns in a centralized manner, leading to cleaner, more
+                    maintainable, and highly modular applications.</p>
 
                 <pre><code>
 @Aspect
@@ -1452,10 +3089,11 @@ public class LoggingAspect {
                     <h2>Module VIII: Thymeleaf</h2>
                 </header>
 
-                <h3>1. Thymeleaf Basics: An HTML-friendly Template Engine</h3>
+                <h3>Thymeleaf Basics: An HTML-friendly Template Engine</h3>
                 <p>Thymeleaf is a modern server-side Java template engine designed for web and standalone environments.
                     It's often used with Spring Framework for building dynamic web applications. What sets Thymeleaf
-                    apart is its philosophy of being "natural templating," meaning your template files can be opened
+                    apart is its philosophy of being <b><q>natural templating</q></b>, meaning your template files can
+                    be opened
                     directly in a browser and still display correctly, even before being processed by the server. This
                     makes design and development much more intuitive, as designers and front-end developers can work on
                     the HTML templates without needing a running application server.</p>
@@ -1503,9 +3141,72 @@ public class LoggingAspect {
                 </header>
 
                 <h3>1. API Testing with Postman</h3>
-                <p>Postman is a popular tool for testing REST APIs. It supports all HTTP methods and helps in
-                    validating responses.</p>
-                <p>Use Postman to test GET, POST, PUT, DELETE requests to Spring Boot endpoints.</p>
+                <p>Postman is a popular and powerful <strong>API (Application Programming Interface) development
+                        environment (ADE)</strong> that simplifies various stages of the API lifecycle, with a strong
+                    focus on <strong>testing REST APIs</strong>. It supports all standard HTTP methods and provides
+                    robust features to help developers and testers in validating responses, managing API requests, and
+                    automating tests.</p>
+
+                <h4>Why Use Postman for API Testing?</h4>
+                <p>In modern software development, applications often communicate through APIs. Testing these APIs
+                    directly, without relying on a complete UI, is crucial for ensuring their correctness, performance,
+                    and reliability. Postman addresses this need by offering a user-friendly interface and extensive
+                    capabilities:</p>
+                <ul>
+                    <li><strong>Ease of Use:</strong> Its intuitive graphical user interface (GUI) makes it easy to
+                        construct complex HTTP requests, set headers, manage parameters, and view responses without
+                        writing extensive code.</li>
+                    <li><strong>Comprehensive HTTP Method Support:</strong> Postman supports all standard HTTP methods
+                        including <strong>GET, POST, PUT, DELETE, PATCH, OPTIONS, HEAD</strong>, allowing for full CRUD
+                        (Create, Read, Update, Delete) operation testing.</li>
+                    <li><strong>Request Customization:</strong> Users can easily customize requests by adding headers,
+                        body data (JSON, XML, form-data), query parameters, and authorization details (Basic Auth,
+                        Bearer Token, OAuth 2.0).</li>
+                    <li><strong>Response Validation:</strong> It provides a clear view of API responses, including
+                        status codes, headers, and body content. Testers can inspect the raw response or view it in
+                        formatted JSON/XML.</li>
+                    <li><strong>Test Automation:</strong> Postman allows writing JavaScript snippets in the "Tests" tab
+                        to automate assertions against the response data, status codes, and headers. This enables
+                        automated API testing.</li>
+                    <li><strong>Collections:</strong> Requests can be organized into collections, making it easy to
+                        group related API calls, share them with teams, and run them sequentially.</li>
+                    <li><strong>Environment Variables:</strong> It supports environment variables, allowing users to
+                        switch between different environments (e.g., development, staging, production) without modifying
+                        requests, by simply updating variable values.</li>
+                    <li><strong>Mock Servers:</strong> Postman can simulate API endpoints, allowing frontend and backend
+                        development teams to work in parallel even if the actual API is not yet fully implemented.</li>
+                    <li><strong>Collaboration:</strong> Teams can share collections, environments, and API
+                        documentation, fostering better collaboration in API development and testing workflows.</li>
+                </ul>
+
+                <p>You can use Postman to test <strong>GET, POST, PUT, DELETE</strong> requests to Spring Boot endpoints
+                    (or any other REST API). For instance:</p>
+                <ul>
+                    <li>A <strong>GET</strong> request to retrieve data from a `/users` endpoint.</li>
+                    <li>A <strong>POST</strong> request to create a new user by sending JSON data to a `/users`
+                        endpoint.</li>
+                    <li>A <strong>PUT</strong> request to update an existing user's details at `/users/{id}`.</li>
+                    <li>A <strong>DELETE</strong> request to remove a user from `/users/{id}`.</li>
+                </ul>
+
+                <h3>2. Basic Workflow for Testing an API with Postman:</h3>
+                <ol>
+                    <li><strong>Create a New Request:</strong> Click the '+' tab or 'New' button to create a new HTTP
+                        request.</li>
+                    <li><strong>Select HTTP Method:</strong> Choose the appropriate method (GET, POST, PUT, DELETE,
+                        etc.) from the dropdown.</li>
+                    <li><strong>Enter Request URL:</strong> Input the endpoint URL (e.g.,
+                        `http://localhost:8080/api/users`).</li>
+                    <li><strong>Configure Headers/Body (if applicable):</strong> Add necessary headers (e.g.,
+                        `Content-Type: application/json`, `Authorization`) and/or request body data for POST/PUT/PATCH
+                        requests.</li>
+                    <li><strong>Send Request:</strong> Click the 'Send' button.</li>
+                    <li><strong>Inspect Response:</strong> Review the response in the lower panel, checking the status
+                        code (e.g., 200 OK, 201 Created, 404 Not Found), response headers, and the response body
+                        content.</li>
+                    <li><strong>Write Tests (Optional but Recommended):</strong> Use the 'Tests' tab to add JavaScript
+                        assertions to automatically validate parts of the response.</li>
+                </ol>
             </section>
 
             <section class="main-section" id="module10_crud">
@@ -1513,8 +3214,118 @@ public class LoggingAspect {
                     <h2>Module X: CRUD Operations</h2>
                 </header>
 
-                <h3>1. CRUD in Spring Boot</h3>
-                <p>Perform Create, Read, Update, and Delete operations using Spring Data JPA.</p>
+                <h3>1. CRUD in Spring Boot with Spring Data JPA</h3>
+                <p>CRUD stands for <strong>Create, Read, Update, and Delete</strong> – the four fundamental operations
+                    performed on persistent data in any application. In Spring Boot, these operations are significantly
+                    simplified and streamlined through the use of <strong>Spring Data JPA (Java Persistence
+                        API)</strong>.</p>
+
+                <h4>Understanding Spring Data JPA for CRUD</h4>
+                <p>Spring Data JPA is a sub-project of Spring Data that provides an abstraction layer on top of JPA
+                    providers (like <strong>Hibernate</strong>). Its primary goal is to drastically <strong>reduce the
+                        amount of boilerplate code</strong> required to implement data access layers (DAOs). Instead of
+                    writing concrete implementations for common CRUD methods, you simply declare interfaces, and Spring
+                    Data JPA generates the implementations at runtime.</p>
+
+                <h4>Key Components Involved:</h4>
+                <ul>
+                    <li>
+                        <strong>Entity (Model) Class:</strong> This is a plain Java class annotated with
+                        <strong>@Entity</strong> (from `jakarta.persistence` package) that maps to a database table.
+                        Each instance of this class represents a row in the table, and its properties map to columns. It
+                        typically includes annotations like <strong>@Id</strong> for the primary key and
+                        <strong>@GeneratedValue</strong> for auto-incrementing IDs.
+                    </li>
+                    <li>
+                        <strong>Repository Interface:</strong> This is a key component where Spring Data JPA truly
+                        shines. You define an interface (e.g., `UserRepository`) that extends one of Spring Data JPA's
+                        base interfaces, most commonly <strong>JpaRepository</strong> (or
+                        <strong>CrudRepository</strong> for basic CRUD).
+                        <ul>
+                            <li><strong>JpaRepository:</strong> Extends <strong>PagingAndSortingRepository</strong>,
+                                which in turn extends <strong>CrudRepository</strong>. It provides methods for basic
+                                CRUD operations, as well as pagination and sorting. By simply extending this interface,
+                                you automatically get methods like <mark>save()</mark>, <mark>findById()</mark>,
+                                <mark>findAll()</mark>, <mark>deleteById()</mark>, etc., without writing any
+                                implementation code.
+                            </li>
+                            <li><strong>CrudRepository:</strong> A more basic interface providing generic CRUD
+                                operations like <mark>save()</mark>, <mark>findById()</mark>, <mark>findAll()</mark>,
+                                <mark>delete()</mark>, <mark>count()</mark>. <strong>JpaRepository</strong> is generally
+                                preferred as it includes more features.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Service Layer (Optional but Recommended):</strong> This layer sits between the
+                        controller and the repository. It encapsulates business logic, performs data validation, and can
+                        coordinate multiple repository calls within a single transaction. This promotes
+                        <strong>separation of concerns</strong> and improves testability.
+                    </li>
+                    <li>
+                        <strong>Controller (REST Controller):</strong> This layer exposes the CRUD functionalities as
+                        <strong>RESTful API endpoints</strong>. It receives HTTP requests (GET, POST, PUT, DELETE),
+                        interacts with the service layer (which in turn uses the repository), and sends back appropriate
+                        HTTP responses (e.g., JSON). Annotations like <strong>@RestController</strong>,
+                        <strong>@RequestMapping</strong>, <strong>@GetMapping</strong>, <strong>@PostMapping</strong>,
+                        <strong>@PutMapping</strong>, <strong>@DeleteMapping</strong>, <strong>@RequestBody</strong>,
+                        and <strong>@PathVariable</strong> are commonly used here.
+                    </li>
+                </ul>
+
+                <h3>2. Implementing CRUD Operations Step-by-Step (Conceptual):</h3>
+                <ol>
+                    <li><strong>Create (C):</strong>
+                        <ul>
+                            <li><strong>Endpoint:</strong> Typically a <strong>POST</strong> request to
+                                `/api/resources`.</li>
+                            <li><strong>Process:</strong> The client sends an object (e.g., JSON) in the request body.
+                                The controller receives this, passes it to the service (optional), which then calls
+                                <mark>repository.save(entityObject)</mark>. Spring Data JPA inserts the object into the
+                                database.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Read (R):</strong>
+                        <ul>
+                            <li><strong>All Resources:</strong> Typically a <strong>GET</strong> request to
+                                `/api/resources`. The controller calls <mark>repository.findAll()</mark>, which returns
+                                all entities.</li>
+                            <li><strong>Single Resource by ID:</strong> Typically a <strong>GET</strong> request to
+                                `/api/resources/{id}`. The controller extracts the `id` from the path variable and calls
+                                <mark>repository.findById(id)</mark>. This method returns an <strong>Optional</strong>,
+                                which needs to be handled to check if the entity exists.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Update (U):</strong>
+                        <ul>
+                            <li><strong>Endpoint:</strong> Typically a <strong>PUT</strong> request to
+                                `/api/resources/{id}`.</li>
+                            <li><strong>Process:</strong> The client sends the updated object and the ID. The controller
+                                first retrieves the existing entity using <mark>findById()</mark>, updates its
+                                properties with the new data, and then calls
+                                <mark>repository.save(updatedEntityObject)</mark>. If the ID exists, Spring Data JPA
+                                performs an update; otherwise, it might perform an insert depending on configuration.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Delete (D):</strong>
+                        <ul>
+                            <li><strong>Endpoint:</strong> Typically a <strong>DELETE</strong> request to
+                                `/api/resources/{id}`.</li>
+                            <li><strong>Process:</strong> The controller extracts the `id` from the path variable and
+                                calls <mark>repository.deleteById(id)</mark>. Spring Data JPA removes the corresponding
+                                record from the database.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <div class="highlight">
+                    <p><strong>Note: </strong>By leveraging Spring Data JPA, developers can quickly set up robust data
+                        access layers for their Spring Boot applications, allowing them to focus more on the business
+                        logic rather than tedious database interaction code.</p>
+                </div>
 
                 <pre><code>
 @Entity
@@ -1539,6 +3350,134 @@ class ProductController {
     }
 }
     </code></pre>
+            </section>
+
+            <section class="main-section" id="naming_conventions">
+                <header>
+                    <h2>Java Naming Conventions</h2>
+                </header>
+
+                <p>Java Naming Conventions are a set of widely accepted rules for naming identifiers (like classes,
+                    methods, variables, etc.) in Java code. Adhering to these conventions significantly improves code
+                    readability, maintainability, and collaboration among developers.</p>
+
+                <p>Here's a breakdown of the standard Java naming conventions:</p>
+
+                <h3>Packages</h3>
+                <ul>
+                    <li><strong>Rule:</strong> All lowercase letters. If multiple words are used, they are separated by
+                        dots. It's common practice to use reverse domain name notation to ensure uniqueness.</li>
+                    <li><strong>Examples:</strong></li>
+                    <div class="example">
+                        <code>java.lang</code><br>
+                        <code>com.example.myproject.utilities</code><br>
+                        <code>org.apache.commons.io</code>
+                    </div>
+                </ul>
+
+                <h3>Classes</h3>
+                <ul>
+                    <li><strong>Rule:</strong> Nouns, in "Upper Camel Case" (also known as PascalCase). The first letter
+                        of each word is capitalized. Should be descriptive.</li>
+                    <li><strong>Examples:</strong></li>
+                    <div class="example">
+                        <code>String</code><br>
+                        <code>ArrayList</code><br>
+                        <code>CustomerAccount</code><br>
+                        <code>ImageProcessor</code>
+                    </div>
+                </ul>
+
+                <h3>Interfaces</h3>
+                <ul>
+                    <li><strong>Rule:</strong> Capitalized like class names (Upper Camel Case). Often describe a
+                        capability or a contract.</li>
+                    <li><strong>Examples:</strong></li>
+                    <div class="example">
+                        <code>Runnable</code><br>
+                        <code>Comparable</code><br>
+                        <code>Serializable</code><br>
+                        <code>Printable</code>
+                    </div>
+                </ul>
+
+                <h3>Methods</h3>
+                <ul>
+                    <li><strong>Rule:</strong> Verbs, in "lower Camel Case" (also known as mixed case). The first letter
+                        is lowercase, and the first letter of subsequent words is capitalized.</li>
+                    <li><strong>Examples:</strong></li>
+                    <div class="example">
+                        <code>main()</code><br>
+                        <code>calculateSum()</code><br>
+                        <code>getFirstName()</code><br>
+                        <code>runFast()</code>
+                    </div>
+                </ul>
+
+                <h3>Variables</h3>
+                <ul>
+                    <li><strong>Rule:</strong> In lower Camel Case. Should be short yet meaningful, reflecting their
+                        purpose. Avoid starting with <code>_</code> or <code>$</code> (though allowed, it's not standard
+                        practice).</li>
+                    <li><strong>Examples:</strong></li>
+                    <div class="example">
+                        <code>firstName</code><br>
+                        <code>orderNumber</code><br>
+                        <code>myWidth</code><br>
+                        <code>balance</code>
+                    </div>
+                    <li><strong>Temporary variables:</strong> For short-lived, temporary variables (e.g., loop
+                        counters), single-character names are sometimes acceptable (e.g., <code>i</code>,
+                        <code>j</code>, <code>k</code> for integers; <code>c</code>, <code>d</code>, <code>e</code> for
+                        characters).</li>
+                </ul>
+
+                <h3>Constants (static final fields)</h3>
+                <ul>
+                    <li><strong>Rule:</strong> All uppercase letters, with words separated by underscores
+                        (<code>_</code>).</li>
+                    <li><strong>Examples:</strong></li>
+                    <div class="example">
+                        <code>MAX_VALUE</code><br>
+                        <code>PI</code><br>
+                        <code>DEFAULT_WIDTH</code><br>
+                        <code>MIN_HEIGHT</code>
+                    </div>
+                </ul>
+
+                <h3>Enums</h3>
+                <ul>
+                    <li><strong>Enum Type:</strong> Upper Camel Case (like classes).</li>
+                    <li><strong>Enum Constants:</strong> All uppercase with words separated by underscores (like
+                        constants).</li>
+                    <li><strong>Example:</strong></li>
+                    <div class="example">
+                        <pre><code>enum DayOfWeek {
+    SUNDAY,
+    MONDAY,
+    TUESDAY,
+    // ...
+}</code></pre>
+                    </div>
+                </ul>
+
+                <h3>General Principles</h3>
+                <ul>
+                    <li><strong>Descriptive Names:</strong> Choose names that clearly indicate the identifier's purpose,
+                        even if they are longer. Avoid vague or overly abbreviated names.</li>
+                    <li><strong>Readability:</strong> The primary goal of naming conventions is to make code easy to
+                        read and understand for anyone working on it.</li>
+                    <li><strong>Consistency:</strong> Stick to the conventions consistently throughout your codebase.
+                    </li>
+                    <li><strong>Avoid Acronyms/Abbreviations:</strong> Unless an abbreviation is much more widely known
+                        than its long form (e.g., URL, HTML), use whole words.</li>
+                    <li><strong>Case Sensitivity:</strong> Remember that Java is case-sensitive (<code>myVariable</code>
+                        is different from <code>MyVariable</code>).</li>
+                </ul>
+
+                <p>By following these conventions, Java developers contribute to creating clean, professional, and
+                    easily maintainable codebases.</p>
+
             </section>
 
             <section class="main-section" id="java8_features">
@@ -1679,12 +3618,14 @@ Duration duration = Duration.between(start, end);
                     size. It includes the space used by variables, data structures, and function calls.</p>
 
                 <div class="highlight">
-                    <p><strong>The Hidden Superpowers of Your Everyday Tech:</strong><br><br> 
+                    <p><strong>The Hidden Superpowers of Your Everyday Tech:</strong><br><br>
                         Every time you use Google Maps to find the fastest route, or Netflix to get movie
                         recommendations, or even just search for a friend on social media – you're experiencing the
                         power of Data Structures and Algorithms (DSA) in action!<br><br>
-                    DSA helps these apps sort, store, and process massive amounts of information incredibly fast and efficiently, making
-                    your digital life smooth and seamless. It's the secret sauce that makes modern technology work!</p>
+                        DSA helps these apps sort, store, and process massive amounts of information incredibly fast and
+                        efficiently, making
+                        your digital life smooth and seamless. It's the secret sauce that makes modern technology work!
+                    </p>
                 </div>
 
             </section>
@@ -1708,6 +3649,13 @@ Duration duration = Duration.between(start, end);
                             Tutorial</a></li>
                 </ul>
             </section>
+        </main>
+    </div>
+
+    <footer>
+        <p id="copyright">&#169; 2025 | Designed by <a href="https://www.linkedin.com/in/jabayazhini-ag/"
+                target="_blank">Jabayazhini_AG</a> | All Rights Reserved</p>
+    </footer>
 
 </body>
 
