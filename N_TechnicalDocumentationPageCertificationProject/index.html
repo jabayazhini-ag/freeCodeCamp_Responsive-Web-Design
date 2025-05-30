@@ -3365,93 +3365,93 @@ class ProductController {
 
                 <h3>Packages</h3>
                 <ul>
-                    <li><strong>Rule:</strong> All lowercase letters. If multiple words are used, they are separated by
-                        dots. It's common practice to use reverse domain name notation to ensure uniqueness.</li>
+                    <li><strong>Rule:</strong> All <b>lowercase</b> letters. If multiple words are used, they are separated by
+                        <b>dots</b>. It's common practice to use <b>reverse</b> domain name notation to ensure uniqueness.</li>
                     <li><strong>Examples:</strong></li>
-                    <div class="example">
-                        <code>java.lang</code><br>
-                        <code>com.example.myproject.utilities</code><br>
+                    <div>
+                        <code>java.lang</code>
+                        <code>com.example.myproject.utilities</code>
                         <code>org.apache.commons.io</code>
                     </div>
                 </ul>
 
                 <h3>Classes</h3>
                 <ul>
-                    <li><strong>Rule:</strong> Nouns, in "Upper Camel Case" (also known as PascalCase). The first letter
-                        of each word is capitalized. Should be descriptive.</li>
+                    <li><strong>Rule:</strong> Nouns, in <b><q>Upper Camel Case</q></b> (also known as <b>PascalCase</b>). The <b>first letter</b>
+                        of each word is <b>capitalized</b>. Should be descriptive.</li>
                     <li><strong>Examples:</strong></li>
-                    <div class="example">
-                        <code>String</code><br>
-                        <code>ArrayList</code><br>
-                        <code>CustomerAccount</code><br>
+                    <div>
+                        <code>String</code>
+                        <code>ArrayList</code>
+                        <code>CustomerAccount</code>
                         <code>ImageProcessor</code>
                     </div>
                 </ul>
 
                 <h3>Interfaces</h3>
                 <ul>
-                    <li><strong>Rule:</strong> Capitalized like class names (Upper Camel Case). Often describe a
+                    <li><strong>Rule:</strong> Capitalized <b>like class names</b> <b>(Upper Camel Case)</b>. Often describe a
                         capability or a contract.</li>
                     <li><strong>Examples:</strong></li>
-                    <div class="example">
-                        <code>Runnable</code><br>
-                        <code>Comparable</code><br>
-                        <code>Serializable</code><br>
+                    <div>
+                        <code>Runnable</code>
+                        <code>Comparable</code>
+                        <code>Serializable</code>
                         <code>Printable</code>
                     </div>
                 </ul>
 
                 <h3>Methods</h3>
                 <ul>
-                    <li><strong>Rule:</strong> Verbs, in "lower Camel Case" (also known as mixed case). The first letter
-                        is lowercase, and the first letter of subsequent words is capitalized.</li>
+                    <li><strong>Rule:</strong> Verbs, in <b>"lower Camel Case"</b> (also known as <b>mixed case</b>). The <b>first letter
+                        is lowercase</b>, and the first letter of <b>subsequent words is capitalized</b>.</li>
                     <li><strong>Examples:</strong></li>
                     <div class="example">
-                        <code>main()</code><br>
-                        <code>calculateSum()</code><br>
-                        <code>getFirstName()</code><br>
+                        <code>main()</code>
+                        <code>calculateSum()</code>
+                        <code>getFirstName()</code>
                         <code>runFast()</code>
                     </div>
                 </ul>
 
                 <h3>Variables</h3>
                 <ul>
-                    <li><strong>Rule:</strong> In lower Camel Case. Should be short yet meaningful, reflecting their
-                        purpose. Avoid starting with <code>_</code> or <code>$</code> (though allowed, it's not standard
+                    <li><strong>Rule:</strong> In <b>lower Camel Case</b>. Should be short yet meaningful, reflecting their
+                        purpose. <b>Avoid</b> starting with <mark>_</mark> or <mark>$</mark> (<b>though allowed</b>, it's not standard
                         practice).</li>
                     <li><strong>Examples:</strong></li>
-                    <div class="example">
-                        <code>firstName</code><br>
-                        <code>orderNumber</code><br>
-                        <code>myWidth</code><br>
+                    <div>
+                        <code>firstName</code>
+                        <code>orderNumber</code>
+                        <code>myWidth</code>
                         <code>balance</code>
                     </div>
                     <li><strong>Temporary variables:</strong> For short-lived, temporary variables (e.g., loop
-                        counters), single-character names are sometimes acceptable (e.g., <code>i</code>,
-                        <code>j</code>, <code>k</code> for integers; <code>c</code>, <code>d</code>, <code>e</code> for
-                        characters).</li>
+                        counters), single-character names are sometimes acceptable (e.g., <mark>i</mark> ,
+                        <mark>j</mark> , <mark>k</mark> for <b>integers</b>; <mark>c</mark> , <mark>d</mark> , <mark>e</mark> for
+                        <b>characters</b>).</li>
                 </ul>
 
                 <h3>Constants (static final fields)</h3>
                 <ul>
-                    <li><strong>Rule:</strong> All uppercase letters, with words separated by underscores
-                        (<code>_</code>).</li>
+                    <li><strong>Rule:</strong> All <b>uppercase</b> letters, with words <b>separated by underscores</b>
+                        (<mark>_</mark>).</li>
                     <li><strong>Examples:</strong></li>
-                    <div class="example">
-                        <code>MAX_VALUE</code><br>
-                        <code>PI</code><br>
-                        <code>DEFAULT_WIDTH</code><br>
+                    <div>
+                        <code>MAX_VALUE</code>
+                        <code>PI</code>
+                        <code>DEFAULT_WIDTH</code>
                         <code>MIN_HEIGHT</code>
                     </div>
                 </ul>
 
                 <h3>Enums</h3>
                 <ul>
-                    <li><strong>Enum Type:</strong> Upper Camel Case (like classes).</li>
-                    <li><strong>Enum Constants:</strong> All uppercase with words separated by underscores (like
-                        constants).</li>
+                    <li><strong>Enum Type:</strong> <b>Upper Camel Case (like classes)</b>.</li>
+                    <li><strong>Enum Constants:</strong> All uppercase with words separated by underscores <b>(like
+                        constants)</b>.</li>
                     <li><strong>Example:</strong></li>
-                    <div class="example">
+                    <div>
                         <pre><code>enum DayOfWeek {
     SUNDAY,
     MONDAY,
@@ -3471,8 +3471,8 @@ class ProductController {
                     </li>
                     <li><strong>Avoid Acronyms/Abbreviations:</strong> Unless an abbreviation is much more widely known
                         than its long form (e.g., URL, HTML), use whole words.</li>
-                    <li><strong>Case Sensitivity:</strong> Remember that Java is case-sensitive (<code>myVariable</code>
-                        is different from <code>MyVariable</code>).</li>
+                    <li><strong>Case Sensitivity:</strong> Remember that Java is case-sensitive (<mark>myVariable</mark>
+                        is different from <mark>MyVariable</mark>).</li>
                 </ul>
 
                 <p>By following these conventions, Java developers contribute to creating clean, professional, and
@@ -3563,6 +3563,243 @@ Duration duration = Duration.between(start, end);
                     </div>
                 </div>
             </section>
+
+            <!-- Java 17 Features Section -->
+<section class="main-section" id="java17_features">
+    <header>
+        <h2>Java 17 Features</h2>
+    </header>
+    <p>Java 17 is a Long Term Support (LTS) release that introduced significant enhancements and new features. Released in September 2021, it focuses on performance improvements, security enhancements, and developer productivity.</p>
+
+    <div class="module-grid">
+        <div class="module-card">
+            <h3>Sealed Classes</h3>
+            <p>Control which classes can extend or implement your classes and interfaces.</p>
+            <pre><code>
+public sealed class Shape
+    permits Circle, Rectangle, Triangle {
+}
+
+public final class Circle extends Shape {
+    private final double radius;
+}
+
+public final class Rectangle extends Shape {
+    private final double width, height;
+}
+            </code></pre>
+        </div>
+
+        <div class="module-card">
+            <h3>Pattern Matching for instanceof</h3>
+            <p>Eliminate the need for explicit casting after instanceof checks.</p>
+            <pre><code>
+// Traditional approach
+if (obj instanceof String) {
+    String s = (String) obj;
+    System.out.println(s.toUpperCase());
+}
+
+// Pattern matching
+if (obj instanceof String s) {
+    System.out.println(s.toUpperCase());
+}
+            </code></pre>
+        </div>
+
+        <div class="module-card">
+            <h3>Records</h3>
+            <p>Create immutable data classes with minimal boilerplate code.</p>
+            <pre><code>
+public record Person(String name, int age) {}
+
+// Usage
+Person person = new Person("John", 25);
+System.out.println(person.name()); // John
+System.out.println(person.age());  // 25
+            </code></pre>
+        </div>
+
+        <div class="module-card">
+            <h3>Text Blocks</h3>
+            <p>Multi-line string literals that preserve formatting and improve readability.</p>
+            <pre><code>
+String json = """
+    {
+        "name": "John Doe",
+        "age": 30,
+        "city": "New York"
+    }
+    """;
+            </code></pre>
+        </div>
+
+        <div class="module-card">
+            <h3>Switch Expressions</h3>
+            <p>Enhanced switch statements with expression syntax and yield keyword.</p>
+            <pre><code>
+String result = switch (day) {
+    case MONDAY, FRIDAY, SUNDAY -> "6";
+    case TUESDAY -> "7";
+    case THURSDAY, SATURDAY -> "8";
+    case WEDNESDAY -> "9";
+    default -> throw new IllegalStateException();
+};
+            </code></pre>
+        </div>
+
+        <div class="module-card">
+            <h3>Context-Specific Deserialization Filters</h3>
+            <p>Enhanced security with context-specific deserialization filters to prevent security vulnerabilities.</p>
+            <pre><code>
+// Configure deserialization filter
+ObjectInputStream.setObjectInputFilter(
+    ObjectInputFilter.Config.createFilter(
+        "java.base/*;!*"  // Allow java.base, deny others
+    )
+);
+
+// Per-stream filter
+ObjectInputStream ois = new ObjectInputStream(inputStream);
+ois.setObjectInputFilter(info -> {
+    if (info.serialClass() == MyClass.class) {
+        return ObjectInputFilter.Status.ALLOWED;
+    }
+    return ObjectInputFilter.Status.REJECTED;
+});
+            </code></pre>
+        </div>
+    </div>
+</section>
+
+<!-- Java 21 Features Section -->
+<section class="main-section" id="java21_features">
+    <header>
+        <h2>Java 21 Features</h2>
+    </header>
+    <p>Java 21 is the latest Long Term Support (LTS) release that brings cutting-edge features and performance improvements. Released in September 2023, it introduces virtual threads, pattern matching enhancements, sequenced collections, and many other developer-friendly features.</p>
+
+    <div class="module-grid">
+        <div class="module-card">
+            <h3>Virtual Threads</h3>
+            <p>Lightweight threads that dramatically improve concurrent programming scalability.</p>
+            <pre><code>
+// Creating virtual threads
+try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
+    IntStream.range(0, 10_000).forEach(i -> {
+        executor.submit(() -> {
+            try {
+                Thread.sleep(Duration.ofSeconds(1));
+                return i;
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                return -1;
+            }
+        });
+    });
+}
+
+// Alternative way to create virtual threads
+Thread vThread = Thread.ofVirtual().start(() -> {
+    System.out.println("Running in virtual thread");
+});
+            </code></pre>
+        </div>
+
+        <div class="module-card">
+            <h3>Pattern Matching for Switch</h3>
+            <p>Enhanced switch expressions with pattern matching capabilities.</p>
+            <pre><code>
+String result = switch (obj) {
+    case Integer i -> "Integer: " + i;
+    case String s when s.length() > 5 -> "Long string: " + s;
+    case String s -> "Short string: " + s;
+    case null -> "null value";
+    default -> "Unknown type";
+};
+            </code></pre>
+        </div>
+
+        <div class="module-card">
+            <h3>Record Patterns</h3>
+            <p>Destructure record values in pattern matching contexts.</p>
+            <pre><code>
+record Point(int x, int y) {}
+
+// Pattern matching with records
+static String describe(Object obj) {
+    return switch (obj) {
+        case Point(var x, var y) -> "Point[" + x + ", " + y + "]";
+        case null -> "null";
+        default -> "Unknown";
+    };
+}
+            </code></pre>
+        </div>
+
+        <div class="module-card">
+            <h3>Sequenced Collections</h3>
+            <p>New interfaces for collections with defined encounter order.</p>
+            <pre><code>
+List&lt;String&gt; list = new ArrayList&lt;&gt;();
+list.addFirst("first");
+list.addLast("last");
+
+String first = list.getFirst();
+String last = list.getLast();
+
+list.reversed().forEach(System.out::println);
+            </code></pre>
+        </div>
+
+        <div class="module-card">
+            <h3>Sealed Classes Enhancement</h3>
+            <p>Java 21 sealed classes will change your domain modeling. Game-changing integration with pattern matching that revolutionizes how you model business domains. While Java 17 introduced sealed classes, Java 21 makes them truly powerful with exhaustive pattern matching and record destructuring.</p>
+            <pre><code>
+public sealed interface Result&lt;T&gt;
+    permits Success, Error {
+}
+
+public record Success&lt;T&gt;(T value) implements Result&lt;T&gt; {}
+public record Error&lt;T&gt;(String message) implements Result&lt;T&gt; {}
+
+// Exhaustive pattern matching - compiler ensures all cases covered
+String process(Result&lt;String&gt; result) {
+    return switch (result) {
+        case Success&lt;String&gt;(var value) -> "Got: " + value;
+        case Error&lt;String&gt;(var msg) -> "Error: " + msg;
+        // No default needed - compiler knows all cases handled!
+    };
+}
+            </code></pre>
+        </div>
+
+        <div class="module-card">
+            <h3>Unnamed Patterns and Variables</h3>
+            <p>Use underscore (_) for unused variables and patterns to improve code readability.</p>
+            <pre><code>
+// Unnamed variables in lambda expressions
+map.forEach((_, value) -> System.out.println(value));
+
+// Unnamed patterns in switch
+switch (shape) {
+    case Rectangle(var width, _) -> 
+        System.out.println("Width: " + width);
+    case Circle(_) -> 
+        System.out.println("It's a circle");
+}
+
+// Unnamed variables in try-catch
+try {
+    riskyOperation();
+} catch (Exception _) {
+    // Don't care about the exception details
+    handleError();
+}
+            </code></pre>
+        </div>
+    </div>
+</section>
 
             <section class="main-section" id="dsa_concepts">
                 <header>
