@@ -32,6 +32,8 @@
                 <li><a class="nav-link" href="#module10_crud">Module X: CRUD</a></li>
                 <li><a class="nav-link" href="#naming_conventions">Java Naming Conventions</a></li>
                 <li><a class="nav-link" href="#java8_features">Java 8 Features</a></li>
+                <li><a class="nav-link" href="#java17_features">Java 17 Features</a></li>
+                <li><a class="nav-link" href="#java21_features">Java 21 Features</a></li>
                 <li><a class="nav-link" href="#dsa_concepts">DSA Concepts</a></li>
                 <li><a class="nav-link" href="#references">References</a></li>
             </ul>
@@ -301,78 +303,144 @@ Hello, World!
                     <h2>Java History</h2>
                 </header>
 
-                <p>Java was originally developed by James Gosling at Sun Microsystems and released in 1995. The
-                    development of Java started in 1991 as part of the Green Project, aiming to create a programming
-                    language for intelligent consumer electronic devices.</p>
+                <p>Java was originally developed by <b>James Gosling</b> at <b>Sun Microsystems</b> and released in <b>1995</b>. The
+                    development of Java started in <b>1991</b> as part of the <b>Green Project, aiming to create a programming
+                    language for intelligent consumer electronic devices</b>.</p>
 
                 <div class="feature-box">
                     <h3>Java Timeline:</h3>
                     <ul>
-                        <li><strong>1991:</strong> The Green Project started at Sun Microsystems, led by James Gosling.
-                            The language was initially named "Oak."</li>
-                        <li><strong>1995:</strong> Java 1.0 released to the public. It introduced the "Write Once, Run
-                            Anywhere" (WORA) principle, quickly gaining popularity for web applets.</li>
-                        <li><strong>1997:</strong> Java 1.1 released, bringing significant features like Inner Classes,
-                            JavaBeans, JDBC (Java Database Connectivity), and Reflection.</li>
-                        <li><strong>1998:</strong> Java 1.2, later rebranded as Java 2 Platform, Standard Edition
-                            (J2SE), was released. This version introduced the Collections Framework, Swing (for rich GUI
-                            applications), and the Java HotSpot VM.</li>
-                        <li><strong>2000:</strong> Java 1.3 (J2SE 1.3) released, primarily focusing on performance
-                            improvements with an updated HotSpot JVM and RMI enhancements.</li>
-                        <li><strong>2002:</strong> Java 1.4 (J2SE 1.4) released, adding new features such as Assertions,
-                            NIO (New I/O API), XML processing, and regular expressions.</li>
-                        <li><strong>2004:</strong> Java 5.0 (rebranded from 1.5 to emphasize its significance) was a
-                            major release. It introduced Generics, Annotations, Autoboxing/Unboxing, Enums, enhanced
-                            for-loops, and Varargs, significantly improving developer productivity.</li>
-                        <li><strong>2006:</strong> Java 6 (Java SE 6) released, bringing further performance
-                            improvements, support for scripting languages (like JavaScript and Ruby through JSR 223),
-                            and an improved API for web services.</li>
-                        <li><strong>2009: Oracle Acquires Sun Microsystems:</strong> In April 2009, Oracle Corporation
-                            announced its intention to acquire Sun Microsystems, a deal that was finalized in January
-                            2010. This acquisition included all of Sun's software and hardware assets, most notably
-                            Java. This marked a significant shift in the ownership and stewardship of the Java platform,
-                            bringing it under Oracle's wing.</li>
-                        <li><strong>2011:</strong> Java 7 (Java SE 7) released. This was the first major release after
-                            the Oracle acquisition. It included Project Coin (a set of small language enhancements like
-                            the Diamond operator, try-with-resources, and simplified varargs warnings) and improvements
-                            to the Fork/Join framework.</li>
-                        <li><strong>2014:</strong> Java 8 (Java SE 8) was another landmark release. It introduced Lambda
-                            expressions, the Stream API (for functional-style operations on collections), the new Date
-                            and Time API, and default methods in interfaces, fundamentally changing how Java is
-                            programmed.</li>
-                        <li><strong>2017:</strong> Java 9 (Java SE 9) released, with its most significant feature being
-                            the Java Platform Module System (JPMS), also known as Jigsaw, which aimed to improve
-                            modularity and scalability. Other features included JShell (an interactive Java shell) and
-                            private interface methods.</li>
-                        <li><strong>2018-Present:</strong> Following Java 9, Oracle shifted to a rapid release cadence,
-                            releasing new versions every six months. Key Long-Term Support (LTS) versions include:
+                        <li><strong>1991:</strong> The <b>Green Project</b> started at Sun Microsystems, led by James Gosling.
+                            The language was initially named <b>"Oak."</b></li><hr>
+                        <li><strong>1995:</strong> <b>Java 1.0</b> released to the public. It introduced the "Write
+                            Once, Run
+                            Anywhere" (<b>WORA</b>) principle, quickly gaining popularity for web applets. This was the
+                            OG. "Write once, debug everywhere." <b>Applets, AWT, and chaos</b>.</li><hr>
+                        <li><strong>1997:</strong> </strong> <b>Java 1.1</b> released, bringing significant features
+                            like
+                            <b>Inner Classes,
+                                JavaBeans, JDBC (Java Database Connectivity), RMI and Reflection</b>. Java started
+                            pretending to be <b>enterprise-ready</b>.
+                        </li><hr>
+                        <li><strong>1998:</strong> <b>Java 1.2</b>, dramatically <b>rebranded</b> as Java 2 Platform,
+                            Standard Edition (J2SE), was released, introducing the <b>Collections Framework</b>,
+                            <b>Swing</b> for rich <b>GUI</b> applications, and the <b>Java HotSpot VM</b>, with the
+                            <b>JIT compiler</b> making its debut.</li><hr>
+                        <li><strong>2000:</strong> <b>Java 1.3 (J2SE 1.3)</b> was released, with the <b>HotSpot JVM</b>
+                            becoming the default, bringing significant performance improvements and RMI enhancements.
+                        </li><hr>
+                        <li><strong>2002:</strong> <b>Java 1.4 (J2SE 1.4)</b> was released, adding useful features like
+                            <b>Assertions</b>, the <b>New I/O API (NIO)</b>, <b>XML processing</b>, and <b>regular
+                                expressions (Regex)</b>, marking it as a "boring but useful" update that also introduced
+                            built-in <b>logging</b>.</li><hr>
+                        <li><strong>2004:</strong> <b>Java 5.0 (rebranded from 1.5 to emphasize its significance)</b>
+                            was a landmark release that introduced <b>Generics, Annotations, Autoboxing/Unboxing, Enums,
+                                enhanced for-loops, and Varargs</b>, significantly improving developer productivity and
+                            truly marking a point where "Java grew up".</li><hr>
+                        <li><strong>2006:</strong> <b>Java 6 (Java SE 6)</b> was released, primarily bringing further
+                            performance improvements, <b>support for scripting languages</b> (like JavaScript and Ruby
+                            via JSR 223), and an <b>improved API</b> for web services, though it largely felt like it
+                            was "just waiting for JDK 7".</li><hr>
+                        <li><strong>2009: Oracle Acquires Sun Microsystems:</strong> In April
+                            2009, Oracle Corporation
+                            announced its intention to acquire Sun Microsystems, a deal that
+                            was finalized in January
+                            2010. This acquisition included all of Sun's software and
+                            hardware assets, most notably
+                            Java. This marked a significant shift in the ownership and
+                            stewardship of the Java platform,
+                            bringing it under Oracle's wing.</li><hr>
+                        <li><strong>2011:</strong> <b>Java 7 (Java SE 7)</b> was the <b>first major release after the
+                                Oracle acquisition</b>, introducing <b>Project Coin</b> (a set of small language
+                            enhancements like the Diamond operator, <b>try-with-resources</b>, and simplified varargs
+                            warnings), improvements to the Fork/Join framework, and <b>strings in switch</b> statements,
+                            though still notably <b>lacking lambdas</b>.</li><hr>
+                        <li><strong>2014:</strong> <b>Java 8 (Java SE 8)</b> was a <b>landmark release</b> that
+                            fundamentally changed how Java is programmed by introducing Lambda expressions, the Stream
+                            API (for functional-style operations on collections), the new Date and Time API, and default
+                            methods in interfaces, signifying that Java had truly learned <b>functional programming with
+                                LAMBDAS, Streams, and Optionals</b>.</li><hr>
+                        <li><strong>2017:</strong> <b>Java 9 (Java SE 9)</b> was released, with its most significant
+                            feature being the <b>Java Platform Module System (JPMS)</b>, also known as Project Jigsaw,
+                            which aimed to improve modularity and scalability. This version also introduced JShell (an
+                            interactive Java shell) and private interface methods, effectively ushering in an era where
+                            <b>"your classpath is now deprecated"</b>.</li><hr>
+                        <li><strong>2018-Present:</strong> Following Java 9, Oracle shifted to a
+                            rapid release cadence,
+                            releasing new versions every six months.<hr>
                             <ul>
-                                <li><strong>Java 11 (2018):</strong> The second LTS release, including HTTP Client API
-                                    (standardized), ZGC (scalable low-latency garbage collector), and local-variable
-                                    syntax for lambda parameters.</li>
-                                <li><strong>Java 17 (2021):</strong> The third LTS release, focusing on sealing classes,
-                                    pattern matching for switch expressions, and improved foreign function and memory
-                                    API.</li>
-                                <li><strong>Java 21 (2023):</strong> The latest LTS release, introducing features like
-                                    Virtual Threads, Record Patterns, Pattern Matching for Switch, and Sequence
-                                    Collections.</li>
-                                <li><b>Non-LTS releases</b> (Java 10, 12, 13, 14, 15, 16, 18, 19, 20, 22, etc.) continue
-                                    to
-                                    introduce incremental features and improvements.</li>
+                                <li><strong>Java 10 (2018):</strong> Introduced the <b>`var` keyword</b>. The <b>"we
+                                        release every
+                                        6 months now"</b> era began.</li><hr>
+                                <li><strong>Java 11 (2018):</strong> The <b>second LTS</b> (Long-Term Support version)
+                                    release, standardized the <b>HTTP Client API (HTTP/2)</b>, introduced <b>ZGC</b> (a
+                                    scalable low-latency garbage collector), and allowed <mark>var</mark> in
+                                    <b>lambda</b> parameters, effectively serving as the <b>"please stop using Java 8"</b>
+                                    update.</li><hr>
+                                <li><strong>Java 12-16 (2019-2021):</strong> Non-LTS releases that brought features like
+                                    <b>Switch expressions, text blocks, and records</b>.
+                                </li><hr>
+                                <li><strong>Java 17 (2021):</strong> The <b>third LTS release</b>, focused on features
+                                    like <b>sealed classes, pattern matching</b> for switch expressions, and an
+                                    improved <b>Foreign Function</b> and <b>Memory API</b>, earning it the reputation as
+                                    the <b>"we're stable again"</b> release.</li><hr>
+                                <li><strong>Java 21 (2023):</strong> Java 21, the <b>latest LTS release (released in
+                                        September 2023)</b>, introduced <b>"game-changer"</b> features such as <b>Virtual
+                                        Threads, Record Patterns, Pattern Matching for Switch,</b> and <b>Sequenced
+                                        Collections,</b> significantly advancing the platform for <b>structured concurrency and
+                                        modern data handling.</b></li><hr>
+                                <li><strong>Java 22 (2024):</strong> Released in <b>March 2024</b>. A non-LTS release that
+                                    continued to build on <b>preview features</b>, including the second preview of <b>Structured
+                                    Concurrency and Scoped Values,</b> along with <b>Unnamed Variables & Patterns,</b> and the
+                                    <b>Foreign Function & Memory API</b>.</li><hr>
+                                <li><strong>Java 23 (2024):</strong> Released in <b>September 2024</b>. A non-LTS release that
+                                    introduced <b>Primitive Types in Patterns, `instanceof`, and `switch` (Preview),</b>
+                                    further <b>previews of the Class-File API, Stream Gatherers, Structured Concurrency,</b>
+                                    and <b>Scoped Values,</b> and also brought <b>Markdown Documentation Comments</b>.</li><hr>
+                                <li><strong>Java 24 (2025):</strong> Released in <b>March 2025</b>. This non-LTS release
+                                    featured significant advancements such as the <b>finalization of Stream Gatherers</b> and
+                                    the <b>Class-File API</b>, further previews for <b>Structured Concurrency</b> and <b>Scoped Values</b>,
+                                    and experimental features like <b>Generational Shenandoah</b>. It also focused on
+                                    <b>quantum-resistant cryptographic algorithms</b>.</li><hr>
+                                <li><strong>Java 25 (Expected September 2025):</strong> The next anticipated LTS
+                                    release.</li><hr>                                
                             </ul>
                         </li>
+                    </ul>
+
+                    <h3>Release Type Summary:</h3>
+                    <ul>
+                        <li><b>Non-LTS releases (Java 10, 12, 13, 14, 15, 16, 18, 19, 20, 22, 23, 24, etc.)</b> continue
+                                    to introduce incremental features and improvements.</li><hr>
+                        <li><b>LTS releases (Java 8, 11, 17, 21, and the upcoming 25)</b> provide long-term
+                                    support and stability, making them the recommended versions for most production
+                                    environments.</li><hr>
+                    </ul>
+                </div>
+
+                <div class="highlight">
+                    <p><strong>🎉 Java's Milestone! 🎉 </strong> Java recently celebrated its <b>30th birthday</b> on <b>May 23, 2025</b>! 🥳 Since its public debut in 1995, Java has evolved into one of the most enduring and widely used programming languages, powering everything from enterprise applications 🏢 to mobile devices 📱 and big data platforms 📊, demonstrating its remarkable adaptability and continued relevance in the tech world. 💻🚀</p>
+                </div>
+
+                <div class="java_recommendations">
+                    <h3>Recommendations for Java Development:</h3>
+                    <ul class="recommendations">
+                        <li><span class="custom-checkmark">✅</span> Use LTS versions (8, 11, 17, 21, 25) unless you love pain.</li>
+                        <li><span class="custom-checkmark">✅</span> Java 8+ = Learn Streams/Lambdas. No excuses.</li>
+                        <li><span class="custom-checkmark">✅</span> Java 21+ = Virtual threads = free scalability.</li>
                     </ul>
                 </div>
 
                 <div class="highlight">
                     <p><strong>Fact File:</strong> Java was initially called "Oak" but was renamed to "Java" in 1995.
                         The
-                        name "Oak" came from an oak tree that stood outside the office of James Gosling, the creator of
-                        Java. However, "Oak" was already a registered trademark. During a brainstorming session fueled
-                        by coffee, the team chose the name "Java"—inspired by the Indonesian island known for its
-                        coffee. This connection led to Java's iconic coffee cup logo, symbolizing energy and
+                        name <b>"Oak"</b> came from an <b>oak tree</b> 🌳 that stood outside the office of James Gosling, the creator of
+                        Java. However, "Oak" was already a <b>registered trademark</b>. During a brainstorming session fueled
+                        by coffee, the team chose the name <b>"Java" - inspired by the Indonesian island known for its
+                        coffee</b>. This connection led to Java's iconic coffee cup logo ☕, symbolizing energy and
                         universality!</p>
                 </div>
+
             </section>
 
             <section class="main-section" id="module1_core_java">
@@ -1682,162 +1750,2244 @@ public class ArrayExamples {
 
 
                 <h3>6. String & String Methods</h3>
-                <p>Handle text data with built-in string manipulation methods.</p>
-
-                <pre><code>
-String str = "Hello World";
-
-// String methods
-int length = str.length();
-String upper = str.toUpperCase();
-String lower = str.toLowerCase();
-char charAt = str.charAt(0);
-String substring = str.substring(0, 5);
-boolean contains = str.contains("World");
-String replaced = str.replace("World", "Java");
-
-// String concatenation
-String fullName = firstName + " " + lastName;
-String formatted = String.format("Name: %s, Age: %d", name, age);
-                </code></pre>
+                <p>In Java, the <code>String</code> class is a fundamental building block for handling sequences of
+                    characters, essentially representing text data. It's one of the most frequently used classes in Java
+                    programming, vital for everything from user input and messages to complex data structures like JSON
+                    or XML. Java provides a rich set of built-in methods to manipulate, analyze, and combine these text
+                    sequences efficiently.</p>
 
                 <div class="highlight">
-                    <p><strong>Note:</strong> StringBuffer and StringBuilder were not newly introduced in Java
-                        8. They
-                        have been part of Java since earlier versions. StringBuffer was introduced in Java 1.0,
-                        and
-                        StringBuilder in Java 1.5.</p>
+                    <p><strong>A Fundamental Characteristic: Java Strings are Immutable</strong></p>
+                    <p>This is a cornerstone concept: once a <code>String</code> object is created, its content cannot
+                        be changed. Any operation that seems to modify a string (like converting to uppercase or
+                        replacing characters) doesn't alter the original string. Instead, it creates a <b>brand-new
+                            <code>String</code> object</b> containing the result, leaving the original string untouched
+                        in memory. This immutability offers significant benefits in terms of safety (especially in
+                        multi-threaded environments, as their state never changes) and efficiency (their hash code can
+                        be cached, making them excellent keys in hash-based collections like <code>HashMap</code>).</p>
                 </div>
 
                 <pre><code>
-// StringBuffer (thread-safe)
-StringBuffer sb = new StringBuffer("Hello");
-sb.append(" World");
-sb.insert(5, " Beautiful");
+String str = "Hello World"; // 'str' is a String variable holding the text "Hello World"
 
-// StringBuilder (not thread-safe, faster)
-StringBuilder builder = new StringBuilder();
-builder.append("Java");
-builder.append(" Programming");
-String result = builder.toString();
-                </code></pre>
+// Common String methods: Essential tools for text manipulation
+// (Refer to: https://www.w3schools.com/java/java_strings.asp)
+int length = str.length();               // Returns the number of characters in the string.
+String upper = str.toUpperCase();        // Converts all characters in the string to uppercase.
+String lower = str.toLowerCase();        // Converts all characters in the string to lowercase.
+char charAt = str.charAt(0);             // Returns the character at the specified index (position). Index starts from 0.
+String substring = str.substring(0, 5);  // Extracts a part of the string. The substring starts at index 0 and extends to character at index 4 (exclusive of index 5).
+boolean contains = str.contains("World"); // Checks if the string contains the specified sequence of characters. Returns true or false.
+String replaced = str.replace("World", "Java"); // Replaces all occurrences of the target sequence ("World") with the replacement sequence ("Java").
+    </code></pre>
+
+                <h4>More Key String Methods and Important Concepts:</h4>
+                <p>Let's dive deeper into additional, commonly used String methods and crucial concepts for
+                    comprehensive understanding.</p>
+
+                <div class="concept-box">
+                    <h4>String Concatenation: Joining Text Together</h4>
+                    <p>Concatenation is the process of combining two or more strings into a single string. Java offers
+                        several ways to do this, each with its own advantages.</p>
+                    <p>(Refer to: <a href="https://www.w3schools.com/java/java_strings_concat.asp"
+                            target="_blank">W3Schools Java String Concatenation</a>)</p>
+                    <ul>
+                        <li><code><b>+</b></code> (Plus Operator): The most common and straightforward way to
+                            concatenate strings. It's simple and readable for a few concatenations.</li>
+                        <li><code><b>.concat(String str)</b></code>: A method of the <code>String</code> class that
+                            appends the specified string to the end of the current string. It can be chained for
+                            multiple concatenations.</li>
+                        <li><code><b>String.format(String format, Object... args)</b></code>: A powerful method for
+                            creating formatted strings by inserting values into placeholders. It's excellent for
+                            building complex output where you want precise control over formatting (like number of
+                            decimal places, padding, etc.).</li>
+                        <li><code><b>StringBuilder / StringBuffer</b></code>: For building strings with many dynamic
+                            changes (see section below for more details on these efficient alternatives).</li>
+                    </ul>
+                    <pre><code>
+// Using the '+' operator
+String firstName = "John";
+String lastName = "Doe";
+String fullName = firstName + " " + lastName; // Result: "John Doe"
+System.out.println("Full Name (+ operator): " + fullName);
+
+String message = "Hello, " + "Java " + 17 + "!"; // Numbers are automatically converted to strings
+System.out.println("Message (+ operator): " + message); // Result: "Hello, Java 17!"
+
+// Using .concat() method
+String greeting = "Welcome".concat(" to").concat(" Java!");
+System.out.println("Greeting (.concat()): " + greeting); // Result: "Welcome to Java!"
+
+// Using String.format() for formatted output
+String item = "Laptop";
+double price = 1200.50;
+int quantity = 2;
+String orderSummary = String.format("You ordered %d %s(s) for a total of $%.2f.", quantity, item, (price * quantity));
+System.out.println("Order Summary (String.format()): " + orderSummary);
+// Result: You ordered 2 Laptop(s) for a total of $2401.00.
+
+// Common String.format() placeholders:
+// %s - String
+// %d - decimal integer
+// %f - floating-point number (e.g., %.2f for two decimal places)
+// %b - boolean
+// %c - character
+        </code></pre>
+                    <div class="highlight">
+                        <p><strong>Performance Tip for Concatenation:</strong></p>
+                        <p>While the `+` operator is convenient, for a large number of string concatenations (especially
+                            inside loops), it can be inefficient due to the immutability of `String` objects. Each `+`
+                            operation effectively creates a new `String` object. In such scenarios, `StringBuilder` (or
+                            `StringBuffer` in multi-threaded contexts) is significantly more performant as it modifies a
+                            single, mutable sequence of characters in memory.</p>
+                    </div>
+                </div>
+
+                <div class="concept-box">
+                    <h4>String and Numbers: Seamless Integration and Important Conversions</h4>
+                    <p>Java handles the interaction between strings and numbers quite gracefully, often performing
+                        automatic conversions. However, it's crucial to understand how these conversions work,
+                        especially when converting strings to numbers, where specific methods and error handling are
+                        required.</p>
+                    <p>(Refer to: <a href="https://www.w3schools.com/java/java_strings_numbers.asp"
+                            target="_blank">W3Schools Java Strings Numbers</a>)</p>
+                    <ul>
+                        <li><b>Number to String:</b>
+                            <ul>
+                                <li><b>Automatic Conversion:</b> When you concatenate a number with a string using the
+                                    `+` operator, the number is automatically converted to its string representation.
+                                    This is implicitly handled by the Java compiler.</li>
+                                <li><code><b>String.valueOf(number)</b></code>: This is the explicit and recommended way
+                                    to convert any primitive type (<code>int</code>, <code>double</code>,
+                                    <code>boolean</code>, etc.) or object to its string representation. It's clear and
+                                    versatile.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>String to Number:</b>
+                            <ul>
+                                <li>To convert a string containing digits into a numeric type, you use the `parse`
+                                    methods provided by Java's <a
+                                        href="https://docs.oracle.com/javase/tutorial/java/data/numbers.html"
+                                        target="_blank">Wrapper Classes</a> (e.g., `Integer`, `Double`).</li>
+                                <li><code><b>Integer.parseInt(String str)</b></code>: Converts a string to an
+                                    <code>int</code>.
+                                </li>
+                                <li><code><b>Double.parseDouble(String str)</b></code>: Converts a string to a
+                                    <code>double</code>.
+                                </li>
+                                <li>Similar methods exist for `Long.parseLong()`, `Float.parseFloat()`, etc.</li>
+                                <li><b>Important Error Handling:</b> These parsing methods will throw a
+                                    <code><b>NumberFormatException</b></code> if the string does not contain a valid
+                                    representation of the number type (e.g., trying to parse "abc" as an integer). You
+                                    should always handle this exception using a `try-catch` block, especially when
+                                    dealing with user input or data from external sources, to prevent your program from
+                                    crashing.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <pre><code>
+// Number to String Conversion
+int age = 30;
+String myAge = "My age is " + age; // Automatic conversion via concatenation
+System.out.println(myAge); // Output: My age is 30
+
+double price = 99.95;
+String priceTag = String.valueOf(price); // Explicit conversion using valueOf()
+System.out.println("Price: $" + priceTag); // Output: Price: $99.95
+
+// String to Number Conversion
+String strCount = "123";
+int count = Integer.parseInt(strCount);
+System.out.println("Parsed count: " + count); // Output: Parsed count: 123
+System.out.println("Count doubled: " + (count * 2)); // Perform arithmetic: 246
+
+String strTemp = "25.7";
+double temperature = Double.parseDouble(strTemp);
+System.out.println("Parsed temperature: " + temperature); // Output: Parsed temperature: 25.7
+
+// Handling invalid conversions (Crucial for robust applications!)
+String invalidNumber = "hello";
+try {
+    int value = Integer.parseInt(invalidNumber);
+    System.out.println("Converted value: " + value);
+} catch (NumberFormatException e) {
+    System.err.println("Error: Could not convert '" + invalidNumber + "' to an integer. Invalid format.");
+    // Output: Error: Could not convert 'hello' to an integer. Invalid format.
+}
+        </code></pre>
+                </div>
+
+                <div class="concept-box">
+                    <h4>Special Characters and Escape Sequences in Strings</h4>
+                    <p>Sometimes you need to include characters in your string that have a special meaning in Java, or
+                        characters that are not directly printable (like a newline or a tab). To achieve this, you use
+                        "escape sequences," which are combinations of a backslash (<code>\</code>) followed by a
+                        specific character. The backslash tells the Java compiler to interpret the next character in a
+                        special way, escaping its usual meaning.</p>
+                    <p>(Refer to: <a href="https://www.w3schools.com/java/java_strings_specchars.asp"
+                            target="_blank">W3Schools Java Special Characters</a>)</p>
+                    <ul>
+                        <li><code><b>\'</b></code>: Single quote (useful for character literals, or if your string was
+                            defined using single quotes in some other context, though Java uses double quotes for
+                            strings)</li>
+                        <li><code><b>\"</b></code>: Double quote (to include a literal double quote within a
+                            double-quoted string)</li>
+                        <li><code><b>\\</b></code>: Backslash (to include a literal backslash character itself)</li>
+                        <li><code><b>\n</b></code>: Newline (inserts a line break, moving subsequent text to the next
+                            line)</li>
+                        <li><code><b>\t</b></code>: Tab (inserts a horizontal tab space)</li>
+                        <li><code><b>\b</b></code>: Backspace</li>
+                        <li><code><b>\r</b></code>: Carriage Return (moves the cursor to the beginning of the current
+                            line, often used with `\n` for Windows-style line endings)</li>
+                        <li><code><b>\f</b></code>: Form Feed</li>
+                    </ul>
+                    <pre><code>
+String quote = "He said, \"Java is awesome!\""; // Includes double quotes
+System.out.println(quote); // Output: He said, "Java is awesome!"
+
+String filePath = "C:\\Users\\Public\\Documents"; // Includes literal backslashes (common for Windows paths)
+System.out.println(filePath); // Output: C:\Users\Public\Documents
+
+String multiLine = "Line One.\nLine Two.\nLine Three."; // Uses newlines for line breaks
+System.out.println(multiLine);
+// Output:
+// Line One.
+// Line Two.
+// Line Three.
+
+String formattedOutput = "Name:\tAlice\nAge:\t30"; // Uses tabs and newlines for structured output
+System.out.println(formattedOutput);
+// Output:
+// Name:  Alice
+// Age:   30
+        </code></pre>
+                </div>
+
+                ---
+
+                <h3>String Builders: `StringBuffer` and `StringBuilder`</h3>
+                <p>As discussed, standard Java <code>String</code> objects are immutable. While this has advantages, it
+                    becomes inefficient when you need to perform numerous modifications to a string (e.g., building a
+                    long string by appending many smaller pieces in a loop). In such cases, creating many intermediate
+                    <code>String</code> objects can lead to performance degradation and increased memory consumption.
+                </p>
+                <p>To address this, Java provides two mutable (changeable) alternatives: <code>StringBuffer</code> and
+                    <code>StringBuilder</code>. These classes allow you to modify the content of the string they hold
+                    without creating new objects for each operation, making them highly efficient for dynamic string
+                    construction.
+                </p>
+
+                <div class="highlight">
+                    <p><strong>Historical Context of `StringBuffer` and `StringBuilder`:</strong></p>
+                    <ul>
+                        <li><code>StringBuffer</code> was introduced in Java 1.0 (the very first version of Java). It
+                            was designed to provide a mutable sequence of characters to overcome the performance issues
+                            of frequent <code>String</code> modifications. Its methods are <b>synchronized</b>.</li>
+                        <li><code>StringBuilder</code> was introduced later in Java 1.5. It provides the same
+                            functionality as <code>StringBuffer</code> but is <b>not synchronized</b>. This lack of
+                            synchronization makes <code>StringBuilder</code> generally faster than
+                            <code>StringBuffer</code> for string manipulation in single-threaded environments, as it
+                            avoids the overhead of managing concurrent access.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="concept-box">
+                    <h4>`StringBuffer` (Thread-Safe)</h4>
+                    <p><code>StringBuffer</code> is designed for multi-threaded environments. All its public methods are
+                        <b>synchronized</b>. This means that if multiple threads try to access and modify the same
+                        <code>StringBuffer</code> instance simultaneously, only one thread can execute a method at a
+                        time. This guarantees data consistency and prevents race conditions, but it introduces a
+                        performance overhead due to the locking mechanism.
+                    </p>
+                    <pre><code>
+// StringBuffer (thread-safe): Ideal for scenarios where multiple threads might modify the same string data concurrently.
+StringBuffer sb = new StringBuffer("Hello"); // Initializes with "Hello"
+System.out.println("StringBuffer initial: " + sb); // Output: StringBuffer initial: Hello
+
+sb.append(" World");                     // Appends " World" to the existing content.
+System.out.println("StringBuffer after append: " + sb); // Output: StringBuffer after append: Hello World
+
+sb.insert(5, " Beautiful");             // Inserts " Beautiful" at index 5.
+System.out.println("StringBuffer after insert: " + sb); // Output: StringBuffer after insert: Hello Beautiful World
+
+sb.delete(5, 15);                       // Deletes characters from index 5 up to (but not including) 15
+System.out.println("StringBuffer after delete: " + sb); // Output: StringBuffer after delete: Hello World"
+
+sb.reverse();                           // Reverses the sequence of characters
+System.out.println("StringBuffer after reverse: " + sb); // Output: StringBuffer after reverse: dlroW olleH
+        </code></pre>
+                </div>
+
+                <div class="concept-box">
+                    <h4>`StringBuilder` (Not Thread-Safe, Faster)</h4>
+                    <p><code>StringBuilder</code> provides identical functionality to `StringBuffer` but is <b>not
+                            synchronized</b>. This makes it faster and more efficient than `StringBuffer` when you are
+                        performing string manipulations in a <b>single-threaded environment</b>. Since most common
+                        applications don't involve multiple threads modifying the *exact same* string builder object
+                        concurrently, <code>StringBuilder</code> is generally the preferred choice for building dynamic
+                        strings.</p>
+                    <p>(Refer to: <a href="https://www.geeksforgeeks.org/stringbuilder-class-in-java-with-examples/"
+                            target="_blank">GeeksforGeeks StringBuilder</a>)</p>
+                    <pre><code>
+// StringBuilder (not thread-safe, faster): Preferred for single-threaded environments or when thread safety is handled externally.
+StringBuilder builder = new StringBuilder(); // Initializes an empty builder
+System.out.println("StringBuilder initial (empty): '" + builder + "'"); // Output: StringBuilder initial (empty): ''
+
+builder.append("Java");                  // Appends "Java"
+System.out.println("StringBuilder after first append: " + builder); // Output: StringBuilder after first append: Java
+
+builder.append(" Programming");          // Appends " Programming"
+System.out.println("StringBuilder after second append: " + builder); // Output: StringBuilder after second append: Java Programming
+
+builder.insert(4, " is fun");           // Inserts " is fun" at index 4
+System.out.println("StringBuilder after insert: " + builder); // Output: StringBuilder after insert: Java is fun Programming
+
+String finalResult = builder.toString(); // Converts the StringBuilder content to an immutable String object.
+System.out.println("Final String from StringBuilder: " + finalResult);
+        </code></pre>
+                </div>
+
+                <h4>Choosing between `String`, `StringBuffer`, and `StringBuilder`: A Quick Guide</h4>
+                <p>Making the right choice among these three classes is crucial for writing efficient and robust Java
+                    code. Here's a summary to guide your decision:</p>
+
+                <div class="concept-box">
+                    <h4>`String`</h4>
+                    <ul>
+                        <li><b>When to use:</b>
+                            <ul>
+                                <li>For text that is constant or rarely changes.</li>
+                                <li>When you need string literals (e.g., <code>"Hello"</code>).</li>
+                                <li>For method parameters and return values.</li>
+                                <li>As keys in <code>HashMap</code> or elements in <code>HashSet</code> due to
+                                    immutability and cached hash codes.</li>
+                            </ul>
+                        </li>
+                        <li><b>Pros:</b> Immutability ensures thread safety, high performance for hashing, clear and
+                            easy to use for simple text.</li>
+                        <li><b>Cons:</b> Inefficient for frequent modifications as each change creates a new object,
+                            leading to potential performance and memory issues.</li>
+                    </ul>
+                </div>
+
+                <div class="concept-box">
+                    <h4>`StringBuilder`</h4>
+                    <ul>
+                        <li><b>When to use:</b>
+                            <ul>
+                                <li>When you need to perform many dynamic modifications (append, insert, delete,
+                                    replace) to a string.</li>
+                                <li><b>In a single-threaded environment</b> (e.g., within a single method where the
+                                    string isn't shared across threads). This is the most common use case for building
+                                    dynamic strings.</li>
+                            </ul>
+                        </li>
+                        <li><b>Pros:</b> Mutable, highly efficient for dynamic string operations, significantly faster
+                            than <code>StringBuffer</code> due to no synchronization overhead.</li>
+                        <li><b>Cons:</b> <b>Not thread-safe.</b> Avoid using it when multiple threads might access and
+                            modify the same instance concurrently without external synchronization.</li>
+                    </ul>
+                </div>
+
+                <div class="concept-box">
+                    <h4>`StringBuffer`</h4>
+                    <ul>
+                        <li><b>When to use:</b>
+                            <ul>
+                                <li>When you need to perform many dynamic modifications to a string.</li>
+                                <li><b>In a multi-threaded environment</b> where multiple threads might access and
+                                    modify the same string object concurrently.</li>
+                            </ul>
+                        </li>
+                        <li><b>Pros:</b> Mutable, <b>thread-safe</b> (all its public methods are synchronized,
+                            preventing data consistency issues in concurrent access).</li>
+                        <li><b>Cons:</b> Slower than <code>StringBuilder</code> due to the overhead of synchronization.
+                            If thread safety is not a concern, <code>StringBuilder</code> is the more performant choice.
+                        </li>
+                    </ul>
+                </div>
+
+                <p>By understanding these nuances and leveraging the appropriate class for your needs, you can write
+                    more efficient, robust, and readable Java code for string manipulation.</p>
+
+
+
 
                 <h3>7. Math Methods</h3>
-                <p>Perform mathematical operations using built-in Math class.</p>
+                <p>In Java, the <code>java.lang.Math</code> class provides a comprehensive set of static methods for
+                    performing common mathematical operations. You don't need to create an object of the
+                    <code>Math</code> class to use its methods; you can directly call them using the class name itself
+                    (e.g., <code>Math.methodName()</code>). This class includes methods for trigonometric functions,
+                    exponential functions, logarithmic functions, and various other utility functions for numeric
+                    manipulation.
+                </p>
+
+                <div class="highlight">
+                    <p><strong>Key Characteristics of the `Math` Class:</strong></p>
+                    <ul>
+                        <li><b>Static Methods:</b> All methods in the <code>Math</code> class are <code>static</code>.
+                            This means you call them directly on the class name (e.g., <code>Math.sqrt()</code>) without
+                            needing to create an instance of <code>Math</code>.</li>
+                        <li><b>Return Types:</b> Most methods return <code>double</code> values, even if the inputs are
+                            integers. Be mindful of type casting if you need an integer result.</li>
+                        <li><b>Final Class:</b> The <code>Math</code> class itself is <code>final</code>, meaning it
+                            cannot be subclassed.</li>
+                    </ul>
+                </div>
 
                 <pre><code>
 // Common Math methods
-double result1 = Math.pow(2, 3);        // 8.0
-double result2 = Math.sqrt(16);         // 4.0
-double result3 = Math.abs(-10);         // 10.0
-double result4 = Math.max(10, 20);      // 20.0
-double result5 = Math.min(10, 20);      // 10.0
-double result6 = Math.random();         // Random between 0.0 and 1.0
-double result7 = Math.ceil(4.3);        // 5.0
-double result8 = Math.floor(4.7);       // 4.0
-double result9 = Math.round(4.6);       // 5.0
-                </code></pre>
+double result1 = Math.pow(2, 3);       // 8.0  (2 raised to the power of 3)
+double result2 = Math.sqrt(16);        // 4.0  (Square root of 16)
+double result3 = Math.abs(-10);        // 10.0 (Absolute value of -10)
+double result4 = Math.max(10, 20);     // 20.0 (Returns the larger of two numbers)
+double result5 = Math.min(10, 20);     // 10.0 (Returns the smaller of two numbers)
+double result6 = Math.random();        // Random double between 0.0 (inclusive) and 1.0 (exclusive)
+double result7 = Math.ceil(4.3);       // 5.0  (Rounds up to the nearest whole number)
+double result8 = Math.floor(4.7);      // 4.0  (Rounds down to the nearest whole number)
+double result9 = Math.round(4.6);      // 5.0  (Rounds to the nearest long or int)
+    </code></pre>
+
+                <h4>Detailed Explanation of Common Math Methods:</h4>
+
+                <div class="concept-box">
+                    <h4>`Math.pow(double base, double exponent)`</h4>
+                    <p>This method returns the value of the first argument `base` raised to the power of the second
+                        argument `exponent` ($base^{exponent}$).</p>
+                    <ul>
+                        <li><b>Inputs:</b> Two <code>double</code> values.</li>
+                        <li><b>Output:</b> A <code>double</code> value.</li>
+                    </ul>
+                    <pre><code>
+// Example: Calculate 2 to the power of 3
+double powerResult = Math.pow(2, 3);
+System.out.println("2^3 = " + powerResult); // Output: 2^3 = 8.0
+
+// Example: Calculate 9 to the power of 0.5 (square root)
+double sqrtUsingPow = Math.pow(9, 0.5);
+System.out.println("9^0.5 = " + sqrtUsingPow); // Output: 9^0.5 = 3.0
+        </code></pre>
+                </div>
+
+                <div class="concept-box">
+                    <h4>`Math.sqrt(double a)`</h4>
+                    <p>This method returns the positive square root of a `double` value.</p>
+                    <ul>
+                        <li><b>Inputs:</b> A <code>double</code> value.</li>
+                        <li><b>Output:</b> A <code>double</code> value. If the argument is negative, the result is `NaN`
+                            (Not-a-Number).</li>
+                    </ul>
+                    <pre><code>
+// Example: Square root of 25
+double sqrtResult = Math.sqrt(25);
+System.out.println("Square root of 25 = " + sqrtResult); // Output: Square root of 25 = 5.0
+
+// Example: Square root of 2 (irrational number)
+double sqrt2 = Math.sqrt(2);
+System.out.println("Square root of 2 = " + sqrt2); // Output: Square root of 2 = 1.4142135623730951
+
+// Example: Negative input
+double sqrtNegative = Math.sqrt(-9);
+System.out.println("Square root of -9 = " + sqrtNegative); // Output: Square root of -9 = NaN
+        </code></pre>
+                </div>
+
+                <div class="concept-box">
+                    <h4>`Math.abs(dataType a)`</h4>
+                    <p>This method returns the absolute (positive) value of a number. It is overloaded to accept `int`,
+                        `long`, `float`, and `double` arguments.</p>
+                    <ul>
+                        <li><b>Inputs:</b> An `int`, `long`, `float`, or `double` value.</li>
+                        <li><b>Output:</b> The absolute value, with the same data type as the input.</li>
+                    </ul>
+                    <pre><code>
+// Example: Absolute value of integers
+int absInt = Math.abs(-5);
+System.out.println("Absolute value of -5 = " + absInt); // Output: Absolute value of -5 = 5
+
+// Example: Absolute value of doubles
+double absDouble = Math.abs(-12.75);
+System.out.println("Absolute value of -12.75 = " + absDouble); // Output: Absolute value of -12.75 = 12.75
+        </code></pre>
+                </div>
+
+                <div class="concept-box">
+                    <h4>`Math.max(dataType a, dataType b)`</h4>
+                    <p>This method returns the greater of two numbers. It is overloaded to work with `int`, `long`,
+                        `float`, and `double` arguments.</p>
+                    <ul>
+                        <li><b>Inputs:</b> Two numbers of the same data type.</li>
+                        <li><b>Output:</b> The larger of the two numbers, with the same data type as the inputs.</li>
+                    </ul>
+                    <pre><code>
+// Example: Max of two integers
+int maxInt = Math.max(10, 25);
+System.out.println("Max of 10 and 25 = " + maxInt); // Output: Max of 10 and 25 = 25
+
+// Example: Max of two doubles
+double maxDouble = Math.max(3.14, 2.71);
+System.out.println("Max of 3.14 and 2.71 = " + maxDouble); // Output: Max of 3.14 and 2.71 = 3.14
+        </code></pre>
+                </div>
+
+                <div class="concept-box">
+                    <h4>`Math.min(dataType a, dataType b)`</h4>
+                    <p>This method returns the smaller of two numbers. It is overloaded to work with `int`, `long`,
+                        `float`, and `double` arguments.</p>
+                    <ul>
+                        <li><b>Inputs:</b> Two numbers of the same data type.</li>
+                        <li><b>Output:</b> The smaller of the two numbers, with the same data type as the inputs.</li>
+                    </ul>
+                    <pre><code>
+// Example: Min of two integers
+int minInt = Math.min(10, 25);
+System.out.println("Min of 10 and 25 = " + minInt); // Output: Min of 10 and 25 = 10
+
+// Example: Min of two doubles
+double minDouble = Math.min(3.14, 2.71);
+System.out.println("Min of 3.14 and 2.71 = " + minDouble); // Output: Min of 3.14 and 2.71 = 2.71
+        </code></pre>
+                </div>
+
+                <div class="concept-box">
+                    <h4>`Math.random()`</h4>
+                    <p>This method returns a pseudorandom `double` value greater than or equal to 0.0 and less than 1.0.
+                        This is very useful for generating random numbers in simulations, games, or for various other
+                        purposes.</p>
+                    <ul>
+                        <li><b>Inputs:</b> None.</li>
+                        <li><b>Output:</b> A `double` value between 0.0 (inclusive) and 1.0 (exclusive).</li>
+                    </ul>
+                    <pre><code>
+// Example: Generate a random double
+double randomValue = Math.random();
+System.out.println("Random double (0.0 to < 1.0): " + randomValue); // Output will vary, e.g., 0.789123...
+
+// Example: Generate a random integer between 1 and 10 (inclusive)
+// Formula: (int)(Math.random() * (max - min + 1)) + min
+int min = 1;
+int max = 10;
+int randomInt = (int)(Math.random() * (max - min + 1)) + min;
+System.out.println("Random integer (1 to 10): " + randomInt); // Output will vary, e.g., 7
+        </code></pre>
+                </div>
+
+                <div class="concept-box">
+                    <h4>Rounding Methods: `ceil()`, `floor()`, `round()`</h4>
+                    <p>These methods are essential for handling decimal numbers and obtaining whole number
+                        representations based on different rounding rules.</p>
+                    <ul>
+                        <li><code><b>Math.ceil(double a)</b></code>: Returns the smallest (closest to negative infinity)
+                            <code>double</code> value that is greater than or equal to the argument and is equal to a
+                            mathematical integer. Essentially, it <b>rounds up</b>.
+                        </li>
+                        <li><code><b>Math.floor(double a)</b></code>: Returns the largest (closest to positive infinity)
+                            <code>double</code> value that is less than or equal to the argument and is equal to a
+                            mathematical integer. Essentially, it <b>rounds down</b>.
+                        </li>
+                        <li><code><b>Math.round(float a)</b></code> / <code><b>Math.round(double a)</b></code>: Returns
+                            the closest `long` or `int` to the argument. It uses standard rounding rules: if the
+                            fractional part is `.5` or greater, it rounds up; otherwise, it rounds down.</li>
+                    </ul>
+                    <pre><code>
+// Example: Math.ceil() - rounds up
+double ceil1 = Math.ceil(4.3);
+System.out.println("ceil(4.3) = " + ceil1); // Output: ceil(4.3) = 5.0
+double ceil2 = Math.ceil(4.0);
+System.out.println("ceil(4.0) = " + ceil2); // Output: ceil(4.0) = 4.0
+double ceil3 = Math.ceil(-4.7);
+System.out.println("ceil(-4.7) = " + ceil3); // Output: ceil(-4.7) = -4.0 (rounds up towards zero)
+
+// Example: Math.floor() - rounds down
+double floor1 = Math.floor(4.7);
+System.out.println("floor(4.7) = " + floor1); // Output: floor(4.7) = 4.0
+double floor2 = Math.floor(4.0);
+System.out.println("floor(4.0) = " + floor2); // Output: floor(4.0) = 4.0
+double floor3 = Math.floor(-4.3);
+System.out.println("floor(-4.3) = " + floor3); // Output: floor(-4.3) = -5.0 (rounds down away from zero)
+
+// Example: Math.round() - standard rounding
+long round1 = Math.round(4.6);
+System.out.println("round(4.6) = " + round1); // Output: round(4.6) = 5
+long round2 = Math.round(4.3);
+System.out.println("round(4.3) = " + round2); // Output: round(4.3) = 4
+long round3 = Math.round(4.5); // .5 rounds up
+System.out.println("round(4.5) = " + round3); // Output: round(4.5) = 5
+long round4 = Math.round(-4.5); // .5 away from zero
+System.out.println("round(-4.5) = " + round4); // Output: round(-4.5) = -4 (note: behavior for .5 can vary in different languages, Java rounds up to nearest integer)
+        </code></pre>
+                </div>
+
+                <h4>Other Useful Math Constants and Methods:</h4>
+
+                <div class="concept-box">
+                    <h4>Constants: `Math.PI` and `Math.E`</h4>
+                    <p>The <code>Math</code> class also provides two commonly used mathematical constants:</p>
+                    <ul>
+                        <li><code><b>Math.PI</b></code>: Represents the ratio of the circumference of a circle to its
+                            diameter, approximately 3.14159.</li>
+                        <li><code><b>Math.E</b></code>: Represents the base of the natural logarithms, approximately
+                            2.71828.</li>
+                    </ul>
+                    <pre><code>
+System.out.println("Value of PI: " + Math.PI); // Output: Value of PI: 3.141592653589793
+System.out.println("Value of E: " + Math.E);   // Output: Value of E: 2.718281828459045
+        </code></pre>
+                </div>
+
+                <div class="concept-box">
+                    <h4>Trigonometric Methods</h4>
+                    <p>For working with angles and triangles, Java's `Math` class offers standard trigonometric
+                        functions:</p>
+                    <ul>
+                        <li><code><b>Math.sin(double radians)</b></code>: Sine of an angle.</li>
+                        <li><code><b>Math.cos(double radians)</b></code>: Cosine of an angle.</li>
+                        <li><code><b>Math.tan(double radians)</b></code>: Tangent of an angle.</li>
+                        <li><code><b>Math.toRadians(double degrees)</b></code>: Converts an angle measured in degrees to
+                            an approximately equivalent angle measured in radians.</li>
+                        <li><code><b>Math.toDegrees(double radians)</b></code>: Converts an angle measured in radians to
+                            an approximately equivalent angle measured in degrees.</li>
+                    </ul>
+                    <pre><code>
+// Calculate sine of 90 degrees
+double angleDegrees = 90;
+double angleRadians = Math.toRadians(angleDegrees);
+double sineValue = Math.sin(angleRadians);
+System.out.println("Sine of 90 degrees: " + sineValue); // Output: Sine of 90 degrees: 1.0 (approximately)
+
+// Calculate cosine of 0 degrees
+double cosValue = Math.cos(Math.toRadians(0));
+System.out.println("Cosine of 0 degrees: " + cosValue); // Output: Cosine of 0 degrees: 1.0
+        </code></pre>
+                </div>
+
+                <div class="concept-box">
+                    <h4>Logarithmic and Exponential Methods</h4>
+                    <p>For operations involving exponents and logarithms:</p>
+                    <ul>
+                        <li><code><b>Math.exp(double a)</b></code>: Returns Euler's number `e` raised to the power of
+                            `a` ($e^a$).</li>
+                        <li><code><b>Math.log(double a)</b></code>: Returns the natural logarithm (base `e`) of a
+                            `double` value.</li>
+                        <li><code><b>Math.log10(double a)</b></code>: Returns the base 10 logarithm of a `double` value.
+                        </li>
+                    </ul>
+                    <pre><code>
+System.out.println("e^1 = " + Math.exp(1));    // Output: e^1 = 2.718... (Value of E)
+System.out.println("log(e) = " + Math.log(Math.E)); // Output: log(e) = 1.0
+System.out.println("log10(100) = " + Math.log10(100)); // Output: log10(100) = 2.0
+        </code></pre>
+                </div>
+
+                <p>By leveraging the rich set of methods available in the `Math` class, you can perform a wide range of
+                    mathematical computations directly and efficiently in your Java applications.</p>
 
                 <h3>8. Date & Time</h3>
-                <p>Handle date and time operations (Java 8+ java.time package).</p>
+                <p>Prior to Java 8, handling dates and times in Java was often cumbersome and prone to errors, primarily
+                    due to the design flaws in the older <code>java.util.Date</code> and <code>java.util.Calendar</code>
+                    classes. The introduction of the new Date and Time API (JSR 310) in Java 8, located in the
+                    <code><b>java.time</b></code> package, revolutionized how developers interact with dates and times.
+                    This modern API provides a more intuitive, immutable, and thread-safe approach to date and time
+                    operations, making it much easier to write clear and robust code.
+                </p>
+
+                <div class="highlight">
+                    <p><strong>Key Innovations and Advantages of the Java 8 Date-Time API (`java.time`):</strong></p>
+                    <ul>
+                        <li><b>Immutability:</b> All core date-time objects (like <code>LocalDate</code>,
+                            <code>LocalTime</code>, <code>LocalDateTime</code>) are immutable. Operations like adding
+                            days or setting a new year return a *new* object, ensuring thread safety and preventing
+                            unintended side effects.
+                        </li>
+                        <li><b>Clarity & Domain-Driven Design:</b> Distinct classes are provided for different aspects
+                            of time (e.g., date-only, time-only, date-time with/without timezone), making the code more
+                            readable and less ambiguous.</li>
+                        <li><b>Fluent API:</b> Methods are designed to be chainable, allowing for expressive and concise
+                            operations (e.g., <code>today.plusYears(1).minusMonths(2)</code>).</li>
+                        <li><b>Separation of Concerns:</b> Clear distinction between human date/time
+                            (<code>LocalDate</code>, <code>LocalTime</code>), machine time (<code>Instant</code>), and
+                            time-zone specific time (<code>ZonedDateTime</code>).</li>
+                        <li><b>ISO-8601 Standard Compliant:</b> The API is based on the widely adopted ISO-8601 standard
+                            for date and time representation, improving interoperability.</li>
+                        <li><b>Improved Time Zone Handling:</b> Provides robust and explicit classes for dealing with
+                            time zones (<code>ZoneId</code>, <code>ZonedDateTime</code>), addressing a major pain point
+                            of older APIs.</li>
+                    </ul>
+                </div>
+
+                <h4>Core Classes in the `java.time` package:</h4>
+                <p>The `java.time` package includes several fundamental classes that represent different facets of date
+                    and time information. Here are the most commonly used ones:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Description</th>
+                            <th>Example Representation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="important-class-row">
+                            <td><code><b>LocalDate</b></code></td>
+                            <td>Represents a date (year, month, day) without time or time-zone information. Ideal for
+                                birthdays, holidays, or specific dates where time of day isn't relevant.</td>
+                            <td>(yyyy-MM-dd) e.g., <code>2024-12-25</code></td>
+                        </tr>
+                        <tr class="important-class-row">
+                            <td><code><b>LocalTime</b></code></td>
+                            <td>Represents a time (hour, minute, second and nanoseconds) without date or time-zone
+                                information. Useful for opening hours, meeting times, etc.</td>
+                            <td>(HH-mm-ss-ns) e.g., <code>14:30:00.123456789</code></td>
+                        </tr>
+                        <tr class="important-class-row">
+                            <td><code><b>LocalDateTime</b></code></td>
+                            <td>Represents both a date and a time (year, month, day, hour, minute, second, nanoseconds)
+                                without time-zone. Suitable for events where both date and time are important but
+                                location-specific time isn't a primary concern.</td>
+                            <td>(yyyy-MM-dd-HH-mm-ss-ns) e.g., <code>2024-12-25T14:30:00</code></td>
+                        </tr>
+                        <tr>
+                            <td><code><b>ZonedDateTime</b></code></td>
+                            <td>Represents a complete date-time with a time-zone. Crucial for applications that need to
+                                handle different geographical locations and daylight saving changes accurately.</td>
+                            <td>e.g., <code>2024-12-25T14:30:00+05:30[Asia/Kolkata]</code></td>
+                        </tr>
+                        <tr>
+                            <td><code><b>Instant</b></code></td>
+                            <td>Represents a specific point in time on the timeline, often used for machine-readable
+                                timestamps. It's counted from the epoch of 1970-01-01T00:00:00Z in nanoseconds.</td>
+                            <td>e.g., <code>2025-05-30T06:08:55.123456789Z</code></td>
+                        </tr>
+                        <tr>
+                            <td><code><b>Duration</b></code></td>
+                            <td>Represents a quantity of time in terms of seconds and nanoseconds. Useful for measuring
+                                periods between two <code>Instant</code>s or <code>LocalTime</code>s.</td>
+                            <td>e.g., <code>PT8H6M12S</code> (8 hours, 6 minutes, 12 seconds)</td>
+                        </tr>
+                        <tr>
+                            <td><code><b>Period</b></code></td>
+                            <td>Represents a quantity of time in terms of years, months, and days. Useful for measuring
+                                periods between two <code>LocalDate</code>s.</td>
+                            <td>e.g., <code>P1Y2M3D</code> (1 year, 2 months, 3 days)</td>
+                        </tr>
+                        <tr class="important-class-row">
+                            <td><code><b>DateTimeFormatter</b></code></td>
+                            <td>A formatter for displaying and parsing date-time objects in various human-readable
+                                string formats. Essential for converting date-time objects to strings and vice versa.
+                            </td>
+                            <td>Custom patterns like <code>"dd-MM-yyyy HH:mm:ss"</code></td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <pre><code>
-// Java 8 Date-Time API
+// Java 8 Date-Time API - Basic Usage
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter; // Don't forget to import this!
+import java.time.Period; // For date calculations
+import java.time.Duration; // For time calculations
+
+// 1. Getting Current Date, Time, and Date-Time
 LocalDate today = LocalDate.now();
+System.out.println("Current Date: " + today); // Output: Current Date: 2025-05-30
+
 LocalTime currentTime = LocalTime.now();
+System.out.println("Current Time: " + currentTime); // Output: Current Time: 12:20:18.123456789 (based on current time)
+
 LocalDateTime dateTime = LocalDateTime.now();
+System.out.println("Current Date and Time: " + dateTime); // Output: Current Date and Time: 2025-05-30T12:20:18.123456789 (based on current time)
 
-// Creating specific dates
-LocalDate specificDate = LocalDate.of(2024, 12, 25);
-LocalTime specificTime = LocalTime.of(14, 30, 0);
+// 2. Creating Specific Dates, Times, and Date-Times
+LocalDate specificDate = LocalDate.of(2024, 12, 25); // Year, Month (enum or int), Day
+System.out.println("Specific Date: " + specificDate); // Output: Specific Date: 2024-12-25
 
-// Formatting
-DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-String formattedDate = today.format(formatter);
+LocalTime specificTime = LocalTime.of(14, 30, 0); // Hour, Minute, Second (optional: nanoseconds)
+System.out.println("Specific Time: " + specificTime); // Output: Specific Time: 14:30
 
-// Date calculations
+LocalDateTime specificDateTime = LocalDateTime.of(2023, 7, 15, 9, 0, 0);
+System.out.println("Specific Date-Time: " + specificDateTime); // Output: Specific Date-Time: 2023-07-15T09:00
+
+// 3. Formatting Date-Time Objects (Converting to String)
+// DateTimeFormatter uses predefined constants or custom patterns.
+DateTimeFormatter customFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+String formattedDateTime = dateTime.format(customFormatter);
+System.out.println("Formatted Date and Time: " + formattedDateTime); // Example Output: 30-05-2025 12:20:18
+
+DateTimeFormatter shortDateFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+String formattedDateShort = today.format(shortDateFormatter);
+System.out.println("Formatted Date (Short): " + formattedDateShort); // Example Output: 05/30/2025
+
+// 4. Parsing Strings to Date-Time Objects (Converting from String)
+String dateString = "15-08-2024";
+LocalDate parsedDate = LocalDate.parse(dateString, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+System.out.println("Parsed Date: " + parsedDate); // Output: Parsed Date: 2024-08-15
+
+String timeString = "22:15:00";
+LocalTime parsedTime = LocalTime.parse(timeString); // Uses default ISO format (HH:mm:ss)
+System.out.println("Parsed Time: " + parsedTime); // Output: Parsed Time: 22:15
+
+// 5. Date and Time Calculations (Adding/Subtracting Units)
+// These methods return new immutable objects with the modified values.
 LocalDate nextWeek = today.plusWeeks(1);
+System.out.println("Next Week: " + nextWeek); // Example Output: Next Week: 2025-06-06
+
 LocalDate lastMonth = today.minusMonths(1);
-                </code></pre>
+System.out.println("Last Month: " + lastMonth); // Example Output: Last Month: 2025-04-30
 
-                <h3>9. File Operations</h3>
-                <p>Read from and write to files using Java I/O classes.</p>
+LocalDateTime twoHoursLater = dateTime.plusHours(2);
+System.out.println("Two Hours Later: " + twoHoursLater);
+
+// Adding/Subtracting more specific units
+LocalDate futureDate = today.plusYears(1).minusDays(5);
+System.out.println("Future Date: " + futureDate);
+
+// 6. Extracting Information
+int year = today.getYear();
+int month = today.getMonthValue(); // 1-12
+int day = today.getDayOfMonth();
+System.out.println("Year: " + year + ", Month: " + month + ", Day: " + day);
+
+int hour = currentTime.getHour();
+int minute = currentTime.getMinute();
+System.out.println("Hour: " + hour + ", Minute: " + minute);
+
+// 7. Comparing Dates and Times
+LocalDate date1 = LocalDate.of(2025, 1, 1);
+LocalDate date2 = LocalDate.of(2025, 1, 30);
+
+System.out.println("date1 is before date2: " + date1.isBefore(date2)); // Output: true
+System.out.println("date1 is after date2: " + date1.isAfter(date2));   // Output: false
+System.out.println("date1 is equal to date2: " + date1.isEqual(date2)); // Output: false
+
+// 8. Measuring Periods and Durations
+// Period: for date-based amounts (years, months, days)
+LocalDate startDate = LocalDate.of(2024, 1, 1);
+LocalDate endDate = LocalDate.of(2025, 5, 30); // Using current date for example
+Period period = Period.between(startDate, endDate);
+System.out.println("Period between dates: " + period.getYears() + " years, " +
+                   period.getMonths() + " months, " + period.getDays() + " days");
+// Output for current date (May 30, 2025): Period between dates: 1 years, 4 months, 29 days
+
+// Duration: for time-based amounts (hours, minutes, seconds, nanos)
+LocalTime startTime = LocalTime.of(9, 0, 0);
+LocalTime endTime = LocalTime.of(17, 30, 0);
+Duration duration = Duration.between(startTime, endTime);
+System.out.println("Duration between times (seconds): " + duration.getSeconds()); // Output: 30600 seconds (8.5 hours)
+System.out.println("Duration between times (hours): " + duration.toHours());   // Output: 8 hours
+    </code></pre>
+
+                <p>By embracing the `java.time` package, Java developers can handle dates and times with greater
+                    confidence, accuracy, and efficiency.</p>
+
+                <h3>9. Exception Handling</h3>
+                <p>Exception handling is a crucial mechanism in Java (and other programming languages) that allows you
+                    to manage runtime errors gracefully, preventing your program from crashing unexpectedly. When an
+                    error occurs during program execution that disrupts its normal flow, an "exception" is said to have
+                    occurred.</p>
+
+                <div class="highlight">
+                    <p><strong>Why is Exception Handling Important?</strong></p>
+                    <ul>
+                        <li><b>Graceful Degradation:</b> Instead of abrupt termination, your program can respond to
+                            errors in a controlled way (e.g., logging the error, informing the user, attempting
+                            recovery).</li>
+                        <li><b>Separation of Concerns:</b> It allows you to separate the normal logic of your code from
+                            the error-handling logic, making the code cleaner and easier to maintain.</li>
+                        <li><b>Robustness:</b> Makes applications more resilient to unforeseen issues like network
+                            problems, invalid user input, or file system errors.</li>
+                    </ul>
+                </div>
+
+                <h4>Exception Hierarchy</h4>
+                <p>All exceptions and errors in Java are subclasses of the <code><b>java.lang.Throwable</b></code>
+                    class. The hierarchy is broadly divided into two main branches:</p>
+                <ul>
+                    <li><code><b>Error</b></code>: Represents serious problems that applications should not try to
+                        catch. These typically indicate external system problems (e.g., `OutOfMemoryError`,
+                        `StackOverflowError`). You usually don't handle these.</li>
+                    <li><code><b>Exception</b></code>: Represents conditions that an application might want to catch and
+                        handle. Most problems you encounter will be `Exception`s.
+                        <ul>
+                            <li><code><b>RuntimeException</b></code> (Unchecked Exceptions): Subclasses of
+                                `RuntimeException`. These typically indicate programming bugs (e.g.,
+                                `NullPointerException` if you try to use something that is `null`, `ArithmeticException`
+                                like dividing by zero, `ArrayIndexOutOfBoundsException` if you try to access an array
+                                element that doesn't exist). The compiler does *not* force you to catch or declare them.
+                            </li>
+                            <li>Other `Exception` subclasses (Checked Exceptions): These are exceptions that the
+                                compiler *forces* you to either catch using a `try-catch` block or declare using the
+                                `throws` keyword in the method signature (e.g., `IOException` for file errors,
+                                `SQLException` for database errors). The compiler "checks" if you've handled them.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>1. The `try-catch-finally` Block</h4>
+                <p>The `try-catch-finally` block is the fundamental way to handle exceptions. It lets you "try" some
+                    code, "catch" any specific errors that happen, and run "finally" a cleanup part no matter what.</p>
+                <ul>
+                    <li><code><b>try</b></code>: Put the code that *might* cause an error here.</li>
+                    <li><code><b>catch</b></code>: If an error (exception) happens in the `try` block, Java jumps here.
+                        You specify what type of error to catch.</li>
+                    <li><code><b>finally</b></code>: This block runs *always*, whether an error happened or not. It's
+                        useful for cleaning up, like closing files.</li>
+                </ul>
 
                 <pre><code>
-// Reading a file
-try {
-    Scanner fileReader = new Scanner(new File("input.txt"));
-    while (fileReader.hasNextLine()) {
-        String line = fileReader.nextLine();
-        System.out.println(line);
+// Example: Dividing by zero (causes an ArithmeticException)
+public class TryCatchFinallyExample {
+    public static void main(String[] args) {
+        System.out.println("--- Start of Program ---");
+
+        try {
+            System.out.println("Trying to divide 10 by 0...");
+            int result = 10 / 0; // This line will cause an error (ArithmeticException)
+            System.out.println("Result is: " + result); // This line will NOT be reached
+        } catch (ArithmeticException e) {
+            // This 'catch' block runs because we caught an ArithmeticException
+            System.out.println("Oops! You tried to divide by zero!");
+            System.out.println("Error details: " + e.getMessage()); // Tells you what the error was
+            // e.printStackTrace(); // Uncomment this line to see the full error history, useful for debugging
+        } finally {
+            // This 'finally' block ALWAYS runs, no matter if there was an error or not.
+            System.out.println("Finished the division attempt.");
+        }
+
+        System.out.println("--- Program Continues ---");
+
+        // Another example: No error occurs
+        try {
+            System.out.println("\nTrying to divide 20 by 4...");
+            int result = 20 / 4;
+            System.out.println("Result is: " + result);
+        } catch (ArithmeticException e) {
+            // This 'catch' block will NOT run because no ArithmeticException occurred
+            System.out.println("This message won't appear.");
+        } finally {
+            // This 'finally' block still runs!
+            System.out.println("Finished the second division attempt.");
+        }
+
+        System.out.println("--- End of Program ---");
     }
-    fileReader.close();
-} catch (FileNotFoundException e) {
-    System.out.println("File not found: " + e.getMessage());
 }
+    </code></pre>
+                <div class="output-box">
+                    <b>Output:</b>
+                    <pre>
+--- Start of Program ---
+Trying to divide 10 by 0...
+Oops! You tried to divide by zero!
+Error details: / by zero
+Finished the division attempt.
+--- Program Continues ---
 
-// Writing to a file
-try {
-    FileWriter writer = new FileWriter("output.txt");
-    writer.write("Hello, World!");
-    writer.close();
-} catch (IOException e) {
-    System.out.println("Error writing to file: " + e.getMessage());
-}
-                </code></pre>
+Trying to divide 20 by 4...
+Result is: 5
+Finished the second division attempt.
+--- End of Program ---</pre>
+                </div>
 
-                <h3>10. Exception Handling</h3>
-                <p>Handle runtime errors gracefully to prevent program crashes.</p>
+                <h4>2. Multiple `catch` Blocks</h4>
+                <p>Sometimes, different types of errors can happen in the same `try` block. You can use multiple `catch`
+                    blocks to handle each specific error differently. **Important:** Always put the most specific error
+                    `catch` blocks first, and the most general (like `Exception`) last.</p>
 
                 <pre><code>
-// Try-catch block
-try {
-    int result = 10 / 0;
-} catch (ArithmeticException e) {
-    System.out.println("Cannot divide by zero: " + e.getMessage());
-} finally {
-    System.out.println("This block always executes");
-}
+// Example: Handling different types of common errors
+public class MultipleCatchExample {
+    public static void main(String[] args) {
+        System.out.println("--- Handling Multiple Error Types ---");
 
-// Multiple catch blocks
-try {
-    int[] arr = {1, 2, 3};
-    System.out.println(arr[5]);
-} catch (ArrayIndexOutOfBoundsException e) {
-    System.out.println("Array index out of bounds");
-} catch (Exception e) {
-    System.out.println("General exception: " + e.getMessage());
-}
+        // --- Scenario 1: ArrayIndexOutOfBoundsException ---
+        try {
+            System.out.println("\nAttempting to access an invalid array index...");
+            int[] numbers = {1, 2, 3};
+            System.out.println("Accessing array element at index 5: " + numbers[5]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Error! You tried to access a number outside the array's size.");
+            System.out.println("Problem: " + e.getMessage());
+        } catch (ArithmeticException e) {
+            System.out.println("This won't be caught for array error.");
+        } catch (Exception e) {
+            System.out.println("An unexpected general error happened.");
+        } finally {
+            System.out.println("End of array access attempt.");
+        }
 
-// Throwing custom exceptions
-public static void validateAge(int age) throws IllegalArgumentException {
-    if (age < 0) {
-        throw new IllegalArgumentException("Age cannot be negative");
+        // --- Scenario 2: ArithmeticException ---
+        try {
+            System.out.println("\nAttempting division by zero...");
+            int result = 10 / 0;
+            System.out.println("Result: " + result);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("This won't be caught for division by zero.");
+        } catch (ArithmeticException e) {
+            System.out.println("Error! You tried to divide by zero.");
+            System.out.println("Problem: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("An unexpected general error happened.");
+        } finally {
+            System.out.println("End of division attempt.");
+        }
+
+        // --- Scenario 3: NumberFormatException (if you uncomment the line inside try) ---
+        try {
+            System.out.println("\nAttempting to convert an invalid string to a number...");
+            String invalidNum = "abc";
+            int parsedNum = Integer.parseInt(invalidNum); // This causes NumberFormatException
+            System.out.println("Parsed number: " + parsedNum);
+        } catch (NumberFormatException e) {
+            System.out.println("Error! Couldn't convert text to a whole number.");
+            System.out.println("Problem: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("An unexpected general error happened.");
+        } finally {
+            System.out.println("End of string conversion attempt.");
+        }
+
+        System.out.println("\n--- Program finished ---");
     }
 }
-                </code></pre>
+    </code></pre>
+                <div class="output-box">
+                    <b>Output:</b>
+                    <pre>
+--- Handling Multiple Error Types ---
+
+Attempting to access an invalid array index...
+Error! You tried to access a number outside the array's size.
+Problem: Index 5 out of bounds for length 3
+End of array access attempt.
+
+Attempting division by zero...
+Error! You tried to divide by zero.
+Problem: / by zero
+End of division attempt.
+
+Attempting to convert an invalid string to a number...
+Error! Couldn't convert text to a whole number.
+Problem: For input string: "abc"
+End of string conversion attempt.
+
+--- Program finished ---</pre>
+                </div>
+
+                <h4>3. `throw` Keyword (To Create and Send an Exception)</h4>
+                <p>The `<b>throw</b>` statement allows you to create a custom error or send an existing error type. It's
+                    used when *your code* detects a problem and needs to immediately stop the normal flow and signal an
+                    error.</p>
+                <p>The `throw` statement is used together with an **exception type**. There are many exception types
+                    available in Java, both built-in ones like `ArithmeticException`, `FileNotFoundException`,
+                    `ArrayIndexOutOfBoundsException`, `NullPointerException`, `SecurityException`, and custom ones you
+                    create.</p>
+
+                <pre><code>
+// Example: Throwing an exception for invalid input
+public class ThrowKeywordExample {
+
+    // This method checks if a person's age is valid.
+    public static void checkAge(int age) {
+        if (age < 0) {
+            // If age is less than 0, it's invalid.
+            // We 'throw' a new IllegalArgumentException.
+            // IllegalArgumentException is a built-in 'unchecked' exception (subclass of RuntimeException).
+            // This means the caller doesn't *have* to catch it, but it's good practice.
+            throw new IllegalArgumentException("Age cannot be a negative number: " + age);
+        } else if (age > 120) {
+            // If age is too high, also invalid.
+            throw new IllegalArgumentException("Age is unbelievably high: " + age);
+        } else {
+            System.out.println("Age " + age + " is valid.");
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("--- Checking Ages ---");
+        try {
+            checkAge(30);  // This is valid
+            checkAge(-10); // This will cause an IllegalArgumentException to be thrown
+            checkAge(150); // This line will NOT be reached because of the exception above
+        } catch (IllegalArgumentException e) {
+            // We catch the IllegalArgumentException thrown by checkAge()
+            System.out.println("Validation Error: " + e.getMessage());
+            // e.printStackTrace(); // Uncomment to see the full error history
+        }
+        System.out.println("--- Finished Checking Ages ---");
+    }
+}
+    </code></pre>
+                <div class="output-box">
+                    <b>Output:</b>
+                    <pre>
+--- Checking Ages ---
+Age 30 is valid.
+Validation Error: Age cannot be a negative number: -10
+--- Finished Checking Ages ---</pre>
+                </div>
+
+                <h4>4. `throws` Keyword (To Declare a Method Might Send an Exception)</h4>
+                <p>The `<b>throws</b>` keyword is used in a method's signature (its declaration) to tell anyone who uses
+                    that method: "Hey, I might throw a **checked exception**, so you need to be ready to handle it or
+                    declare it yourself." The compiler will *force* you to deal with checked exceptions.</p>
+
+                <pre><code>
+import java.io.FileNotFoundException; // A common CHECKED exception
+
+public class ThrowsKeywordExample {
+
+    // This method says: "I might throw a FileNotFoundException."
+    // You don't HAVE to catch it here, but whoever calls this method MUST.
+    public static void openFile(String filename) throws FileNotFoundException {
+        System.out.println("Attempting to open file: " + filename);
+        // In a real program, this would try to open a file.
+        // For demonstration, we'll simulate an error if the file is "nonexistent.txt"
+        if (filename.equals("nonexistent.txt")) {
+            // We 'throw' a new FileNotFoundException.
+            // Since FileNotFoundException is a CHECKED exception,
+            // we MUST declare it in the method signature using 'throws'.
+            throw new FileNotFoundException("Error: File '" + filename + "' was not found!");
+        }
+        System.out.println("File opened successfully (simulated).");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("--- File Operations ---");
+
+        // Scenario 1: File that exists (simulated)
+        try {
+            openFile("my_document.txt"); // No exception thrown here
+        } catch (FileNotFoundException e) {
+            System.out.println("Caught an error for my_document.txt: " + e.getMessage());
+        }
+
+        System.out.println("--------------------");
+
+        // Scenario 2: File that does NOT exist (simulated)
+        try {
+            openFile("nonexistent.txt"); // This will cause a FileNotFoundException to be thrown
+        } catch (FileNotFoundException e) {
+            // We MUST catch this exception because openFile() declared it with 'throws'.
+            System.out.println("Caught an error for nonexistent.txt: " + e.getMessage());
+        }
+        System.out.println("--- File Operations Complete ---");
+    }
+}
+    </code></pre>
+                <div class="output-box">
+                    <b>Output:</b>
+                    <pre>
+--- File Operations ---
+Attempting to open file: my_document.txt
+File opened successfully (simulated).
+--------------------
+Attempting to open file: nonexistent.txt
+Caught an error for nonexistent.txt: Error: File 'nonexistent.txt' was not found!
+--- File Operations Complete ---</pre>
+                </div>
+
+                <h4>5. Difference Between `throw` and `throws`</h4>
+                <p>While `throw` and `throws` sound similar, they serve very different purposes in Java exception
+                    handling. Think of them as two distinct tools in your error management toolkit:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>`throw` Keyword</th>
+                            <th>`throws` Keyword</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Purpose</b></td>
+                            <td>Used to **explicitly raise (throw)** an exception. It's like saying, "An error just
+                                happened here!"</td>
+                            <td>Used in a method signature to **declare** that a method *might* throw one or more
+                                checked exceptions. It's like saying, "Warning: this method *could* cause an error of
+                                this type!"</td>
+                        </tr>
+                        <tr>
+                            <td><b>Usage</b></td>
+                            <td>Followed by an **instance (object)** of an exception.
+                                <br>Example: `throw new ArithmeticException("Cannot divide by zero");`
+                            </td>
+                            <td>Followed by one or more **exception class names**.
+                                <br>Example: `public void readFile() throws IOException, InterruptedException`
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Placement</b></td>
+                            <td>Used **inside** a method body, typically within an `if` condition or logic block.</td>
+                            <td>Used in the **method signature** (after the method parameters and before the curly
+                                brace).</td>
+                        </tr>
+                        <tr>
+                            <td><b>Quantity</b></td>
+                            <td>You can only `throw` **one** exception object at a time.</td>
+                            <td>You can `throws` **multiple** exception classes, separated by commas.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Flow</b></td>
+                            <td>Immediately stops the normal execution flow and transfers control to the nearest `catch`
+                                block.</td>
+                            <td>Does not stop the flow of execution; it's a declaration for the compiler and other
+                                developers.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Context</b></td>
+                            <td>Performs the **actual throwing** of an exception.</td>
+                            <td>Performs the **declaration** of potential exceptions, shifting the responsibility of
+                                handling to the caller.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>In short: You **`throw`** an exception to *make* it happen, and a method **`throws`** an exception to
+                    *warn* that it *might* happen (especially for checked exceptions).</p>
+
+                <h4>6. Custom Exceptions</h4>
+                <p>Sometimes, Java's built-in exceptions aren't specific enough for the errors in your program. You can
+                    create your own custom exception classes to make your error messages clearer and more meaningful.
+                    This makes your code easier to understand and debug.</p>
+
+                <div class="concept-box">
+                    <h4>How to create a Custom Exception:</h4>
+                    <p>1. Create a new class.</p>
+                    <p>2. It should <code><b>extend Exception</b></code> (for a **checked exception**, meaning users
+                        *must* handle it) OR <code><b>extend RuntimeException</b></code> (for an **unchecked
+                        exception**, meaning users *don't have to* handle it, often for logic errors).</p>
+                    <p>3. Add constructors, typically one that takes a `String message` (which you pass to the parent
+                        class using `super(message)`).</p>
+                </div>
+                <pre><code>
+// 1. Define a Custom Checked Exception (forces handling)
+class TooYoungException extends Exception {
+    public TooYoungException(String message) {
+        super(message); // Pass the message to the parent Exception class
+    }
+}
+
+// 2. Define a Custom Unchecked Exception (handling is optional)
+class InsufficientFundsException extends RuntimeException {
+    public InsufficientFundsException(String message) {
+        super(message); // Pass the message to the parent RuntimeException class
+    }
+}
+
+public class CustomExceptionDemo {
+
+    // Method that throws our Custom CHECKED Exception
+    // We use 'throws' because TooYoungException is a CHECKED exception.
+    public static void applyForLicense(int age) throws TooYoungException {
+        if (age < 18) {
+            // We 'throw' our custom TooYoungException here
+            throw new TooYoungException("Sorry, you are too young to apply for a license. Age: " + age);
+        }
+        System.out.println("License application accepted for age: " + age);
+    }
+
+    // Method that throws our Custom UNCHECKED Exception
+    // We don't use 'throws' here because InsufficientFundsException is UNCHECKED.
+    public static void makeWithdrawal(double amount, double currentBalance) {
+        if (amount > currentBalance) {
+            // We 'throw' our custom InsufficientFundsException here
+            throw new InsufficientFundsException(
+                "Cannot withdraw " + amount + ". Current balance is only " + currentBalance
+            );
+        }
+        System.out.println("Withdrawal of " + amount + " successful. New balance: " + (currentBalance - amount));
+    }
+
+    public static void main(String[] args) {
+        System.out.println("--- License Application ---");
+        // Handling the Custom CHECKED Exception (TooYoungException)
+        try {
+            applyForLicense(20); // This will work
+            applyForLicense(16); // This will throw TooYoungException, caught below
+        } catch (TooYoungException e) {
+            System.out.println("License Error: " + e.getMessage());
+        }
+
+        System.out.println("\n--- Bank Withdrawal ---");
+        // Handling the Custom UNCHECKED Exception (InsufficientFundsException)
+        // Catching is optional, but good practice if you want to display a user-friendly message.
+        try {
+            makeWithdrawal(50, 200); // This will work
+            makeWithdrawal(300, 150); // This will throw InsufficientFundsException, caught below
+        } catch (InsufficientFundsException e) {
+            System.out.println("Bank Error: " + e.getMessage());
+        }
+
+        System.out.println("\n--- Program finished ---");
+    }
+}
+    </code></pre>
+                <div class="output-box">
+                    <b>Output:</b>
+                    <pre>
+--- License Application ---
+License application accepted for age: 20
+License Error: Sorry, you are too young to apply for a license. Age: 16
+
+--- Bank Withdrawal ---
+Withdrawal of 50.0 successful. New balance: 150.0
+Bank Error: Cannot withdraw 300.0. Current balance is only 150.0
+
+--- Program finished ---</pre>
+                </div>
+
+                <h4>7. `try-with-resources` (Java 7+)</h4>
+                <p>When you work with resources like files, network connections, or database connections, it's very
+                    important to *close* them when you're done. If you don't, your program can leak resources and cause
+                    problems. Before Java 7, you often used a `finally` block to ensure closing. But
+                    `<b>try-with-resources</b>` makes it much easier and safer!</p>
+                <p>If a resource implements the `<b>AutoCloseable</b>` interface (like `FileWriter` or `Scanner`), you
+                    can declare it inside the `try` block's parentheses. Java will automatically close that resource for
+                    you when the `try` block finishes, whether an exception occurs or not.</p>
+
+                <pre><code>
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner; // For reading keyboard input or files
+import java.io.File; // To create a File object
+import java.nio.file.Files; // Used for simple file creation/deletion
+import java.nio.file.Paths; // Used for simple file creation/deletion
+
+public class TryWithResourcesSimpleExample {
+    public static void main(String[] args) {
+        System.out.println("--- File Writing Example ---");
+
+        // First, let's make sure the file exists before reading later
+        // This part isn't strictly try-with-resources related, just setup
+        try {
+            Files.write(Paths.get("greeting.txt"), "This is line one.\nThis is line two.".getBytes());
+            System.out.println("Created 'greeting.txt' with initial content.");
+        } catch (IOException e) {
+            System.err.println("Setup error: Could not create greeting.txt: " + e.getMessage());
+            return; // Stop if we can't even create the file
+        }
+
+
+        // Using try-with-resources for a FileWriter
+        // The 'writer' will be automatically closed when this block finishes,
+        // even if an error happens inside.
+        try (FileWriter writer = new FileWriter("greeting.txt")) {
+            System.out.println("\nAttempting to write over greeting.txt...");
+            writer.write("Hello from Java!");
+            writer.write("\nThis line is also written by the FileWriter.");
+            System.out.println("Text written to greeting.txt successfully.");
+            // No need for writer.close() here! Java handles it automatically.
+        } catch (IOException e) {
+            System.out.println("Error writing to file: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        System.out.println("\n--- File Reading Example ---");
+
+        // Using try-with-resources for a Scanner to read the file we just wrote
+        try (Scanner fileReader = new Scanner(new File("greeting.txt"))) {
+            System.out.println("Content of greeting.txt:");
+            while (fileReader.hasNextLine()) {
+                String line = fileReader.nextLine();
+                System.out.println(line);
+            }
+        } catch (IOException e) { // Catch IOException for file operations (like file not found)
+            System.out.println("Error reading file: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            // 'finally' still runs, but it's not needed for closing resources declared in try-with-resources.
+            // You can use it for other actions that must happen at the end.
+            System.out.println("File operation attempt complete (from finally block).");
+        }
+
+        // Clean up the dummy file
+        try {
+            Files.deleteIfExists(Paths.get("greeting.txt"));
+            System.out.println("Cleaned up greeting.txt.");
+        } catch (IOException e) {
+            System.err.println("Could not delete greeting.txt: " + e.getMessage());
+        }
+        System.out.println("\n--- Program finished ---");
+    }
+}
+    </code></pre>
+                <div class="output-box">
+                    <b>Output:</b>
+                    <pre>
+--- File Writing Example ---
+Created 'greeting.txt' with initial content.
+
+Attempting to write over greeting.txt...
+Text written to greeting.txt successfully.
+
+--- File Reading Example ---
+Content of greeting.txt:
+Hello from Java!
+This line is also written by the FileWriter.
+File operation attempt complete (from finally block).
+Cleaned up greeting.txt.
+
+--- Program finished ---</pre>
+                </div>
+
+                <h3>10. File Operations</h3>
+                <p>File operations are fundamental in many applications, allowing programs to store, retrieve, and
+                    manage persistent data. Java provides robust input/output (I/O) capabilities through its
+                    <code>java.io</code> package and, more recently, enhanced capabilities with the
+                    <code>java.nio.file</code> (NIO.2) package introduced in Java 7.
+                </p>
+
+                <div class="highlight">
+                    <p><strong>Key Considerations for File Operations:</strong></p>
+                    <ul>
+                        <li><b>Exceptions:</b> File operations are inherently risky (e.g., file not found, permission
+                            denied). You must always handle <code>IOException</code> (or its subclasses like
+                            <code>FileNotFoundException</code>).
+                        </li>
+                        <li><b>Resource Management:</b> Streams and readers/writers consume system resources. It's
+                            crucial to close them after use to prevent resource leaks. Java's <b>try-with-resources</b>
+                            statement (introduced in Java 7) is the recommended way to ensure resources are closed
+                            automatically.</li>
+                        <li><b>Text vs. Binary:</b> Choose appropriate streams/readers for text data (character streams
+                            like <code>Reader</code>/<code>Writer</code>) versus binary data (byte streams like
+                            <code>InputStream</code>/<code>OutputStream</code>).
+                        </li>
+                    </ul>
+                </div>
+
+                <h4>The `java.io.File` Class</h4>
+                <p>The <code>java.io.File</code> class is a core component for interacting with the file system. It
+                    represents file and directory pathnames. It doesn't actually store the data within the file but
+                    provides methods to manipulate the file itself (e.g., check if it exists, create, delete, rename,
+                    list contents of a directory).</p>
+
+                <pre><code>
+import java.io.File; // Import the File class
+import java.io.IOException; // Handle IO exceptions
+
+public class FileBasics {
+    public static void main(String[] args) {
+        File myFile = new File("myfile.txt"); // Create a File object, not the actual file yet
+
+        // Check if the file exists
+        if (myFile.exists()) {
+            System.out.println("File name: " + myFile.getName());
+            System.out.println("Absolute path: " + myFile.getAbsolutePath());
+            System.out.println("Writable: " + myFile.canWrite());
+            System.out.println("Readable: " + myFile.canRead());
+            System.out.println("File size in bytes: " + myFile.length());
+        } else {
+            System.out.println("File does not exist.");
+        }
+    }
+}
+    </code></pre>
+
+                <h4>1. Creating Files</h4>
+                <p>To create a new, empty file, you use the <code>createNewFile()</code> method of the <code>File</code>
+                    object. This method returns <code>true</code> if the file was successfully created and
+                    <code>false</code> if the file already existed.
+                </p>
+                <div class="concept-box">
+                    <h4>Method: `fileObject.createNewFile()`</h4>
+                    <ul>
+                        <li>Returns <code>true</code> if the named file does not exist and was successfully created.
+                        </li>
+                        <li>Returns <code>false</code> if the named file already exists.</li>
+                        <li>Throws <code>IOException</code> if an I/O error occurred (e.g., permission issues, path not
+                            valid).</li>
+                    </ul>
+                </div>
+                <pre><code>
+import java.io.File;
+import java.io.IOException;
+
+public class CreateFileExample {
+    public static void main(String[] args) {
+        File file = new File("newfile.txt");
+        try {
+            if (file.createNewFile()) {
+                System.out.println("File created: " + file.getName());
+            } else {
+                System.out.println("File already exists.");
+            }
+        } catch (IOException e) {
+            System.out.println("An error occurred during file creation.");
+            e.printStackTrace(); // Print the stack trace for debugging
+        }
+    }
+}
+    </code></pre>
+
+                <h4>2. Writing to Files</h4>
+                <p>Java provides several classes for writing data to files. For writing character data (text),
+                    <code>FileWriter</code> and <code>BufferedWriter</code> are commonly used. For raw byte data,
+                    `FileOutputStream` is used.
+                </p>
+
+                <div class="concept-box">
+                    <h4>Using `FileWriter` (for basic text writing)</h4>
+                    <p>The <code>FileWriter</code> class is used to write character-oriented data to a file. You can
+                        specify whether to overwrite the file or append to it.</p>
+                    <ul>
+                        <li><b>Constructor:</b> <code>new FileWriter("filename.txt")</code> (overwrites if file exists)
+                        </li>
+                        <li><b>Constructor:</b> <code>new FileWriter("filename.txt", true)</code> (appends if file
+                            exists)</li>
+                        <li><b>Method:</b> <code>writer.write(String text)</code>: Writes a string.</li>
+                        <li><b>Method:</b> <code>writer.close()</code>: **Crucial** to flush and close the stream.</li>
+                    </ul>
+                </div>
+                <pre><code>
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class WriteFileExample {
+    public static void main(String[] args) {
+        // Writing to a file (overwrites existing content)
+        try (FileWriter writer = new FileWriter("output.txt")) { // try-with-resources for auto-closing
+            writer.write("Hello, Java I/O!\n");
+            writer.write("This is a new line.\n");
+            System.out.println("Successfully wrote to 'output.txt'.");
+        } catch (IOException e) {
+            System.out.println("Error writing to file: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        // Appending to a file (adds content to the end)
+        try (FileWriter writer = new FileWriter("output.txt", true)) { // 'true' for append mode
+            writer.write("Appending this line.\n");
+            writer.write("And another one.\n");
+            System.out.println("Successfully appended to 'output.txt'.");
+        } catch (IOException e) {
+            System.out.println("Error appending to file: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}
+    </code></pre>
+
+                <div class="concept-box">
+                    <h4>Using `BufferedWriter` (for efficient text writing)</h4>
+                    <p>For better performance when writing large amounts of text data, it's recommended to wrap a
+                        <code>FileWriter</code> (or any other <code>Writer</code>) in a <code>BufferedWriter</code>. It
+                        uses an internal buffer to reduce actual writes to the disk.
+                    </p>
+                    <ul>
+                        <li><b>Constructor:</b> <code>new BufferedWriter(new FileWriter("filename.txt"))</code></li>
+                        <li><b>Method:</b> <code>writer.newLine()</code>: Writes a platform-specific new line.</li>
+                        <li>Remember to <code>flush()</code> or <code>close()</code> to ensure buffered data is written.
+                        </li>
+                    </ul>
+                </div>
+                <pre><code>
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class BufferedWriteExample {
+    public static void main(String[] args) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("buffered_output.txt"))) {
+            writer.write("Line 1 from BufferedWriter.");
+            writer.newLine(); // Writes platform-specific new line
+            writer.write("Line 2 from BufferedWriter.");
+            writer.newLine();
+            System.out.println("Successfully wrote to 'buffered_output.txt' using BufferedWriter.");
+        } catch (IOException e) {
+            System.out.println("Error writing with BufferedWriter: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}
+    </code></pre>
+
+                <h4>3. Reading Files</h4>
+                <p>To read data from files, Java provides classes like <code>Scanner</code> and
+                    <code>BufferedReader</code> for text, and <code>FileInputStream</code> for binary data.
+                </p>
+
+                <div class="concept-box">
+                    <h4>Using `Scanner` (for reading text line by line or token by token)</h4>
+                    <p>The <code>Scanner</code> class (from <code>java.util</code>) is versatile for parsing primitive
+                        types and strings from input, including files. It's good for simple text file reading.</p>
+                    <ul>
+                        <li><b>Constructor:</b> <code>new Scanner(new File("filename.txt"))</code></li>
+                        <li><b>Method:</b> <code>scanner.hasNextLine()</code>: Checks if there's another line.</li>
+                        <li><b>Method:</b> <code>scanner.nextLine()</code>: Reads the next line.</li>
+                        <li><b>Method:</b> <code>scanner.close()</code>: **Crucial** to close the scanner.</li>
+                    </ul>
+                </div>
+                <pre><code>
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class ReadFileExample {
+    public static void main(String[] args) {
+        // Ensure output.txt exists from previous example or create it manually with some content
+        try (Scanner fileReader = new Scanner(new File("output.txt"))) { // try-with-resources
+            System.out.println("Reading 'output.txt':");
+            while (fileReader.hasNextLine()) {
+                String line = fileReader.nextLine();
+                System.out.println(line);
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}
+    </code></pre>
+
+                <div class="concept-box">
+                    <h4>Using `BufferedReader` (for efficient text reading)</h4>
+                    <p>Similar to <code>BufferedWriter</code>, <code>BufferedReader</code> enhances performance when
+                        reading character streams by buffering input. It's often preferred for reading large text files.
+                    </p>
+                    <ul>
+                        <li><b>Constructor:</b> <code>new BufferedReader(new FileReader("filename.txt"))</code></li>
+                        <li><b>Method:</b> <code>reader.readLine()</code>: Reads a line of text. Returns
+                            <code>null</code> if end of stream is reached.
+                        </li>
+                    </ul>
+                </div>
+                <pre><code>
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class BufferedReadExample {
+    public static void main(String[] args) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("buffered_output.txt"))) {
+            System.out.println("Reading 'buffered_output.txt' using BufferedReader:");
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.out.println("Error reading with BufferedReader: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}
+    </code></pre>
+
+                <h4>4. Deleting Files</h4>
+                <p>To delete a file or an empty directory, you use the <code>delete()</code> method of the
+                    <code>File</code> object. This method returns <code>true</code> if the deletion was successful and
+                    <code>false</code> otherwise (e.g., file not found, permission denied, directory not empty).
+                </p>
+                <div class="concept-box">
+                    <h4>Method: `fileObject.delete()`</h4>
+                    <ul>
+                        <li>Returns <code>true</code> if the file or directory was successfully deleted.</li>
+                        <li>Returns <code>false</code> if the file or directory could not be deleted for any reason.
+                        </li>
+                        <li>Note: This method does not throw an <code>IOException</code> on failure; it simply returns
+                            <code>false</code>.
+                        </li>
+                    </ul>
+                </div>
+                <pre><code>
+import java.io.File;
+
+public class DeleteFileExample {
+    public static void main(String[] args) {
+        // Create a dummy file to be deleted
+        File fileToDelete = new File("file_to_delete.txt");
+        try {
+            fileToDelete.createNewFile(); // Ensure it exists for deletion attempt
+            System.out.println("Created 'file_to_delete.txt' for demonstration.");
+        } catch (IOException e) {
+            System.out.println("Could not create dummy file: " + e.getMessage());
+        }
+
+        // Attempt to delete the file
+        if (fileToDelete.delete()) {
+            System.out.println("File deleted successfully: " + fileToDelete.getName());
+        } else {
+            System.out.println("Failed to delete the file: " + fileToDelete.getName() +
+                               ". It might not exist, or permissions are insufficient, or it's in use.");
+        }
+
+        // Example of deleting a non-existent file
+        File nonExistentFile = new File("non_existent_file.txt");
+        if (nonExistentFile.delete()) {
+            System.out.println("This should not happen: " + nonExistentFile.getName() + " was deleted.");
+        } else {
+            System.out.println("Correctly failed to delete non-existent file: " + nonExistentFile.getName());
+        }
+    }
+}
+    </code></pre>
+
+                <h4>Modern File I/O with NIO.2 (Java 7+)</h4>
+                <p>Introduced in Java 7, the NIO.2 API (<code>java.nio.file</code> package) provides a more powerful,
+                    flexible, and robust way to handle file system operations. It addresses many limitations of the
+                    older <code>java.io.File</code> class. Key components include:</p>
+                <ul>
+                    <li><code><b>Path</b></code> interface: Represents a path to a file or directory.</li>
+                    <li><code><b>Paths</b></code> class: Utility class to get <code>Path</code> instances.</li>
+                    <li><code><b>Files</b></code> class: Provides static methods for common file operations (copy, move,
+                        delete, read all lines, write all bytes, etc.) that are often more efficient and handle
+                        exceptions more uniformly.</li>
+                </ul>
+
+                <div class="highlight">
+                    <p><strong>Why use NIO.2 (`java.nio.file`)?</strong></p>
+                    <ul>
+                        <li><b>Improved Error Handling:</b> Methods generally throw more specific exceptions (e.g.,
+                            `NoSuchFileException`).</li>
+                        <li><b>Atomic Operations:</b> Operations like `move` can be done atomically.</li>
+                        <li><b>Symbolic Links:</b> Better support for symbolic links.</li>
+                        <li><b>Stream API Integration:</b> `Files.lines()` allows reading files directly into a Java 8
+                            Stream, making processing very concise.</li>
+                        <li><b>Less Boilerplate:</b> Many common operations can be done with a single static method
+                            call.</li>
+                    </ul>
+                </div>
+                <pre><code>
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.List;
+
+public class NIO2FileOperations {
+    public static void main(String[] args) {
+        Path filePath = Paths.get("nio2_example.txt");
+
+        // 1. Create a file
+        try {
+            if (Files.notExists(filePath)) {
+                Files.createFile(filePath);
+                System.out.println("NIO.2: File created: " + filePath.getFileName());
+            } else {
+                System.out.println("NIO.2: File already exists.");
+            }
+        } catch (IOException e) {
+            System.out.println("NIO.2: Error creating file: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        // 2. Write to a file (overwrites)
+        String content = "Hello from NIO.2!\nAnother line from Files.write.";
+        try {
+            Files.write(filePath, content.getBytes()); // Writes bytes
+            System.out.println("NIO.2: Successfully wrote to file.");
+        } catch (IOException e) {
+            System.out.println("NIO.2: Error writing to file: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        // 3. Append to a file
+        String appendContent = "\nThis content was appended.";
+        try {
+            Files.write(filePath, appendContent.getBytes(), StandardOpenOption.APPEND);
+            System.out.println("NIO.2: Successfully appended to file.");
+        } catch (IOException e) {
+            System.out.println("NIO.2: Error appending to file: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        // 4. Read all lines from a file
+        try {
+            List<String> lines = Files.readAllLines(filePath); // Reads all lines into a List
+            System.out.println("\nNIO.2: Content of file:");
+            for (String line : lines) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.out.println("NIO.2: Error reading file: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        // 5. Delete a file
+        try {
+            if (Files.exists(filePath)) {
+                Files.delete(filePath);
+                System.out.println("NIO.2: File deleted: " + filePath.getFileName());
+            } else {
+                System.out.println("NIO.2: File does not exist for deletion.");
+            }
+        } catch (IOException e) {
+            System.out.println("NIO.2: Error deleting file: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}
+    </code></pre>
+
+                <p>While the older <code>java.io</code> classes are still valid and widely used, for new development or
+                    when dealing with complex file system interactions, the <code>java.nio.file</code> package (NIO.2)
+                    is generally the preferred approach due to its modern design, robustness, and better error handling.
+                </p>
 
                 <h3>11. User Input</h3>
-                <p>Accept input from users using Scanner class.</p>
+                <p>Many programs need to interact with the user, taking data or commands to perform their tasks. In
+                    Java, the most common and beginner-friendly way to get input from the keyboard (the standard input
+                    device) is by using the <code><b>Scanner</b></code> class.</p>
+
+                <div class="highlight">
+                    <p><b>What is `System.in`?</b><br>
+                        <code>System.in</code> is a standard input stream in Java, typically representing the keyboard.
+                        When you create a `Scanner` object with `System.in`, you're telling it to read from the
+                        keyboard.
+                    </p>
+                </div>
+
+                <h4>The `Scanner` Class (<code>java.util.Scanner</code>)</h4>
+                <p>The `Scanner` class is part of the `java.util` package, so you'll usually need to `import
+                    java.util.Scanner;` at the top of your Java file. It breaks down input into tokens (like words or
+                    numbers) using a delimiter (by default, whitespace). It then provides various methods to read these
+                    tokens as different data types.</p>
+
+                <div class="concept-box">
+                    <h4>How to use `Scanner`:</h4>
+                    <ol>
+                        <li><b>Import:</b> Add <code>import java.util.Scanner;</code> at the beginning of your file.
+                        </li>
+                        <li><b>Create Object:</b> Create a `Scanner` object, typically linking it to `System.in` for
+                            keyboard input: <br> <code>Scanner scanner = new Scanner(System.in);</code></li>
+                        <li><b>Read Input:</b> Use various `nextXxx()` methods to read different data types.</li>
+                        <li><b>Close Scanner:</b> Always close the `Scanner` when you're done with it to release system
+                            resources: <br> <code>scanner.close();</code> (though for `System.in`, there's a nuance, as
+                            explained below).</li>
+                    </ol>
+                </div>
+
+                <h4>Reading User Input</h4>
+                <p>The `Scanner` class provides convenient methods to read input as specific data types. These methods
+                    are essential for capturing various forms of user data from the keyboard. For a comprehensive list
+                    of input reading methods, refer to the "More Useful `Scanner` Methods" table below.</p>
+
+                <div class="highlight">
+                    <p><b>Note:</b> If you enter wrong input (e.g., text like "hello" when expecting a number for
+                        `nextInt()`), your program will throw an `<b>InputMismatchException</b>`. This is a common error
+                        that needs to be handled using `try-catch` blocks for robust applications.</p>
+                </div>
 
                 <pre><code>
-Scanner scanner = new Scanner(System.in);
+import java.util.Scanner; // Don't forget to import Scanner!
 
-// Reading different data types
-System.out.print("Enter your name: ");
-String name = scanner.nextLine();
+public class UserInputExample {
+    public static void main(String[] args) {
+        // 1. Create a Scanner object to read input from the keyboard (System.in)
+        Scanner scanner = new Scanner(System.in);
 
-System.out.print("Enter your age: ");
-int age = scanner.nextInt();
+        System.out.println("--- Gathering User Information ---");
 
-System.out.print("Enter your salary: ");
-double salary = scanner.nextDouble();
+        // 2. Reading different data types using Scanner methods
 
-System.out.print("Are you employed? (true/false): ");
-boolean employed = scanner.nextBoolean();
+        // Reading a String (full line)
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine(); // Reads the whole line until Enter is pressed
 
-scanner.close();
-                </code></pre>
+        // Reading an integer
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt(); // Reads only the integer part
+
+        // Reading a double (decimal number)
+        System.out.print("Enter your salary: ");
+        double salary = scanner.nextDouble(); // Reads only the double part
+
+        // Reading a boolean (true/false)
+        System.out.print("Are you employed? (true/false): ");
+        boolean employed = scanner.nextBoolean(); // Reads "true" or "false"
+
+        // Displaying the collected information
+        System.out.println("\n--- Your Information ---");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Salary: $" + salary);
+        System.out.println("Employed: " + employed);
+
+        // 3. Close the Scanner
+        // For System.in, closing it can also close the underlying input stream
+        // which might affect other parts of your program. For simple programs,
+        // it's generally okay. For file Scanners, ALWAYS close.
+        scanner.close();
+
+        System.out.println("--- Program Finished ---");
+    }
+}
+    </code></pre>
+                <div class="output-box">
+                    <b>Example Interaction (User Input is Bold):</b>
+                    <pre>
+--- Gathering User Information ---
+Enter your name: <b>Alice Wonderland</b>
+Enter your age: <b>30</b>
+Enter your salary: <b>55000.75</b>
+Are you employed? (true/false): <b>true</b>
+
+--- Your Information ---
+Name: Alice Wonderland
+Age: 30
+Salary: $55000.75
+Employed: true
+--- Program Finished ---</pre>
+                </div>
+
+                <h4>The `nextLine()` Trap (Important for Beginners!)</h4>
+                <p>This is a very common issue for beginners mixing `nextInt()`, `nextDouble()`, `next()` with
+                    `nextLine()`. When you use methods like `nextInt()`, `nextDouble()`, or `nextBoolean()`, they read
+                    only the number/boolean you type, but they **do not consume the "newline" character** (the invisible
+                    character generated when you press Enter). This newline character is left behind in the input
+                    buffer.</p>
+                <p>If you then call `nextLine()` immediately after `nextInt()` (or similar), `nextLine()` will simply
+                    read that leftover newline character and think it has received an empty line, skipping your actual
+                    input for that line.</p>
+
+                <pre><code>
+import java.util.Scanner;
+
+public class NextLineTrapExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("--- Demonstrating the nextLine() Trap ---");
+
+        System.out.print("Enter your favorite number: ");
+        int favoriteNumber = scanner.nextInt(); // Reads the number, leaves '\n' in buffer
+
+        System.out.print("Enter your favorite color: ");
+        // PROBLEM: nextLine() reads the leftover '\n' from the previous nextInt()
+        // and doesn't wait for you to type the color!
+        String favoriteColor = scanner.nextLine(); // THIS LINE WILL BE SKIPPED
+
+        System.out.println("\nYour favorite number is: " + favoriteNumber);
+        System.out.println("Your favorite color is: " + favoriteColor); // This will likely be empty
+
+        scanner.close();
+    }
+}
+    </code></pre>
+                <div class="output-box">
+                    <b>Example Interaction (User Input is Bold):</b>
+                    <pre>
+--- Demonstrating the nextLine() Trap ---
+Enter your favorite number: <b>7</b>
+Enter your favorite color: 
+(You don't get a chance to type the color here!)
+
+Your favorite number is: 7
+Your favorite color is: 
+</pre>
+                </div>
+
+                <h4>Solution to the `nextLine()` Trap</h4>
+                <p>To fix this, you need to "consume" or "eat" the leftover newline character after calling `nextInt()`,
+                    `nextDouble()`, etc., but *before* calling `nextLine()`. You do this by adding an extra
+                    `scanner.nextLine();` call immediately after the numeric/boolean input.</p>
+
+                <pre><code>
+import java.util.Scanner;
+
+public class NextLineTrapSolution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("--- Solving the nextLine() Trap ---");
+
+        System.out.print("Enter your favorite number: ");
+        int favoriteNumber = scanner.nextInt();
+
+        // SOLUTION: Add an extra nextLine() to consume the leftover newline character
+        scanner.nextLine(); // <--- THIS IS THE FIX!
+
+        System.out.print("Enter your favorite color: ");
+        String favoriteColor = scanner.nextLine(); // Now this will correctly wait for your input
+
+        System.out.println("\nYour favorite number is: " + favoriteNumber);
+        System.out.println("Your favorite color is: " + favoriteColor);
+
+        scanner.close();
+    }
+}
+    </code></pre>
+                <div class="output-box">
+                    <b>Example Interaction (User Input is Bold):</b>
+                    <pre>
+--- Solving the nextLine() Trap ---
+Enter your favorite number: <b>7</b>
+Enter your favorite color: <b>Blue</b>
+
+Your favorite number is: 7
+Your favorite color is: Blue</pre>
+                </div>
+
+                <h4>More Useful `Scanner` Methods</h4>
+                <p>The `Scanner` class is quite versatile and can be used to obtain data not just from the keyboard, but
+                    also from files and strings. This table provides a comprehensive list of its useful methods,
+                    including those for reading various data types (`nextXxx()`) and methods like `hasNextXxx()` which
+                    are very helpful for validating input before attempting to read it.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Description</th>
+                            <th>Return Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>close()</code></td>
+                            <td>Closes the scanner object and releases any associated system resources.</td>
+                            <td>`void`</td>
+                        </tr>
+                        <tr>
+                            <td><code>delimiter()</code></td>
+                            <td>Returns the `Pattern` this `Scanner` is currently using to separate tokens.</td>
+                            <td>`Pattern`</td>
+                        </tr>
+                        <tr>
+                            <td><code>findInLine(String pattern)</code></td>
+                            <td>Attempts to find the next occurrence of the specified pattern ignoring delimiters.</td>
+                            <td>`String`</td>
+                        </tr>
+                        <tr>
+                            <td><code>findWithinHorizon(String pattern, int horizon)</code></td>
+                            <td>Attempts to find the next occurrence of the specified pattern within the specified
+                                search horizon.</td>
+                            <td>`String`</td>
+                        </tr>
+                        <tr>
+                            <td><code>hasNext()</code></td>
+                            <td>Returns `true` if this scanner has another token in its input.</td>
+                            <td>`boolean`</td>
+                        </tr>
+                        <tr>
+                            <td><code>hasNextBoolean()</code></td>
+                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a boolean
+                                value.</td>
+                            <td>`boolean`</td>
+                        </tr>
+                        <tr>
+                            <td><code>hasNextByte()</code></td>
+                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a `byte`
+                                value.</td>
+                            <td>`boolean`</td>
+                        </tr>
+                        <tr>
+                            <td><code>hasNextDouble()</code></td>
+                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a
+                                `double` value.</td>
+                            <td>`boolean`</td>
+                        </tr>
+                        <tr>
+                            <td><code>hasNextFloat()</code></td>
+                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a `float`
+                                value.</td>
+                            <td>`boolean`</td>
+                        </tr>
+                        <tr>
+                            <td><code>hasNextInt()</code></td>
+                            <td>Returns `true` if the next token in this scanner's input can be interpreted as an `int`
+                                value.</td>
+                            <td>`boolean`</td>
+                        </tr>
+                        <tr>
+                            <td><code>hasNextLine()</code></td>
+                            <td>Returns `true` if there is another line in the input of this scanner.</td>
+                            <td>`boolean`</td>
+                        </tr>
+                        <tr>
+                            <td><code>hasNextLong()</code></td>
+                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a `long`
+                                value.</td>
+                            <td>`boolean`</td>
+                        </tr>
+                        <tr>
+                            <td><code>hasNextShort()</code></td>
+                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a `short`
+                                value.</td>
+                            <td>`boolean`</td>
+                        </tr>
+                        <tr>
+                            <td><code>locale()</code></td>
+                            <td>Returns the locale currently being used by this scanner.</td>
+                            <td>`Locale`</td>
+                        </tr>
+                        <tr>
+                            <td><code>next()</code></td>
+                            <td>Finds and returns the next complete token from this scanner.</td>
+                            <td>`String`</td>
+                        </tr>
+                        <tr>
+                            <td><code>nextBoolean()</code></td>
+                            <td>Scans the next token of the input as a `boolean`.</td>
+                            <td>`boolean`</td>
+                        </tr>
+                        <tr>
+                            <td><code>nextByte()</code></td>
+                            <td>Scans the next token of the input as a `byte`.</td>
+                            <td>`byte`</td>
+                        </tr>
+                        <tr>
+                            <td><code>nextDouble()</code></td>
+                            <td>Scans the next token of the input as a `double`.</td>
+                            <td>`double`</td>
+                        </tr>
+                        <tr>
+                            <td><code>nextFloat()</code></td>
+                            <td>Scans the next token of the input as a `float`.</td>
+                            <td>`float`</td>
+                        </tr>
+                        <tr>
+                            <td><code>nextInt()</code></td>
+                            <td>Scans the next token of the input as an `int`.</td>
+                            <td>`int`</td>
+                        </tr>
+                        <tr>
+                            <td><code>nextLine()</code></td>
+                            <td>Advances this scanner past the current line and returns the input that was skipped.</td>
+                            <td>`String`</td>
+                        </tr>
+                        <tr>
+                            <td><code>nextLong()</code></td>
+                            <td>Scans the next token of the input as a `long`.</td>
+                            <td>`long`</td>
+                        </tr>
+                        <tr>
+                            <td><code>nextShort()</code></td>
+                            <td>Scans the next token of the input as a `short`.</td>
+                            <td>`short`</td>
+                        </tr>
+                        <tr>
+                            <td><code>radix()</code></td>
+                            <td>Returns the default radix for this scanner.</td>
+                            <td>`int`</td>
+                        </tr>
+                        <tr>
+                            <td><code>reset()</code></td>
+                            <td>Resets this scanner. Discarding any state, such as a delimiter, locale, or radix.</td>
+                            <td>`Scanner`</td>
+                        </tr>
+                        <tr>
+                            <td><code>useDelimiter(String pattern)</code></td>
+                            <td>Sets this scanner's delimiting pattern.</td>
+                            <td>`Scanner`</td>
+                        </tr>
+                        <tr>
+                            <td><code>useLocale(Locale locale)</code></td>
+                            <td>Sets this scanner's locale.</td>
+                            <td>`Scanner`</td>
+                        </tr>
+                        <tr>
+                            <td><code>useRadix(int radix)</code></td>
+                            <td>Sets this scanner's default radix.</td>
+                            <td>`Scanner`</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Closing the `Scanner` (Important Nuance)</h4>
+                <p>It's crucial to call `scanner.close()` when you are finished reading input from a `Scanner` that is
+                    connected to a file or a network stream. This releases the underlying system resources associated
+                    with that stream. However, there's a special consideration for `Scanner` objects connected to
+                    `System.in`:</p>
+                <ul>
+                    <li>
+                        <b>For `Scanner` with `System.in`:</b>
+                        <p>Closing `scanner` connected to `System.in` also closes `System.in` itself. Since `System.in`
+                            is a shared, global resource for your entire Java application, closing it in one part of
+                            your code might prevent other parts (or other classes) from being able to read from the
+                            keyboard later. In simple, single-threaded command-line programs, `scanner.close()` for
+                            `System.in` is often done and is generally harmless. But in more complex applications, it's
+                            safer to avoid closing `Scanner` connected to `System.in`, letting the JVM manage its
+                            lifecycle when the program exits.</p>
+                    </li>
+                    <li>
+                        <b>For `Scanner` with Files/Other Streams:</b>
+                        <p><b>Always close these `Scanner` objects!</b> The best practice is to use a
+                            `try-with-resources` statement, which automatically closes the scanner (and the underlying
+                            file stream) for you, even if errors occur. This prevents resource leaks.</p>
+                        <pre><code>
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FileScannerExample {
+    public static void main(String[] args) {
+        // Example for file reading, where try-with-resources is essential
+        try (Scanner fileScanner = new Scanner(new File("example.txt"))) {
+            // This code will read from example.txt
+            while (fileScanner.hasNextLine()) {
+                System.out.println(fileScanner.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + e.getMessage());
+        }
+        // fileScanner is automatically closed here!
+    }
+}
+            </code></pre>
+                    </li>
+                </ul>
+
+                <h4>Handling Invalid Input (Error Handling)</h4>
+                <p>As mentioned, if the user types "hello" when your program expects an integer, methods like
+                    `nextInt()` will throw an `<b>InputMismatchException</b>`. To make your program robust, you should
+                    use a `try-catch` block to handle this, often combined with `hasNextXxx()` methods to check if the
+                    next token matches the expected type before trying to read it.</p>
+
+                <pre><code>
+import java.util.InputMismatchException; // Don't forget this import!
+import java.util.Scanner;
+
+public class InputErrorHandling {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int age = 0;
+        boolean validInput = false;
+
+        System.out.println("--- Robust Age Input ---");
+
+        while (!validInput) {
+            System.out.print("Please enter your age (a whole number): ");
+            try {
+                age = scanner.nextInt(); // Try to read an integer
+                validInput = true; // If successful, set flag to true to exit loop
+            } catch (InputMismatchException e) {
+                // If the user enters something that's not an int
+                System.out.println("Invalid input! Please enter a number.");
+                scanner.nextLine(); // IMPORTANT: Consume the invalid input line to prevent infinite loop
+            }
+        }
+
+        System.out.println("Your age is: " + age);
+        scanner.close();
+        System.out.println("--- Program Finished ---");
+    }
+}
+    </code></pre>
+                <div class="output-box">
+                    <b>Example Interaction (User Input is Bold):</b>
+                    <pre>
+--- Robust Age Input ---
+Please enter your age (a whole number): <b>abc</b>
+Invalid input! Please enter a number.
+Please enter your age (a whole number): <b>twenty</b>
+Invalid input! Please enter a number.
+Please enter your age (a whole number): <b>25</b>
+Your age is: 25
+--- Program Finished ---</pre>
+                </div>
+
+                <p>By understanding these concepts, especially the `nextLine()` trap and basic error handling, you'll be
+                    well-equipped to write interactive Java programs that gracefully handle user input.</p>
+
+
             </section>
 
             <section class="main-section" id="module2_oops">
@@ -3365,8 +5515,11 @@ class ProductController {
 
                 <h3>Packages</h3>
                 <ul>
-                    <li><strong>Rule:</strong> All <b>lowercase</b> letters. If multiple words are used, they are separated by
-                        <b>dots</b>. It's common practice to use <b>reverse</b> domain name notation to ensure uniqueness.</li>
+                    <li><strong>Rule:</strong> All <b>lowercase</b> letters. If multiple words are used, they are
+                        separated by
+                        <b>dots</b>. It's common practice to use <b>reverse</b> domain name notation to ensure
+                        uniqueness.
+                    </li>
                     <li><strong>Examples:</strong></li>
                     <div>
                         <code>java.lang</code>
@@ -3377,8 +5530,10 @@ class ProductController {
 
                 <h3>Classes</h3>
                 <ul>
-                    <li><strong>Rule:</strong> Nouns, in <b><q>Upper Camel Case</q></b> (also known as <b>PascalCase</b>). The <b>first letter</b>
-                        of each word is <b>capitalized</b>. Should be descriptive.</li>
+                    <li><strong>Rule:</strong> Nouns, in <b><q>Upper Camel Case</q></b> (also known as
+                        <b>PascalCase</b>). The <b>first letter</b>
+                        of each word is <b>capitalized</b>. Should be descriptive.
+                    </li>
                     <li><strong>Examples:</strong></li>
                     <div>
                         <code>String</code>
@@ -3390,7 +5545,8 @@ class ProductController {
 
                 <h3>Interfaces</h3>
                 <ul>
-                    <li><strong>Rule:</strong> Capitalized <b>like class names</b> <b>(Upper Camel Case)</b>. Often describe a
+                    <li><strong>Rule:</strong> Capitalized <b>like class names</b> <b>(Upper Camel Case)</b>. Often
+                        describe a
                         capability or a contract.</li>
                     <li><strong>Examples:</strong></li>
                     <div>
@@ -3403,8 +5559,9 @@ class ProductController {
 
                 <h3>Methods</h3>
                 <ul>
-                    <li><strong>Rule:</strong> Verbs, in <b>"lower Camel Case"</b> (also known as <b>mixed case</b>). The <b>first letter
-                        is lowercase</b>, and the first letter of <b>subsequent words is capitalized</b>.</li>
+                    <li><strong>Rule:</strong> Verbs, in <b>"lower Camel Case"</b> (also known as <b>mixed case</b>).
+                        The <b>first letter
+                            is lowercase</b>, and the first letter of <b>subsequent words is capitalized</b>.</li>
                     <li><strong>Examples:</strong></li>
                     <div class="example">
                         <code>main()</code>
@@ -3416,8 +5573,10 @@ class ProductController {
 
                 <h3>Variables</h3>
                 <ul>
-                    <li><strong>Rule:</strong> In <b>lower Camel Case</b>. Should be short yet meaningful, reflecting their
-                        purpose. <b>Avoid</b> starting with <mark>_</mark> or <mark>$</mark> (<b>though allowed</b>, it's not standard
+                    <li><strong>Rule:</strong> In <b>lower Camel Case</b>. Should be short yet meaningful, reflecting
+                        their
+                        purpose. <b>Avoid</b> starting with <mark>_</mark> or <mark>$</mark> (<b>though allowed</b>,
+                        it's not standard
                         practice).</li>
                     <li><strong>Examples:</strong></li>
                     <div>
@@ -3428,8 +5587,10 @@ class ProductController {
                     </div>
                     <li><strong>Temporary variables:</strong> For short-lived, temporary variables (e.g., loop
                         counters), single-character names are sometimes acceptable (e.g., <mark>i</mark> ,
-                        <mark>j</mark> , <mark>k</mark> for <b>integers</b>; <mark>c</mark> , <mark>d</mark> , <mark>e</mark> for
-                        <b>characters</b>).</li>
+                        <mark>j</mark> , <mark>k</mark> for <b>integers</b>; <mark>c</mark> , <mark>d</mark> ,
+                        <mark>e</mark> for
+                        <b>characters</b>).
+                    </li>
                 </ul>
 
                 <h3>Constants (static final fields)</h3>
@@ -3449,7 +5610,7 @@ class ProductController {
                 <ul>
                     <li><strong>Enum Type:</strong> <b>Upper Camel Case (like classes)</b>.</li>
                     <li><strong>Enum Constants:</strong> All uppercase with words separated by underscores <b>(like
-                        constants)</b>.</li>
+                            constants)</b>.</li>
                     <li><strong>Example:</strong></li>
                     <div>
                         <pre><code>enum DayOfWeek {
@@ -3565,17 +5726,19 @@ Duration duration = Duration.between(start, end);
             </section>
 
             <!-- Java 17 Features Section -->
-<section class="main-section" id="java17_features">
-    <header>
-        <h2>Java 17 Features</h2>
-    </header>
-    <p>Java 17 is a Long Term Support (LTS) release that introduced significant enhancements and new features. Released in September 2021, it focuses on performance improvements, security enhancements, and developer productivity.</p>
+            <section class="main-section" id="java17_features">
+                <header>
+                    <h2>Java 17 Features</h2>
+                </header>
+                <p>Java 17 is a Long Term Support (LTS) release that introduced significant enhancements and new
+                    features. Released in September 2021, it focuses on performance improvements, security enhancements,
+                    and developer productivity.</p>
 
-    <div class="module-grid">
-        <div class="module-card">
-            <h3>Sealed Classes</h3>
-            <p>Control which classes can extend or implement your classes and interfaces.</p>
-            <pre><code>
+                <div class="module-grid">
+                    <div class="module-card">
+                        <h3>Sealed Classes</h3>
+                        <p>Control which classes can extend or implement your classes and interfaces.</p>
+                        <pre><code>
 public sealed class Shape
     permits Circle, Rectangle, Triangle {
 }
@@ -3588,12 +5751,12 @@ public final class Rectangle extends Shape {
     private final double width, height;
 }
             </code></pre>
-        </div>
+                    </div>
 
-        <div class="module-card">
-            <h3>Pattern Matching for instanceof</h3>
-            <p>Eliminate the need for explicit casting after instanceof checks.</p>
-            <pre><code>
+                    <div class="module-card">
+                        <h3>Pattern Matching for instanceof</h3>
+                        <p>Eliminate the need for explicit casting after instanceof checks.</p>
+                        <pre><code>
 // Traditional approach
 if (obj instanceof String) {
     String s = (String) obj;
@@ -3605,53 +5768,13 @@ if (obj instanceof String s) {
     System.out.println(s.toUpperCase());
 }
             </code></pre>
-        </div>
+                    </div>
 
-        <div class="module-card">
-            <h3>Records</h3>
-            <p>Create immutable data classes with minimal boilerplate code.</p>
-            <pre><code>
-public record Person(String name, int age) {}
-
-// Usage
-Person person = new Person("John", 25);
-System.out.println(person.name()); // John
-System.out.println(person.age());  // 25
-            </code></pre>
-        </div>
-
-        <div class="module-card">
-            <h3>Text Blocks</h3>
-            <p>Multi-line string literals that preserve formatting and improve readability.</p>
-            <pre><code>
-String json = """
-    {
-        "name": "John Doe",
-        "age": 30,
-        "city": "New York"
-    }
-    """;
-            </code></pre>
-        </div>
-
-        <div class="module-card">
-            <h3>Switch Expressions</h3>
-            <p>Enhanced switch statements with expression syntax and yield keyword.</p>
-            <pre><code>
-String result = switch (day) {
-    case MONDAY, FRIDAY, SUNDAY -> "6";
-    case TUESDAY -> "7";
-    case THURSDAY, SATURDAY -> "8";
-    case WEDNESDAY -> "9";
-    default -> throw new IllegalStateException();
-};
-            </code></pre>
-        </div>
-
-        <div class="module-card">
-            <h3>Context-Specific Deserialization Filters</h3>
-            <p>Enhanced security with context-specific deserialization filters to prevent security vulnerabilities.</p>
-            <pre><code>
+                    <div class="module-card">
+                        <h3>Context-Specific Deserialization Filters</h3>
+                        <p>Enhanced security with context-specific deserialization filters to prevent security
+                            vulnerabilities.</p>
+                        <pre><code>
 // Configure deserialization filter
 ObjectInputStream.setObjectInputFilter(
     ObjectInputFilter.Config.createFilter(
@@ -3668,22 +5791,112 @@ ois.setObjectInputFilter(info -> {
     return ObjectInputFilter.Status.REJECTED;
 });
             </code></pre>
-        </div>
-    </div>
-</section>
+                    </div>
 
-<!-- Java 21 Features Section -->
-<section class="main-section" id="java21_features">
-    <header>
-        <h2>Java 21 Features</h2>
-    </header>
-    <p>Java 21 is the latest Long Term Support (LTS) release that brings cutting-edge features and performance improvements. Released in September 2023, it introduces virtual threads, pattern matching enhancements, sequenced collections, and many other developer-friendly features.</p>
+                    <div class="module-card">
+                        <h3>Records</h3>
+                        <p>Create immutable data classes with minimal boilerplate code.</p>
+                        <pre><code>
+public record Person(String name, int age) {}
 
-    <div class="module-grid">
-        <div class="module-card">
-            <h3>Virtual Threads</h3>
-            <p>Lightweight threads that dramatically improve concurrent programming scalability.</p>
-            <pre><code>
+// Usage
+Person person = new Person("John", 25);
+System.out.println(person.name()); // John
+System.out.println(person.age());  // 25
+            </code></pre>
+                    </div>
+
+                    <div class="module-card">
+                        <h3>Text Blocks</h3>
+                        <p>Multi-line string literals that preserve formatting and improve readability.</p>
+                        <pre><code>
+String json = """
+    {
+        "name": "John Doe",
+        "age": 30,
+        "city": "New York"
+    }
+    """;
+            </code></pre>
+                    </div>
+
+                    <div class="module-card">
+                        <h3>Switch Expressions</h3>
+                        <p>Enhanced switch statements with expression syntax and yield keyword.</p>
+                        <pre><code>
+String result = switch (day) {
+    case MONDAY, FRIDAY, SUNDAY -> "6";
+    case TUESDAY -> "7";
+    case THURSDAY, SATURDAY -> "8";
+    case WEDNESDAY -> "9";
+    default -> throw new IllegalStateException();
+};
+            </code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Java 21 Features Section -->
+            <section class="main-section" id="java21_features">
+                <header>
+                    <h2>Java 21 Features</h2>
+                </header>
+                <p>Java 21 is the latest Long Term Support (LTS) release that brings cutting-edge features and
+                    performance improvements. Released in September 2023, it introduces virtual threads, pattern
+                    matching enhancements, sequenced collections, and many other developer-friendly features.</p>
+
+                <div class="module-grid">
+
+                    <div class="module-card">
+                        <h3>Pattern Matching for Switch</h3>
+                        <p>Enhanced switch expressions with pattern matching capabilities.</p>
+                        <pre><code>
+String result = switch (obj) {
+    case Integer i -> "Integer: " + i;
+    case String s when s.length() > 5 -> "Long string: " + s;
+    case String s -> "Short string: " + s;
+    case null -> "null value";
+    default -> "Unknown type";
+};
+            </code></pre>
+                    </div>
+
+                    <div class="module-card">
+                        <h3>Record Patterns</h3>
+                        <p>Destructure record values in pattern matching contexts.</p>
+                        <pre><code>
+record Point(int x, int y) {}
+
+// Pattern matching with records
+static String describe(Object obj) {
+    return switch (obj) {
+        case Point(var x, var y) -> "Point[" + x + ", " + y + "]";
+        case null -> "null";
+        default -> "Unknown";
+    };
+}
+            </code></pre>
+                    </div>
+
+                    <div class="module-card">
+                        <h3>Sequenced Collections</h3>
+                        <p>New interfaces for collections with defined encounter order.</p>
+                        <pre><code>
+List&lt;String&gt; list = new ArrayList&lt;&gt;();
+list.addFirst("first");
+list.addLast("last");
+
+String first = list.getFirst();
+String last = list.getLast();
+
+list.reversed().forEach(System.out::println);
+            </code></pre>
+                    </div>
+
+                    <div class="module-card">
+                        <h3>Virtual Threads</h3>
+                        <p>Lightweight threads that dramatically improve concurrent programming scalability.</p>
+                        <pre><code>
 // Creating virtual threads
 try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
     IntStream.range(0, 10_000).forEach(i -> {
@@ -3704,58 +5917,16 @@ Thread vThread = Thread.ofVirtual().start(() -> {
     System.out.println("Running in virtual thread");
 });
             </code></pre>
-        </div>
+                    </div>
 
-        <div class="module-card">
-            <h3>Pattern Matching for Switch</h3>
-            <p>Enhanced switch expressions with pattern matching capabilities.</p>
-            <pre><code>
-String result = switch (obj) {
-    case Integer i -> "Integer: " + i;
-    case String s when s.length() > 5 -> "Long string: " + s;
-    case String s -> "Short string: " + s;
-    case null -> "null value";
-    default -> "Unknown type";
-};
-            </code></pre>
-        </div>
 
-        <div class="module-card">
-            <h3>Record Patterns</h3>
-            <p>Destructure record values in pattern matching contexts.</p>
-            <pre><code>
-record Point(int x, int y) {}
-
-// Pattern matching with records
-static String describe(Object obj) {
-    return switch (obj) {
-        case Point(var x, var y) -> "Point[" + x + ", " + y + "]";
-        case null -> "null";
-        default -> "Unknown";
-    };
-}
-            </code></pre>
-        </div>
-
-        <div class="module-card">
-            <h3>Sequenced Collections</h3>
-            <p>New interfaces for collections with defined encounter order.</p>
-            <pre><code>
-List&lt;String&gt; list = new ArrayList&lt;&gt;();
-list.addFirst("first");
-list.addLast("last");
-
-String first = list.getFirst();
-String last = list.getLast();
-
-list.reversed().forEach(System.out::println);
-            </code></pre>
-        </div>
-
-        <div class="module-card">
-            <h3>Sealed Classes Enhancement</h3>
-            <p>Java 21 sealed classes will change your domain modeling. Game-changing integration with pattern matching that revolutionizes how you model business domains. While Java 17 introduced sealed classes, Java 21 makes them truly powerful with exhaustive pattern matching and record destructuring.</p>
-            <pre><code>
+                    <div class="module-card">
+                        <h3>Sealed Classes Enhancement</h3>
+                        <p>Java 21 sealed classes will change your domain modeling. Game-changing integration with
+                            pattern matching that revolutionizes how you model business domains. While Java 17
+                            introduced sealed classes, Java 21 makes them truly powerful with exhaustive pattern
+                            matching and record destructuring.</p>
+                        <pre><code>
 public sealed interface Result&lt;T&gt;
     permits Success, Error {
 }
@@ -3772,12 +5943,12 @@ String process(Result&lt;String&gt; result) {
     };
 }
             </code></pre>
-        </div>
+                    </div>
 
-        <div class="module-card">
-            <h3>Unnamed Patterns and Variables</h3>
-            <p>Use underscore (_) for unused variables and patterns to improve code readability.</p>
-            <pre><code>
+                    <div class="module-card">
+                        <h3>Unnamed Patterns and Variables</h3>
+                        <p>Use underscore (_) for unused variables and patterns to improve code readability.</p>
+                        <pre><code>
 // Unnamed variables in lambda expressions
 map.forEach((_, value) -> System.out.println(value));
 
@@ -3797,9 +5968,9 @@ try {
     handleError();
 }
             </code></pre>
-        </div>
-    </div>
-</section>
+                    </div>
+                </div>
+            </section>
 
             <section class="main-section" id="dsa_concepts">
                 <header>
