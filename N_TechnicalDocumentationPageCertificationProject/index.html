@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="menu-toggle-label">☰</label>
 
     <div class="container">
         <nav id="navbar">
@@ -20,7 +21,29 @@
             <ul>
                 <li><a class="nav-link" href="#java_introduction">Java Introduction</a></li>
                 <li><a class="nav-link" href="#java_history">Java History</a></li>
-                <li><a class="nav-link" href="#module1_core_java">Module I: Core Java</a></li>
+                <li>
+                    <details class="dropdown">
+                        <summary>
+                            Module I: Core Java
+                            <span class="fa-caret-down">▼</span>
+                        </summary>
+                      
+                            <!-- <a class="nav-link module-toggle" href="#module1_core_java">Module I: Core Java <span class="fa-caret-down">▼</span></a> -->
+                            <a class="nav-link" href="#module1_core_java">Variables</a>
+                            <a class="nav-link" href="#core_java_data_types">Data Types</a>
+                            <a class="nav-link" href="#core_java_operators">Operators</a>
+                            <a class="nav-link" href="#core_java_conditional_statements">Conditional Statements</a>
+                            <a class="nav-link" href="#core_java_looping_statements">Looping Statements</a>
+                            <a class="nav-link" href="#core_java_methods">Methods</a>
+                            <a class="nav-link" href="#core_java_arrays">Arrays</a>
+                            <a class="nav-link" href="#core_java_strings">String & String Methods</a>
+                            <a class="nav-link" href="#core_java_math">Math & Math Methods</a>
+                            <a class="nav-link" href="#core_java_datetime">Date & Time</a>
+                            <a class="nav-link" href="#core_java_exception_handling">Exception Handling</a>
+                            <a class="nav-link" href="#core_java_files">File Operations</a>
+                            <a class="nav-link" href="#core_java_user_input">User Input</a>
+                    </details>
+                </li>
                 <li><a class="nav-link" href="#module2_oops">Module II: OOPs</a></li>
                 <li><a class="nav-link" href="#module3_collections">Module III: Collections</a></li>
                 <li><a class="nav-link" href="#module4_gui">Module IV: GUI</a></li>
@@ -503,7 +526,7 @@ Hello, World!
                 </header>
 
                 <h3>1. Variables, Data Types & Operators</h3>
-                <h4>Variables:</h4>
+                <h3 id="core_java_variables">I. Variables:</h3>
                 <p><strong>Variables</strong> are named memory locations that act as containers for storing data values.
                     In Java, a <b>strongly typed language</b>, every variable must be explicitly declared with a
                     specific
@@ -555,7 +578,7 @@ Hello, World!
                     <li>employeeId</li>
                 </ul>
 
-                <h4>Data Types:</h4>
+                <h3 id="core_java_data_types">II. Data Types:</h3>
                 <p>Java's data types are categorized into two main groups:</p>
                 <ul>
                     <li>
@@ -616,7 +639,7 @@ Hello, World!
                     </li>
                 </ul>
 
-                <h4>Operators:</h4>
+                <h3 id="core_java_operators">III. Operators:</h3>
                 <p>Operators are special symbols used to perform operations on variables and values. They are
                     categorized based on the type of operation they perform:</p>
                 <ul>
@@ -717,7 +740,7 @@ String status = (age >= 18) ? "Adult" : "Minor"; // status = "Adult"
 
                 <hr>
 
-                <h3>2. Conditional Statements</h3>
+                <h3 id="core_java_conditional_statements">2. Conditional Statements</h3>
                 <p><strong>Conditional statements</strong> (also known as <b>control flow statements</b>) are
                     fundamental programming constructs that allow you to control the <b>flow of program execution</b>
                     based on whether a specified condition evaluates to <mark>true</mark> or <mark>false</mark>. They
@@ -953,7 +976,8 @@ for (int i = 1; i <= 5; i++) {
     </code></pre>
 
                 <hr>
-                <h3>3. Looping Statements</h3>
+
+                <h3 id="core_java_looping_statements">3. Looping Statements</h3>
                 <p><strong>Looping statements</strong> (also known as <b>iteration statements or repetition
                         statements</b>) are
                     fundamental control flow constructs that allow a block of code to be **repeatedly executed** as long
@@ -1308,7 +1332,7 @@ public class AlphabetTriangle {
 
                 <hr>
 
-                <h3>4. Functions (Methods)</h3>
+                <h3 id="core_java_methods">4. Methods (Functions)</h3>
 
                 <p>Imagine you have a specific task you do over and over again, like making a cup of coffee. Instead of
                     writing down all the steps ("get mug," "add coffee," "add hot water") every single time you want
@@ -1591,7 +1615,7 @@ public class MyProgram {
 
                 <hr>
 
-                <h3>5. Arrays</h3>
+                <h3 id="core_java_arrays">5. Arrays</h3>
 
                 <p>Imagine you've got a list of similar things, like student grades or daily temperatures. Instead of
                     creating a separate variable for each one (like `grade1`, `grade2`, `tempMonday`, `tempTuesday`),
@@ -1803,29 +1827,29 @@ public class ArrayExamples {
                 <hr>
 
 
-                <h3>6. String & String Methods</h3>
-                <p>In Java, the <code>String</code> class is a fundamental building block for handling sequences of
+                <h3 id="core_java_strings">6. String & String Methods</h3>
+                <p>In Java, the <mark>String</mark> class is a fundamental building block for handling sequences of
                     characters, essentially representing text data. It's one of the most frequently used classes in Java
                     programming, vital for everything from user input and messages to complex data structures like JSON
                     or XML. Java provides a rich set of built-in methods to manipulate, analyze, and combine these text
                     sequences efficiently.</p>
 
-                <div class="highlight">
-                    <p><strong>A Fundamental Characteristic: Java Strings are Immutable</strong></p>
-                    <p>This is a cornerstone concept: once a <code>String</code> object is created, its content cannot
+                <h4>A Fundamental Characteristic: Java Strings are Immutable</h4>
+                    <p>This is a cornerstone concept: once a <mark>String</mark> object is created, its content cannot
                         be changed. Any operation that seems to modify a string (like converting to uppercase or
                         replacing characters) doesn't alter the original string. Instead, it creates a <b>brand-new
-                            <code>String</code> object</b> containing the result, leaving the original string untouched
+                            <mark>String</mark> object</b> containing the result, leaving the original string untouched
                         in memory. This immutability offers significant benefits in terms of safety (especially in
                         multi-threaded environments, as their state never changes) and efficiency (their hash code can
-                        be cached, making them excellent keys in hash-based collections like <code>HashMap</code>).</p>
-                </div>
+                        be cached, making them excellent keys in hash-based collections like <mark>HashMap</mark>).
+                    </p>
+                
 
                 <pre><code>
 String str = "Hello World"; // 'str' is a String variable holding the text "Hello World"
 
 // Common String methods: Essential tools for text manipulation
-// (Refer to: https://www.w3schools.com/java/java_strings.asp)
+
 int length = str.length();               // Returns the number of characters in the string.
 String upper = str.toUpperCase();        // Converts all characters in the string to uppercase.
 String lower = str.toLowerCase();        // Converts all characters in the string to lowercase.
@@ -1840,7 +1864,7 @@ String replaced = str.replace("World", "Java"); // Replaces all occurrences of t
                     comprehensive understanding.</p>
 
                 <div class="concept-box">
-                    <h4>String Concatenation: Joining Text Together</h4>
+                    <h4>1. String Concatenation: Joining Text Together</h4>
                     <p>Concatenation is the process of combining two or more strings into a single string. Java offers
                         several ways to do this, each with its own advantages.</p>
                     <p>(Refer to: <a href="https://www.w3schools.com/java/java_strings_concat.asp"
@@ -2167,10 +2191,9 @@ System.out.println("Final String from StringBuilder: " + finalResult);
                 <p>By understanding these nuances and leveraging the appropriate class for your needs, you can write
                     more efficient, robust, and readable Java code for string manipulation.</p>
 
+                <hr>
 
-
-
-                <h3>7. Math Methods</h3>
+                <h3 id="core_java_math">7. Math & Math Methods</h3>
                 <p>In Java, the <code>java.lang.Math</code> class provides a comprehensive set of static methods for
                     performing common mathematical operations. You don't need to create an object of the
                     <code>Math</code> class to use its methods; you can directly call them using the class name itself
@@ -2439,7 +2462,9 @@ System.out.println("log10(100) = " + Math.log10(100)); // Output: log10(100) = 2
                 <p>By leveraging the rich set of methods available in the `Math` class, you can perform a wide range of
                     mathematical computations directly and efficiently in your Java applications.</p>
 
-                <h3>8. Date & Time</h3>
+                <hr>
+
+                <h3 id="core_java_datetime">8. Date & Time</h3>
                 <p>Prior to Java 8, handling dates and times in Java was often cumbersome and prone to errors, primarily
                     due to the design flaws in the older <code>java.util.Date</code> and <code>java.util.Calendar</code>
                     classes. The introduction of the new Date and Time API (JSR 310) in Java 8, located in the
@@ -2639,7 +2664,7 @@ System.out.println("Duration between times (hours): " + duration.toHours());   /
                 <p>By embracing the `java.time` package, Java developers can handle dates and times with greater
                     confidence, accuracy, and efficiency.</p>
 
-                <h3>9. Exception Handling</h3>
+                <h3 id="core_java_exception_handling">9. Exception Handling</h3>
                 <p>Exception handling is a crucial mechanism in Java (and other programming languages) that allows you
                     to manage runtime errors gracefully, preventing your program from crashing unexpectedly. When an
                     error occurs during program execution that disrupts its normal flow, an "exception" is said to have
@@ -3191,7 +3216,9 @@ Cleaned up greeting.txt.
 --- Program finished ---</pre>
                 </div>
 
-                <h3>10. File Operations</h3>
+                <hr>
+
+                <h3 id="core_java_files">10. File Operations</h3>
                 <p>File operations are fundamental in many applications, allowing programs to store, retrieve, and
                     manage persistent data. Java provides robust input/output (I/O) capabilities through its
                     <code>java.io</code> package and, more recently, enhanced capabilities with the
@@ -3585,7 +3612,9 @@ public class NIO2FileOperations {
                     is generally the preferred approach due to its modern design, robustness, and better error handling.
                 </p>
 
-                <h3>11. User Input</h3>
+                <hr>
+
+                <h3 id="core_java_user_input">11. User Input</h3>
                 <p>Many programs need to interact with the user, taking data or commands to perform their tasks. In
                     Java, the most common and beginner-friendly way to get input from the keyboard (the standard input
                     device) is by using the <code><b>Scanner</b></code> class.</p>

@@ -71,6 +71,69 @@
             transform: translateX(5px);
         }
 
+         /* Pure-CSS dropdown using <details> and <summary> */      
+
+        /* Remove default marker arrow */
+        details.dropdown summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details.dropdown summary::marker {
+            display: none;
+        }
+
+        details.dropdown summary {
+            padding: 12px 20px;
+            font-size: 16px;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        details.dropdown summary:hover {
+            background: linear-gradient(135deg, #4a90e2, #357abd);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        /* Caret icon rotates when open */
+        details.dropdown summary .fa-caret-down {
+            transition: transform 0.3s ease;
+            font-size: 0.9rem;
+            color: #333333ce;
+
+        }
+
+        details.dropdown[open] summary .fa-caret-down {
+            transform: rotate(180deg);
+        }
+
+        /* Items inside the dropdown */
+        details.dropdown a {
+            padding: 10px 30px;
+            font-size: 1rem;
+            color: #555;
+            border-bottom: 1px solid #ddd;
+            display: block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background: rgba(245, 245, 245, 0.9);
+            border-left: 3px solid #4a90e2;
+            border-right: 3px solid #4a90e2;
+            margin-left: 1rem;
+        }
+
+        details.dropdown a:hover {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            color: #2c3e50;
+            transform: translateX(3px);            
+        }
+
         /* Main Content */
         #main-doc {
             margin-left: 300px;
