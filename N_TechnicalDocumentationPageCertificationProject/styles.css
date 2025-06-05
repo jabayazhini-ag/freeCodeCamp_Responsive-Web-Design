@@ -258,7 +258,7 @@
 
         hr {
             border: 2px solid #4a90e2;
-            margin-top: 15px;
+            margin-top: 20px;
             margin-bottom: 15px;
         }
 
@@ -279,6 +279,54 @@
 
         .java_recommendations {
             margin-bottom: 2rem;
+        }
+
+        /* Table */
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* This will make borders touch, but we'll apply them to cells */
+            margin: 30px 0;             
+            border: 1px solid #ccc; /* Overall table border */
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            border-right: 1px solid #ddd; /* Vertical line for cells */
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #333;            
+        }
+
+        /* Remove border-right from the last column cells and headers */
+        th:last-child,
+        td:last-child {
+            border-right: none;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        td mark {
+            background-color: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: "Cascadia Code", "Fira Code", monospace;
+            white-space: nowrap; /* Prevents code examples from breaking across lines */
+        }
+
+        td:nth-child(2) {
+             text-align: justify;
         }
 
         /* Footer */
