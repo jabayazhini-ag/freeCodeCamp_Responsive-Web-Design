@@ -286,7 +286,7 @@
         table {
             width: 100%;
             border-collapse: collapse; /* This will make borders touch, but we'll apply them to cells */
-            margin: 30px 0;             
+            margin: 35px 0;             
             border: 1px solid #ccc; /* Overall table border */
         }
 
@@ -327,6 +327,10 @@
 
         td:nth-child(2) {
              text-align: justify;
+        }
+
+        .align {
+            text-align: justify;
         }
 
         /* Footer */

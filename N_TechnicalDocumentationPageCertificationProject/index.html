@@ -2672,11 +2672,11 @@ System.out.println("Duration between times (hours): " + duration.toHours());   /
                 <h3 id="core_java_exception_handling">9. Exception Handling</h3>
                 <p>Exception handling is a crucial mechanism in Java (and other programming languages) that allows you
                     to manage runtime errors gracefully, preventing your program from crashing unexpectedly. When an
-                    error occurs during program execution that disrupts its normal flow, an "exception" is said to have
+                    error occurs during program execution that disrupts its normal flow, an <q>exception</q> is said to have
                     occurred.</p>
 
-                <div class="highlight">
-                    <p><strong>Why is Exception Handling Important?</strong></p>
+                <div>
+                    <h4>Why is Exception Handling Important?</h4>
                     <ul>
                         <li><b>Graceful Degradation:</b> Instead of abrupt termination, your program can respond to
                             errors in a controlled way (e.g., logging the error, informing the user, attempting
@@ -2689,37 +2689,37 @@ System.out.println("Duration between times (hours): " + duration.toHours());   /
                 </div>
 
                 <h4>Exception Hierarchy</h4>
-                <p>All exceptions and errors in Java are subclasses of the <code><b>java.lang.Throwable</b></code>
+                <p>All exceptions and errors in Java are subclasses of the <mark><b>java.lang.Throwable</b></mark>
                     class. The hierarchy is broadly divided into two main branches:</p>
                 <ul>
-                    <li><code><b>Error</b></code>: Represents serious problems that applications should not try to
+                    <li><b><mark>Error</mark> :</b> Represents serious problems that applications should not try to
                         catch. These typically indicate external system problems (e.g., `OutOfMemoryError`,
                         `StackOverflowError`). You usually don't handle these.</li>
-                    <li><code><b>Exception</b></code>: Represents conditions that an application might want to catch and
+                    <li><b><mark>Exception</mark> :</b> Represents conditions that an application might want to catch and
                         handle. Most problems you encounter will be `Exception`s.
                         <ul>
-                            <li><code><b>RuntimeException</b></code> (Unchecked Exceptions): Subclasses of
-                                `RuntimeException`. These typically indicate programming bugs (e.g.,
-                                `NullPointerException` if you try to use something that is `null`, `ArithmeticException`
-                                like dividing by zero, `ArrayIndexOutOfBoundsException` if you try to access an array
-                                element that doesn't exist). The compiler does *not* force you to catch or declare them.
+                            <li><b>RuntimeException (Unchecked Exceptions):</b> Subclasses of
+                                <mark>`RuntimeException`</mark> . These typically indicate programming bugs (e.g.,
+                                <mark>`NullPointerException`</mark> if you try to use something that is <mark>`null`</mark> , <mark>`ArithmeticException`</mark>
+                                like dividing by zero, <mark>`ArrayIndexOutOfBoundsException`</mark> if you try to access an array
+                                element that doesn't exist). The compiler does <b>not</b> force you to catch or declare them.
                             </li>
-                            <li>Other `Exception` subclasses (Checked Exceptions): These are exceptions that the
-                                compiler *forces* you to either catch using a `try-catch` block or declare using the
-                                `throws` keyword in the method signature (e.g., `IOException` for file errors,
-                                `SQLException` for database errors). The compiler "checks" if you've handled them.</li>
+                            <li><b>Other `Exception` subclasses (Checked Exceptions) :</b> These are exceptions that the
+                                compiler <b>forces</b> you to either catch using a <b>`try-catch`</b> block or declare using the
+                                <mark>`throws`</mark> keyword in the method signature (e.g., <mark>`IOException`</mark> for file errors,
+                                <mark>`SQLException`</mark> for database errors). The compiler <b><q>checks</q></b> if you've handled them.</li>
                         </ul>
                     </li>
                 </ul>
 
-                <h4>1. The `try-catch-finally` Block</h4>
+                <h4>I. The `try-catch-finally` Block</h4>
                 <p>The `try-catch-finally` block is the fundamental way to handle exceptions. It lets you "try" some
                     code, "catch" any specific errors that happen, and run "finally" a cleanup part no matter what.</p>
                 <ul>
-                    <li><code><b>try</b></code>: Put the code that *might* cause an error here.</li>
-                    <li><code><b>catch</b></code>: If an error (exception) happens in the `try` block, Java jumps here.
+                    <li><mark><b>try</b></mark> : Put the code that <b>might</b> cause an error here.</li>
+                    <li><mark><b>catch</b></mark> : If an error (exception) happens in the `try` block, Java jumps here.
                         You specify what type of error to catch.</li>
-                    <li><code><b>finally</b></code>: This block runs *always*, whether an error happened or not. It's
+                    <li><mark><b>finally</b></mark> : This block runs <b>always</b>, whether an error happened or not. It's
                         useful for cleaning up, like closing files.</li>
                 </ul>
 
@@ -2762,9 +2762,11 @@ public class TryCatchFinallyExample {
     }
 }
     </code></pre>
-                <div class="output-box">
-                    <b>Output:</b>
-                    <pre>
+
+    
+                <div>
+                    <h4>Output:</h4>
+                   <pre><code>
 --- Start of Program ---
 Trying to divide 10 by 0...
 Oops! You tried to divide by zero!
@@ -2775,12 +2777,15 @@ Finished the division attempt.
 Trying to divide 20 by 4...
 Result is: 5
 Finished the second division attempt.
---- End of Program ---</pre>
+--- End of Program ---
+                    </pre></code>
                 </div>
 
-                <h4>2. Multiple `catch` Blocks</h4>
+           
+
+                <h4>II. Multiple `catch` Blocks</h4>
                 <p>Sometimes, different types of errors can happen in the same `try` block. You can use multiple `catch`
-                    blocks to handle each specific error differently. **Important:** Always put the most specific error
+                    blocks to handle each specific error differently. <b>Important:</b> Always put the most specific error
                     `catch` blocks first, and the most general (like `Exception`) last.</p>
 
                 <pre><code>
@@ -2840,9 +2845,9 @@ public class MultipleCatchExample {
     }
 }
     </code></pre>
-                <div class="output-box">
-                    <b>Output:</b>
-                    <pre>
+                <div>
+                    <h4>Output:</h4>
+                    <pre><code>
 --- Handling Multiple Error Types ---
 
 Attempting to access an invalid array index...
@@ -2860,16 +2865,17 @@ Error! Couldn't convert text to a whole number.
 Problem: For input string: "abc"
 End of string conversion attempt.
 
---- Program finished ---</pre>
+--- Program finished ---
+                    </code></pre>
                 </div>
 
-                <h4>3. `throw` Keyword (To Create and Send an Exception)</h4>
+                <h4>III. `throw` Keyword (To Create and Send an Exception)</h4>
                 <p>The `<b>throw</b>` statement allows you to create a custom error or send an existing error type. It's
-                    used when *your code* detects a problem and needs to immediately stop the normal flow and signal an
+                    used when <b>your code</b> detects a problem and needs to immediately stop the normal flow and signal an
                     error.</p>
-                <p>The `throw` statement is used together with an **exception type**. There are many exception types
-                    available in Java, both built-in ones like `ArithmeticException`, `FileNotFoundException`,
-                    `ArrayIndexOutOfBoundsException`, `NullPointerException`, `SecurityException`, and custom ones you
+                <p>The `throw` statement is used together with an <b>exception type</b>. There are many exception types
+                    available in Java, both <b>built-in ones</b> like <mark>`ArithmeticException`</mark> , <mark>`FileNotFoundException`</mark> ,
+                    <mark>`ArrayIndexOutOfBoundsException`</mark> , <mark>`NullPointerException`</mark> , <mark>`SecurityException`</mark> , and <b>custom ones</b> you
                     create.</p>
 
                 <pre><code>
@@ -2907,19 +2913,20 @@ public class ThrowKeywordExample {
     }
 }
     </code></pre>
-                <div class="output-box">
-                    <b>Output:</b>
-                    <pre>
+                <div>
+                    <h4>Output:</h4>
+                    <pre><code>
 --- Checking Ages ---
 Age 30 is valid.
 Validation Error: Age cannot be a negative number: -10
---- Finished Checking Ages ---</pre>
+--- Finished Checking Ages ---
+                    </code></pre>
                 </div>
 
-                <h4>4. `throws` Keyword (To Declare a Method Might Send an Exception)</h4>
+                <h4>IV. `throws` Keyword (To Declare a Method Might Send an Exception)</h4>
                 <p>The `<b>throws</b>` keyword is used in a method's signature (its declaration) to tell anyone who uses
-                    that method: "Hey, I might throw a **checked exception**, so you need to be ready to handle it or
-                    declare it yourself." The compiler will *force* you to deal with checked exceptions.</p>
+                    that method: "Hey, I might throw a <b>checked exception</b>, so you need to be ready to handle it or
+                    declare it yourself". The compiler will <b>force</b> you to deal with checked exceptions.</p>
 
                 <pre><code>
 import java.io.FileNotFoundException; // A common CHECKED exception
@@ -2964,19 +2971,20 @@ public class ThrowsKeywordExample {
     }
 }
     </code></pre>
-                <div class="output-box">
-                    <b>Output:</b>
-                    <pre>
+                <div>
+                    <h4>Output:</h4>
+                    <pre><code>
 --- File Operations ---
 Attempting to open file: my_document.txt
 File opened successfully (simulated).
 --------------------
 Attempting to open file: nonexistent.txt
 Caught an error for nonexistent.txt: Error: File 'nonexistent.txt' was not found!
---- File Operations Complete ---</pre>
+--- File Operations Complete ---
+                    </code></pre>
                 </div>
 
-                <h4>5. Difference Between `throw` and `throws`</h4>
+                <h4>Difference Between `throw` and `throws`</h4>
                 <p>While `throw` and `throws` sound similar, they serve very different purposes in Java exception
                     handling. Think of them as two distinct tools in your error management toolkit:</p>
 
@@ -2991,65 +2999,69 @@ Caught an error for nonexistent.txt: Error: File 'nonexistent.txt' was not found
                     <tbody>
                         <tr>
                             <td><b>Purpose</b></td>
-                            <td>Used to **explicitly raise (throw)** an exception. It's like saying, "An error just
+                            <td>Used to <b>explicitly raise (throw)</b> an exception. It's like saying, "An error just
                                 happened here!"</td>
-                            <td>Used in a method signature to **declare** that a method *might* throw one or more
-                                checked exceptions. It's like saying, "Warning: this method *could* cause an error of
+                            <td class="align">Used in a method signature to <b>declare</b> that a method <b>might</b> throw one or more
+                                checked exceptions. It's like saying, "Warning: this method <b>could</b> cause an error of
                                 this type!"</td>
                         </tr>
                         <tr>
                             <td><b>Usage</b></td>
-                            <td>Followed by an **instance (object)** of an exception.
-                                <br>Example: `throw new ArithmeticException("Cannot divide by zero");`
+                            <td>Followed by an <b>instance (object)</b> of an exception.
+                                <br><b>Example:</b> `throw new ArithmeticException("Cannot divide by zero");`
                             </td>
-                            <td>Followed by one or more **exception class names**.
-                                <br>Example: `public void readFile() throws IOException, InterruptedException`
+                            <td class="align">Followed by one or more <b>exception class names</b>.
+                                <br><b>Example:</b> `public void readFile() throws IOException, InterruptedException`
                             </td>
                         </tr>
                         <tr>
                             <td><b>Placement</b></td>
-                            <td>Used **inside** a method body, typically within an `if` condition or logic block.</td>
-                            <td>Used in the **method signature** (after the method parameters and before the curly
+                            <td>Used <b>inside</b> a method body, typically within an `if` condition or logic block.</td>
+                            <td class="align">Used in the <b>method signature</b> (after the method parameters and before the curly
                                 brace).</td>
                         </tr>
                         <tr>
                             <td><b>Quantity</b></td>
-                            <td>You can only `throw` **one** exception object at a time.</td>
-                            <td>You can `throws` **multiple** exception classes, separated by commas.</td>
+                            <td>You can only `throw` <b>one</b> exception object at a time.</td>
+                            <td class="align">You can `throws` <b>multiple</b> exception classes, separated by commas.</td>
                         </tr>
                         <tr>
                             <td><b>Flow</b></td>
                             <td>Immediately stops the normal execution flow and transfers control to the nearest `catch`
                                 block.</td>
-                            <td>Does not stop the flow of execution; it's a declaration for the compiler and other
+                            <td class="align">Does not stop the flow of execution; it's a declaration for the compiler and other
                                 developers.</td>
                         </tr>
                         <tr>
                             <td><b>Context</b></td>
-                            <td>Performs the **actual throwing** of an exception.</td>
-                            <td>Performs the **declaration** of potential exceptions, shifting the responsibility of
+                            <td>Performs the <b>actual throwing</b> of an exception.</td>
+                            <td class="align">Performs the <b>declaration</b> of potential exceptions, shifting the responsibility of
                                 handling to the caller.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p>In short: You **`throw`** an exception to *make* it happen, and a method **`throws`** an exception to
-                    *warn* that it *might* happen (especially for checked exceptions).</p>
+                <div class="highlight">
+                    <p><strong>In short:</strong> You <b>`throw`</b> an exception to <b>make</b> it happen, and a method <b>`throws`</b> an exception to
+                        <b>warn</b> that it <b>might</b> happen (especially for checked exceptions).
+                    </p>
+                </div>
 
-                <h4>6. Custom Exceptions</h4>
+                <h4>V. Custom Exceptions</h4>
                 <p>Sometimes, Java's built-in exceptions aren't specific enough for the errors in your program. You can
                     create your own custom exception classes to make your error messages clearer and more meaningful.
                     This makes your code easier to understand and debug.</p>
 
                 <div>
                     <h4>How to create a Custom Exception:</h4>
-                    <p>1. Create a new class.</p>
-                    <p>2. It should <code><b>extend Exception</b></code> (for a **checked exception**, meaning users
-                        *must* handle it) OR <code><b>extend RuntimeException</b></code> (for an **unchecked
-                        exception**, meaning users *don't have to* handle it, often for logic errors).</p>
-                    <p>3. Add constructors, typically one that takes a `String message` (which you pass to the parent
+                    <p>A. Create a new class.</p>
+                    <p>B. It should <mark><b>extend Exception</b></mark> (for a <b>checked exception</b>, meaning users
+                        <b>must</b> handle it) OR <mark><b>extend RuntimeException</b></mark> (for an <b>unchecked
+                        exception</b>, meaning users <b>don't have to</b> handle it, often for logic errors).</p>
+                    <p>C. Add constructors, typically one that takes a `String message` (which you pass to the parent
                         class using `super(message)`).</p>
                 </div>
+
                 <pre><code>
 // 1. Define a Custom Checked Exception (forces handling)
 class TooYoungException extends Exception {
@@ -3113,9 +3125,9 @@ public class CustomExceptionDemo {
     }
 }
     </code></pre>
-                <div class="output-box">
-                    <b>Output:</b>
-                    <pre>
+                <div>
+                    <h4>Output:</h4>
+                    <pre><code>
 --- License Application ---
 License application accepted for age: 20
 License Error: Sorry, you are too young to apply for a license. Age: 16
@@ -3124,12 +3136,13 @@ License Error: Sorry, you are too young to apply for a license. Age: 16
 Withdrawal of 50.0 successful. New balance: 150.0
 Bank Error: Cannot withdraw 300.0. Current balance is only 150.0
 
---- Program finished ---</pre>
+--- Program finished ---
+                    </code></pre>
                 </div>
 
-                <h4>7. `try-with-resources` (Java 7+)</h4>
+                <h4>VI. `try-with-resources` (Java 7+)</h4>
                 <p>When you work with resources like files, network connections, or database connections, it's very
-                    important to *close* them when you're done. If you don't, your program can leak resources and cause
+                    important to <b>close</b> them when you're done. If you don't, your program can leak resources and cause
                     problems. Before Java 7, you often used a `finally` block to ensure closing. But
                     `<b>try-with-resources</b>` makes it much easier and safer!</p>
                 <p>If a resource implements the `<b>AutoCloseable</b>` interface (like `FileWriter` or `Scanner`), you
@@ -3202,9 +3215,10 @@ public class TryWithResourcesSimpleExample {
     }
 }
     </code></pre>
-                <div class="output-box">
-                    <b>Output:</b>
-                    <pre>
+
+                <div>
+                    <h4>Output:</h4>
+                    <pre><code>
 --- File Writing Example ---
 Created 'greeting.txt' with initial content.
 
@@ -3218,7 +3232,15 @@ This line is also written by the FileWriter.
 File operation attempt complete (from finally block).
 Cleaned up greeting.txt.
 
---- Program finished ---</pre>
+--- Program finished ---
+                    </code></pre>
+                </div>
+
+                <div class="highlight">
+                    <p><strong>Note: </strong>Java's exception handling differentiates checked exceptions, which compel developers to handle anticipated issues,
+                        from unchecked exceptions, typically signaling programming errors. The <b>try-catch-finally</b> block is fundamental for
+                        error control, while <b>try-with-resources</b> ensures automatic and safe closure of critical resources. Together, these
+                        mechanisms are vital for building robust and reliable applications.</p>
                 </div>
 
                 <hr>
