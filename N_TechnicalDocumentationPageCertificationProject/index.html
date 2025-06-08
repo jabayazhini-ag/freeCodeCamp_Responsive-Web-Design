@@ -980,7 +980,7 @@ for (int i = 1; i <= 5; i++) {
                 <h3 id="core_java_looping_statements">3. Looping Statements</h3>
                 <p><strong>Looping statements</strong> (also known as <b>iteration statements or repetition
                         statements</b>) are
-                    fundamental control flow constructs that allow a block of code to be **repeatedly executed** as long
+                    fundamental control flow constructs that allow a block of code to be <b>repeatedly executed</b> as long
                     as a certain condition remains true. They are essential for tasks that involve processing
                     collections of data, performing repetitive calculations, or iterating through sequences. Loops
                     significantly reduce code redundancy and improve efficiency.</p>
@@ -989,7 +989,7 @@ for (int i = 1; i <= 5; i++) {
 
                 <h4>a. For Loop</h4>
                 <p>The <strong><mark>for</mark> loop</strong> is a control flow statement that iterates a part of the
-                    program multiple times. It is ideal when you know the **exact number of iterations** beforehand. The
+                    program multiple times. It is ideal when you know the <b>exact number of iterations</b> beforehand. The
                     `for` loop consists of three main parts, typically declared within its parentheses:</p>
                 <ol>
                     <li><strong>Initialization:</strong> Executed once when the loop starts, typically to declare and
@@ -3247,32 +3247,32 @@ Cleaned up greeting.txt.
 
                 <h3 id="core_java_files">10. File Operations</h3>
                 <p>File operations are fundamental in many applications, allowing programs to store, retrieve, and
-                    manage persistent data. Java provides robust input/output (I/O) capabilities through its
-                    <code>java.io</code> package and, more recently, enhanced capabilities with the
-                    <code>java.nio.file</code> (NIO.2) package introduced in Java 7.
+                    manage persistent data. Java provides robust <b>input/output (I/O)</b> capabilities through its
+                    <mark>java.io</mark> package and, more recently, enhanced capabilities with the
+                    <mark>java.nio.file</mark> <b>(NIO.2)</b> package introduced in <b>Java 7</b>.
                 </p>
 
-                <div class="highlight">
-                    <p><strong>Key Considerations for File Operations:</strong></p>
+                <div>
+                    <h4>Key Considerations for File Operations:</h4>
                     <ul>
                         <li><b>Exceptions:</b> File operations are inherently risky (e.g., file not found, permission
-                            denied). You must always handle <code>IOException</code> (or its subclasses like
-                            <code>FileNotFoundException</code>).
+                            denied). You must always handle <mark>IOException</mark> (or its subclasses like
+                            <mark>FileNotFoundException</mark> ).
                         </li>
                         <li><b>Resource Management:</b> Streams and readers/writers consume system resources. It's
                             crucial to close them after use to prevent resource leaks. Java's <b>try-with-resources</b>
                             statement (introduced in Java 7) is the recommended way to ensure resources are closed
                             automatically.</li>
                         <li><b>Text vs. Binary:</b> Choose appropriate streams/readers for text data (character streams
-                            like <code>Reader</code>/<code>Writer</code>) versus binary data (byte streams like
-                            <code>InputStream</code>/<code>OutputStream</code>).
+                            like <mark>Reader</mark> / <mark>Writer</mark>) versus binary data (byte streams like
+                            <mark>InputStream</mark> / <mark>OutputStream</mark> ).
                         </li>
                     </ul>
                 </div>
 
                 <h4>The `java.io.File` Class</h4>
-                <p>The <code>java.io.File</code> class is a core component for interacting with the file system. It
-                    represents file and directory pathnames. It doesn't actually store the data within the file but
+                <p>The <mark>java.io.File</mark> class is a core component for interacting with the file system. It
+                    represents file and directory path names. It doesn't actually store the data within the file but
                     provides methods to manipulate the file itself (e.g., check if it exists, create, delete, rename,
                     list contents of a directory).</p>
 
@@ -3298,18 +3298,19 @@ public class FileBasics {
 }
     </code></pre>
 
-                <h4>1. Creating Files</h4>
-                <p>To create a new, empty file, you use the <code>createNewFile()</code> method of the <code>File</code>
-                    object. This method returns <code>true</code> if the file was successfully created and
-                    <code>false</code> if the file already existed.
+                <h4>I. Creating Files</h4>
+                <p>To create a new, empty file, you use the <mark>createNewFile()</mark> method of the <mark>File</mark>
+                    object. This method returns <mark>true</mark> if the file was successfully created and
+                    <mark>false</mark> if the file already existed.
                 </p>
+
                 <div>
                     <h4>Method: `fileObject.createNewFile()`</h4>
                     <ul>
-                        <li>Returns <code>true</code> if the named file does not exist and was successfully created.
+                        <li>Returns <mark>true</mark> if the named file does not exist and was successfully created.
                         </li>
-                        <li>Returns <code>false</code> if the named file already exists.</li>
-                        <li>Throws <code>IOException</code> if an I/O error occurred (e.g., permission issues, path not
+                        <li>Returns <mark>false</mark> if the named file already exists.</li>
+                        <li>Throws <mark>IOException</mark> if an I/O error occurred (e.g., permission issues, path not
                             valid).</li>
                     </ul>
                 </div>
@@ -3334,25 +3335,26 @@ public class CreateFileExample {
 }
     </code></pre>
 
-                <h4>2. Writing to Files</h4>
+                <h4>II. Writing to Files</h4>
                 <p>Java provides several classes for writing data to files. For writing character data (text),
-                    <code>FileWriter</code> and <code>BufferedWriter</code> are commonly used. For raw byte data,
-                    `FileOutputStream` is used.
+                    <mark>FileWriter</mark> and <mark>BufferedWriter</mark> are commonly used. For raw byte data,
+                    <b>`FileOutputStream`</b> is used.
                 </p>
 
                 <div>
                     <h4>Using `FileWriter` (for basic text writing)</h4>
-                    <p>The <code>FileWriter</code> class is used to write character-oriented data to a file. You can
+                    <p>The <mark>FileWriter</mark> class is used to write character-oriented data to a file. You can
                         specify whether to overwrite the file or append to it.</p>
                     <ul>
-                        <li><b>Constructor:</b> <code>new FileWriter("filename.txt")</code> (overwrites if file exists)
+                        <li><b>Constructor:</b> <mark>new FileWriter("filename.txt")</mark> (overwrites if file exists)
                         </li>
-                        <li><b>Constructor:</b> <code>new FileWriter("filename.txt", true)</code> (appends if file
+                        <li><b>Constructor:</b> <mark>new FileWriter("filename.txt", true)</mark> (appends if file
                             exists)</li>
-                        <li><b>Method:</b> <code>writer.write(String text)</code>: Writes a string.</li>
-                        <li><b>Method:</b> <code>writer.close()</code>: **Crucial** to flush and close the stream.</li>
+                        <li><b>Method:</b> <mark>writer.write(String text)</mark> <b>:</b> Writes a string.</li>
+                        <li><b>Method:</b> <mark>writer.close()</mark> <b>:</b> <b>Crucial</b> to flush and close the stream.</li>
                     </ul>
                 </div>
+
                 <pre><code>
 import java.io.FileWriter;
 import java.io.IOException;
@@ -3385,16 +3387,17 @@ public class WriteFileExample {
                 <div>
                     <h4>Using `BufferedWriter` (for efficient text writing)</h4>
                     <p>For better performance when writing large amounts of text data, it's recommended to wrap a
-                        <code>FileWriter</code> (or any other <code>Writer</code>) in a <code>BufferedWriter</code>. It
+                        <mark>FileWriter</mark> ( or any other <mark>Writer</mark> ) in a <mark>BufferedWriter</mark>. It
                         uses an internal buffer to reduce actual writes to the disk.
                     </p>
                     <ul>
-                        <li><b>Constructor:</b> <code>new BufferedWriter(new FileWriter("filename.txt"))</code></li>
-                        <li><b>Method:</b> <code>writer.newLine()</code>: Writes a platform-specific new line.</li>
-                        <li>Remember to <code>flush()</code> or <code>close()</code> to ensure buffered data is written.
+                        <li><b>Constructor:</b> <mark>new BufferedWriter(new FileWriter("filename.txt"))</mark></li>
+                        <li><b>Method:</b> <mark>writer.newLine()</mark>: Writes a platform-specific new line.</li>
+                        <li>Remember to <mark>flush()</mark> or <mark>close()</mark> to ensure buffered data is written.
                         </li>
                     </ul>
                 </div>
+
                 <pre><code>
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -3416,20 +3419,20 @@ public class BufferedWriteExample {
 }
     </code></pre>
 
-                <h4>3. Reading Files</h4>
-                <p>To read data from files, Java provides classes like <code>Scanner</code> and
-                    <code>BufferedReader</code> for text, and <code>FileInputStream</code> for binary data.
+                <h4>III. Reading Files</h4>
+                <p>To read data from files, Java provides classes like <mark>Scanner</mark> and
+                    <mark>BufferedReader</mark> for text, and <mark>FileInputStream</mark> for binary data.
                 </p>
 
                 <div>
                     <h4>Using `Scanner` (for reading text line by line or token by token)</h4>
-                    <p>The <code>Scanner</code> class (from <code>java.util</code>) is versatile for parsing primitive
+                    <p>The <mark>Scanner</mark> class (from <mark>java.util</mark>) is versatile for parsing primitive
                         types and strings from input, including files. It's good for simple text file reading.</p>
                     <ul>
-                        <li><b>Constructor:</b> <code>new Scanner(new File("filename.txt"))</code></li>
-                        <li><b>Method:</b> <code>scanner.hasNextLine()</code>: Checks if there's another line.</li>
-                        <li><b>Method:</b> <code>scanner.nextLine()</code>: Reads the next line.</li>
-                        <li><b>Method:</b> <code>scanner.close()</code>: **Crucial** to close the scanner.</li>
+                        <li><b>Constructor:</b> <mark>new Scanner(new File("filename.txt"))</mark></li>
+                        <li><b>Method:</b> <mark>scanner.hasNextLine()</mark> <b>:</b> Checks if there's another line.</li>
+                        <li><b>Method:</b> <mark>scanner.nextLine()</mark> <b>:</b> Reads the next line.</li>
+                        <li><b>Method:</b> <mark>scanner.close()</mark> <b>:</b> <b>Crucial</b> to close the scanner.</li>
                     </ul>
                 </div>
                 <pre><code>
@@ -3456,16 +3459,17 @@ public class ReadFileExample {
 
                 <div>
                     <h4>Using `BufferedReader` (for efficient text reading)</h4>
-                    <p>Similar to <code>BufferedWriter</code>, <code>BufferedReader</code> enhances performance when
+                    <p>Similar to <mark>BufferedWriter</mark> , <mark>BufferedReader</mark> enhances performance when
                         reading character streams by buffering input. It's often preferred for reading large text files.
                     </p>
                     <ul>
-                        <li><b>Constructor:</b> <code>new BufferedReader(new FileReader("filename.txt"))</code></li>
-                        <li><b>Method:</b> <code>reader.readLine()</code>: Reads a line of text. Returns
-                            <code>null</code> if end of stream is reached.
+                        <li><b>Constructor:</b> <mark>new BufferedReader(new FileReader("filename.txt"))</mark></li>
+                        <li><b>Method:</b> <mark>reader.readLine()</mark>: Reads a line of text. Returns
+                            <mark>null</mark> if end of stream is reached.
                         </li>
                     </ul>
                 </div>
+
                 <pre><code>
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -3487,22 +3491,24 @@ public class BufferedReadExample {
 }
     </code></pre>
 
-                <h4>4. Deleting Files</h4>
-                <p>To delete a file or an empty directory, you use the <code>delete()</code> method of the
-                    <code>File</code> object. This method returns <code>true</code> if the deletion was successful and
-                    <code>false</code> otherwise (e.g., file not found, permission denied, directory not empty).
+                <h4>IV. Deleting Files</h4>
+                <p>To delete a file or an empty directory, you use the <mark>delete()</mark> method of the
+                    <mark>File</mark> object. This method returns <mark>true</mark> if the deletion was successful and
+                    <mark>false</mark> otherwise (e.g., file not found, permission denied, directory not empty).
                 </p>
+
                 <div>
                     <h4>Method: `fileObject.delete()`</h4>
                     <ul>
-                        <li>Returns <code>true</code> if the file or directory was successfully deleted.</li>
-                        <li>Returns <code>false</code> if the file or directory could not be deleted for any reason.
+                        <li>Returns <mark>true</mark> if the file or directory was successfully deleted.</li>
+                        <li>Returns <mark>false</mark> if the file or directory could not be deleted for any reason.
                         </li>
-                        <li>Note: This method does not throw an <code>IOException</code> on failure; it simply returns
-                            <code>false</code>.
+                        <li>Note: This method does not throw an <mark>IOException</mark> on failure; it simply returns
+                            <mark>false</mark>.
                         </li>
                     </ul>
                 </div>
+
                 <pre><code>
 import java.io.File;
 
@@ -3536,31 +3542,32 @@ public class DeleteFileExample {
 }
     </code></pre>
 
-                <h4>Modern File I/O with NIO.2 (Java 7+)</h4>
-                <p>Introduced in Java 7, the NIO.2 API (<code>java.nio.file</code> package) provides a more powerful,
+                <h4>V. Modern File I/O with NIO.2 (Java 7+)</h4>
+                <p>Introduced in <b>Java 7</b>, the <b>NIO.2 API</b> ( <mark>java.nio.file</mark> package ) provides a more powerful,
                     flexible, and robust way to handle file system operations. It addresses many limitations of the
-                    older <code>java.io.File</code> class. Key components include:</p>
+                    older <mark>java.io.File</mark> class. Key components include:</p>
                 <ul>
-                    <li><code><b>Path</b></code> interface: Represents a path to a file or directory.</li>
-                    <li><code><b>Paths</b></code> class: Utility class to get <code>Path</code> instances.</li>
-                    <li><code><b>Files</b></code> class: Provides static methods for common file operations (copy, move,
+                    <li><mark><b>Path</b></mark> interface <b>:</b> Represents a path to a file or directory.</li>
+                    <li><mark><b>Paths</b></mark> class <b>:</b> Utility class to get <mark>Path</mark> instances.</li>
+                    <li><mark><b>Files</b></mark> class <b>:</b> Provides static methods for common file operations (copy, move,
                         delete, read all lines, write all bytes, etc.) that are often more efficient and handle
                         exceptions more uniformly.</li>
                 </ul>
 
-                <div class="highlight">
-                    <p><strong>Why use NIO.2 (`java.nio.file`)?</strong></p>
+                <div>
+                    <h4>Why use NIO.2 (`java.nio.file`)?</h4>
                     <ul>
                         <li><b>Improved Error Handling:</b> Methods generally throw more specific exceptions (e.g.,
-                            `NoSuchFileException`).</li>
-                        <li><b>Atomic Operations:</b> Operations like `move` can be done atomically.</li>
+                            <mark>`NoSuchFileException`</mark> ).</li>
+                        <li><b>Atomic Operations:</b> Operations like <mark>`move`</mark> can be done atomically.</li>
                         <li><b>Symbolic Links:</b> Better support for symbolic links.</li>
-                        <li><b>Stream API Integration:</b> `Files.lines()` allows reading files directly into a Java 8
+                        <li><b>Stream API Integration:</b> <mark>`Files.lines()`</mark> allows reading files directly into a Java 8
                             Stream, making processing very concise.</li>
                         <li><b>Less Boilerplate:</b> Many common operations can be done with a single static method
                             call.</li>
                     </ul>
                 </div>
+
                 <pre><code>
 import java.io.IOException;
 import java.nio.file.Files;
@@ -3634,47 +3641,49 @@ public class NIO2FileOperations {
 }
     </code></pre>
 
-                <p>While the older <code>java.io</code> classes are still valid and widely used, for new development or
-                    when dealing with complex file system interactions, the <code>java.nio.file</code> package (NIO.2)
+            <div class="highlight">
+                <p><strong>Note: </strong>While the older <mark>java.io</mark> classes are still valid and widely used, for new development or
+                    when dealing with complex file system interactions, the <mark>java.nio.file</mark> package <b>(NIO.2)</b>
                     is generally the preferred approach due to its modern design, robustness, and better error handling.
                 </p>
+            </div>
 
                 <hr>
 
                 <h3 id="core_java_user_input">11. User Input</h3>
                 <p>Many programs need to interact with the user, taking data or commands to perform their tasks. In
                     Java, the most common and beginner-friendly way to get input from the keyboard (the standard input
-                    device) is by using the <code><b>Scanner</b></code> class.</p>
+                    device) is by using the <mark><b>Scanner</b></mark> class.</p>
 
                 <div class="highlight">
-                    <p><b>What is `System.in`?</b><br>
-                        <code>System.in</code> is a standard input stream in Java, typically representing the keyboard.
+                    <h4>What is `System.in`?</h4>
+                    <p><i><b><mark>System.in</mark></b> is a standard input stream in Java, typically representing the keyboard.
                         When you create a `Scanner` object with `System.in`, you're telling it to read from the
-                        keyboard.
+                        keyboard.</i>
                     </p>
                 </div>
 
-                <h4>The `Scanner` Class (<code>java.util.Scanner</code>)</h4>
-                <p>The `Scanner` class is part of the `java.util` package, so you'll usually need to `import
-                    java.util.Scanner;` at the top of your Java file. It breaks down input into tokens (like words or
+                <h4>The `Scanner` Class ( <mark>java.util.Scanner</mark> )</h4>
+                <p>The `Scanner` class is part of the <b>`java.util`</b> package, so you'll usually need to <b>`import
+                    java.util.Scanner;`</b> at the top of your Java file. It breaks down input into tokens (like words or
                     numbers) using a delimiter (by default, whitespace). It then provides various methods to read these
                     tokens as different data types.</p>
 
                 <div>
                     <h4>How to use `Scanner`:</h4>
-                    <ol>
-                        <li><b>Import:</b> Add <code>import java.util.Scanner;</code> at the beginning of your file.
+                    <ol type="a">
+                        <li><b>Import :</b> Add <mark>import java.util.Scanner;</mark> at the beginning of your file.
                         </li>
-                        <li><b>Create Object:</b> Create a `Scanner` object, typically linking it to `System.in` for
-                            keyboard input: <br> <code>Scanner scanner = new Scanner(System.in);</code></li>
-                        <li><b>Read Input:</b> Use various `nextXxx()` methods to read different data types.</li>
-                        <li><b>Close Scanner:</b> Always close the `Scanner` when you're done with it to release system
-                            resources: <br> <code>scanner.close();</code> (though for `System.in`, there's a nuance, as
+                        <li><b>Create Object :</b> Create a `Scanner` object, typically linking it to `System.in` for
+                            keyboard input<b>:</b> <br> <mark>Scanner scanner = new Scanner(System.in);</mark></li>
+                        <li><b>Read Input :</b> Use various `nextXxx()` methods to read different data types.</li>
+                        <li><b>Close Scanner :</b> Always close the `Scanner` when you're done with it to release system
+                            resources: <br> <mark>scanner.close();</mark> (though for `System.in`, there's a nuance, as
                             explained below).</li>
                     </ol>
                 </div>
 
-                <h4>Reading User Input</h4>
+                <h4>I. Reading User Input</h4>
                 <p>The `Scanner` class provides convenient methods to read input as specific data types. These methods
                     are essential for capturing various forms of user data from the keyboard. For a comprehensive list
                     of input reading methods, refer to the "More Useful `Scanner` Methods" table below.</p>
@@ -3730,9 +3739,10 @@ public class UserInputExample {
     }
 }
     </code></pre>
-                <div class="output-box">
-                    <b>Example Interaction (User Input is Bold):</b>
-                    <pre>
+
+                <div>
+                    <h4>[Output] Example Interaction (User Input is Bold):</h4>
+                    <pre><code>
 --- Gathering User Information ---
 Enter your name: <b>Alice Wonderland</b>
 Enter your age: <b>30</b>
@@ -3744,16 +3754,17 @@ Name: Alice Wonderland
 Age: 30
 Salary: $55000.75
 Employed: true
---- Program Finished ---</pre>
+--- Program Finished ---
+                    </code></pre>
                 </div>
 
-                <h4>The `nextLine()` Trap (Important for Beginners!)</h4>
-                <p>This is a very common issue for beginners mixing `nextInt()`, `nextDouble()`, `next()` with
-                    `nextLine()`. When you use methods like `nextInt()`, `nextDouble()`, or `nextBoolean()`, they read
-                    only the number/boolean you type, but they **do not consume the "newline" character** (the invisible
+                <h4>II. The `nextLine()` Trap</h4>
+                <p>This is a very common issue for beginners mixing <b>`nextInt()`, `nextDouble()`, `next()` with
+                    `nextLine()`.</b> When you use methods like <b>`nextInt()`, `nextDouble()`, or `nextBoolean()`,</b> they read
+                    only the number/boolean you type, but they <b>do not consume the "newline" character</b> (the invisible
                     character generated when you press Enter). This newline character is left behind in the input
                     buffer.</p>
-                <p>If you then call `nextLine()` immediately after `nextInt()` (or similar), `nextLine()` will simply
+                <p>If you then call <b>`nextLine()` immediately after `nextInt()` (or similar), `nextLine()`</b> will simply
                     read that leftover newline character and think it has received an empty line, skipping your actual
                     input for that line.</p>
 
@@ -3781,9 +3792,10 @@ public class NextLineTrapExample {
     }
 }
     </code></pre>
-                <div class="output-box">
-                    <b>Example Interaction (User Input is Bold):</b>
-                    <pre>
+
+                <div>
+                    <h4>[Output] Example Interaction (User Input is Bold):</h4>
+                    <pre><code>
 --- Demonstrating the nextLine() Trap ---
 Enter your favorite number: <b>7</b>
 Enter your favorite color: 
@@ -3791,13 +3803,13 @@ Enter your favorite color:
 
 Your favorite number is: 7
 Your favorite color is: 
-</pre>
+                    </code></pre>
                 </div>
 
-                <h4>Solution to the `nextLine()` Trap</h4>
-                <p>To fix this, you need to "consume" or "eat" the leftover newline character after calling `nextInt()`,
-                    `nextDouble()`, etc., but *before* calling `nextLine()`. You do this by adding an extra
-                    `scanner.nextLine();` call immediately after the numeric/boolean input.</p>
+                <h4>III. Solution to the `nextLine()` Trap</h4>
+                <p>To fix this, you need to "consume" or "eat" the leftover newline character after calling <b>`nextInt()`,
+                    `nextDouble()`, etc.</b>, but <b>before</b> calling <b>`nextLine()`</b>. You do this by adding an extra
+                    <b>`scanner.nextLine();`</b> call immediately after the <b>numeric/boolean</b> input.</p>
 
                 <pre><code>
 import java.util.Scanner;
@@ -3824,191 +3836,193 @@ public class NextLineTrapSolution {
     }
 }
     </code></pre>
-                <div class="output-box">
-                    <b>Example Interaction (User Input is Bold):</b>
-                    <pre>
+
+                <div>
+                    <h4>[Output] Example Interaction (User Input is Bold):</h4>
+                    <pre><code>
 --- Solving the nextLine() Trap ---
 Enter your favorite number: <b>7</b>
 Enter your favorite color: <b>Blue</b>
 
 Your favorite number is: 7
-Your favorite color is: Blue</pre>
+Your favorite color is: Blue
+                    </code></pre>
                 </div>
 
-                <h4>More Useful `Scanner` Methods</h4>
+                <h4>IV. More Useful `Scanner` Methods</h4>
                 <p>The `Scanner` class is quite versatile and can be used to obtain data not just from the keyboard, but
                     also from files and strings. This table provides a comprehensive list of its useful methods,
-                    including those for reading various data types (`nextXxx()`) and methods like `hasNextXxx()` which
+                    including those for reading various data types <b>(`nextXxx()`)</b> and methods like <b>`hasNextXxx()`</b> which
                     are very helpful for validating input before attempting to read it.</p>
 
                 <table>
                     <thead>
                         <tr>
                             <th>Method</th>
-                            <th>Description</th>
                             <th>Return Type</th>
+                            <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><code>close()</code></td>
-                            <td>Closes the scanner object and releases any associated system resources.</td>
+                            <td><mark>close()</mark></td>
                             <td>`void`</td>
+                            <td class="align">Closes the scanner object and releases any associated system resources.</td>
                         </tr>
                         <tr>
-                            <td><code>delimiter()</code></td>
-                            <td>Returns the `Pattern` this `Scanner` is currently using to separate tokens.</td>
+                            <td><mark>delimiter()</mark></td>
                             <td>`Pattern`</td>
+                            <td class="align">Returns the `Pattern` this `Scanner` is currently using to separate tokens.</td>
                         </tr>
                         <tr>
-                            <td><code>findInLine(String pattern)</code></td>
-                            <td>Attempts to find the next occurrence of the specified pattern ignoring delimiters.</td>
+                            <td><mark>findInLine(String pattern)</mark></td>
                             <td>`String`</td>
+                            <td class="align">Attempts to find the next occurrence of the specified pattern ignoring delimiters.</td>
                         </tr>
                         <tr>
-                            <td><code>findWithinHorizon(String pattern, int horizon)</code></td>
-                            <td>Attempts to find the next occurrence of the specified pattern within the specified
+                            <td><mark>findWithinHorizon(String pattern, int horizon)</mark></td>
+                            <td>`String`</td>
+                            <td class="align">Attempts to find the next occurrence of the specified pattern within the specified
                                 search horizon.</td>
-                            <td>`String`</td>
                         </tr>
                         <tr>
-                            <td><code>hasNext()</code></td>
-                            <td>Returns `true` if this scanner has another token in its input.</td>
+                            <td><mark>hasNext()</mark></td>
                             <td>`boolean`</td>
+                            <td class="align">Returns `true` if this scanner has another token in its input.</td>
                         </tr>
                         <tr>
-                            <td><code>hasNextBoolean()</code></td>
-                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a boolean
+                            <td><mark>hasNextBoolean()</mark></td>
+                            <td>`boolean`</td>
+                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a boolean
                                 value.</td>
-                            <td>`boolean`</td>
                         </tr>
                         <tr>
-                            <td><code>hasNextByte()</code></td>
-                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a `byte`
+                            <td><mark>hasNextByte()</mark></td>
+                            <td>`boolean`</td>
+                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a `byte`
                                 value.</td>
-                            <td>`boolean`</td>
                         </tr>
                         <tr>
-                            <td><code>hasNextDouble()</code></td>
-                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a
+                            <td><mark>hasNextDouble()</mark></td>
+                            <td>`boolean`</td>
+                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a
                                 `double` value.</td>
-                            <td>`boolean`</td>
                         </tr>
                         <tr>
-                            <td><code>hasNextFloat()</code></td>
-                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a `float`
+                            <td><mark>hasNextFloat()</mark></td>
+                            <td>`boolean`</td>
+                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a `float`
                                 value.</td>
-                            <td>`boolean`</td>
                         </tr>
                         <tr>
-                            <td><code>hasNextInt()</code></td>
-                            <td>Returns `true` if the next token in this scanner's input can be interpreted as an `int`
+                            <td><mark>hasNextInt()</mark></td>
+                            <td>`boolean`</td>
+                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as an `int`
                                 value.</td>
-                            <td>`boolean`</td>
                         </tr>
                         <tr>
-                            <td><code>hasNextLine()</code></td>
-                            <td>Returns `true` if there is another line in the input of this scanner.</td>
+                            <td><mark>hasNextLine()</mark></td>
                             <td>`boolean`</td>
+                            <td class="align">Returns `true` if there is another line in the input of this scanner.</td>
                         </tr>
                         <tr>
-                            <td><code>hasNextLong()</code></td>
-                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a `long`
+                            <td><mark>hasNextLong()</mark></td>
+                            <td>`boolean`</td>
+                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a `long`
                                 value.</td>
-                            <td>`boolean`</td>
                         </tr>
                         <tr>
-                            <td><code>hasNextShort()</code></td>
-                            <td>Returns `true` if the next token in this scanner's input can be interpreted as a `short`
+                            <td><mark>hasNextShort()</mark></td>
+                            <td>`boolean`</td>
+                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a `short`
                                 value.</td>
-                            <td>`boolean`</td>
                         </tr>
                         <tr>
-                            <td><code>locale()</code></td>
-                            <td>Returns the locale currently being used by this scanner.</td>
+                            <td><mark>locale()</mark></td>
                             <td>`Locale`</td>
+                            <td class="align">Returns the locale currently being used by this scanner.</td>
                         </tr>
                         <tr>
-                            <td><code>next()</code></td>
-                            <td>Finds and returns the next complete token from this scanner.</td>
+                            <td><mark>next()</mark></td>
                             <td>`String`</td>
+                            <td class="align">Finds and returns the next complete token from this scanner.</td>
                         </tr>
                         <tr>
-                            <td><code>nextBoolean()</code></td>
-                            <td>Scans the next token of the input as a `boolean`.</td>
+                            <td><mark>nextBoolean()</mark></td>
                             <td>`boolean`</td>
+                            <td class="align">Scans the next token of the input as a `boolean`.</td>
                         </tr>
                         <tr>
-                            <td><code>nextByte()</code></td>
-                            <td>Scans the next token of the input as a `byte`.</td>
+                            <td><mark>nextByte()</mark></td>
                             <td>`byte`</td>
+                            <td class="align">Scans the next token of the input as a `byte`.</td>
                         </tr>
                         <tr>
-                            <td><code>nextDouble()</code></td>
-                            <td>Scans the next token of the input as a `double`.</td>
+                            <td><mark>nextDouble()</mark></td>
                             <td>`double`</td>
+                            <td class="align">Scans the next token of the input as a `double`.</td>
                         </tr>
                         <tr>
-                            <td><code>nextFloat()</code></td>
-                            <td>Scans the next token of the input as a `float`.</td>
+                            <td><mark>nextFloat()</mark></td>
                             <td>`float`</td>
+                            <td class="align">Scans the next token of the input as a `float`.</td>
                         </tr>
                         <tr>
-                            <td><code>nextInt()</code></td>
-                            <td>Scans the next token of the input as an `int`.</td>
+                            <td><mark>nextInt()</mark></td>
                             <td>`int`</td>
+                            <td class="align">Scans the next token of the input as an `int`.</td>
                         </tr>
                         <tr>
-                            <td><code>nextLine()</code></td>
-                            <td>Advances this scanner past the current line and returns the input that was skipped.</td>
+                            <td><mark>nextLine()</mark></td>
                             <td>`String`</td>
+                            <td class="align">Advances this scanner past the current line and returns the input that was skipped.</td>
                         </tr>
                         <tr>
-                            <td><code>nextLong()</code></td>
-                            <td>Scans the next token of the input as a `long`.</td>
+                            <td><mark>nextLong()</mark></td>
                             <td>`long`</td>
+                            <td class="align">Scans the next token of the input as a `long`.</td>
                         </tr>
                         <tr>
-                            <td><code>nextShort()</code></td>
-                            <td>Scans the next token of the input as a `short`.</td>
+                            <td><mark>nextShort()</mark></td>
                             <td>`short`</td>
+                            <td class="align">Scans the next token of the input as a `short`.</td>
                         </tr>
                         <tr>
-                            <td><code>radix()</code></td>
-                            <td>Returns the default radix for this scanner.</td>
+                            <td><mark>radix()</mark></td>
                             <td>`int`</td>
+                            <td class="align">Returns the default radix for this scanner.</td>
                         </tr>
                         <tr>
-                            <td><code>reset()</code></td>
-                            <td>Resets this scanner. Discarding any state, such as a delimiter, locale, or radix.</td>
+                            <td><mark>reset()</mark></td>
                             <td>`Scanner`</td>
+                            <td class="align">Resets this scanner. Discarding any state, such as a delimiter, locale, or radix.</td>
                         </tr>
                         <tr>
-                            <td><code>useDelimiter(String pattern)</code></td>
-                            <td>Sets this scanner's delimiting pattern.</td>
+                            <td><mark>useDelimiter(String pattern)</mark></td>
                             <td>`Scanner`</td>
+                            <td class="align">Sets this scanner's delimiting pattern.</td>
                         </tr>
                         <tr>
-                            <td><code>useLocale(Locale locale)</code></td>
-                            <td>Sets this scanner's locale.</td>
+                            <td><mark>useLocale(Locale locale)</mark></td>
                             <td>`Scanner`</td>
+                            <td class="align">Sets this scanner's locale.</td>
                         </tr>
                         <tr>
-                            <td><code>useRadix(int radix)</code></td>
-                            <td>Sets this scanner's default radix.</td>
+                            <td><mark>useRadix(int radix)</mark></td>
                             <td>`Scanner`</td>
+                            <td class="align">Sets this scanner's default radix.</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <h4>Closing the `Scanner` (Important Nuance)</h4>
-                <p>It's crucial to call `scanner.close()` when you are finished reading input from a `Scanner` that is
+                <h4>V. Closing the `Scanner` (Important Nuance)</h4>
+                <p>It's crucial to call <b>`scanner.close()`</b> when you are finished reading input from a `Scanner` that is
                     connected to a file or a network stream. This releases the underlying system resources associated
                     with that stream. However, there's a special consideration for `Scanner` objects connected to
-                    `System.in`:</p>
+                    `System.in` :</p>
                 <ul>
                     <li>
-                        <b>For `Scanner` with `System.in`:</b>
+                        <h4>For `Scanner` with `System.in`:</h4>
                         <p>Closing `scanner` connected to `System.in` also closes `System.in` itself. Since `System.in`
                             is a shared, global resource for your entire Java application, closing it in one part of
                             your code might prevent other parts (or other classes) from being able to read from the
@@ -4018,9 +4032,9 @@ Your favorite color is: Blue</pre>
                             lifecycle when the program exits.</p>
                     </li>
                     <li>
-                        <b>For `Scanner` with Files/Other Streams:</b>
+                        <h4>For `Scanner` with Files/Other Streams:</h4>
                         <p><b>Always close these `Scanner` objects!</b> The best practice is to use a
-                            `try-with-resources` statement, which automatically closes the scanner (and the underlying
+                            <b>`try-with-resources`</b> statement, which automatically closes the scanner (and the underlying
                             file stream) for you, even if errors occur. This prevents resource leaks.</p>
                         <pre><code>
 import java.io.File;
@@ -4045,10 +4059,10 @@ public class FileScannerExample {
                     </li>
                 </ul>
 
-                <h4>Handling Invalid Input (Error Handling)</h4>
+                <h4>VI. Handling Invalid Input (Error Handling)</h4>
                 <p>As mentioned, if the user types "hello" when your program expects an integer, methods like
-                    `nextInt()` will throw an `<b>InputMismatchException</b>`. To make your program robust, you should
-                    use a `try-catch` block to handle this, often combined with `hasNextXxx()` methods to check if the
+                    <b>`nextInt()`</b> will throw an `<b>InputMismatchException</b>`. To make your program robust, you should
+                    use a `try-catch` block to handle this, often combined with <b>`hasNextXxx()`</b> methods to check if the
                     next token matches the expected type before trying to read it.</p>
 
                 <pre><code>
@@ -4081,9 +4095,9 @@ public class InputErrorHandling {
     }
 }
     </code></pre>
-                <div class="output-box">
-                    <b>Example Interaction (User Input is Bold):</b>
-                    <pre>
+                <div>
+                    <h4>[Output] Example Interaction (User Input is Bold):</h4>
+                    <pre><code>
 --- Robust Age Input ---
 Please enter your age (a whole number): <b>abc</b>
 Invalid input! Please enter a number.
@@ -4091,13 +4105,15 @@ Please enter your age (a whole number): <b>twenty</b>
 Invalid input! Please enter a number.
 Please enter your age (a whole number): <b>25</b>
 Your age is: 25
---- Program Finished ---</pre>
+--- Program Finished ---
+                    </code></pre>
                 </div>
 
-                <p>By understanding these concepts, especially the `nextLine()` trap and basic error handling, you'll be
+                <div class="highlight">
+                    <p><strong>Note: </strong>By understanding these concepts, especially the `nextLine()` trap and basic error handling, you'll be
                     well-equipped to write interactive Java programs that gracefully handle user input.</p>
-
-
+                </div>    
+                
             </section>
 
             <section class="main-section" id="module2_oops">
@@ -4111,7 +4127,7 @@ Your age is: 25
                     data. This approach aims to make software more modular, flexible, and maintainable.</p>
 
                 <h3>Core Principles of OOP:</h3>
-                <p>The foundation of OOP rests on four fundamental principles. Understanding these is key to mastering
+                <p>The foundation of OOP rests on <b>four fundamental principles (pillars).</b> Understanding these is key to mastering
                     object-oriented design.</p>
                 <ul>
                     <li>
@@ -4126,8 +4142,8 @@ Your age is: 25
                     <li>
                         <strong>Abstraction:</strong> Abstraction means hiding the complex implementation details and
                         showing only the essential features of an object or system. It allows you to focus on what an
-                        object does rather than how it does it. In Java, abstraction is achieved through abstract
-                        classes and interfaces, which define a contract for what methods a class must implement without
+                        object does rather than how it does it. In Java, abstraction is achieved through <b>abstract
+                        classes and interfaces</b>, which define a contract for what methods a class must implement without
                         providing the implementation details.
                     </li>
                     <li>
@@ -4135,7 +4151,7 @@ Your age is: 25
                         child class) to inherit properties (fields) and behaviors (methods) from an existing class
                         (superclass or parent class). This promotes code reusability and establishes a natural
                         <mark>"is-a"</mark>
-                        relationship (e.g., a 'Dog' *is a* 'Animal'). In Java, the <mark>`extends`</mark> keyword is
+                        relationship (e.g., a 'Dog' <b>is a</b> 'Animal'). In Java, the <mark>`extends`</mark> keyword is
                         used to achieve
                         inheritance.
                     </li>
@@ -4217,7 +4233,7 @@ Alice's new GPA: 3.9</code></pre>
                     <h3>2. Constructors</h3>
                     <p>A <strong>Constructor</strong> is a special type of method used to initialize objects. It has the
                         same name as the class and does not have a return type. Constructors are called automatically
-                        when an object is created using the `new` keyword. A class can have multiple constructors
+                        when an object is created using the <b>`new`</b> keyword. A class can have multiple constructors
                         (constructor overloading) to allow for different ways of initializing objects.</p>
                     <pre><code class="language-java">
 public class Car {
