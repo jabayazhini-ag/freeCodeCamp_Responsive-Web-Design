@@ -1,0 +1,860 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0a0a0a;
+            overflow-x: hidden;
+        }
+
+        /* Header Quantum */
+        #header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        #header-img {
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #00ff9d;
+            filter: brightness(1.2) contrast(1.1);
+        }
+
+        #nav-bar {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #e0e0e0;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 157, 0.4), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .nav-link:hover::before {
+            left: 100%;
+        }
+
+        .nav-link:hover {
+            color: #00ff9d;
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
+        }
+
+        /* Hero Quantum */
+        #hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 6rem 5% 2rem;
+            background: radial-gradient(ellipse at center, #1a1a2e 0%, #0a0a0a 70%);
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 20% 30%, rgba(0, 255, 157, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+            animation: quantumFlow 20s ease-in-out infinite alternate;
+        }
+
+        @keyframes quantumFlow {
+            0% {
+                opacity: 0.3;
+                transform: scale(1);
+            }
+
+            100% {
+                opacity: 0.6;
+                transform: scale(1.1);
+            }
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #00ff9d, #8a2be2, #00ff9d);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: quantumGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes quantumGlow {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            color: #b0b0b0;
+            line-height: 1.6;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #00ff9d;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-visual {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quantum-orb {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .orb-ring {
+            position: absolute;
+            border: 2px solid;
+            border-radius: 50%;
+            animation: quantumSpin 10s linear infinite;
+        }
+
+        .ring-1 {
+            width: 100%;
+            height: 100%;
+            border-color: rgba(0, 255, 157, 0.3);
+            animation-duration: 8s;
+        }
+
+        .ring-2 {
+            width: 70%;
+            height: 70%;
+            top: 15%;
+            left: 15%;
+            border-color: rgba(138, 43, 226, 0.4);
+            animation-duration: 12s;
+            animation-direction: reverse;
+        }
+
+        .ring-3 {
+            width: 40%;
+            height: 40%;
+            top: 30%;
+            left: 30%;
+            border-color: rgba(0, 255, 157, 0.6);
+            animation-duration: 6s;
+        }
+
+        .orb-core {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, #00ff9d, #8a2be2);
+            border-radius: 50%;
+            box-shadow:
+                0 0 50px rgba(0, 255, 157, 0.5),
+                inset 0 0 20px rgba(255, 255, 255, 0.2);
+            animation: quantumPulse 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes quantumSpin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes quantumPulse {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(1.2);
+            }
+        }
+
+        /* Demo Section */
+        #demo-section {
+            padding: 5rem 5%;
+            background: #111111;
+            text-align: center;
+        }
+
+        .demo-container h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #00ff9d;
+        }
+
+        .demo-container p {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #video {
+            width: 100%;
+            max-width: 900px;
+            height: 500px;
+            border-radius: 20px;
+            border: 2px solid rgba(0, 255, 157, 0.3);
+            box-shadow: 0 20px 60px rgba(0, 255, 157, 0.2);
+        }
+
+        /* Features Constellation */
+        #features {
+            padding: 5rem 5%;
+            background: radial-gradient(ellipse at center, #1a1a2e 0%, #0a0a0a 70%);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00ff9d, #8a2be2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: #888;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-constellation {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-node {
+            background: rgba(26, 26, 46, 0.6);
+            border: 1px solid rgba(0, 255, 157, 0.2);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-node::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(0, 255, 157, 0.1), transparent);
+            animation: quantumRotate 10s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-node:hover::before {
+            opacity: 1;
+        }
+
+        .feature-node:hover {
+            transform: translateY(-10px);
+            border-color: rgba(0, 255, 157, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 255, 157, 0.2);
+        }
+
+        @keyframes quantumRotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .node-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 0 10px rgba(0, 255, 157, 0.5));
+        }
+
+        .feature-node h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #00ff9d;
+        }
+
+        .feature-node p {
+            color: #b0b0b0;
+            line-height: 1.6;
+        }
+
+        /* Specs Matrix */
+        #specs {
+            padding: 5rem 5%;
+            background: #111111;
+        }
+
+        .specs-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .specs-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #8a2be2;
+        }
+
+        .specs-header p {
+            font-size: 1.2rem;
+            color: #888;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .specs-matrix {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .spec-category {
+            background: rgba(26, 26, 46, 0.4);
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+        }
+
+        .spec-category h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            color: #8a2be2;
+            text-align: center;
+        }
+
+        .spec-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .spec-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            border-left: 3px solid #8a2be2;
+        }
+
+        .spec-label {
+            color: #b0b0b0;
+            font-weight: 500;
+        }
+
+        .spec-value {
+            color: #00ff9d;
+            font-weight: 600;
+        }
+
+        /* Solution Grid */
+        #pricing {
+            padding: 5rem 5%;
+            background: radial-gradient(ellipse at center, #1a1a2e 0%, #0a0a0a 70%);
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .pricing-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #00ff9d, #8a2be2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .pricing-header p {
+            font-size: 1.2rem;
+            color: #888;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .solution-card {
+            background: rgba(26, 26, 46, 0.6);
+            border: 1px solid rgba(0, 255, 157, 0.2);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(0, 255, 157, 0.5);
+            box-shadow: 0 25px 50px rgba(0, 255, 157, 0.2);
+        }
+
+        .featured-solution {
+            transform: scale(1.05);
+            border-color: rgba(138, 43, 226, 0.5);
+            background: rgba(138, 43, 226, 0.1);
+        }
+
+        .quantum-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #8a2be2, #00ff9d);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .card-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #00ff9d;
+        }
+
+        .price-tag {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #8a2be2;
+            margin-bottom: 2rem;
+        }
+
+        .solution-features {
+            margin-bottom: 2.5rem;
+        }
+
+        .feature-item {
+            padding: 0.8rem 0;
+            color: #b0b0b0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+        }
+
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+
+        .solution-btn {
+            background: linear-gradient(135deg, #00ff9d, #8a2be2);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .solution-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 255, 157, 0.3);
+        }
+
+        .featured-btn {
+            background: linear-gradient(135deg, #8a2be2, #00ff9d);
+        }
+
+   /* Quantum Connect Section */
+        #quantum-connect {
+            padding: 5rem 5%;
+            background: #111111;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .connect-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .quantum-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, rgba(0, 255, 157, 0.8), transparent),
+                radial-gradient(2px 2px at 40px 70px, rgba(138, 43, 226, 0.6), transparent),
+                radial-gradient(1px 1px at 90px 40px, rgba(0, 255, 157, 0.5), transparent),
+                radial-gradient(1px 1px at 130px 80px, rgba(138, 43, 226, 0.4), transparent),
+                radial-gradient(2px 2px at 160px 30px, rgba(0, 255, 157, 0.6), transparent);
+            background-repeat: repeat;
+            background-size: 200px 100px;
+            animation: quantumParticles 20s linear infinite;
+            opacity: 0.3;
+        }
+
+        @keyframes quantumParticles {
+            0% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(-10px) translateX(10px); }
+            100% { transform: translateY(0px) translateX(0px); }
+        }
+
+        #quantum-connect h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #00ff9d, #8a2be2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: quantumGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes quantumGlow {
+            0% { filter: brightness(1); }
+            100% { filter: brightness(1.2) drop-shadow(0 0 20px rgba(0, 255, 157, 0.5)); }
+        }
+
+        #quantum-connect p {
+            font-size: 1.3rem;
+            color: #b0b0b0;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .quantum-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        #email {
+            flex: 1;
+            min-width: 250px;
+            padding: 1.2rem 1.5rem;
+            border: 2px solid rgba(0, 255, 157, 0.3);
+            border-radius: 30px;
+            background: rgba(26, 26, 46, 0.6);
+            color: #e0e0e0;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        #email:focus {
+            outline: none;
+            border-color: #00ff9d;
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
+            transform: translateY(-2px);
+        }
+
+        #email::placeholder {
+            color: #888;
+            font-style: italic;
+        }
+
+        #submit {
+            padding: 1.2rem 2rem;
+            background: linear-gradient(135deg, #00ff9d, #8a2be2);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 180px;
+        }
+
+        #submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 255, 157, 0.4);
+            filter: brightness(1.1);
+        }
+
+        #submit:active {
+            transform: translateY(-1px);
+        }
+
+        /* Footer Quantum */
+        footer {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
+            padding: 4rem 5% 2rem;
+            border-top: 1px solid rgba(0, 255, 157, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 157, 0.8), rgba(138, 43, 226, 0.8), transparent);
+            animation: quantumSweep 4s ease-in-out infinite;
+        }
+
+        @keyframes quantumSweep {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+
+        .footer-matrix {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+        }
+
+        .footer-node {
+            background: rgba(26, 26, 46, 0.3);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 255, 157, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-node::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(0, 255, 157, 0.05), transparent);
+            animation: quantumRotate 15s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-node:hover::before {
+            opacity: 1;
+        }
+
+        .footer-node:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 255, 157, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 255, 157, 0.1);
+        }
+
+        @keyframes quantumRotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .footer-node h4 {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            color: #00ff9d;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-node p {
+            color: #b0b0b0;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-node a {
+            display: block;
+            color: #888;
+            text-decoration: none;
+            padding: 0.5rem 0;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+            border-left: 2px solid transparent;
+            padding-left: 1rem;
+        }
+
+        .footer-node a:hover {
+            color: #00ff9d;
+            border-left-color: #8a2be2;
+            transform: translateX(5px);
+            text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+        }
+
+        .footer-quantum {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .footer-quantum::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #8a2be2, transparent);
+        }
+
+        .footer-quantum p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #quantum-connect h2 {
+                font-size: 2.2rem;
+            }
+
+            #quantum-connect p {
+                font-size: 1.1rem;
+            }
+
+            .quantum-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #email, #submit {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .footer-matrix {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-node {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #quantum-connect {
+                padding: 3rem 5%;
+            }
+
+            #quantum-connect h2 {
+                font-size: 1.8rem;
+            }
+
+            .footer-node h4 {
+                font-size: 1.2rem;
+            }
+        }
