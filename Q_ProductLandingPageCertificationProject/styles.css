@@ -12,7 +12,7 @@
             overflow-x: hidden;
         }
 
-        /* Header Quantum */
+        /* Header Quantum with Custom Logo */
         #header {
             position: fixed;
             top: 0;
@@ -28,12 +28,31 @@
             transition: all 0.3s ease;
         }
 
-        #header-img {
+        /* #header-img {
             height: 50px;
             border-radius: 50%;
             border: 2px solid #00ff9d;
             filter: brightness(1.2) contrast(1.1);
+        } */
+
+         .quantum-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(26, 26, 46, 0.8);
+            border: 2px solid rgba(0, 255, 157, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
+
+        .quantum-logo:hover {
+            border-color: #00ff9d;
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.4);
+            transform: scale(1.05);
+        }        
 
         #nav-bar {
             display: flex;

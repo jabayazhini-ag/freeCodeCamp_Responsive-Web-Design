@@ -7,9 +7,56 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header Section with Custom Logo -->
     <header id="header">
-        <img id="header-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=80&h=80&fit=crop&crop=center" alt="QuantumCore Logo">
+        <div id="header-img" class="quantum-logo">
+            <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#00ff9d;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#8a2be2;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00ff9d;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="glow">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge> 
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                
+                <!-- Outer ring -->
+                <circle cx="25" cy="25" r="22" fill="none" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 25 25" to="360 25 25" dur="8s" repeatCount="indefinite"/>
+                </circle>
+                
+                <!-- Middle ring -->
+                <circle cx="25" cy="25" r="16" fill="none" stroke="url(#logoGradient)" stroke-width="1.5" opacity="0.8">
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360 25 25" to="0 25 25" dur="6s" repeatCount="indefinite"/>
+                </circle>
+                
+                <!-- Inner core -->
+                <circle cx="25" cy="25" r="8" fill="url(#logoGradient)" filter="url(#glow)">
+                    <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite"/>
+                </circle>
+                
+                <!-- Quantum particles -->
+                <circle cx="35" cy="15" r="1.5" fill="#00ff9d" opacity="0.8">
+                    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="15" cy="35" r="1" fill="#8a2be2" opacity="0.6">
+                    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="40" cy="35" r="1" fill="#00ff9d" opacity="0.7">
+                    <animate attributeName="opacity" values="0.2;0.9;0.2" dur="1.8s" repeatCount="indefinite"/>
+                </circle>
+                
+                <!-- Central Q -->
+                <text x="25" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Q</text>
+            </svg>
+        </div>
+        <!-- <img id="header-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=80&h=80&fit=crop&crop=center" alt="QuantumCore Logo"> -->
         <nav id="nav-bar">
             <a href="#features" class="nav-link">Intelligence</a>
             <a href="#specs" class="nav-link">Technology</a>
