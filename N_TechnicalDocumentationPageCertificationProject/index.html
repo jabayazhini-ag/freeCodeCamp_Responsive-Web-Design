@@ -27,21 +27,21 @@
                             Module I: Core Java
                             <span class="fa-caret-down">▼</span>
                         </summary>
-                      
-                            <!-- <a class="nav-link module-toggle" href="#module1_core_java">Module I: Core Java <span class="fa-caret-down">▼</span></a> -->
-                            <a class="nav-link" href="#module1_core_java">Variables</a>
-                            <a class="nav-link" href="#core_java_data_types">Data Types</a>
-                            <a class="nav-link" href="#core_java_operators">Operators</a>
-                            <a class="nav-link" href="#core_java_conditional_statements">Conditional Statements</a>
-                            <a class="nav-link" href="#core_java_looping_statements">Looping Statements</a>
-                            <a class="nav-link" href="#core_java_methods">Methods</a>
-                            <a class="nav-link" href="#core_java_arrays">Arrays</a>
-                            <a class="nav-link" href="#core_java_strings">String & String Methods</a>
-                            <a class="nav-link" href="#core_java_math">Math & Math Methods</a>
-                            <a class="nav-link" href="#core_java_datetime">Date & Time</a>
-                            <a class="nav-link" href="#core_java_exception_handling">Exception Handling</a>
-                            <a class="nav-link" href="#core_java_files">File Operations</a>
-                            <a class="nav-link" href="#core_java_user_input">User Input</a>
+
+                        <!-- <a class="nav-link module-toggle" href="#module1_core_java">Module I: Core Java <span class="fa-caret-down">▼</span></a> -->
+                        <a class="nav-link" href="#module1_core_java">Variables</a>
+                        <a class="nav-link" href="#core_java_data_types">Data Types</a>
+                        <a class="nav-link" href="#core_java_operators">Operators</a>
+                        <a class="nav-link" href="#core_java_conditional_statements">Conditional Statements</a>
+                        <a class="nav-link" href="#core_java_looping_statements">Looping Statements</a>
+                        <a class="nav-link" href="#core_java_methods">Methods</a>
+                        <a class="nav-link" href="#core_java_arrays">Arrays</a>
+                        <a class="nav-link" href="#core_java_strings">String & String Methods</a>
+                        <a class="nav-link" href="#core_java_math">Math & Math Methods</a>
+                        <a class="nav-link" href="#core_java_datetime">Date & Time</a>
+                        <a class="nav-link" href="#core_java_exception_handling">Exception Handling</a>
+                        <a class="nav-link" href="#core_java_files">File Operations</a>
+                        <a class="nav-link" href="#core_java_user_input">User Input</a>
                     </details>
                 </li>
                 <li><a class="nav-link" href="#module2_oops">Module II: OOPs</a></li>
@@ -980,7 +980,8 @@ for (int i = 1; i <= 5; i++) {
                 <h3 id="core_java_looping_statements">3. Looping Statements</h3>
                 <p><strong>Looping statements</strong> (also known as <b>iteration statements or repetition
                         statements</b>) are
-                    fundamental control flow constructs that allow a block of code to be <b>repeatedly executed</b> as long
+                    fundamental control flow constructs that allow a block of code to be <b>repeatedly executed</b> as
+                    long
                     as a certain condition remains true. They are essential for tasks that involve processing
                     collections of data, performing repetitive calculations, or iterating through sequences. Loops
                     significantly reduce code redundancy and improve efficiency.</p>
@@ -989,7 +990,8 @@ for (int i = 1; i <= 5; i++) {
 
                 <h4>a. For Loop</h4>
                 <p>The <strong><mark>for</mark> loop</strong> is a control flow statement that iterates a part of the
-                    program multiple times. It is ideal when you know the <b>exact number of iterations</b> beforehand. The
+                    program multiple times. It is ideal when you know the <b>exact number of iterations</b> beforehand.
+                    The
                     `for` loop consists of three main parts, typically declared within its parentheses:</p>
                 <ol>
                     <li><strong>Initialization:</strong> Executed once when the loop starts, typically to declare and
@@ -1837,15 +1839,16 @@ public class ArrayExamples {
                     sequences efficiently.</p>
 
                 <h4>A Fundamental Characteristic: Java Strings are Immutable</h4>
-                    <p><b>This is a cornerstone concept:</b> once a <mark>String</mark> object is created, its content cannot
-                        be changed. Any operation that seems to modify a string (like converting to uppercase or
-                        replacing characters) doesn't alter the original string. Instead, it creates a <b>brand-new
-                            <mark>String</mark> object</b> containing the result, leaving the original string untouched
-                        in memory. This immutability offers significant benefits in terms of safety (especially in
-                        multi-threaded environments, as their state never changes) and efficiency (their hash code can
-                        be cached, making them excellent keys in hash-based collections like <mark>HashMap</mark>).
-                    </p>
-                
+                <p><b>This is a cornerstone concept:</b> once a <mark>String</mark> object is created, its content
+                    cannot
+                    be changed. Any operation that seems to modify a string (like converting to uppercase or
+                    replacing characters) doesn't alter the original string. Instead, it creates a <b>brand-new
+                        <mark>String</mark> object</b> containing the result, leaving the original string untouched
+                    in memory. This immutability offers significant benefits in terms of safety (especially in
+                    multi-threaded environments, as their state never changes) and efficiency (their hash code can
+                    be cached, making them excellent keys in hash-based collections like <mark>HashMap</mark>).
+                </p>
+
 
                 <pre><code>
 String str = "Hello World"; // 'str' is a String variable holding the text "Hello World"
@@ -1868,7 +1871,7 @@ String replaced = str.replace("World", "Java"); // Replaces all occurrences of t
                 <div>
                     <h4>I. String Concatenation: Joining Text Together</h4>
                     <p>Concatenation is the process of combining two or more strings into a single string. Java offers
-                        several ways to do this, each with its own advantages.</p>                   
+                        several ways to do this, each with its own advantages.</p>
                     <ul>
                         <li><b><mark>+</mark> (Plus Operator) :</b> The most common and straightforward way to
                             concatenate strings. It's simple and readable for a few concatenations.</li>
@@ -1927,7 +1930,7 @@ System.out.println("Order Summary (String.format()): " + orderSummary);
                         automatic conversions. However, it's crucial to understand how these conversions work,
                         especially when converting strings to numbers, where specific methods and error handling are
                         required.</p>
-                  
+
                     <ul>
                         <li><b>Number to String:</b>
                             <ul>
@@ -1951,7 +1954,8 @@ System.out.println("Order Summary (String.format()): " + orderSummary);
                                 <li><b><mark>Double.parseDouble(String str)</mark> :</b> Converts a string to a
                                     <mark>double</mark> .
                                 </li>
-                                <li>Similar methods exist for <mark>`Long.parseLong()`</mark> , <mark>`Float.parseFloat()`</mark> , etc.</li>
+                                <li>Similar methods exist for <mark>`Long.parseLong()`</mark> ,
+                                    <mark>`Float.parseFloat()`</mark> , etc.</li>
                                 <li><b>Important Error Handling:</b> These parsing methods will throw a
                                     <mark><b>NumberFormatException</b></mark> if the string does not contain a valid
                                     representation of the number type (e.g., trying to parse "abc" as an integer). You
@@ -1998,10 +2002,12 @@ try {
                     <h4>III. Special Characters and Escape Sequences in Strings</h4>
                     <p>Sometimes you need to include characters in your string that have a special meaning in Java, or
                         characters that are not directly printable (like a newline or a tab). To achieve this, you use
-                        <b>"escape sequences"</b>, which are <b>combinations of a backslash (<mark>\</mark>)</b> followed by a
+                        <b>"escape sequences"</b>, which are <b>combinations of a backslash (<mark>\</mark>)</b>
+                        followed by a
                         specific character. The backslash tells the Java compiler to interpret the next character in a
-                        special way, escaping its usual meaning.</p>
-                   
+                        special way, escaping its usual meaning.
+                    </p>
+
                     <ul>
                         <li><b><mark>\'</mark> :</b> Single quote (useful for character literals, or if your string was
                             defined using single quotes in some other context, though Java uses double quotes for
@@ -2040,13 +2046,14 @@ System.out.println(formattedOutput);
                 </div>
 
                 <h4>IV. String Builders: `StringBuffer` and `StringBuilder`</h4>
-                <p>As discussed, standard Java <mark>String</mark> objects are <b>immutable</b>. While this has advantages, it
+                <p>As discussed, standard Java <mark>String</mark> objects are <b>immutable</b>. While this has
+                    advantages, it
                     becomes inefficient when you need to perform numerous modifications to a string (e.g., building a
                     long string by appending many smaller pieces in a loop). In such cases, creating many intermediate
                     <mark>String</mark> objects can lead to performance degradation and increased memory consumption.
                 </p>
 
-               <h4>To address this, Java provides two mutable (changeable) alternatives:</h4> 
+                <h4>To address this, Java provides two mutable (changeable) alternatives:</h4>
                 <p><mark>StringBuffer</mark> and
                     <mark>StringBuilder</mark>. These classes allow you to modify the content of the string they hold
                     without creating new objects for each operation, making them highly efficient for dynamic string
@@ -2056,13 +2063,16 @@ System.out.println(formattedOutput);
                 <div>
                     <h4>Historical Context of `StringBuffer` and `StringBuilder`:</h4>
                     <ul>
-                        <li><mark>StringBuffer</mark> was introduced in <b>Java 1.0</b> (the very first version of Java). It
-                            was designed to provide a <b>mutable</b> sequence of characters to overcome the performance issues
+                        <li><mark>StringBuffer</mark> was introduced in <b>Java 1.0</b> (the very first version of
+                            Java). It
+                            was designed to provide a <b>mutable</b> sequence of characters to overcome the performance
+                            issues
                             of frequent <mark>String</mark> modifications. Its methods are <b>synchronized</b>.</li>
                         <li><mark>StringBuilder</mark> was introduced later in <b>Java 1.5</b>. It provides the same
                             functionality as <mark>StringBuffer</mark> but is <b>not synchronized</b>. This lack of
                             synchronization makes <mark>StringBuilder</mark> generally faster than
-                            <mark>StringBuffer</mark> for string manipulation in <b>single-threaded environments</b>, as it
+                            <mark>StringBuffer</mark> for string manipulation in <b>single-threaded environments</b>, as
+                            it
                             avoids the overhead of managing concurrent access.
                         </li>
                     </ul>
@@ -2070,7 +2080,8 @@ System.out.println(formattedOutput);
 
                 <div>
                     <h4>A. `StringBuffer` (Thread-Safe)</h4>
-                    <p><mark>StringBuffer</mark> is designed for <b>multi-threaded</b> environments. All its public methods are
+                    <p><mark>StringBuffer</mark> is designed for <b>multi-threaded</b> environments. All its public
+                        methods are
                         <b>synchronized</b>. This means that if multiple threads try to access and modify the same
                         <mark>StringBuffer</mark> instance simultaneously, only one thread can execute a method at a
                         time. This guarantees data consistency and prevents race conditions, but it introduces a
@@ -2101,10 +2112,11 @@ System.out.println("StringBuffer after reverse: " + sb); // Output: StringBuffer
                     <p><mark>StringBuilder</mark> provides identical functionality to `StringBuffer` but is <b>not
                             synchronized</b>. This makes it faster and more efficient than `StringBuffer` when you are
                         performing string manipulations in a <b>single-threaded environment</b>. Since most common
-                        applications don't involve multiple threads modifying the <b>exact same</b> string builder object
+                        applications don't involve multiple threads modifying the <b>exact same</b> string builder
+                        object
                         concurrently, <mark>StringBuilder</mark> is generally the preferred choice for building dynamic
                         strings.</p>
-                    
+
                     <pre><code>
 // StringBuilder (not thread-safe, faster): Preferred for single-threaded environments or when thread safety is handled externally.
 StringBuilder builder = new StringBuilder(); // Initializes an empty builder
@@ -2183,10 +2195,12 @@ System.out.println("Final String from StringBuilder: " + finalResult);
                         </li>
                     </ul>
                 </div>
-               
+
                 <div class="highlight">
-                    <p><strong>Note: </strong> write efficient, robust, and readable Java string manipulation code, you must understand the nuances of String,
-                        StringBuilder, and StringBuffer. Choosing the appropriate class for your needs is crucial. This leverages their
+                    <p><strong>Note: </strong> write efficient, robust, and readable Java string manipulation code, you
+                        must understand the nuances of String,
+                        StringBuilder, and StringBuffer. Choosing the appropriate class for your needs is crucial. This
+                        leverages their
                         unique characteristics for optimal performance and thread safety.</p>
                 </div>
 
@@ -2253,7 +2267,8 @@ System.out.println("9^0.5 = " + sqrtUsingPow); // Output: 9^0.5 = 3.0
                     <p>This method returns the positive square root of a `double` value.</p>
                     <ul>
                         <li><b>Inputs:</b> A <mark>double</mark> value.</li>
-                        <li><b>Output:</b> A <mark>double</mark> value. If the argument is <b>negative</b>, the result is <b>`NaN`</b>
+                        <li><b>Output:</b> A <mark>double</mark> value. If the argument is <b>negative</b>, the result
+                            is <b>`NaN`</b>
                             (Not-a-Number).</li>
                     </ul>
                     <pre><code>
@@ -2356,11 +2371,13 @@ System.out.println("Random integer (1 to 10): " + randomInt); // Output will var
                     <p>These methods are essential for handling decimal numbers and obtaining whole number
                         representations based on different rounding rules.</p>
                     <ul>
-                        <li><b><mark>Math.ceil(double a)</mark> :</b> Returns the smallest (closest to negative infinity)
+                        <li><b><mark>Math.ceil(double a)</mark> :</b> Returns the smallest (closest to negative
+                            infinity)
                             <mark>double</mark> value that is greater than or equal to the argument and is equal to a
                             mathematical integer. Essentially, it <b>rounds up</b>.
                         </li>
-                        <li><b><mark>Math.floor(double a)</mark> :</b> Returns the largest (closest to positive infinity)
+                        <li><b><mark>Math.floor(double a)</mark> :</b> Returns the largest (closest to positive
+                            infinity)
                             <mark>double</mark> value that is less than or equal to the argument and is equal to a
                             mathematical integer. Essentially, it <b>rounds down</b>.
                         </li>
@@ -2422,9 +2439,11 @@ System.out.println("Value of E: " + Math.E);   // Output: Value of E: 2.71828182
                         <li><b><mark>Math.sin(double radians)</mark> :</b> Sine of an angle.</li>
                         <li><b><mark>Math.cos(double radians)</mark> :</b> Cosine of an angle.</li>
                         <li><b><mark>Math.tan(double radians)</mark> :</b> Tangent of an angle.</li>
-                        <li><b><mark>Math.toRadians(double degrees)</mark> :</b> Converts an angle measured in degrees to
+                        <li><b><mark>Math.toRadians(double degrees)</mark> :</b> Converts an angle measured in degrees
+                            to
                             an approximately equivalent angle measured in radians.</li>
-                        <li><b><mark>Math.toDegrees(double radians)</mark> :</b> Converts an angle measured in radians to
+                        <li><b><mark>Math.toDegrees(double radians)</mark> :</b> Converts an angle measured in radians
+                            to
                             an approximately equivalent angle measured in degrees.</li>
                     </ul>
 
@@ -2449,7 +2468,8 @@ System.out.println("Cosine of 0 degrees: " + cosValue); // Output: Cosine of 0 d
                             `a` (e^a).</li>
                         <li><b><mark>Math.log(double a)</mark> :</b> Returns the natural logarithm (base `e`) of a
                             `double` value.</li>
-                        <li><b><mark>Math.log10(double a)</mark> :</b> Returns the base 10 logarithm of a `double` value.
+                        <li><b><mark>Math.log10(double a)</mark> :</b> Returns the base 10 logarithm of a `double`
+                            value.
                         </li>
                     </ul>
                     <pre><code>
@@ -2460,8 +2480,9 @@ System.out.println("log10(100) = " + Math.log10(100)); // Output: log10(100) = 2
                 </div>
 
                 <div class="highlight">
-                    <p><strong>Note: </strong>Java's Math class offers a rich set of methods for direct and efficient mathematical computations. Leveraging these
-                    methods simplifies a wide range of calculations, making your Java applications more robust.</p>
+                    <p><strong>Note: </strong>Java's Math class offers a rich set of methods for direct and efficient
+                        mathematical computations. Leveraging these
+                        methods simplifies a wide range of calculations, making your Java applications more robust.</p>
                 </div>
 
                 <hr>
@@ -2484,17 +2505,22 @@ System.out.println("log10(100) = " + Math.log10(100)); // Output: log10(100) = 2
                             unintended side effects.
                         </li>
                         <li><b>Clarity & Domain-Driven Design :</b> Distinct classes are provided for different aspects
-                            of time (e.g., <b>date-only, time-only, date-time with/without timezone</b>), making the code more
+                            of time (e.g., <b>date-only, time-only, date-time with/without timezone</b>), making the
+                            code more
                             readable and less ambiguous.</li>
-                        <li><b>Fluent API :</b> Methods are designed to be chainable, allowing for expressive and concise
+                        <li><b>Fluent API :</b> Methods are designed to be chainable, allowing for expressive and
+                            concise
                             operations (e.g., <mark>today.plusYears(1).minusMonths(2)</mark> ).</li>
                         <li><b>Separation of Concerns :</b> Clear distinction between human date/time
-                            ( <mark>LocalDate</mark>, <mark>LocalTime</mark> ), machine time ( <mark>Instant</mark> ), and
+                            ( <mark>LocalDate</mark>, <mark>LocalTime</mark> ), machine time ( <mark>Instant</mark> ),
+                            and
                             time-zone specific time ( <mark>ZonedDateTime</mark> ).</li>
-                        <li><b>ISO-8601 Standard Compliant :</b> The API is based on the widely adopted ISO-8601 standard
+                        <li><b>ISO-8601 Standard Compliant :</b> The API is based on the widely adopted ISO-8601
+                            standard
                             for date and time representation, improving interoperability.</li>
                         <li><b>Improved Time Zone Handling :</b> Provides robust and explicit classes for dealing with
-                            time zones ( <mark>ZoneId</mark>, <mark>ZonedDateTime</mark> ), addressing a major pain point
+                            time zones ( <mark>ZoneId</mark>, <mark>ZonedDateTime</mark> ), addressing a major pain
+                            point
                             of older APIs.</li>
                     </ul>
                 </div>
@@ -2662,17 +2688,20 @@ Duration duration = Duration.between(startTime, endTime);
 System.out.println("Duration between times (seconds): " + duration.getSeconds()); // Output: 30600 seconds (8.5 hours)
 System.out.println("Duration between times (hours): " + duration.toHours());   // Output: 8 hours
     </code></pre>
-    
-            <div class="highlight">
-                <p><strong>Note: </strong>Embracing modern date/time APIs significantly enhances developer capabilities.
-                    These tools ensure precise and reliable handling of temporal data, cutting down on common errors.
-                    The result is more efficient, accurate, and robust applications for the long term.</p>
-            </div>
+
+                <div class="highlight">
+                    <p><strong>Note: </strong>Embracing modern date/time APIs significantly enhances developer
+                        capabilities.
+                        These tools ensure precise and reliable handling of temporal data, cutting down on common
+                        errors.
+                        The result is more efficient, accurate, and robust applications for the long term.</p>
+                </div>
 
                 <h3 id="core_java_exception_handling">9. Exception Handling</h3>
                 <p>Exception handling is a crucial mechanism in Java (and other programming languages) that allows you
                     to manage runtime errors gracefully, preventing your program from crashing unexpectedly. When an
-                    error occurs during program execution that disrupts its normal flow, an <q>exception</q> is said to have
+                    error occurs during program execution that disrupts its normal flow, an <q>exception</q> is said to
+                    have
                     occurred.</p>
 
                 <div>
@@ -2695,19 +2724,27 @@ System.out.println("Duration between times (hours): " + duration.toHours());   /
                     <li><b><mark>Error</mark> :</b> Represents serious problems that applications should not try to
                         catch. These typically indicate external system problems (e.g., `OutOfMemoryError`,
                         `StackOverflowError`). You usually don't handle these.</li>
-                    <li><b><mark>Exception</mark> :</b> Represents conditions that an application might want to catch and
+                    <li><b><mark>Exception</mark> :</b> Represents conditions that an application might want to catch
+                        and
                         handle. Most problems you encounter will be `Exception`s.
                         <ul>
                             <li><b>RuntimeException (Unchecked Exceptions):</b> Subclasses of
                                 <mark>`RuntimeException`</mark> . These typically indicate programming bugs (e.g.,
-                                <mark>`NullPointerException`</mark> if you try to use something that is <mark>`null`</mark> , <mark>`ArithmeticException`</mark>
-                                like dividing by zero, <mark>`ArrayIndexOutOfBoundsException`</mark> if you try to access an array
-                                element that doesn't exist). The compiler does <b>not</b> force you to catch or declare them.
+                                <mark>`NullPointerException`</mark> if you try to use something that is
+                                <mark>`null`</mark> , <mark>`ArithmeticException`</mark>
+                                like dividing by zero, <mark>`ArrayIndexOutOfBoundsException`</mark> if you try to
+                                access an array
+                                element that doesn't exist). The compiler does <b>not</b> force you to catch or declare
+                                them.
                             </li>
                             <li><b>Other `Exception` subclasses (Checked Exceptions) :</b> These are exceptions that the
-                                compiler <b>forces</b> you to either catch using a <b>`try-catch`</b> block or declare using the
-                                <mark>`throws`</mark> keyword in the method signature (e.g., <mark>`IOException`</mark> for file errors,
-                                <mark>`SQLException`</mark> for database errors). The compiler <b><q>checks</q></b> if you've handled them.</li>
+                                compiler <b>forces</b> you to either catch using a <b>`try-catch`</b> block or declare
+                                using the
+                                <mark>`throws`</mark> keyword in the method signature (e.g., <mark>`IOException`</mark>
+                                for file errors,
+                                <mark>`SQLException`</mark> for database errors). The compiler <b><q>checks</q></b> if
+                                you've handled them.
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -2719,7 +2756,8 @@ System.out.println("Duration between times (hours): " + duration.toHours());   /
                     <li><mark><b>try</b></mark> : Put the code that <b>might</b> cause an error here.</li>
                     <li><mark><b>catch</b></mark> : If an error (exception) happens in the `try` block, Java jumps here.
                         You specify what type of error to catch.</li>
-                    <li><mark><b>finally</b></mark> : This block runs <b>always</b>, whether an error happened or not. It's
+                    <li><mark><b>finally</b></mark> : This block runs <b>always</b>, whether an error happened or not.
+                        It's
                         useful for cleaning up, like closing files.</li>
                 </ul>
 
@@ -2763,10 +2801,10 @@ public class TryCatchFinallyExample {
 }
     </code></pre>
 
-    
+
                 <div>
                     <h4>Output:</h4>
-                   <pre><code>
+                    <pre><code>
 --- Start of Program ---
 Trying to divide 10 by 0...
 Oops! You tried to divide by zero!
@@ -2781,11 +2819,12 @@ Finished the second division attempt.
                     </pre></code>
                 </div>
 
-           
+
 
                 <h4>II. Multiple `catch` Blocks</h4>
                 <p>Sometimes, different types of errors can happen in the same `try` block. You can use multiple `catch`
-                    blocks to handle each specific error differently. <b>Important:</b> Always put the most specific error
+                    blocks to handle each specific error differently. <b>Important:</b> Always put the most specific
+                    error
                     `catch` blocks first, and the most general (like `Exception`) last.</p>
 
                 <pre><code>
@@ -2871,12 +2910,16 @@ End of string conversion attempt.
 
                 <h4>III. `throw` Keyword (To Create and Send an Exception)</h4>
                 <p>The `<b>throw</b>` statement allows you to create a custom error or send an existing error type. It's
-                    used when <b>your code</b> detects a problem and needs to immediately stop the normal flow and signal an
+                    used when <b>your code</b> detects a problem and needs to immediately stop the normal flow and
+                    signal an
                     error.</p>
                 <p>The `throw` statement is used together with an <b>exception type</b>. There are many exception types
-                    available in Java, both <b>built-in ones</b> like <mark>`ArithmeticException`</mark> , <mark>`FileNotFoundException`</mark> ,
-                    <mark>`ArrayIndexOutOfBoundsException`</mark> , <mark>`NullPointerException`</mark> , <mark>`SecurityException`</mark> , and <b>custom ones</b> you
-                    create.</p>
+                    available in Java, both <b>built-in ones</b> like <mark>`ArithmeticException`</mark> ,
+                    <mark>`FileNotFoundException`</mark> ,
+                    <mark>`ArrayIndexOutOfBoundsException`</mark> , <mark>`NullPointerException`</mark> ,
+                    <mark>`SecurityException`</mark> , and <b>custom ones</b> you
+                    create.
+                </p>
 
                 <pre><code>
 // Example: Throwing an exception for invalid input
@@ -3001,8 +3044,10 @@ Caught an error for nonexistent.txt: Error: File 'nonexistent.txt' was not found
                             <td><b>Purpose</b></td>
                             <td>Used to <b>explicitly raise (throw)</b> an exception. It's like saying, "An error just
                                 happened here!"</td>
-                            <td class="align">Used in a method signature to <b>declare</b> that a method <b>might</b> throw one or more
-                                checked exceptions. It's like saying, "Warning: this method <b>could</b> cause an error of
+                            <td class="align">Used in a method signature to <b>declare</b> that a method <b>might</b>
+                                throw one or more
+                                checked exceptions. It's like saying, "Warning: this method <b>could</b> cause an error
+                                of
                                 this type!"</td>
                         </tr>
                         <tr>
@@ -3016,33 +3061,39 @@ Caught an error for nonexistent.txt: Error: File 'nonexistent.txt' was not found
                         </tr>
                         <tr>
                             <td><b>Placement</b></td>
-                            <td>Used <b>inside</b> a method body, typically within an `if` condition or logic block.</td>
-                            <td class="align">Used in the <b>method signature</b> (after the method parameters and before the curly
+                            <td>Used <b>inside</b> a method body, typically within an `if` condition or logic block.
+                            </td>
+                            <td class="align">Used in the <b>method signature</b> (after the method parameters and
+                                before the curly
                                 brace).</td>
                         </tr>
                         <tr>
                             <td><b>Quantity</b></td>
                             <td>You can only `throw` <b>one</b> exception object at a time.</td>
-                            <td class="align">You can `throws` <b>multiple</b> exception classes, separated by commas.</td>
+                            <td class="align">You can `throws` <b>multiple</b> exception classes, separated by commas.
+                            </td>
                         </tr>
                         <tr>
                             <td><b>Flow</b></td>
                             <td>Immediately stops the normal execution flow and transfers control to the nearest `catch`
                                 block.</td>
-                            <td class="align">Does not stop the flow of execution; it's a declaration for the compiler and other
+                            <td class="align">Does not stop the flow of execution; it's a declaration for the compiler
+                                and other
                                 developers.</td>
                         </tr>
                         <tr>
                             <td><b>Context</b></td>
                             <td>Performs the <b>actual throwing</b> of an exception.</td>
-                            <td class="align">Performs the <b>declaration</b> of potential exceptions, shifting the responsibility of
+                            <td class="align">Performs the <b>declaration</b> of potential exceptions, shifting the
+                                responsibility of
                                 handling to the caller.</td>
                         </tr>
                     </tbody>
                 </table>
 
                 <div class="highlight">
-                    <p><strong>In short:</strong> You <b>`throw`</b> an exception to <b>make</b> it happen, and a method <b>`throws`</b> an exception to
+                    <p><strong>In short:</strong> You <b>`throw`</b> an exception to <b>make</b> it happen, and a method
+                        <b>`throws`</b> an exception to
                         <b>warn</b> that it <b>might</b> happen (especially for checked exceptions).
                     </p>
                 </div>
@@ -3057,7 +3108,8 @@ Caught an error for nonexistent.txt: Error: File 'nonexistent.txt' was not found
                     <p>A. Create a new class.</p>
                     <p>B. It should <mark><b>extend Exception</b></mark> (for a <b>checked exception</b>, meaning users
                         <b>must</b> handle it) OR <mark><b>extend RuntimeException</b></mark> (for an <b>unchecked
-                        exception</b>, meaning users <b>don't have to</b> handle it, often for logic errors).</p>
+                            exception</b>, meaning users <b>don't have to</b> handle it, often for logic errors).
+                    </p>
                     <p>C. Add constructors, typically one that takes a `String message` (which you pass to the parent
                         class using `super(message)`).</p>
                 </div>
@@ -3142,7 +3194,8 @@ Bank Error: Cannot withdraw 300.0. Current balance is only 150.0
 
                 <h4>VI. `try-with-resources` (Java 7+)</h4>
                 <p>When you work with resources like files, network connections, or database connections, it's very
-                    important to <b>close</b> them when you're done. If you don't, your program can leak resources and cause
+                    important to <b>close</b> them when you're done. If you don't, your program can leak resources and
+                    cause
                     problems. Before Java 7, you often used a `finally` block to ensure closing. But
                     `<b>try-with-resources</b>` makes it much easier and safer!</p>
                 <p>If a resource implements the `<b>AutoCloseable</b>` interface (like `FileWriter` or `Scanner`), you
@@ -3237,9 +3290,12 @@ Cleaned up greeting.txt.
                 </div>
 
                 <div class="highlight">
-                    <p><strong>Note: </strong>Java's exception handling differentiates checked exceptions, which compel developers to handle anticipated issues,
-                        from unchecked exceptions, typically signaling programming errors. The <b>try-catch-finally</b> block is fundamental for
-                        error control, while <b>try-with-resources</b> ensures automatic and safe closure of critical resources. Together, these
+                    <p><strong>Note: </strong>Java's exception handling differentiates checked exceptions, which compel
+                        developers to handle anticipated issues,
+                        from unchecked exceptions, typically signaling programming errors. The <b>try-catch-finally</b>
+                        block is fundamental for
+                        error control, while <b>try-with-resources</b> ensures automatic and safe closure of critical
+                        resources. Together, these
                         mechanisms are vital for building robust and reliable applications.</p>
                 </div>
 
@@ -3351,7 +3407,8 @@ public class CreateFileExample {
                         <li><b>Constructor:</b> <mark>new FileWriter("filename.txt", true)</mark> (appends if file
                             exists)</li>
                         <li><b>Method:</b> <mark>writer.write(String text)</mark> <b>:</b> Writes a string.</li>
-                        <li><b>Method:</b> <mark>writer.close()</mark> <b>:</b> <b>Crucial</b> to flush and close the stream.</li>
+                        <li><b>Method:</b> <mark>writer.close()</mark> <b>:</b> <b>Crucial</b> to flush and close the
+                            stream.</li>
                     </ul>
                 </div>
 
@@ -3387,7 +3444,8 @@ public class WriteFileExample {
                 <div>
                     <h4>Using `BufferedWriter` (for efficient text writing)</h4>
                     <p>For better performance when writing large amounts of text data, it's recommended to wrap a
-                        <mark>FileWriter</mark> ( or any other <mark>Writer</mark> ) in a <mark>BufferedWriter</mark>. It
+                        <mark>FileWriter</mark> ( or any other <mark>Writer</mark> ) in a <mark>BufferedWriter</mark>.
+                        It
                         uses an internal buffer to reduce actual writes to the disk.
                     </p>
                     <ul>
@@ -3430,9 +3488,11 @@ public class BufferedWriteExample {
                         types and strings from input, including files. It's good for simple text file reading.</p>
                     <ul>
                         <li><b>Constructor:</b> <mark>new Scanner(new File("filename.txt"))</mark></li>
-                        <li><b>Method:</b> <mark>scanner.hasNextLine()</mark> <b>:</b> Checks if there's another line.</li>
+                        <li><b>Method:</b> <mark>scanner.hasNextLine()</mark> <b>:</b> Checks if there's another line.
+                        </li>
                         <li><b>Method:</b> <mark>scanner.nextLine()</mark> <b>:</b> Reads the next line.</li>
-                        <li><b>Method:</b> <mark>scanner.close()</mark> <b>:</b> <b>Crucial</b> to close the scanner.</li>
+                        <li><b>Method:</b> <mark>scanner.close()</mark> <b>:</b> <b>Crucial</b> to close the scanner.
+                        </li>
                     </ul>
                 </div>
                 <pre><code>
@@ -3543,13 +3603,15 @@ public class DeleteFileExample {
     </code></pre>
 
                 <h4>V. Modern File I/O with NIO.2 (Java 7+)</h4>
-                <p>Introduced in <b>Java 7</b>, the <b>NIO.2 API</b> ( <mark>java.nio.file</mark> package ) provides a more powerful,
+                <p>Introduced in <b>Java 7</b>, the <b>NIO.2 API</b> ( <mark>java.nio.file</mark> package ) provides a
+                    more powerful,
                     flexible, and robust way to handle file system operations. It addresses many limitations of the
                     older <mark>java.io.File</mark> class. Key components include:</p>
                 <ul>
                     <li><mark><b>Path</b></mark> interface <b>:</b> Represents a path to a file or directory.</li>
                     <li><mark><b>Paths</b></mark> class <b>:</b> Utility class to get <mark>Path</mark> instances.</li>
-                    <li><mark><b>Files</b></mark> class <b>:</b> Provides static methods for common file operations (copy, move,
+                    <li><mark><b>Files</b></mark> class <b>:</b> Provides static methods for common file operations
+                        (copy, move,
                         delete, read all lines, write all bytes, etc.) that are often more efficient and handle
                         exceptions more uniformly.</li>
                 </ul>
@@ -3558,10 +3620,12 @@ public class DeleteFileExample {
                     <h4>Why use NIO.2 (`java.nio.file`)?</h4>
                     <ul>
                         <li><b>Improved Error Handling:</b> Methods generally throw more specific exceptions (e.g.,
-                            <mark>`NoSuchFileException`</mark> ).</li>
+                            <mark>`NoSuchFileException`</mark> ).
+                        </li>
                         <li><b>Atomic Operations:</b> Operations like <mark>`move`</mark> can be done atomically.</li>
                         <li><b>Symbolic Links:</b> Better support for symbolic links.</li>
-                        <li><b>Stream API Integration:</b> <mark>`Files.lines()`</mark> allows reading files directly into a Java 8
+                        <li><b>Stream API Integration:</b> <mark>`Files.lines()`</mark> allows reading files directly
+                            into a Java 8
                             Stream, making processing very concise.</li>
                         <li><b>Less Boilerplate:</b> Many common operations can be done with a single static method
                             call.</li>
@@ -3641,12 +3705,15 @@ public class NIO2FileOperations {
 }
     </code></pre>
 
-            <div class="highlight">
-                <p><strong>Note: </strong>While the older <mark>java.io</mark> classes are still valid and widely used, for new development or
-                    when dealing with complex file system interactions, the <mark>java.nio.file</mark> package <b>(NIO.2)</b>
-                    is generally the preferred approach due to its modern design, robustness, and better error handling.
-                </p>
-            </div>
+                <div class="highlight">
+                    <p><strong>Note: </strong>While the older <mark>java.io</mark> classes are still valid and widely
+                        used, for new development or
+                        when dealing with complex file system interactions, the <mark>java.nio.file</mark> package
+                        <b>(NIO.2)</b>
+                        is generally the preferred approach due to its modern design, robustness, and better error
+                        handling.
+                    </p>
+                </div>
 
                 <hr>
 
@@ -3657,15 +3724,17 @@ public class NIO2FileOperations {
 
                 <div class="highlight">
                     <h4>What is `System.in`?</h4>
-                    <p><i><b><mark>System.in</mark></b> is a standard input stream in Java, typically representing the keyboard.
-                        When you create a `Scanner` object with `System.in`, you're telling it to read from the
-                        keyboard.</i>
+                    <p><i><b><mark>System.in</mark></b> is a standard input stream in Java, typically representing the
+                            keyboard.
+                            When you create a `Scanner` object with `System.in`, you're telling it to read from the
+                            keyboard.</i>
                     </p>
                 </div>
 
                 <h4>The `Scanner` Class ( <mark>java.util.Scanner</mark> )</h4>
                 <p>The `Scanner` class is part of the <b>`java.util`</b> package, so you'll usually need to <b>`import
-                    java.util.Scanner;`</b> at the top of your Java file. It breaks down input into tokens (like words or
+                        java.util.Scanner;`</b> at the top of your Java file. It breaks down input into tokens (like
+                    words or
                     numbers) using a delimiter (by default, whitespace). It then provides various methods to read these
                     tokens as different data types.</p>
 
@@ -3760,11 +3829,14 @@ Employed: true
 
                 <h4>II. The `nextLine()` Trap</h4>
                 <p>This is a very common issue for beginners mixing <b>`nextInt()`, `nextDouble()`, `next()` with
-                    `nextLine()`.</b> When you use methods like <b>`nextInt()`, `nextDouble()`, or `nextBoolean()`,</b> they read
-                    only the number/boolean you type, but they <b>do not consume the "newline" character</b> (the invisible
+                        `nextLine()`.</b> When you use methods like <b>`nextInt()`, `nextDouble()`, or
+                        `nextBoolean()`,</b> they read
+                    only the number/boolean you type, but they <b>do not consume the "newline" character</b> (the
+                    invisible
                     character generated when you press Enter). This newline character is left behind in the input
                     buffer.</p>
-                <p>If you then call <b>`nextLine()` immediately after `nextInt()` (or similar), `nextLine()`</b> will simply
+                <p>If you then call <b>`nextLine()` immediately after `nextInt()` (or similar), `nextLine()`</b> will
+                    simply
                     read that leftover newline character and think it has received an empty line, skipping your actual
                     input for that line.</p>
 
@@ -3807,9 +3879,12 @@ Your favorite color is:
                 </div>
 
                 <h4>III. Solution to the `nextLine()` Trap</h4>
-                <p>To fix this, you need to "consume" or "eat" the leftover newline character after calling <b>`nextInt()`,
-                    `nextDouble()`, etc.</b>, but <b>before</b> calling <b>`nextLine()`</b>. You do this by adding an extra
-                    <b>`scanner.nextLine();`</b> call immediately after the <b>numeric/boolean</b> input.</p>
+                <p>To fix this, you need to "consume" or "eat" the leftover newline character after calling
+                    <b>`nextInt()`,
+                        `nextDouble()`, etc.</b>, but <b>before</b> calling <b>`nextLine()`</b>. You do this by adding
+                    an extra
+                    <b>`scanner.nextLine();`</b> call immediately after the <b>numeric/boolean</b> input.
+                </p>
 
                 <pre><code>
 import java.util.Scanner;
@@ -3852,7 +3927,8 @@ Your favorite color is: Blue
                 <h4>IV. More Useful `Scanner` Methods</h4>
                 <p>The `Scanner` class is quite versatile and can be used to obtain data not just from the keyboard, but
                     also from files and strings. This table provides a comprehensive list of its useful methods,
-                    including those for reading various data types <b>(`nextXxx()`)</b> and methods like <b>`hasNextXxx()`</b> which
+                    including those for reading various data types <b>(`nextXxx()`)</b> and methods like
+                    <b>`hasNextXxx()`</b> which
                     are very helpful for validating input before attempting to read it.</p>
 
                 <table>
@@ -3867,22 +3943,26 @@ Your favorite color is: Blue
                         <tr>
                             <td><mark>close()</mark></td>
                             <td>`void`</td>
-                            <td class="align">Closes the scanner object and releases any associated system resources.</td>
+                            <td class="align">Closes the scanner object and releases any associated system resources.
+                            </td>
                         </tr>
                         <tr>
                             <td><mark>delimiter()</mark></td>
                             <td>`Pattern`</td>
-                            <td class="align">Returns the `Pattern` this `Scanner` is currently using to separate tokens.</td>
+                            <td class="align">Returns the `Pattern` this `Scanner` is currently using to separate
+                                tokens.</td>
                         </tr>
                         <tr>
                             <td><mark>findInLine(String pattern)</mark></td>
                             <td>`String`</td>
-                            <td class="align">Attempts to find the next occurrence of the specified pattern ignoring delimiters.</td>
+                            <td class="align">Attempts to find the next occurrence of the specified pattern ignoring
+                                delimiters.</td>
                         </tr>
                         <tr>
                             <td><mark>findWithinHorizon(String pattern, int horizon)</mark></td>
                             <td>`String`</td>
-                            <td class="align">Attempts to find the next occurrence of the specified pattern within the specified
+                            <td class="align">Attempts to find the next occurrence of the specified pattern within the
+                                specified
                                 search horizon.</td>
                         </tr>
                         <tr>
@@ -3893,31 +3973,36 @@ Your favorite color is: Blue
                         <tr>
                             <td><mark>hasNextBoolean()</mark></td>
                             <td>`boolean`</td>
-                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a boolean
+                            <td class="align">Returns `true` if the next token in this scanner's input can be
+                                interpreted as a boolean
                                 value.</td>
                         </tr>
                         <tr>
                             <td><mark>hasNextByte()</mark></td>
                             <td>`boolean`</td>
-                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a `byte`
+                            <td class="align">Returns `true` if the next token in this scanner's input can be
+                                interpreted as a `byte`
                                 value.</td>
                         </tr>
                         <tr>
                             <td><mark>hasNextDouble()</mark></td>
                             <td>`boolean`</td>
-                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a
+                            <td class="align">Returns `true` if the next token in this scanner's input can be
+                                interpreted as a
                                 `double` value.</td>
                         </tr>
                         <tr>
                             <td><mark>hasNextFloat()</mark></td>
                             <td>`boolean`</td>
-                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a `float`
+                            <td class="align">Returns `true` if the next token in this scanner's input can be
+                                interpreted as a `float`
                                 value.</td>
                         </tr>
                         <tr>
                             <td><mark>hasNextInt()</mark></td>
                             <td>`boolean`</td>
-                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as an `int`
+                            <td class="align">Returns `true` if the next token in this scanner's input can be
+                                interpreted as an `int`
                                 value.</td>
                         </tr>
                         <tr>
@@ -3928,13 +4013,15 @@ Your favorite color is: Blue
                         <tr>
                             <td><mark>hasNextLong()</mark></td>
                             <td>`boolean`</td>
-                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a `long`
+                            <td class="align">Returns `true` if the next token in this scanner's input can be
+                                interpreted as a `long`
                                 value.</td>
                         </tr>
                         <tr>
                             <td><mark>hasNextShort()</mark></td>
                             <td>`boolean`</td>
-                            <td class="align">Returns `true` if the next token in this scanner's input can be interpreted as a `short`
+                            <td class="align">Returns `true` if the next token in this scanner's input can be
+                                interpreted as a `short`
                                 value.</td>
                         </tr>
                         <tr>
@@ -3975,7 +4062,8 @@ Your favorite color is: Blue
                         <tr>
                             <td><mark>nextLine()</mark></td>
                             <td>`String`</td>
-                            <td class="align">Advances this scanner past the current line and returns the input that was skipped.</td>
+                            <td class="align">Advances this scanner past the current line and returns the input that was
+                                skipped.</td>
                         </tr>
                         <tr>
                             <td><mark>nextLong()</mark></td>
@@ -3995,7 +4083,8 @@ Your favorite color is: Blue
                         <tr>
                             <td><mark>reset()</mark></td>
                             <td>`Scanner`</td>
-                            <td class="align">Resets this scanner. Discarding any state, such as a delimiter, locale, or radix.</td>
+                            <td class="align">Resets this scanner. Discarding any state, such as a delimiter, locale, or
+                                radix.</td>
                         </tr>
                         <tr>
                             <td><mark>useDelimiter(String pattern)</mark></td>
@@ -4016,7 +4105,8 @@ Your favorite color is: Blue
                 </table>
 
                 <h4>V. Closing the `Scanner` (Important Nuance)</h4>
-                <p>It's crucial to call <b>`scanner.close()`</b> when you are finished reading input from a `Scanner` that is
+                <p>It's crucial to call <b>`scanner.close()`</b> when you are finished reading input from a `Scanner`
+                    that is
                     connected to a file or a network stream. This releases the underlying system resources associated
                     with that stream. However, there's a special consideration for `Scanner` objects connected to
                     `System.in` :</p>
@@ -4034,8 +4124,10 @@ Your favorite color is: Blue
                     <li>
                         <h4>For `Scanner` with Files/Other Streams:</h4>
                         <p><b>Always close these `Scanner` objects!</b> The best practice is to use a
-                            <b>`try-with-resources`</b> statement, which automatically closes the scanner (and the underlying
-                            file stream) for you, even if errors occur. This prevents resource leaks.</p>
+                            <b>`try-with-resources`</b> statement, which automatically closes the scanner (and the
+                            underlying
+                            file stream) for you, even if errors occur. This prevents resource leaks.
+                        </p>
                         <pre><code>
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -4061,9 +4153,12 @@ public class FileScannerExample {
 
                 <h4>VI. Handling Invalid Input (Error Handling)</h4>
                 <p>As mentioned, if the user types "hello" when your program expects an integer, methods like
-                    <b>`nextInt()`</b> will throw an `<b>InputMismatchException</b>`. To make your program robust, you should
-                    use a `try-catch` block to handle this, often combined with <b>`hasNextXxx()`</b> methods to check if the
-                    next token matches the expected type before trying to read it.</p>
+                    <b>`nextInt()`</b> will throw an `<b>InputMismatchException</b>`. To make your program robust, you
+                    should
+                    use a `try-catch` block to handle this, often combined with <b>`hasNextXxx()`</b> methods to check
+                    if the
+                    next token matches the expected type before trying to read it.
+                </p>
 
                 <pre><code>
 import java.util.InputMismatchException; // Don't forget this import!
@@ -4110,10 +4205,11 @@ Your age is: 25
                 </div>
 
                 <div class="highlight">
-                    <p><strong>Note: </strong>By understanding these concepts, especially the `nextLine()` trap and basic error handling, you'll be
-                    well-equipped to write interactive Java programs that gracefully handle user input.</p>
-                </div>    
-                
+                    <p><strong>Note: </strong>By understanding these concepts, especially the `nextLine()` trap and
+                        basic error handling, you'll be
+                        well-equipped to write interactive Java programs that gracefully handle user input.</p>
+                </div>
+
             </section>
 
             <section class="main-section" id="module2_oops">
@@ -4127,7 +4223,8 @@ Your age is: 25
                     data. This approach aims to make software more modular, flexible, and maintainable.</p>
 
                 <h3>Core Principles of OOP:</h3>
-                <p>The foundation of OOP rests on <b>four fundamental principles (pillars).</b> Understanding these is key to mastering
+                <p>The foundation of OOP rests on <b>four fundamental principles (pillars).</b> Understanding these is
+                    key to mastering
                     object-oriented design.</p>
                 <ul>
                     <li>
@@ -4143,7 +4240,8 @@ Your age is: 25
                         <strong>Abstraction:</strong> Abstraction means hiding the complex implementation details and
                         showing only the essential features of an object or system. It allows you to focus on what an
                         object does rather than how it does it. In Java, abstraction is achieved through <b>abstract
-                        classes and interfaces</b>, which define a contract for what methods a class must implement without
+                            classes and interfaces</b>, which define a contract for what methods a class must implement
+                        without
                         providing the implementation details.
                     </li>
                     <li>
@@ -4151,7 +4249,8 @@ Your age is: 25
                         child class) to inherit properties (fields) and behaviors (methods) from an existing class
                         (superclass or parent class). This promotes code reusability and establishes a natural
                         <mark>"is-a"</mark>
-                        relationship (e.g., a 'Dog' <b>is a</b> 'Animal'). In Java, the <mark>`extends`</mark> keyword is
+                        relationship (e.g., a 'Dog' <b>is a</b> 'Animal'). In Java, the <mark>`extends`</mark> keyword
+                        is
                         used to achieve
                         inheritance.
                     </li>
@@ -4766,121 +4865,1094 @@ Total Counter objects created so far: 3</code></pre>
 
             <section class="main-section" id="module3_collections">
                 <header>
-                    <h2>Module III: Collections</h2>
+                    <h2>Module III: Collections Framework</h2>
                 </header>
 
-                <p>The Java Collections Framework is a set of interfaces and classes that provide a unified architecture
-                    for representing and manipulating groups of objects. It offers various data structures and
-                    algorithms, reducing programming effort and improving performance. The framework includes interfaces
-                    like <i><b>Collection, List, Set, and Map,</b></i> along with concrete implementations such as
-                    <i><b>ArrayList,
-                            LinkedList, HashSet, TreeSet, and HashMap</b></i>. These implementations offer different
-                    performance
-                    characteristics and are suitable for various use cases. The framework also provides algorithms for
-                    searching, sorting, and other common operations on collections.
-                </p>
+                <p><b>Last Updated : June 8, 2025</b></p>
 
-                <h3>1. List, Set, and Map</h3>
-                <p>Collections framework provides various classes like List, Set, and Map to store and manipulate
-                    groups of objects.</p>
+                <p>Any group of individual objects that are represented as a single unit is known as a **Java Collection
+                    of Objects**. In Java, a separate framework named the "Collection Framework" has been defined in JDK
+                    1.2 which holds all the Java Collection Classes and Interfaces in it.</p>
+                <p>In Java, the `Collection` interface (<code>java.util.Collection</code>) and `Map` interface
+                    (<code>java.util.Map</code>) are the two main "root" interfaces of Java collection classes.</p>
 
-                <pre><code>
+                ---
+
+                <h3>What is a Framework in Java?</h3>
+                <p>A framework is a set of classes and interfaces which provide a ready-made architecture. To implement
+                    a new feature or a class, there's no need to define a framework. However, an optimal object-oriented
+                    design always includes a framework with a collection of classes such that all the classes perform
+                    the same kind of task.</p>
+
+                ---
+
+                <h3>Need for a Separate Collection Framework in Java</h3>
+                <p>Before the Collection Framework (or before JDK 1.2) was introduced, the standard methods for grouping
+                    Java objects (or collections) were **Arrays** or **Vectors**, or **Hashtables**. All of these
+                    collections had no common interface. Therefore, though the main aim of all the collections is the
+                    same, the implementation of all these collections was defined independently and had no correlation
+                    among them. And also, it was very difficult for users to remember all the different methods, syntax,
+                    and constructors present in every collection class.</p>
+
+                <p>Let's understand this with an example of adding an element in a hashtable and a vector:</p>
+
+                <pre><code class="language-java">
+// Java program to demonstrate
+// why collection framework was needed
+import java.io.*;
 import java.util.*;
-public class CollectionExample {
+
+class CollectionDemo {
+
+    public static void main(String[] args)
+    {
+        // Creating instances of the array,
+        // vector and hashtable
+        int arr[] = new int[] { 1, 2, 3, 4 };
+        Vector&lt;Integer&gt; v = new Vector&lt;&gt;();
+        Hashtable&lt;Integer, String&gt; h = new Hashtable&lt;&gt;();
+
+        // Adding the elements into the
+        // vector
+        v.addElement(1);
+        v.addElement(2);
+
+        // Adding the element into the
+        // hashtable
+        h.put(1, "elementA");
+        h.put(2, "elementB");
+
+        // Array instance creation requires [],
+        // while Vector and hastable require ()
+        // Vector element insertion requires addElement(),
+        // but hashtable element insertion requires put()
+
+        // Accessing the first element of the
+        // array, vector and hashtable
+        System.out.println(arr[0]);
+        System.out.println(v.elementAt(0));
+        System.out.println(h.get(1));
+
+        // Array elements are accessed using [],
+        // vector elements using elementAt()
+        // and hashtable elements using get()
+    }
+}
+    </code></pre>
+                <p><b>Output:</b></p>
+                <pre><code>
+1
+1
+elementA
+    </code></pre>
+                <p>As we can observe, none of these collections (Array, Vector, or Hashtable) implements a standard
+                    member access interface. It was very difficult for programmers to write algorithms that could work
+                    for all kinds of Collections. Another drawback is that most of the 'Vector' methods are final,
+                    meaning we cannot extend the 'Vector' class to implement a similar kind of Collection. Therefore,
+                    Java developers decided to come up with a common interface to deal with the above-mentioned problems
+                    and introduced the Collection Framework in JDK 1.2, post which both, legacy Vectors and Hashtables
+                    were modified to conform to the Collection Framework.</p>
+
+                ---
+
+                <h3>Advantages of the Java Collection Framework</h3>
+                <p>Since the lack of a collection framework gave rise to the above set of disadvantages, the following
+                    are the advantages of the collection framework:</p>
+                <ul>
+                    <li><b>Consistent API:</b> The API has a basic set of interfaces like `Collection`, `Set`, `List`,
+                        or `Map`. All the classes (<i><b>ArrayList, LinkedList, Vector</b></i>, etc.) that implement
+                        these interfaces have some common set of methods.</li>
+                    <li><b>Reduces programming effort:</b> A programmer doesn't have to worry about the design of the
+                        Collection but rather can focus on its best use in their program. Therefore, the basic concept
+                        of Object-oriented programming (i.e.) abstraction has been successfully implemented.</li>
+                    <li><b>Increases program speed and quality:</b> Increases performance by providing high-performance
+                        implementations of useful data structures and algorithms because in this case, the programmer
+                        need not think of the best implementation of a specific data structure. They can simply use the
+                        best implementation to drastically boost the performance of their algorithm/program.</li>
+                </ul>
+
+                ---
+
+                <h3>Hierarchy of the Collection Framework in Java</h3>
+                <p>The `java.util` package contains all the classes and interfaces that are required by the collection
+                    framework. The collection framework contains an interface named an `Iterable` interface which
+                    provides the iterator to iterate through all the collections. This interface is extended by the main
+                    `Collection` interface which acts as a root for the collection framework. All the collections extend
+                    this `Collection` interface, thereby extending the properties of the iterator and the methods of
+                    this interface. The following conceptual diagram illustrates the hierarchy of the collection
+                    framework:</p>
+                <pre><code>
+    Iterable (Interface)
+        |
+        +-- Collection (Interface)
+                |
+                +-- List (Interface)
+                |       +-- ArrayList (Class)
+                |       +-- LinkedList (Class)
+                |       +-- Vector (Class)
+                |       +-- Stack (Class)
+                |
+                +-- Set (Interface)
+                |       +-- HashSet (Class)
+                |       +-- LinkedHashSet (Class)
+                |       +-- SortedSet (Interface)
+                |               +-- NavigableSet (Interface)
+                |                       +-- TreeSet (Class)
+                |
+                +-- Queue (Interface)
+                |       +-- PriorityQueue (Class)
+                |       +-- Deque (Interface)
+                |               +-- ArrayDeque (Class)
+                |               +-- LinkedList (Class - also implements List and Deque)
+                |
+                +-- (Other interfaces like BlockingQueue, BlockingDeque, etc., and their implementations)
+
+    Map (Interface - separate hierarchy, not extending Collection)
+        +-- HashMap (Class)
+        +-- LinkedHashMap (Class)
+        +-- TreeMap (Class)
+        +-- SortedMap (Interface)
+        +-- NavigableMap (Interface)
+        +-- ConcurrentMap (Interface)
+        +-- Hashtable (Class - legacy)
+        +-- Properties (Class - extends Hashtable)
+    </code></pre>
+
+                <p>Before understanding the different components in the above framework, let's first understand a class
+                    and an interface.</p>
+                <ul>
+                    <li><b>Class:</b> A class is a user-defined blueprint or prototype from which objects are created.
+                        It represents the set of properties or methods that are common to all objects of one type.</li>
+                    <li><b>Interface:</b> Like a class, an interface can have methods and variables, but the methods
+                        declared in an interface are by default abstract (only method signature, no body). Interfaces
+                        specify what a class must do and not how. It is the blueprint of the class.</li>
+                </ul>
+
+                ---
+
+                <h3>Methods of the <i><b>Collection</b></i> Interface</h3>
+                <p>This interface contains various methods which can be directly used by all the collections that
+                    implement this interface. They are:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>add(Object)</code></td>
+                            <td>This method is used to add an object to the collection.</td>
+                        </tr>
+                        <tr>
+                            <td><code>addAll(Collection c)</code></td>
+                            <td>This method adds all the elements in the given collection to this collection.</td>
+                        </tr>
+                        <tr>
+                            <td><code>clear()</code></td>
+                            <td>This method removes all of the elements from this collection.</td>
+                        </tr>
+                        <tr>
+                            <td><code>contains(Object o)</code></td>
+                            <td>This method returns true if the collection contains the specified element.</td>
+                        </tr>
+                        <tr>
+                            <td><code>containsAll(Collection c)</code></td>
+                            <td>This method returns true if the collection contains all of the elements in the given
+                                collection.</td>
+                        </tr>
+                        <tr>
+                            <td><code>equals(Object o)</code></td>
+                            <td>This method compares the specified object with this collection for equality.</td>
+                        </tr>
+                        <tr>
+                            <td><code>hashCode()</code></td>
+                            <td>This method is used to return the hash code value for this collection.</td>
+                        </tr>
+                        <tr>
+                            <td><code>isEmpty()</code></td>
+                            <td>This method returns true if this collection contains no elements.</td>
+                        </tr>
+                        <tr>
+                            <td><code>iterator()</code></td>
+                            <td>This method returns an iterator over the elements in this collection.</td>
+                        </tr>
+                        <tr>
+                            <td><code>parallelStream()</code></td>
+                            <td>This method returns a parallel Stream with this collection as its source.</td>
+                        </tr>
+                        <tr>
+                            <td><code>remove(Object o)</code></td>
+                            <td>This method is used to remove the given object from the collection. If there are
+                                duplicate values, then this method removes the first occurrence of the object.</td>
+                        </tr>
+                        <tr>
+                            <td><code>removeAll(Collection c)</code></td>
+                            <td>This method is used to remove all the objects mentioned in the given collection from the
+                                collection.</td>
+                        </tr>
+                        <tr>
+                            <td><code>removeIf(Predicate filter)</code></td>
+                            <td>This method is used to remove all the elements of this collection that satisfy the given
+                                predicate.</td>
+                        </tr>
+                        <tr>
+                            <td><code>retainAll(Collection c)</code></td>
+                            <td>This method is used to retain only the elements in this collection that are contained in
+                                the specified collection.</td>
+                        </tr>
+                        <tr>
+                            <td><code>size()</code></td>
+                            <td>This method is used to return the number of elements in the collection.</td>
+                        </tr>
+                        <tr>
+                            <td><code>spliterator()</code></td>
+                            <td>This method is used to create a <i><b>Spliterator</b></i> over the elements in this
+                                collection.</td>
+                        </tr>
+                        <tr>
+                            <td><code>stream()</code></td>
+                            <td>This method is used to return a sequential Stream with this collection as its source.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>toArray()</code></td>
+                            <td>This method is used to return an array containing all of the elements in this
+                                collection.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                ---
+
+                <h3>Interfaces that Extend the Java Collections Interface</h3>
+                <p>The collection framework contains multiple interfaces where every interface is used to store a
+                    specific type of data. The following are the interfaces present in the framework.</p>
+
+                <h4>1. <i><b>Iterable</b></i> Interface</h4>
+                <p>This is the root interface for the entire collection framework. The `Collection` interface extends
+                    the `Iterable` interface. Therefore, inherently, all the interfaces and classes implement this
+                    interface. The main functionality of this interface is to provide an iterator for the collections.
+                    This interface contains only one abstract method: `Iterator iterator();`</p>
+
+                <h4>2. <i><b>Collection</b></i> Interface</h4>
+                <p>This interface extends the `Iterable` interface and is implemented by all the classes in the
+                    collection framework. This interface contains all the basic methods that every collection has, like
+                    adding data, removing data, clearing data, etc. All these methods are implemented in this interface
+                    because they are implemented by all the classes irrespective of their style of implementation.
+                    Having these methods in this interface also ensures that the names of the methods are universal for
+                    all the collections. In short, we can say that this interface builds a foundation on which the
+                    collection classes are implemented.</p>
+
+                <h4>3. <i><b>List</b></i> Interface</h4>
+                <p>This is a child interface of the `Collection` interface. This interface is dedicated to list-type
+                    data where we can store all the ordered collections of objects. This also allows duplicate data to
+                    be present in it. This `List` interface is implemented by various classes like **ArrayList, Vector,
+                    Stack, LinkedList**, etc. Since all the subclasses implement the `List`, we can instantiate a `List`
+                    object with any of these classes.</p>
+                <p>For example:</p>
+                <pre><code>
+List &lt;T&gt; al = new ArrayList&lt;&gt; ();
+List &lt;T&gt; ll = new LinkedList&lt;&gt; ();
+List &lt;T&gt; v = new Vector&lt;&gt; ();
+// Where T is the type of the object
+    </code></pre>
+                <p>The classes which implement the `List` interface are as follows:</p>
+                <h5>i). <i><b>ArrayList</b></i></h5>
+                <p><i><b>ArrayList</b></i> provides us with dynamic arrays in Java. Though it may be slower than
+                    standard arrays, it can be helpful in programs where lots of manipulation in the array is needed.
+                    The size of an <i><b>ArrayList</b></i> is increased automatically if the collection grows or shrinks
+                    if objects are removed from the collection. Java <i><b>ArrayList</b></i> allows us to randomly
+                    access the list. <i><b>ArrayList</b></i> cannot be used for primitive types, like `int`, `char`,
+                    etc. We will need a wrapper class for such cases.</p>
+                <p>Let's understand the <i><b>ArrayList</b></i> with the following example:</p>
+                <pre><code class="language-java">
+// Java program to demonstrate the
+// working of ArrayList
+import java.io.*;
+import java.util.*;
+
+class MyCollectionDemo {
+
+    // Main Method
+    public static void main(String[] args)
+    {
+
+        // Declaring the ArrayList with
+        // initial size n
+        ArrayList&lt;Integer&gt; al = new ArrayList&lt;Integer&gt;();
+
+        // Appending new elements at
+        // the end of the list
+        for (int i = 1; i &lt;= 5; i++)
+            al.add(i);
+
+        // Printing elements
+        System.out.println(al);
+
+        // Remove element at index 3
+        al.remove(3);
+
+        // Displaying the ArrayList
+        // after deletion
+        System.out.println(al);
+
+        // Printing elements one by one
+        for (int i = 0; i &lt; al.size(); i++)
+            System.out.print(al.get(i) + " ");
+    }
+}
+    </code></pre>
+                <p><b>Output:</b></p>
+                <pre><code>
+[1, 2, 3, 4, 5]
+[1, 2, 3, 5]
+1 2 3 5
+    </code></pre>
+
+                <h5>ii). <i><b>LinkedList</b></i></h5>
+                <p>The <i><b>LinkedList</b></i> class is an implementation of the <a
+                        href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html"
+                        target="_blank">LinkedList data structure</a> which is a linear data structure where the
+                    elements are not stored in contiguous locations and every element is a separate object with a data
+                    part and address part. The elements are linked using pointers and addresses. Each element is known
+                    as a node.</p>
+                <p>Let's understand the <i><b>LinkedList</b></i> with the following example:</p>
+                <pre><code class="language-java">
+// Java program to demonstrate the
+// working of LinkedList
+import java.io.*;
+import java.util.*;
+
+class MyLinkedListDemo {
+
+    // Main Method
+    public static void main(String[] args)
+    {
+
+        // Declaring the LinkedList
+        LinkedList&lt;Integer&gt; ll = new LinkedList&lt;Integer&gt;();
+
+        // Appending new elements at
+        // the end of the list
+        for (int i = 1; i &lt;= 5; i++)
+            ll.add(i);
+
+        // Printing elements
+        System.out.println(ll);
+
+        // Remove element at index 3
+        ll.remove(3);
+
+        // Displaying the List
+        // after deletion
+        System.out.println(ll);
+
+        // Printing elements one by one
+        for (int i = 0; i &lt; ll.size(); i++)
+            System.out.print(ll.get(i) + " ");
+    }
+}
+    </code></pre>
+                <p><b>Output:</b></p>
+                <pre><code>
+[1, 2, 3, 4, 5]
+[1, 2, 3, 5]
+1 2 3 5
+    </code></pre>
+
+                <h5>iii). <i><b>Vector</b></i></h5>
+                <p>A <i><b>Vector</b></i> provides us with dynamic arrays in Java. Though it may be slower than standard
+                    arrays, it can be helpful in programs where lots of manipulation in the array is needed. This is
+                    identical to <i><b>ArrayList</b></i> in terms of implementation. However, the primary difference
+                    between a <i><b>Vector</b></i> and an <i><b>ArrayList</b></i> is that a <i><b>Vector</b></i> is
+                    **synchronized** and an <i><b>ArrayList</b></i> is **non-synchronized**. This means that
+                    <i><b>Vector</b></i> methods are thread-safe, making them suitable for multi-threaded environments
+                    at the cost of performance in single-threaded scenarios.</p>
+                <p>Let's understand the <i><b>Vector</b></i> with an example:</p>
+                <pre><code class="language-java">
+// Java program to demonstrate the
+// working of Vector
+import java.io.*;
+import java.util.*;
+
+class MyVectorDemo {
+
+    // Main Method
+    public static void main(String[] args)
+    {
+
+        // Declaring the Vector
+        Vector&lt;Integer&gt; v = new Vector&lt;Integer&gt;();
+
+        // Appending new elements at
+        // the end of the list
+        for (int i = 1; i &lt;= 5; i++)
+            v.add(i);
+
+        // Printing elements
+        System.out.println(v);
+
+        // Remove element at index 3
+        v.remove(3);
+
+        // Displaying the Vector
+        // after deletion
+        System.out.println(v);
+
+        // Printing elements one by one
+        for (int i = 0; i &lt; v.size(); i++)
+            System.out.print(v.get(i) + " ");
+    }
+}
+    </code></pre>
+                <p><b>Output:</b></p>
+                <pre><code>
+[1, 2, 3, 4, 5]
+[1, 2, 3, 5]
+1 2 3 5
+    </code></pre>
+
+                <h5>iv). <i><b>Stack</b></i></h5>
+                <p><i><b>Stack</b></i> class models and implements the <a
+                        href="https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html" target="_blank">Stack data
+                        structure</a>. The class is based on the basic principle of **last-in-first-out (LIFO)**. In
+                    addition to the basic `push` and `pop` operations, the class provides three more functions: `empty`,
+                    `search`, and `peek`. The class can also be referred to as the subclass of <i><b>Vector</b></i>.</p>
+                <p>Let's understand the stack with an example:</p>
+                <pre><code class="language-java">
+// Java program to demonstrate the
+// working of a stack
+import java.util.*;
+public class StackDemo {
+
+    // Main Method
+    public static void main(String args[])
+    {
+        Stack&lt;String&gt; stack = new Stack&lt;String&gt;();
+        stack.push("Alpha");
+        stack.push("Beta");
+        stack.push("Gamma");
+        stack.push("Delta");
+
+        // Iterator for the stack
+        Iterator&lt;String&gt; itr = stack.iterator();
+
+        // Printing the stack
+        while (itr.hasNext()) {
+            System.out.print(itr.next() + " ");
+        }
+
+        System.out.println();
+
+        stack.pop();
+
+        // Iterator for the stack
+        itr = stack.iterator();
+
+        // Printing the stack
+        while (itr.hasNext()) {
+            System.out.print(itr.next() + " ");
+        }
+    }
+}
+    </code></pre>
+                <p><b>Output:</b></p>
+                <pre><code>
+Alpha Beta Gamma Delta
+Alpha Beta Gamma
+    </code></pre>
+                <p><b>Note:</b> <i><b>Stack</b></i> is a subclass of <i><b>Vector</b></i> and a legacy class. It is
+                    thread-safe which might be overhead in an environment where thread safety is not needed. An
+                    alternate to <i><b>Stack</b></i> is to use <i><b>ArrayDeque</b></i> which is not thread-safe and has
+                    faster array implementation for stack-like operations.</p>
+
+                <h4>4. <i><b>Queue</b></i> Interface</h4>
+                <p>As the name suggests, a `Queue` interface maintains the **FIFO (First In First Out)** order similar
+                    to a real-world queue line. This interface is dedicated to storing all the elements where the order
+                    of the elements matter. For example, whenever we try to book a ticket, the tickets are sold on a
+                    first come first serve basis. Therefore, the person whose request arrives first into the queue gets
+                    the ticket. There are various classes like <i><b>PriorityQueue, ArrayDeque</b></i>, etc. Since all
+                    these subclasses implement the `Queue`, we can instantiate a `Queue` object with any of these
+                    classes.</p>
+                <p>For example:</p>
+                <pre><code>
+Queue &lt;T&gt; pq = new PriorityQueue&lt;&gt; ();
+Queue &lt;T&gt; ad = new ArrayDeque&lt;&gt; ();
+// Where T is the type of the object.
+    </code></pre>
+                <p>The most frequently used implementation of the `Queue` interface is the <i><b>PriorityQueue</b></i>.
+                </p>
+                <h5>i). <i><b>PriorityQueue</b></i></h5>
+                <p>A <i><b>PriorityQueue</b></i> is used when the objects are supposed to be processed based on
+                    priority. It is known that a queue follows the First-In-First-Out algorithm, but sometimes the
+                    elements of the queue are needed to be processed according to the priority and this class is used in
+                    these cases. The <i><b>PriorityQueue</b></i> is based on the priority heap. The elements of the
+                    priority queue are ordered according to the natural ordering, or by a <i><b>Comparator</b></i>
+                    provided at queue construction time, depending on which constructor is used.</p>
+                <p>Let's understand the priority queue with an example:</p>
+                <pre><code class="language-java">
+// Java program to demonstrate the working of
+// priority queue in Java
+import java.util.*;
+
+class PriorityQueueDemo {
+
+    // Main Method
+    public static void main(String args[])
+    {
+        // Creating empty priority queue
+        PriorityQueue&lt;Integer&gt; pQueue
+            = new PriorityQueue&lt;Integer&gt;();
+
+        // Adding items to the pQueue using add()
+        pQueue.add(10);
+        pQueue.add(20);
+        pQueue.add(15);
+
+        // Printing the top element of PriorityQueue
+        System.out.println(pQueue.peek());
+
+        // Printing the top element and removing it
+        // from the PriorityQueue container
+        System.out.println(pQueue.poll());
+
+        // Printing the top element again
+        System.out.println(pQueue.peek());
+    }
+}
+    </code></pre>
+                <p><b>Output:</b></p>
+                <pre><code>
+10
+10
+15
+    </code></pre>
+
+                <h4>5. <i><b>Deque</b></i> Interface</h4>
+                <p>This is a very slight variation of the <a
+                        href="https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html" target="_blank">queue data
+                        structure</a>. <i><b>Deque</b></i>, also known as a **double-ended queue**, is a data structure
+                    where we can add and remove elements from both ends of the queue. This interface extends the `Queue`
+                    interface. The class which implements this interface is <i><b>ArrayDeque</b></i> (and
+                    <i><b>LinkedList</b></i> also implements it). Since <i><b>ArrayDeque</b></i> class implements the
+                    `Deque` interface, we can instantiate a `Deque` object with this class.</p>
+                <p>For example:</p>
+                <pre><code>
+Deque&lt;T&gt; ad = new ArrayDeque&lt;&gt; ();
+// Where T is the type of the object.
+    </code></pre>
+                <p>The class which implements the `Deque` interface is <i><b>ArrayDeque</b></i>.</p>
+                <h5>i). <i><b>ArrayDeque</b></i></h5>
+                <p><i><b>ArrayDeque</b></i> class which is implemented in the collection framework provides us with a
+                    way to apply resizable array. This is a special kind of array that grows and allows users to add or
+                    remove an element from both sides of the queue. Array deques have no capacity restrictions and they
+                    grow as necessary to support usage. They can be used as both queues (FIFO) and stacks (LIFO).</p>
+                <p>Let's understand <i><b>ArrayDeque</b></i> with an example:</p>
+                <pre><code class="language-java">
+// Java program to demonstrate the
+// ArrayDeque class in Java
+
+import java.util.*;
+public class ArrayDequeDemo {
+    public static void main(String[] args)
+    {
+        // Initializing an deque
+        ArrayDeque&lt;Integer&gt; de_que
+            = new ArrayDeque&lt;Integer&gt;(10);
+
+        // add() method to insert
+        de_que.add(10);
+        de_que.add(20);
+        de_que.add(30);
+        de_que.add(40);
+        de_que.add(50);
+
+        System.out.println(de_que);
+
+        // clear() method
+        de_que.clear();
+
+        // addFirst() method to insert the
+        // elements at the head
+        de_que.addFirst(564);
+        de_que.addFirst(291);
+
+        // addLast() method to insert the
+        // elements at the tail
+        de_que.addLast(24);
+        de_que.addLast(14);
+
+        System.out.println(de_que);
+    }
+}
+    </code></pre>
+                <p><b>Output:</b></p>
+                <pre><code>
+[10, 20, 30, 40, 50]
+[291, 564, 24, 14]
+    </code></pre>
+
+                <h4>6. <i><b>Set</b></i> Interface</h4>
+                <p>A `Set` is an unordered collection of objects in which **duplicate values cannot be stored**. This
+                    collection is used when we wish to avoid the duplication of the objects and wish to store only the
+                    unique objects. This `Set` interface is implemented by various classes like <i><b>HashSet, TreeSet,
+                            LinkedHashSet</b></i>, etc. Since all the subclasses implement the `Set`, we can instantiate
+                    a `Set` object with any of these classes.</p>
+                <p>For example:</p>
+                <pre><code>
+Set&lt;T&gt; hs = new HashSet&lt;&gt; ();
+Set&lt;T&gt; lhs = new LinkedHashSet&lt;&gt; ();
+Set&lt;T&gt; ts = new TreeSet&lt;&gt; ();
+// Where T is the type of the object.
+    </code></pre>
+                <p>The following are the classes that implement the `Set` interface:</p>
+                <h5>i). <i><b>HashSet</b></i></h5>
+                <p>The <i><b>HashSet</b></i> class is an inherent implementation of the hash table data structure. The
+                    objects that we insert into the <i><b>HashSet</b></i> do not guarantee to be inserted in the same
+                    order. The objects are inserted based on their hashcode. This class also allows the insertion of
+                    `NULL` elements.</p>
+                <p>Let's understand <i><b>HashSet</b></i> with an example:</p>
+                <pre><code class="language-java">
+// Java program to demonstrate the
+// working of a HashSet
+import java.util.*;
+
+public class HashSetDemo {
+
+    // Main Method
+    public static void main(String args[])
+    {
+        // Creating HashSet and
+        // adding elements
+        HashSet&lt;String&gt; hs = new HashSet&lt;String&gt;();
+
+        hs.add("Element A");
+        hs.add("Element B");
+        hs.add("Element A"); // This is a duplicate, will not be added
+        hs.add("Element C");
+        hs.add("Very useful");
+
+        // Traversing elements
+        Iterator&lt;String&gt; itr = hs.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+    }
+}
+    </code></pre>
+                <p><b>Output:</b> (Order may vary)</p>
+                <pre><code>
+Very useful
+Element A
+Element B
+Element C
+    </code></pre>
+
+                <h5>ii). <i><b>LinkedHashSet</b></i></h5>
+                <p>A <i><b>LinkedHashSet</b></i> is very similar to a <i><b>HashSet</b></i>. The difference is that this
+                    uses a doubly linked list to store the data and **retains the insertion ordering** of the elements.
+                    It provides the constant-time performance of a hash table with the predictable iteration order of a
+                    linked list.</p>
+                <p>Let's understand the <i><b>LinkedHashSet</b></i> with an example:</p>
+                <pre><code class="language-java">
+// Java program to demonstrate the
+// working of a LinkedHashSet
+import java.util.*;
+
+public class LinkedHashSetDemo {
+
+    // Main Method
+    public static void main(String args[])
+    {
+        // Creating LinkedHashSet and
+        // adding elements
+        LinkedHashSet&lt;String&gt; lhs
+            = new LinkedHashSet&lt;String&gt;();
+
+        lhs.add("Data Entry");
+        lhs.add("Processing");
+        lhs.add("Data Entry"); // Duplicate, will not be added
+        lhs.add("Is Done");
+        lhs.add("With Efficiency");
+
+        // Traversing elements
+        Iterator&lt;String&gt; itr = lhs.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+    }
+}
+    </code></pre>
+                <p><b>Output:</b></p>
+                <pre><code>
+Data Entry
+Processing
+Is Done
+With Efficiency
+    </code></pre>
+
+                <h4>7. <i><b>SortedSet</b></i> Interface</h4>
+                <p>This interface is very similar to the `Set` interface. The only difference is that this interface has
+                    extra methods that **maintain the ordering of the elements**. The `SortedSet` interface extends the
+                    `Set` interface and is used to handle the data which needs to be sorted. The class which implements
+                    this interface is <i><b>TreeSet</b></i>. Since this class implements the `SortedSet`, we can
+                    instantiate a `SortedSet` object with this class.</p>
+                <p>For example:</p>
+                <pre><code>
+SortedSet&lt;T&gt; ts = new TreeSet&lt;&gt; ();
+// Where T is the type of the object.
+    </code></pre>
+                <p>The class which implements the sorted set interface is <i><b>TreeSet</b></i>.</p>
+                <h5>i). <i><b>TreeSet</b></i></h5>
+                <p>The <i><b>TreeSet</b></i> class uses a Tree (specifically, a Red-Black tree) for storage. The
+                    ordering of the elements is maintained by a set using their **natural ordering** (if elements
+                    implement `Comparable`) whether or not an explicit comparator is provided. This must be consistent
+                    with `equals` if it is to correctly implement the `Set` interface. It can also be ordered by a
+                    `Comparator` provided at set creation time, depending on which constructor is used. It provides
+                    guaranteed $O(\log n)$ time complexity for add, remove, and contains operations.</p>
+                <p>Let's understand <i><b>TreeSet</b></i> with an example:</p>
+                <pre><code class="language-java">
+// Java program to demonstrate the
+// working of a TreeSet
+import java.util.*;
+
+public class TreeSetDemo {
+
+    // Main Method
+    public static void main(String args[])
+    {
+        // Creating TreeSet and
+        // adding elements
+        TreeSet&lt;String&gt; ts = new TreeSet&lt;String&gt;();
+
+        ts.add("Application");
+        ts.add("Framework");
+        ts.add("Application"); // Duplicate, will not be added
+        ts.add("Is");
+        ts.add("Very useful");
+
+        // Traversing elements (will be in natural sorted order)
+        Iterator&lt;String&gt; itr = ts.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+    }
+}
+    </code></pre>
+                <p><b>Output:</b></p>
+                <pre><code>
+Application
+Framework
+Is
+Very useful
+    </code></pre>
+
+                <h4>8. <i><b>Map</b></i> Interface</h4>
+                <p>A `Map` is a data structure that supports the **key-value pair** for mapping the data. This interface
+                    **doesn't support duplicate keys** because the same key cannot have multiple mappings; however, it
+                    allows duplicate values for different keys. A `Map` is useful if there is data and we wish to
+                    perform operations on the basis of the key. This `Map` interface is implemented by various classes
+                    like **HashMap, TreeMap**, etc. Since all the subclasses implement the `Map`, we can instantiate a
+                    `Map` object with any of these classes.</p>
+                <p>For example:</p>
+                <pre><code>
+Map&lt;K, V&gt; hm = new HashMap&lt;&gt; ();
+Map&lt;K, V&gt; tm = new TreeMap&lt;&gt; ();
+// Where K is the type of the key and V is the type of the value.
+    </code></pre>
+                <p>The frequently used implementation of a `Map` interface is a <i><b>HashMap</b></i>.</p>
+                <h5>i). <i><b>HashMap</b></i></h5>
+                <p><i><b>HashMap</b></i> provides the basic implementation of the `Map` interface of Java. It stores the
+                    data in (Key, Value) pairs. To access a value in a <i><b>HashMap</b></i>, we must know its key.
+                    <i><b>HashMap</b></i> uses a technique called Hashing. Hashing is a technique of converting a large
+                    String (or any object's hash code) to a small integer that represents the same object so that the
+                    indexing and search operations are faster. <i><b>HashSet</b></i> also uses <i><b>HashMap</b></i>
+                    internally. It offers constant-time performance ($O(1)$ on average) for basic operations like `put`,
+                    `get`, and `remove`.</p>
+                <p>Let's understand the <i><b>HashMap</b></i> with an example:</p>
+                <pre><code class="language-java">
+// Java program to demonstrate the
+// working of a HashMap
+import java.util.*;
+
+public class HashMapDemo {
+
+    // Main Method
+    public static void main(String args[])
+    {
+        // Creating HashMap and
+        // adding elements
+        HashMap&lt;Integer, String&gt; hm
+            = new HashMap&lt;Integer, String&gt;();
+
+        hm.put(1, "Data");
+        hm.put(2, "Storage");
+        hm.put(3, "System");
+        hm.put(1, "DataUpdated"); // Overwrites the value for key 1
+
+        // Finding the value for a key
+        System.out.println("Value for 1 is " + hm.get(1));
+
+        // Traversing through the HashMap using entrySet()
+        for (Map.Entry&lt;Integer, String&gt; e : hm.entrySet())
+            System.out.println(e.getKey() + " "
+                               + e.getValue());
+    }
+}
+    </code></pre>
+                <p><b>Output:</b> (Order may vary for key-value pairs)</p>
+                <pre><code>
+Value for 1 is DataUpdated
+1 DataUpdated
+2 Storage
+3 System
+    </code></pre>
+
+                ---
+
+                <h3>2. Iterating Through Collections: Iterator & Enhanced For Loop (Re-positioned for flow)</h3>
+                <p>To access and process elements within collections, Java provides two primary mechanisms: the
+                    `Iterator` interface and the enhanced for-each loop.</p>
+
+                <h4>2.1. <i><b>Iterator</b></i> Interface</h4>
+                <p>The `Iterator` interface provides a standard way to traverse elements in a collection sequentially
+                    without exposing the underlying data structure. It's particularly useful when you need to remove
+                    elements safely during iteration or when the collection does not support index-based access (like
+                    `Set`).</p>
+                <ul>
+                    <li><code>hasNext()</code>: Returns `true` if the iteration has more elements.</li>
+                    <li><code>next()</code>: Returns the next element in the iteration. Throws `NoSuchElementException`
+                        if no more elements.</li>
+                    <li><code>remove()</code>: Removes the last element returned by `next()` from the underlying
+                        collection (optional operation). This is the only safe way to modify a collection during
+                        iteration.</li>
+                </ul>
+
+                <pre><code class="language-java">
+import java.util.*;
+
+public class IteratorExample {
     public static void main(String[] args) {
-        // List example
-        List<String> list = new ArrayList<>();
-        list.add("Apple");
-        list.add("Banana");
-        list.add("Orange");
-        System.out.println("List: " + list);
+        List&lt;String&gt; names = new ArrayList&lt;&gt;();
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
 
-        // Set example
-        Set<Integer> set = new HashSet<>();
-        set.add(1);
-        set.add(2);
-        set.add(3);
-        set.add(1); // Duplicate, will not be added
-        System.out.println("Set: " + set);
-
-        // Map example
-        Map<String, Integer> map = new HashMap<>();
-        map.put("one", 1);
-        map.put("two", 2);
-        map.put("three", 3);
-        System.out.println("Map: " + map);
+        System.out.println("Iterating with Iterator:");
+        Iterator&lt;String&gt; itr = names.iterator();
+        while (itr.hasNext()) {
+            String name = itr.next();
+            System.out.println(name);
+            if (name.equals("Bob")) {
+                itr.remove(); // Safely remove "Bob"
+            }
+        }
+        System.out.println("List after removal: " + names); // Output: [Alice, Charlie]
     }
 }
     </code></pre>
 
-                <h3>2. Iterator & Enhanced For Loop</h3>
-                <p>Used to iterate through collections easily.</p>
+                <h4>2.2. Enhanced For Loop (For-Each Loop)</h4>
+                <p>Introduced in Java 5, the enhanced for loop provides a more concise and readable way to iterate over
+                    arrays and collections (any class that implements `Iterable`). It's ideal when you simply need to
+                    access each element and don't require the ability to remove elements during iteration or access them
+                    by index.</p>
 
-                <pre><code>
-// Iterator
-List<String> names = new ArrayList<>();
-names.add("Alice");
-names.add("Bob");
+                <pre><code class="language-java">
+import java.util.*;
 
-Iterator<String> itr = names.iterator();
-while (itr.hasNext()) {
-    System.out.println(itr.next());
-}
+public class EnhancedForLoopExample {
+    public static void main(String[] args) {
+        List&lt;String&gt; names = new ArrayList&lt;&gt;();
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
 
-// Enhanced For Loop
-for (String name : names) {
-    System.out.println(name);
+        System.out.println("Iterating with Enhanced For Loop:");
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        // Note: Modifying the collection directly within an enhanced for loop (e.g., names.remove("Bob"))
+        // will throw a ConcurrentModificationException. Use Iterator for safe modification.
+    }
 }
     </code></pre>
 
-                <h3>3. Sorting with Collections</h3>
-                <p>Sort collections using utility methods or comparators.</p>
+                ---
 
-                <pre><code>
-List<Integer> numbers = Arrays.asList(5, 3, 8, 1);
-Collections.sort(numbers);
-System.out.println(numbers);
+                <h3>3. Sorting Collections with <i><b>Collections</b></i> Class</h3>
+                <p>The `java.util.Collections` class provides static utility methods for operating on collections. One
+                    of its most frequently used methods is `sort()`, which allows you to sort `List` implementations.
+                </p>
+                <ul>
+                    <li><code>Collections.sort(List&lt;T&gt; list)</code>: Sorts the elements of the specified list into
+                        ascending order, according to their <i><b>natural ordering</b></i>. This means that the elements
+                        in the list must implement the <i><b>Comparable</b></i> interface.</li>
+                    <li><code>Collections.sort(List&lt;T&gt; list, Comparator&lt;? super T&gt; c)</code>: Sorts the
+                        specified list according to the order induced by the specified <i><b>Comparator</b></i>. This is
+                        used for custom sorting logic.</li>
+                </ul>
 
-Collections.sort(numbers, Collections.reverseOrder());
-System.out.println(numbers);
+                <pre><code class="language-java">
+import java.util.*;
+
+public class SortingCollections {
+    public static void main(String[] args) {
+        List&lt;Integer&gt; numbers = Arrays.asList(5, 3, 8, 1, 9, 2);
+
+        // Sort in natural (ascending) order
+        Collections.sort(numbers);
+        System.out.println("Sorted (natural order): " + numbers); // Output: [1, 2, 3, 5, 8, 9]
+
+        // Sort in reverse order using Collections.reverseOrder()
+        Collections.sort(numbers, Collections.reverseOrder());
+        System.out.println("Sorted (reverse order): " + numbers); // Output: [9, 8, 5, 3, 2, 1]
+
+        List&lt;String&gt; names = Arrays.asList("Zebra", "Apple", "Mango", "Banana");
+        Collections.sort(names);
+        System.out.println("Sorted strings: " + names); // Output: [Apple, Banana, Mango, Zebra]
+    }
+}
     </code></pre>
 
-                <h3>4. Comparable & Comparator</h3>
-                <p>Interfaces to define natural and custom sorting order.</p>
+                ---
 
-                <pre><code>
-class Student implements Comparable<Student> {
+                <h3>4. Custom Sorting: <i><b>Comparable</b></i> & <i><b>Comparator</b></i></h3>
+                <p>While `Collections.sort()` handles natural ordering, you often need to define custom sorting rules
+                    for your own objects. Java provides two interfaces for this purpose:</p>
+
+                <h4>4.1. <i><b>Comparable&lt;T&gt;</b></i> Interface (Natural Ordering)</h4>
+                <p>The <i><b>Comparable</b></i> interface is used to define the <i><b>natural ordering</b></i> of
+                    objects of a class. If a class implements <i><b>Comparable</b></i>, its instances can be sorted
+                    automatically by methods like `Collections.sort()` or used in sorted collections like
+                    <i><b>TreeSet</b></i> and <i><b>TreeMap</b></i> (for keys). It has a single method:</p>
+                <ul>
+                    <li><code>int compareTo(T other)</code>: Compares this object with the specified object for order.
+                        Returns a negative integer, zero, or a positive integer as this object is less than, equal to,
+                        or greater than the specified object.</li>
+                </ul>
+
+                <pre><code class="language-java">
+import java.util.*;
+
+class Student implements Comparable&lt;Student&gt; {
     int id;
     String name;
+    int age;
 
-    Student(int id, String name) {
+    Student(int id, String name, int age) {
         this.id = id;
         this.name = name;
+        this.age = age;
     }
 
+    // Define natural ordering based on student ID (ascending)
+    @Override
     public int compareTo(Student s) {
-        return this.id - s.id; // Ascending order
+        return this.id - s.id;
+    }
+
+    @Override
+    public String toString() {
+        return "Student[id=" + id + ", name='" + name + "', age=" + age + "]";
     }
 }
 
-// Comparator<br>
-class NameComparator implements Comparator<Student> {
+public class ComparableExample {
+    public static void main(String[] args) {
+        List&lt;Student&gt; studentList = new ArrayList&lt;&gt;();
+        studentList.add(new Student(103, "Charlie", 22));
+        studentList.add(new Student(101, "Alice", 20));
+        studentList.add(new Student(102, "Bob", 21));
+
+        System.out.println("Students before sorting (by ID):");
+        studentList.forEach(System.out::println);
+
+        // Sort using natural ordering (based on compareTo)
+        Collections.sort(studentList);
+        System.out.println("\nStudents after sorting (by ID):");
+        studentList.forEach(System.out::println);
+    }
+}
+    </code></pre>
+
+                <h4>4.2. <i><b>Comparator&lt;T&gt;</b></i> Interface (Custom Ordering)</h4>
+                <p>The <i><b>Comparator</b></i> interface is used to define an <i><b>external</b></i> or
+                    <i><b>custom</b></i> ordering. You create separate <i><b>Comparator</b></i> classes (or use lambda
+                    expressions) to specify how objects should be sorted. This is useful when:</p>
+                <ul>
+                    <li>You want to sort objects of a class that does not implement <i><b>Comparable</b></i>.</li>
+                    <li>You want to sort objects in different ways (e.g., sort <i><b>Student</b></i> by name, then by
+                        age).</li>
+                    <li>You don't want to modify the original class to implement <i><b>Comparable</b></i>.</li>
+                </ul>
+                <p>It has a single abstract method (making it a functional interface):</p>
+                <ul>
+                    <li><code>int compare(T o1, T o2)</code>: Compares its two arguments for order. Returns a negative
+                        integer, zero, or a positive integer as the first argument is less than, equal to, or greater
+                        than the second.</li>
+                </ul>
+
+                <pre><code class="language-java">
+import java.util.*;
+
+// Reusing the Student class from the Comparable example
+
+// Comparator to sort Students by name (alphabetical)
+class NameComparator implements Comparator&lt;Student&gt; {
+    @Override
     public int compare(Student s1, Student s2) {
         return s1.name.compareTo(s2.name);
     }
 }
 
-Collections.sort(studentList, new NameComparator());
+// Comparator to sort Students by age (ascending)
+class AgeComparator implements Comparator&lt;Student&gt; {
+    @Override
+    public int compare(Student s1, Student s2) {
+        return s1.age - s2.age;
+    }
+}
+
+public class ComparatorExample {
+    public static void main(String[] args) {
+        List&lt;Student&gt; studentList = new ArrayList&lt;&gt;();
+        studentList.add(new Student(103, "Charlie", 22));
+        studentList.add(new Student(101, "Alice", 20));
+        studentList.add(new Student(102, "Bob", 21));
+        studentList.add(new Student(104, "Alice", 25)); // Another Alice
+
+        System.out.println("Students before sorting:");
+        studentList.forEach(System.out::println);
+
+        // Sort by name using NameComparator
+        Collections.sort(studentList, new NameComparator());
+        System.out.println("\nStudents after sorting by name:");
+        studentList.forEach(System.out::println);
+
+        // Sort by age using AgeComparator
+        Collections.sort(studentList, new AgeComparator());
+        System.out.println("\nStudents after sorting by age:");
+        studentList.forEach(System.out::println);
+
+        // Using Lambda expression for custom sorting (Java 8+) - sort by ID in descending order
+        Collections.sort(studentList, (s1, s2) -> s2.id - s1.id);
+        System.out.println("\nStudents after sorting by ID (descending) using Lambda:");
+        studentList.forEach(System.out::println);
+    }
+}
     </code></pre>
 
                 <div class="highlight">
-                    <p><strong>Note:</strong> "Collections" provide the ready-to-use tools, they are a fundamental part
-                        of Data Structures
-                        and Algorithms (DSA), which is the study of how to organize and process data efficiently.
-                        Understanding collections
-                        is key to mastering DSA, as they demonstrate the practical application of different data
-                        structures and their
-                        associated algorithms.</p>
+                    <p><b>Note:</b> The Java Collections Framework is an integral part of Data Structures and Algorithms
+                        (DSA). Each collection type (List, Set, Map) represents a specific data structure (e.g., arrays,
+                        linked lists, hash tables, trees), and the operations performed on them (add, remove, sort,
+                        search) are direct applications of various algorithms. A deep understanding of collections not
+                        only simplifies Java development but also solidifies your grasp of fundamental DSA concepts,
+                        which is crucial for building efficient and scalable software.</p>
                 </div>
             </section>
 
@@ -6181,6 +7253,8 @@ try {
                     <li><a href="https://www.baeldung.com/" target="_blank">Baeldung - Java & Spring</a></li>
                     <li><a href="https://www.programiz.com/java-programming" target="_blank">Programiz Java
                             Tutorial</a></li>
+                    <li><a href="https://www.digitalocean.com/community/tutorials/collections-in-java-tutorial"
+                            target="_blank">DigitalOcean Java Collections</a></li>
                 </ul>
             </section>
         </main>
