@@ -39,7 +39,7 @@
   }
 
   .nav-logo .logo-text {
-      font-size: 1.8rem;
+      font-size: 2.5rem;
       font-weight: 700;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       -webkit-background-clip: text;
@@ -55,15 +55,33 @@
 
   .nav-link {
       text-decoration: none;
-      color: #333;
-      font-weight: 500;
+      color:  #667eea;
+      font-weight: 600;
       transition: color 0.3s ease;
       position: relative;
+      font-size: 1.2rem;
+  }
+
+  .nav-link:focus {
+    outline: none !important; ;
+    border: none; /* Add this if you suspect a border */
+    box-shadow: none; /* Add this if you suspect a box-shadow */
+ }
+
+   /* Add a visual indicator ONLY when focused by keyboard */
+  .nav-link:focus-visible {
+     box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.7); /* A subtle blue glow */
+     border-radius: 3px; /* Match your link's radius */
+     transition: box-shadow 0.2s ease;
   }
 
   .nav-link:hover {
-      color: #667eea;
-  }
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;  /* For WebKit browsers */
+    background-clip: text; /* Standard, for modern browsers */
+    -webkit-text-fill-color: transparent;     /* For wider browser compatibility, you might need to add other vendor prefixes or a fallback color */
+    color: #764ba2; /* Fallback for browsers that don't support text clipping */
+   }  
 
   .nav-link::after {
       content: '';
@@ -128,12 +146,12 @@
       font-size: 3.5rem;
       font-weight: 700;
       margin-bottom: 1.5rem;
-      line-height: 1.2;
+      line-height: 1.3;
   }
 
   .greeting {
       display: block;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: 400;
       opacity: 0.9;
       animation: slideInLeft 1s ease;
@@ -227,20 +245,91 @@
       justify-content: center;
       backdrop-filter: blur(10px);
       border: 2px solid rgba(255, 255, 255, 0.2);
+      position: relative;
   }
 
-  .image-placeholder i {
-      font-size: 6rem;
-      color: white;
-      opacity: 0.8;
-  }
+   .code-elements {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+   }
 
-  .scroll-indicator {
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-  }
+   .code-elements i {
+       position: absolute;
+       color: white;
+       opacity: 0.8;
+   }
+
+   .code-elements .fa-java {
+       font-size: 5rem;
+       top: 45%;
+       left: 50%;
+       transform: translate(-50%, -48%);
+   }
+
+   .code-elements .fa-react {
+       font-size: 3.1rem;
+       top: 4%;
+       right: 43%;
+   }
+
+   .code-elements .fa-database {
+       font-size: 3rem;
+       top: 12%;
+       right: 19%;
+   }
+
+   .code-elements .fa-laptop-code {
+       font-size: 3rem;
+       top: 35%;
+       right: 6%;
+   }
+
+   .code-elements .fa-layer-group {
+       font-size: 3rem;
+       bottom: 24%;
+       right: 8%;
+   }
+
+   .code-elements .fa-git-alt {
+       font-size: 3.5rem;
+       top: 77%;
+       left: 37%;
+       transform: translateX(-50%);
+   }
+
+   .code-elements .fa-github {
+       font-size: 3rem;
+       top: 78%;
+       left: 65%;
+       transform: translateX(-50%);
+   }
+
+   .code-elements .fa-server {
+       font-size: 3rem;
+       bottom: 24%;
+       left: 10%;
+   }
+
+   .code-elements .fa-css3-alt {
+       font-size: 3rem;
+       top: 38%;
+       left: 6%;
+   }
+
+   .code-elements .fa-code {
+       font-size: 2.9rem;
+       top: 15%;
+       left: 13%;
+   }
+
+   .scroll-indicator {
+       position: absolute;
+       bottom: 2rem;
+       left: 50%;
+       transform: translateX(-50%);
+       cursor: pointer;
+   }  
 
   .scroll-arrow {
       animation: bounce 2s infinite;

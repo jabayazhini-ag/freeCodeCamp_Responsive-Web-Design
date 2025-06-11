@@ -22,7 +22,7 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" onclick="toggleMenu()">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -41,8 +41,9 @@
                         <span class="profession">Java Full Stack Developer</span>
                     </h1>
                     <p class="welcome-description">
-                        Passionate about creating innovative web solutions and bringing ideas to life through code.
-                        Let's build something amazing together!
+                        Passionate about crafting robust enterprise applications and comprehensive software solutions.
+                        Specializing in Java development and modern full-stack technologies to build scalable systems that drive business
+                        success.
                     </p>
                     <div class="welcome-buttons">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -51,11 +52,22 @@
                 </div>
                 <div class="welcome-image">
                     <div class="image-placeholder">
-                        <i class="fas fa-code"></i>
+                        <div class="code-elements">
+                            <i class="fab fa-java"></i>
+                            <i class="fa-brands fa-react"></i>
+                            <i class="fas fa-database"></i>
+                            <i class="fas fa-server"></i>
+                            <i class="fas fa-code"></i>
+                            <i class="fas fa-laptop-code"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fas fa-layer-group"></i>
+                            <i class="fa-brands fa-git-alt"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="scroll-indicator">
+            <div class="scroll-indicator" onclick="scrollToAbout()">
                 <div class="scroll-arrow">
                     <i class="fas fa-chevron-down"></i>
                 </div>
@@ -120,16 +132,11 @@
                             <i class="fab fa-github"></i>
                             <span>GitHub</span>
                         </div>
-                        <!-- AI Prompting -->
+                        <!-- AI Tools -->
                         <div class="skill-item">
-                            <i class="fas fa-brain"></i> <!-- Symbolic representation -->
-                            <span>AI Prompting</span>
-                        </div>                        
-                        <!-- Generative AI -->
-                        <div class="skill-item">
-                            <i class="fas fa-robot"></i> <!-- Symbolic representation -->
-                            <span>Generative AI</span>
-                        </div>
+                            <i class="fas fa-robot"></i>
+                            <span>AI Tools</span>
+                        </div>                     
                     </div>
                     <div class="resume-download">
                         <a href="#" class="btn btn-outline" onclick="downloadResume()">
