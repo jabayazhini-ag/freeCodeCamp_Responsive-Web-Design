@@ -715,4 +715,191 @@
           grid-template-columns: 1fr;
           gap: 2rem;
       }
+
+      .skills {
+          gap: 1rem;
+      }
+
+      .skill-item {
+          padding: 0.8rem;
+      }
+
+      .skill-item span {
+          font-size: 0.9rem;
+      }
+
+      .about-text p {
+          font-size: 1rem;
+      }
+
+      .section-title {
+          font-size: 2rem;
+      }
+
+      .contact-method {
+          flex-direction: column;
+          text-align: center;
+          gap: 0.5rem;
+      }
+
+      .contact-form {
+          padding: 1.5rem;
+      }
+
+      .social-links a {
+          width: 45px;
+          height: 45px;
+      }
+
+      .footer-content {
+          gap: 1.5rem;
+      }
   }
+
+  @media screen and (max-width: 480px) {
+      .welcome-title {
+          font-size: 2rem;
+      }
+
+      .greeting {
+          font-size: 1rem;
+      }
+
+      .profession {
+          font-size: 1.2rem;
+      }
+
+      .welcome-description {
+          font-size: 1rem;
+      }
+
+      .btn {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+      }
+
+      .image-placeholder {
+          width: 150px;
+          height: 150px;
+      }
+
+      .image-placeholder i {
+          font-size: 3rem;
+      }
+
+      .skills {
+          gap: 0.8rem;
+      }
+
+      .skill-item {
+          padding: 0.6rem;
+          min-width: 80px;
+      }
+
+      .skill-item i {
+          font-size: 1.5rem;
+      }
+
+      .skill-item span {
+          font-size: 0.8rem;
+      }
+
+      .contact-form {
+          padding: 1rem;
+      }
+
+      .form-group input,
+      .form-group textarea {
+          padding: 10px 12px;
+          font-size: 0.9rem;
+      }
+  }
+
+  /* Smooth scrolling */
+  html {
+      scroll-behavior: smooth;
+  }
+
+  /* Focus styles for accessibility */
+  .nav-link:focus,
+  .btn:focus,
+  .project-link:focus,
+  .social-links a:focus {
+      outline: 2px solid #667eea;
+      outline-offset: 2px;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+      width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+  }
+
+  /* Loading animation for project images */
+  .project-placeholder {
+      animation: pulse 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulse {
+      0% {
+          opacity: 0.8;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+
+  /* Enhanced hover effects */
+  .skill-item:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+  }
+
+  .contact-method:hover i {
+      transform: scale(1.1);
+  }
+
+  /* Form validation styles */
+  .form-group input:valid,
+  .form-group textarea:valid {
+      border-color: #28a745;
+  }
+
+  .form-group input:invalid:not(:placeholder-shown),
+  .form-group textarea:invalid:not(:placeholder-shown) {
+      border-color: #dc3545;
+  }
+
+  /* Print styles */
+  @media print {
+      #navbar,
+      .floating-elements,
+      .scroll-indicator,
+      footer {
+          display: none;
+      }
+
+      #welcome-section {
+          height: auto;
+          background: white;
+          color: black;
+      }
+
+      .welcome-title,
+      .section-title {
+          color: black;
+      }
+  }
+    
