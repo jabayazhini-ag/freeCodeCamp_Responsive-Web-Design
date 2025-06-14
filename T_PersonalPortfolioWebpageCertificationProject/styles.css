@@ -1272,14 +1272,14 @@ to {
     
     .welcome-text {
         order: 1; /* Text first */
-        padding: 0 1rem; /* Add padding for better readability */
+        padding: 1rem 1rem 0 1rem;  /* Add padding for better readability */
     }
     
     .welcome-image {
         order: 2; /* Image below text */
         margin-left: 0;
         justify-content: center;
-        margin-top: 2rem; /* Space between text and image */
+        margin-top: 1rem; /* Space between text and image */
     }
     
     .welcome-title {
@@ -1317,7 +1317,9 @@ to {
     
     .scroll-indicator {
         margin-left: 0; /* Center the scroll indicator */
-        position: relative;
+        position: absolute;
+        left: 50%; 
+        transform: translateX(-50%);
         margin-top: 2rem;
     }
     
@@ -1422,7 +1424,7 @@ to {
 }
 
 /* Mobile devices */
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
     #welcome-section {
         padding-top: 100px; /* Adequate space from navbar */
         padding-bottom: 2rem;
@@ -1437,7 +1439,7 @@ to {
     }
     
     .welcome-text {
-        padding: 0; /* Remove extra padding on mobile */
+        padding:  0.5rem 0 0 0;  /* Remove extra padding on mobile */
     }
     
     .welcome-title {
@@ -1478,7 +1480,7 @@ to {
     }
     
     .welcome-image {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     
     .image-placeholder {
@@ -1488,6 +1490,8 @@ to {
     
     .scroll-indicator {
         margin-left: 0; /* Keep centered */
+        position: absolute; 
+        transform: translateX(-50%); 
         margin-top: 2rem;
     }
     
