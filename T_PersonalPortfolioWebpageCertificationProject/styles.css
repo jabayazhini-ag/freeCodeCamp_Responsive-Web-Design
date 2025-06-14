@@ -1184,21 +1184,33 @@ to {
 /* ------------------------ Welcome Section ---------------------------- */
 
 /* Large tablets and small desktops */
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
+    #welcome-section {
+        padding-top: 100px; /* More space from navbar */
+    }
+    
     .welcome-content {
         gap: 3rem;
     }
     
     .welcome-title {
         font-size: 3rem;
+        margin-bottom: 1.5rem; /* Better spacing */
     }
     
     .greeting {
         font-size: 1.6rem;
+        margin-bottom: 0.3rem;
     }
     
     .profession {
         font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .welcome-description {
+        margin-bottom: 2rem;
+        line-height: 1.6;
     }
     
     .welcome-image {
@@ -1208,6 +1220,10 @@ to {
     .image-placeholder {
         width: 280px;
         height: 280px;
+    }
+    
+    .scroll-indicator {
+        margin-left: 50px; /* Less offset for tablets */
     }
     
     .code-elements .fa-java {
@@ -1242,54 +1258,67 @@ to {
 /* Tablets */
 @media screen and (max-width: 768px) {
     #welcome-section {
-        padding-top: 70px;
+        padding-top: 120px; /* More space from navbar */
         height: auto;
         min-height: 100vh;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
     }
     
     .welcome-content {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 3rem; /* Better spacing between text and image */
         text-align: center;
     }
     
     .welcome-text {
-        order: 2;
+        order: 1; /* Text first */
+        padding: 0 1rem; /* Add padding for better readability */
     }
     
     .welcome-image {
-        order: 1;
+        order: 2; /* Image below text */
         margin-left: 0;
         justify-content: center;
+        margin-top: 2rem; /* Space between text and image */
     }
     
     .welcome-title {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
+        font-size: 2.8rem;
+        margin-bottom: 2rem; /* More space below title */
     }
     
     .greeting {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
     
     .profession {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
     }
     
     .welcome-description {
-        font-size: 1.1rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.15rem;
+        margin-bottom: 2rem;
         text-align: center;
+        line-height: 1.6;
+        padding: 0 1rem;
     }
     
     .welcome-buttons {
         justify-content: center;
+        margin-bottom: 1.5rem;
     }
     
     .image-placeholder {
-        width: 250px;
-        height: 250px;
+        width: 260px;
+        height: 260px;
+    }
+    
+    .scroll-indicator {
+        margin-left: 0; /* Center the scroll indicator */
+        position: relative;
+        margin-top: 2rem;
     }
     
     .code-elements .fa-java {
@@ -1318,12 +1347,6 @@ to {
     
     .code-elements .fa-code {
         font-size: 2.2rem;
-    }
-    
-    .scroll-indicator {
-        margin-left: 0;
-        position: relative;
-        margin-top: 2rem;
     }
     
     /* Adjust floating elements for tablets */
@@ -1401,49 +1424,246 @@ to {
 /* Mobile devices */
 @media screen and (max-width: 480px) {
     #welcome-section {
-        padding-top: 80px;
-        padding-bottom: 1rem;
+        padding-top: 100px; /* Adequate space from navbar */
+        padding-bottom: 2rem;
+    }
+    
+    .welcome-container {
+        padding: 0 20px; /* More padding for mobile */
+    }
+    
+    .welcome-content {
+        gap: 2.5rem; /* Better spacing */
+    }
+    
+    .welcome-text {
+        padding: 0; /* Remove extra padding on mobile */
+    }
+    
+    .welcome-title {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem; /* Better spacing */
+    }
+    
+    .greeting {
+        font-size: 1.3rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .profession {
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .welcome-description {
+        font-size: 1.05rem;
+        margin-bottom: 1.8rem;
+        line-height: 1.6;
+        padding: 0;
+    }
+    
+    .welcome-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .btn {
+        padding: 12px 30px;
+        font-size: 0.95rem;
+        width: 100%;
+        max-width: 220px;
+        text-align: center;
+    }
+    
+    .welcome-image {
+        margin-top: 1rem;
+    }
+    
+    .image-placeholder {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .scroll-indicator {
+        margin-left: 0; /* Keep centered */
+        margin-top: 2rem;
+    }
+    
+    .code-elements .fa-java {
+        font-size: 3.2rem;
+    }
+    
+    .code-elements .fa-react {
+        font-size: 2.1rem;
+        top: 8%;
+        right: 40%;
+    }
+    
+    .code-elements .fa-database {
+        font-size: 1.9rem;
+        top: 15%;
+        right: 20%;
+    }
+    
+    .code-elements .fa-laptop-code {
+        font-size: 1.9rem;
+        top: 38%;
+        right: 8%;
+    }
+    
+    .code-elements .fa-layer-group {
+        font-size: 1.9rem;
+        bottom: 28%;
+        right: 10%;
+    }
+    
+    .code-elements .fa-git-alt {
+        font-size: 2.3rem;
+        top: 75%;
+        left: 35%;
+    }
+    
+    .code-elements .fa-github {
+        font-size: 1.9rem;
+        top: 76%;
+        left: 60%;
+    }
+    
+    .code-elements .fa-server {
+        font-size: 1.9rem;
+        bottom: 28%;
+        left: 12%;
+    }
+    
+    .code-elements .fa-css3-alt {
+        font-size: 1.9rem;
+        top: 40%;
+        left: 8%;
+    }
+    
+    .code-elements .fa-code {
+        font-size: 1.8rem;
+        top: 18%;
+        left: 15%;
+    }
+    
+    .scroll-arrow i {
+        font-size: 1.4rem;
+    }
+    
+    /* Adjust floating elements for mobile */
+    .float-1 {
+        width: 45px;
+        height: 45px;
+        top: 12%;
+        right: 10%;
+    }
+    
+    .float-2 {
+        width: 40px;
+        height: 40px;
+        top: 40%;
+        left: 5%;
+    }
+    
+    .float-3 {
+        width: 55px;
+        height: 55px;
+        bottom: 8%;
+        right: 18%;
+    }
+    
+    .float-4 {
+        width: 42px;
+        height: 42px;
+        top: 22%;
+        left: 12%;
+    }
+    
+    .float-5 {
+        width: 50px;
+        height: 50px;
+        bottom: 18%;
+        right: 8%;
+    }
+    
+    .float-6 {
+        width: 40px;
+        height: 40px;
+        top: 32%;
+        left: 10%;
+    }
+    
+    .float-7 {
+        width: 47px;
+        height: 47px;
+        bottom: 12%;
+        left: 22%;
+    }
+    
+    .float-8 {
+        width: 35px;
+        height: 35px;
+        bottom: 6%;
+        left: 15%;
+    }
+    
+    .float-9 {
+        width: 52px;
+        height: 52px;
+        top: 55%;
+        left: 50%;
+    }
+    
+    .float-10 {
+        width: 45px;
+        height: 45px;
+        top: 15%;
+        left: 30%;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 360px) {
+    #welcome-section {
+        padding-top: 90px; /* Adjust for very small screens */
     }
     
     .welcome-container {
         padding: 0 15px;
     }
     
-    .welcome-content {
-        gap: 2rem;
-    }
-    
     .welcome-title {
-        font-size: 2rem;
-        margin-bottom: 0.8rem;
+        font-size: 1.9rem;
+        margin-bottom: 1.2rem;
     }
     
     .greeting {
         font-size: 1.2rem;
+        margin-bottom: 0.3rem;
     }
     
     .profession {
         font-size: 1.3rem;
+        margin-bottom: 0.7rem;
     }
     
     .welcome-description {
         font-size: 1rem;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.5rem;
         line-height: 1.5;
     }
     
     .welcome-buttons {
-        flex-direction: column;
-        gap: 0.8rem;
-        align-items: center;
+        margin-bottom: 1.5rem;
     }
     
     .btn {
         padding: 10px 25px;
         font-size: 0.9rem;
-        width: 100%;
         max-width: 200px;
-        text-align: center;
     }
     
     .image-placeholder {
@@ -1452,168 +1672,7 @@ to {
     }
     
     .code-elements .fa-java {
-        font-size: 3rem;
-    }
-    
-    .code-elements .fa-react {
-        font-size: 2rem;
-        top: 8%;
-        right: 40%;
-    }
-    
-    .code-elements .fa-database {
-        font-size: 1.8rem;
-        top: 15%;
-        right: 20%;
-    }
-    
-    .code-elements .fa-laptop-code {
-        font-size: 1.8rem;
-        top: 38%;
-        right: 8%;
-    }
-    
-    .code-elements .fa-layer-group {
-        font-size: 1.8rem;
-        bottom: 28%;
-        right: 10%;
-    }
-    
-    .code-elements .fa-git-alt {
-        font-size: 2.2rem;
-        top: 75%;
-        left: 35%;
-    }
-    
-    .code-elements .fa-github {
-        font-size: 1.8rem;
-        top: 76%;
-        left: 60%;
-    }
-    
-    .code-elements .fa-server {
-        font-size: 1.8rem;
-        bottom: 28%;
-        left: 12%;
-    }
-    
-    .code-elements .fa-css3-alt {
-        font-size: 1.8rem;
-        top: 40%;
-        left: 8%;
-    }
-    
-    .code-elements .fa-code {
-        font-size: 1.7rem;
-        top: 18%;
-        left: 15%;
-    }
-    
-    .scroll-indicator {
-        margin-top: 1.5rem;
-    }
-    
-    .scroll-arrow i {
-        font-size: 1.3rem;
-    }
-    
-    /* Reduce floating elements for mobile */
-    .float-1 {
-        width: 40px;
-        height: 40px;
-        top: 12%;
-        right: 10%;
-    }
-    
-    .float-2 {
-        width: 35px;
-        height: 35px;
-        top: 40%;
-        left: 5%;
-    }
-    
-    .float-3 {
-        width: 50px;
-        height: 50px;
-        bottom: 8%;
-        right: 18%;
-    }
-    
-    .float-4 {
-        width: 38px;
-        height: 38px;
-        top: 22%;
-        left: 12%;
-    }
-    
-    .float-5 {
-        width: 45px;
-        height: 45px;
-        bottom: 18%;
-        right: 8%;
-    }
-    
-    .float-6 {
-        width: 35px;
-        height: 35px;
-        top: 32%;
-        left: 10%;
-    }
-    
-    .float-7 {
-        width: 42px;
-        height: 42px;
-        bottom: 12%;
-        left: 22%;
-    }
-    
-    .float-8 {
-        width: 30px;
-        height: 30px;
-        bottom: 6%;
-        left: 15%;
-    }
-    
-    .float-9 {
-        width: 48px;
-        height: 48px;
-        top: 55%;
-        left: 50%;
-    }
-    
-    .float-10 {
-        width: 40px;
-        height: 40px;
-        top: 15%;
-        left: 30%;
-    }
-}
-
-/* Extra small devices */
-@media screen and (max-width: 360px) {
-    .welcome-title {
-        font-size: 1.8rem;
-    }
-    
-    .greeting {
-        font-size: 1.1rem;
-    }
-    
-    .profession {
-        font-size: 1.2rem;
-    }
-    
-    .welcome-description {
-        font-size: 0.95rem;
-    }
-    
-    .image-placeholder {
-        width: 180px;
-        height: 180px;
-    }
-    
-    .code-elements .fa-java {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     
     .code-elements .fa-react,
@@ -1623,27 +1682,22 @@ to {
     .code-elements .fa-server,
     .code-elements .fa-css3-alt,
     .code-elements .fa-github {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     
     .code-elements .fa-git-alt {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     
     .code-elements .fa-code {
-        font-size: 1.4rem;
-    }
-    
-    .btn {
-        padding: 8px 20px;
-        font-size: 0.85rem;
+        font-size: 1.5rem;
     }
     
     /* Further reduce floating elements */
     .float-1, .float-2, .float-3, .float-4, .float-5, 
     .float-6, .float-7, .float-8, .float-9, .float-10 {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -1652,59 +1706,69 @@ to {
     #welcome-section {
         height: auto;
         min-height: 100vh;
-        padding-top: 60px;
+        padding-top: 80px; /* Adequate space from navbar */
         padding-bottom: 2rem;
     }
     
     .welcome-content {
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 2.5rem;
         align-items: center;
     }
     
     .welcome-text {
         order: 1;
         text-align: left;
+        padding: 0 1rem;
     }
     
     .welcome-image {
         order: 2;
         margin-left: 0;
+        margin-top: 0;
     }
     
     .welcome-title {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
+        margin-bottom: 1.2rem;
     }
     
     .greeting {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.3rem;
     }
     
     .profession {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
     
     .welcome-description {
-        font-size: 1rem;
+        font-size: 1.05rem;
         text-align: justify;
+        margin-bottom: 1.5rem;
     }
     
     .welcome-buttons {
         justify-content: flex-start;
         flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 1rem;
     }
     
     .btn {
         width: auto;
         max-width: none;
+        padding: 10px 25px;
     }
     
     .image-placeholder {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
     }
     
     .scroll-indicator {
         margin-top: 1rem;
+        margin-left: 0;
     }
 }
