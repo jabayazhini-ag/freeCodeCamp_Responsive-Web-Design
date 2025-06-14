@@ -24,7 +24,7 @@ html {
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
-/* Navigation */
+/* ----------------- Navigation Bar ---------------------- */
 #navbar {
     position: fixed;
     top: 0;
@@ -115,7 +115,7 @@ html {
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
-/* Welcome Section */
+/* ------------------------- Welcome Section ----------------------- */
 #welcome-section {
     height: 100vh;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -333,20 +333,15 @@ html {
     position: absolute;
     bottom: 2rem;
     left: 50%;
-    transform: translateX(-50%);
-    /* Keep this to center it initially */
-    margin-left: 90px;
-    /* Move it further right from the center */
+    transform: translateX(-50%);      /* Keep this to center it initially */
+    margin-left: 90px;      /* Move it further right from the center */
     cursor: pointer;
 }
 
 .scroll-arrow-link {
-    text-decoration: none;
-    /* Remove underline */
-    color: inherit;
-    /* Inherit color from parent */
-    display: block;
-    /* Make the link fill its container */
+    text-decoration: none;       /* Remove underline */
+    color: inherit;       /* Inherit color from parent */
+    display: block;       /* Make the link fill its container */
 }
 
 .scroll-arrow {
@@ -801,85 +796,88 @@ html {
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
-  /* Animations */
-  @keyframes slideInLeft {
-      from {
-          opacity: 0;
-          transform: translateX(-50px);
-      }
+/* ------------- Animations -------------- */
+@keyframes slideInLeft {
+from {
+    opacity: 0;
+    transform: translateX(-50px);
+}
 
-      to {
-          opacity: 1;
-          transform: translateX(0);
-      }
-  }
+to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
 
-  @keyframes slideInRight {
-      from {
-          opacity: 0;
-          transform: translateX(50px);  /* Starts slightly to the right */
-      }
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);  /* Starts slightly to the right */
+    }
 
-      to {
-          opacity: 1;
-          transform: translateX(0);  /* Ends at its original position */
-      }
-  }
+    to {
+        opacity: 1;
+        transform: translateX(0);  /* Ends at its original position */
+    }
+}
 
-  /* Define the pulseImage animation */
- @keyframes pulseImage {
+/* Define the pulseImage animation */
+
+@keyframes pulseImage {
     0% {
         transform: scale(1);
     }
     100% {
         transform: scale(1.03); /* Slightly larger */
     }
- }
+}
 
-  @keyframes bounce {
+@keyframes bounce {
 
-      0%,
-      20%,
-      50%,
-      80%,
-      100% {
-          transform: translateY(0);
-      }
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
 
-      40% {
-          transform: translateY(-10px);
-      }
+    40% {
+        transform: translateY(-10px);
+    }
 
-      60% {
-          transform: translateY(-5px);
-      }
-  }
+    60% {
+        transform: translateY(-5px);
+    }
+}
 
-  @keyframes float {
+@keyframes float {
 
-      0%,
-      100% {
-          transform: translateY(0);
-      }
+    0%,
+    100% {
+        transform: translateY(0);
+    }
 
-      50% {
-          transform: translateY(-20px);
-      }
-  }
+    50% {
+        transform: translateY(-20px);
+    }
+}
 
-    /* Loading animation for project images */
-  .project-placeholder {
-      animation: pulse 2s ease-in-out infinite alternate;
-  }
+/* Loading animation for project images */
 
-  @keyframes pulse {
-      0% {
-          opacity: 0.8;
-      }
-      100% {
-          opacity: 1;
-      }
-  }
+.project-placeholder {
+    animation: pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
@@ -949,127 +947,148 @@ html {
 
 /* ------------------------------------------------------------------------------------------------------------------------------ */
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-.hamburger {
-    display: flex;
-}
+/* ---------------------- Media Queries ------------------------- */
+@media (max-width: 768px) {    
+    #navbar {
+        padding: 0.2rem 0;
+    }
 
-.nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.98);
-    width: 100%;
+    .nav-logo {
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger icon on small screens */       
+    }    
+
+    .nav-menu {
+        flex-direction: column;
+        width: 50%;
+        position: absolute;
+        top: 75px; /* Adjusting based on navbar height */       
+        right: 5px; 
+        left: unset;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 0.2rem 0;
+        align-items: center;
+        /* transform: translateX(100%);       */
+        transform: translateX(calc(100% + 5px));   /* Refer the right value above */
+        visibility: hidden;  /* Delay the visibility transition slightly for a smoother fade-in with slide */        
+        transition: transform 0.5s ease-out, visibility 0.5s ease-out 0s;  /* No delay on closing */       
+        gap: 0;           
+        border: 4px solid rgba(102, 126, 234, 0.3);
+    }
+
+    .nav-menu li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu .nav-link {
+        font-size: 1.2rem;
+        border-radius: 5px;
+        display: block;
+        transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+    }
+
+    .nav-menu .nav-link:hover {
+        text-decoration: none;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-text-fill-color: white;
+        color: white;   /* Fallback for browsers that don't support text clipping */       
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* For active/clicked state on small screens */
+    .nav-menu .nav-link:active {
+        background: linear-gradient(135deg, #5a6ed1 0%, #6a3e91 100%);  /* Slightly darker gradient on click */        
+        -webkit-text-fill-color: white;
+        color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu .nav-link::after {
+        display: none;  /* Hide the underline for mobile */        
+    }
+
+    /* Animate hamburger to 'X' when menu is open */
+    #menu-toggle:checked+.hamburger .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #menu-toggle:checked+.hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked+.hamburger .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Show the navigation menu when checkbox is checked */
+    #menu-toggle:checked~.nav-menu {
+        display: flex;
+        transform: translateX(0);  /* Slide in from the right */        
+        visibility: visible;  /* Make it visible */        
+        transition: transform 0.5s ease-out, visibility 0.5s ease-out;
+    }
+
+   /* ------------------------ Welcome Section ---------------------------- */
+
+.welcome-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
     text-align: center;
-    transition: 0.3s ease-in-out; /* Smooth transition for opening and closing */
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    padding: 2rem 0;
-    min-height: calc(100vh - 70px); /* Make menu take full height minus navbar height */
-    justify-content: center; /* Center menu items vertically */
-    align-items: center; /* Center menu items horizontally */
-    gap: 1.5rem; /* Space out menu items */
 }
 
-.nav-menu li {
-    width: 100%; /* Make list items take full width for centering */
+.welcome-title {
+    font-size: 2.5rem;
 }
 
-.nav-link {
-    font-size: 1.5rem; /* Larger font size for mobile menu links */
-    padding: 10px 0; /* Add padding to links */
-    display: block; /* Make links block level to fill li */
-    color: #764ba2; /* Ensure color shows even without webkit text fill */
+.greeting {
+    font-size: 1.2rem;
 }
 
-.nav-link:hover {
-    -webkit-text-fill-color: initial; /* Reset text fill for hover on mobile menu if needed */
-    background-clip: initial;
-    color: white; /* Or choose a solid hover color */
+.profession {
+    font-size: 1.5rem;
 }
 
-.nav-link::after {
-    background: #764ba2; /* Simpler underline for mobile */
-    left: 50%; /* Start underline from center */
-    transform: translateX(-50%); /* Center underline */
+.welcome-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.nav-link:hover::after {
-    width: 50%; /* Shorter underline on hover for mobile */
+.image-placeholder {
+    width: 200px;
+    height: 200px;
 }
 
-/* CSS-ONLY JAVASCRIPT REPLACEMENT */
-/* When the checkbox is checked, move the nav-menu into view */
-.menu-toggle:checked ~ .nav-menu {
-    left: 0; /* Slide menu into view */
+.image-placeholder i {
+    font-size: 4rem;
 }
 
-/* Animate hamburger icon to an 'X' when menu is open */
-.menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+.projects-grid {
+    grid-template-columns: 1fr;
 }
 
-.menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
-    opacity: 0; /* Hide middle bar */
+.contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
-.menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+.skills {
+    gap: 1rem;
 }
 
-      .welcome-content {
-          grid-template-columns: 1fr;
-          gap: 2rem;
-          text-align: center;
-      }
+.skill-item {
+    padding: 0.8rem;
+}
 
-      .welcome-title {
-          font-size: 2.5rem;
-      }
-
-      .greeting {
-          font-size: 1.2rem;
-      }
-
-      .profession {
-          font-size: 1.5rem;
-      }
-
-      .welcome-buttons {
-          justify-content: center;
-          flex-wrap: wrap;
-      }
-
-      .image-placeholder {
-          width: 200px;
-          height: 200px;
-      }
-
-      .image-placeholder i {
-          font-size: 4rem;
-      }
-
-      .projects-grid {
-          grid-template-columns: 1fr;
-      }
-
-      .contact-content {
-          grid-template-columns: 1fr;
-          gap: 2rem;
-      }
-
-      .skills {
-          gap: 1rem;
-      }
-
-      .skill-item {
-          padding: 0.8rem;
-      }
-
-      .skill-item span {
-          font-size: 0.9rem;
-      }
+.skill-item span {
+    font-size: 0.9rem;
+}
 
       .about-text p {
           font-size: 1rem;
@@ -1101,7 +1120,7 @@ html {
 
   @media screen and (max-width: 480px) {
     .nav-link {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        font-size: 1rem; /* Adjust font size for smaller screens */
     }
 
       .welcome-title {
