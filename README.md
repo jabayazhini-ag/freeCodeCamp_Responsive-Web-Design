@@ -10,7 +10,7 @@ Explore the live demos below to see the projects in action:
    
    *A beginner-friendly HTML project featuring text, lists, images, and a user input form without CSS.*
    
-   🔗 **Live Link:** [https://cat-photo-app-freecodecamp-project.netlify.app/](https://cat-photo-app-freecodecamp-project.netlify.app/)
+   🔗 **Live Demo:** [https://cat-photo-app-freecodecamp-project.netlify.app/](https://cat-photo-app-freecodecamp-project.netlify.app/)
 
    📂 **Source Code:** GitHub Repository Link - [Cat Photo App](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/A_CatPhotoApp)
 
@@ -20,7 +20,7 @@ Explore the live demos below to see the projects in action:
    
    *A simple yet elegant cafe menu designed using semantic HTML and styled with CSS.*
    
-   🔗 **Live Link:** [https://cafe-menu-freecodecamp-project.netlify.app/](https://cafe-menu-freecodecamp-project.netlify.app/)
+   🔗 **Live Demo:** [https://cafe-menu-freecodecamp-project.netlify.app/](https://cafe-menu-freecodecamp-project.netlify.app/)
 
    📂 **Source Code:** GitHub Repository Link - [Cafe Menu](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/B_CafeMenu)
 
@@ -30,7 +30,7 @@ Explore the live demos below to see the projects in action:
    
    *A colorful layout demonstrating CSS color values and combinations through styled marker examples.*
 
-   🔗 **Live Link:** [https://colored-markers-freecodecamp-project.netlify.app/](https://colored-markers-freecodecamp-project.netlify.app/)
+   🔗 **Live Demo:** [https://colored-markers-freecodecamp-project.netlify.app/](https://colored-markers-freecodecamp-project.netlify.app/)
 
    📂 **Source Code:** GitHub Repository Link - [Colored Markers](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/C_ColoredMarkers)
 
@@ -40,7 +40,7 @@ Explore the live demos below to see the projects in action:
    
    *A responsive registration form implementing form elements and validation best practices.*
 
-   🔗 **Live Link:** [https://registration-form-freecodecampproject.netlify.app/](https://registration-form-freecodecampproject.netlify.app/)
+   🔗 **Live Demo:** [https://registration-form-freecodecampproject.netlify.app/](https://registration-form-freecodecampproject.netlify.app/)
 
    📂 **Source Code:** GitHub Repository Link - [Registration Form](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/D_RegistrationForm)
 
@@ -50,7 +50,7 @@ Explore the live demos below to see the projects in action:
    
    *A comprehensive survey form capturing user input while adhering to accessibility guidelines.*
 
-   🔗 **Live Link:** [https://survey-form-free-code-camp-project.netlify.app/](https://survey-form-free-code-camp-project.netlify.app/)
+   🔗 **Live Demo:** [https://survey-form-free-code-camp-project.netlify.app/](https://survey-form-free-code-camp-project.netlify.app/)
 
    📂 **Source Code:** GitHub Repository Link - [Survey Form](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/E_SurveyFormCertificationProject)
 
@@ -60,7 +60,7 @@ Explore the live demos below to see the projects in action:
     
    *A minimalist recreation of a Rothko painting to practice CSS box model and positioning.*
 
-   🔗 **Live Link:** [https://rothko-painting-freecodecamp-project.netlify.app/](https://rothko-painting-freecodecamp-project.netlify.app/)
+   🔗 **Live Demo:** [https://rothko-painting-freecodecamp-project.netlify.app/](https://rothko-painting-freecodecamp-project.netlify.app/)
 
    📂 **Source Code:** GitHub Repository Link - [Rothko Painting](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/F_RothkoPainting)
 
@@ -70,7 +70,7 @@ Explore the live demos below to see the projects in action:
     
    *A responsive photo gallery leveraging Flexbox for an adaptive and modern layout.*
 
-   🔗 **Live Link:** [https://flexbox-photogallery-freecodecamp.netlify.app/](https://flexbox-photogallery-freecodecamp.netlify.app/)
+   🔗 **Live Demo:** [https://flexbox-photogallery-freecodecamp.netlify.app/](https://flexbox-photogallery-freecodecamp.netlify.app/)
 
    📂 **Source Code:** GitHub Repository Link - [Flexbox Photo Gallery](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/G_FlexBoxPhotoGallery)
 
@@ -80,7 +80,7 @@ Explore the live demos below to see the projects in action:
     
    *A meticulously crafted nutrition label using advanced CSS typography and layout techniques.*
 
-   🔗 **Live Link:** [https://typography-freecodecamp-project.netlify.app/](https://typography-freecodecamp-project.netlify.app/)
+   🔗 **Live Demo:** [https://typography-freecodecamp-project.netlify.app/](https://typography-freecodecamp-project.netlify.app/)
 
    📂 **Source Code:** GitHub Repository Link - [Typography Nutrition Label](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/H_TypographyNutritionLabel)
 
@@ -90,7 +90,7 @@ Explore the live demos below to see the projects in action:
     
    *An interactive quiz page designed with accessibility-first principles to ensure inclusive user experiences.*
 
-   🔗 **Live Link:** [https://accessibility-learning-freecodecamp.netlify.app/](https://accessibility-learning-freecodecamp.netlify.app/)
+   🔗 **Live Demo:** [https://accessibility-learning-freecodecamp.netlify.app/](https://accessibility-learning-freecodecamp.netlify.app/)
 
    📂 **Source Code:** GitHub Repository Link - [Accessibility Quiz Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/I_AccessibilityQuizWebPage)
 
@@ -100,7 +100,7 @@ Explore the live demos below to see the projects in action:
     
      *A tribute page honoring Dr. A.P.J. Abdul Kalam, applying responsive design and semantic structure.*
 
-    🔗 **Live Link:** [https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/](https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/)
+    🔗 **Live Demo:** [https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/](https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/)
 
     📂 **Source Code:** GitHub Repository Link - [Tribute Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/J_TributePageCertificationProject)
 
@@ -110,7 +110,7 @@ Explore the live demos below to see the projects in action:
     
     *A balance sheet layout styled with CSS pseudo selectors to enhance visual appeal and interactivity.*
 
-    🔗 **Live Link:** [https://balance-sheet-css-pseudoselectors-fcc.netlify.app/](https://balance-sheet-css-pseudoselectors-fcc.netlify.app/)
+    🔗 **Live Demo:** [https://balance-sheet-css-pseudoselectors-fcc.netlify.app/](https://balance-sheet-css-pseudoselectors-fcc.netlify.app/)
 
     📂 **Source Code:** GitHub Repository Link - [Balance Sheet Pseudo Selectors](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/K_BalanceSheetPseudoSelectors)
 
@@ -120,7 +120,7 @@ Explore the live demos below to see the projects in action:
     
      *A layout showcasing the use of CSS positioning properties to construct a structured digital illustration.*
 
-     🔗 **Live Link:** [https://cat-painting-css-positioning-fcc.netlify.app/](https://cat-painting-css-positioning-fcc.netlify.app/)
+     🔗 **Live Demo:** [https://cat-painting-css-positioning-fcc.netlify.app/](https://cat-painting-css-positioning-fcc.netlify.app/)
 
      📂 **Source Code:** GitHub Repository Link - [Cat Painting CSS Positioning](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/L_CatPaintingCSSPositioning)
 
@@ -130,7 +130,7 @@ Explore the live demos below to see the projects in action:
     
      *A hands-on exercise that showcases responsive design by constructing a digital piano using structured HTML and adaptive CSS.*
 
-     🔗 **Live Link:** [https://piano-responsive-design-freecodecamp.netlify.app/](https://piano-responsive-design-freecodecamp.netlify.app/)
+     🔗 **Live Demo:** [https://piano-responsive-design-freecodecamp.netlify.app/](https://piano-responsive-design-freecodecamp.netlify.app/)
 
      📂 **Source Code:** GitHub Repository Link - [Piano Responsive Design](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/M_PianoResponsiveDesign)
 
@@ -140,7 +140,7 @@ Explore the live demos below to see the projects in action:
     
      *A structured webpage designed to present technical documentation clearly, using semantic HTML elements and responsive CSS styling.*
 
-     🔗 **Live Link:**
+     🔗 **Live Demo:**
 
      📂 **Source Code:** GitHub Repository Link - [Technical Documentation Page]
     
