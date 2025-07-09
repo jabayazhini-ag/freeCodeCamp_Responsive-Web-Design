@@ -12,7 +12,7 @@ Explore the live demos below to see the projects in action:
    
    🔗 **Live Demo:** [https://cat-photo-app-freecodecamp-project.netlify.app/](https://cat-photo-app-freecodecamp-project.netlify.app/)
 
-   📂 **Source Code:** GitHub Repository Link - [Cat Photo App](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/A_CatPhotoApp)
+   📂 **Source Code:** [Cat Photo App](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/A_CatPhotoApp)
 
    ---   
 
@@ -22,7 +22,7 @@ Explore the live demos below to see the projects in action:
    
    🔗 **Live Demo:** [https://cafe-menu-freecodecamp-project.netlify.app/](https://cafe-menu-freecodecamp-project.netlify.app/)
 
-   📂 **Source Code:** GitHub Repository Link - [Cafe Menu](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/B_CafeMenu)
+   📂 **Source Code:** [Cafe Menu](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/B_CafeMenu)
 
    ---   
 
@@ -32,7 +32,7 @@ Explore the live demos below to see the projects in action:
 
    🔗 **Live Demo:** [https://colored-markers-freecodecamp-project.netlify.app/](https://colored-markers-freecodecamp-project.netlify.app/)
 
-   📂 **Source Code:** GitHub Repository Link - [Colored Markers](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/C_ColoredMarkers)
+   📂 **Source Code:** [Colored Markers](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/C_ColoredMarkers)
 
    ---
    
@@ -42,7 +42,7 @@ Explore the live demos below to see the projects in action:
 
    🔗 **Live Demo:** [https://registration-form-freecodecampproject.netlify.app/](https://registration-form-freecodecampproject.netlify.app/)
 
-   📂 **Source Code:** GitHub Repository Link - [Registration Form](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/D_RegistrationForm)
+   📂 **Source Code:** [Registration Form](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/D_RegistrationForm)
 
    ---   
 
@@ -52,7 +52,7 @@ Explore the live demos below to see the projects in action:
 
    🔗 **Live Demo:** [https://survey-form-free-code-camp-project.netlify.app/](https://survey-form-free-code-camp-project.netlify.app/)
 
-   📂 **Source Code:** GitHub Repository Link - [Survey Form](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/E_SurveyFormCertificationProject)
+   📂 **Source Code:** [Survey Form](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/E_SurveyFormCertificationProject)
 
    ---  
 
@@ -62,7 +62,7 @@ Explore the live demos below to see the projects in action:
 
    🔗 **Live Demo:** [https://rothko-painting-freecodecamp-project.netlify.app/](https://rothko-painting-freecodecamp-project.netlify.app/)
 
-   📂 **Source Code:** GitHub Repository Link - [Rothko Painting](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/F_RothkoPainting)
+   📂 **Source Code:** [Rothko Painting](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/F_RothkoPainting)
 
    ---  
 
@@ -72,7 +72,7 @@ Explore the live demos below to see the projects in action:
 
    🔗 **Live Demo:** [https://flexbox-photogallery-freecodecamp.netlify.app/](https://flexbox-photogallery-freecodecamp.netlify.app/)
 
-   📂 **Source Code:** GitHub Repository Link - [Flexbox Photo Gallery](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/G_FlexBoxPhotoGallery)
+   📂 **Source Code:** [Flexbox Photo Gallery](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/G_FlexBoxPhotoGallery)
 
    ---   
 
@@ -82,7 +82,7 @@ Explore the live demos below to see the projects in action:
 
    🔗 **Live Demo:** [https://typography-freecodecamp-project.netlify.app/](https://typography-freecodecamp-project.netlify.app/)
 
-   📂 **Source Code:** GitHub Repository Link - [Typography Nutrition Label](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/H_TypographyNutritionLabel)
+   📂 **Source Code:** [Typography Nutrition Label](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/H_TypographyNutritionLabel)
 
    ---   
 
@@ -92,7 +92,7 @@ Explore the live demos below to see the projects in action:
 
    🔗 **Live Demo:** [https://accessibility-learning-freecodecamp.netlify.app/](https://accessibility-learning-freecodecamp.netlify.app/)
 
-   📂 **Source Code:** GitHub Repository Link - [Accessibility Quiz Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/I_AccessibilityQuizWebPage)
+   📂 **Source Code:** [Accessibility Quiz Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/I_AccessibilityQuizWebPage)
 
    ---  
 
@@ -102,7 +102,7 @@ Explore the live demos below to see the projects in action:
 
     🔗 **Live Demo:** [https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/](https://dr-apjkalam-tribute-page-freecodecamp.netlify.app/)
 
-    📂 **Source Code:** GitHub Repository Link - [Tribute Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/J_TributePageCertificationProject)
+    📂 **Source Code:** [Tribute Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/J_TributePageCertificationProject)
 
     ---  
 
@@ -112,7 +112,7 @@ Explore the live demos below to see the projects in action:
 
     🔗 **Live Demo:** [https://balance-sheet-css-pseudoselectors-fcc.netlify.app/](https://balance-sheet-css-pseudoselectors-fcc.netlify.app/)
 
-    📂 **Source Code:** GitHub Repository Link - [Balance Sheet Pseudo Selectors](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/K_BalanceSheetPseudoSelectors)
+    📂 **Source Code:** [Balance Sheet Pseudo Selectors](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/K_BalanceSheetPseudoSelectors)
 
     ---   
 
@@ -122,7 +122,7 @@ Explore the live demos below to see the projects in action:
 
      🔗 **Live Demo:** [https://cat-painting-css-positioning-fcc.netlify.app/](https://cat-painting-css-positioning-fcc.netlify.app/)
 
-     📂 **Source Code:** GitHub Repository Link - [Cat Painting CSS Positioning](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/L_CatPaintingCSSPositioning)
+     📂 **Source Code:** [Cat Painting CSS Positioning](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/L_CatPaintingCSSPositioning)
 
      ---   
 
@@ -132,7 +132,7 @@ Explore the live demos below to see the projects in action:
 
      🔗 **Live Demo:** [https://piano-responsive-design-freecodecamp.netlify.app/](https://piano-responsive-design-freecodecamp.netlify.app/)
 
-     📂 **Source Code:** GitHub Repository Link - [Piano Responsive Design](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/M_PianoResponsiveDesign)
+     📂 **Source Code:** [Piano Responsive Design](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/M_PianoResponsiveDesign)
 
     --- 
 
@@ -142,7 +142,7 @@ Explore the live demos below to see the projects in action:
 
      🔗 **Live Demo:**
 
-     📂 **Source Code:** GitHub Repository Link - [Technical Documentation Page]
+     📂 **Source Code:** [Technical Documentation Page]
     
 
 ## 📌 About This Repository
