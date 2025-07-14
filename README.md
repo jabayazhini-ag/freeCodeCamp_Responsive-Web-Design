@@ -153,7 +153,7 @@ This repository is a testament to my journey in mastering **Responsive Web Desig
 - 🎨 **CSS Styling Techniques**: Creating visually engaging layouts with colors, fonts, and spacing
 - 📐 **Box Model & Positioning**: Using static, relative, absolute, fixed, and sticky positions effectively
 - 🧩 **Flexbox & CSS Grid**: Building responsive and flexible layouts
-- 🖱️ **Pseudo Selectors**: Enhancing interaction with selectors like `:hover`, `:nth-child`, `:last-child`
+- 🖱️ **Pseudo Selectors**: Enhancing interaction with selectors like `:hover`, `:nth-child`, `:last-child`, etc.
 - 🎨 **CSS Variables**: Streamlining styles with reusable custom properties
 - 🌀 **Transitions, Transforms, Animations**: Adding smooth effects and dynamic visuals
 - 🌐 **Responsive Design**: Making sites adaptable using media queries
