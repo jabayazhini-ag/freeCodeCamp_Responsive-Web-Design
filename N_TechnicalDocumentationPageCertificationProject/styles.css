@@ -230,7 +230,7 @@
         /* Code blocks */
         code {
             background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 5px 20px;
+            padding: 10px 20px;
             border-radius: 8px;
             font-family: 'Courier New', monospace;
             display: block;
