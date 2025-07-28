@@ -227,7 +227,45 @@ Hello, World!
                     </li>
                 </ul>
 
-                <h4>Detailed Explanation of JVM, JRE, and JDK:</h4>
+                <h3>JDK vs JRE vs JVM</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>JDK</th>
+                            <th>JRE</th>
+                            <th>JVM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Purpose</strong></td>
+                            <td>Used to develop Java applications</td>
+                            <td>Used to run Java applications</td>
+                            <td>Executes Java bytecode</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Platform Dependency</strong></td>
+                            <td>Platform-dependent (OS specific)</td>
+                            <td>Platform-dependent (OS specific)</td>
+                            <td>JVM is OS-specific, but bytecode is platform-independent</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Includes</strong></td>
+                            <td>JRE + Development tools (javac, debugger, etc.)</td>
+                            <td>JVM + Libraries (e.g., rt.jar)</td>
+                            <td>ClassLoader, JIT Compiler, Garbage Collector</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Use Case</strong></td>
+                            <td>Writing and compiling Java code</td>
+                            <td>Running a Java application on a system</td>
+                            <td>Convert bytecode into native machine code</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Detailed Explanation of JVM, JRE, and JDK:</h3>
                 <p>To fully understand the Java ecosystem, it's essential to differentiate between the JVM, JRE, and
                     JDK:</p>
 

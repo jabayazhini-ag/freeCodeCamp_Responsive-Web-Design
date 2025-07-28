@@ -376,9 +376,9 @@ td mark {
     white-space: nowrap; /* Prevents code examples from breaking across lines */
 }
 
-td:nth-child(2) {
+/* td:nth-child(2) {
     text-align: justify;
-}
+} */
 
 td .align {
     text-align: justify;
