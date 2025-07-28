@@ -199,7 +199,34 @@
             margin-bottom: 8px;
             color: #555;
         }
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #f1f3f4, #ffffff);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);     
+            margin-bottom: 20px;       
+        }
 
+        .java-architecture {
+            border: 2px solid #3d6286;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
+            width: 280px;
+            height: 400px;
+        }
+
+        .jdk {
+            border-radius: 10px;
+            border: 2px solid #3d6286;
+            box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
+            width: 800px;
+            height: 400px;
+        }
+        
         /* Code blocks */
         code {
             background: linear-gradient(135deg, #f8f9fa, #e9ecef);

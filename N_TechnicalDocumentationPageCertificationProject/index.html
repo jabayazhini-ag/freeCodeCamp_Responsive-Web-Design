@@ -205,6 +205,9 @@ Hello, World!
                 <h3>Java Architecture (JVM, JRE, JDK)</h3>
                 <p>Java follows a unique architecture that includes several key components, each playing a crucial role
                     in how Java programs are developed and executed.</p>
+               <div class="image-container">
+                    <img src="./Assets/ChatGPT Image Jul 28, 2025, 08_39_13 AM.png" alt="Java Architecture" class="java-architecture">
+                </div>
                 <ul>
                     <li><strong>Java Source Code (.java)</strong> - Human readable code written by programmers. This
                         code is then compiled into bytecode.</li>
@@ -214,7 +217,7 @@ Hello, World!
                     <li><strong>Bytecode (.class)</strong> - This is an intermediate, machine-independent code. It's not
                         directly executable by the operating system but can be run on any platform that has a Java
                         Virtual Machine.</li>
-                    <li><strong>Java Virtual Machine (JVM)</strong> - The heart of Java's "write once, run anywhere"
+                    <li><strong>Java Virtual Machine (JVM)</strong> - The heart of Java's <strong><q>write once, run anywhere</q></strong>
                         capability. The JVM is an abstract machine that provides a runtime environment in which Java
                         bytecode can be executed. It interprets and executes the bytecode on the specific underlying
                         hardware and operating system. The JVM performs tasks like:
@@ -244,9 +247,8 @@ Hello, World!
                         <li><strong>Bytecode Verifier:</strong> Checks the bytecode for security and integrity before
                             execution.</li>
                         <li><strong>Execution Engine:</strong> Executes the bytecode. This engine can include an
-                            interpreter (which executes bytecode instruction by instruction) and a Just-In-Time (JIT)
-                            compiler (which compiles frequently executed bytecode into native machine code for faster
-                            execution).</li>
+                            <strong>interpreter</strong> (which executes bytecode instruction by instruction) and a <strong>Just-In-Time (JIT)
+                            compiler</strong> (A performance-boosting component of the JVM  that compiles frequently executed bytecode into native machine code at runtime, making execution faster).</li>
                         <li><strong>Garbage Collector:</strong> Automatically manages memory by reclaiming memory
                             occupied by objects that are no longer in use, preventing memory leaks.</li>
                         <li><strong>Runtime Data Areas:</strong> These are the memory areas used by the JVM during
@@ -269,11 +271,14 @@ Hello, World!
                         <li><strong>Supporting Files:</strong> Other configuration files and resources required by the
                             JVM and the class libraries.</li>
                     </ul>
-                    <p>In essence, JRE = JVM + Java Class Libraries.</p>
+                    <p><strong>In essence, JRE = JVM + Java Class Libraries + Supporting Files.</strong></p>
                 </div>
 
                 <div class="component-box">
                     <h3>3. Java Development Kit (JDK)</h3>
+                    <div class="image-container">
+                        <img src="./Assets/JDK.png" alt="JDK Image" class="jdk">
+                    </div>
                     <p>The JDK is a comprehensive software development kit that provides all the tools and resources
                         necessary to develop, compile, debug, and run Java applications. It includes the JRE, along with
                         development tools such as the Java compiler (javac), debugger (jdb), archiver (jar), and
@@ -286,12 +291,12 @@ Hello, World!
                             applications.</li>
                         <li><strong>Development Tools:</strong>
                             <ul>
-                                <li><code>javac</code> The Java compiler.</li>
-                                <li><code>java</code> The Java application launcher (which also invokes the JVM).</li>
-                                <li><code>jdb</code> The Java debugger.</li>
-                                <li><code>jar</code> The Java archive tool (for packaging Java classes and associated
+                                <li><mark>javac</mark> : The Java compiler.</li>
+                                <li><mark>java</mark> : The Java application launcher (which also invokes the JVM).</li>
+                                <li><mark>jdb</mark> : The Java debugger.</li>
+                                <li><mark>jar</mark> : The Java archive tool (for packaging Java classes and associated
                                     metadata).</li>
-                                <li><code>javadoc</code> The documentation generator.</li>
+                                <li><mark>javadoc</mark> : The documentation generator.</li>
                                 <li>And many other utilities for profiling, monitoring, etc.</li>
                             </ul>
                         </li>
