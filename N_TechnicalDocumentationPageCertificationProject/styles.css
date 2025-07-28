@@ -208,7 +208,7 @@
             background: linear-gradient(135deg, #f1f3f4, #ffffff);
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);     
-            margin-bottom: 20px;       
+            margin: 20px 0;
         }
 
         .java-architecture {
@@ -230,7 +230,7 @@
         /* Code blocks */
         code {
             background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 20px;
+            padding: 5px 20px;
             border-radius: 8px;
             font-family: 'Courier New', monospace;
             display: block;
@@ -256,6 +256,10 @@
             border-radius: 8px;
             margin: 15px 0;
             border-left: 4px solid #f39c12;
+        }
+
+        .highlight p {
+            margin: 12px 0;
         }
 
         mark {
@@ -286,7 +290,7 @@
         hr {
             border: 2px solid #4a90e2;
             margin-top: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .analogy {
