@@ -70,7 +70,8 @@
                     few implementation dependencies as possible. It is a general-purpose programming language intended
                     to let programmers <strong>write once, run anywhere (WORA)</strong>, meaning that compiled Java code
                     can run on all
-                    platforms that support Java without the need to recompile.</p>
+                    platforms that support Java without the need to recompile.
+                </p>
 
                 <div class="feature-box">
                     <h3>Key Features of Java:</h3>
@@ -96,8 +97,9 @@
                     </ul>
                 </div>
 
-                <h3>Basic Java Syntax and Structure</h3>
+                <h3>Basic Java Syntax and Structure:</h3>
                 <p>Let's look at a simple "Hello, World!" example to understand the basic syntax of a Java program.</p>
+
                 <pre><code>
 public class HelloWorld {
     public static void main(String[] args) {
@@ -105,9 +107,10 @@ public class HelloWorld {
     }
 }
                 </code></pre>
-                <p><strong>Explanation of the components:</strong></p>
+
+                <h4>Explanation of the components:</h4>
                 <ul>
-                    <li><strong><mark>public class HelloWorld</mark></strong> :
+                    <li><strong><mark>public class HelloWorld</mark> :</strong> 
                         <ul>
                             <li><strong>public</strong> : This is an access modifier, meaning this class is accessible
                                 from
@@ -122,9 +125,9 @@ public class HelloWorld {
                             </li>
                         </ul>
                     </li>
-                    <li><strong><mark>public static void main(String[] args)</mark></strong> : This is the main method,
+                    <li><strong><mark>public static void main(String[] args)</mark> :</strong> [This is the main method,
                         the entry point
-                        for any Java application.
+                        for any Java application.]
                         <ul>
                             <li><strong>public</strong> : Again, an access modifier, making the method accessible from
                                 anywhere.</li>
@@ -144,10 +147,10 @@ public class HelloWorld {
                             </li>
                         </ul>
                     </li>
-                    <li><strong><mark>System.out.println("Hello, World!");</mark></strong> : <i><b>This line prints the
+                    <li><strong><mark>System.out.println("Hello, World!");</mark> : </strong>  [This line prints the
                                 string
-                                "Hello, World!"
-                                to the console.</b></i>
+                                <i>"Hello, World!"</i>
+                                to the console.]
                         <ul>
                             <li><strong>System</strong> : A built-in Java class that provides access to the system,
                                 including
@@ -162,8 +165,9 @@ public class HelloWorld {
                         </ul>
                     </li>
                 </ul>
+
                 <div class="highlight">
-                    <p><strong>Note: </strong>Every statement in Java must end with a semicolon (<strong>;</strong>).
+                    <p><strong>Note: </strong>Every statement in Java must end with a semicolon (<mark>;</mark>).
                     </p>
                 </div>
 
@@ -200,7 +204,7 @@ Hello, World!
                     </li>
                 </ol>
 
-                <h3>Java Architecture (JVM, JRE, JDK)</h3>
+                <h3>Java Architecture (JVM, JRE, JDK):</h3>
                 <p>Java follows a unique architecture that includes several key components, each playing a crucial role
                     in how Java programs are developed and executed.</p>
                <div class="image-container">
@@ -227,7 +231,7 @@ Hello, World!
                     </li>
                 </ul>
 
-                <h3>JDK vs JRE vs JVM</h3>
+                <h3>JDK vs JRE vs JVM:</h3>
                 <table>
                     <thead>
                         <tr>
@@ -239,25 +243,25 @@ Hello, World!
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Purpose</strong></td>
+                            <th>Purpose</th>
                             <td>Used to develop Java applications</td>
                             <td>Used to run Java applications</td>
                             <td>Executes Java bytecode</td>
                         </tr>
                         <tr>
-                            <td><strong>Platform Dependency</strong></td>
+                            <th>Platform Dependency</th>
                             <td>Platform-dependent (OS specific)</td>
                             <td>Platform-dependent (OS specific)</td>
                             <td>JVM is OS-specific, but bytecode is platform-independent</td>
                         </tr>
                         <tr>
-                            <td><strong>Includes</strong></td>
+                            <th>Includes</th>
                             <td>JRE + Development tools (javac, debugger, etc.)</td>
                             <td>JVM + Libraries (e.g., rt.jar)</td>
                             <td>ClassLoader, JIT Compiler, Garbage Collector</td>
                         </tr>
                         <tr>
-                            <td><strong>Use Case</strong></td>
+                            <th>Use Case</th>
                             <td>Writing and compiling Java code</td>
                             <td>Running a Java application on a system</td>
                             <td>Convert bytecode into native machine code</td>
@@ -269,8 +273,8 @@ Hello, World!
                 <p>To fully understand the Java ecosystem, it's essential to differentiate between the JVM, JRE, and
                     JDK:</p>
 
-                <div class="component-box">
-                    <h3>1. Java Virtual Machine (JVM)</h3>
+                <div>
+                    <h3>1. Java Virtual Machine (JVM):</h3>
                     <p>The JVM is a specification that defines how Java bytecode is executed. It is a runtime
                         environment that acts as an interpreter and executor for Java bytecode. When you run a Java
                         program, the JVM reads the bytecode and translates it into native machine code instructions that
@@ -293,8 +297,8 @@ Hello, World!
                     </ul>
                 </div>
 
-                <div class="component-box">
-                    <h3>2. Java Runtime Environment (JRE)</h3>
+                <div>
+                    <h3>2. Java Runtime Environment (JRE):</h3>
                     <p>The JRE is a software package that provides the minimum requirements for executing a Java
                         application. It includes the JVM, along with the core Java class libraries and supporting files.
                         If you only want to run Java applications and not develop them, you only need the JRE.</p>
@@ -310,7 +314,7 @@ Hello, World!
                     <p><strong>In essence, JRE = JVM + Java Class Libraries + Supporting Files.</strong></p>
                 </div>
 
-                <div class="component-box">
+                <div>
                     <h3>3. Java Development Kit (JDK)</h3>
                     <div class="image-container">
                         <img src="./Assets/JDK.png" alt="JDK Image" class="jdk">
@@ -353,13 +357,11 @@ Hello, World!
                         a
                         different version of the JVM is specifically designed and implemented for each underlying
                         operating
-                        system (e.g., Windows, macOS, Linux). So, while your Java code is 'write once, run anywhere,'
+                        system (e.g., Windows, macOS, Linux). So, while your Java code is <strong><q>write once, run anywhere</q></strong>,
                         the
                         'run anywhere' relies on the presence of a platform-specific JVM.
                     </p>
                 </div>
-
-
             </section>
 
             <section class="main-section" id="java_history">
@@ -548,13 +550,13 @@ Hello, World!
                 </div>
 
                 <div class="highlight">
-                    <p><strong>Fact File:</strong> Java was initially called "Oak" but was renamed to "Java" in 1995.
+                    <p><strong>Fact File:</strong> Java was initially called <b><q>Oak</q></b> but was renamed to <b><q>Java</q></b> in <b>1995</b>, before its official public release.
                         The
-                        name <b>"Oak"</b> came from an <b>oak tree</b> 🌳 that stood outside the office of James
-                        Gosling, the creator of
-                        Java. However, "Oak" was already a <b>registered trademark</b>. During a brainstorming session
+                        name <q><b>Oak</b></q> came from an <b>oak tree</b> 🌳 that stood outside the office of <b><q>James
+                        Gosling</q></b>, the creator of
+                        Java. However, <b><q>Oak</q></b> was already a <b>registered trademark</b>. During a brainstorming session
                         fueled
-                        by coffee, the team chose the name <b>"Java" - inspired by the Indonesian island known for its
+                        by coffee, the team chose the name <b><q>Java</q> - inspired by the Indonesian island known for its
                             coffee</b>. This connection led to Java's iconic coffee cup logo ☕, symbolizing energy and
                         universality!</p>
                 </div>
@@ -566,19 +568,22 @@ Hello, World!
                     <h2>Module I: Core Java</h2>
                 </header>
 
-                <h3>1. Variables, Data Types & Operators</h3>
+                <h3>1. Variables, Data Types & Operators:</h3>
                 <h3 id="core_java_variables">I. Variables:</h3>
                 <p><strong>Variables</strong> are named memory locations that act as containers for storing data values.
                     In Java, a <b>strongly typed language</b>, every variable must be explicitly declared with a
                     specific
                     data type before it can be used. This declaration informs the compiler about the type of data the
                     variable will hold and the amount of memory it needs to allocate. This strong typing helps prevent
-                    errors and ensures type safety during compilation and runtime.</p>
+                    errors and ensures type safety during compilation and runtime.
+                </p>
 
                 <h4>Variable Naming Conventions:</h4>
                 <p>In Java, following standard naming conventions is crucial for code readability and
                     maintainability. These conventions promote code clarity, reduce errors, and facilitate collaboration
-                    among developers.</p>
+                    among developers.
+                </p>
+
                 <ul>
                     <li><strong>camelCase:</strong> Use lower camel case for variable names <b>(e.g.,
                             `firstName`, `timeToFirstLoad`)</b>. The first letter of a variable name should be
@@ -609,23 +614,16 @@ Hello, World!
                     </li>
                     <li><strong>Be mindful of length:</strong> While descriptive names are important, avoid excessively
                         long names.</li>
-                </ul>
-
-                <p><strong>Examples:</strong></p>
-                <ul>
-                    <li>firstName</li>
-                    <li>totalAmount</li>
-                    <li>isValidUser</li>
-                    <li>employeeId</li>
-                </ul>
+                </ul>                
 
                 <h3 id="core_java_data_types">II. Data Types:</h3>
                 <p>Java's data types are categorized into two main groups:</p>
                 <ul>
                     <li>
-                        <strong>Primitive Types:</strong> These are the fundamental building blocks for data
+                        <h4>Primitive Types:</h4> 
+                        <p>These are the fundamental building blocks for data
                         manipulation. They hold simple, single values directly in memory. Java has 8 primitive data
-                        types, each with a predefined size and range.
+                        types, each with a predefined size and range.</p>
                         <ul>
                             <li><strong><mark>byte</mark>:</strong> Stores whole numbers from -128 to 127. <strong>Size:
                                     1 byte (8 bits)</strong>. Default value: 0.</li>
@@ -654,9 +652,11 @@ Hello, World!
                         </ul>
                     </li>
                     <li>
-                        <strong>Non-Primitive (Reference) Types:</strong> Also known as reference types, these do not
+                        <h4>Non-Primitive (Reference) Types:</h4> 
+                        <p>Also known as reference types, these do not
                         store the actual data values directly but rather <b>references (memory addresses)</b> to the
                         objects in memory. They are created by the programmer or provided by Java's API.
+                        </p>
                         <ul>
                             <li><strong><mark>String</mark>:</strong> Represents a sequence of characters. Immutable in
                                 Java.</li>
@@ -670,72 +670,92 @@ Hello, World!
                                 implement.
                             </li>
                         </ul>
-                        <div class="highlight">
+                    </li>
+                </ul>
+
+                <div class="highlight">
                             <p><strong>Note: </strong>The size of non-primitive types is not fixed; it depends on the
                                 size of the objects they
                                 refer to, which can vary. The reference itself typically takes up 4 or 8 bytes depending
                                 on
-                                the JVM architecture (32-bit or 64-bit).</p>
-                        </div>
-                    </li>
-                </ul>
+                                the JVM architecture (32-bit or 64-bit).
+                            </p>
+                </div>               
 
                 <h3 id="core_java_operators">III. Operators:</h3>
                 <p>Operators are special symbols used to perform operations on variables and values. They are
                     categorized based on the type of operation they perform:</p>
                 <ul>
                     <li>
-                        <strong>Arithmetic Operators:</strong> Perform mathematical calculations.
+                        <h4>Arithmetic Operators:</h4> 
+                        <p>Perform mathematical calculations.</p>
                         <ul>
-                            <li>`+` (Addition)</li>
-                            <li>`-` (Subtraction)</li>
-                            <li>`*` (Multiplication)</li>
-                            <li>`/` (Division)</li>
-                            <li>`%` (Modulus - remainder of division)</li>
-                            <li>`++` (Increment - increases value by 1)</li>
-                            <li>`--` (Decrement - decreases value by 1)</li>
+                            <li><mark>+</mark> (Addition)</li>
+                            <li><mark>-</mark> (Subtraction)</li>
+                            <li><mark>*</mark> (Multiplication)</li>
+                            <li><mark>/</mark> (Division)</li>
+                            <li><mark>%</mark> (Modulus - remainder of division)</li>
+                            <li><mark>++</mark> (Increment - increases value by 1)</li>
+                            <li><mark>--</mark> (Decrement - decreases value by 1)</li>
                         </ul>
                     </li>
                     <li>
-                        <strong>Assignment Operators:</strong> Used to assign values to variables.
+                        <h4>Assignment Operators:</h4> 
+                        <p>Used to assign values to variables.</p>
                         <ul>
-                            <li>`=` (Assignment)</li>
-                            <li>`+=` (Add and assign)</li>
-                            <li>`-=` (Subtract and assign)</li>
-                            <li>`*=` (Multiply and assign)</li>
-                            <li>`/=` (Divide and assign)</li>
-                            <li>`%=` (Modulus and assign)</li>
+                            <li><mark>=</mark> (Assignment)</li>
+                            <li><mark>+=</mark> (Add and assign)</li>
+                            <li><mark>-=</mark> (Subtract and assign)</li>
+                            <li><mark>*=</mark> (Multiply and assign)</li>
+                            <li><mark>/=</mark> (Divide and assign)</li>
+                            <li><mark>%=</mark> (Modulus and assign)</li>
                         </ul>
                     </li>
                     <li>
-                        <strong>Comparison (Relational) Operators:</strong> Used to compare two values and return a
-                        `boolean` result (`true` or `false`).
+                        <h4>Comparison (Relational) Operators:</h4> 
+                        <p>Used to compare two values and return a <mark>boolean</mark> result (`true` or `false`).</p>
                         <ul>
-                            <li>`==` (Equal to)</li>
-                            <li>`!=` (Not equal to)</li>
-                            <li>`>` (Greater than)</li>
-                            <li>`<` (Less than)</li>
-                            <li>`>=` (Greater than or equal to)</li>
-                            <li>`<=` (Less than or equal to)</li>
+                            <li><mark>==</mark> (Equal to)</li>
+                            <li><mark>!=</mark> (Not equal to)</li>
+                            <li><mark>></mark> (Greater than)</li>
+                            <li><mark><</mark> (Less than)</li>
+                            <li><mark>>=</mark> (Greater than or equal to)</li>
+                            <li><mark><=</mark> (Less than or equal to)</li>
                         </ul>
                     </li>
                     <li>
-                        <strong>Logical Operators:</strong> Used to combine or negate boolean expressions.
+                        <h4>Logical Operators:</h4> 
+                        <p>Used to combine or negate boolean expressions.</p>
                         <ul>
-                            <li>`&&` (Logical AND - true if both operands are true)</li>
-                            <li>`||` (Logical OR - true if at least one operand is true)</li>
-                            <li>`!` (Logical NOT - inverts the boolean state)</li>
+                            <li><mark>&&</mark> (Logical AND - true if both operands are true)</li>
+                            <li><mark>||</mark> (Logical OR - true if at least one operand is true)</li>
+                            <li><mark>!</mark> (Logical NOT - inverts the boolean state)</li>
                         </ul>
                     </li>
                     <li>
-                        <strong>Bitwise Operators:</strong> Perform operations on individual bits of integer types.
-                        (e.g., `&` (AND), `|` (OR), `^` (XOR), `~` (NOT), `<<` (Left Shift), `>>` (Right Shift), `>>>`
-                            (Unsigned Right Shift)).
+                        <h4>Bitwise Operators:</h4> 
+                        <p>Perform operations on individual bits of integer types.</p>
+                        <ul>
+                            <li><mark>&</mark>: Bitwise AND - sets each bit to 1 if both bits are 1.</li>
+                            <li><mark>|</mark>: Bitwise OR - sets each bit to 1 if at least one bit is 1.</li>
+                            <li><mark>^</mark>: Bitwise XOR (exclusive OR) - sets each bit to 1 if only one of the bits is 1.</li>
+                            <li><mark>~</mark>: Bitwise NOT - inverts all the bits (bitwise complement).</li>
+                            <li><mark><<</mark>: Left Shift - shifts bits to the left, filling with zeros on the right.</li>
+                            <li><mark>>></mark>: Right Shift - shifts bits to the right, preserving the sign (sign-extended).</li>
+                            <li><mark>>>></mark>: Unsigned Right Shift - shifts bits to the right, filling with zeros on the left regardless of sign.</li>                            
+                        </ul>                        
                     </li>
                     <li>
-                        <strong>Ternary (Conditional) Operator:</strong> A shorthand for an `if-else` statement.
+                        <h4>Ternary (Conditional) Operator:</h4> 
+                        <p>A shorthand for an <mark>if-else</mark> statement.</p>
                         <ul>
-                            <li>`condition ? expression_if_true : expression_if_false;`</li>
+                            <li><b>Syntax:</b> <mark>condition ? expression_if_true : expression_if_false;</mark></li>
+                            <li><b>How it works:</b>
+                                <ul>
+                                    <li>If <b>condition</b> is <b>true</b>, the operator returns the value of <b>expression_if_true</b>.</li>
+                                    <li>If <b>condition</b> is <b>false</b>, it returns the value of <b>expression_if_false</b>.</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -773,30 +793,68 @@ boolean resultNOT = !(condition1);              // resultNOT = false
 
 // Assignment Operators
 int x = 5;
-x += 3; // x is now 8 (x = x + 3)
+x += 3;         // x is now 8 (x = x + 3)
+
+int x = 10;
+x -= 4;         // x is now 6  (x = x - 4)
+
+int y = 7;
+y *= 3;         // y is now 21 (y = y * 3)
+
+int z = 20;
+z /= 5;         // z is now 4  (z = z / 5)
+
+int w = 17;
+w %= 6;         // w is now 5  (w = w % 6)
+
+// Bitwise Operators
+int p = 6;    // binary: 0000 0110
+int q = 11;   // binary: 0000 1011
+
+int andResult = p & q;   // bitwise AND: 0000 0010 -> 2
+int orResult = p | q;    // bitwise OR:  0000 1111 -> 15
+int xorResult = p ^ q;   // bitwise XOR: 0000 1101 -> 13
+int notResult = ~p;      // bitwise NOT: invert bits of 6 -> -7 (in 32-bit signed int)
+
+int leftShift = p << 2;  // left shift by 2: 0001 1000 -> 24
+int rightShift = q >> 1; // right shift by 1: 0000 0101 -> 5
+int unsignedRightShift = q >>> 1; // unsigned right shift by 1: 0000 0101 -> 5
+
+// Print statements for clarity (Bitwise Operators)
+System.out.println("p & q = " + andResult);               // 2
+System.out.println("p | q = " + orResult);                // 15
+System.out.println("p ^ q = " + xorResult);               // 13
+System.out.println("~p = " + notResult);                  // -7
+System.out.println("p << 2 = " + leftShift);              // 24
+System.out.println("q >> 1 = " + rightShift);             // 5
+System.out.println("q >>> 1 = " + unsignedRightShift);    // 5
 
 // Ternary Operator
 String status = (age >= 18) ? "Adult" : "Minor"; // status = "Adult"
-    </code></pre>
+int result = (score >= 50) ? 1 : 0;  // score = 60, result = 1
+
+</code></pre>
 
                 <hr>
 
-                <h3 id="core_java_conditional_statements">2. Conditional Statements</h3>
+                <h3 id="core_java_conditional_statements">2. Conditional Statements:</h3>
                 <p><strong>Conditional statements</strong> (also known as <b>control flow statements</b>) are
                     fundamental programming constructs that allow you to control the <b>flow of program execution</b>
-                    based on whether a specified condition evaluates to <mark>true</mark> or <mark>false</mark>. They
+                    based on whether a specified condition evaluates to <b>true</b> or <b>false</b>. They
                     enable your programs to make decisions, execute different blocks of code under different
                     circumstances, and respond dynamically to varying inputs or states. This decision-making capability
-                    is what makes programs intelligent and interactive.</p>
-
-                <h4>Types of Conditional Statements in Java:</h4>
-
-                <h4>a. If Statement</h4>
-                <p>The <strong><mark>if</mark> statement</strong> is the most basic conditional statement. It executes a
-                    block of code only if a specified boolean condition is <mark>true</mark>. If the condition is
-                    <mark>false</mark>, the code block inside the `if` statement is skipped, and the program continues
-                    execution after the `if` block.
+                    is what makes programs intelligent and interactive.
                 </p>
+
+                <h4>I. Types of Conditional Statements in Java:</h4>
+
+                <h4>a. If Statement:</h4>
+                <p>The <strong><mark>if</mark> statement</strong> is the most basic conditional statement. It executes a
+                    block of code only if a specified boolean condition is <b>true</b>. If the condition is
+                    <b>false</b>, the code block inside the `if` statement is skipped, and the program continues
+                    execution after the <mark>if</mark> block.
+                </p>
+
                 <pre><code>
 // If statement
 int age = 25;
@@ -810,13 +868,14 @@ if (temperature > 25) {
 }
     </code></pre>
 
-                <h4>b. If-else Statement</h4>
+                <h4>b. If-else Statement:</h4>
                 <p>The <strong><mark>if-else</mark> statement</strong> provides an alternative path of execution when
-                    the `if` condition is <mark>false</mark>. If the condition in the <mark>`if</mark>` block is
+                    the <mark>if</mark> condition is <b>false</b>. If the condition in the <mark>if</mark> block is
                     <mark>true</mark>,
-                    its code is executed. Otherwise (<mark>else</mark>), the code block associated with the `else` part
+                    its code is executed. Otherwise, the code block associated with the <mark>else</mark> part
                     is executed. Exactly one of the two blocks will always execute.
                 </p>
+
                 <pre><code>
 // If-else
 int score = 75;
@@ -834,12 +893,14 @@ if (temperature > 25) {
 }
     </code></pre>
 
-                <h4>c. If-else If (Ladder If-else) Statement</h4>
-                <p>The <strong><mark>if-else if ladder</mark></strong> (also known as the "else if" ladder) is used when
+                <h4>c. If-else If (Ladder If-else) Statement:</h4>
+                <p>The <strong><mark>if-else if</mark> ladder</strong> (also known as the <strong><mark>else if</mark> ladder</strong>) is used when
                     you need to test multiple conditions sequentially. The program evaluates conditions from top to
                     bottom. As soon as a condition evaluates to <mark>true</mark>, its corresponding code block is
-                    executed, and the rest of the ladder is skipped. If none of the `if` or `else if` conditions are
-                    met, the final `else` block (if present) is executed.</p>
+                    executed, and the rest of the ladder is skipped. If none of the <mark>if</mark> or <mark>else if</mark> conditions are
+                    met, the final <mark>else</mark> block (if present) is executed.
+                </p>
+
                 <pre><code>
 public class IfElseLadderExample {
     public static void main(String[] args) {
@@ -871,12 +932,14 @@ public class IfElseLadderExample {
 }
     </code></pre>
 
-                <h4>d. Nested If-else Statement</h4>
-                <p>A <strong>nested <mark>if-else</mark> statement</strong> is an `if` or `if-else` statement placed
-                    inside another `if` or `else` block. This allows for checking multiple layers of conditions, where
+                <h4>d. Nested If-else Statement:</h4>
+                <p>A <strong>nested <mark>if-else</mark> statement</strong> is an <mark>if</mark> or <mark>if-else</mark> statement placed
+                    inside another <mark>if</mark> or <mark>else</mark> block. This allows for checking multiple layers of conditions, where
                     an inner condition is only relevant if an outer condition is met. While powerful, excessive nesting
-                    can make code harder to read and maintain, so alternatives like logical operators (`&&`, `||`) or
-                    refactoring should be considered for complex scenarios.</p>
+                    can make code harder to read and maintain, so alternatives like logical operators (<mark>&&</mark>, <mark>||</mark>) or
+                    refactoring should be considered for complex scenarios.
+                </p>
+
                 <pre><code>
 public class NestedIfElseExample {
     public static void main(String[] args) {
@@ -910,20 +973,23 @@ public class NestedIfElseExample {
 }
     </code></pre>
 
-                <h4>e. Switch Statement</h4>
+                <h4>e. Switch Case:</h4>
                 <p>The <strong><mark>switch</mark> statement</strong> is used for selecting one of many code blocks to
                     be executed. It evaluates an expression and executes the code block associated with the matching
-                    `case` label. It's often a cleaner alternative to a long `if-else if` ladder when dealing with a
-                    single variable that can have many distinct constant values. The expression in a `switch` can be a
-                    `byte`, `short`, `char`, `int`, `enum` (since Java 5), `String` (since Java 7), or wrapper types
-                    (`Byte`, `Short`, `Integer`, `Character`).</p>
+                    <mark>case</mark> label. It's often a cleaner alternative to a long <mark>if-else if</mark> ladder when dealing with a
+                    single variable that can have many distinct constant values. The expression in a <mark>switch</mark> can be a
+                    <mark>byte</mark>, <mark>short</mark>, <mark>char</mark>, <mark>int</mark>, <mark>enum</mark> (since Java 5), <mark>String</mark> (since Java 7), or wrapper types
+                    (<mark>Byte</mark>, <mark>Short</mark>, <mark>Integer</mark>, <mark>Character</mark>).
+                </p>
+
                 <ul>
-                    <li>Each `case` label must be a unique constant value.</li>
-                    <li>The <strong><mark>break</mark></strong> keyword is crucial; it terminates the switch statement
-                        once a match is found and prevents "fall-through" to the next `case`.</li>
-                    <li>The <strong><mark>default</mark></strong> keyword is optional and specifies the code to run if
-                        no `case` match is found.</li>
+                    <li>Each <strong><mark>case</mark></strong> label must be a <b>unique constant value</b>.</li>
+                    <li>The <strong><mark>break</mark></strong> keyword is <b>crucial</b>; it terminates the switch statement
+                        once a match is found and prevents "fall-through" to the next <mark>case</mark>.</li>
+                    <li>The <strong><mark>default</mark></strong> keyword is <b>optional</b> and specifies the code to run if
+                        no <mark>case</mark> match is found.</li>
                 </ul>
+
                 <pre><code>
 // Switch case
 int day = 2;
@@ -957,25 +1023,29 @@ switch (trafficLight) {
         System.out.println("Invalid light state.");
 }
     </code></pre>
+
                 <div class="highlight">
-                    <p></p><strong>Note: </strong>
+                <p><strong>Note: </strong>
                     For more modern Java versions (Java 12+), <strong>Switch Expressions</strong> offer a more concise
-                    and powerful way to handle switch logic, allowing `switch` to return a value and avoiding
-                    fall-through by default. This was discussed in the Java 17 features module.</p>
+                    and powerful way to handle switch logic, allowing <mark>switch</mark> to return a value and avoiding
+                    fall-through by default. This was discussed in the Java 17 features module.
+                </p>
                 </div>
 
-                <h4>Flow Control Keywords: `break` and `continue`</h4>
+                <h4>II. Flow Control Keywords: `break` and `continue`:</h4>
                 <p>Beyond conditional statements, Java provides keywords that alter the normal sequential flow of
-                    execution, especially within loops or `switch` statements.</p>
+                    execution, especially within loops or <mark>switch</mark> statements.</p>
 
-                <h4>f. `break` Statement</h4>
-                <p>The <strong><mark>break;</mark> statement</strong> is used to <b>terminate the current loop or
-                        `switch`
+                <h4>a. `break` Statement:</h4>
+                <p>The <strong><mark>break;</mark> statement</strong> is used to <b>terminate the current <mark>loop</mark> or
+                        <mark>switch</mark>
                         statement immediately</b>. When a `break` is encountered, the program flow jumps to the
                     statement
                     immediately following the loop or `switch` block. It is commonly used to exit a loop prematurely
                     when a certain condition is met, or to prevent fall-through in `switch` cases (as shown in the
-                    `switch` examples above).</p>
+                    `switch` examples above).
+                </p>
+
                 <pre><code>
 // Using break in a loop
 for (int i = 1; i <= 10; i++) {
@@ -985,6 +1055,7 @@ for (int i = 1; i <= 10; i++) {
     }
     System.out.println("Current number: " + i);
 }
+
 // Output:
 // Current number: 1
 // Current number: 2
@@ -993,12 +1064,14 @@ for (int i = 1; i <= 10; i++) {
 // Reached 5, breaking loop.
     </code></pre>
 
-                <h4>g. `continue` Statement</h4>
+                <h4>b. `continue` Statement:</h4>
                 <p>The <strong><mark>continue;</mark> statement</strong> is used to <b>skip the rest of the current
-                        iteration of a loop and proceed to the next iteration</b>. When a `continue` is encountered, the
+                        iteration of a loop and proceed to the next iteration</b>. When a <mark>continue</mark> is encountered, the
                     loop's body is immediately terminated for that specific iteration, and the loop control
-                    (increment/decrement part in `for` loops, condition check in `while`/`do-while` loops) is executed,
-                    potentially starting the next iteration.</p>
+                    (increment/decrement part in <mark>for</mark> loops, condition check in <mark>while</mark> / <mark>do-while</mark> loops) is executed,
+                    potentially starting the next iteration.
+                </p>
+
                 <pre><code>
 // Using continue in a loop
 for (int i = 1; i <= 5; i++) {
@@ -1008,6 +1081,7 @@ for (int i = 1; i <= 5; i++) {
     }
     System.out.println("Current number: " + i);
 }
+
 // Output:
 // Current number: 1
 // Current number: 2
@@ -1018,18 +1092,19 @@ for (int i = 1; i <= 5; i++) {
 
                 <hr>
 
-                <h3 id="core_java_looping_statements">3. Looping Statements</h3>
+                <h3 id="core_java_looping_statements">3. Looping Statements:</h3>
                 <p><strong>Looping statements</strong> (also known as <b>iteration statements or repetition
                         statements</b>) are
                     fundamental control flow constructs that allow a block of code to be <b>repeatedly executed</b> as
                     long
                     as a certain condition remains true. They are essential for tasks that involve processing
                     collections of data, performing repetitive calculations, or iterating through sequences. Loops
-                    significantly reduce code redundancy and improve efficiency.</p>
+                    significantly reduce code redundancy and improve efficiency.
+                </p>
 
                 <h4>Types of Looping Statements in Java:</h4>
 
-                <h4>a. For Loop</h4>
+                <h4>a. For Loop:</h4>
                 <p>The <strong><mark>for</mark> loop</strong> is a control flow statement that iterates a part of the
                     program multiple times. It is ideal when you know the <b>exact number of iterations</b> beforehand.
                     The
@@ -1042,6 +1117,7 @@ for (int i = 1; i <= 5; i++) {
                     <li><strong>Increment/Decrement (Iteration):</strong> Executed after each iteration of the loop
                         body, typically to update the loop control variable.</li>
                 </ol>
+
                 <pre><code>
 // Basic For loop
 for (int i = 0; i < 10; i++) { // i starts at 0, continues as long as i < 10, i increments by 1 each time
@@ -1065,12 +1141,14 @@ for (int i = 5; i > 0; i--) {
 // Reverse Count: 1
     </code></pre>
 
-                <h4>b. While Loop</h4>
+                <h4>b. While Loop:</h4>
                 <p>The <strong><mark>while</mark> loop</strong> is used when you don't know the exact number of
                     iterations beforehand, but rather want to repeat a block of code <b>as long as a specified boolean
                         condition remains `true`</b>. The condition is evaluated <b>before</b> each execution of the
                     loop body. If
-                    the condition is initially `false`, the loop body will never execute.</p>
+                    the condition is initially `false`, the loop body will never execute.
+                </p>
+
                 <pre><code>
 // While loop
 int count = 0;
@@ -1087,14 +1165,16 @@ while (count < 5) { // Condition checked before each iteration
 // While Count: 4
     </code></pre>
 
-                <h4>c. Do-while Loop</h4>
+                <h4>c. Do-while Loop:</h4>
                 <p>The <strong><mark>do-while</mark> loop</strong> is similar to the `while` loop, but with one crucial
                     difference: the loop body is executed <b>at least once</b>, even if the condition is `false`
                     initially.
                     This is because the condition is evaluated <b>after</b> each execution of the loop body. It's
                     suitable
                     for scenarios where you need to perform an action at least once, then continue based on a condition
-                    (e.g., getting user input until it's valid).</p>
+                    (e.g., getting user input until it's valid).
+                </p>
+
                 <pre><code>
 // Do-while loop
 int num = 1;
@@ -1119,21 +1199,23 @@ do {
 // This runs once because x <= 5 is false initially: 10
     </code></pre>
 
-                <h4>d. For-each Loop (Enhanced For Loop)</h4>
-                <p>The <strong><mark>for-each</mark> loop</strong> (also known as the enhanced `for` loop, introduced in
-                    Java 5) provides a <b>simpler and more readable way to iterate over elements of arrays and
-                        collections</b> (like `ArrayList`, `Set`, `Map` entries). Instead of managing an index or
+                <h4>d. For-each Loop (Enhanced For Loop):</h4>
+                <p>The <strong><mark>for-each</mark> loop</strong> (also known as the <b>enhanced <mark>for</mark> loop</b>, introduced in
+                    <b>Java 5</b>) provides a <b>simpler and more readable way to iterate over elements of arrays and
+                        collections</b> (like <mark>ArrayList</mark>, <mark>Set</mark>, <mark>Map</mark> entries). Instead of managing an index or
                     iterator
                     manually, you directly declare a variable that will sequentially hold each element from the
                     collection during each iteration. It's perfect when you just need to access <b>each item</b> in a
-                    sequence and don't need to know its specific index or position.</p>
+                    sequence and don't need to know its specific index or position.
+                </p>
+
                 <pre><code>
 Syntax:
 
 for (DataType itemVariable : collectionOrArray) {
     // Code to execute for each 'itemVariable'
 }
-                                        </code></pre>
+                </code></pre>
 
                 <pre><code>
 // For-each loop with an array of Strings
@@ -1165,10 +1247,12 @@ for (String fruit : fruits) { // "For each String 'fruit' IN the 'fruits' array"
 // I picked up: Tomato
     </code></pre>
 
-                <h4>e. Nested Loops</h4>
+                <h4>e. Nested Loops:</h4>
                 <p><strong>Nested loops</strong> involve placing one loop inside another. The inner loop completes all
                     of its iterations for each single iteration of the outer loop. Nested loops are commonly used for
-                    tasks involving two-dimensional structures like matrices, grids, or generating patterns.</p>
+                    tasks involving two-dimensional structures like matrices, grids, or generating patterns.
+                </p>
+
                 <pre><code>
 // Nested loops for a multiplication table
 // Outer loop for rows
@@ -1186,13 +1270,15 @@ for (int i = 1; i <= 3; i++) {
 // 3 6 9
     </code></pre>
 
-                <h4>Common Interview Pattern Programs (using Loops)</h4>
+                <h3>Common Interview Pattern Programs (using Loops):</h3>
                 <p>Pattern programs are frequently asked in interviews to assess a candidate's logical thinking,
                     understanding of nested loops, and ability to manipulate output. Here are some of the most common
-                    ones:</p>
+                    ones:
+                </p>
 
-                <h4>I. Solid Square/Rectangle Pattern</h4>
+                <h4>I. Solid Square/Rectangle Pattern:</h4>
                 <p>Prints a solid square or rectangle of asterisks.</p>
+
                 <pre><code>
 /*
 *****
@@ -1214,8 +1300,9 @@ public class SolidSquare {
 }
     </code></pre>
 
-                <h4>II. Right-Angled Triangle Pattern (Half Pyramid)</h4>
+                <h4>II. Right-Angled Triangle Pattern (Half Pyramid):</h4>
                 <p>Prints a right-angled triangle pattern where each row has one more asterisk than the previous.</p>
+
                 <pre><code>
 /*
 *
@@ -1238,8 +1325,9 @@ public class RightTriangle {
 }
     </code></pre>
 
-                <h4>III. Inverted Right-Angled Triangle Pattern (Inverted Half Pyramid)</h4>
+                <h4>III. Inverted Right-Angled Triangle Pattern (Inverted Half Pyramid):</h4>
                 <p>Prints an inverted right-angled triangle.</p>
+
                 <pre><code>
 /*
 *****
@@ -1262,8 +1350,9 @@ public class InvertedRightTriangle {
 }
     </code></pre>
 
-                <h4>IV. Full Pyramid (Isosceles Triangle)</h4>
+                <h4>IV. Full Pyramid (Isosceles Triangle):</h4>
                 <p>Prints a symmetrical triangle. This often requires managing spaces before the asterisks.</p>
+
                 <pre><code>
 /*
     *
@@ -1291,8 +1380,9 @@ public class FullPyramid {
 }
     </code></pre>
 
-                <h4>V. Number Patterns (e.g., Increasing Number Triangle)</h4>
+                <h4>V. Number Patterns (e.g., Increasing Number Triangle):</h4>
                 <p>Prints a triangle with increasing numbers.</p>
+
                 <pre><code>
 /*
 1
@@ -1315,8 +1405,9 @@ public class NumberTriangle {
 }
     </code></pre>
 
-                <h4>VI. Floyd's Triangle</h4>
+                <h4>VI. Floyd's Triangle:</h4>
                 <p>A right-angled triangle filled with consecutive numbers.</p>
+
                 <pre><code>
 /*
 1
@@ -1341,9 +1432,9 @@ public class FloydsTriangle {
 }
     </code></pre>
 
-                <h4>VII. Alphabet Pattern (Right-Angled Triangle of Letters)</h4>
-                <p>Prints a triangle using letters, typically starting from 'A' and incrementing across rows/columns.
-                </p>
+                <h4>VII. Alphabet Pattern (Right-Angled Triangle of Letters):</h4>
+                <p>Prints a triangle using letters, typically starting from 'A' and incrementing across rows/columns.</p>                
+
                 <pre><code>
 /*
 A
@@ -1367,6 +1458,7 @@ public class AlphabetTriangle {
     }
 }
     </code></pre>
+
                 <div class="highlight">
                     <p><strong>Note: </strong>Mastering these looping constructs and basic pattern programs is crucial
                         for building logical
@@ -1375,7 +1467,7 @@ public class AlphabetTriangle {
 
                 <hr>
 
-                <h3 id="core_java_methods">4. Methods (Functions)</h3>
+                <h3 id="core_java_methods">4. Methods (Functions):</h3>
 
                 <p>Imagine you have a specific task you do over and over again, like making a cup of coffee. Instead of
                     writing down all the steps ("get mug," "add coffee," "add hot water") every single time you want
@@ -1411,17 +1503,18 @@ public class AlphabetTriangle {
                     </li>
                 </ol>
 
-                <h4>Anatomy of a Function (Method) - Let's look at your examples!</h4>
+                <h4>Anatomy of a Method (Function) - Let's look at your examples!</h4>
 
-                <h4>I. Method with Parameters and a Return Value</h4>
+                <h4>I. Method with Parameters and a Return Value:</h4>
                 <p>This is the most common type of function: it takes some input (parameters) and gives back a result
                     (return value).</p>
+
                 <pre><code>
 // Method declaration: Takes two integers, returns their sum as an integer
 public static int add(int a, int b) {
     return a + b;
 }
-    </code></pre>
+                </code></pre>
 
                 <p>Here's what each part means:</p>
                 <ul>
@@ -1459,15 +1552,17 @@ public static int add(int a, int b) {
                         non-<mark>void</mark> return type <strong>must</strong> have a `return` statement.</li>
                 </ul>
 
-                <h4>II. Method with a `void` Return Type (Performs an Action, No Return Value)</h4>
+                <h4>II. Method with a `void` Return Type (Performs an Action, No Return Value):</h4>
                 <p>Sometimes, a method just needs to do something, like display information or save data, without
-                    producing a result that needs to be used by other parts of the program.</p>
+                    producing a result that needs to be used by other parts of the program.
+                </p>
+
                 <pre><code>
 // Method with void return type: Takes a String, prints it, returns nothing
 public static void printMessage(String message) {
     System.out.println(message);
 }
-    </code></pre>
+                </code></pre>
 
                 <ul>
                     <li><strong><mark>void</mark></strong> : This signifies that the method <strong>does not return any
@@ -1480,15 +1575,16 @@ public static void printMessage(String message) {
                         <mark>String</mark> called <mark>message</mark>.
                     </li>
                     <li><strong><mark>System.out.println(message);</mark></strong>: This line within the method's body
-                        prints the `message` to the console. No `return` statement is used because the method's purpose
+                        prints the `message` to the console. No <mark>return</mark> statement is used because the method's purpose
                         is to display, not to calculate and return a value.</li>
                 </ul>
 
-                <h4>III. Method Overloading: Same Name, Different Parameters</h4>
+                <h4>III. Method Overloading: Same Name, Different Parameters:</h4>
                 <p>Method overloading allows you to define multiple methods within the same class that have the
                     <strong>same name</strong> but different <strong>parameter lists</strong> (different number of
                     parameters, different types of parameters, or different order of parameters).
                 </p>
+
                 <pre><code>
 // Method overloading: Multiplies two integers
 public static int multiply(int a, int b) {
@@ -1499,7 +1595,7 @@ public static int multiply(int a, int b) {
 public static double multiply(double a, double b) {
     return a * b;
 }
-    </code></pre>
+                </code></pre>
 
                 <ul>
                     <li><strong>Purpose:</strong> It makes your code more intuitive. You can use a common, logical name
@@ -1519,14 +1615,16 @@ public static double multiply(double a, double b) {
                     </li>
                 </ul>
 
-                <h4>IV. Method with No Parameters and a Return Value</h4>
+                <h4>IV. Method with No Parameters and a Return Value:</h4>
                 <p>Some functions don't need any external input to do their job, but they still produce a result.</p>
+                
                 <pre><code>
 // Method with no parameters, returns a fixed value
 public static String getAppName() {
     return "My Awesome App";
 }
-    </code></pre>
+                </code></pre>
+    
                 <ul>
                     <li><strong><mark>()</mark></strong> : The empty parentheses indicate that this method takes no
                         parameters.</li>
@@ -1536,9 +1634,11 @@ public static String getAppName() {
                         external input.</li>
                 </ul>
 
-                <h4>V. Method with No Parameters and No Return Value (`void`)</h4>
+                <h4>V. Method with No Parameters and No Return Value (`void`):</h4>
                 <p>This type of method performs an action that requires no specific input and also doesn't produce any
-                    value to be used elsewhere. It just does something internally.</p>
+                    value to be used elsewhere. It just does something internally.
+                </p>
+
                 <pre><code>
 // Method with no parameters, returns nothing
 public static void displayWelcomeMessage() {
@@ -1546,17 +1646,17 @@ public static void displayWelcomeMessage() {
     System.out.println("Enjoy your experience.");
 }
     </code></pre>
+
                 <ul>
                     <li><strong><mark>()</mark></strong> : No parameters needed for this action.</li>
                     <li><strong><mark>void</mark></strong> : The method doesn't return any value.</li>
                     <li>Inside the body, it performs actions (printing messages) without needing external data.</li>
                 </ul>
 
-
-                <h4>How to Use (Call) Functions</h4>
+                <h4>How to Use (Call) Functions:</h4>
 
                 <p>To make a function actually do its job, you need to "call" or "invoke" it from another part of your
-                    code (usually from your `main` method, which is the starting point of most Java programs).</p>
+                    code (usually from your <mark><b>main</b></mark> method, which is the starting point of most Java programs).</p>
 
                 <p>Let's imagine you have the functions defined as above. Here's how you would call them:</p>
 
@@ -1625,7 +1725,7 @@ public class MyProgram {
 }
     </code></pre>
 
-                <h4>Quick Summary</h4>
+                <h4>Quick Summary:</h4>
                 <ul>
                     <li><strong>Functions are like mini-programs that do specific jobs.</strong></li>
                     <li>They help you <strong>reuse code</strong>, keep it <strong>organized</strong>, and make it
@@ -1660,10 +1760,10 @@ public class MyProgram {
 
                 <hr>
 
-                <h3 id="core_java_arrays">5. Arrays</h3>
+                <h3 id="core_java_arrays">5. Arrays:</h3>
 
                 <p>Imagine you've got a list of similar things, like student grades or daily temperatures. Instead of
-                    creating a separate variable for each one (like `grade1`, `grade2`, `tempMonday`, `tempTuesday`),
+                    creating a separate variable for each one (like <mark>grade1</mark>, <mark>grade2</mark>, <mark>tempMonday</mark>, <mark>tempTuesday</mark> ),
                     wouldn't it be way easier to put them all into one single, organized container?</p>
 
                 <p>That's exactly what an <strong>Array</strong> is in programming! It's like a special variable that
@@ -1675,7 +1775,7 @@ public class MyProgram {
                 </p>
 
                 <h4>Why Use Arrays? (They Make Coding Much Better!)</h4>
-                <ol type="a">
+                <ol type="A">
                     <li>
                         <strong>Organized Storage:</strong> Arrays help you keep related data together in a tidy,
                         ordered way.
@@ -1696,14 +1796,15 @@ public class MyProgram {
                     </li>
                 </ol>
 
-                <h4>How Arrays Work & Examples in a Program</h4>
+                <h4>How Arrays Work & Examples in a Program:</h4>
 
-                <p>Arrays store items in numbered compartments. This "compartment number" is called an
+                <p>Arrays store items in numbered compartments. This <b>"compartment number"</b> is called an
                     <strong>index</strong>, and it always starts counting from <strong>0</strong>.
                 </p>
 
                 <h4>I. One-Dimensional (1D) Arrays: Simple Lists</h4>
                 <p>A 1D array is like a single row of compartments, or a straightforward list of items.</p>
+
                 <pre><code>
 // This is a complete Java program demonstrating arrays
 public class ArrayExamples {
@@ -1778,7 +1879,9 @@ public class ArrayExamples {
                 <h4>II. Two-Dimensional (2D) Arrays [Multi-Dimensional Arrays]: Grids or Tables</h4>
                 <p>A 2D array is like a grid, a table, or a spreadsheet. It has both rows and columns, like a
                     checkerboard or a game board. You need <strong>two</strong> numbers to find an item: one for the
-                    row, and one for the column.</p>
+                    row, and one for the column.
+                </p>
+
                 <pre><code>
 // This is part of the same Java program, extending the main method
 public class ArrayExamples {
@@ -1866,18 +1969,19 @@ public class ArrayExamples {
 
                 <div class="highlight">
                     <p><strong>Note: </strong>Arrays are a fundamental tool for organizing information in programming,
-                        truly your <strong>Digital Storage Boxes</strong>!</p>
+                        truly your <strong>Digital Storage Boxes</strong>!
+                    </p>
                 </div>
 
                 <hr>
 
-
-                <h3 id="core_java_strings">6. String & String Methods</h3>
+                <h3 id="core_java_strings">6. String & String Methods:</h3>
                 <p>In Java, the <mark>String</mark> class is a fundamental building block for handling sequences of
                     characters, essentially representing text data. It's one of the most frequently used classes in Java
                     programming, vital for everything from user input and messages to complex data structures like JSON
                     or XML. Java provides a rich set of built-in methods to manipulate, analyze, and combine these text
-                    sequences efficiently.</p>
+                    sequences efficiently.
+                </p>
 
                 <h4>A Fundamental Characteristic: Java Strings are Immutable</h4>
                 <p><b>This is a cornerstone concept:</b> once a <mark>String</mark> object is created, its content
@@ -1887,9 +1991,8 @@ public class ArrayExamples {
                         <mark>String</mark> object</b> containing the result, leaving the original string untouched
                     in memory. This immutability offers significant benefits in terms of safety (especially in
                     multi-threaded environments, as their state never changes) and efficiency (their hash code can
-                    be cached, making them excellent keys in hash-based collections like <mark>HashMap</mark>).
+                    be cached, making them excellent keys in hash-based collections like <mark>HashMap</mark> ).
                 </p>
-
 
                 <pre><code>
 String str = "Hello World"; // 'str' is a String variable holding the text "Hello World"
@@ -1907,7 +2010,8 @@ String replaced = str.replace("World", "Java"); // Replaces all occurrences of t
 
                 <h4>More Key String Methods and Important Concepts:</h4>
                 <p>Let's dive deeper into additional, commonly used String methods and crucial concepts for
-                    comprehensive understanding.</p>
+                    comprehensive understanding.
+                </p>
 
                 <div>
                     <h4>I. String Concatenation: Joining Text Together</h4>
@@ -1926,6 +2030,7 @@ String replaced = str.replace("World", "Java"); // Replaces all occurrences of t
                         <li><b><mark>StringBuilder / StringBuffer</mark> :</b> For building strings with many dynamic
                             changes (see section below for more details on these efficient alternatives).</li>
                     </ul>
+
                     <pre><code>
 // Using the '+' operator
 String firstName = "John";
@@ -1955,13 +2060,15 @@ System.out.println("Order Summary (String.format()): " + orderSummary);
 // %b - boolean
 // %c - character
         </code></pre>
+
                     <div class="highlight">
                         <p><strong>Performance Tip for Concatenation:</strong></p>
                         <p>While the `+` operator is convenient, for a large number of string concatenations (especially
                             inside loops), it can be inefficient due to the immutability of `String` objects. Each `+`
                             operation effectively creates a new `String` object. In such scenarios, `StringBuilder` (or
                             `StringBuffer` in multi-threaded contexts) is significantly more performant as it modifies a
-                            single, mutable sequence of characters in memory.</p>
+                            single, mutable sequence of characters in memory.
+                        </p>
                     </div>
                 </div>
 
@@ -1970,7 +2077,8 @@ System.out.println("Order Summary (String.format()): " + orderSummary);
                     <p>Java handles the interaction between strings and numbers quite gracefully, often performing
                         automatic conversions. However, it's crucial to understand how these conversions work,
                         especially when converting strings to numbers, where specific methods and error handling are
-                        required.</p>
+                        required.
+                    </p>
 
                     <ul>
                         <li><b>Number to String:</b>
@@ -1988,25 +2096,26 @@ System.out.println("Order Summary (String.format()): " + orderSummary);
                         <li><b>String to Number:</b>
                             <ul>
                                 <li>To convert a string containing digits into a numeric type, you use the `parse`
-                                    methods provided by Java's <b>Wrapper Classes (e.g., `Integer`, `Double`).</b></li>
+                                    methods provided by Java's <b>Wrapper Classes (e.g., <mark>Integer</mark>, <mark>Double</mark>).</b></li>
                                 <li><b><mark>Integer.parseInt(String str)</mark> :</b> Converts a string to an
                                     <mark>int</mark> .
                                 </li>
                                 <li><b><mark>Double.parseDouble(String str)</mark> :</b> Converts a string to a
                                     <mark>double</mark> .
                                 </li>
-                                <li>Similar methods exist for <mark>`Long.parseLong()`</mark> ,
-                                    <mark>`Float.parseFloat()`</mark> , etc.</li>
+                                <li>Similar methods exist for <mark>Long.parseLong()</mark> ,
+                                    <mark>Float.parseFloat()</mark> , etc.</li>
                                 <li><b>Important Error Handling:</b> These parsing methods will throw a
                                     <mark><b>NumberFormatException</b></mark> if the string does not contain a valid
                                     representation of the number type (e.g., trying to parse "abc" as an integer). You
-                                    should always handle this exception using a `try-catch` block, especially when
+                                    should always handle this exception using a <mark>try-catch</mark> block, especially when
                                     dealing with user input or data from external sources, to prevent your program from
                                     crashing.
                                 </li>
                             </ul>
                         </li>
                     </ul>
+
                     <pre><code>
 // Number to String Conversion
 int age = 30;
@@ -2040,7 +2149,7 @@ try {
                 </div>
 
                 <div>
-                    <h4>III. Special Characters and Escape Sequences in Strings</h4>
+                    <h4>III. Special Characters and Escape Sequences in Strings:</h4>
                     <p>Sometimes you need to include characters in your string that have a special meaning in Java, or
                         characters that are not directly printable (like a newline or a tab). To achieve this, you use
                         <b>"escape sequences"</b>, which are <b>combinations of a backslash (<mark>\</mark>)</b>
@@ -2064,6 +2173,7 @@ try {
                             line, often used with `\n` for Windows-style line endings)</li>
                         <li><b><mark>\f</mark> :</b> Form Feed</li>
                     </ul>
+
                     <pre><code>
 String quote = "He said, \"Java is awesome!\""; // Includes double quotes
 System.out.println(quote); // Output: He said, "Java is awesome!"
@@ -2120,7 +2230,7 @@ System.out.println(formattedOutput);
                 </div>
 
                 <div>
-                    <h4>A. `StringBuffer` (Thread-Safe)</h4>
+                    <h4>A. `StringBuffer` (Thread-Safe):</h4>
                     <p><mark>StringBuffer</mark> is designed for <b>multi-threaded</b> environments. All its public
                         methods are
                         <b>synchronized</b>. This means that if multiple threads try to access and modify the same
@@ -2149,14 +2259,15 @@ System.out.println("StringBuffer after reverse: " + sb); // Output: StringBuffer
                 </div>
 
                 <div>
-                    <h4>B. `StringBuilder` (Not Thread-Safe, Faster)</h4>
+                    <h4>B. `StringBuilder` (Not Thread-Safe, Faster):</h4>
                     <p><mark>StringBuilder</mark> provides identical functionality to `StringBuffer` but is <b>not
                             synchronized</b>. This makes it faster and more efficient than `StringBuffer` when you are
                         performing string manipulations in a <b>single-threaded environment</b>. Since most common
                         applications don't involve multiple threads modifying the <b>exact same</b> string builder
                         object
                         concurrently, <mark>StringBuilder</mark> is generally the preferred choice for building dynamic
-                        strings.</p>
+                        strings.
+                    </p>
 
                     <pre><code>
 // StringBuilder (not thread-safe, faster): Preferred for single-threaded environments or when thread safety is handled externally.
@@ -2182,7 +2293,7 @@ System.out.println("Final String from StringBuilder: " + finalResult);
                     code. Here's a summary to guide your decision:</p>
 
                 <div>
-                    <h4>A. `String`</h4>
+                    <h4>A. `String`:</h4>
                     <ul>
                         <li><b>When to use:</b>
                             <ul>
@@ -2201,7 +2312,7 @@ System.out.println("Final String from StringBuilder: " + finalResult);
                 </div>
 
                 <div>
-                    <h4>B. `StringBuilder`</h4>
+                    <h4>B. `StringBuilder`:</h4>
                     <ul>
                         <li><b>When to use:</b>
                             <ul>
@@ -2220,7 +2331,7 @@ System.out.println("Final String from StringBuilder: " + finalResult);
                 </div>
 
                 <div>
-                    <h4>C. `StringBuffer`</h4>
+                    <h4>C. `StringBuffer`:</h4>
                     <ul>
                         <li><b>When to use:</b>
                             <ul>
@@ -2247,7 +2358,7 @@ System.out.println("Final String from StringBuilder: " + finalResult);
 
                 <hr>
 
-                <h3 id="core_java_math">7. Math & Math Methods</h3>
+                <h3 id="core_java_math">7. Math & Math Methods:</h3>
                 <p>In Java, the <mark>java.lang.Math</mark> class provides a comprehensive set of static methods for
                     performing common mathematical operations. You don't need to create an object of the
                     <mark>Math</mark> class to use its methods; you can directly call them using the class name itself
@@ -2257,7 +2368,7 @@ System.out.println("Final String from StringBuilder: " + finalResult);
                 </p>
 
                 <div>
-                    <p><strong>Key Characteristics of the `Math` Class:</strong></p>
+                    <h4>Key Characteristics of the `Math` Class:</h4>
                     <ul>
                         <li><b>Static Methods:</b> All methods in the <mark>Math</mark> class are <mark>static</mark>.
                             This means you call them directly on the class name (e.g., <mark>Math.sqrt()</mark>) without
@@ -2285,13 +2396,14 @@ double result9 = Math.round(4.6);      // 5.0  (Rounds to the nearest long or in
                 <h4>Detailed Explanation of Common Math Methods:</h4>
 
                 <div>
-                    <h4>I. `Math.pow(double base, double exponent)`</h4>
+                    <h4>I. `Math.pow(double base, double exponent)`:</h4>
                     <p>This method returns the value of the first argument `base` raised to the power of the second
                         argument `exponent` (base^{exponent}).</p>
                     <ul>
                         <li><b>Inputs:</b> Two <mark>double</mark> values.</li>
                         <li><b>Output:</b> A <mark>double</mark> value.</li>
                     </ul>
+
                     <pre><code>
 // Example: Calculate 2 to the power of 3
 double powerResult = Math.pow(2, 3);
@@ -2304,7 +2416,7 @@ System.out.println("9^0.5 = " + sqrtUsingPow); // Output: 9^0.5 = 3.0
                 </div>
 
                 <div>
-                    <h4>II. `Math.sqrt(double a)`</h4>
+                    <h4>II. `Math.sqrt(double a)`:</h4>
                     <p>This method returns the positive square root of a `double` value.</p>
                     <ul>
                         <li><b>Inputs:</b> A <mark>double</mark> value.</li>
@@ -2312,6 +2424,7 @@ System.out.println("9^0.5 = " + sqrtUsingPow); // Output: 9^0.5 = 3.0
                             is <b>`NaN`</b>
                             (Not-a-Number).</li>
                     </ul>
+
                     <pre><code>
 // Example: Square root of 25
 double sqrtResult = Math.sqrt(25);
@@ -2328,13 +2441,15 @@ System.out.println("Square root of -9 = " + sqrtNegative); // Output: Square roo
                 </div>
 
                 <div>
-                    <h4>III. `Math.abs(dataType a)`</h4>
-                    <p>This method returns the absolute (positive) value of a number. It is overloaded to accept `int`,
-                        `long`, `float`, and `double` arguments.</p>
+                    <h4>III. `Math.abs(dataType a)`:</h4>
+                    <p>This method returns the absolute (positive) value of a number. It is overloaded to accept <mark>int</mark>,
+                        <mark>long</mark>, <mark>float</mark>, and <mark>double</mark> arguments.
+                    </p>
                     <ul>
                         <li><b>Inputs:</b> An `int`, `long`, `float`, or `double` value.</li>
                         <li><b>Output:</b> The absolute value, with the same data type as the input.</li>
                     </ul>
+
                     <pre><code>
 // Example: Absolute value of integers
 int absInt = Math.abs(-5);
@@ -2347,13 +2462,14 @@ System.out.println("Absolute value of -12.75 = " + absDouble); // Output: Absolu
                 </div>
 
                 <div>
-                    <h4>IV. `Math.max(dataType a, dataType b)`</h4>
-                    <p>This method returns the greater of two numbers. It is overloaded to work with `int`, `long`,
-                        `float`, and `double` arguments.</p>
+                    <h4>IV. `Math.max(dataType a, dataType b)`:</h4>
+                    <p>This method returns the greater of two numbers. It is overloaded to work with <mark>int</mark>,
+                        <mark>long</mark>, <mark>float</mark>, and <mark>double</mark> arguments.</p>
                     <ul>
                         <li><b>Inputs:</b> Two numbers of the same data type.</li>
                         <li><b>Output:</b> The larger of the two numbers, with the same data type as the inputs.</li>
                     </ul>
+
                     <pre><code>
 // Example: Max of two integers
 int maxInt = Math.max(10, 25);
@@ -2366,13 +2482,15 @@ System.out.println("Max of 3.14 and 2.71 = " + maxDouble); // Output: Max of 3.1
                 </div>
 
                 <div>
-                    <h4>V. `Math.min(dataType a, dataType b)`</h4>
-                    <p>This method returns the smaller of two numbers. It is overloaded to work with `int`, `long`,
-                        `float`, and `double` arguments.</p>
+                    <h4>V. `Math.min(dataType a, dataType b)`:</h4>
+                    <p>This method returns the smaller of two numbers. It is overloaded to work with <mark>int</mark>,
+                        <mark>long</mark>, <mark>float</mark>, and <mark>double</mark> arguments.
+                    </p>
                     <ul>
                         <li><b>Inputs:</b> Two numbers of the same data type.</li>
                         <li><b>Output:</b> The smaller of the two numbers, with the same data type as the inputs.</li>
                     </ul>
+
                     <pre><code>
 // Example: Min of two integers
 int minInt = Math.min(10, 25);
@@ -2385,14 +2503,16 @@ System.out.println("Min of 3.14 and 2.71 = " + minDouble); // Output: Min of 3.1
                 </div>
 
                 <div>
-                    <h4>VI. `Math.random()`</h4>
-                    <p>This method returns a pseudorandom `double` value greater than or equal to 0.0 and less than 1.0.
+                    <h4>VI. `Math.random()`:</h4>
+                    <p>This method returns a pseudorandom <mark>double</mark> value greater than or equal to 0.0 and less than 1.0.
                         This is very useful for generating random numbers in simulations, games, or for various other
-                        purposes.</p>
+                        purposes.
+                    </p>
                     <ul>
                         <li><b>Inputs:</b> None.</li>
                         <li><b>Output:</b> A `double` value between 0.0 (inclusive) and 1.0 (exclusive).</li>
                     </ul>
+
                     <pre><code>
 // Example: Generate a random double
 double randomValue = Math.random();
@@ -2410,7 +2530,8 @@ System.out.println("Random integer (1 to 10): " + randomInt); // Output will var
                 <div>
                     <h4>VII. Rounding Methods: `ceil()`, `floor()`, `round()`</h4>
                     <p>These methods are essential for handling decimal numbers and obtaining whole number
-                        representations based on different rounding rules.</p>
+                        representations based on different rounding rules.
+                    </p>
                     <ul>
                         <li><b><mark>Math.ceil(double a)</mark> :</b> Returns the smallest (closest to negative
                             infinity)
@@ -2426,6 +2547,7 @@ System.out.println("Random integer (1 to 10): " + randomInt); // Output will var
                             the closest `long` or `int` to the argument. It uses standard rounding rules: if the
                             fractional part is `.5` or greater, it rounds up; otherwise, it rounds down.</li>
                     </ul>
+
                     <pre><code>
 // Example: Math.ceil() - rounds up
 double ceil1 = Math.ceil(4.3);
@@ -2458,14 +2580,15 @@ System.out.println("round(-4.5) = " + round4); // Output: round(-4.5) = -4 (note
                 <h4>VIII. Other Useful Math Constants and Methods:</h4>
 
                 <div>
-                    <h4>Constants: `Math.PI` and `Math.E`</h4>
+                    <h4>Constants: `Math.PI` and `Math.E`:</h4>
                     <p>The <mark>Math</mark> class also provides two commonly used mathematical constants:</p>
                     <ul>
                         <li><b><mark>Math.PI</mark> :</b> Represents the ratio of the circumference of a circle to its
-                            diameter, approximately 3.14159.</li>
+                            diameter, approximately <b>3.14159</b>.</li>
                         <li><b><mark>Math.E</mark> :</b> Represents the base of the natural logarithms, approximately
-                            2.71828.</li>
+                            <b>2.71828</b>.</li>
                     </ul>
+
                     <pre><code>
 System.out.println("Value of PI: " + Math.PI); // Output: Value of PI: 3.141592653589793
 System.out.println("Value of E: " + Math.E);   // Output: Value of E: 2.718281828459045
@@ -2473,8 +2596,8 @@ System.out.println("Value of E: " + Math.E);   // Output: Value of E: 2.71828182
                 </div>
 
                 <div>
-                    <h4>IX. Trigonometric Methods</h4>
-                    <p>For working with angles and triangles, Java's `Math` class offers standard trigonometric
+                    <h4>IX. Trigonometric Methods:</h4>
+                    <p>For working with angles and triangles, Java's <mark>Math</mark> class offers standard trigonometric
                         functions:</p>
                     <ul>
                         <li><b><mark>Math.sin(double radians)</mark> :</b> Sine of an angle.</li>
@@ -2502,7 +2625,7 @@ System.out.println("Cosine of 0 degrees: " + cosValue); // Output: Cosine of 0 d
                 </div>
 
                 <div>
-                    <h4>X. Logarithmic and Exponential Methods</h4>
+                    <h4>X. Logarithmic and Exponential Methods:</h4>
                     <p>For operations involving exponents and logarithms:</p>
                     <ul>
                         <li><b><mark>Math.exp(double a)</mark> :</b> Returns Euler's number `e` raised to the power of
@@ -2513,6 +2636,7 @@ System.out.println("Cosine of 0 degrees: " + cosValue); // Output: Cosine of 0 d
                             value.
                         </li>
                     </ul>
+
                     <pre><code>
 System.out.println("e^1 = " + Math.exp(1));    // Output: e^1 = 2.718... (Value of E)
 System.out.println("log(e) = " + Math.log(Math.E)); // Output: log(e) = 1.0
@@ -2523,7 +2647,8 @@ System.out.println("log10(100) = " + Math.log10(100)); // Output: log10(100) = 2
                 <div class="highlight">
                     <p><strong>Note: </strong>Java's Math class offers a rich set of methods for direct and efficient
                         mathematical computations. Leveraging these
-                        methods simplifies a wide range of calculations, making your Java applications more robust.</p>
+                        methods simplifies a wide range of calculations, making your Java applications more robust.
+                    </p>
                 </div>
 
                 <hr>
@@ -2738,12 +2863,13 @@ System.out.println("Duration between times (hours): " + duration.toHours());   /
                         The result is more efficient, accurate, and robust applications for the long term.</p>
                 </div>
 
-                <h3 id="core_java_exception_handling">9. Exception Handling</h3>
+                <h3 id="core_java_exception_handling">9. Exception Handling:</h3>
                 <p>Exception handling is a crucial mechanism in Java (and other programming languages) that allows you
                     to manage runtime errors gracefully, preventing your program from crashing unexpectedly. When an
                     error occurs during program execution that disrupts its normal flow, an <q>exception</q> is said to
                     have
-                    occurred.</p>
+                    occurred.
+                </p>
 
                 <div>
                     <h4>Why is Exception Handling Important?</h4>
@@ -2758,13 +2884,15 @@ System.out.println("Duration between times (hours): " + duration.toHours());   /
                     </ul>
                 </div>
 
-                <h4>Exception Hierarchy</h4>
+                <h4>Exception Hierarchy:</h4>
                 <p>All exceptions and errors in Java are subclasses of the <mark><b>java.lang.Throwable</b></mark>
-                    class. The hierarchy is broadly divided into two main branches:</p>
+                    class. The hierarchy is broadly divided into two main branches:
+                </p>
+
                 <ul>
                     <li><b><mark>Error</mark> :</b> Represents serious problems that applications should not try to
-                        catch. These typically indicate external system problems (e.g., `OutOfMemoryError`,
-                        `StackOverflowError`). You usually don't handle these.</li>
+                        catch. These typically indicate external system problems (e.g., <mark>`OutOfMemoryError`</mark>,
+                        <mark>`StackOverflowError`</mark>). You usually don't handle these.</li>
                     <li><b><mark>Exception</mark> :</b> Represents conditions that an application might want to catch
                         and
                         handle. Most problems you encounter will be `Exception`s.
@@ -2790,9 +2918,9 @@ System.out.println("Duration between times (hours): " + duration.toHours());   /
                     </li>
                 </ul>
 
-                <h4>I. The `try-catch-finally` Block</h4>
-                <p>The `try-catch-finally` block is the fundamental way to handle exceptions. It lets you "try" some
-                    code, "catch" any specific errors that happen, and run "finally" a cleanup part no matter what.</p>
+                <h4>I. The `try-catch-finally` Block:</h4>
+                <p>The <mark>try-catch-finally</mark> block is the fundamental way to handle exceptions. It lets you <mark>try</mark> some
+                    code, <mark>catch</mark> any specific errors that happen, and run <mark>finally</mark> a cleanup part no matter what.</p>
                 <ul>
                     <li><mark><b>try</b></mark> : Put the code that <b>might</b> cause an error here.</li>
                     <li><mark><b>catch</b></mark> : If an error (exception) happens in the `try` block, Java jumps here.
@@ -2860,13 +2988,11 @@ Finished the second division attempt.
                     </pre></code>
                 </div>
 
-
-
-                <h4>II. Multiple `catch` Blocks</h4>
-                <p>Sometimes, different types of errors can happen in the same `try` block. You can use multiple `catch`
+                <h4>II. Multiple `catch` Blocks:</h4>
+                <p>Sometimes, different types of errors can happen in the same <mark>try</mark> block. You can use multiple <mark>catch</mark>
                     blocks to handle each specific error differently. <b>Important:</b> Always put the most specific
                     error
-                    `catch` blocks first, and the most general (like `Exception`) last.</p>
+                    <mark>catch</mark> blocks first, and the most general (like <mark>Exception</mark> ) last.</p>
 
                 <pre><code>
 // Example: Handling different types of common errors
@@ -2925,6 +3051,7 @@ public class MultipleCatchExample {
     }
 }
     </code></pre>
+
                 <div>
                     <h4>Output:</h4>
                     <pre><code>
@@ -2949,8 +3076,8 @@ End of string conversion attempt.
                     </code></pre>
                 </div>
 
-                <h4>III. `throw` Keyword (To Create and Send an Exception)</h4>
-                <p>The `<b>throw</b>` statement allows you to create a custom error or send an existing error type. It's
+                <h4>III. `throw` Keyword (To Create and Send an Exception):</h4>
+                <p>The <mark><b>throw</b></mark> statement allows you to create a custom error or send an existing error type. It's
                     used when <b>your code</b> detects a problem and needs to immediately stop the normal flow and
                     signal an
                     error.</p>
@@ -2997,6 +3124,7 @@ public class ThrowKeywordExample {
     }
 }
     </code></pre>
+
                 <div>
                     <h4>Output:</h4>
                     <pre><code>
@@ -3007,10 +3135,10 @@ Validation Error: Age cannot be a negative number: -10
                     </code></pre>
                 </div>
 
-                <h4>IV. `throws` Keyword (To Declare a Method Might Send an Exception)</h4>
-                <p>The `<b>throws</b>` keyword is used in a method's signature (its declaration) to tell anyone who uses
-                    that method: "Hey, I might throw a <b>checked exception</b>, so you need to be ready to handle it or
-                    declare it yourself". The compiler will <b>force</b> you to deal with checked exceptions.</p>
+                <h4>IV. `throws` Keyword (To Declare a Method Might Send an Exception):</h4>
+                <p>The <mark><b>throws</b></mark> keyword is used in a method's signature (its declaration) to tell anyone who uses
+                    that method: <i><q>Hey, I might throw a <b>checked exception</b>, so you need to be ready to handle it or
+                    declare it yourself</q></i>. The compiler will <b>force</b> you to deal with checked exceptions.</p>
 
                 <pre><code>
 import java.io.FileNotFoundException; // A common CHECKED exception
@@ -3055,6 +3183,7 @@ public class ThrowsKeywordExample {
     }
 }
     </code></pre>
+
                 <div>
                     <h4>Output:</h4>
                     <pre><code>
@@ -3068,8 +3197,8 @@ Caught an error for nonexistent.txt: Error: File 'nonexistent.txt' was not found
                     </code></pre>
                 </div>
 
-                <h4>Difference Between `throw` and `throws`</h4>
-                <p>While `throw` and `throws` sound similar, they serve very different purposes in Java exception
+                <h4>Difference Between `throw` and `throws`:</h4>
+                <p>While <mark>throw</mark> and <mark>throws</mark> sound similar, they serve very different purposes in Java exception
                     handling. Think of them as two distinct tools in your error management toolkit:</p>
 
                 <table>
@@ -3139,7 +3268,7 @@ Caught an error for nonexistent.txt: Error: File 'nonexistent.txt' was not found
                     </p>
                 </div>
 
-                <h4>V. Custom Exceptions</h4>
+                <h4>V. Custom Exceptions:</h4>
                 <p>Sometimes, Java's built-in exceptions aren't specific enough for the errors in your program. You can
                     create your own custom exception classes to make your error messages clearer and more meaningful.
                     This makes your code easier to understand and debug.</p>
@@ -3218,6 +3347,7 @@ public class CustomExceptionDemo {
     }
 }
     </code></pre>
+
                 <div>
                     <h4>Output:</h4>
                     <pre><code>
@@ -3233,14 +3363,14 @@ Bank Error: Cannot withdraw 300.0. Current balance is only 150.0
                     </code></pre>
                 </div>
 
-                <h4>VI. `try-with-resources` (Java 7+)</h4>
+                <h4>VI. `try-with-resources` (Java 7+):</h4>
                 <p>When you work with resources like files, network connections, or database connections, it's very
                     important to <b>close</b> them when you're done. If you don't, your program can leak resources and
                     cause
-                    problems. Before Java 7, you often used a `finally` block to ensure closing. But
-                    `<b>try-with-resources</b>` makes it much easier and safer!</p>
-                <p>If a resource implements the `<b>AutoCloseable</b>` interface (like `FileWriter` or `Scanner`), you
-                    can declare it inside the `try` block's parentheses. Java will automatically close that resource for
+                    problems. Before Java 7, you often used a <mark>finally</mark> block to ensure closing. But
+                    <mark><b>try-with-resources</b></mark> makes it much easier and safer!</p>
+                <p>If a resource implements the <mark>AutoCloseable</mark> interface (like <mark>FileWriter</mark> or <mark>Scanner</mark>), you
+                    can declare it inside the <mark>try</mark> block's parentheses. Java will automatically close that resource for
                     you when the `try` block finishes, whether an exception occurs or not.</p>
 
                 <pre><code>
@@ -3264,7 +3394,6 @@ public class TryWithResourcesSimpleExample {
             System.err.println("Setup error: Could not create greeting.txt: " + e.getMessage());
             return; // Stop if we can't even create the file
         }
-
 
         // Using try-with-resources for a FileWriter
         // The 'writer' will be automatically closed when this block finishes,
@@ -3333,16 +3462,16 @@ Cleaned up greeting.txt.
                 <div class="highlight">
                     <p><strong>Note: </strong>Java's exception handling differentiates checked exceptions, which compel
                         developers to handle anticipated issues,
-                        from unchecked exceptions, typically signaling programming errors. The <b>try-catch-finally</b>
+                        from unchecked exceptions, typically signaling programming errors. The <mark><b>`try-catch-finally`</b></mark>
                         block is fundamental for
-                        error control, while <b>try-with-resources</b> ensures automatic and safe closure of critical
+                        error control, while <mark><b>`try-with-resources`</b></mark> ensures automatic and safe closure of critical
                         resources. Together, these
                         mechanisms are vital for building robust and reliable applications.</p>
                 </div>
 
                 <hr>
 
-                <h3 id="core_java_files">10. File Operations</h3>
+                <h3 id="core_java_files">10. File Operations:</h3>
                 <p>File operations are fundamental in many applications, allowing programs to store, retrieve, and
                     manage persistent data. Java provides robust <b>input/output (I/O)</b> capabilities through its
                     <mark>java.io</mark> package and, more recently, enhanced capabilities with the
@@ -3367,7 +3496,7 @@ Cleaned up greeting.txt.
                     </ul>
                 </div>
 
-                <h4>The `java.io.File` Class</h4>
+                <h4>The `java.io.File` Class:</h4>
                 <p>The <mark>java.io.File</mark> class is a core component for interacting with the file system. It
                     represents file and directory path names. It doesn't actually store the data within the file but
                     provides methods to manipulate the file itself (e.g., check if it exists, create, delete, rename,
@@ -3395,10 +3524,10 @@ public class FileBasics {
 }
     </code></pre>
 
-                <h4>I. Creating Files</h4>
+                <h4>I. Creating Files:</h4>
                 <p>To create a new, empty file, you use the <mark>createNewFile()</mark> method of the <mark>File</mark>
-                    object. This method returns <mark>true</mark> if the file was successfully created and
-                    <mark>false</mark> if the file already existed.
+                    object. This method returns <b>true</b> if the file was successfully created and
+                    <b>false</b> if the file already existed.
                 </p>
 
                 <div>
@@ -3411,6 +3540,7 @@ public class FileBasics {
                             valid).</li>
                     </ul>
                 </div>
+
                 <pre><code>
 import java.io.File;
 import java.io.IOException;
@@ -3432,14 +3562,14 @@ public class CreateFileExample {
 }
     </code></pre>
 
-                <h4>II. Writing to Files</h4>
+                <h4>II. Writing to Files:</h4>
                 <p>Java provides several classes for writing data to files. For writing character data (text),
                     <mark>FileWriter</mark> and <mark>BufferedWriter</mark> are commonly used. For raw byte data,
-                    <b>`FileOutputStream`</b> is used.
+                    <mark><b>FileOutputStream</b></mark> is used.
                 </p>
 
                 <div>
-                    <h4>Using `FileWriter` (for basic text writing)</h4>
+                    <h4>Using `FileWriter` (for basic text writing):</h4>
                     <p>The <mark>FileWriter</mark> class is used to write character-oriented data to a file. You can
                         specify whether to overwrite the file or append to it.</p>
                     <ul>
@@ -3483,7 +3613,7 @@ public class WriteFileExample {
     </code></pre>
 
                 <div>
-                    <h4>Using `BufferedWriter` (for efficient text writing)</h4>
+                    <h4>Using `BufferedWriter` (for efficient text writing):</h4>
                     <p>For better performance when writing large amounts of text data, it's recommended to wrap a
                         <mark>FileWriter</mark> ( or any other <mark>Writer</mark> ) in a <mark>BufferedWriter</mark>.
                         It
@@ -3518,13 +3648,13 @@ public class BufferedWriteExample {
 }
     </code></pre>
 
-                <h4>III. Reading Files</h4>
+                <h4>III. Reading Files:</h4>
                 <p>To read data from files, Java provides classes like <mark>Scanner</mark> and
                     <mark>BufferedReader</mark> for text, and <mark>FileInputStream</mark> for binary data.
                 </p>
 
                 <div>
-                    <h4>Using `Scanner` (for reading text line by line or token by token)</h4>
+                    <h4>Using `Scanner` (for reading text line by line or token by token):</h4>
                     <p>The <mark>Scanner</mark> class (from <mark>java.util</mark>) is versatile for parsing primitive
                         types and strings from input, including files. It's good for simple text file reading.</p>
                     <ul>
@@ -3536,6 +3666,7 @@ public class BufferedWriteExample {
                         </li>
                     </ul>
                 </div>
+
                 <pre><code>
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -3559,7 +3690,7 @@ public class ReadFileExample {
     </code></pre>
 
                 <div>
-                    <h4>Using `BufferedReader` (for efficient text reading)</h4>
+                    <h4>Using `BufferedReader` (for efficient text reading):</h4>
                     <p>Similar to <mark>BufferedWriter</mark> , <mark>BufferedReader</mark> enhances performance when
                         reading character streams by buffering input. It's often preferred for reading large text files.
                     </p>
@@ -3592,7 +3723,7 @@ public class BufferedReadExample {
 }
     </code></pre>
 
-                <h4>IV. Deleting Files</h4>
+                <h4>IV. Deleting Files:</h4>
                 <p>To delete a file or an empty directory, you use the <mark>delete()</mark> method of the
                     <mark>File</mark> object. This method returns <mark>true</mark> if the deletion was successful and
                     <mark>false</mark> otherwise (e.g., file not found, permission denied, directory not empty).
@@ -3643,7 +3774,7 @@ public class DeleteFileExample {
 }
     </code></pre>
 
-                <h4>V. Modern File I/O with NIO.2 (Java 7+)</h4>
+                <h4>V. Modern File I/O with NIO.2 (Java 7+):</h4>
                 <p>Introduced in <b>Java 7</b>, the <b>NIO.2 API</b> ( <mark>java.nio.file</mark> package ) provides a
                     more powerful,
                     flexible, and robust way to handle file system operations. It addresses many limitations of the
@@ -3747,9 +3878,9 @@ public class NIO2FileOperations {
     </code></pre>
 
                 <div class="highlight">
-                    <p><strong>Note: </strong>While the older <mark>java.io</mark> classes are still valid and widely
+                    <p><strong>Note: </strong>While the older <b><mark>`java.io`</mark></b> classes are still valid and widely
                         used, for new development or
-                        when dealing with complex file system interactions, the <mark>java.nio.file</mark> package
+                        when dealing with complex file system interactions, the <b><mark>`java.nio.file`</mark></b> package
                         <b>(NIO.2)</b>
                         is generally the preferred approach due to its modern design, robustness, and better error
                         handling.
@@ -3758,30 +3889,30 @@ public class NIO2FileOperations {
 
                 <hr>
 
-                <h3 id="core_java_user_input">11. User Input</h3>
+                <h3 id="core_java_user_input">11. User Input:</h3>
                 <p>Many programs need to interact with the user, taking data or commands to perform their tasks. In
                     Java, the most common and beginner-friendly way to get input from the keyboard (the standard input
                     device) is by using the <mark><b>Scanner</b></mark> class.</p>
 
                 <div class="highlight">
                     <h4>What is `System.in`?</h4>
-                    <p><i><b><mark>System.in</mark></b> is a standard input stream in Java, typically representing the
+                    <p><b><mark>System.in</mark></b> is a standard input stream in Java, typically representing the
                             keyboard.
-                            When you create a `Scanner` object with `System.in`, you're telling it to read from the
-                            keyboard.</i>
+                            When you create a <b><mark>Scanner</mark></b> object with <b><mark>System.in</mark></b>, you're telling it to read from the
+                            keyboard.
                     </p>
                 </div>
 
-                <h4>The `Scanner` Class ( <mark>java.util.Scanner</mark> )</h4>
-                <p>The `Scanner` class is part of the <b>`java.util`</b> package, so you'll usually need to <b>`import
-                        java.util.Scanner;`</b> at the top of your Java file. It breaks down input into tokens (like
+                <h4>The `Scanner` Class ( <mark>java.util.Scanner</mark> ):</h4>
+                <p>The <mark>Scanner</mark> class is part of the <mark><b>java.util</b></mark> package, so you'll usually need to <mark><b>import
+                        java.util.Scanner;</b></mark> at the top of your Java file. It breaks down input into tokens (like
                     words or
                     numbers) using a delimiter (by default, whitespace). It then provides various methods to read these
                     tokens as different data types.</p>
 
                 <div>
                     <h4>How to use `Scanner`:</h4>
-                    <ol type="a">
+                    <ol type="A">
                         <li><b>Import :</b> Add <mark>import java.util.Scanner;</mark> at the beginning of your file.
                         </li>
                         <li><b>Create Object :</b> Create a `Scanner` object, typically linking it to `System.in` for
@@ -3796,12 +3927,12 @@ public class NIO2FileOperations {
                 <h4>I. Reading User Input</h4>
                 <p>The `Scanner` class provides convenient methods to read input as specific data types. These methods
                     are essential for capturing various forms of user data from the keyboard. For a comprehensive list
-                    of input reading methods, refer to the "More Useful `Scanner` Methods" table below.</p>
+                    of input reading methods, refer to the "More Useful <mark>Scanner</mark> Methods" table below.</p>
 
                 <div class="highlight">
                     <p><b>Note:</b> If you enter wrong input (e.g., text like "hello" when expecting a number for
-                        `nextInt()`), your program will throw an `<b>InputMismatchException</b>`. This is a common error
-                        that needs to be handled using `try-catch` blocks for robust applications.</p>
+                        <mark><b>`nextInt()`</b></mark>), your program will throw an <mark><b>`InputMismatchException`</b></mark>. This is a common error
+                        that needs to be handled using <mark><b>`try-catch`</b></mark> blocks for robust applications.</p>
                 </div>
 
                 <pre><code>
@@ -3868,15 +3999,15 @@ Employed: true
                     </code></pre>
                 </div>
 
-                <h4>II. The `nextLine()` Trap</h4>
-                <p>This is a very common issue for beginners mixing <b>`nextInt()`, `nextDouble()`, `next()` with
-                        `nextLine()`.</b> When you use methods like <b>`nextInt()`, `nextDouble()`, or
-                        `nextBoolean()`,</b> they read
+                <h4>II. The `nextLine()` Trap:</h4>
+                <p>This is a very common issue for beginners mixing <mark>nextInt()</mark>, <mark>nextDouble()</mark>, <mark>next()</mark> with
+                        <mark>nextLine()</mark>. When you use methods like <mark>nextInt()</mark>, <mark>nextDouble()</mark>, or
+                        <mark>nextBoolean()</mark>,</b> they read
                     only the number/boolean you type, but they <b>do not consume the "newline" character</b> (the
                     invisible
-                    character generated when you press Enter). This newline character is left behind in the input
+                    character generated when you press <b>Enter</b>). This newline character is left behind in the input
                     buffer.</p>
-                <p>If you then call <b>`nextLine()` immediately after `nextInt()` (or similar), `nextLine()`</b> will
+                <p>If you then call <mark>nextLine()</mark> immediately after <mark>nextInt()</mark> (or similar), <mark>nextLine()</mark> will
                     simply
                     read that leftover newline character and think it has received an empty line, skipping your actual
                     input for that line.</p>
@@ -3919,12 +4050,12 @@ Your favorite color is:
                     </code></pre>
                 </div>
 
-                <h4>III. Solution to the `nextLine()` Trap</h4>
-                <p>To fix this, you need to "consume" or "eat" the leftover newline character after calling
-                    <b>`nextInt()`,
-                        `nextDouble()`, etc.</b>, but <b>before</b> calling <b>`nextLine()`</b>. You do this by adding
+                <h4>III. Solution to the `nextLine()` Trap:</h4>
+                <p>To fix this, you need to <b><q>consume</q></b> or <b><q>eat</q></b> the leftover newline character after calling
+                    <mark>nextInt()</mark>,
+                        <mark>nextDouble()</mark>, etc.</b>, but <b>before</b> calling <mark>nextLine()</mark>. You do this by adding
                     an extra
-                    <b>`scanner.nextLine();`</b> call immediately after the <b>numeric/boolean</b> input.
+                    <mark>scanner.nextLine();</mark> call immediately after the <b>numeric/boolean</b> input.
                 </p>
 
                 <pre><code>
@@ -3965,11 +4096,11 @@ Your favorite color is: Blue
                     </code></pre>
                 </div>
 
-                <h4>IV. More Useful `Scanner` Methods</h4>
-                <p>The `Scanner` class is quite versatile and can be used to obtain data not just from the keyboard, but
+                <h4>IV. More Useful `Scanner` Methods:</h4>
+                <p>The <mark>Scanner</mark> class is quite versatile and can be used to obtain data not just from the keyboard, but
                     also from files and strings. This table provides a comprehensive list of its useful methods,
-                    including those for reading various data types <b>(`nextXxx()`)</b> and methods like
-                    <b>`hasNextXxx()`</b> which
+                    including those for reading various data types <b>(<mark>nextXxx()</mark>)</b> and methods like
+                    <mark><b>hasNextXxx()</b></mark> which
                     are very helpful for validating input before attempting to read it.</p>
 
                 <table>
@@ -4145,30 +4276,31 @@ Your favorite color is: Blue
                     </tbody>
                 </table>
 
-                <h4>V. Closing the `Scanner` (Important Nuance)</h4>
-                <p>It's crucial to call <b>`scanner.close()`</b> when you are finished reading input from a `Scanner`
+                <h4>V. Closing the `Scanner` (Important Nuance):</h4>
+                <p>It's crucial to call <mark><b>scanner.close()</b></mark> when you are finished reading input from a <mark>Scanner</mark>
                     that is
                     connected to a file or a network stream. This releases the underlying system resources associated
-                    with that stream. However, there's a special consideration for `Scanner` objects connected to
-                    `System.in` :</p>
+                    with that stream. However, there's a special consideration for <mark>Scanner</mark> objects connected to
+                    <mark>System.in</mark> :</p>
                 <ul>
                     <li>
                         <h4>For `Scanner` with `System.in`:</h4>
-                        <p>Closing `scanner` connected to `System.in` also closes `System.in` itself. Since `System.in`
+                        <p>Closing <mark>scanner</mark> connected to <mark>System.in</mark> also closes <mark>System.in</mark> itself. Since <mark>System.in</mark>
                             is a shared, global resource for your entire Java application, closing it in one part of
                             your code might prevent other parts (or other classes) from being able to read from the
-                            keyboard later. In simple, single-threaded command-line programs, `scanner.close()` for
-                            `System.in` is often done and is generally harmless. But in more complex applications, it's
-                            safer to avoid closing `Scanner` connected to `System.in`, letting the JVM manage its
+                            keyboard later. In simple, single-threaded command-line programs, <mark>scanner.close()</mark> for
+                            <mark>System.in</mark> is often done and is generally harmless. But in more complex applications, it's
+                            safer to avoid closing <mark>Scanner</mark> connected to <mark>System.in</mark>, letting the JVM manage its
                             lifecycle when the program exits.</p>
                     </li>
                     <li>
                         <h4>For `Scanner` with Files/Other Streams:</h4>
-                        <p><b>Always close these `Scanner` objects!</b> The best practice is to use a
-                            <b>`try-with-resources`</b> statement, which automatically closes the scanner (and the
+                        <p><b>Always close these <mark>Scanner</mark> objects!</b> The best practice is to use a
+                            <mark><b>try-with-resources</b></mark> statement, which automatically closes the scanner (and the
                             underlying
                             file stream) for you, even if errors occur. This prevents resource leaks.
                         </p>
+
                         <pre><code>
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -4192,11 +4324,11 @@ public class FileScannerExample {
                     </li>
                 </ul>
 
-                <h4>VI. Handling Invalid Input (Error Handling)</h4>
-                <p>As mentioned, if the user types "hello" when your program expects an integer, methods like
-                    <b>`nextInt()`</b> will throw an `<b>InputMismatchException</b>`. To make your program robust, you
+                <h4>VI. Handling Invalid Input (Error Handling):</h4>
+                <p>As mentioned, if the user types <b><q>hello</q></b> when your program expects an integer, methods like
+                    <mark><b>nextInt()</b></mark> will throw an <mark><b>InputMismatchException</b></mark>. To make your program robust, you
                     should
-                    use a `try-catch` block to handle this, often combined with <b>`hasNextXxx()`</b> methods to check
+                    use a <mark>try-catch</mark> block to handle this, often combined with <mark><b>hasNextXxx()</b></mark> methods to check
                     if the
                     next token matches the expected type before trying to read it.
                 </p>
@@ -4231,6 +4363,7 @@ public class InputErrorHandling {
     }
 }
     </code></pre>
+    
                 <div>
                     <h4>[Output] Example Interaction (User Input is Bold):</h4>
                     <pre><code>
@@ -4246,9 +4379,10 @@ Your age is: 25
                 </div>
 
                 <div class="highlight">
-                    <p><strong>Note: </strong>By understanding these concepts, especially the `nextLine()` trap and
+                    <p><strong>Note: </strong>By understanding these concepts, especially the <mark><b>`nextLine()`</b></mark> trap and
                         basic error handling, you'll be
-                        well-equipped to write interactive Java programs that gracefully handle user input.</p>
+                        well-equipped to write interactive Java programs that gracefully handle user input.
+                    </p>
                 </div>
 
             </section>
@@ -4259,7 +4393,7 @@ Your age is: 25
                 </header>
 
                 <p>Object-Oriented Programming (OOP) is a powerful programming paradigm that organizes software design
-                    around "objects" rather than functions and logic. An object is a self-contained unit that
+                    around <b><q>objects</q></b> rather than functions and logic. An object is a self-contained unit that
                     encapsulates both data (attributes or properties) and the procedures (methods) that operate on that
                     data. This approach aims to make software more modular, flexible, and maintainable.</p>
 
@@ -4272,8 +4406,8 @@ Your age is: 25
                         <strong>Encapsulation:</strong> This principle involves bundling the data (variables) and the
                         methods that operate on the data into a single unit, known as a class. It also includes
                         restricting direct access to some of an object's components, typically achieved using <b>access
-                            modifiers</b> (like <mark>`private`</mark> , <mark>`public`</mark> ,
-                        <mark>`protected`</mark> ). The primary benefit is data hiding,
+                            modifiers</b> (like <mark>private</mark> , <mark>public</mark> ,
+                        <mark>protected</mark> ). The primary benefit is data hiding,
                         preventing external code from directly manipulating an object's internal state, thus maintaining
                         data integrity and simplifying debugging.
                     </li>
@@ -4289,8 +4423,8 @@ Your age is: 25
                         <strong>Inheritance:</strong> Inheritance is a mechanism that allows a new class (subclass or
                         child class) to inherit properties (fields) and behaviors (methods) from an existing class
                         (superclass or parent class). This promotes code reusability and establishes a natural
-                        <mark>"is-a"</mark>
-                        relationship (e.g., a 'Dog' <b>is a</b> 'Animal'). In Java, the <mark>`extends`</mark> keyword
+                        <mark><q>is-a</q></mark>
+                        relationship (e.g., a 'Dog' <b>is a</b> 'Animal'). In Java, the <mark>extends</mark> keyword
                         is
                         used to achieve
                         inheritance.
@@ -4312,13 +4446,13 @@ Your age is: 25
 
                 <h3>Key OOP Concepts in Java with Examples:</h3>
 
-                <div class="code-example">
-                    <h3>1. Class & Object</h3>
+                    <h3>1. Class & Object:</h3>
                     <p>A <strong>Class</strong> is a blueprint or a template for creating objects. It defines the common
                         properties (data) and behaviors (methods) that all objects of that type will have. An
                         <strong>Object</strong> is an instance of a class, a concrete realization of that blueprint.
                     </p>
-                    <pre><code class="language-java">
+
+                    <pre><code>
 // Class definition: Student blueprint
 public class Student {
     // Instance variables (attributes)
@@ -4361,21 +4495,24 @@ public class Student {
     }
 }
         </code></pre>
-                    <div class="output">
-                        <h4>Output:</h4>
-                        <pre><code>Name: Alice, Age: 20, GPA: 3.8
-Name: Bob, Age: 19, GPA: 3.5
-Alice's new GPA: 3.9</code></pre>
-                    </div>
-                </div>
 
-                <div class="code-example">
-                    <h3>2. Constructors</h3>
+                    <div>
+                        <h4>Output:</h4>
+                        <pre><code>
+Name: Alice, Age: 20, GPA: 3.8
+Name: Bob, Age: 19, GPA: 3.5
+Alice's new GPA: 3.9
+                </code></pre>
+                    </div>
+
+                    <h3>2. Constructors:</h3>
                     <p>A <strong>Constructor</strong> is a special type of method used to initialize objects. It has the
                         same name as the class and does not have a return type. Constructors are called automatically
-                        when an object is created using the <b>`new`</b> keyword. A class can have multiple constructors
-                        (constructor overloading) to allow for different ways of initializing objects.</p>
-                    <pre><code class="language-java">
+                        when an object is created using the <mark><b>new</b></mark> keyword. A class can have multiple constructors
+                        (constructor overloading) to allow for different ways of initializing objects.
+                    </p>
+
+                    <pre><code>
 public class Car {
     private String brand;
     private String model;
@@ -4419,28 +4556,31 @@ public class Car {
     }
 }
         </code></pre>
-                    <div class="output">
+
+                    <div>
                         <h4>Output:</h4>
-                        <pre><code>Default Car created.
+                        <pre><code>
+Default Car created.
 Brand: Unknown, Model: Unknown, Year: 0
 Parameterized Car created: Toyota Camry
 Brand: Toyota, Model: Camry, Year: 2022
 Parameterized Car created: Honda Civic
 Two-parameter Car created: Honda Civic
-Brand: Honda, Model: Civic, Year: 2024</code></pre>
+Brand: Honda, Model: Civic, Year: 2024
+                        </code></pre>
                     </div>
-                </div>
 
-                <div class="code-example">
-                    <h3>3. Method Overloading & Overriding (Polymorphism)</h3>
+                    <h3>3. Method Overloading & Overriding (Polymorphism):</h3>
                     <p><strong>Method Overloading</strong> enables a class to have multiple methods with the same name,
                         but they must differ in the number or type of their parameters. This is an example of
-                        compile-time polymorphism.</p>
+                        <b>compile-time</b> polymorphism.</p>
                     <p><strong>Method Overriding</strong> occurs when a subclass provides its own specific
                         implementation for a method that is already defined in its superclass. This is an example of
-                        runtime polymorphism, as the method to be executed is determined at runtime based on the actual
-                        object type.</p>
-                    <pre><code class="language-java">
+                        <b>runtime</b> polymorphism, as the method to be executed is determined at runtime based on the actual
+                        object type.
+                    </p>
+
+                    <pre><code>
 // Method Overloading example
 class Calculator {
     public int add(int a, int b) { // Method 1
@@ -4489,25 +4629,33 @@ class Dog extends Animal { // Subclass
     }
 }
         </code></pre>
-                    <div class="output">
-                        <h4>Output (for Calculator):</h4>
-                        <pre><code>Sum of two integers: 15
-Sum of two doubles: 15.7
-Sum of three integers: 6</code></pre>
-                        <h4>Output (for Animal/Dog):</h4>
-                        <pre><code>Animal makes a generic sound
-Dog barks: Woof woof!
-Dog barks: Woof woof!</code></pre>
-                    </div>
-                </div>
 
-                <div class="code-example">
-                    <h3>4. Encapsulation</h3>
-                    <p>Encapsulation is achieved by declaring the instance variables of a class as `private` and
-                        providing public methods (getters and setters) to access and modify these variables. This
+                    <div>
+                        <h4>Output (for Calculator):</h4>
+                        <pre><code>
+Sum of two integers: 15
+Sum of two doubles: 15.7
+Sum of three integers: 6
+                        </code></pre>
+                    </div>
+
+                    <div>
+                        <h4>Output (for Animal/Dog):</h4>
+                        <pre><code>
+Animal makes a generic sound
+Dog barks: Woof woof!
+Dog barks: Woof woof!
+                        </code></pre>
+                    </div>
+
+                    <h3>4. Encapsulation:</h3>
+                    <p>Encapsulation is achieved by declaring the instance variables of a class as <mark><b>private</b></mark> and
+                        providing <mark><b>public</b></mark> methods (<mark><b>getters</b></mark> and <mark><b>setters</b></mark>) to access and modify these variables. This
                         protects the data from unauthorized direct access and allows for control over how the data is
-                        manipulated.</p>
-                    <pre><code class="language-java">
+                        manipulated.
+                    </p>
+
+                    <pre><code>
 public class BankAccount {
     private double balance; // Private: Data is hidden
     private String accountNumber;
@@ -4563,22 +4711,25 @@ public class BankAccount {
     }
 }
         </code></pre>
-                    <div class="output">
+
+                    <div>
                         <h4>Output:</h4>
-                        <pre><code>Current balance: 1000.0
+                        <pre><code>
+Current balance: 1000.0
 Deposited: 200.0. New balance: 1200.0
 Withdrew: 150.0. New balance: 1050.0
 Invalid withdrawal amount or insufficient balance.
-Deposit amount must be positive.</code></pre>
+Deposit amount must be positive.
+                        </code></pre>
                     </div>
-                </div>
+                
+                    <h3>5. Inheritance:</h3>
+                    <p>Inheritance allows a <b>class (child/subclass)</b> to acquire the properties and methods of another
+                        <b>class (parent/superclass)</b>. This mechanism facilitates code reuse and models <mark><q>is-a</q></mark> relationships
+                        in your domain.
+                    </p>
 
-                <div class="code-example">
-                    <h3>5. Inheritance</h3>
-                    <p>Inheritance allows a class (child/subclass) to acquire the properties and methods of another
-                        class (parent/superclass). This mechanism facilitates code reuse and models "is-a" relationships
-                        in your domain.</p>
-                    <pre><code class="language-java">
+                    <pre><code>
 // Parent class (Superclass)
 class Vehicle {
     String brand = "Generic Vehicle";
@@ -4623,27 +4774,31 @@ class Car extends Vehicle {
     }
 }
         </code></pre>
-                    <div class="output">
+
+                    <div>
                         <h4>Output:</h4>
-                        <pre><code>My car brand: Generic Vehicle
+                        <pre><code>
+My car brand: Generic Vehicle
 The vehicle is moving.
 My car model: Sedan
 The car is accelerating.
-Car honks: Beep beep!</code></pre>
+Car honks: Beep beep!
+                        </code></pre>
                     </div>
-                </div>
 
-                <div class="code-example">
-                    <h3>6. Abstraction (Abstract Classes and Interfaces)</h3>
+                    <h3>6. Abstraction (Abstract Classes and Interfaces):</h3>
                     <p>Abstraction is about representing essential features without including the background details or
-                        explanations. In Java, this is primarily achieved through abstract classes and interfaces.</p>
+                        explanations. In Java, this is primarily achieved through abstract classes and interfaces.
+                    </p>
 
-                    <h4>Abstract Class:</h4>
-                    <p>An `abstract` class cannot be instantiated directly (you cannot create objects of an abstract
-                        class). It can contain both abstract methods (methods without a body, declared with `abstract`
+                    <h4>I. Abstract Class:</h4>
+                    <p>An <mark>abstract</mark> class cannot be instantiated directly (you cannot create objects of an abstract
+                        class). It can contain both abstract methods (methods without a body, declared with <mark>abstract</mark>
                         keyword) and concrete methods (methods with a body). Subclasses must provide implementations for
-                        all abstract methods inherited from the abstract class.</p>
-                    <pre><code class="language-java">
+                        all abstract methods inherited from the abstract class.
+                    </p>
+
+                    <pre><code>
 // Abstract class
 abstract class Shape {
     String color; // Can have instance variables
@@ -4681,18 +4836,23 @@ class Circle extends Shape {
     }
 }
         </code></pre>
-                    <div class="output">
+
+                    <div>
                         <h4>Output:</h4>
-                        <pre><code>Drawing a circle with color: Blue
-Shape color: Blue</code></pre>
+                        <pre><code>
+Drawing a circle with color: Blue
+Shape color: Blue
+                        </code></pre>
                     </div>
 
-                    <h4>Interface:</h4>
-                    <p>An `interface` in Java is a blueprint of a class. It can contain method signatures (implicitly
-                        `public abstract` before Java 8), default methods, static methods, and constant fields
-                        (implicitly `public static final`). Interfaces are used to achieve 100% abstraction and to
-                        support multiple inheritance of type (a class can implement multiple interfaces).</p>
-                    <pre><code class="language-java">
+                    <h4>II. Interface:</h4>
+                    <p>An <mark><b>interface</b></mark> in Java is a blueprint of a class. It can contain method signatures (implicitly
+                        <mark><b>public abstract</b></mark> before Java 8), default methods, static methods, and constant fields
+                        (implicitly <mark><b>public static final</b></mark>). Interfaces are used to achieve 100% abstraction and to
+                        support multiple inheritance of type (a class can implement multiple interfaces).
+                    </p>
+
+                    <pre><code>
 // Interface definition
 interface Drawable {
     // Before Java 8: methods were implicitly public abstract
@@ -4737,44 +4897,53 @@ class Triangle implements Drawable {
     }
 }
         </code></pre>
-                    <div class="output">
-                        <h4>Output (for Rectangle):</h4>
-                        <pre><code>Drawing Rectangle.
-Resizing the drawable object.
-This is a drawable interface.</code></pre>
-                        <h4>Output (for Triangle):</h4>
-                        <pre><code>Drawing Triangle.</code></pre>
-                    </div>
-                </div>
 
-                <div class="code-example">
+                    <div>
+                        <h4>Output (for Rectangle):</h4>
+                        <pre><code>
+Drawing Rectangle.
+Resizing the drawable object.
+This is a drawable interface.
+                        </code></pre>
+                    </div>
+
+                    <div>
+                        <h4>Output (for Triangle):</h4>
+                        <pre><code>
+Drawing Triangle.
+                        </code></pre>
+                    </div>
+
                     <h3>7. `this` and `super` Keywords</h3>
-                    <p>The `this` and `super` keywords are crucial for managing references within classes and their
-                        inheritance hierarchies.</p>
+                    <p>The <mark>this</mark> and <mark>super</mark> keywords are crucial for managing references within classes and their
+                        inheritance hierarchies.
+                    </p>
+
                     <ul>
                         <li>
-                            <strong>`this` keyword:</strong> Refers to the current instance of the class. It is used to:
+                            <strong><marK>this</marK> keyword:</strong> Refers to the <b>current instance of the class</b>. It is used to:
                             <ul>
-                                <li>Refer to the current class's instance variables (e.g., `this.name = name;` to
+                                <li>Refer to the current class's instance variables (e.g., <mark>this.name = name;</mark> to
                                     differentiate between an instance variable and a parameter with the same name).</li>
-                                <li>Invoke the current class's method (e.g., `this.display();`).</li>
-                                <li>Invoke the current class's constructor (constructor chaining, e.g., `this(arg1,
-                                    arg2);`).</li>
+                                <li>Invoke the current class's method (e.g., <mark>this.display();</mark>).</li>
+                                <li>Invoke the current class's constructor (constructor chaining, e.g., <mark>this(arg1,
+                                    arg2);</mark>).</li>
                                 <li>Pass the current instance as an argument to a method.</li>
                             </ul>
                         </li>
                         <li>
-                            <strong>`super` keyword:</strong> Refers to the immediate parent (superclass) instance. It
+                            <strong><marK>super</marK> keyword:</strong> Refers to the <b>immediate parent (superclass) instance</b>. It
                             is used to:
                             <ul>
-                                <li>Access the superclass's instance variables (e.g., `super.color`).</li>
-                                <li>Invoke the superclass's method (e.g., `super.makeSound();`).</li>
-                                <li>Invoke the superclass's constructor (e.g., `super(arguments);` - must be the first
+                                <li>Access the superclass's instance variables (e.g., <mark>super.color</mark>).</li>
+                                <li>Invoke the superclass's method (e.g., <mark>super.makeSound();</mark>).</li>
+                                <li>Invoke the superclass's constructor (e.g., <mark>super(arguments);</mark> - must be the first
                                     statement in the subclass constructor).</li>
                             </ul>
                         </li>
                     </ul>
-                    <pre><code class="language-java">
+
+                    <pre><code>
 class Animal {
     String color = "white"; // Instance variable in parent class
 
@@ -4829,25 +4998,33 @@ class Person {
     }
 }
         </code></pre>
-                    <div class="output">
-                        <h4>Output (for Animal/Dog):</h4>
-                        <pre><code>Dog's color: Black (from Dog)
-Animal's color: Brown (from Animal)
-Animal color: Brown (from Animal)</code></pre>
-                        <h4>Output (for Person):</h4>
-                        <pre><code>Person created with name: Alice
-Person created with name: Bob
-Person created with name: Bob and age: 30</code></pre>
-                    </div>
-                </div>
 
-                <div class="code-example">
-                    <h3>8. Static Keyword</h3>
-                    <p>The `static` keyword in Java is used to declare members (variables, methods, blocks, and nested
+                    <div>
+                        <h4>Output (for Animal/Dog):</h4>
+                        <pre><code>
+Dog's color: Black (from Dog)
+Animal's color: Brown (from Animal)
+Animal color: Brown (from Animal)
+                        </code></pre>
+                    </div>
+
+                    <div>
+                        <h4>Output (for Person):</h4>
+                        <pre><code>
+Person created with name: Alice
+Person created with name: Bob
+Person created with name: Bob and age: 30
+                        </code></pre>
+                    </div>
+
+                    <h3>8. Static Keyword:</h3>
+                    <p>The <mark><b>static</b></mark> keyword in Java is used to <b>declare members</b> (variables, methods, blocks, and nested
                         classes) that belong to the class itself, rather than to any specific instance (object) of the
                         class. This means static members are shared across all instances of a class and can be accessed
-                        directly using the class name, without creating an object.</p>
-                    <pre><code class="language-java">
+                        directly using the class name, without creating an object.
+                    </p>
+
+                    <pre><code>
 class Counter {
     static int instanceCount = 0; // Static variable: shared by all objects
 
@@ -4884,22 +5061,30 @@ class MathUtils {
     }
 }
         </code></pre>
-                    <div class="output">
+
+                    <div>
                         <h4>Output (for Counter):</h4>
-                        <pre><code>Initial count: 0
+                        <pre><code>
+Initial count: 0
 New object created. Total objects: 1
 New object created. Total objects: 2
 New object created. Total objects: 3
-Total Counter objects created so far: 3</code></pre>
-                        <h4>Output (for MathUtils):</h4>
-                        <pre><code>Sum using static method: 30</code></pre>
+Total Counter objects created so far: 3
+                        </code></pre>
                     </div>
-                </div>
+
+                    <div>
+                        <h4>Output (for MathUtils):</h4>
+                        <pre><code>
+Sum using static method: 30
+                        </code></pre>
+                    </div>
 
                 <div class="highlight">
                     <p><strong>Note:</strong> Java is not a purely object-oriented language because it supports
                         primitive data types (like int, char, etc.) that are not objects. However, it is often referred
-                        to as an object-oriented language due to its strong emphasis on OOP principles.</p>
+                        to as an object-oriented language due to its strong emphasis on OOP principles.
+                    </p>
                 </div>
 
             </section>
@@ -4909,33 +5094,28 @@ Total Counter objects created so far: 3</code></pre>
                     <h2>Module III: Collections Framework</h2>
                 </header>
 
-                <p><b>Last Updated : June 8, 2025</b></p>
+                <p>Any group of individual objects that are represented as a single unit is known as a <b>Java Collection
+                    of Objects</b>. In Java, a separate framework named the <b><q>Collection Framework</q></b> has been defined in <b>JDK
+                    1.2</b> which holds all the <b>Java Collection Classes and Interfaces</b> in it.</p>
 
-                <p>Any group of individual objects that are represented as a single unit is known as a **Java Collection
-                    of Objects**. In Java, a separate framework named the "Collection Framework" has been defined in JDK
-                    1.2 which holds all the Java Collection Classes and Interfaces in it.</p>
-                <p>In Java, the `Collection` interface (<code>java.util.Collection</code>) and `Map` interface
-                    (<code>java.util.Map</code>) are the two main "root" interfaces of Java collection classes.</p>
-
-                ---
+                <p>In Java, the <b><q>Collection</q></b> interface (<mark><b>java.util.Collection</b></mark>) and <b><q>Map</q></b> interface
+                    (<mark><b>java.util.Map</b></mark>) are the two main <b><q>root</q></b> interfaces of Java collection classes.</p>
 
                 <h3>What is a Framework in Java?</h3>
-                <p>A framework is a set of classes and interfaces which provide a ready-made architecture. To implement
+                <p>A framework is a <b>set of classes and interfaces which provide a ready-made architecture</b>. To implement
                     a new feature or a class, there's no need to define a framework. However, an optimal object-oriented
                     design always includes a framework with a collection of classes such that all the classes perform
                     the same kind of task.</p>
 
-                ---
-
                 <h3>Need for a Separate Collection Framework in Java</h3>
                 <p>Before the Collection Framework (or before JDK 1.2) was introduced, the standard methods for grouping
-                    Java objects (or collections) were **Arrays** or **Vectors**, or **Hashtables**. All of these
+                    Java objects (or collections) were <b><q>Arrays</q></b> or <b><q>Vectors</q></b> or <b><q>Hashtables</q></b>. All of these
                     collections had no common interface. Therefore, though the main aim of all the collections is the
                     same, the implementation of all these collections was defined independently and had no correlation
                     among them. And also, it was very difficult for users to remember all the different methods, syntax,
                     and constructors present in every collection class.</p>
 
-                <p>Let's understand this with an example of adding an element in a hashtable and a vector:</p>
+                <p>Let's understand this with an <b>example of adding an element in a hashtable and a vector:</b></p>
 
                 <pre><code class="language-java">
 // Java program to demonstrate
@@ -4980,7 +5160,7 @@ class CollectionDemo {
     }
 }
     </code></pre>
-                <p><b>Output:</b></p>
+                <h4>Output:</h4>
                 <pre><code>
 1
 1
