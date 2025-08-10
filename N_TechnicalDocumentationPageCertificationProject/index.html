@@ -560,7 +560,6 @@ Hello, World!
                             coffee</b>. This connection led to Java's iconic coffee cup logo ☕, symbolizing energy and
                         universality!</p>
                 </div>
-
             </section>
 
             <section class="main-section" id="module1_core_java">
@@ -5107,7 +5106,7 @@ Sum using static method: 30
                     design always includes a framework with a collection of classes such that all the classes perform
                     the same kind of task.</p>
 
-                <h3>Need for a Separate Collection Framework in Java</h3>
+                <h3>Need for a Separate Collection Framework in Java:</h3>
                 <p>Before the Collection Framework (or before JDK 1.2) was introduced, the standard methods for grouping
                     Java objects (or collections) were <b><q>Arrays</q></b> or <b><q>Vectors</q></b> or <b><q>Hashtables</q></b>. All of these
                     collections had no common interface. Therefore, though the main aim of all the collections is the
@@ -5117,7 +5116,7 @@ Sum using static method: 30
 
                 <p>Let's understand this with an <b>example of adding an element in a hashtable and a vector:</b></p>
 
-                <pre><code class="language-java">
+                <pre><code>
 // Java program to demonstrate
 // why collection framework was needed
 import java.io.*;
@@ -5160,28 +5159,29 @@ class CollectionDemo {
     }
 }
     </code></pre>
+            <div>
                 <h4>Output:</h4>
                 <pre><code>
 1
 1
 elementA
     </code></pre>
-                <p>As we can observe, none of these collections (Array, Vector, or Hashtable) implements a standard
+            </div>
+                <p>As we can observe, none of these collections (<b>Array</b>, <b>Vector</b>, or <b>Hashtable</b>) implements a standard
                     member access interface. It was very difficult for programmers to write algorithms that could work
-                    for all kinds of Collections. Another drawback is that most of the 'Vector' methods are final,
-                    meaning we cannot extend the 'Vector' class to implement a similar kind of Collection. Therefore,
+                    for all kinds of Collections. Another drawback is that most of the <b><q>Vector</q></b> methods are final,
+                    meaning we cannot extend the <b><q>Vector</q></b> class to implement a similar kind of Collection. Therefore,
                     Java developers decided to come up with a common interface to deal with the above-mentioned problems
                     and introduced the Collection Framework in JDK 1.2, post which both, legacy Vectors and Hashtables
-                    were modified to conform to the Collection Framework.</p>
+                    were modified to conform to the Collection Framework.
+                </p>
 
-                ---
-
-                <h3>Advantages of the Java Collection Framework</h3>
+                <h3>Advantages of the Java Collection Framework:</h3>
                 <p>Since the lack of a collection framework gave rise to the above set of disadvantages, the following
                     are the advantages of the collection framework:</p>
                 <ul>
-                    <li><b>Consistent API:</b> The API has a basic set of interfaces like `Collection`, `Set`, `List`,
-                        or `Map`. All the classes (<i><b>ArrayList, LinkedList, Vector</b></i>, etc.) that implement
+                    <li><b>Consistent API:</b> The API has a basic set of interfaces like <mark>Collection</mark>, <mark>Set</mark>, <mark>List</mark>,
+                        or <mark>Map</mark>. All the classes (<i><b><mark>ArrayList</mark>, <mark>LinkedList</mark>, <mark>Vector</mark></b></i>, etc.) that implement
                         these interfaces have some common set of methods.</li>
                     <li><b>Reduces programming effort:</b> A programmer doesn't have to worry about the design of the
                         Collection but rather can focus on its best use in their program. Therefore, the basic concept
@@ -5192,16 +5192,16 @@ elementA
                         best implementation to drastically boost the performance of their algorithm/program.</li>
                 </ul>
 
-                ---
-
-                <h3>Hierarchy of the Collection Framework in Java</h3>
-                <p>The `java.util` package contains all the classes and interfaces that are required by the collection
-                    framework. The collection framework contains an interface named an `Iterable` interface which
+                <h3>Hierarchy of the Collection Framework in Java:</h3>
+                <p>The <mark><b>java.util</b></mark> package contains all the classes and interfaces that are required by the collection
+                    framework. The collection framework contains an interface named an <mark>Iterable</mark> interface which
                     provides the iterator to iterate through all the collections. This interface is extended by the main
-                    `Collection` interface which acts as a root for the collection framework. All the collections extend
-                    this `Collection` interface, thereby extending the properties of the iterator and the methods of
+                    <mark>Collection</mark> interface which acts as a root for the collection framework. All the collections extend
+                    this <mark>Collection</mark> interface, thereby extending the properties of the iterator and the methods of
                     this interface. The following conceptual diagram illustrates the hierarchy of the collection
-                    framework:</p>
+                    framework:
+                </p>
+
                 <pre><code>
     Iterable (Interface)
         |
@@ -5209,13 +5209,13 @@ elementA
                 |
                 +-- List (Interface)
                 |       +-- ArrayList (Class)
-                |       +-- LinkedList (Class)
+                |       +-- LinkedList (Class - also implements Deque)
                 |       +-- Vector (Class)
-                |       +-- Stack (Class)
+                |       |       +-- Stack (Class - extends Vector)
                 |
                 +-- Set (Interface)
                 |       +-- HashSet (Class)
-                |       +-- LinkedHashSet (Class)
+                |       +-- LinkedHashSet (Class - extends HashSet)
                 |       +-- SortedSet (Interface)
                 |               +-- NavigableSet (Interface)
                 |                       +-- TreeSet (Class)
@@ -5224,23 +5224,43 @@ elementA
                 |       +-- PriorityQueue (Class)
                 |       +-- Deque (Interface)
                 |               +-- ArrayDeque (Class)
-                |               +-- LinkedList (Class - also implements List and Deque)
+                |               +-- LinkedList (Class - also implements List)
                 |
-                +-- (Other interfaces like BlockingQueue, BlockingDeque, etc., and their implementations)
+                +-- (Other specialized interfaces and implementations)
+                        +-- BlockingQueue (Interface)
+                        |       +-- ArrayBlockingQueue (Class)
+                        |       +-- LinkedBlockingQueue (Class)
+                        |       +-- PriorityBlockingQueue (Class)
+                        |       +-- SynchronousQueue (Class)
+                        |       +-- DelayQueue (Class)
+                        |
+                        +-- BlockingDeque (Interface - extends BlockingQueue and Deque)
+                        |       +-- LinkedBlockingDeque (Class)
+                        |
+                        +-- TransferQueue (Interface - extends BlockingQueue)
+                                +-- LinkedTransferQueue (Class)
 
     Map (Interface - separate hierarchy, not extending Collection)
         +-- HashMap (Class)
-        +-- LinkedHashMap (Class)
-        +-- TreeMap (Class)
+        |       +-- LinkedHashMap (Class - extends HashMap)
+        +-- TreeMap (Class - implements NavigableMap)
+        +-- Hashtable (Class - legacy, synchronized)
+        |       +-- Properties (Class - extends Hashtable)
+        +-- WeakHashMap (Class)
+        +-- IdentityHashMap (Class)
+        +-- EnumMap (Class)
         +-- SortedMap (Interface)
-        +-- NavigableMap (Interface)
+        |       +-- NavigableMap (Interface - extends SortedMap)
+        |               +-- TreeMap (Class)
         +-- ConcurrentMap (Interface)
-        +-- Hashtable (Class - legacy)
-        +-- Properties (Class - extends Hashtable)
-    </code></pre>
+        |       +-- ConcurrentHashMap (Class)
+        +-- ConcurrentNavigableMap (Interface - extends ConcurrentMap and NavigableMap)
+                +-- ConcurrentSkipListMap (Class)
+            </code></pre>
 
                 <p>Before understanding the different components in the above framework, let's first understand a class
-                    and an interface.</p>
+                    and an interface.
+                </p>
                 <ul>
                     <li><b>Class:</b> A class is a user-defined blueprint or prototype from which objects are created.
                         It represents the set of properties or methods that are common to all objects of one type.</li>
@@ -5249,9 +5269,7 @@ elementA
                         specify what a class must do and not how. It is the blueprint of the class.</li>
                 </ul>
 
-                ---
-
-                <h3>Methods of the <i><b>Collection</b></i> Interface</h3>
+                <h3>Methods of the Collection Interface:</h3>
                 <p>This interface contains various methods which can be directly used by all the collections that
                     implement this interface. They are:</p>
                 <table>
@@ -5345,20 +5363,19 @@ elementA
                     </tbody>
                 </table>
 
-                ---
-
-                <h3>Interfaces that Extend the Java Collections Interface</h3>
+                <h3>Interfaces that Extend the Java Collections Interface:</h3>
                 <p>The collection framework contains multiple interfaces where every interface is used to store a
-                    specific type of data. The following are the interfaces present in the framework.</p>
+                    specific type of data. The following are the interfaces present in the framework.
+                </p>
 
-                <h4>1. <i><b>Iterable</b></i> Interface</h4>
-                <p>This is the root interface for the entire collection framework. The `Collection` interface extends
-                    the `Iterable` interface. Therefore, inherently, all the interfaces and classes implement this
+                <h3>1. Iterable Interface:</h3>
+                <p>This is the root interface for the entire collection framework. The <b>`Collection`</b> interface extends
+                    the <b>`Iterable`</b> interface. Therefore, inherently, all the interfaces and classes implement this
                     interface. The main functionality of this interface is to provide an iterator for the collections.
-                    This interface contains only one abstract method: `Iterator iterator();`</p>
+                    This interface contains only one abstract method: <mark>Iterator iterator();</mark>.</p>
 
-                <h4>2. <i><b>Collection</b></i> Interface</h4>
-                <p>This interface extends the `Iterable` interface and is implemented by all the classes in the
+                <h3>2. Collection Interface:</h3>
+                <p>This interface extends the <b>`Iterable`</b> interface and is implemented by all the classes in the
                     collection framework. This interface contains all the basic methods that every collection has, like
                     adding data, removing data, clearing data, etc. All these methods are implemented in this interface
                     because they are implemented by all the classes irrespective of their style of implementation.
@@ -5366,21 +5383,24 @@ elementA
                     all the collections. In short, we can say that this interface builds a foundation on which the
                     collection classes are implemented.</p>
 
-                <h4>3. <i><b>List</b></i> Interface</h4>
-                <p>This is a child interface of the `Collection` interface. This interface is dedicated to list-type
+                <h3>3. List Interface:</h3>
+                <p>This is a child interface of the <b>`Collection`</b> interface. This interface is dedicated to list-type
                     data where we can store all the ordered collections of objects. This also allows duplicate data to
-                    be present in it. This `List` interface is implemented by various classes like **ArrayList, Vector,
-                    Stack, LinkedList**, etc. Since all the subclasses implement the `List`, we can instantiate a `List`
-                    object with any of these classes.</p>
-                <p>For example:</p>
+                    be present in it. This <b>`List`</b> interface is implemented by various classes like <b><mark>ArrayList</mark>, <mark>Vector</mark>,
+                    <mark>Stack</mark>, <mark>LinkedList</mark>,</b> etc. Since all the subclasses implement the <b>`List`</b>, we can instantiate a <b>`List`</b>
+                    object with any of these classes.
+                </p>
+
+                <h4>For example:</h4>
                 <pre><code>
 List &lt;T&gt; al = new ArrayList&lt;&gt; ();
 List &lt;T&gt; ll = new LinkedList&lt;&gt; ();
 List &lt;T&gt; v = new Vector&lt;&gt; ();
 // Where T is the type of the object
-    </code></pre>
-                <p>The classes which implement the `List` interface are as follows:</p>
-                <h5>i). <i><b>ArrayList</b></i></h5>
+                </code></pre>
+
+                <h4>The classes which implement the `List` interface are as follows:</h4>
+                <h4>i). ArrayList</h4>
                 <p><i><b>ArrayList</b></i> provides us with dynamic arrays in Java. Though it may be slower than
                     standard arrays, it can be helpful in programs where lots of manipulation in the array is needed.
                     The size of an <i><b>ArrayList</b></i> is increased automatically if the collection grows or shrinks
