@@ -5406,13 +5406,13 @@ List &lt;T&gt; v = new Vector&lt;&gt; ();
 
                 <h4>The classes which implement the `List` interface are as follows:</h4>
 
-                <h4>I. ArrayList:</h4>           
+                <h4>i. ArrayList:</h4>           
 
                 <p><mark><b>ArrayList</b></mark> provides us with dynamic arrays in Java. Though it may be slower than
                     standard arrays, it can be helpful in programs where lots of manipulation in the array is needed.
-                    The size of an <b>ArrayList</b> is increased automatically if the collection grows or shrinks
-                    if objects are removed from the collection. Java <b>ArrayList</b> allows us to randomly
-                    access the list. <b>ArrayList cannot be used for primitive types,</b> like <mark>int</mark>, <mark>char</mark>,
+                    The size of an <b>`ArrayList`</b> is increased automatically if the collection grows or shrinks
+                    if objects are removed from the collection. Java <b>`ArrayList`</b> allows us to randomly
+                    access the list. <b>`ArrayList` cannot be used for primitive types,</b> like <mark>int</mark>, <mark>char</mark>,
                     etc. We will need a <b>wrapper class</b> for such cases.
                 </p>
 
@@ -5459,7 +5459,7 @@ class MyCollectionDemo {
     </code></pre>
             </div>
 
-                <h4>II. LinkedList:</h4>
+                <h4>ii. LinkedList:</h4>
                 <p>The <mark><b>LinkedList</b></mark> class is an implementation of the <a
                         href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html"
                         target="_blank" class="collectionsLink">LinkedList data structure</a> which is a <b>linear data structure</b> where the
@@ -5511,13 +5511,13 @@ class MyLinkedListDemo {
     </code></pre>
                 </div>
 
-                <h4>III. Vector:</h4>
+                <h4>iii. Vector:</h4>
                 <p>A <mark><b>Vector</b></mark> provides us with dynamic arrays in Java. Though it may be slower than standard
                     arrays, it can be helpful in programs where lots of manipulation in the array is needed. This is
                     <b>identical</b> to <mark><b>ArrayList</b></mark> in terms of implementation. However, the primary difference
-                    between a <b>Vector</b> and an <b>ArrayList</b> is that a <mark><b>Vector</b></mark> is
+                    between a <b>`Vector`</b> and an <b>`ArrayList`</b> is that a <mark><b>Vector</b></mark> is
                     <b>synchronized</b> and an <mark><b>ArrayList</b></mark> is <b>non-synchronized</b>. This means that
-                    <b>Vector</b> methods are <b>thread-safe</b>, making them suitable for <b>multi-threaded</b> environments
+                    <b>`Vector`</b> methods are <b>thread-safe</b>, making them suitable for <b>multi-threaded</b> environments
                     at the cost of performance in single-threaded scenarios.
                 </p>
 
@@ -5564,9 +5564,10 @@ class MyVectorDemo {
     </code></pre>
                 </div>
 
-                <h4>IV. Stack:</h4>
+                <h4>iv. Stack:</h4>
+
                 <p><mark><b>Stack</b></mark> class models and implements the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html" target="_blank" class="collectionsLink">Stack data
-                        structure</a>. The class is based on the basic principle of <strong>last-in-first-out (LIFO)</strong>. In
+                        structure</a>. The class is based on the basic principle of <strong>Last-In-First-Out (LIFO)</strong>. In
                     addition to the basic <mark><b>push</b></mark> and <mark><b>pop</b></mark> operations, the class provides three more functions: <mark><b>empty</b></mark>,
                     <mark><b>search</b></mark>, and <mark><b>peek</b></mark>. The class can also be referred to as the <b>subclass</b> of <mark><b>Vector</b></mark>.
                 </p>
@@ -5619,44 +5620,50 @@ Alpha Beta Gamma
                 </div>
 
                 <div class="highlight">
-                <p><b>Note:</b> <b>Stack</b> is a subclass of <b>Vector</b> and a legacy class. It is
+                <p><b>Note:</b> <b>`Stack`</b> is a subclass of <b>`Vector`</b> and a legacy class. It is
                     thread-safe which might be overhead in an environment where thread safety is not needed. An
-                    alternate to <b>Stack</b> is to use <b>ArrayDeque</b> which is not thread-safe and has
+                    alternate to <b>`Stack`</b> is to use <b>`ArrayDeque`</b> which is not thread-safe and has
                     faster array implementation for stack-like operations.
                 </p>
                 </div>
 
-                <h4>4. <i><b>Queue</b></i> Interface</h4>
-                <p>As the name suggests, a `Queue` interface maintains the **FIFO (First In First Out)** order similar
+                <h4>4. Queue Interface:</h4>
+                <p>As the name suggests, a <mark><b>Queue</b></mark> interface maintains the <b>FIFO (First-In-First-Out)</b> order similar
                     to a real-world queue line. This interface is dedicated to storing all the elements where the order
                     of the elements matter. For example, whenever we try to book a ticket, the tickets are sold on a
                     first come first serve basis. Therefore, the person whose request arrives first into the queue gets
-                    the ticket. There are various classes like <i><b>PriorityQueue, ArrayDeque</b></i>, etc. Since all
-                    these subclasses implement the `Queue`, we can instantiate a `Queue` object with any of these
-                    classes.</p>
-                <p>For example:</p>
+                    the ticket. There are various classes like <mark><b>PriorityQueue</b></mark>, <mark><b>ArrayDeque</b></mark>, etc. Since all
+                    these subclasses implement the <b>`Queue`</b>, we can instantiate a <b>`Queue`</b> object with any of these
+                    classes.
+                </p>
+
+                <h4>For example:</h4>
+
                 <pre><code>
 Queue &lt;T&gt; pq = new PriorityQueue&lt;&gt; ();
 Queue &lt;T&gt; ad = new ArrayDeque&lt;&gt; ();
 // Where T is the type of the object.
     </code></pre>
-                <p>The most frequently used implementation of the `Queue` interface is the <i><b>PriorityQueue</b></i>.
-                </p>
-                <h5>i). <i><b>PriorityQueue</b></i></h5>
-                <p>A <i><b>PriorityQueue</b></i> is used when the objects are supposed to be processed based on
-                    priority. It is known that a queue follows the First-In-First-Out algorithm, but sometimes the
+
+                <p>The most frequently used implementation of the <mark><b>Queue</b></mark> interface is the <mark><b>PriorityQueue</b></mark>.</p>
+
+                <h4>i. PriorityQueue:</h4>
+
+                <p>A <mark><b>PriorityQueue</b></mark> is used when the objects are supposed to be processed based on
+                    priority. It is known that a queue follows the <b>First-In-First-Out (FIFO)</b> algorithm, but sometimes the
                     elements of the queue are needed to be processed according to the priority and this class is used in
-                    these cases. The <i><b>PriorityQueue</b></i> is based on the priority heap. The elements of the
-                    priority queue are ordered according to the natural ordering, or by a <i><b>Comparator</b></i>
-                    provided at queue construction time, depending on which constructor is used.</p>
-                <p>Let's understand the priority queue with an example:</p>
-                <pre><code class="language-java">
-// Java program to demonstrate the working of
-// priority queue in Java
+                    these cases. The <b>`PriorityQueue`</b> is based on the priority heap. The elements of the
+                    priority queue are ordered according to the natural ordering, or by a <b>`Comparator`</b>
+                    provided at queue construction time, depending on which constructor is used.
+                </p>
+
+                <p>Let's understand the <mark><b>PriorityQueue</b></mark> with an example:</p>
+
+                <pre><code>
+// Java program to demonstrate the working of priority queue in Java
 import java.util.*;
 
 class PriorityQueueDemo {
-
     // Main Method
     public static void main(String args[])
     {
@@ -5681,36 +5688,47 @@ class PriorityQueueDemo {
     }
 }
     </code></pre>
-                <p><b>Output:</b></p>
+
+            <div>
+                <h4>Output:</h4>
                 <pre><code>
 10
 10
 15
     </code></pre>
+            </div>
 
-                <h4>5. <i><b>Deque</b></i> Interface</h4>
-                <p>This is a very slight variation of the <a
-                        href="https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html" target="_blank">queue data
-                        structure</a>. <i><b>Deque</b></i>, also known as a **double-ended queue**, is a data structure
-                    where we can add and remove elements from both ends of the queue. This interface extends the `Queue`
-                    interface. The class which implements this interface is <i><b>ArrayDeque</b></i> (and
-                    <i><b>LinkedList</b></i> also implements it). Since <i><b>ArrayDeque</b></i> class implements the
-                    `Deque` interface, we can instantiate a `Deque` object with this class.</p>
-                <p>For example:</p>
+                <h4>5. Deque Interface:</h4>
+
+                <p>This is a very slight variation of the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html" target="_blank" class="collectionsLink">queue data
+                        structure</a>. <mark><b>Deque</b></mark>, also known as a <b>double-ended queue</b>, is a data structure
+                    where we can add and remove elements from both ends of the queue. This interface extends the <mark><b>Queue</b></mark>
+                    interface. The class which implements this interface is <mark><b>ArrayDeque</b></mark> (and
+                    <mark><b>LinkedList</b></mark> also implements it). Since <b>`ArrayDeque`</b> class implements the
+                    <b>`Deque`</b> interface, we can instantiate a <b>`Deque`</b> object with this class.
+                </p>
+
+                <h4>For example:</h4>
+
                 <pre><code>
 Deque&lt;T&gt; ad = new ArrayDeque&lt;&gt; ();
 // Where T is the type of the object.
     </code></pre>
-                <p>The class which implements the `Deque` interface is <i><b>ArrayDeque</b></i>.</p>
-                <h5>i). <i><b>ArrayDeque</b></i></h5>
-                <p><i><b>ArrayDeque</b></i> class which is implemented in the collection framework provides us with a
+
+                <p>The class which implements the <mark><b>Deque</b></mark> interface is <mark><b>ArrayDeque</b></mark>.</p>
+
+                <h4>i. ArrayDeque:</h4>
+
+                <p><mark><b>ArrayDeque</b></mark> class which is implemented in the collection framework provides us with a
                     way to apply resizable array. This is a special kind of array that grows and allows users to add or
                     remove an element from both sides of the queue. Array deques have no capacity restrictions and they
-                    grow as necessary to support usage. They can be used as both queues (FIFO) and stacks (LIFO).</p>
-                <p>Let's understand <i><b>ArrayDeque</b></i> with an example:</p>
-                <pre><code class="language-java">
-// Java program to demonstrate the
-// ArrayDeque class in Java
+                    grow as necessary to support usage. They can be used as both <b>Queues (FIFO)</b> and <b>Stacks (LIFO)</b>.
+                </p>
+
+                <p>Let's understand <mark><b>ArrayDeque</b></mark> with an example:</p>
+
+                <pre><code>
+// Java program to demonstrate the ArrayDeque class in Java
 
 import java.util.*;
 public class ArrayDequeDemo {
@@ -5746,35 +5764,45 @@ public class ArrayDequeDemo {
     }
 }
     </code></pre>
-                <p><b>Output:</b></p>
+
+            <div>
+                <h4>Output:</h4>
                 <pre><code>
 [10, 20, 30, 40, 50]
 [291, 564, 24, 14]
     </code></pre>
+            </div>
 
-                <h4>6. <i><b>Set</b></i> Interface</h4>
-                <p>A `Set` is an unordered collection of objects in which **duplicate values cannot be stored**. This
+                <h4>6. Set Interface:</h4>
+
+                <p>A <mark><b>Set</b></mark> is an unordered collection of objects in which <b>duplicate values cannot be stored</b>. This
                     collection is used when we wish to avoid the duplication of the objects and wish to store only the
-                    unique objects. This `Set` interface is implemented by various classes like <i><b>HashSet, TreeSet,
-                            LinkedHashSet</b></i>, etc. Since all the subclasses implement the `Set`, we can instantiate
-                    a `Set` object with any of these classes.</p>
-                <p>For example:</p>
+                    unique objects. This <b>`Set`</b> interface is implemented by various classes like <b><mark>HashSet</mark>, <mark>TreeSet</mark>,
+                            <mark>LinkedHashSet</mark>,</b> etc. Since all the subclasses implement the <b>`Set`</b>, we can instantiate
+                    a <b>`Set`</b> object with any of these classes.
+                </p>
+
+                <h4>For example:</h4>
+
                 <pre><code>
 Set&lt;T&gt; hs = new HashSet&lt;&gt; ();
 Set&lt;T&gt; lhs = new LinkedHashSet&lt;&gt; ();
 Set&lt;T&gt; ts = new TreeSet&lt;&gt; ();
 // Where T is the type of the object.
     </code></pre>
-                <p>The following are the classes that implement the `Set` interface:</p>
-                <h5>i). <i><b>HashSet</b></i></h5>
-                <p>The <i><b>HashSet</b></i> class is an inherent implementation of the hash table data structure. The
-                    objects that we insert into the <i><b>HashSet</b></i> do not guarantee to be inserted in the same
+
+                <p>The following are the classes that implement the <mark><b>Set</b></mark> interface:</p>
+
+                <h4>i. HashSet:</h4>
+
+                <p>The <mark><b>HashSet</b></mark> class is an inherent implementation of the hash table data structure. The
+                    objects that we insert into the <mark><b>HashSet</b></mark> do not guarantee to be inserted in the same
                     order. The objects are inserted based on their hashcode. This class also allows the insertion of
-                    `NULL` elements.</p>
-                <p>Let's understand <i><b>HashSet</b></i> with an example:</p>
+                    <b>`NULL`</b> elements.</p>
+
+                <p>Let's understand <mark><b>HashSet</b></mark> with an example:</p>
                 <pre><code class="language-java">
-// Java program to demonstrate the
-// working of a HashSet
+// Java program to demonstrate the working of a HashSet
 import java.util.*;
 
 public class HashSetDemo {
@@ -5800,27 +5828,30 @@ public class HashSetDemo {
     }
 }
     </code></pre>
-                <p><b>Output:</b> (Order may vary)</p>
+
+                <div>
+                <h4>Output: (Order may vary)</h4>
                 <pre><code>
 Very useful
 Element A
 Element B
 Element C
     </code></pre>
+                </div>
 
-                <h5>ii). <i><b>LinkedHashSet</b></i></h5>
-                <p>A <i><b>LinkedHashSet</b></i> is very similar to a <i><b>HashSet</b></i>. The difference is that this
-                    uses a doubly linked list to store the data and **retains the insertion ordering** of the elements.
+                <h4>ii. LinkedHashSet:</h4>
+                <p>A <mark><b>LinkedHashSet</b></mark> is very similar to a <mark><b>HashSet</b></mark>. The difference is that this
+                    uses a <b>doubly linked list</b> to store the data and <b>retains the insertion ordering</b> of the elements.
                     It provides the constant-time performance of a hash table with the predictable iteration order of a
                     linked list.</p>
-                <p>Let's understand the <i><b>LinkedHashSet</b></i> with an example:</p>
-                <pre><code class="language-java">
-// Java program to demonstrate the
-// working of a LinkedHashSet
+
+                <p>Let's understand the <mark><b>LinkedHashSet</b></mark> with an example:</p>
+
+                <pre><code>
+// Java program to demonstrate the working of a LinkedHashSet
 import java.util.*;
 
 public class LinkedHashSetDemo {
-
     // Main Method
     public static void main(String args[])
     {
@@ -5843,15 +5874,18 @@ public class LinkedHashSetDemo {
     }
 }
     </code></pre>
-                <p><b>Output:</b></p>
+
+                <div>
+                <h4>Output:</h4>
                 <pre><code>
 Data Entry
 Processing
 Is Done
 With Efficiency
     </code></pre>
+                </div>
 
-                <h4>7. <i><b>SortedSet</b></i> Interface</h4>
+                <h4>7. SortedSet Interface:</h4>
                 <p>This interface is very similar to the `Set` interface. The only difference is that this interface has
                     extra methods that **maintain the ordering of the elements**. The `SortedSet` interface extends the
                     `Set` interface and is used to handle the data which needs to be sorted. The class which implements
