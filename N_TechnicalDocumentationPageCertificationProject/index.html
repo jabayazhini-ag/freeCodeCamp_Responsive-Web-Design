@@ -5097,8 +5097,8 @@ Sum using static method: 30
                     of Objects</b>. In Java, a separate framework named the <b><q>Collection Framework</q></b> has been defined in <b>JDK
                     1.2</b> which holds all the <b>Java Collection Classes and Interfaces</b> in it.</p>
 
-                <p>In Java, the <b><q>Collection</q></b> interface (<mark><b>java.util.Collection</b></mark>) and <b><q>Map</q></b> interface
-                    (<mark><b>java.util.Map</b></mark>) are the two main <b><q>root</q></b> interfaces of Java collection classes.</p>
+                <p>In Java, the <mark><b>Collection</b></mark> interface (<mark><b>java.util.Collection</b></mark>) and <mark><b>Map</b></mark> interface
+                    (<mark><b>java.util.Map</b></mark>) are the two main <b>root</b> interfaces of Java collection classes.</p>
 
                 <h3>What is a Framework in Java?</h3>
                 <p>A framework is a <b>set of classes and interfaces which provide a ready-made architecture</b>. To implement
@@ -5108,13 +5108,13 @@ Sum using static method: 30
 
                 <h3>Need for a Separate Collection Framework in Java:</h3>
                 <p>Before the Collection Framework (or before JDK 1.2) was introduced, the standard methods for grouping
-                    Java objects (or collections) were <b><q>Arrays</q></b> or <b><q>Vectors</q></b> or <b><q>Hashtables</q></b>. All of these
+                    Java objects (or collections) were <mark><b>Arrays</b></mark> or <mark><b>Vectors</b></mark> or <mark><b>Hashtables</b></mark>. All of these
                     collections had no common interface. Therefore, though the main aim of all the collections is the
                     same, the implementation of all these collections was defined independently and had no correlation
                     among them. And also, it was very difficult for users to remember all the different methods, syntax,
                     and constructors present in every collection class.</p>
 
-                <p>Let's understand this with an <b>example of adding an element in a hashtable and a vector:</b></p>
+                <p>Let's understand this with an <b>example of adding an element in a <mark>hashtable</mark> and a <mark>vector</mark>:</b></p>
 
                 <pre><code>
 // Java program to demonstrate
@@ -5159,6 +5159,7 @@ class CollectionDemo {
     }
 }
     </code></pre>
+
             <div>
                 <h4>Output:</h4>
                 <pre><code>
@@ -5167,13 +5168,14 @@ class CollectionDemo {
 elementA
     </code></pre>
             </div>
-                <p>As we can observe, none of these collections (<b>Array</b>, <b>Vector</b>, or <b>Hashtable</b>) implements a standard
+
+                <p>As we can observe, none of these collections (<mark>Array</mark>, <mark>Vector</mark>, or <mark>Hashtable</mark>) implements a standard
                     member access interface. It was very difficult for programmers to write algorithms that could work
-                    for all kinds of Collections. Another drawback is that most of the <b><q>Vector</q></b> methods are final,
-                    meaning we cannot extend the <b><q>Vector</q></b> class to implement a similar kind of Collection. Therefore,
+                    for all kinds of Collections. Another drawback is that most of the <mark>Vector</mark> methods are final,
+                    meaning we cannot extend the <mark>Vector</mark> class to implement a similar kind of Collection. Therefore,
                     Java developers decided to come up with a common interface to deal with the above-mentioned problems
-                    and introduced the Collection Framework in JDK 1.2, post which both, legacy Vectors and Hashtables
-                    were modified to conform to the Collection Framework.
+                    and introduced the Collection Framework in <b>JDK 1.2</b>, post which both, legacy <mark>Vectors</mark> and <mark>Hashtables</mark>
+                    were modified to conform to the <b>Collection Framework</b>.
                 </p>
 
                 <h3>Advantages of the Java Collection Framework:</h3>
@@ -5258,9 +5260,10 @@ elementA
                 +-- ConcurrentSkipListMap (Class)
             </code></pre>
 
-                <p>Before understanding the different components in the above framework, let's first understand a class
-                    and an interface.
+                <p>Before understanding the different components in the above framework, let's first understand a <b>class</b>
+                    and an <b>interface</b>.
                 </p>
+
                 <ul>
                     <li><b>Class:</b> A class is a user-defined blueprint or prototype from which objects are created.
                         It represents the set of properties or methods that are common to all objects of one type.</li>
@@ -5369,13 +5372,13 @@ elementA
                 </p>
 
                 <h3>1. Iterable Interface:</h3>
-                <p>This is the root interface for the entire collection framework. The <b>`Collection`</b> interface extends
-                    the <b>`Iterable`</b> interface. Therefore, inherently, all the interfaces and classes implement this
+                <p>This is the root interface for the entire collection framework. The <mark>Collection</mark> interface extends
+                    the <mark>Iterable</mark> interface. Therefore, inherently, all the interfaces and classes implement this
                     interface. The main functionality of this interface is to provide an iterator for the collections.
                     This interface contains only one abstract method: <mark>Iterator iterator();</mark>.</p>
 
                 <h3>2. Collection Interface:</h3>
-                <p>This interface extends the <b>`Iterable`</b> interface and is implemented by all the classes in the
+                <p>This interface extends the <mark>Iterable</mark> interface and is implemented by all the classes in the
                     collection framework. This interface contains all the basic methods that every collection has, like
                     adding data, removing data, clearing data, etc. All these methods are implemented in this interface
                     because they are implemented by all the classes irrespective of their style of implementation.
@@ -5384,13 +5387,14 @@ elementA
                     collection classes are implemented.</p>
 
                 <h3>3. List Interface:</h3>
-                <p>This is a child interface of the <b>`Collection`</b> interface. This interface is dedicated to list-type
+                <p>This is a child interface of the <mark>Collection</mark> interface. This interface is dedicated to list-type
                     data where we can store all the ordered collections of objects. This also allows duplicate data to
-                    be present in it. This <b>`List`</b> interface is implemented by various classes like <b><mark>ArrayList</mark>, <mark>Vector</mark>,
-                    <mark>Stack</mark>, <mark>LinkedList</mark>,</b> etc. Since all the subclasses implement the <b>`List`</b>, we can instantiate a <b>`List`</b>
+                    be present in it. This <mark>List</mark> interface is implemented by various classes like <mark>ArrayList</mark>, <mark>Vector</mark>,
+                    <mark>Stack</mark>, <mark>LinkedList</mark>, etc. Since all the subclasses implement the <mark>List</mark>, we can instantiate a <mark>List</mark>
                     object with any of these classes.
                 </p>
 
+                <div>
                 <h4>For example:</h4>
                 <pre><code>
 List &lt;T&gt; al = new ArrayList&lt;&gt; ();
@@ -5398,34 +5402,35 @@ List &lt;T&gt; ll = new LinkedList&lt;&gt; ();
 List &lt;T&gt; v = new Vector&lt;&gt; ();
 // Where T is the type of the object
                 </code></pre>
+                </div>
 
                 <h4>The classes which implement the `List` interface are as follows:</h4>
-                <h4>i). ArrayList</h4>
-                <p><i><b>ArrayList</b></i> provides us with dynamic arrays in Java. Though it may be slower than
+
+                <h4>I. ArrayList:</h4>           
+
+                <p><mark><b>ArrayList</b></mark> provides us with dynamic arrays in Java. Though it may be slower than
                     standard arrays, it can be helpful in programs where lots of manipulation in the array is needed.
-                    The size of an <i><b>ArrayList</b></i> is increased automatically if the collection grows or shrinks
-                    if objects are removed from the collection. Java <i><b>ArrayList</b></i> allows us to randomly
-                    access the list. <i><b>ArrayList</b></i> cannot be used for primitive types, like `int`, `char`,
-                    etc. We will need a wrapper class for such cases.</p>
-                <p>Let's understand the <i><b>ArrayList</b></i> with the following example:</p>
-                <pre><code class="language-java">
-// Java program to demonstrate the
-// working of ArrayList
+                    The size of an <b>ArrayList</b> is increased automatically if the collection grows or shrinks
+                    if objects are removed from the collection. Java <b>ArrayList</b> allows us to randomly
+                    access the list. <b>ArrayList cannot be used for primitive types,</b> like <mark>int</mark>, <mark>char</mark>,
+                    etc. We will need a <b>wrapper class</b> for such cases.
+                </p>
+
+                <p>Let's understand the <mark><b>ArrayList</b></mark> with the following example:</p>
+
+                <pre><code>
+// Java program to demonstrate the working of ArrayList
 import java.io.*;
 import java.util.*;
 
 class MyCollectionDemo {
-
     // Main Method
     public static void main(String[] args)
     {
-
-        // Declaring the ArrayList with
-        // initial size n
+        // Declaring the ArrayList with initial size n 
         ArrayList&lt;Integer&gt; al = new ArrayList&lt;Integer&gt;();
 
-        // Appending new elements at
-        // the end of the list
+        // Appending new elements at the end of the list 
         for (int i = 1; i &lt;= 5; i++)
             al.add(i);
 
@@ -5435,8 +5440,7 @@ class MyCollectionDemo {
         // Remove element at index 3
         al.remove(3);
 
-        // Displaying the ArrayList
-        // after deletion
+        // Displaying the ArrayList after deletion 
         System.out.println(al);
 
         // Printing elements one by one
@@ -5445,38 +5449,40 @@ class MyCollectionDemo {
     }
 }
     </code></pre>
-                <p><b>Output:</b></p>
+
+            <div>
+                <h4>Output:</h4>
                 <pre><code>
 [1, 2, 3, 4, 5]
 [1, 2, 3, 5]
 1 2 3 5
     </code></pre>
+            </div>
 
-                <h5>ii). <i><b>LinkedList</b></i></h5>
-                <p>The <i><b>LinkedList</b></i> class is an implementation of the <a
+                <h4>II. LinkedList:</h4>
+                <p>The <mark><b>LinkedList</b></mark> class is an implementation of the <a
                         href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html"
-                        target="_blank">LinkedList data structure</a> which is a linear data structure where the
+                        target="_blank" class="collectionsLink">LinkedList data structure</a> which is a <b>linear data structure</b> where the
                     elements are not stored in contiguous locations and every element is a separate object with a data
                     part and address part. The elements are linked using pointers and addresses. Each element is known
-                    as a node.</p>
-                <p>Let's understand the <i><b>LinkedList</b></i> with the following example:</p>
-                <pre><code class="language-java">
-// Java program to demonstrate the
-// working of LinkedList
+                    as a node.
+                </p>
+
+                <p>Let's understand the <mark><b>LinkedList</b></mark> with the following example:</p>
+
+                <pre><code>
+// Java program to demonstrate the working of LinkedList 
 import java.io.*;
 import java.util.*;
 
 class MyLinkedListDemo {
-
     // Main Method
     public static void main(String[] args)
     {
-
         // Declaring the LinkedList
         LinkedList&lt;Integer&gt; ll = new LinkedList&lt;Integer&gt;();
 
-        // Appending new elements at
-        // the end of the list
+        // Appending new elements at the end of the list
         for (int i = 1; i &lt;= 5; i++)
             ll.add(i);
 
@@ -5486,8 +5492,7 @@ class MyLinkedListDemo {
         // Remove element at index 3
         ll.remove(3);
 
-        // Displaying the List
-        // after deletion
+        // Displaying the List after deletion
         System.out.println(ll);
 
         // Printing elements one by one
@@ -5496,39 +5501,41 @@ class MyLinkedListDemo {
     }
 }
     </code></pre>
-                <p><b>Output:</b></p>
+
+                <div>
+                <h4>Output:</h4>
                 <pre><code>
 [1, 2, 3, 4, 5]
 [1, 2, 3, 5]
 1 2 3 5
     </code></pre>
+                </div>
 
-                <h5>iii). <i><b>Vector</b></i></h5>
-                <p>A <i><b>Vector</b></i> provides us with dynamic arrays in Java. Though it may be slower than standard
+                <h4>III. Vector:</h4>
+                <p>A <mark><b>Vector</b></mark> provides us with dynamic arrays in Java. Though it may be slower than standard
                     arrays, it can be helpful in programs where lots of manipulation in the array is needed. This is
-                    identical to <i><b>ArrayList</b></i> in terms of implementation. However, the primary difference
-                    between a <i><b>Vector</b></i> and an <i><b>ArrayList</b></i> is that a <i><b>Vector</b></i> is
-                    **synchronized** and an <i><b>ArrayList</b></i> is **non-synchronized**. This means that
-                    <i><b>Vector</b></i> methods are thread-safe, making them suitable for multi-threaded environments
-                    at the cost of performance in single-threaded scenarios.</p>
-                <p>Let's understand the <i><b>Vector</b></i> with an example:</p>
-                <pre><code class="language-java">
-// Java program to demonstrate the
-// working of Vector
+                    <b>identical</b> to <mark><b>ArrayList</b></mark> in terms of implementation. However, the primary difference
+                    between a <b>Vector</b> and an <b>ArrayList</b> is that a <mark><b>Vector</b></mark> is
+                    <b>synchronized</b> and an <mark><b>ArrayList</b></mark> is <b>non-synchronized</b>. This means that
+                    <b>Vector</b> methods are <b>thread-safe</b>, making them suitable for <b>multi-threaded</b> environments
+                    at the cost of performance in single-threaded scenarios.
+                </p>
+
+                <p>Let's understand the <mark><b>Vector</b></mark> with an example:</p>
+
+                <pre><code>
+// Java program to demonstrate the working of Vector 
 import java.io.*;
 import java.util.*;
 
 class MyVectorDemo {
-
     // Main Method
     public static void main(String[] args)
     {
-
         // Declaring the Vector
         Vector&lt;Integer&gt; v = new Vector&lt;Integer&gt;();
 
-        // Appending new elements at
-        // the end of the list
+        // Appending new elements at the end of the list
         for (int i = 1; i &lt;= 5; i++)
             v.add(i);
 
@@ -5538,8 +5545,7 @@ class MyVectorDemo {
         // Remove element at index 3
         v.remove(3);
 
-        // Displaying the Vector
-        // after deletion
+        // Displaying the Vector after deletion
         System.out.println(v);
 
         // Printing elements one by one
@@ -5548,26 +5554,30 @@ class MyVectorDemo {
     }
 }
     </code></pre>
-                <p><b>Output:</b></p>
+
+                <div>
+                <h4>Output:</h4>
                 <pre><code>
 [1, 2, 3, 4, 5]
 [1, 2, 3, 5]
 1 2 3 5
     </code></pre>
+                </div>
 
-                <h5>iv). <i><b>Stack</b></i></h5>
-                <p><i><b>Stack</b></i> class models and implements the <a
-                        href="https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html" target="_blank">Stack data
-                        structure</a>. The class is based on the basic principle of **last-in-first-out (LIFO)**. In
-                    addition to the basic `push` and `pop` operations, the class provides three more functions: `empty`,
-                    `search`, and `peek`. The class can also be referred to as the subclass of <i><b>Vector</b></i>.</p>
-                <p>Let's understand the stack with an example:</p>
-                <pre><code class="language-java">
-// Java program to demonstrate the
-// working of a stack
+                <h4>IV. Stack:</h4>
+                <p><mark><b>Stack</b></mark> class models and implements the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html" target="_blank" class="collectionsLink">Stack data
+                        structure</a>. The class is based on the basic principle of <strong>last-in-first-out (LIFO)</strong>. In
+                    addition to the basic <mark><b>push</b></mark> and <mark><b>pop</b></mark> operations, the class provides three more functions: <mark><b>empty</b></mark>,
+                    <mark><b>search</b></mark>, and <mark><b>peek</b></mark>. The class can also be referred to as the <b>subclass</b> of <mark><b>Vector</b></mark>.
+                </p>
+
+                <p>Let's understand the <mark><b>Stack</b></mark> with an example:</p>
+
+                <pre><code>
+// Java program to demonstrate the working of a stack
 import java.util.*;
-public class StackDemo {
 
+public class StackDemo {
     // Main Method
     public static void main(String args[])
     {
@@ -5599,15 +5609,22 @@ public class StackDemo {
     }
 }
     </code></pre>
-                <p><b>Output:</b></p>
+
+                <div>
+                <h4>Output:</h4>
                 <pre><code>
 Alpha Beta Gamma Delta
 Alpha Beta Gamma
     </code></pre>
-                <p><b>Note:</b> <i><b>Stack</b></i> is a subclass of <i><b>Vector</b></i> and a legacy class. It is
+                </div>
+
+                <div class="highlight">
+                <p><b>Note:</b> <b>Stack</b> is a subclass of <b>Vector</b> and a legacy class. It is
                     thread-safe which might be overhead in an environment where thread safety is not needed. An
-                    alternate to <i><b>Stack</b></i> is to use <i><b>ArrayDeque</b></i> which is not thread-safe and has
-                    faster array implementation for stack-like operations.</p>
+                    alternate to <b>Stack</b> is to use <b>ArrayDeque</b> which is not thread-safe and has
+                    faster array implementation for stack-like operations.
+                </p>
+                </div>
 
                 <h4>4. <i><b>Queue</b></i> Interface</h4>
                 <p>As the name suggests, a `Queue` interface maintains the **FIFO (First In First Out)** order similar

@@ -336,7 +336,6 @@ hr {
 }
 
 /* Table */
-
 table {
     width: 100%;
     border-collapse: collapse; /* This will make borders touch, but we'll apply them to cells */
@@ -443,6 +442,15 @@ footer a:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+}
+
+/* Collections LinkedList Example */
+.collectionsLink {
+    color: #4a90e2;    
+}
+
+.collectionsLink:hover {
+    color: blue;
 }
 
 /* Mobile Responsive */
