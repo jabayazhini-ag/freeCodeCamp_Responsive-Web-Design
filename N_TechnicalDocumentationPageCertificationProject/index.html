@@ -5117,8 +5117,7 @@ Sum using static method: 30
                 <p>Let's understand this with an <b>example of adding an element in a <mark>hashtable</mark> and a <mark>vector</mark>:</b></p>
 
                 <pre><code>
-// Java program to demonstrate
-// why collection framework was needed
+// Java program to demonstrate why collection framework was needed
 import java.io.*;
 import java.util.*;
 
@@ -5126,19 +5125,16 @@ class CollectionDemo {
 
     public static void main(String[] args)
     {
-        // Creating instances of the array,
-        // vector and hashtable
+        // Creating instances of the array, vector and hashtable
         int arr[] = new int[] { 1, 2, 3, 4 };
         Vector&lt;Integer&gt; v = new Vector&lt;&gt;();
         Hashtable&lt;Integer, String&gt; h = new Hashtable&lt;&gt;();
 
-        // Adding the elements into the
-        // vector
+        // Adding the elements into the vector
         v.addElement(1);
         v.addElement(2);
 
-        // Adding the element into the
-        // hashtable
+        // Adding the element into the hashtable
         h.put(1, "elementA");
         h.put(2, "elementB");
 
@@ -5147,8 +5143,7 @@ class CollectionDemo {
         // Vector element insertion requires addElement(),
         // but hashtable element insertion requires put()
 
-        // Accessing the first element of the
-        // array, vector and hashtable
+        // Accessing the first element of the array, vector and hashtable
         System.out.println(arr[0]);
         System.out.println(v.elementAt(0));
         System.out.println(h.get(1));
@@ -5748,13 +5743,11 @@ public class ArrayDequeDemo {
         // clear() method
         de_que.clear();
 
-        // addFirst() method to insert the
-        // elements at the head
+        // addFirst() method to insert the elements at the head
         de_que.addFirst(564);
         de_que.addFirst(291);
 
-        // addLast() method to insert the
-        // elements at the tail
+        // addLast() method to insert the elements at the tail
         de_que.addLast(24);
         de_que.addLast(14);
 
@@ -5804,12 +5797,10 @@ Set&lt;T&gt; ts = new TreeSet&lt;&gt; ();
 import java.util.*;
 
 public class HashSetDemo {
-
     // Main Method
     public static void main(String args[])
     {
-        // Creating HashSet and
-        // adding elements
+        // Creating HashSet and adding elements
         HashSet&lt;String&gt; hs = new HashSet&lt;String&gt;();
 
         hs.add("Element A");
@@ -5853,8 +5844,7 @@ public class LinkedHashSetDemo {
     // Main Method
     public static void main(String args[])
     {
-        // Creating LinkedHashSet and
-        // adding elements
+        // Creating LinkedHashSet and adding elements
         LinkedHashSet&lt;String&gt; lhs = new LinkedHashSet&lt;String&gt;();
 
         lhs.add("Data Entry");
