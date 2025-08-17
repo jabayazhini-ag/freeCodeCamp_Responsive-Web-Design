@@ -106,7 +106,7 @@ public class HelloWorld {
         System.out.println("Hello, World!");
     }
 }
-                </code></pre>
+ </code></pre>
 
                 <h4>Explanation of the components:</h4>
                 <ul>
@@ -5366,7 +5366,7 @@ elementA
                     </tbody>
                 </table>
 
-                <h3>Interfaces that Extend the Java Collections Interface:</h3>
+                <h3>I. Interfaces that Extend the Java Collections Interface:</h3>
                 <p>The collection framework contains multiple interfaces where every interface is used to store a
                     specific type of data. The following are the interfaces present in the framework.
                 </p>
@@ -5627,7 +5627,7 @@ Alpha Beta Gamma
                 </p>
                 </div>
 
-                <h4>4. Queue Interface:</h4>
+                <h3>4. Queue Interface:</h3>
                 <p>As the name suggests, a <mark><b>Queue</b></mark> interface maintains the <b>FIFO (First-In-First-Out)</b> order similar
                     to a real-world queue line. This interface is dedicated to storing all the elements where the order
                     of the elements matter. For example, whenever we try to book a ticket, the tickets are sold on a
@@ -5668,8 +5668,7 @@ class PriorityQueueDemo {
     public static void main(String args[])
     {
         // Creating empty priority queue
-        PriorityQueue&lt;Integer&gt; pQueue
-            = new PriorityQueue&lt;Integer&gt;();
+        PriorityQueue&lt;Integer&gt; pQueue = new PriorityQueue&lt;Integer&gt;();
 
         // Adding items to the pQueue using add()
         pQueue.add(10);
@@ -5698,7 +5697,7 @@ class PriorityQueueDemo {
     </code></pre>
             </div>
 
-                <h4>5. Deque Interface:</h4>
+                <h3>5. Deque Interface:</h3>
 
                 <p>This is a very slight variation of the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html" target="_blank" class="collectionsLink">queue data
                         structure</a>. <mark><b>Deque</b></mark>, also known as a <b>double-ended queue</b>, is a data structure
@@ -5735,8 +5734,7 @@ public class ArrayDequeDemo {
     public static void main(String[] args)
     {
         // Initializing an deque
-        ArrayDeque&lt;Integer&gt; de_que
-            = new ArrayDeque&lt;Integer&gt;(10);
+        ArrayDeque&lt;Integer&gt; de_que = new ArrayDeque&lt;Integer&gt;(10);
 
         // add() method to insert
         de_que.add(10);
@@ -5773,7 +5771,7 @@ public class ArrayDequeDemo {
     </code></pre>
             </div>
 
-                <h4>6. Set Interface:</h4>
+                <h3>6. Set Interface:</h3>
 
                 <p>A <mark><b>Set</b></mark> is an unordered collection of objects in which <b>duplicate values cannot be stored</b>. This
                     collection is used when we wish to avoid the duplication of the objects and wish to store only the
@@ -5857,8 +5855,7 @@ public class LinkedHashSetDemo {
     {
         // Creating LinkedHashSet and
         // adding elements
-        LinkedHashSet&lt;String&gt; lhs
-            = new LinkedHashSet&lt;String&gt;();
+        LinkedHashSet&lt;String&gt; lhs = new LinkedHashSet&lt;String&gt;();
 
         lhs.add("Data Entry");
         lhs.add("Processing");
@@ -5885,33 +5882,39 @@ With Efficiency
     </code></pre>
                 </div>
 
-                <h4>7. SortedSet Interface:</h4>
-                <p>This interface is very similar to the `Set` interface. The only difference is that this interface has
-                    extra methods that **maintain the ordering of the elements**. The `SortedSet` interface extends the
-                    `Set` interface and is used to handle the data which needs to be sorted. The class which implements
-                    this interface is <i><b>TreeSet</b></i>. Since this class implements the `SortedSet`, we can
-                    instantiate a `SortedSet` object with this class.</p>
-                <p>For example:</p>
+                <h3>7. SortedSet Interface:</h3>
+                <p>This interface is very similar to the <mark><b>Set</b></mark> interface. The only difference is that this interface has
+                    extra methods that <b>maintain the ordering of the elements</b>. The <mark><b>SortedSet</b></mark> interface extends the
+                    <mark><b>Set</b></mark> interface and is used to handle the data which needs to be sorted. The class which implements
+                    this interface is <mark><b>TreeSet</b></mark>. Since this class implements the <b>`SortedSet`</b>, we can
+                    instantiate a <b>`SortedSet`</b> object with this class.
+                </p>
+
+                <h4>For example:</h4>
+
                 <pre><code>
 SortedSet&lt;T&gt; ts = new TreeSet&lt;&gt; ();
 // Where T is the type of the object.
     </code></pre>
-                <p>The class which implements the sorted set interface is <i><b>TreeSet</b></i>.</p>
-                <h5>i). <i><b>TreeSet</b></i></h5>
-                <p>The <i><b>TreeSet</b></i> class uses a Tree (specifically, a Red-Black tree) for storage. The
-                    ordering of the elements is maintained by a set using their **natural ordering** (if elements
-                    implement `Comparable`) whether or not an explicit comparator is provided. This must be consistent
-                    with `equals` if it is to correctly implement the `Set` interface. It can also be ordered by a
-                    `Comparator` provided at set creation time, depending on which constructor is used. It provides
-                    guaranteed $O(\log n)$ time complexity for add, remove, and contains operations.</p>
-                <p>Let's understand <i><b>TreeSet</b></i> with an example:</p>
-                <pre><code class="language-java">
-// Java program to demonstrate the
-// working of a TreeSet
+
+                <p>The class which implements the <mark><b>SortedSet</b></mark> interface is <mark><b>TreeSet</b></mark>.</p>
+
+                <h4>i. TreeSet:</h4>
+
+                <p>The <mark><b>TreeSet</b></mark> class uses a <b>Tree</b> (specifically, a Red-Black tree) for storage. The
+                    ordering of the elements is maintained by a set using their <b>natural ordering</b> (if elements
+                    implement <b>`Comparable`</b>) whether or not an explicit comparator is provided. This must be consistent
+                    with <b>`equals`</b> if it is to correctly implement the <mark><b>Set</b></mark> interface. It can also be ordered by a
+                    <b>`Comparator`</b> provided at set creation time, depending on which constructor is used. It provides
+                    guaranteed <b>O(log n)</b> time complexity for add, remove, and contains operations.
+                </p>
+
+                <p>Let's understand <mark><b>TreeSet</b></mark> with an example:</p>
+                <pre><code>
+// Java program to demonstrate the working of a TreeSet
 import java.util.*;
 
 public class TreeSetDemo {
-
     // Main Method
     public static void main(String args[])
     {
@@ -5933,51 +5936,59 @@ public class TreeSetDemo {
     }
 }
     </code></pre>
-                <p><b>Output:</b></p>
+
+                <div>
+                <h4>Output:</h4>
                 <pre><code>
 Application
 Framework
 Is
 Very useful
     </code></pre>
+                </div>
 
-                <h4>8. <i><b>Map</b></i> Interface</h4>
-                <p>A `Map` is a data structure that supports the **key-value pair** for mapping the data. This interface
-                    **doesn't support duplicate keys** because the same key cannot have multiple mappings; however, it
-                    allows duplicate values for different keys. A `Map` is useful if there is data and we wish to
-                    perform operations on the basis of the key. This `Map` interface is implemented by various classes
-                    like **HashMap, TreeMap**, etc. Since all the subclasses implement the `Map`, we can instantiate a
-                    `Map` object with any of these classes.</p>
-                <p>For example:</p>
+                <h3>8. Map Interface:</h3>
+
+                <p>A <mark><b>Map</b></mark> is a data structure that supports the <b>key-value pair</b> for mapping the data. This interface
+                    <b>doesn't support duplicate keys</b> because the same key cannot have multiple mappings; however, it
+                    allows duplicate values for different keys. A <mark><b>Map</b></mark> is useful if there is data and we wish to
+                    perform operations on the basis of the key. This <mark><b>Map</b></mark> interface is implemented by various classes
+                    like <b><mark>HashMap</mark>, <mark>TreeMap,</mark></b> etc. Since all the subclasses implement the <b>`Map`</b>, we can instantiate a
+                    <b>`Map`</b> object with any of these classes.
+                </p>
+
+                <h4>For example:</h4>
+
                 <pre><code>
 Map&lt;K, V&gt; hm = new HashMap&lt;&gt; ();
 Map&lt;K, V&gt; tm = new TreeMap&lt;&gt; ();
 // Where K is the type of the key and V is the type of the value.
     </code></pre>
-                <p>The frequently used implementation of a `Map` interface is a <i><b>HashMap</b></i>.</p>
-                <h5>i). <i><b>HashMap</b></i></h5>
-                <p><i><b>HashMap</b></i> provides the basic implementation of the `Map` interface of Java. It stores the
-                    data in (Key, Value) pairs. To access a value in a <i><b>HashMap</b></i>, we must know its key.
-                    <i><b>HashMap</b></i> uses a technique called Hashing. Hashing is a technique of converting a large
+
+                <p>The frequently used implementation of a <mark><b>Map</b></mark> interface is a <mark><b>HashMap</b></mark>.</p>
+
+                <h4>i. HashMap:</h4>
+                <p><mark><b>HashMap</b></mark> provides the basic implementation of the <mark><b>Map</b></mark> interface of Java. It stores the
+                    data in <b>(Key, Value)</b> pairs. To access a value in a <b>`HashMap`</b>, we must know its key.
+                    <mark><b>HashMap</b></mark> uses a technique called <b>Hashing</b>. Hashing is a technique of converting a large
                     String (or any object's hash code) to a small integer that represents the same object so that the
-                    indexing and search operations are faster. <i><b>HashSet</b></i> also uses <i><b>HashMap</b></i>
-                    internally. It offers constant-time performance ($O(1)$ on average) for basic operations like `put`,
-                    `get`, and `remove`.</p>
-                <p>Let's understand the <i><b>HashMap</b></i> with an example:</p>
-                <pre><code class="language-java">
-// Java program to demonstrate the
-// working of a HashMap
+                    indexing and search operations are faster. <mark><b>HashSet</b></mark> also uses <mark><b>HashMap</b></mark>
+                    internally. It offers constant-time performance ( <mark><b>O(1)</b></mark> on average ) for basic operations like <mark><b>put</b></mark>,
+                    <mark><b>get</b></mark>, and <mark><b>remove</b></mark>.
+                </p>
+
+                <p>Let's understand the <mark><b>HashMap</b></mark> with an example:</p>
+
+                <pre><code>
+// Java program to demonstrate the working of a HashMap
 import java.util.*;
 
 public class HashMapDemo {
-
     // Main Method
     public static void main(String args[])
     {
-        // Creating HashMap and
-        // adding elements
-        HashMap&lt;Integer, String&gt; hm
-            = new HashMap&lt;Integer, String&gt;();
+        // Creating HashMap and adding elements
+        HashMap&lt;Integer, String&gt; hm = new HashMap&lt;Integer, String&gt;();
 
         hm.put(1, "Data");
         hm.put(2, "Storage");
@@ -5989,40 +6000,42 @@ public class HashMapDemo {
 
         // Traversing through the HashMap using entrySet()
         for (Map.Entry&lt;Integer, String&gt; e : hm.entrySet())
-            System.out.println(e.getKey() + " "
-                               + e.getValue());
+            System.out.println(e.getKey() + " " + e.getValue());
     }
 }
     </code></pre>
-                <p><b>Output:</b> (Order may vary for key-value pairs)</p>
+
+    <div>
+                <h4>Output: (Order may vary for key-value pairs)</h4>
                 <pre><code>
 Value for 1 is DataUpdated
 1 DataUpdated
 2 Storage
 3 System
     </code></pre>
+    </div>         
 
-                ---
-
-                <h3>2. Iterating Through Collections: Iterator & Enhanced For Loop (Re-positioned for flow)</h3>
+                <h3>II. Iterating Through Collections: Iterator & Enhanced For Loop (Re-positioned for flow)</h3>
                 <p>To access and process elements within collections, Java provides two primary mechanisms: the
-                    `Iterator` interface and the enhanced for-each loop.</p>
+                    <b>`Iterator` interface</b> and the <b>enhanced for-each loop.</b></p>
 
-                <h4>2.1. <i><b>Iterator</b></i> Interface</h4>
-                <p>The `Iterator` interface provides a standard way to traverse elements in a collection sequentially
+                <h3>i. `Iterator` Interface:</h3>
+                <p>The <mark><b>Iterator</b></mark> interface provides a standard way to traverse elements in a collection sequentially
                     without exposing the underlying data structure. It's particularly useful when you need to remove
-                    elements safely during iteration or when the collection does not support index-based access (like
-                    `Set`).</p>
+                    elements safely during iteration or when the collection does not support index-based access ( like
+                    <mark><b>Set</b></mark> ).
+                </p>
+
                 <ul>
-                    <li><code>hasNext()</code>: Returns `true` if the iteration has more elements.</li>
-                    <li><code>next()</code>: Returns the next element in the iteration. Throws `NoSuchElementException`
+                    <li><b><mark>hasNext()</mark>:</b> Returns <b>`true`</b> if the iteration has more elements.</li>
+                    <li><b><mark>next()</mark>:</b> Returns the next element in the iteration. Throws <b>`NoSuchElementException`</b>
                         if no more elements.</li>
-                    <li><code>remove()</code>: Removes the last element returned by `next()` from the underlying
+                    <li><b><mark>remove()</mark>:</b> Removes the last element returned by <b>`next()`</b> from the underlying
                         collection (optional operation). This is the only safe way to modify a collection during
                         iteration.</li>
                 </ul>
 
-                <pre><code class="language-java">
+                <pre><code>
 import java.util.*;
 
 public class IteratorExample {
@@ -6046,13 +6059,14 @@ public class IteratorExample {
 }
     </code></pre>
 
-                <h4>2.2. Enhanced For Loop (For-Each Loop)</h4>
-                <p>Introduced in Java 5, the enhanced for loop provides a more concise and readable way to iterate over
-                    arrays and collections (any class that implements `Iterable`). It's ideal when you simply need to
+                <h3>ii. Enhanced For Loop (For-Each Loop):</h3>
+                <p>Introduced in <b>Java 5,</b> the enhanced for loop provides a more concise and readable way to iterate over
+                    <b>arrays</b> and <b>collections</b> ( any class that implements <mark><b>Iterable</b></mark> ). It's ideal when you simply need to
                     access each element and don't require the ability to remove elements during iteration or access them
-                    by index.</p>
+                    by index.
+                </p>
 
-                <pre><code class="language-java">
+                <pre><code>
 import java.util.*;
 
 public class EnhancedForLoopExample {
@@ -6073,22 +6087,21 @@ public class EnhancedForLoopExample {
 }
     </code></pre>
 
-                ---
-
-                <h3>3. Sorting Collections with <i><b>Collections</b></i> Class</h3>
-                <p>The `java.util.Collections` class provides static utility methods for operating on collections. One
-                    of its most frequently used methods is `sort()`, which allows you to sort `List` implementations.
+                <h3>III. Sorting Collections with `Collections` Class:</h3>
+                <p>The <b><mark>java.util.Collections</mark></b> class provides static utility methods for operating on collections. One
+                    of its most frequently used methods is <b><mark>sort()</mark></b>, which allows you to sort <b><mark>List</mark></b> implementations.
                 </p>
+
                 <ul>
-                    <li><code>Collections.sort(List&lt;T&gt; list)</code>: Sorts the elements of the specified list into
-                        ascending order, according to their <i><b>natural ordering</b></i>. This means that the elements
-                        in the list must implement the <i><b>Comparable</b></i> interface.</li>
-                    <li><code>Collections.sort(List&lt;T&gt; list, Comparator&lt;? super T&gt; c)</code>: Sorts the
-                        specified list according to the order induced by the specified <i><b>Comparator</b></i>. This is
+                    <li><b><mark>Collections.sort(List&lt;T&gt; list)</mark>:</b> Sorts the elements of the specified list into
+                        ascending order, according to their <b>natural ordering</b>. This means that the elements
+                        in the list must implement the <b>`Comparable`</b> interface.</li>
+                    <li><b><mark>Collections.sort(List&lt;T&gt; list, Comparator&lt;? super T&gt; c)</mark>:</b> Sorts the
+                        specified list according to the order induced by the specified <b>`Comparator`</b>. This is
                         used for custom sorting logic.</li>
                 </ul>
 
-                <pre><code class="language-java">
+                <pre><code>
 import java.util.*;
 
 public class SortingCollections {
@@ -6110,19 +6123,22 @@ public class SortingCollections {
 }
     </code></pre>
 
-                ---
+                <h3>IV. Custom Sorting: Comparable & Comparator</h3>
+                <p>While <mark><b>Collections.sort()</b></mark> handles natural ordering, you often need to define custom sorting rules
+                    for your own objects. Java provides two interfaces for this purpose:
+                </p>
 
-                <h3>4. Custom Sorting: <i><b>Comparable</b></i> & <i><b>Comparator</b></i></h3>
-                <p>While `Collections.sort()` handles natural ordering, you often need to define custom sorting rules
-                    for your own objects. Java provides two interfaces for this purpose:</p>
+                <h3>i. `Comparable&lt;T&gt;` Interface (Natural Ordering):</h3>
+                <p>The <mark><b>Comparable</b></mark> interface is used to define the <b>natural ordering</b> of
+                    objects of a class. If a class implements <mark><b>Comparable</b></mark>, its instances can be sorted
+                    automatically by methods like <mark><b>Collections.sort()</b></mark> or used in sorted collections like
+                    <mark><b>TreeSet</b></mark> and <mark><b>TreeMap</b></mark> (for <b>keys</b>). 
+                </p>
 
-                <h4>4.1. <i><b>Comparable&lt;T&gt;</b></i> Interface (Natural Ordering)</h4>
-                <p>The <i><b>Comparable</b></i> interface is used to define the <i><b>natural ordering</b></i> of
-                    objects of a class. If a class implements <i><b>Comparable</b></i>, its instances can be sorted
-                    automatically by methods like `Collections.sort()` or used in sorted collections like
-                    <i><b>TreeSet</b></i> and <i><b>TreeMap</b></i> (for keys). It has a single method:</p>
+                <p>It has a single method:</p>
+
                 <ul>
-                    <li><code>int compareTo(T other)</code>: Compares this object with the specified object for order.
+                    <li><b><mark>int compareTo(T other)</mark>:</b> Compares this object with the specified object for order.
                         Returns a negative integer, zero, or a positive integer as this object is less than, equal to,
                         or greater than the specified object.</li>
                 </ul>
@@ -6171,24 +6187,28 @@ public class ComparableExample {
 }
     </code></pre>
 
-                <h4>4.2. <i><b>Comparator&lt;T&gt;</b></i> Interface (Custom Ordering)</h4>
-                <p>The <i><b>Comparator</b></i> interface is used to define an <i><b>external</b></i> or
-                    <i><b>custom</b></i> ordering. You create separate <i><b>Comparator</b></i> classes (or use lambda
-                    expressions) to specify how objects should be sorted. This is useful when:</p>
+                <h3>ii. Comparator&lt;T&gt; Interface (Custom Ordering):</h3>
+                <p>The <mark><b>Comparator</b></mark> interface is used to define an <b>external</b> or
+                    <b>custom</b> ordering. You create separate <mark><b>Comparator</b></mark> classes (or use <b>lambda
+                    expressions</b>) to specify how objects should be sorted. This is useful when:
+                </p>
+
                 <ul>
-                    <li>You want to sort objects of a class that does not implement <i><b>Comparable</b></i>.</li>
-                    <li>You want to sort objects in different ways (e.g., sort <i><b>Student</b></i> by name, then by
+                    <li>You want to sort objects of a class that does not implement <b>Comparable</b>.</li>
+                    <li>You want to sort objects in different ways (e.g., sort <b>Student</b> by name, then by
                         age).</li>
-                    <li>You don't want to modify the original class to implement <i><b>Comparable</b></i>.</li>
+                    <li>You don't want to modify the original class to implement <b>Comparable</b>.</li>
                 </ul>
+
                 <p>It has a single abstract method (making it a functional interface):</p>
+
                 <ul>
-                    <li><code>int compare(T o1, T o2)</code>: Compares its two arguments for order. Returns a negative
+                    <li><b><mark>int compare(T o1, T o2)</mark>:</b> Compares its two arguments for order. Returns a negative
                         integer, zero, or a positive integer as the first argument is less than, equal to, or greater
                         than the second.</li>
                 </ul>
 
-                <pre><code class="language-java">
+                <pre><code>
 import java.util.*;
 
 // Reusing the Student class from the Comparable example
@@ -6239,12 +6259,13 @@ public class ComparatorExample {
     </code></pre>
 
                 <div class="highlight">
-                    <p><b>Note:</b> The Java Collections Framework is an integral part of Data Structures and Algorithms
-                        (DSA). Each collection type (List, Set, Map) represents a specific data structure (e.g., arrays,
-                        linked lists, hash tables, trees), and the operations performed on them (add, remove, sort,
-                        search) are direct applications of various algorithms. A deep understanding of collections not
+                    <p><b>Note:</b> The Java <b>Collections Framework</b> is an <b>integral part of Data Structures and Algorithms
+                        (DSA).</b> Each collection type <b>(List, Set, Map)</b> represents a specific data structure <b>(e.g., arrays,
+                        linked lists, hash tables, trees),</b> and the operations performed on them <b>(add, remove, sort,
+                        search)</b> are direct applications of various algorithms. A deep understanding of collections not
                         only simplifies Java development but also solidifies your grasp of fundamental DSA concepts,
-                        which is crucial for building efficient and scalable software.</p>
+                        which is crucial for building efficient and scalable software.
+                    </p>
                 </div>
             </section>
 
