@@ -6379,7 +6379,8 @@ public class SimpleGUI {
                     This provides <strong>database independence</strong>, meaning <b>you can write Java code once and run
                     it against different databases simply by changing the JDBC driver and connection URL.</b> It
                     standardizes how Java applications perform common database operations, such as <strong>connecting to
-                        a database, executing SQL statements, and processing the results</strong>.</p>
+                        a database, executing SQL statements, and processing the results</strong>.
+                </p>
 
                 <h3>3. How JDBC Works: The Role of Drivers</h3>
                 <p>At the <b>heart</b> of JDBC's functionality are <strong>JDBC drivers</strong>. These are software components
@@ -6388,7 +6389,8 @@ public class SimpleGUI {
                     interacting with these drivers, which then handle the low-level communication. <b>Database vendors</b>
                     supply these drivers <b>(e.g., MySQL Connector/J for MySQL, Oracle JDBC Driver for Oracle databases).</b>
                     This layered approach ensures that your Java application remains independent of the database's
-                    internal workings.</p>
+                    internal workings.
+                </p>
 
                 <h3>4. Key Capabilities Provided by JDBC:</h3>
                 <p>JDBC offers a comprehensive set of features for database interaction:</p>
@@ -6448,7 +6450,8 @@ public class JdbcExample {
                     <p><strong>Note: </strong>In essence, JDBC provides the essential framework for Java applications to
                         perform all necessary
                         interactions with <b>relational databases,</b> making it a <b>cornerstone</b> for developing data-driven
-                        <b>enterprise applications.</b></p>
+                        <b>enterprise applications.</b>
+                    </p>
                 </div>
             </section>
 
@@ -6459,15 +6462,16 @@ public class JdbcExample {
 
                 <h3>1. Spring Boot Basics:</h3>
                 <p>Spring Boot simplifies the setup of Spring applications with default configurations and embedded
-                    servers. It's an opinionated framework that aims to <b>get Spring applications up and running with
+                    servers. It's an opinionated framework that aims to get <b>Spring applications up</b> and <b>running with
                         minimal effort</b>, reducing the boilerplate code and configuration often associated with
                     traditional
-                    Spring development.</p>
+                    Spring development.
+                </p>
 
                 <h4>Why Spring Boot? The Problem It Solves</h4>
                 <p>Before Spring Boot, setting up a Spring application, especially a web application, often involved
-                    significant manual configuration (XML or Java-based), dependency management, and server setup (like
-                    deploying to Tomcat). This could be time-consuming and error-prone. Spring Boot addresses these
+                    significant manual configuration <b>(XML or Java-based),</b> dependency management, and server setup (like
+                    <b>deploying to Tomcat</b>). This could be <b>time-consuming and error-prone.</b> Spring Boot addresses these
                     challenges by:</p>
                 <ul>
                     <li><strong>Reducing Boilerplate Code:</strong> It leverages conventions over configuration,
@@ -6478,108 +6482,108 @@ public class JdbcExample {
                         This means less manual configuration is required.</li>
                     <li><strong>Embedded Servers:</strong> It includes embedded servlet containers like <b>Tomcat,
                             Jetty,
-                            or Undertow</b> directly within the executable JAR, eliminating the need for external server
+                            or Undertow</b> directly within the executable <b>JAR</b>, eliminating the need for external server
                         installations and deployments. This makes applications self-contained and easier to run.</li>
                     <li><strong>Opinionated Defaults:</strong> Spring Boot makes sensible default choices for various
                         configurations, allowing developers to start quickly. If needed, these defaults can be easily
                         overridden.</li>
                     <li><strong>Production-Ready Features:</strong> It provides features like externalized
-                        configuration, health checks, metrics, and monitoring tools (via Spring Boot Actuator) that are
+                        configuration, health checks, metrics, and monitoring tools <b>(via Spring Boot Actuator)</b> that are
                         crucial for deploying applications to production environments.</li>
                 </ul>
 
-                <h4>Key Features and Concepts of Spring Boot</h4>
+                <h4>Key Features and Concepts of Spring Boot:</h4>
                 <ul>
                     <li>
-                        <strong>Auto-Configuration:</strong> This is a cornerstone of Spring Boot. Based on the JAR
+                        <strong>Auto-Configuration:</strong> This is a cornerstone of Spring Boot. Based on the <b>JAR</b>
                         dependencies present in your classpath, Spring Boot automatically configures many aspects of
-                        your application. For example, if you add the `spring-boot-starter-web` dependency, it
-                        auto-configures Spring MVC, an embedded Tomcat server, and necessary dispatchers.
+                        your application. For example, if you add the <mark><b>spring-boot-starter-web</b></mark> dependency, it
+                        <b>auto-configures Spring MVC,</b> an embedded <b>Tomcat server,</b> and necessary dispatchers.
                     </li>
                     <li>
                         <strong>Spring Boot Starters:</strong> These are convenient dependency descriptors that you can
                         include in your project. Each starter brings a set of transitive dependencies that are commonly
-                        used together for a particular functionality (e.g., `spring-boot-starter-data-jpa` for database
-                        access, `spring-boot-starter-test` for testing). They simplify dependency management
+                        used together for a particular functionality (e.g., <mark><b>spring-boot-starter-data-jpa</b></mark> for <b>database
+                        access,</b> <mark><b>spring-boot-starter-test</b></mark> for <b>testing</b>). They simplify dependency management
                         significantly.
                     </li>
                     <li>
                         <strong>No XML Configuration:</strong> While Spring Framework itself supports Java-based
-                        configuration, Spring Boot heavily promotes and facilitates entirely XML-free development,
+                        configuration, Spring Boot heavily promotes and facilitates entirely <b>XML-free</b> development,
                         relying on Java configurations and annotations.
                     </li>
                     <li>
                         <strong>Embedded Servers:</strong> As mentioned, Spring Boot applications can run as standalone
-                        JARs with built-in servers (Tomcat, Jetty, Undertow). This removes the need for traditional WAR
+                        <b>JARs</b> with built-in servers <b>(Tomcat, Jetty, Undertow).</b> This removes the need for traditional <b>WAR</b>
                         file deployments.
                     </li>
                     <li>
-                        <strong>Spring Boot Actuator:</strong> This module provides production-ready features to monitor
-                        and manage your application. It offers various endpoints (e.g., `/health`, `/info`, `/metrics`)
+                        <strong>Spring Boot Actuator:</strong> This module provides production-ready features to <b>monitor
+                        and manage</b> your application. It offers various endpoints <b>(e.g., <mark>/health</mark>, <mark>/info</mark>, <mark>/metrics</mark>)</b>
                         to inspect application health, configuration, environment, and more.
                     </li>
                     <li>
                         <strong>Externalized Configuration:</strong> Spring Boot allows you to externalize your
-                        configuration (e.g., database connection details, server ports) in various ways
-                        (application.properties, application.yml, environment variables, command-line arguments), making
+                        configuration <b>(e.g., database connection details, server ports)</b> in various ways
+                        <b>(<mark>application.properties</mark>, <mark>application.yml</mark>, environment variables, command-line arguments),</b> making
                         it easy to run the same application in different environments without code changes.
                     </li>
                     <li>
-                        <strong>Command-Line Interface (CLI):</strong> Spring Boot provides a CLI tool that you can use
-                        to quickly create Spring projects from the command line, run Groovy scripts, and manage
-                        dependencies.
+                        <strong>Command-Line Interface (CLI):</strong> Spring Boot provides a <b>CLI tool</b> that you can use
+                        to quickly create Spring projects from the command line, run <b>Groovy scripts,</b> and manage
+                        <b>dependencies.</b>
                     </li>
                 </ul>
 
                 <div class="highlight">
                     <p><strong>Note: </strong>By abstracting away much of the initial setup and configuration, Spring
                         Boot allows developers to
-                        focus more on writing business logic and less on infrastructure, significantly accelerating the
-                        development of robust, production-ready Spring applications.</p>
+                        focus more on writing <b>business logic</b> and less on infrastructure, significantly accelerating the
+                        development of <b>robust, production-ready</b> Spring applications.</p>
                 </div>
 
-                <h3>2. Spring Boot Annotations</h3>
-                <p>Annotations are fundamental to Spring Boot, providing metadata that tells Spring how to configure and
-                    manage your application's components. They significantly reduce the need for XML configuration,
-                    making code cleaner and more readable. Here are a few essential Spring Boot annotations:</p>
+                <h3>2. Spring Boot Annotations:</h3>
+                <p>Annotations are fundamental to Spring Boot, providing <b>metadata</b> that tells Spring how to configure and
+                    manage your application's components. They significantly <b>reduce</b> the need for <b>XML configuration,</b>
+                    making <b>code cleaner and more readable.</b> Here are a few essential Spring Boot annotations:</p>
                 <ul>
                     <li>
-                        <strong>@SpringBootApplication:</strong> This is a convenience annotation that marks the main
+                        <strong><mark>@SpringBootApplication</mark>:</strong> This is a convenience annotation that marks the main
                         class of a Spring Boot application. It's a meta-annotation that combines three other important
                         annotations:
                         <ul>
-                            <li><strong>@Configuration:</strong> Designates a class as a source of bean definitions for
+                            <li><strong><mark>@Configuration</mark>:</strong> Designates a class as a source of bean definitions for
                                 the Spring application context.</li>
-                            <li><strong>@EnableAutoConfiguration:</strong> Tells Spring Boot to start adding beans based
+                            <li><strong><mark>@EnableAutoConfiguration</mark>:</strong> Tells Spring Boot to start adding beans based
                                 on classpath settings, other beans, and various property settings. This is where the
                                 magic of auto-configuration happens.</li>
-                            <li><strong>@ComponentScan:</strong> Instructs Spring to scan for components (like
+                            <li><strong><mark>@ComponentScan</mark>:</strong> Instructs Spring to scan for components (like
                                 controllers, services, repositories) in the current package and its sub-packages,
                                 automatically registering them as beans.</li>
                         </ul>
                     </li>
                     <li>
-                        <strong>@RestController:</strong> A specialized version of <b>@Controller</b> that's used in
-                        RESTful web services. It combines <b>@Controller</b> and <b>@ResponseBody</b>, meaning that
+                        <strong><mark>@RestController</mark>:</strong> A specialized version of <mark><b>@Controller</b></mark> that's used in
+                        <b>RESTful web services.</b> It combines <mark><b>@Controller</b></mark> and <mark><b>@ResponseBody</b></mark>, meaning that
                         methods
-                        within this class will directly return data (e.g., JSON or XML) instead of views.
+                        within this class will directly return data <b>(e.g., JSON or XML)</b> instead of views.
                     </li>
                     <li>
-                        <strong>@Service:</strong> Marks a class as a service component, typically holding business
-                        logic. It's a specialization of <b>@Component</b>.
+                        <strong><mark>@Service</mark>:</strong> Marks a class as a service component, typically holding business
+                        logic. It's a specialization of <mark><b>@Component</b></mark>.
                     </li>
                     <li>
-                        <strong>@Repository:</strong> Marks a class as a Data Access Object (DAO), indicating that it
+                        <strong><mark>@Repository</mark>:</strong> Marks a class as a <b>Data Access Object (DAO),</b> indicating that it
                         deals with data storage, retrieval, and manipulation. It also provides automatic exception
-                        translation. It's another specialization of <b>@Component</b>.
+                        translation. It's another specialization of <mark><b>@Component</b></mark>.
                     </li>
                     <li>
-                        <strong>@Autowired:</strong> Used for automatic dependency injection. When you annotate a field,
-                        constructor, or setter method with <b>@Autowired</b>, Spring automatically finds and injects the
+                        <strong><mark>@Autowired</mark>:</strong> Used for automatic dependency injection. When you annotate a field,
+                        constructor, or setter method with <mark><b>@Autowired</b></mark>, Spring automatically finds and injects the
                         required dependency (a bean) into that location.
                     </li>
                     <li>
-                        <strong>@Bean:</strong> A method-level annotation used within a <b>@Configuration</b> class to
+                        <strong><mark>@Bean</mark>:</strong> A method-level annotation used within a <mark><b>@Configuration</b></mark> class to
                         declare a Spring-managed bean. The method's return value will be registered as a bean in the
                         Spring application context.
                     </li>
@@ -6605,15 +6609,15 @@ class HelloController {
     </code></pre>
 
                 <div class="highlight">
-                    <p><strong>Spring vs. Spring Boot: A Quick Glance: </strong><br><br>While often used
+                    <p><strong>Spring vs. Spring Boot: A Quick Glance </strong><br><br>While often used
                         interchangeably,
                         <b>Spring Framework</b> is the extensive, foundational platform for Java application
                         development, providing core features like <b>Dependency Injection</b>.<br><br> <b>Spring
                             Boot</b>, on
                         the other hand, is an opinionated extension that builds on Spring to enable <b>rapid application
-                            development</b> by minimizing configuration, offering auto-configuration, and embedding
-                        servers for standalone execution.<br><br> Think of Spring as the engine, and Spring Boot as the
-                        ready-to-drive car built with that engine.
+                            development</b> by minimizing configuration, offering <b>auto-configuration,</b> and embedding
+                        servers for standalone execution.<br><br> <b><q>Think of Spring as the engine, and Spring Boot as the
+                        ready-to-drive car built with that engine</q>.</b>
                     </p>
                 </div>
             </section>
