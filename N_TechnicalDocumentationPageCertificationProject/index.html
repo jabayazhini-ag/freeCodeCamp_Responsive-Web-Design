@@ -6264,25 +6264,26 @@ public class ComparatorExample {
                     <h2>Module IV: GUI</h2>
                 </header>
 
-                <h3>1. Introduction to Swing</h3>
-                <p>Swing is a GUI widget toolkit for Java that provides a rich set of components for building graphical
-                    interfaces. Developed by Sun Microsystems (now Oracle), Swing was introduced as part of the Java
-                    Foundation Classes (JFC) and represents a significant evolution from its predecessor, AWT (Abstract
-                    Window Toolkit).</p>
+                <h3>1. Introduction to Swing:</h3>
+                <p><b>Swing</b> is a <b>GUI widget toolkit for Java</b> that provides a rich set of components for building <b>graphical
+                    interfaces.</b> Developed by <b>Sun Microsystems (now Oracle),</b> Swing was introduced as part of the <b>Java
+                    Foundation Classes (JFC)</b> and represents a significant evolution from its predecessor, <b>AWT (Abstract
+                    Window Toolkit).</b>
+                </p>
 
                 <h3>2. Key Characteristics of Swing:</h3>
                 <ul>
                     <li>
                         <strong>Platform Independence (Lightweight Components):</strong> Unlike AWT components which are
-                        "heavyweight" and rely on the underlying operating system's native peer components, Swing
-                        components are "lightweight." This means they are largely drawn by Java code rather than by the
-                        OS, leading to a consistent look and feel across different platforms (Windows, macOS, Linux) and
-                        greater flexibility in customization. This "write once, run anywhere" philosophy is central to
+                        <q>heavyweight</q> and rely on the underlying operating system's native peer components, Swing
+                        components are <b><q>lightweight</q></b>. This means they are largely drawn by Java code rather than by the
+                        OS, leading to a consistent look and feel across different platforms <b>(Windows, macOS, Linux)</b> and
+                        greater flexibility in customization. This <b><q>write once, run anywhere</q></b> philosophy is central to
                         Java.
                     </li>
                     <li>
-                        <strong>Rich Set of Components:</strong> Swing offers a comprehensive library of pre-built GUI
-                        components, including buttons <mark>JButton</mark>, text fields <mark>JTextField</mark>, labels
+                        <strong>Rich Set of Components:</strong> Swing offers a comprehensive library of <b>pre-built GUI
+                        components,</b> including buttons <mark>JButton</mark>, text fields <mark>JTextField</mark>, labels
                         <mark>JLabel</mark>, checkboxes <mark>JCheckBox</mark>, radio buttons <mark>JRadioButton</mark>,
                         menus <mark>JMenu</mark> <mark>JMenuItem</mark>, tables <mark>JTable</mark>, trees
                         <mark>JTree</mark>, tabbed panes <mark>JTabbedPane</mark>, and more. These components are
@@ -6292,14 +6293,14 @@ public class ComparatorExample {
                         <strong>Pluggable Look and Feel (L&F):</strong> Swing allows developers to change the appearance
                         of the GUI without modifying the underlying code. This is achieved through Pluggable Look and
                         Feel. You can make a Swing application look like a native Windows application, a macOS
-                        application, or use Java's own "Metal" (or "Ocean") L&F, or even create custom L&Fs. This
+                        application, or use Java's own <b><q>Metal</q></b> (or <b><q>Ocean</q></b>) L&F, or even create custom L&Fs. This
                         enhances user experience by allowing applications to blend in with the user's preferred desktop
                         theme.
                     </li>
                     <li>
                         <strong>Model-View-Controller (MVC) Architecture:</strong> Many Swing components are designed
-                        around a modified MVC architecture. This separation of concerns means that the data (model), its
-                        visual representation (view), and the handling of user interactions (controller) are distinct.
+                        around a modified MVC architecture. This separation of concerns means that the data <b>(model),</b> its
+                        visual representation <b>(view),</b> and the handling of user interactions <b>(controller)</b> are distinct.
                         This design promotes code reusability, modularity, and easier maintenance. For instance, a
                         <mark>JTable</mark>'s data is managed by a <mark>TableModel</mark>, its
                         appearance by a <mark>TableCellRenderer</mark>, and user input by a
@@ -6309,21 +6310,14 @@ public class ComparatorExample {
                         <strong>Event-Driven Programming:</strong> Swing applications are inherently event-driven. User
                         interactions (like button clicks, mouse movements, key presses) generate events. Developers
                         write event listeners that respond to these specific events, allowing the application to react
-                        dynamically to user input. This paradigm makes GUIs interactive and responsive.
+                        dynamically to user input. This paradigm makes GUIs <b>interactive and responsive.</b>
                     </li>
                     <li>
                         <strong>Accessibility Features:</strong> Swing provides features that aid in making applications
                         accessible to users with disabilities, such as support for screen readers and keyboard
                         navigation.
                     </li>
-                </ul>
-
-                <div class="highlight">
-                    <p><strong>Note: </strong>While newer UI toolkits like JavaFX have emerged, Swing remains a robust
-                        and widely used framework
-                        for developing desktop applications in Java, especially for enterprise-level software due to its
-                        maturity and extensive component library.</p>
-                </div>
+                </ul>               
 
                 <pre><code>
 import javax.swing.*; // Imports all classes from the Swing package
@@ -6356,6 +6350,14 @@ public class SimpleGUI {
     }
 }
     </code></pre>
+
+                <div class="highlight">
+                    <p><strong>Note: </strong>While <b>newer UI toolkits</b> like <b>JavaFX</b> have emerged, <b>Swing</b> remains a robust
+                        and widely used framework
+                        for developing <b>desktop applications</b> in Java, especially for <b>enterprise-level software</b> due to its
+                        maturity and extensive component library.
+                    </p>
+                </div>
             </section>
 
             <section class="main-section" id="module5_database">
@@ -6363,36 +6365,36 @@ public class SimpleGUI {
                     <h2>Module V: Database</h2>
                 </header>
 
-                <h3>1. JDBC Basics</h3>
+                <h3>1. JDBC Basics:</h3>
                 <p>Java Database Connectivity (JDBC) is an <strong>API (Application Programming Interface)</strong> for
                     connecting and executing queries on a database. It serves as a standard for Java applications to
                     interact with various <strong>relational database management systems (RDBMS)</strong> like
-                    <i><b>MySQL,
-                            Oracle, PostgreSQL, SQL Server, and more</b></i>.
+                    <b><i>MySQL,
+                            Oracle, PostgreSQL, SQL Server,</i> and more</b>.
                 </p>
 
-                <h3>2. Purpose and Importance of JDBC</h3>
+                <h3>2. Purpose and Importance of JDBC:</h3>
                 <p>JDBC acts as a crucial bridge, allowing Java programs to communicate with a wide range of databases
                     without needing to know the intricate details of each database's specific communication protocols.
-                    This provides <strong>database independence</strong>, meaning you can write Java code once and run
-                    it against different databases simply by changing the JDBC driver and connection URL. It
+                    This provides <strong>database independence</strong>, meaning <b>you can write Java code once and run
+                    it against different databases simply by changing the JDBC driver and connection URL.</b> It
                     standardizes how Java applications perform common database operations, such as <strong>connecting to
                         a database, executing SQL statements, and processing the results</strong>.</p>
 
                 <h3>3. How JDBC Works: The Role of Drivers</h3>
-                <p>At the heart of JDBC's functionality are <strong>JDBC drivers</strong>. These are software components
-                    that translate the generic JDBC API calls made by your Java application into the specific network
-                    protocols and SQL dialects understood by a particular database. When you use JDBC, you're
-                    interacting with these drivers, which then handle the low-level communication. Database vendors
-                    supply these drivers (e.g., MySQL Connector/J for MySQL, Oracle JDBC Driver for Oracle databases).
+                <p>At the <b>heart</b> of JDBC's functionality are <strong>JDBC drivers</strong>. These are software components
+                    that translate the generic <b>JDBC API</b> calls made by your Java application into the specific <b>network
+                    protocols</b> and <b>SQL dialects</b> understood by a particular database. When you use <b>JDBC,</b> you're
+                    interacting with these drivers, which then handle the low-level communication. <b>Database vendors</b>
+                    supply these drivers <b>(e.g., MySQL Connector/J for MySQL, Oracle JDBC Driver for Oracle databases).</b>
                     This layered approach ensures that your Java application remains independent of the database's
                     internal workings.</p>
 
-                <h3>4. Key Capabilities Provided by JDBC</h3>
+                <h3>4. Key Capabilities Provided by JDBC:</h3>
                 <p>JDBC offers a comprehensive set of features for database interaction:</p>
                 <ul>
-                    <li><strong>Establishing and Managing Connections:</strong> It provides mechanisms to open and close
-                        connections to databases, handling connection pooling for efficient resource management.</li>
+                    <li><strong>Establishing and Managing Connections:</strong> It provides mechanisms to <b>open</b> and <b>close</b>
+                        connections to databases, handling <b>connection pooling</b> for efficient resource management.</li>
                     <li><strong>Executing SQL Statements:</strong> You can send various types of SQL statements,
                         including:
                         <ul>
@@ -6406,30 +6408,23 @@ public class SimpleGUI {
                                 <strong>CREATE TABLE</strong>, <strong>ALTER TABLE</strong>, and <strong>DROP
                                     TABLE</strong>.
                             </li>
-                            <li><strong>Stored Procedures:</strong> Support for executing pre-compiled routines stored
+                            <li><strong>Stored Procedures:</strong> Support for executing <b>pre-compiled routines</b> stored
                                 within the
                                 database.</li>
                         </ul>
-                    </li>
-                    <li><strong>Processing Result Sets:</strong> After executing a SELECT query, JDBC provides a
+                    </li>                    
+                    <li><strong>Processing Result Sets:</strong> After executing a <b>SELECT</b> query, <b>JDBC</b> provides a
                         <strong>ResultSet</strong> object that allows you to efficiently navigate through the returned
-                        rows and retrieve data from individual columns by name or index.
+                        rows and retrieve data from <b>individual columns</b> by <b>name or index.</b>
                     </li>
                     <li><strong>Transaction Management:</strong> JDBC supports database transactions, allowing you to
-                        group multiple SQL operations into a single atomic unit. This ensures data consistency; either
-                        all operations within the transaction succeed, or none of them do (if a rollback occurs).</li>
-                    <li><strong>Error Handling:</strong> It defines a robust exception hierarchy (centered around
-                        <strong>SQLException</strong>) to handle database-specific errors and warnings, enabling
+                        <b>group multiple SQL operations into a single atomic unit.</b> This ensures data consistency; either
+                        all operations within the transaction succeed, or none of them do <b>(if a rollback occurs).</b></li>
+                    <li><strong>Error Handling:</strong> It defines a robust <b>exception hierarchy</b> (centered around
+                        <strong>SQLException</strong>) to handle <b>database-specific errors</b> and <b>warnings,</b> enabling
                         reliable application development.
                     </li>
-                </ul>
-
-                <div class="highlight">
-                    <p><strong>Note: </strong>In essence, JDBC provides the essential framework for Java applications to
-                        perform all necessary
-                        interactions with relational databases, making it a cornerstone for developing data-driven
-                        enterprise applications.</p>
-                </div>
+                </ul>                
 
                 <pre><code>
 import java.sql.*;
@@ -6448,6 +6443,13 @@ public class JdbcExample {
     }
 }
     </code></pre>
+
+                <div class="highlight">
+                    <p><strong>Note: </strong>In essence, JDBC provides the essential framework for Java applications to
+                        perform all necessary
+                        interactions with <b>relational databases,</b> making it a <b>cornerstone</b> for developing data-driven
+                        <b>enterprise applications.</b></p>
+                </div>
             </section>
 
             <section class="main-section" id="module6_spring_boot">
@@ -6455,7 +6457,7 @@ public class JdbcExample {
                     <h2>Module VI: Spring Boot</h2>
                 </header>
 
-                <h3>1. Spring Boot Basics</h3>
+                <h3>1. Spring Boot Basics:</h3>
                 <p>Spring Boot simplifies the setup of Spring applications with default configurations and embedded
                     servers. It's an opinionated framework that aims to <b>get Spring applications up and running with
                         minimal effort</b>, reducing the boilerplate code and configuration often associated with
