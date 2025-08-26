@@ -6368,9 +6368,9 @@ public class SimpleGUI {
                 <h3>1. JDBC Basics:</h3>
                 <p>Java Database Connectivity (JDBC) is an <strong>API (Application Programming Interface)</strong> for
                     connecting and executing queries on a database. It serves as a standard for Java applications to
-                    interact with various <strong>relational database management systems (RDBMS)</strong> like
+                    interact with various <strong>Relational Database Management Systems (RDBMS)</strong> like
                     <b><i>MySQL,
-                            Oracle, PostgreSQL, SQL Server,</i> and more</b>.
+                            Oracle, PostgreSQL, SQL Server,</i></b> and more.
                 </p>
 
                 <h3>2. Purpose and Importance of JDBC:</h3>
@@ -6401,29 +6401,29 @@ public class SimpleGUI {
                         including:
                         <ul>
                             <li><strong>DML (Data Manipulation Language):</strong> For operations like
-                                <strong>SELECT</strong>
-                                (retrieving data), <strong>INSERT</strong> (adding data), <strong>UPDATE</strong>
-                                (modifying data), and <strong>DELETE</strong> (removing data).
+                                <mark><strong>SELECT</strong></mark>
+                                (retrieving data), <mark><strong>INSERT</strong></mark> (adding data), <mark><strong>UPDATE</strong></mark>
+                                (modifying data), and <mark><strong>DELETE</strong></mark> (removing data).
                             </li>
                             <li><strong>DDL (Data Definition Language):</strong> For defining or modifying database
                                 schemas, such as
-                                <strong>CREATE TABLE</strong>, <strong>ALTER TABLE</strong>, and <strong>DROP
-                                    TABLE</strong>.
+                                <mark><strong>CREATE TABLE</strong></mark>, <mark><strong>ALTER TABLE</strong></mark>, and <mark><strong>DROP
+                                    TABLE</strong></mark>.
                             </li>
                             <li><strong>Stored Procedures:</strong> Support for executing <b>pre-compiled routines</b> stored
                                 within the
                                 database.</li>
                         </ul>
                     </li>                    
-                    <li><strong>Processing Result Sets:</strong> After executing a <b>SELECT</b> query, <b>JDBC</b> provides a
-                        <strong>ResultSet</strong> object that allows you to efficiently navigate through the returned
+                    <li><strong>Processing Result Sets:</strong> After executing a <mark><b>SELECT</b></mark> query, <b>JDBC</b> provides a
+                        <mark><strong>ResultSet</strong></mark> object that allows you to efficiently navigate through the returned
                         rows and retrieve data from <b>individual columns</b> by <b>name or index.</b>
                     </li>
                     <li><strong>Transaction Management:</strong> JDBC supports database transactions, allowing you to
                         <b>group multiple SQL operations into a single atomic unit.</b> This ensures data consistency; either
                         all operations within the transaction succeed, or none of them do <b>(if a rollback occurs).</b></li>
                     <li><strong>Error Handling:</strong> It defines a robust <b>exception hierarchy</b> (centered around
-                        <strong>SQLException</strong>) to handle <b>database-specific errors</b> and <b>warnings,</b> enabling
+                        <strong>`SQLException`</strong>) to handle <b>database-specific errors</b> and <b>warnings,</b> enabling
                         reliable application development.
                     </li>
                 </ul>                
@@ -6470,8 +6470,8 @@ public class JdbcExample {
 
                 <h4>Why Spring Boot? The Problem It Solves</h4>
                 <p>Before Spring Boot, setting up a Spring application, especially a web application, often involved
-                    significant manual configuration <b>(XML or Java-based),</b> dependency management, and server setup (like
-                    <b>deploying to Tomcat</b>). This could be <b>time-consuming and error-prone.</b> Spring Boot addresses these
+                    significant manual configuration <b><i>(XML</i> or <i>Java-based)</i>,</b> dependency management, and server setup (like
+                    <b>deploying to <i>Tomcat</i></b>). This could be <b>time-consuming and error-prone.</b> Spring Boot addresses these
                     challenges by:</p>
                 <ul>
                     <li><strong>Reducing Boilerplate Code:</strong> It leverages conventions over configuration,
@@ -6627,16 +6627,20 @@ class HelloController {
                     <h2>Module VII: AOP</h2>
                 </header>
 
-                <h3>1. Aspect-Oriented Programming (AOP)</h3>
+                <h3>1. Aspect-Oriented Programming (AOP):</h3>
                 <p>Aspect-Oriented Programming (AOP) is a programming paradigm that aims to <strong>modularize
-                        cross-cutting concerns</strong>. It helps separate concerns like logging, security, transaction
-                    management, caching, and performance monitoring from the core business logic of an application. By
-                    doing so, AOP promotes greater modularity, reusability, and maintainability of code.</p>
+                        cross-cutting concerns.</strong> It helps separate concerns like <b>logging, security, transaction
+                    management, caching,</b> and <b>performance monitoring</b> from the <b>core business logic</b> of an application. By
+                    doing so, <b>AOP</b> promotes greater <b>modularity, reusability,</b> and <b>maintainability</b> of <b>code.</b>
+                </p>
 
-                <h4>Understanding Cross-Cutting Concerns</h4>
-                <p>In traditional object-oriented programming (OOP), certain functionalities tend to spread across
-                    multiple modules and layers of an application. These are called <strong>cross-cutting
-                        concerns</strong>. For example:</p>
+                <h4>Understanding Cross-Cutting Concerns:</h4>
+                <p>In traditional <b>object-oriented programming (OOP),</b> certain functionalities tend to spread across
+                    <b>multiple modules</b> and <b>layers</b> of an application. These are called <strong>cross-cutting
+                        concerns</strong>. 
+                </p>
+
+                <h4>For Example:</h4>
                 <ul>
                     <li><strong>Logging:</strong> Almost every method might need logging before or after execution to
                         track flow or debug.</li>
@@ -6647,8 +6651,9 @@ class HelloController {
                     <li><strong>Caching:</strong> Implementing caching logic to improve performance often involves
                         adding checks around method calls.</li>
                 </ul>
-                <p>Without AOP, developers would have to sprinkle the code for these concerns throughout the
-                    application, leading to:</p>
+
+                <p><b>Without AOP, developers would have to sprinkle the code for these concerns throughout the
+                    application, leading to:</b></p>
                 <ul>
                     <li><strong>Code Tangling:</strong> Business logic gets "tangled" with infrastructure concerns,
                         making it harder to understand and modify.</li>
@@ -6657,13 +6662,14 @@ class HelloController {
                         requirements change).</li>
                 </ul>
 
-                <h4>How AOP Solves These Problems</h4>
-                <p>AOP introduces new constructs to encapsulate these cross-cutting concerns into reusable modules
-                    called <strong>aspects</strong>. It then defines mechanisms to <b>"weave"</b> these aspects into the
+                <h4>How AOP Solves These Problems:</h4>
+                <p>AOP introduces new constructs to encapsulate these <b>cross-cutting concerns</b> into reusable modules
+                    called <strong>aspects</strong>. It then defines mechanisms to <b><q>weave</q></b> these aspects into the
                     application's core logic at specific points, known as <strong>join points</strong>, without
-                    modifying the original code. This process is called <strong>weaving</strong>.</p>
+                    modifying the original code. This process is called <strong>weaving</strong>.
+                </p>
 
-                <h4>Key Concepts in AOP</h4>
+                <h4>Key Concepts in AOP:</h4>
                 <ul>
                     <li>
                         <strong>Aspect:</strong> A module that encapsulates a cross-cutting concern. It contains advice
