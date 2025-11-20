@@ -148,7 +148,7 @@ Explore the live demos below to see the projects in action:
 
 15. 🌆 [Learn CSS Variables by Building a City Skyline](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-css-variables-by-building-a-city-skyline)
     
-     *A visually dynamic city skyline created using CSS variables, featuring responsive behavior and light/dark mode themes. This project demonstrates how custom properties enhance maintainability and enable theme switching effectively.*
+     *A visually dynamic city skyline created using CSS variables, showcasing responsive behavior and light/dark mode theme switching.*
 
      🔗 **Live Demo 1:** [https://city-skyline-resize-screen-fccproject.netlify.app/](https://city-skyline-resize-screen-fccproject.netlify.app/)
 
@@ -166,7 +166,7 @@ Explore the live demos below to see the projects in action:
 
 16. 📰 [Learn CSS Grid by Building a Magazine](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-css-grid-by-building-a-magazine)
 
-    *A magazine-style layout built entirely using CSS Grid. This project focuses on multi-section layouts, overlapping grid areas, and clean editorial styling that adapts across screen sizes.*
+    *A magazine-style layout built using CSS Grid with multi-section design and editorial-style responsiveness.*
 
     🔗 **Live Demo:** [https://grid-magazine-freecodecamp-project.netlify.app/](https://grid-magazine-freecodecamp-project.netlify.app/)
 
@@ -176,7 +176,7 @@ Explore the live demos below to see the projects in action:
 
 17. 🛒 [Product Landing Page (Certification Project)](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page)
 
-    *A fully responsive product landing page featuring navigation links, product highlights, embedded media, and a call-to-action section. Built with semantic HTML and modern CSS to meet real-world landing page standards.*
+    *A fully responsive product landing page featuring navigation, product highlights, embedded media, and a strong call-to-action.*
 
     🔗 **Live Demo:** [https://product-landing-page-free-code-camp.netlify.app/](https://product-landing-page-free-code-camp.netlify.app/)
 
@@ -186,7 +186,7 @@ Explore the live demos below to see the projects in action:
 
 18. 🎡 [Learn CSS Animation by Building a Ferris Wheel](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-css-animation-by-building-a-ferris-wheel)
 
-    *A playful project demonstrating keyframe animations to rotate Ferris wheel cabins smoothly. This exercise highlights timing functions, animation properties, and creative CSS motion effects.*
+    *A playful CSS keyframe animation project that smoothly rotates Ferris wheel cabins to demonstrate animation concepts.*
 
     🔗 **Live Demo:** [https://ferriswheel-cssanimation-freecodecamp.netlify.app/](https://ferriswheel-cssanimation-freecodecamp.netlify.app/)
 
@@ -196,7 +196,7 @@ Explore the live demos below to see the projects in action:
 
 19. 🐧 [Learn CSS Transforms by Building a Penguin](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-css-transforms-by-building-a-penguin)
 
-    *A fun and interactive illustration created using CSS transforms such as scale, rotate, and skew. This project reinforces transform properties and layering techniques to build a complete digital character.*
+    *A fun CSS transforms project that builds an interactive penguin illustration using scale, rotate, and skew effects.*
 
     🔗 **Live Demo:** [https://buildingpenguin-csstransforms-fcc.netlify.app/](https://buildingpenguin-csstransforms-fcc.netlify.app/)
 
@@ -206,7 +206,7 @@ Explore the live demos below to see the projects in action:
 
 20. 💼 [Personal Portfolio Webpage (Certification Project)](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-personal-portfolio-webpage-project/build-a-personal-portfolio-webpage)
 
-    *A professional personal portfolio website featuring project showcases, navigation menus, responsive layouts, and a clean visual design. This project applies all major responsive design concepts learned throughout the certification.*
+    *A clean and professional personal portfolio website featuring projects, navigation, and fully responsive layouts.*
 
     🔗 **Live Demo:** 
 
