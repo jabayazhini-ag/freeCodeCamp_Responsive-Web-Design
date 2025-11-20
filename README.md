@@ -143,7 +143,36 @@ Explore the live demos below to see the projects in action:
      🔗 **Live Demo:** [https://java-technical-documentation-page-fcc.netlify.app/](https://java-technical-documentation-page-fcc.netlify.app/)
 
      📂 **Source Code:** [Technical Documentation Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/N_TechnicalDocumentationPageCertificationProject)
+
+     ---
+
+15. 🌆 [Learn CSS Variables by Building a City Skyline](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-css-variables-by-building-a-city-skyline)
     
+     *A visually dynamic city skyline created using CSS variables, featuring responsive behavior and light/dark mode themes. This project demonstrates how custom properties enhance maintainability and enable theme switching effectively.*
+
+     🔗 **Live Demo 1:** [https://city-skyline-resize-screen-fccproject.netlify.app/](https://city-skyline-resize-screen-fccproject.netlify.app/)
+
+     📂 **Source Code 1:** [Technical Documentation Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/N_TechnicalDocumentationPageCertificationProject)
+
+16. 📰 Learn CSS Grid by Building a Magazine
+
+    *A magazine-style layout built entirely using CSS Grid. This project focuses on multi-section layouts, overlapping grid areas, and clean editorial styling that adapts across screen sizes.*    
+
+17. 🛒 Product Landing Page (Certification Project)
+
+    *A fully responsive product landing page featuring navigation links, product highlights, embedded media, and a call-to-action section. Built with semantic HTML and modern CSS to meet real-world landing page standards.*
+
+18. 🎡 Learn CSS Animation by Building a Ferris Wheel
+
+    *A playful project demonstrating keyframe animations to rotate Ferris wheel cabins smoothly. This exercise highlights timing functions, animation properties, and creative CSS motion effects.*
+
+19. 🐧 Learn CSS Transforms by Building a Penguin
+
+    *A fun and interactive illustration created using CSS transforms such as scale, rotate, and skew. This project reinforces transform properties and layering techniques to build a complete digital character.*
+
+20. 💼 Personal Portfolio Webpage (Certification Project)
+
+    *A professional personal portfolio website featuring project showcases, navigation menus, responsive layouts, and clean visual design. This project applies all major responsive design concepts learned throughout the certification.*
 
 ## 📌 About This Repository
 
