@@ -184,8 +184,6 @@ Explore the live demos below to see the projects in action:
 
     *A professional personal portfolio website featuring project showcases, navigation menus, responsive layouts, and clean visual design. This project applies all major responsive design concepts learned throughout the certification.*
 
-    ---
-
 ## 📌 About This Repository
 
 This repository is a testament to my journey in mastering **Responsive Web Design**. It includes real-world applications of:
