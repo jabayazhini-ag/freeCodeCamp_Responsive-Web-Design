@@ -152,37 +152,65 @@ Explore the live demos below to see the projects in action:
 
      🔗 **Live Demo 1:** [https://city-skyline-resize-screen-fccproject.netlify.app/](https://city-skyline-resize-screen-fccproject.netlify.app/)
 
-     📂 **Source Code 1:** [Technical Documentation Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/N_TechnicalDocumentationPageCertificationProject)
+     📂 **Source Code 1:** [CSS Variables City Skyline | Interactive Dark & Light Mode](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/O_CitySkylineCSSVariablesResizeScreen)
+
+    🔗 **Live Demo 2:** [https://city-skyline-darkmodeonly-fccproject.netlify.app/](https://city-skyline-darkmodeonly-fccproject.netlify.app/)
+
+     📂 **Source Code 2:** [CSS Variables City Skyline | Dark Mode](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/O_CitySkylineDarkModeOnly)
+
+    🔗 **Live Demo 3:** [https://city-skyline-lightmodeonly-fccproject.netlify.app/](https://city-skyline-lightmodeonly-fccproject.netlify.app/)
+
+     📂 **Source Code 3:** [CSS Variables City Skyline | Light Mode](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/O_CitySkylineLightModeOnly)
 
     ---
 
-16. 📰 Learn CSS Grid by Building a Magazine
+16. 📰 [Learn CSS Grid by Building a Magazine](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-css-grid-by-building-a-magazine)
 
     *A magazine-style layout built entirely using CSS Grid. This project focuses on multi-section layouts, overlapping grid areas, and clean editorial styling that adapts across screen sizes.*
 
+    🔗 **Live Demo:** [https://grid-magazine-freecodecamp-project.netlify.app/](https://grid-magazine-freecodecamp-project.netlify.app/)
+
+     📂 **Source Code:** [CSS Grid Magazine](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/P_GridMagazine)
+
      ---
 
-17. 🛒 Product Landing Page (Certification Project)
+17. 🛒 [Product Landing Page (Certification Project)](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page)
 
     *A fully responsive product landing page featuring navigation links, product highlights, embedded media, and a call-to-action section. Built with semantic HTML and modern CSS to meet real-world landing page standards.*
 
+    🔗 **Live Demo:** [https://product-landing-page-free-code-camp.netlify.app/](https://product-landing-page-free-code-camp.netlify.app/)
+
+     📂 **Source Code:** [Product Landing Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/Q_ProductLandingPageCertificationProject)
+
     ---
 
-18. 🎡 Learn CSS Animation by Building a Ferris Wheel
+18. 🎡 [Learn CSS Animation by Building a Ferris Wheel](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-css-animation-by-building-a-ferris-wheel)
 
     *A playful project demonstrating keyframe animations to rotate Ferris wheel cabins smoothly. This exercise highlights timing functions, animation properties, and creative CSS motion effects.*
 
+    🔗 **Live Demo:** [https://ferriswheel-cssanimation-freecodecamp.netlify.app/](https://ferriswheel-cssanimation-freecodecamp.netlify.app/)
+
+     📂 **Source Code:** [CSS Animation Ferris Wheel](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/R_FerrisWheelCSSAnimation)
+
     ---
 
-19. 🐧 Learn CSS Transforms by Building a Penguin
+19. 🐧 [Learn CSS Transforms by Building a Penguin](https://www.freecodecamp.org/learn/2022/responsive-web-design/#learn-css-transforms-by-building-a-penguin)
 
     *A fun and interactive illustration created using CSS transforms such as scale, rotate, and skew. This project reinforces transform properties and layering techniques to build a complete digital character.*
 
+    🔗 **Live Demo:** [https://buildingpenguin-csstransforms-fcc.netlify.app/](https://buildingpenguin-csstransforms-fcc.netlify.app/)
+
+     📂 **Source Code:** [CSS Transforms Building a Penguin](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/S_BuildingPenguinCSSTransforms)
+
     ---
 
-20. 💼 Personal Portfolio Webpage (Certification Project)
+20. 💼 [Personal Portfolio Webpage (Certification Project)](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-personal-portfolio-webpage-project/build-a-personal-portfolio-webpage)
 
-    *A professional personal portfolio website featuring project showcases, navigation menus, responsive layouts, and clean visual design. This project applies all major responsive design concepts learned throughout the certification.*
+    *A professional personal portfolio website featuring project showcases, navigation menus, responsive layouts, and a clean visual design. This project applies all major responsive design concepts learned throughout the certification.*
+
+    🔗 **Live Demo:** 
+
+     📂 **Source Code:** [Personal Portfolio Webpage](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/T_PersonalPortfolioWebpageCertificationProject)
 
 ## 📌 About This Repository
 
