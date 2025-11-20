@@ -140,7 +140,7 @@ Explore the live demos below to see the projects in action:
     
      *A structured webpage designed to present technical documentation clearly, using semantic HTML elements and responsive CSS styling.*
 
-     🔗 **Live Demo:**
+     🔗 **Live Demo:** [https://java-technical-documentation-page-fcc.netlify.app/](https://java-technical-documentation-page-fcc.netlify.app/)
 
      📂 **Source Code:** [Technical Documentation Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/N_TechnicalDocumentationPageCertificationProject)
     
