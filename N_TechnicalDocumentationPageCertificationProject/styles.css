@@ -386,6 +386,7 @@ td .align {
     text-align: justify;
 }
 
+/* ---------------------- Java Version Features Section ------------------- */
 .module-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

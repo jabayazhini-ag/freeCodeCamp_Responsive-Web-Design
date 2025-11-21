@@ -3098,7 +3098,7 @@ public class ThrowKeywordExample {
             // If age is less than 0, it's invalid.
             // We 'throw' a new IllegalArgumentException.
             // IllegalArgumentException is a built-in 'unchecked' exception (subclass of RuntimeException).
-            // This means the caller doesn't *have* to catch it, but it's good practice.
+            // This means the caller doesn't have to catch it, but it's good practice.
             throw new IllegalArgumentException("Age cannot be a negative number: " + age);
         } else if (age > 120) {
             // If age is too high, also invalid.
