@@ -142,7 +142,7 @@ Explore the live demos below to see the projects in action:
 
      🔗 **Live Demo:** [https://java-technical-documentation-page-fcc.netlify.app/](https://java-technical-documentation-page-fcc.netlify.app/)
 
-     📂 **Source Code:** [Technical Documentation Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/N_TechnicalDocumentationPageCertificationProject)
+     📂 **Source Code:** [Java Technical Documentation Page](https://github.com/jabayazhini-ag/freeCodeCamp_Responsive-Web-Design/tree/main/N_TechnicalDocumentationPageCertificationProject)
 
      ---
 
